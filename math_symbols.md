@@ -7,65 +7,66 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 165 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 167 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
 | Absolute to GeLU | Gini to Partial | Partial to Zero-One |
 |---|---|---|
 | [Absolute Value — `\|x\|`](#absolute-value) | [Gini Index / Gini Function — `2a(1-a)`](#gini-index-gini-function) | [Partial Order — `≺`](#partial-order) |
 | [Action Space — `U(x)`](#action-space) | [Goal Set — `X_G`](#goal-set) | [Perceptron Loss — `L_perc`](#perceptron-loss) |
 | [Activation Function — `σ(·)`](#activation-function) | [Gradient — `∇_𝐱 f(𝐱)`](#gradient) | [Permutation — `Perm(·)`](#permutation) |
-| [Admissible Heuristic — `H(s) ≤ V*(s)`](#admissible-heuristic) | [Greater Than / Less Than — `>, <`](#greater-than-less-than) | [Phi, lowercase — `φ`](#phi-lowercase) |
-| [All-Ones Vector — `𝟏`](#all-ones-vector) | [Halfspace — `sign(𝐰·𝐱 - θ)`](#halfspace) | [Phi, uppercase — `Φ`](#phi-uppercase) |
-| [Alpha / Slope Hyperparameter — `α`](#alpha-slope-hyperparameter) | [Hat Notation — `ŷ`](#hat-notation) | [Pi, lowercase, as Population/Subgroup Label — `π₁, π₂`](#pi-lowercase-as-populationsubgroup-label) |
-| [Alpha-Beta Pruning Bounds — `α, β`](#alpha-beta-pruning-bounds) | [Hessian Matrix — `H`](#hessian-matrix) | [Positional Embedding — `PE`](#positional-embedding) |
-| [Approximately Equal — `≈`](#approximately-equal) | [Heuristic Function — `H(s), h(s)`](#heuristic-function) | [Potential Function — `φ`](#potential-function) |
-| [Arg Min / Arg Max — `arg min, arg max`](#arg-min-arg-max) | [Hold-Out Set / Validation Set — `H`](#hold-out-set-validation-set) | [Precedence Relation — `≺`](#precedence-relation) |
-| [Assignment Arrow — `←`](#assignment-arrow) | [Hypothesis — `h`](#hypothesis) | [Prime Notation — `S'`](#prime-notation) |
-| [Asterisk for Optimal Value — `θ*`](#asterisk-for-optimal-value) | [Identity Matrix — `I`](#identity-matrix) | [Probability / Probability Density — `P(x)`](#probability-probability-density) |
-| [Attention Operator — `Attention(Q, K, V)`](#attention-operator) | [If and Only If — `⇔`](#if-and-only-if) | [Probability Simplex — `P^C`](#probability-simplex) |
-| [Beta — `β`](#beta) | [Implies Arrow — `⇒`](#implies-arrow) | [Product Notation — `∏`](#product-notation) |
-| [Bias Term — `b`](#bias-term) | [Infinity — `∞`](#infinity) | [Psi, uppercase — `Ψ`](#psi-uppercase) |
-| [Big-O Notation — `O(·)`](#big-o-notation) | [Initial State — `x_I`](#initial-state) | [Query, Key, and Value — `Q, K, V`](#query-key-and-value) |
-| [Binary Label Set — `{-1, +1}`](#binary-label-set) | [Integral — `∫`](#integral) | [Question-Mark Relation — `≥?, ≟`](#question-mark-relation) |
-| [Binomial Coefficient — `C(n,k)`](#binomial-coefficient) | [Inverse Hessian — `H⁻¹, (∂²ℒ/∂w̄²)⁻¹`](#inverse-hessian) | [Real Numbers — `ℝ`](#real-numbers) |
-| [Blocks World — `On, Clear, InHand, HandEmpty`](#blocks-world) | [Jacobian — `J_f`](#jacobian) | [Receptive Field — `r`](#receptive-field) |
-| [Boolean Cube / Bit-Vector Domain — `{0,1}ⁿ`](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size — `ω, h×w`](#kernel-kernel-size) | [Regression Function — `𝔼[Y \| X]`](#regression-function) |
-| [Branching Factor and Search Depth — `b, d, b^d`](#branching-factor-and-search-depth) | [Label — `l, y`](#label) | [ReLU — `ReLU(x)`](#relu) |
-| [Concept Class — `𝒞, C`](#concept-class) | [Label Space — `𝒴`](#label-space) | [Rotation Matrix — `R_θ`](#rotation-matrix) |
-| [Conditional Bar — `\|`](#conditional-bar) | [Lambda Abstraction — `λx. …`](#lambda-abstraction) | [Sampling Notation — `x ∼ P`](#sampling-notation) |
-| [Configuration Space — `𝒞, q, 𝒞_free, 𝒞_obs`](#configuration-space) | [Lambda, lowercase — `λ`](#lambda-lowercase) | [Scoring Function — `Ψ`](#scoring-function) |
-| [Conjunction / Logical AND — `∧`](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space — `z̄`](#latent-feature-vector-latent-feature-space) | [Script L / Calligraphic L — `ℒ`](#script-l-calligraphic-l) |
-| [Cosine Similarity — `cosθ`](#cosine-similarity) | [Leaky ReLU / PReLU — `LeakyReLU(x)`](#leaky-relu-prelu) | [Set Braces — `{ }`](#set-braces) |
-| [Cost-to-Come and Cost-to-Go — `C(x), G(x)`](#cost-to-come-and-cost-to-go) | [Learning Rate — `α, ε, η`](#learning-rate) | [Set Cardinality / Size of a Set — `\|S\|`](#set-cardinality-size-of-a-set) |
-| [Covariance — `Cov(X,Y)`](#covariance) | [Less Than or Equal — `≤`](#less-than-or-equal) | [Set Difference — `A ∖ B`](#set-difference) |
-| [Data Distribution — `D, 𝒟`](#data-distribution) | [Literal, Grounded and Ungrounded — `P(a,b), P(X,b)`](#literal-grounded-and-ungrounded) | [Set Union — `∪`](#set-union) |
-| [Dataset — `𝒟`](#dataset) | [Logarithm — `log`](#logarithm) | [Sigma, lowercase — `σ`](#sigma-lowercase) |
-| [Delta, lowercase — `δ`](#delta-lowercase) | [Logical Negation — `¬`](#logical-negation) | [Sigma, uppercase — `Σ`](#sigma-uppercase) |
-| [Dimension / Count Variables — `n, m, k, d, p, C, N`](#dimension-count-variables) | [Logistic Function — `eˣ/(1+eˣ)`](#logistic-function) | [Sigmoid Function — `σ(x)`](#sigmoid-function) |
-| [Disjunction / Logical OR — `∨`](#disjunction-logical-or) | [Loss Function — `l, L`](#loss-function) | [Sign Function — `sign(x)`](#sign-function) |
-| [Dot Product / Inner Product — `𝐯ᵀ 𝐰`](#dot-product-inner-product) | [Margin — `y 𝐰ᵀ f(𝐱), γ`](#margin) | [Softmax Function — `softmax(𝐯)`](#softmax-function) |
-| [Element-of Symbol — `∈`](#element-of-symbol) | [Matrix — `𝐌`](#matrix) | [Softplus / Soft ReLU — `log(1+e^x)`](#softplus-soft-relu) |
-| [Element-wise Operations — `+, -, ·, /`](#element-wise-operations) | [Matrix Entry — `Mᵢ,ⱼ`](#matrix-entry) | [Standard Deviation — `σ`](#standard-deviation) |
-| [Ellipsis — `…`](#ellipsis) | [Matrix Transpose — `𝐌ᵀ`](#matrix-transpose) | [State Space — `X`](#state-space) |
-| [ELU — `ELU(x)`](#elu) | [Max Function — `max(a, b)`](#max-function) | [State Transition Function — `f, x' = f(x,u)`](#state-transition-function) |
-| [Empty Set — `∅`](#empty-set) | [Mean — `μ`](#mean) | [Step Size — `α`](#step-size) |
-| [Epsilon — `ε`](#epsilon) | [Min Function — `min(a, b)`](#min-function) | [Stride — `s`](#stride) |
-| [Error Signal — `err(𝐳)`](#error-signal) | [Mistake Bound — `t`](#mistake-bound) | [Subset — `⊆`](#subset) |
-| [Eta — `η`](#eta) | [Model Parameters — `θ`](#model-parameters) | [Summation — `Σ`](#summation) |
-| [Euclidean Norm — `‖ 𝐯 ‖`](#euclidean-norm) | [Mu — `μ`](#mu) | [Superscript Example Index — `xⁱ, xᵢ`](#superscript-example-index) |
-| [Euler's Number / Exponential Function — `e, e^x`](#eulers-number-exponential-function) | [Nabla — `∇`](#nabla) | [Tanh — `tanh(x)`](#tanh) |
-| [Existential Quantifier — `∃`](#existential-quantifier) | [Natural Numbers — `ℕ`](#natural-numbers) | [TF-IDF — `tf×idf`](#tf-idf) |
-| [Expectation — `𝔼_P[f(x)]`](#expectation) | [Negation Overbar — `x̄`](#negation-overbar) | [Theta — `θ`](#theta) |
-| [Factorial — `n!`](#factorial) | [N-Gram — `n`](#n-gram) | [Tilde Accent — `x̃`](#tilde-accent) |
-| [Feature Extractor / Feature Function — `f(𝐱)`](#feature-extractor-feature-function) | [Normal Distribution Notation — `𝒩(μ, σ)`](#normal-distribution-notation) | [Training Set — `S`](#training-set) |
-| [Floor Function — `⌊ · ⌋`](#floor-function) | [Not Equal — `≠`](#not-equal) | [Uniform Distribution Notation — `𝒰(a, b)`](#uniform-distribution-notation) |
-| [Frobenius Norm — `‖ 𝐌 ‖`](#frobenius-norm) | [Number Sign / Count — `#`](#number-sign-count) | [Universal Quantifier — `∀`](#universal-quantifier) |
-| [Function Composition — `∘`](#function-composition) | [Omega — `ω`](#omega) | [Variance — `σ², Var(x)`](#variance) |
-| [Function Mapping Arrow — `→`](#function-mapping-arrow) | [Optimal Cost / True Cost — `V*(s)`](#optimal-cost-true-cost) | [Vector — `𝐯`](#vector) |
-| [Gain — `Gain(xᵢ)`](#gain) | [Outer Product — `𝐯𝐰ᵀ`](#outer-product) | [Vector Overbar — `𝐱̄`](#vector-overbar) |
-| [Gamma — `γ`](#gamma) | [Padding — `p`](#padding) | [Vocabulary — `V, \|V\|`](#vocabulary) |
-| [Gaussian CDF — `Φ(x)`](#gaussian-cdf) | [Parameterized Function / Model — `f_θ`](#parameterized-function-model) | [Weight Vector — `𝐰`](#weight-vector) |
-| [GeLU — `GeLU(x)`](#gelu) | [Partial Derivative — `∂`](#partial-derivative) | [Zero-One Loss — `0, 1`](#zero-one-loss) |
+| [Adjacency Matrix — `A_{i,j}`](#adjacency-matrix) | [Graph — `G = (V, E)`](#graph) | [Phi, lowercase — `φ`](#phi-lowercase) |
+| [Admissible Heuristic — `H(s) ≤ V*(s)`](#admissible-heuristic) | [Greater Than / Less Than — `>, <`](#greater-than-less-than) | [Phi, uppercase — `Φ`](#phi-uppercase) |
+| [All-Ones Vector — `𝟏`](#all-ones-vector) | [Halfspace — `sign(𝐰·𝐱 - θ)`](#halfspace) | [Pi, lowercase, as Population/Subgroup Label — `π₁, π₂`](#pi-lowercase-as-populationsubgroup-label) |
+| [Alpha / Slope Hyperparameter — `α`](#alpha-slope-hyperparameter) | [Hat Notation — `ŷ`](#hat-notation) | [Positional Embedding — `PE`](#positional-embedding) |
+| [Alpha-Beta Pruning Bounds — `α, β`](#alpha-beta-pruning-bounds) | [Hessian Matrix — `H`](#hessian-matrix) | [Potential Function — `φ`](#potential-function) |
+| [Approximately Equal — `≈`](#approximately-equal) | [Heuristic Function — `H(s), h(s)`](#heuristic-function) | [Precedence Relation — `≺`](#precedence-relation) |
+| [Arg Min / Arg Max — `arg min, arg max`](#arg-min-arg-max) | [Hold-Out Set / Validation Set — `H`](#hold-out-set-validation-set) | [Prime Notation — `S'`](#prime-notation) |
+| [Assignment Arrow — `←`](#assignment-arrow) | [Hypothesis — `h`](#hypothesis) | [Probability / Probability Density — `P(x)`](#probability-probability-density) |
+| [Asterisk for Optimal Value — `θ*`](#asterisk-for-optimal-value) | [Identity Matrix — `I`](#identity-matrix) | [Probability Simplex — `P^C`](#probability-simplex) |
+| [Attention Operator — `Attention(Q, K, V)`](#attention-operator) | [If and Only If — `⇔`](#if-and-only-if) | [Product Notation — `∏`](#product-notation) |
+| [Beta — `β`](#beta) | [Implies Arrow — `⇒`](#implies-arrow) | [Psi, uppercase — `Ψ`](#psi-uppercase) |
+| [Bias Term — `b`](#bias-term) | [Infinity — `∞`](#infinity) | [Query, Key, and Value — `Q, K, V`](#query-key-and-value) |
+| [Big-O Notation — `O(·)`](#big-o-notation) | [Initial State — `x_I`](#initial-state) | [Question-Mark Relation — `≥?, ≟`](#question-mark-relation) |
+| [Binary Label Set — `{-1, +1}`](#binary-label-set) | [Integral — `∫`](#integral) | [Real Numbers — `ℝ`](#real-numbers) |
+| [Binomial Coefficient — `C(n,k)`](#binomial-coefficient) | [Inverse Hessian — `H⁻¹, (∂²ℒ/∂w̄²)⁻¹`](#inverse-hessian) | [Receptive Field — `r`](#receptive-field) |
+| [Blocks World — `On, Clear, InHand, HandEmpty`](#blocks-world) | [Jacobian — `J_f`](#jacobian) | [Regression Function — `𝔼[Y \| X]`](#regression-function) |
+| [Boolean Cube / Bit-Vector Domain — `{0,1}ⁿ`](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size — `ω, h×w`](#kernel-kernel-size) | [ReLU — `ReLU(x)`](#relu) |
+| [Branching Factor and Search Depth — `b, d, b^d`](#branching-factor-and-search-depth) | [Label — `l, y`](#label) | [Rotation Matrix — `R_θ`](#rotation-matrix) |
+| [Concept Class — `𝒞, C`](#concept-class) | [Label Space — `𝒴`](#label-space) | [Sampling Notation — `x ∼ P`](#sampling-notation) |
+| [Conditional Bar — `\|`](#conditional-bar) | [Lambda Abstraction — `λx. …`](#lambda-abstraction) | [Scoring Function — `Ψ`](#scoring-function) |
+| [Configuration Space — `𝒞, q, 𝒞_free, 𝒞_obs`](#configuration-space) | [Lambda, lowercase — `λ`](#lambda-lowercase) | [Script L / Calligraphic L — `ℒ`](#script-l-calligraphic-l) |
+| [Conjunction / Logical AND — `∧`](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space — `z̄`](#latent-feature-vector-latent-feature-space) | [Set Braces — `{ }`](#set-braces) |
+| [Cosine Similarity — `cosθ`](#cosine-similarity) | [Leaky ReLU / PReLU — `LeakyReLU(x)`](#leaky-relu-prelu) | [Set Cardinality / Size of a Set — `\|S\|`](#set-cardinality-size-of-a-set) |
+| [Cost-to-Come and Cost-to-Go — `C(x), G(x)`](#cost-to-come-and-cost-to-go) | [Learning Rate — `α, ε, η`](#learning-rate) | [Set Difference — `A ∖ B`](#set-difference) |
+| [Covariance — `Cov(X,Y)`](#covariance) | [Less Than or Equal — `≤`](#less-than-or-equal) | [Set Union — `∪`](#set-union) |
+| [Data Distribution — `D, 𝒟`](#data-distribution) | [Literal, Grounded and Ungrounded — `P(a,b), P(X,b)`](#literal-grounded-and-ungrounded) | [Sigma, lowercase — `σ`](#sigma-lowercase) |
+| [Dataset — `𝒟`](#dataset) | [Logarithm — `log`](#logarithm) | [Sigma, uppercase — `Σ`](#sigma-uppercase) |
+| [Delta, lowercase — `δ`](#delta-lowercase) | [Logical Negation — `¬`](#logical-negation) | [Sigmoid Function — `σ(x)`](#sigmoid-function) |
+| [Dimension / Count Variables — `n, m, k, d, p, C, N`](#dimension-count-variables) | [Logistic Function — `eˣ/(1+eˣ)`](#logistic-function) | [Sign Function — `sign(x)`](#sign-function) |
+| [Disjunction / Logical OR — `∨`](#disjunction-logical-or) | [Loss Function — `l, L`](#loss-function) | [Softmax Function — `softmax(𝐯)`](#softmax-function) |
+| [Dot Product / Inner Product — `𝐯ᵀ 𝐰`](#dot-product-inner-product) | [Margin — `y 𝐰ᵀ f(𝐱), γ`](#margin) | [Softplus / Soft ReLU — `log(1+e^x)`](#softplus-soft-relu) |
+| [Element-of Symbol — `∈`](#element-of-symbol) | [Matrix — `𝐌`](#matrix) | [Standard Deviation — `σ`](#standard-deviation) |
+| [Element-wise Operations — `+, -, ·, /`](#element-wise-operations) | [Matrix Entry — `Mᵢ,ⱼ`](#matrix-entry) | [State Space — `X`](#state-space) |
+| [Ellipsis — `…`](#ellipsis) | [Matrix Transpose — `𝐌ᵀ`](#matrix-transpose) | [State Transition Function — `f, x' = f(x,u)`](#state-transition-function) |
+| [ELU — `ELU(x)`](#elu) | [Max Function — `max(a, b)`](#max-function) | [Step Size — `α`](#step-size) |
+| [Empty Set — `∅`](#empty-set) | [Mean — `μ`](#mean) | [Stride — `s`](#stride) |
+| [Epsilon — `ε`](#epsilon) | [Min Function — `min(a, b)`](#min-function) | [Subset — `⊆`](#subset) |
+| [Error Signal — `err(𝐳)`](#error-signal) | [Mistake Bound — `t`](#mistake-bound) | [Summation — `Σ`](#summation) |
+| [Eta — `η`](#eta) | [Model Parameters — `θ`](#model-parameters) | [Superscript Example Index — `xⁱ, xᵢ`](#superscript-example-index) |
+| [Euclidean Norm — `‖ 𝐯 ‖`](#euclidean-norm) | [Mu — `μ`](#mu) | [Tanh — `tanh(x)`](#tanh) |
+| [Euler's Number / Exponential Function — `e, e^x`](#eulers-number-exponential-function) | [N-Gram — `n`](#n-gram) | [TF-IDF — `tf×idf`](#tf-idf) |
+| [Existential Quantifier — `∃`](#existential-quantifier) | [Nabla — `∇`](#nabla) | [Theta — `θ`](#theta) |
+| [Expectation — `𝔼_P[f(x)]`](#expectation) | [Natural Numbers — `ℕ`](#natural-numbers) | [Tilde Accent — `x̃`](#tilde-accent) |
+| [Factorial — `n!`](#factorial) | [Negation Overbar — `x̄`](#negation-overbar) | [Training Set — `S`](#training-set) |
+| [Feature Extractor / Feature Function — `f(𝐱)`](#feature-extractor-feature-function) | [Normal Distribution Notation — `𝒩(μ, σ)`](#normal-distribution-notation) | [Uniform Distribution Notation — `𝒰(a, b)`](#uniform-distribution-notation) |
+| [Floor Function — `⌊ · ⌋`](#floor-function) | [Not Equal — `≠`](#not-equal) | [Universal Quantifier — `∀`](#universal-quantifier) |
+| [Frobenius Norm — `‖ 𝐌 ‖`](#frobenius-norm) | [Number Sign / Count — `#`](#number-sign-count) | [Variance — `σ², Var(x)`](#variance) |
+| [Function Composition — `∘`](#function-composition) | [Omega — `ω`](#omega) | [Vector — `𝐯`](#vector) |
+| [Function Mapping Arrow — `→`](#function-mapping-arrow) | [Optimal Cost / True Cost — `V*(s)`](#optimal-cost-true-cost) | [Vector Overbar — `𝐱̄`](#vector-overbar) |
+| [Gain — `Gain(xᵢ)`](#gain) | [Outer Product — `𝐯𝐰ᵀ`](#outer-product) | [Vocabulary — `V, \|V\|`](#vocabulary) |
+| [Gamma — `γ`](#gamma) | [Padding — `p`](#padding) | [Weight Vector — `𝐰`](#weight-vector) |
+| [Gaussian CDF — `Φ(x)`](#gaussian-cdf) | [Parameterized Function / Model — `f_θ`](#parameterized-function-model) | [Zero-One Loss — `0, 1`](#zero-one-loss) |
+| [GeLU — `GeLU(x)`](#gelu) | [Partial Derivative — `∂`](#partial-derivative) |  |
 
 ## Symbols
 
@@ -111,6 +112,23 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter sig
 **Example.** Take the sigmoid activation function specifically, $\sigma(t) = \dfrac{1}{1+e^{-t}}$. If a neuron computes a weighted sum of $t = 2$, plugging that into $\sigma$ gives $\sigma(2) = \dfrac{1}{1+e^{-2}} \approx \dfrac{1}{1+0.135} \approx 0.88$. Notice the raw number $2$ got reshaped into $0.88$, a value squeezed between 0 and 1 — that reshaping step is exactly the job of any activation function, regardless of which specific formula $\sigma$ stands for in a given problem.
 
 **AI/ML Usage**: A neural network is a machine learning model built from many small computing units, loosely inspired by neurons in a brain, stacked into layers; it "learns" by automatically adjusting internal numbers using example data. Every unit in every layer first computes a weighted sum of its inputs, then passes that sum through an activation function like $\sigma(\cdot)$ before sending a value to the next layer. This step matters enormously: without it, stacking many layers together would collapse mathematically into being no more powerful than a single straight-line calculation, no matter how many layers you added. Common concrete choices include ReLU (fast, and used in most hidden layers of modern networks), sigmoid (squashes numbers into probabilities, used at the very last layer of a yes/no classifier), and softmax (used at the last layer when picking among several categories).
+
+---
+
+<a id="adjacency-matrix"></a>
+### Adjacency Matrix — `A_{i,j}`
+Symbol: none — an uppercase letter (commonly $A$) with two subscripts, typed as A_ij or A_(i,j)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is the Matrix Entry notation (see the Matrix Entry entry above) applied to one very specific job: recording, for every possible pair of "places" in a network, whether a direct connection exists between them — nothing more than a big table of yes/no answers.
+
+**General Usage**: For a graph with $N$ vertices $v_1, \dots, v_N$ (see the Graph entry), its adjacency matrix $A$ is an $N \times N$ matrix whose entry $A_{i,j}$ is $1$ if vertices $v_i$ and $v_j$ are directly connected by an edge, and $0$ otherwise.
+
+**Example.** For a graph with vertices $v_1, v_2, v_3$ where $v_1$ connects to $v_2$, and $v_2$ connects to $v_3$, but $v_1$ and $v_3$ are not directly connected, the adjacency matrix is
+$$A = \begin{pmatrix} 0 & 1 & 0 \\ 1 & 0 & 1 \\ 0 & 1 & 0 \end{pmatrix}$$
+Row 1 reads $0, 1, 0$: $v_1$ is not connected to itself, is connected to $v_2$, and is not connected to $v_3$.
+
+**AI/ML Usage**: Used throughout planning and robotics to store which locations (states) in a discretized map are reachable from which others in one step; also the starting point for graph neural networks, a family of models that learn directly from the connectivity described by a graph's adjacency matrix rather than from a fixed-size vector of features.
 
 ---
 
@@ -939,6 +957,21 @@ On macOS: open the character picker (Fn/🌐) and search "nabla" and select ∇
 
 ---
 
+<a id="graph"></a>
+### Graph — `G = (V, E)`
+Symbol: none — an uppercase letter (commonly $G$) defined as an ordered pair, typed as G = (V, E)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is the same idea as a diagram of dots connected by lines that you may have already seen — a graph just gives that picture a precise name for its two parts: which dots exist, and which pairs of dots are joined.
+
+**General Usage**: A graph $G = (V, E)$ consists of a set of vertices (or nodes) $V$ and a set of edges $E$, where each edge connects two vertices in $V$. If an edge between $v_i$ and $v_j$ can be crossed in either direction, the graph is undirected; if it can only be crossed in one direction, it is directed.
+
+**Example.** For $V = \{v_1, v_2, v_3\}$ and $E = \{(v_1,v_2), (v_2,v_3)\}$, the graph $G=(V,E)$ has three vertices, with $v_1$ connected to $v_2$, and $v_2$ connected to $v_3$, but no direct edge between $v_1$ and $v_3$.
+
+**AI/ML Usage**: The graph is the basic representation for any search-based planning problem — vertices represent states (see the State Space entry) and edges represent one-step actions between them (see the Cost-to-Come and Cost-to-Go entry for how costs are then attached to those edges). It's also the underlying structure for graphical models like the Gaussian Graphical Model and Bayesian networks, where vertices represent random variables and edges represent probabilistic dependence.
+
+---
+
 <a id="greater-than-less-than"></a>
 ### Greater Than / Less Than — `>, <`
 Symbol: > and <, greater-than and less-than signs  
@@ -1010,7 +1043,7 @@ On macOS: type normally from the keyboard; both capital H and lowercase h are co
 
 **Example.** In a sliding tile puzzle, a common heuristic counts how many tiles are currently out of place: if 6 tiles are in the wrong position, $h(s) = 6$. This is just a rough guess — it doesn't account for how many moves are actually needed to fix each tile — but it's a useful signal for guiding a search toward states that look closer to solved.
 
-**AI/ML Usage**: Central to informed search algorithms like A*, used throughout classical AI for tasks including robotics navigation, puzzle-solving, and route planning. In more modern AI systems — most famously AlphaGo and AlphaZero, the AI systems that mastered Go and chess — a trained neural network often takes over the job of the heuristic function entirely, learning from experience to estimate "how good does this position look" instead of relying on a heuristic formula that a human expert wrote by hand.
+**AI/ML Usage**: Central to informed search algorithms like A\*, used throughout classical AI for tasks including robotics navigation, puzzle-solving, and route planning. In more modern AI systems — most famously AlphaGo and AlphaZero, the AI systems that mastered Go and chess — a trained neural network often takes over the job of the heuristic function entirely, learning from experience to estimate "how good does this position look" instead of relying on a heuristic formula that a human expert wrote by hand.
 
 ---
 
@@ -1524,6 +1557,21 @@ On macOS: press Option+M for µ (the micro sign, visually identical and usually 
 
 ---
 
+<a id="n-gram"></a>
+### N-Gram — `n`
+Symbol: none — written as ordinary text, with n standing for a number  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: No new math mechanics — this is just counting consecutive items in a list, similar to identifying a repeating pattern of two or three terms in a sequence.
+
+**General Usage**: An n-gram is a sequence of $n$ consecutive words pulled from a text.
+
+**Example.** For the sentence "the cat sat down," the 2-grams (bigrams) are: "the cat," "cat sat," and "sat down" — three overlapping pairs of consecutive words, each one sliding forward by a single word from the last.
+
+**AI/ML Usage**: A foundational technique used for decades in natural language processing (the branch of AI focused on understanding and generating human language) before neural network-based language models became dominant. N-gram models predicted the next word in a sentence purely by looking at statistics of the previous $n-1$ words, without any deeper understanding of meaning — while largely superseded today by Transformer-based language models like GPT, n-gram-based features are still occasionally used in simpler text classification and search/information-retrieval systems.
+
+---
+
 <a id="nabla"></a>
 ### Nabla — `∇`
 Symbol: ∇, nabla (an upside-down triangle)  
@@ -1566,21 +1614,6 @@ On macOS: type the letter, then open the character picker (Fn/🌐), search "com
 **Example.** If $x$ represents the true/false statement "the switch is on," then $\bar{x}$ represents "the switch is NOT on" — whenever $x$ is true, $\bar x$ is false, and whenever $x$ is false, $\bar{x}$ is true, just like $\neg x$.
 
 **AI/ML Usage**: Used in symbolic AI and Boolean-formula-based reasoning systems — including SAT solvers, specialized programs that efficiently solve giant true/false logic puzzles, which are sometimes used internally by advanced AI planning systems — to represent the negation of a variable, cleanly distinguishing "this fact is true" from "this fact is false" within a formal logical expression the solver is working with.
-
----
-
-<a id="n-gram"></a>
-### N-Gram — `n`
-Symbol: none — written as ordinary text, with n standing for a number  
-On macOS: type normally from the keyboard
-
-**The Big Idea**: No new math mechanics — this is just counting consecutive items in a list, similar to identifying a repeating pattern of two or three terms in a sequence.
-
-**General Usage**: An n-gram is a sequence of $n$ consecutive words pulled from a text.
-
-**Example.** For the sentence "the cat sat down," the 2-grams (bigrams) are: "the cat," "cat sat," and "sat down" — three overlapping pairs of consecutive words, each one sliding forward by a single word from the last.
-
-**AI/ML Usage**: A foundational technique used for decades in natural language processing (the branch of AI focused on understanding and generating human language) before neural network-based language models became dominant. N-gram models predicted the next word in a sentence purely by looking at statistics of the previous $n-1$ words, without any deeper understanding of meaning — while largely superseded today by Transformer-based language models like GPT, n-gram-based features are still occasionally used in simpler text classification and search/information-retrieval systems.
 
 ---
 

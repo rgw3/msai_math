@@ -7,59 +7,87 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 139 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 157 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Action to Feature | Gaussian to Normal | Objective to Unknown-Word |
+| A* to Fast | Feature to Normal | NP-Hard to Unknown-Word |
 |---|---|---|
-| [Action Schema](#action-schema) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [Agnostic Learning](#agnostic-learning) | [Generative Model](#generative-model) | [One-vs-All](#one-vs-all) |
-| [Arity](#arity) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Orthonormal Basis](#orthonormal-basis) |
-| [Backpropagation](#backpropagation) | [Gradient Descent](#gradient-descent) | [Overfitting](#overfitting) |
-| [Bag of Words](#bag-of-words) | [Graphical Lasso](#graphical-lasso) | [PAC Learning](#pac-learning) |
-| [Basis Function](#basis-function) | [GraphPlan](#graphplan) | [PDDL](#pddl) |
-| [Batch](#batch) | [Grounding / Instantiation](#grounding-instantiation) | [PDDL Variable Prefix](#pddl-variable-prefix) |
-| [Batch Normalization](#batch-normalization) | [Hedge Algorithm](#hedge-algorithm) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Hyperparameter](#hyperparameter) | [Planning Graph](#planning-graph) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Indicator Function](#indicator-function) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Jensen's Inequality](#jensens-inequality) | [Posterior Distribution](#posterior-distribution) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kernel Function](#kernel-function) | [Precision Matrix](#precision-matrix) |
-| [Centroid](#centroid) | [KL Divergence](#kl-divergence) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Principal Component Analysis](#principal-component-analysis) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Prior Distribution](#prior-distribution) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Latent Variable](#latent-variable) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Chernoff Bound](#chernoff-bound) | [Likelihood](#likelihood) | [Quadratic Form](#quadratic-form) |
-| [Closed-World Assumption](#closed-world-assumption) | [Linear Programming](#linear-programming) | [Random Forest](#random-forest) |
-| [Clustering](#clustering) | [Linearly Separable](#linearly-separable) | [Random Projection](#random-projection) |
-| [Computation Graph](#computation-graph) | [Log Likelihood](#log-likelihood) | [Rank](#rank) |
-| [Conditional Independence](#conditional-independence) | [Logistic Regression](#logistic-regression) | [Regularization](#regularization) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Loss Surface](#loss-surface) | [Sample Complexity](#sample-complexity) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Lower Bound](#lower-bound) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Markov's Inequality](#markovs-inequality) | [Search Statistics](#search-statistics) |
-| [Covariance Matrix](#covariance-matrix) | [Maximum Entropy Model](#maximum-entropy-model) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Validation](#cross-validation) | [Mean Squared Error](#mean-squared-error) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Dead End](#dead-end) | [Minimum Description Length](#minimum-description-length) | [Stopword](#stopword) |
-| [Decision Boundary](#decision-boundary) | [Model Complexity](#model-complexity) | [STRIPS](#strips) |
-| [Decision Tree](#decision-tree) | [Momentum](#momentum) | [Support Vector Machine](#support-vector-machine) |
-| [Diagonal Matrix](#diagonal-matrix) | [Monotonic Function](#monotonic-function) | [Surrogate Loss](#surrogate-loss) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Symmetric Matrix](#symmetric-matrix) |
-| [Discriminative Model](#discriminative-model) | [Mutex](#mutex) | [Symmetric Relation](#symmetric-relation) |
-| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Early Stopping](#early-stopping) | [Named-Entity Type Labels](#named-entity-type-labels) | [Tensor](#tensor) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Log Likelihood](#negative-log-likelihood) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epoch](#epoch) | [Neuron](#neuron) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Newton's Method](#newtons-method) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Non-Parametric Method](#non-parametric-method) | [Unknown-Word Token](#unknown-word-token) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [NP-Hard](#np-hard) |  |
-| [Feature Expansion](#feature-expansion) | [Normal Equations](#normal-equations) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Feature Expansion](#feature-expansion) | [NP-Hard](#np-hard) |
+| [Action Schema](#action-schema) | [Frontier / Open List](#frontier-open-list) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Graphical Model](#gaussian-graphical-model) | [One-Hot Encoding](#one-hot-encoding) |
+| [Agnostic Learning](#agnostic-learning) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-vs-All](#one-vs-all) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Generative Model](#generative-model) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Arity](#arity) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthonormal Basis](#orthonormal-basis) |
+| [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Overfitting](#overfitting) |
+| [Backpointer](#backpointer) | [Gradient Descent](#gradient-descent) | [PAC Learning](#pac-learning) |
+| [Backpropagation](#backpropagation) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
+| [Bag of Words](#bag-of-words) | [GraphPlan](#graphplan) | [PDDL Variable Prefix](#pddl-variable-prefix) |
+| [Basis Function](#basis-function) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Batch](#batch) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Batch Normalization](#batch-normalization) | [Grounding / Instantiation](#grounding-instantiation) | [Planning Graph](#planning-graph) |
+| [Bayes' Rule](#bayes-rule) | [Hedge Algorithm](#hedge-algorithm) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Hinge Loss](#hinge-loss) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Hyperparameter](#hyperparameter) | [Posterior Distribution](#posterior-distribution) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Precision Matrix](#precision-matrix) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Indicator Function](#indicator-function) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Principal Component Analysis](#principal-component-analysis) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
+| [Centroid](#centroid) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Quadratic Form](#quadratic-form) |
+| [Chernoff Bound](#chernoff-bound) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Latent Variable](#latent-variable) | [Random Forest](#random-forest) |
+| [Closed-World Assumption](#closed-world-assumption) | [Likelihood](#likelihood) | [Random Projection](#random-projection) |
+| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Rank](#rank) |
+| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Regularization](#regularization) |
+| [Conditional Independence](#conditional-independence) | [Log Likelihood](#log-likelihood) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Logistic Regression](#logistic-regression) | [Sample Complexity](#sample-complexity) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Loss Surface](#loss-surface) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Convex Function](#convex-function) | [Lower Bound](#lower-bound) | [Schur Complement](#schur-complement) |
+| [Coordinate Descent](#coordinate-descent) | [Markov Blanket](#markov-blanket) | [Search Statistics](#search-statistics) |
+| [Covariance Matrix](#covariance-matrix) | [Markov's Inequality](#markovs-inequality) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Validation](#cross-validation) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
+| [Dead End](#dead-end) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
+| [Decision Boundary](#decision-boundary) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
+| [Decision Tree](#decision-tree) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
+| [Diagonal Matrix](#diagonal-matrix) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Discriminative Model](#discriminative-model) | [Mutex](#mutex) | [Tensor](#tensor) |
+| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Early Stopping](#early-stopping) | [Named-Entity Type Labels](#named-entity-type-labels) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Log Likelihood](#negative-log-likelihood) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [Union Bound](#union-bound) |
+| [Epoch](#epoch) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Newton's Method](#newtons-method) | [Unknown-Word Token](#unknown-word-token) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Non-Parametric Method](#non-parametric-method) |  |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Normal Equations](#normal-equations) |  |
 
 ## Concepts
+
+<a id="a-search-a-star-algorithm"></a>
+### A* Search (A-Star Algorithm)
+
+**The Big Idea**: This is Dijkstra's Algorithm (see that entry) with exactly one more ingredient stirred into the priority value: an optimistic, forward-looking guess (see the Admissible Heuristic entry in `math_symbols.md`) about how much further there is left to travel.
+
+**General Usage**: A* finds the lowest-cost path from a start vertex to a goal by running Dijkstra's Algorithm with one change: a frontier vertex's priority is no longer just its cost-to-come, but cost-to-come **plus** an estimated cost-to-go from a Heuristic Function (see that entry in `math_symbols.md`) — exactly the $C(x)+G(x)$ combination described in the Cost-to-Come and Cost-to-Go entry. As long as the heuristic is admissible (see that entry), A* is still guaranteed to find the truly optimal path, typically while expanding far fewer vertices than Dijkstra's Algorithm alone would need to.
+
+**Example.** A graph with start $S$, goal $G$, and two routes through helper vertices $A$ and $B$: edges $S\!-\!A$ (cost $1$), $S\!-\!B$ (cost $1$), $A\!-\!G$ (cost $5$), $B\!-\!G$ (cost $1$) — so the true cheapest route is $S \to B \to G$ at cost $2$. Using the admissible heuristic $h(A)=0$, $h(B)=1$, $h(G)=0$ (each is $\le$ the true remaining distance from that vertex to $G$):
+
+| Step | Extract (priority = cost-to-come + $h$) | Relax neighbors | Notes |
+|---|---|---|---|
+| 1 | $S$ (priority irrelevant, always expanded first) | $A$: cost $1$, priority $1+0=1$; $B$: cost $1$, priority $1+1=2$ | Frontier: $\{A{:}1,\ B{:}2\}$ |
+| 2 | $A$ (priority $1$, currently the lowest) | $G$ via $A$: cost $1+5=6$, priority $6+0=6$ | Frontier: $\{B{:}2,\ G{:}6\}$ |
+| 3 | $B$ (priority $2$, now the lowest) | $G$ via $B$: cost $1+1=2$, which beats $G$'s recorded $6$, so update: priority $2+0=2$ | Frontier: $\{G{:}2\}$ |
+| 4 | $G$ (priority $2$) — this is the goal, so A* stops | — | Final cost $2$, via $S \to B \to G$ — the true optimum |
+
+Notice A* did briefly expand $A$ (its priority looked best at Step 1), but it never *committed* to the path through $A$ — it kept $G$'s cost open to revision until $G$ itself became the minimum-priority item in the queue, by which point its recorded cost was already the true optimum.
+
+**AI/ML Usage**: A* is one of the most widely deployed algorithms in AI — used in GPS route planning, video-game pathfinding, and robot motion planning — precisely because it combines the guaranteed optimality of Dijkstra's Algorithm with the speed of a heuristic-guided search, whenever a reliably admissible heuristic (such as straight-line distance for physical navigation) is available.
+
+---
 
 <a id="action-schema"></a>
 ### Action Schema
@@ -100,6 +128,28 @@ All 139 entries, alphabetical. Read down the first column, then down the second,
 
 ---
 
+<a id="all-pairs-shortest-paths-floyd-warshall-algorithm"></a>
+### All-Pairs Shortest Paths (Floyd-Warshall Algorithm)
+
+**The Big Idea**: Dijkstra's Algorithm (see that entry) answers "what's the cheapest way from this one start to this one goal?" The all-pairs shortest paths problem asks a bigger question: "what's the cheapest way between *every* pair of vertices, all at once?" The Floyd-Warshall algorithm answers it by repeatedly asking a simple question for every pair of vertices: "would it be cheaper to detour through this one extra vertex?"
+
+**General Usage**: Given a graph with vertex set $V$, the all-pairs shortest paths problem asks for the optimal (lowest-cost) path between every ordered pair of vertices, not just one start and one goal. The Floyd-Warshall algorithm solves it by initializing a $|V| \times |V|$ table `dist`, where `dist[u][v]` starts at the direct edge weight $w(u,v)$ if an edge exists (or infinity if it doesn't), and $0$ on the diagonal (`dist[v][v]`). It then loops over every vertex $k$ as a candidate "waypoint," and for every pair $(i,j)$, relaxes (see the Relaxation (Graph Search) entry) the route from $i$ to $j$ by checking whether detouring through $k$ — cost `dist[i][k] + dist[k][j]` — beats the best route to $j$ found so far. After considering every vertex as a possible waypoint, `dist` holds the true shortest-path cost between every pair.
+
+**Example.** Three vertices $1, 2, 3$ with directed edges $1\to2$ (cost $3$), $2\to3$ (cost $1$), and a direct edge $1\to3$ (cost $10$):
+
+| Step | What's checked | Result |
+|---|---|---|
+| Initialize | `dist[1][2]=3`, `dist[2][3]=1`, `dist[1][3]=10`, diagonal entries $=0$, everything else $=\infty$ | Starting table |
+| $k=1$ (route through vertex 1) | For every $i,j$: is `dist[i][1]+dist[1][j]` cheaper than `dist[i][j]`? | No improvement — nothing routes usefully through vertex $1$ yet |
+| $k=2$ (route through vertex 2) | Is `dist[1][2]+dist[2][3]` $= 3+1=4$ cheaper than `dist[1][3]=10`? | Yes — update `dist[1][3] \leftarrow 4` |
+| $k=3$ (route through vertex 3) | For every $i,j$: does routing through vertex $3$ help further? | No further improvement |
+
+The final `dist[1][3] = 4` correctly reflects the two-edge route $1 \to 2 \to 3$ (cost $3+1=4$), beating the direct edge's cost of $10$ — discovered automatically, without ever running a separate search from vertex $1$.
+
+**AI/ML Usage**: Useful whenever a domain needs *repeated* shortest-path queries between many different pairs of vertices rather than a single start/goal pair — for example, a warehouse with many robots that frequently need optimal routes between arbitrary pairs of locations. Precomputing every pairwise distance once with Floyd-Warshall is far cheaper in the long run than re-running Dijkstra's Algorithm or A* Search (A-Star Algorithm) from scratch for every new start/goal request.
+
+---
+
 <a id="arity"></a>
 ### Arity
 
@@ -123,6 +173,19 @@ All 139 entries, alphabetical. Read down the first column, then down the second,
 **Example.** If a calculation is "square the input, then add 1, then take the square root," a computer using autodiff doesn't need someone to work out the derivative of the whole combined formula in one shot — it tracks the derivative through each of the three small steps individually (squaring, then adding, then square-rooting) and multiplies those small derivatives together automatically to get the final answer.
 
 **AI/ML Usage**: Autodiff is exactly the technology that makes training modern neural networks practical at all — libraries like PyTorch and TensorFlow use it to automatically compute the gradient of a loss function with respect to every single one of a network's potentially billions of weights, which would be utterly impossible for a person to work out by hand, every single training step.
+
+---
+
+<a id="backpointer"></a>
+### Backpointer
+
+**The Big Idea**: This is the same idea as the parent pointer used in Breadth-First Search (BFS) and Dijkstra's Algorithm (see those entries) — a note at every state saying "which state did I get here from" — just given a new name because it's now used to walk *backward* through the search whenever a cost needs to be corrected, not only to reconstruct the final path once at the end.
+
+**General Usage**: A backpointer $b(X)$ records, for a state $X$, which neighboring state the current best-known path to $X$ passes through. Whenever $X$'s cost changes, every state whose backpointer points to $X$ may need its own cost updated too — so backpointers let an algorithm efficiently find and revisit exactly the states affected by a change, without re-examining the entire graph.
+
+**Example.** If $b(X) = Y$, that means the cheapest known route to $X$ currently goes through $Y$ as its immediate predecessor. If $Y$'s cost later increases, checking which states have $b(\cdot) = Y$ immediately reveals $X$ (and any other state routed through $Y$) as needing its own cost re-examined.
+
+**AI/ML Usage**: Backpointers are the mechanism that makes the D* (Dynamic A* Algorithm) entry's cost-propagation step possible — when an obstacle increases a state's cost, following backpointers backward is how the algorithm finds every other state whose previously-optimal path is now invalidated, without restarting the search from scratch.
 
 ---
 
@@ -281,6 +344,28 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="breadth-first-search-bfs"></a>
+### Breadth-First Search (BFS)
+
+**The Big Idea**: Picture ripples spreading out from a stone dropped in a pond — BFS explores a graph the same way, checking every vertex exactly one step away from the start before checking any vertex two steps away, and so on outward in even rings.
+
+**General Usage**: BFS explores a graph outward from a start vertex, using a first-in-first-out (FIFO) queue as its Frontier / Open List (see that entry): the vertex that has been waiting longest in the frontier is always expanded next. Because of this, BFS discovers vertices in strict order of their distance (in number of edges) from the start, so when it reaches the goal, the path it reconstructs is guaranteed to have the *fewest edges* of any path to the goal — provided every edge is treated as costing exactly the same amount.
+
+**Example.** Consider a graph with a start vertex $S$, a goal vertex $G$, and a helper vertex $A$, connected by edges $S\!-\!A$, $A\!-\!G$, and a direct edge $S\!-\!G$ (BFS, by design, ignores that these edges might have different real-world costs — it only counts hops).
+
+| Step | Action | Frontier after | Parent pointers so far |
+|---|---|---|---|
+| 1 | Initialize: $S$ visited, in frontier | $\{S\}$ | $\text{parent}(S)=\text{None}$ |
+| 2 | Expand $S$: discover $A$ and $G$ | $\{A, G\}$ | $\text{parent}(A)=S,\ \text{parent}(G)=S$ |
+| 3 | Expand $A$: its neighbors $S, G$ are both already visited, nothing new added | $\{G\}$ | unchanged |
+| 4 | Expand $G$: it is the goal, so BFS breaks immediately | — | unchanged |
+
+Following the parent pointers back from $G$ gives the path $S \to G$ directly — the fewest-hops path (just $1$ edge). But **this is a trap**: if the direct edge $S\!-\!G$ actually costs $10$ while the two-edge route $S \to A \to G$ costs only $1+1=2$ in total, BFS's answer is not the cheapest one — it never reconsiders $G$ once $G$ has been marked visited, even though a much cheaper route through $A$ existed. This is exactly why BFS should only be trusted when every edge genuinely costs the same; see the Dijkstra's Algorithm entry for the fix.
+
+**AI/ML Usage**: BFS is the direct ancestor of essentially every graph-search planning algorithm used in AI and robotics. The specific, minimal set of changes that turns BFS into Dijkstra's Algorithm, and Dijkstra's Algorithm into the A* algorithm (see the Cost-to-Come and Cost-to-Go entry in `math_symbols.md`), is a recurring theme in how these search algorithms are taught and understood — each one is best understood as "BFS, plus one more idea."
+
+---
+
 <a id="cauchy-schwarz-inequality"></a>
 ### Cauchy-Schwarz Inequality
 
@@ -356,6 +441,25 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 **Example.** If you flip a fair coin 1,000 times, common sense says you'll almost certainly see close to 500 heads, not, say, 900. A Chernoff bound makes this intuition mathematically precise: it guarantees the probability of straying far from 500 is not just small, but extremely, rapidly small — shrinking dramatically faster as the number of flips increases.
 
 **AI/ML Usage**: Chernoff bounds are a standard tool in machine learning theory for proving how much training data guarantees a learning algorithm's error rate will be close to its true expected value with very high confidence — they underlie many of the specific numeric guarantees found in PAC-learning proofs about sample complexity.
+
+---
+
+<a id="closed-set-explored-vertices"></a>
+### Closed Set (Explored Vertices)
+
+**The Big Idea**: This builds directly on the Frontier / Open List entry — if the frontier is your "still to check" list, the closed set is your "already finished" list: once a vertex is checked off onto it, it's never reconsidered.
+
+**General Usage**: In graph search algorithms like Dijkstra's Algorithm, the closed set (also called the explored or visited set) is the collection of vertices that have already been extracted from the Priority Queue and had every one of their outgoing edges relaxed (see the Relaxation (Graph Search) entry). A vertex enters the closed set exactly once — once inside, its recorded cost is treated as final and is never updated again.
+
+**Example.** Running through the Dijkstra's Algorithm entry's worked example ($S\!-\!A$ cost $1$, $A\!-\!G$ cost $1$, direct $S\!-\!G$ cost $10$):
+
+| Step | Vertex extracted | Closed set after this step |
+|---|---|---|
+| 1 | $S$ | $\{S\}$ |
+| 2 | $A$ | $\{S, A\}$ |
+| 3 | $G$ (goal — algorithm stops) | $\{S, A, G\}$ |
+
+**AI/ML Usage**: The closed set is exactly what makes the Proof by Contradiction of Dijkstra's Algorithm's optimality work (see that entry): any hypothetical cheaper path to a newly extracted vertex would have to pass either through a vertex already in the closed set — impossible, because every edge leaving a closed vertex has already been relaxed — or through a vertex still outside the closed set, which is impossible for a different reason (that vertex would itself have had a lower cost and would have been extracted first).
 
 ---
 
@@ -502,6 +606,19 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="d-dynamic-a-algorithm"></a>
+### D* (Dynamic A* Algorithm)
+
+**The Big Idea**: This builds on Dijkstra's Algorithm (see that entry) — instead of throwing away an entire plan and starting over the moment the world turns out to be different than expected, D* reuses as much of the old plan as possible, only redoing the small part that the new information actually invalidates.
+
+**General Usage**: D\*, introduced by Anthony Stentz ("Optimal and Efficient Path Planning for Partially-Known Environments," IEEE ICRA, 1994), solves the **online replanning** problem: an agent has already computed a plan (a policy — an action for every state) using prior knowledge of the world, starts executing it, and then discovers an unexpected obstacle blocking its path. Replanning from scratch with Dijkstra's Algorithm or A* Search (A-Star Algorithm) would work, but can be far more computation than necessary on a large map. D* instead: (1) assigns the obstacle a very large cost (larger than the total cost of every other unoccupied state combined, so a plan will always route around it if any route exists at all); (2) propagates this cost increase backward, using Backpointer entries, from the obstacle outward through every state that used to route through it; (3) stops propagating a given direction once it reaches a state whose cost via some *other*, unaffected route is actually cheaper — this is exactly the RAISE and LOWER States boundary (see that entry); and (4) propagates the corrected, now-optimal costs back inward from that boundary. The only structural change from Dijkstra's Algorithm needed to do all this is: the priority queue is now ordered by the key value $k(X)$ (see the RAISE and LOWER States entry) instead of the plain cost $h(X)$, and every state additionally keeps a Backpointer.
+
+**Example.** On a grid where an agent's route runs into a newly discovered obstacle: the obstacle cell is assigned a cost of $1000$; every cell that used to route through it (found by following backpointers) is provisionally marked with a correspondingly inflated cost ($1001$, $1002$, \dots); once this outward wave reaches a cell where an alternate, unaffected route is cheaper than continuing to inflate (say, a true cost of $6$ instead of $1005$), that cell becomes the boundary, and the correct, much lower costs are propagated back inward from there — resulting in only a local re-route for some states, and no change at all for states untouched by the obstacle.
+
+**AI/ML Usage**: D* and its descendants (D* Lite, Focused D\*, which adds a heuristic) are the standard algorithms behind real-time robot navigation in partially known or changing environments — for example, a warehouse robot or planetary rover that must react to newly discovered obstacles without pausing to recompute an entire route from scratch every time. Like plain Dijkstra's Algorithm, base D* uses no heuristic; Focused D* is a variant that adds one, at the cost of the same kind of added complexity A* introduces over Dijkstra's Algorithm.
+
+---
+
 <a id="dead-end"></a>
 ### Dead End
 
@@ -564,6 +681,27 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 **Example.** For predicting "cat," "dog," or "bird" from an image, a DW approach would learn three completely separate weight vectors, $\mathbf{w}_{\text{cat}}$, $\mathbf{w}_{\text{dog}}$, $\mathbf{w}_{\text{bird}}$, each weighing the same raw pixel features differently. A DF approach instead uses one shared set of weights, but presents the model with class-specific combined features, like "pixel values combined with the specific class being asked about right now."
 
 **AI/ML Usage**: This is a subtle but genuinely important design decision when building multi-class classifiers, particularly in structured prediction settings (like sequence labeling) — the choice affects how many total parameters a model has and how it shares (or doesn't share) statistical strength for what it's learned across different classes.
+
+---
+
+<a id="dijkstras-algorithm"></a>
+### Dijkstra's Algorithm
+
+**The Big Idea**: This is Breadth-First Search (see that entry) with one change in philosophy: instead of "first come, first served," it's "cheapest so far, served first" — which is exactly what's needed once different moves are allowed to cost different amounts.
+
+**General Usage**: Dijkstra's Algorithm finds the lowest-cost path from a start vertex to a goal vertex in a graph whose edges may have different, non-negative costs. It is produced from Breadth-First Search by exactly three changes: (1) the Frontier / Open List becomes a Priority Queue (see that entry) ordered by cost-to-come instead of a FIFO queue; (2) a cost map replaces the simple visited/not-visited flag, recording the *lowest known* cost-to-come to each vertex found so far; (3) every time a vertex is expanded, each of its neighbors is relaxed (see the Relaxation (Graph Search) entry) — updating that neighbor's cost and position in the priority queue whenever a cheaper route through the current vertex is discovered. The algorithm stops (and is guaranteed optimal) the moment the goal vertex is itself extracted from the priority queue.
+
+**Example.** Running Dijkstra's Algorithm on the same graph as the Breadth-First Search entry — $S\!-\!A$ (cost $1$), $A\!-\!G$ (cost $1$), direct $S\!-\!G$ (cost $10$) — starting at $S$ with goal $G$:
+
+| Step | Extract from priority queue | Relax neighbors | Cost map after this step |
+|---|---|---|---|
+| 1 | $S$ (cost $0$) | $A$: new cost $0+1=1$ (not seen before, add); $G$: new cost $0+10=10$ (not seen before, add) | $\{S:0,\ A:1,\ G:10\}$ |
+| 2 | $A$ (cost $1$, the lowest remaining) | $G$: new cost $1+1=2$, which beats $G$'s current $10$, so update | $\{S:0,\ A:1,\ G:2\}$ |
+| 3 | $G$ (cost $2$, now the lowest) — this is the goal, so the algorithm stops | — | $\{S:0,\ A:1,\ G:2\}$ |
+
+The reconstructed path, following parent pointers back from $G$, is $S \to A \to G$ with total cost $2$ — the genuinely cheapest path, correctly found despite the misleadingly short 1-edge direct route $S\!-\!G$ that cost BFS the right answer in that entry's example.
+
+**AI/ML Usage**: Dijkstra's Algorithm underlies essentially every "find the cheapest route" system that has no advance estimate of remaining distance — used in network routing protocols and in any pathfinding problem with genuinely variable edge costs. Adding such an estimate of the remaining cost (the cost-to-go $G(x)$ from the Cost-to-Come and Cost-to-Go entry in `math_symbols.md`) to steer the search toward the goal faster, while still guaranteeing the optimal path, is exactly the idea behind the A* algorithm.
 
 ---
 
@@ -697,6 +835,19 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="frontier-open-list"></a>
+### Frontier / Open List
+
+**The Big Idea**: This is exactly a to-do list — the set of "things I still need to check" that grows every time you discover something new to look at, and shrinks every time you actually check one of them off.
+
+**General Usage**: In graph search, the frontier (also called the open list) is the set of vertices that have been *discovered* (reached from the start by some path) but not yet *expanded* (had their own neighbors examined). A search algorithm repeatedly removes one vertex from the frontier, expands it, and adds any newly discovered neighbors back into the frontier, continuing until the goal is removed from the frontier or the frontier becomes empty.
+
+**Example.** For the graph $S\!-\!A$, $A\!-\!G$, $S\!-\!G$ used throughout this section (see the worked example in the Breadth-First Search (BFS) entry), the frontier starts as just $\{S\}$, becomes $\{A, G\}$ once $S$ is expanded, and shrinks back down as $A$ and then $G$ are removed and expanded in turn.
+
+**AI/ML Usage**: The same frontier idea underlies Breadth-First Search, Dijkstra's Algorithm, and A* search (see their entries) — the only thing that changes between these algorithms is *which* rule decides what comes out of the frontier next: oldest-inserted for BFS's FIFO queue, or lowest-cost for Dijkstra's and A\*'s Priority Queue (see that entry).
+
+---
+
 <a id="gaussian-graphical-model"></a>
 ### Gaussian Graphical Model
 
@@ -811,6 +962,46 @@ Notice the slope is negative at every one of these steps (since all these guesse
 
 ---
 
+<a id="greedy-best-first-search-heuristic-only-search"></a>
+### Greedy Best-First Search (Heuristic-Only Search)
+
+**The Big Idea**: This is what happens if you throw away all memory of how far you've already walked, and steer purely by "how close does this option look to the destination" — like following your gut sense of direction toward a landmark, without ever tracking the actual distance you've covered getting there.
+
+**General Usage**: Greedy Best-First Search modifies Dijkstra's Algorithm by prioritizing every frontier vertex using **only** its Heuristic Function value $h(x)$ (see that entry in `math_symbols.md`), completely ignoring the accumulated cost-to-come that it actually took to reach that vertex. Because the accumulated cost is thrown away, extracting a vertex from the priority queue is no longer guaranteed to reflect the cheapest way to reach it — even when the heuristic itself is perfectly admissible, the algorithm can still return a genuinely suboptimal path.
+
+**Example.** Using the exact same graph and the exact same admissible heuristic as the A* Search (A-Star Algorithm) entry — $S\!-\!A$ (cost $1$), $S\!-\!B$ (cost $1$), $A\!-\!G$ (cost $5$), $B\!-\!G$ (cost $1$), $h(A)=0$, $h(B)=1$, $h(G)=0$ — but prioritizing by $h$ alone instead of cost-to-come plus $h$:
+
+| Step | Extract (priority = $h$ only) | Relax neighbors | Notes |
+|---|---|---|---|
+| 1 | $S$ | $A$: priority $h(A)=0$; $B$: priority $h(B)=1$ | Frontier: $\{A{:}0,\ B{:}1\}$ |
+| 2 | $A$ (priority $0$ — looks best, since $h(A)=0$) | $G$ via $A$: cost $1+5=6$, priority $h(G)=0$ | Frontier: $\{B{:}1,\ G{:}0\}$ |
+| 3 | $G$ (priority $0$) — this is the goal, so the search stops | — | Final cost $6$, via $S \to A \to G$ |
+
+Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ — even though the true cheapest path, $S \to B \to G$, costs only $2$. The heuristic's misleadingly low value at $A$ ($h(A)=0$, which is admissible but not remotely tight — the true remaining cost from $A$ is $5$) was enough to lure the search down the wrong branch permanently, precisely because nothing in the priority value remembered that reaching $A$ had already cost something too.
+
+**AI/ML Usage**: Greedy Best-First Search is faster in practice than A* Search (A-Star Algorithm) — see that entry — because it commits to whichever option currently looks nearest to the goal, without the bookkeeping A* does to keep cheaper-but-currently-unfavored paths open. That speed comes at the direct cost of the optimality guarantee, which is exactly why A\*'s extra ingredient (tracking real cost-to-come alongside the heuristic) matters whenever a genuinely optimal answer, not just a fast plausible one, is required.
+
+---
+
+<a id="grid-connectivity-4-connected-vs-8-connected"></a>
+### Grid Connectivity (4-Connected vs. 8-Connected)
+
+**The Big Idea**: This builds on the Graph entry in `math_symbols.md` — it's simply a rule for deciding, when you lay a regular grid of points over a map or image, which nearby points count as directly connected to each other.
+
+**General Usage**: When a continuous space (like a building floor plan) is discretized into a grid of states for planning, each state needs a fixed rule for which other states it can move to in one step. A **4-connected grid** connects every state only to its four nearest neighbors — north, south, east, and west. An **8-connected grid** additionally connects each state to its four diagonal neighbors, for eight neighbors total. In both cases, an obstacle blocking the direct path between two would-be neighbors is represented by simply removing that one edge from the graph, not by removing either state.
+
+**Example.** Consider a single interior grid cell with coordinates $(2,2)$ in a small $3\times 3$ grid of cells indexed by $(\text{column}, \text{row})$ from $(1,1)$ to $(3,3)$.
+
+| Step | Neighbor rule | Neighbors of $(2,2)$ |
+|---|---|---|
+| 1 | 4-connected: cardinal directions only | $(2,1),\ (2,3),\ (1,2),\ (3,2)$ — 4 neighbors |
+| 2 | 8-connected: cardinal directions plus diagonals | add $(1,1),\ (3,1),\ (1,3),\ (3,3)$ — 8 neighbors total |
+| 3 | Obstacle introduced between $(2,2)$ and $(2,1)$ | the edge $(2,2)\text{--}(2,1)$ is removed; both cells remain valid states, but moving directly between them is no longer a legal one-step action |
+
+**AI/ML Usage**: The choice between a 4-connected and an 8-connected grid is one of the first design decisions in robot path planning and in classical grid-based search algorithms (see Heuristic Function and Admissible Heuristic in `math_symbols.md` for how the choice of connectivity interacts with choosing a good heuristic, since a heuristic that assumes only 4-connectivity can under- or overestimate true cost on an 8-connected grid).
+
+---
+
 <a id="grounding-instantiation"></a>
 ### Grounding / Instantiation
 
@@ -889,6 +1080,26 @@ Notice the slope is negative at every one of these steps (since all these guesse
 
 ---
 
+<a id="inflated-heuristic-weighted-a"></a>
+### Inflated Heuristic (Weighted A\*)
+
+**The Big Idea**: This builds on the Admissible Heuristic entry in `math_symbols.md` — it's deliberately breaking the "never overestimate" promise on purpose, a little bit, as a controlled trade of a small, bounded amount of accuracy for a large amount of speed.
+
+**General Usage**: An inflated heuristic multiplies an admissible heuristic $h$ by an inflation factor $F > 1$: $h' = F \times h$. Because $F \times h$ can now exceed the true remaining cost, $h'$ is generally no longer admissible, so A* Search (A-Star Algorithm) run with $h'$ is no longer guaranteed to find the truly optimal path — but the resulting path's cost is still bounded: it will cost at most a factor of $F$ more than the true optimum. Even a modest inflation ($F = 1.05$ to $1.1$, i.e. 5-10%) often produces a disproportionately large speedup, because it makes the search much more strongly biased toward vertices that look like they're in a straight line toward the goal.
+
+**Example.** Two candidate vertices $X$ (cost-to-go $g=6$, heuristic $h=4$) and $Y$ ($g=3$, $h=7$), with the true admissible heuristic ($F=1$):
+
+| $F$ | Priority of $X$ ($g + F\!\cdot\!h$) | Priority of $Y$ ($g + F\!\cdot\!h$) | Preferred |
+|---|---|---|---|
+| $1.0$ (admissible) | $6 + 1.0(4) = 10$ | $3 + 1.0(7) = 10$ | Tied |
+| $1.1$ (inflated) | $6 + 1.1(4) = 10.4$ | $3 + 1.1(7) = 10.7$ | $X$ |
+
+Inflating the heuristic can change which vertex looks more promising, steering the search more aggressively toward vertices with a smaller heuristic (i.e., that look closer to the goal), even when doing so is not guaranteed to be exactly optimal.
+
+**AI/ML Usage**: This is the idea behind Weighted A\*, a widely used family of real-time and "anytime" planning algorithms in robotics: when a hard time budget makes a guaranteed-optimal search infeasible, a bounded-suboptimal path delivered quickly (with a known worst-case penalty factor $F$) is often far more useful in practice than an optimal path delivered too late.
+
+---
+
 <a id="jensens-inequality"></a>
 ### Jensen's Inequality
 
@@ -902,29 +1113,33 @@ Notice the slope is negative at every one of these steps (since all these guesse
 
 ---
 
-<a id="kernel-function"></a>
-### Kernel Function
+<a id="jump-point-search-jps"></a>
+### Jump Point Search (JPS)
 
-**The Big Idea**: This builds directly on the Feature Extractor / Feature Function entry from the math_symbols file — a kernel function is a clever mathematical shortcut for effectively computing $\phi(x)\cdot\phi(x')$ (a dot product in some expanded, higher-dimensional feature space) without ever having to actually compute $\phi(x)$ itself.
+**The Big Idea**: This builds on A* Search (A-Star Algorithm) — instead of checking every single grid cell one step at a time, Jump Point Search looks further ahead along a straight or diagonal line and only stops to record a point in the Priority Queue where something has actually changed (an obstacle, or the goal), skipping over long stretches of uninformative intermediate cells entirely.
 
-**General Usage**: A kernel function $K(x,x')$ measures the similarity between two data points, computed in a way that's mathematically equivalent to first transforming both points into a much higher-dimensional feature space and then taking their dot product there — but computed far more efficiently, entirely skipping the expensive step of ever actually building that higher-dimensional representation.
+**General Usage**: Introduced by Daniel Harabor and Alban Grastien ("Improving Jump Point Search," ICAPS 2014), Jump Point Search combines two ideas on top of ordinary A* search on a uniform-cost grid:
 
-**Example.** The popular RBF (radial basis function) kernel, $K(x,x')=e^{-\gamma\lVert x-x'\rVert^2}$, effectively measures similarity in an infinite-dimensional feature space — computing that similarity directly, with this one simple, efficient formula, would be utterly impossible to achieve by first explicitly building out an infinite-dimensional feature vector by hand.
+1. **Neighbor pruning.** Given the vertex a search path arrived from (its parent $P$) and the current vertex $C$, most of $C$'s usual neighbors can be proven to never lead to a shorter path than one already reachable directly from $P$, so they can be skipped entirely without ever risking optimality. A neighbor survives pruning only when it becomes a **forced neighbor** — one that pruning cannot rule out, because an obstacle blocks the otherwise-shorter route through $P$ that the pruning argument depended on.
+2. **Jumping.** Rather than inserting every single cell passed through into the priority queue, the search jumps ahead in a straight or diagonal line, only inserting a point into the queue when it hits a forced neighbor, the start or goal, or a boundary case for a diagonal jump.
 
-**AI/ML Usage**: Kernel functions are the entire mathematical foundation of kernel methods, most famously kernelized Support Vector Machines (see that entry) — this "kernel trick" lets a fundamentally simple, linear algorithm effectively learn highly complex, non-linear decision boundaries, all without ever needing to explicitly compute or even fully define the expanded feature space it's implicitly, efficiently operating within.
+**Example.** For a straight-line move from parent $P$ to current $C$ (moving right), label $C$'s eight neighbors as in the grid below (matching the layout used on the lecture's board):
 
----
+| 1 | 2 | 3 |
+|---|---|---|
+| P | C | 7 |
+| 4 | 5 | 6 |
 
-<a id="kl-divergence"></a>
-### KL Divergence
+| Neighbor(s) | Pruning outcome |
+|---|---|
+| $1, 4$ | Always pruned — the path $P \to C \to 1$ (or $4$) is never shorter than going directly $P \to 1$ (or $4$), regardless of obstacles |
+| $2, 5$ | Pruned *unless* $1$ (respectively $4$) is blocked by an obstacle — if it is, $2$ (or $5$) becomes a forced neighbor and must be kept |
+| $3, 6$ | Pruned *unless* $2$ (respectively $5$) is blocked — if it is, $3$ (or $6$) becomes a forced neighbor |
+| $7$ | Always kept — it's the one neighbor directly continuing the line of travel |
 
-**The Big Idea**: This builds on the Logarithm and Probability / Probability Density entries from the math_symbols file — KL divergence measures how different two probability distributions are from each other, using logarithms to make that difference mathematically precise.
+So of the 8 possible neighbors, only $7$ is always explored; $3$ and $6$ are explored only when an obstacle forces them to be.
 
-**General Usage**: KL (Kullback-Leibler) Divergence, $\text{KL}(q \parallel p)$, measures how different one probability distribution $q$ is from a reference distribution $p$. It's always zero or positive, and it equals exactly zero only when the two distributions are precisely identical — the larger the value, the more the two distributions genuinely, meaningfully differ from each other.
-
-**Example.** If $q$ and $p$ are two coin-flip distributions, with $p$ representing a perfectly fair coin (50/50) and $q$ representing a heavily biased coin (90% heads), $\text{KL}(q\parallel p)$ would come out as a fairly large, clearly positive number — quantifying just how noticeably different the biased coin's actual behavior is from the fair-coin reference it's being directly compared against.
-
-**AI/ML Usage**: KL divergence appears throughout modern machine learning: it's the core mathematical tool used to train Variational Autoencoders (measuring how far a learned distribution has drifted from a simple, well-behaved reference distribution), and it's closely, directly related to cross-entropy loss (see that entry), which is really KL divergence combined with one small additional constant term.
+**AI/ML Usage**: Jump Point Search is used heavily in real-time pathfinding for video games (its original motivating application) and robotics, where grid-based maps can have millions of cells and paths must be recomputed many times per second. By eliminating most of the Priority Queue operations that plain A* would otherwise perform on uninformative intermediate cells, JPS routinely cuts the total number of such operations by an order of magnitude or more — all while still finding the exact same optimal path as ordinary A\*, unlike an Inflated Heuristic (Weighted A\*), which trades optimality itself for speed.
 
 ---
 
@@ -999,6 +1214,32 @@ Classify the new point $P=(4,3)$. Compute the squared distance from $P$ to every
 **With $K=5$** on this exact same data, the five closest points are $A_2$, $A_3$, $B_1$, $B_2$, $B_3$ (everything except the farthest point, $A_1$) — now two Red against three Blue, so the majority vote flips to predicting **Blue**. Nothing about the data or the point being classified changed at all — only the choice of $K$ did, and that alone was enough to flip the final answer. This is exactly why $K$ is a genuine hyperparameter to be chosen carefully, not an implementation detail: a small $K$ lets a single nearby point (like $A_2$ here) dominate the decision, while a larger $K$ smooths things out by pulling in points that are farther away and less obviously relevant.
 
 **AI/ML Usage**: K-Nearest Neighbors is used directly for classification and regression on modest-sized datasets, and its core "find the closest matches" mechanism underlies recommendation systems (finding other users or items most similar to a given one) and certain anomaly-detection methods (a point whose nearest neighbors are all unusually far away is flagged as an outlier). Because it has no real training phase, all of its computational cost is deferred to prediction time — for every single new point, it must measure its distance to every stored training point, which becomes slow for very large datasets, unlike a decision tree or a trained neural network, which do all their expensive work once, up front, and then predict quickly afterward. The choice of $K$ is a direct, hands-on illustration of the Bias-Variance Trade-off (see that entry): a small $K$ (like $K=1$) has low bias but high variance — it reacts to every bit of noise in the training data, exactly as $K=3$ did above by leaning on a single close point — while a large $K$ has higher bias but lower variance, since it averages over many neighbors and is far less swayed by any one of them.
+
+---
+
+<a id="kernel-function"></a>
+### Kernel Function
+
+**The Big Idea**: This builds directly on the Feature Extractor / Feature Function entry from the math_symbols file — a kernel function is a clever mathematical shortcut for effectively computing $\phi(x)\cdot\phi(x')$ (a dot product in some expanded, higher-dimensional feature space) without ever having to actually compute $\phi(x)$ itself.
+
+**General Usage**: A kernel function $K(x,x')$ measures the similarity between two data points, computed in a way that's mathematically equivalent to first transforming both points into a much higher-dimensional feature space and then taking their dot product there — but computed far more efficiently, entirely skipping the expensive step of ever actually building that higher-dimensional representation.
+
+**Example.** The popular RBF (radial basis function) kernel, $K(x,x')=e^{-\gamma\lVert x-x'\rVert^2}$, effectively measures similarity in an infinite-dimensional feature space — computing that similarity directly, with this one simple, efficient formula, would be utterly impossible to achieve by first explicitly building out an infinite-dimensional feature vector by hand.
+
+**AI/ML Usage**: Kernel functions are the entire mathematical foundation of kernel methods, most famously kernelized Support Vector Machines (see that entry) — this "kernel trick" lets a fundamentally simple, linear algorithm effectively learn highly complex, non-linear decision boundaries, all without ever needing to explicitly compute or even fully define the expanded feature space it's implicitly, efficiently operating within.
+
+---
+
+<a id="kl-divergence"></a>
+### KL Divergence
+
+**The Big Idea**: This builds on the Logarithm and Probability / Probability Density entries from the math_symbols file — KL divergence measures how different two probability distributions are from each other, using logarithms to make that difference mathematically precise.
+
+**General Usage**: KL (Kullback-Leibler) Divergence, $\text{KL}(q \parallel p)$, measures how different one probability distribution $q$ is from a reference distribution $p$. It's always zero or positive, and it equals exactly zero only when the two distributions are precisely identical — the larger the value, the more the two distributions genuinely, meaningfully differ from each other.
+
+**Example.** If $q$ and $p$ are two coin-flip distributions, with $p$ representing a perfectly fair coin (50/50) and $q$ representing a heavily biased coin (90% heads), $\text{KL}(q\parallel p)$ would come out as a fairly large, clearly positive number — quantifying just how noticeably different the biased coin's actual behavior is from the fair-coin reference it's being directly compared against.
+
+**AI/ML Usage**: KL divergence appears throughout modern machine learning: it's the core mathematical tool used to train Variational Autoencoders (measuring how far a learned distribution has drifted from a simple, well-behaved reference distribution), and it's closely, directly related to cross-entropy loss (see that entry), which is really KL divergence combined with one small additional constant term.
 
 ---
 
@@ -1150,6 +1391,26 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** If a random variable's expected value is $\mathbb{E}[X]=10$, Markov's inequality guarantees the probability that $X$ turns out to be $50$ or more is at most $\frac{10}{50}=0.2$, or 20% — this specific bound holds true regardless of the exact underlying shape of the distribution, requiring nothing more than knowing that value is never negative.
 
 **AI/ML Usage**: Markov's inequality is the foundational building block that both Chebyshev's Inequality and Chernoff Bounds (see those entries above) are ultimately derived from — it's typically among the very first, most basic probabilistic tools introduced in a machine learning theory course, precisely because so many other, more powerful and precise bounds are built directly on top of it.
+
+---
+
+<a id="mathematical-induction-inductive-hypothesis"></a>
+### Mathematical Induction / Inductive Hypothesis
+
+**The Big Idea**: Picture a long line of dominoes. If you know the first domino falls, and you know that *any* falling domino always knocks over the next one, you know every single domino in the line will eventually fall — without ever having to push each one individually.
+
+**General Usage**: An inductive argument establishes that a statement (the inductive hypothesis) holds at every step of a repeating process by proving two things: (1) a **base case** — the statement holds at the very first step — and (2) an **inductive step** — *whenever* the statement holds at one step, it necessarily also holds at the next step. Together, these two facts guarantee the statement holds at every step, no matter how many steps there turn out to be, without checking each one by hand.
+
+**Example.** Proving that $1 + 2 + \cdots + n = \dfrac{n(n+1)}{2}$ for every positive whole number $n$:
+
+| Step | What is shown | Detail |
+|---|---|---|
+| 1. Base case | The formula holds for $n=1$ | Left side: $1$. Right side: $\frac{1(1+1)}{2} = \frac{2}{2} = 1$. They match. |
+| 2. Assume the hypothesis | Suppose the formula already holds for some $n=k$ | Assume $1+2+\cdots+k = \frac{k(k+1)}{2}$ |
+| 3. Inductive step | Show it must then hold for $n=k+1$ | $1+2+\cdots+k+(k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1)+2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$, which is exactly the formula with $n=k+1$ |
+| 4. Conclude | Base case plus inductive step together prove the formula for every $n$ | True for $n=1$, and true-at-$k$ always forces true-at-$k+1$, so it's true for $n=1,2,3,\dots$ forever |
+
+**AI/ML Usage**: Induction is the standard tool for proving that an iterative algorithm behaves correctly at *every* step it takes, not just the first few. The optimality proof of Dijkstra's Algorithm (see that entry) is exactly an inductive argument: its inductive hypothesis $H_1$ claims that whenever a vertex is extracted from the priority queue with minimum priority, its recorded cost is already optimal, and establishing this one hypothesis (via the Proof by Contradiction entry) is enough to certify the algorithm's correctness at every step of its run, however many vertices the graph contains.
 
 ---
 
@@ -1379,19 +1640,6 @@ Spam's score, $0.224$, is much larger than Not Spam's, $0.012$, so Naive Bayes p
 
 ---
 
-<a id="np-hard"></a>
-### NP-Hard
-
-**The Big Idea**: This builds on Big-O Notation from the math_symbols file — NP-hard describes a category of problems believed to require exponentially-growing computation time in the worst case, no matter how cleverly an algorithm for solving them is designed.
-
-**General Usage**: A problem is NP-hard if it's at least as computationally difficult as the hardest problems in a well-studied class called "NP" — informally, no known algorithm can solve every instance of an NP-hard problem quickly (in polynomial time) in the worst case, and most computer scientists believe no such fast algorithm can possibly exist at all.
-
-**Example.** The traveling salesperson problem — finding the shortest possible route that visits every city on a list exactly once — is a classic example of an NP-hard problem. For a small number of cities it's genuinely easy to solve directly; but as the number of cities grows, the number of possible routes to check explodes so explosively fast that no computer, however powerful, can realistically check every single one for a sufficiently large list of cities.
-
-**AI/ML Usage**: Many important, practically relevant AI problems are NP-hard, including general planning and many constraint satisfaction problems — this is precisely why so much of AI research focuses on heuristics, approximations, and clever, targeted search techniques that work well in most realistic, practical cases, rather than on trying to find one single, perfectly guaranteed, always-fast algorithm that provably cannot exist for every conceivable worst case.
-
----
-
 <a id="normal-equations"></a>
 ### Normal Equations
 
@@ -1402,6 +1650,19 @@ Spam's score, $0.224$, is much larger than Not Spam's, $0.012$, so Naive Bayes p
 **Example.** Given a dataset's feature matrix $X$ and target values $\mathbf{y}$, plugging both directly into the normal equations and solving for $\mathbf{w}$ immediately gives the exact same optimal weights that gradient descent would only ever gradually, iteratively converge toward, step by step, over many separate training updates.
 
 **AI/ML Usage**: The normal equations work well and are commonly used for smaller linear regression problems, but become computationally impractical for datasets with a very large number of features, since they require inverting a large matrix (an expensive operation) — for such larger, more demanding cases, iterative gradient-based optimization methods are generally used instead.
+
+---
+
+<a id="np-hard"></a>
+### NP-Hard
+
+**The Big Idea**: This builds on Big-O Notation from the math_symbols file — NP-hard describes a category of problems believed to require exponentially-growing computation time in the worst case, no matter how cleverly an algorithm for solving them is designed.
+
+**General Usage**: A problem is NP-hard if it's at least as computationally difficult as the hardest problems in a well-studied class called "NP" — informally, no known algorithm can solve every instance of an NP-hard problem quickly (in polynomial time) in the worst case, and most computer scientists believe no such fast algorithm can possibly exist at all.
+
+**Example.** The traveling salesperson problem — finding the shortest possible route that visits every city on a list exactly once — is a classic example of an NP-hard problem. For a small number of cities it's genuinely easy to solve directly; but as the number of cities grows, the number of possible routes to check explodes so explosively fast that no computer, however powerful, can realistically check every single one for a sufficiently large list of cities.
+
+**AI/ML Usage**: Many important, practically relevant AI problems are NP-hard, including general planning and many constraint satisfaction problems — this is precisely why so much of AI research focuses on heuristics, approximations, and clever, targeted search techniques that work well in most realistic, practical cases, rather than on trying to find one single, perfectly guaranteed, always-fast algorithm that provably cannot exist for every conceivable worst case.
 
 ---
 
@@ -1665,6 +1926,39 @@ Since the total variance in the data is $3$ (the trace) and the larger eigenvalu
 
 ---
 
+<a id="priority-queue"></a>
+### Priority Queue
+
+**The Big Idea**: This is the difference between a deli counter, where you're served strictly in the order you arrived (a plain queue), and a hospital emergency room, where whoever has the most urgent condition is treated next, regardless of who walked in first — a priority queue is the emergency-room version of a waiting line.
+
+**General Usage**: A priority queue is a data structure that stores items each tagged with a priority value (in graph search, typically a cost), and always returns the item with the best priority — for a cost-minimizing search, the *lowest* cost — whenever an item is requested, no matter what order the items were inserted in. Many priority queues used in graph search also support *decreasing* an already-stored item's priority in place, rather than only inserting brand-new items.
+
+**Example.** Following the same three-vertex example worked through in the Dijkstra's Algorithm entry: after $S$ is expanded, the priority queue holds $A$ with priority $1$ and $G$ with priority $10$; asked for the next item, it returns $A$ (the lower priority value), not $G$, even though both were inserted at the same step.
+
+**AI/ML Usage**: The exact data structure Dijkstra's algorithm and A* search keep their Frontier / Open List in (see that entry). How quickly a priority queue can extract its minimum-priority item and update priorities directly sets the running time of these algorithms: a naive array-based implementation extracts the minimum in $O(|V|)$ time by scanning every stored item, while a more advanced structure called a Fibonacci heap performs these operations fast enough that the overall algorithm runs in $O(|E| + |V|\log|V|)$ time instead.
+
+---
+
+<a id="proof-by-contradiction"></a>
+### Proof by Contradiction
+
+**The Big Idea**: This is "innocent until proven guilty — but let's see what happens if we suppose otherwise." To show something is true, you temporarily assume its *opposite* is true, then show that assumption forces something impossible — which means the opposite assumption had to be false all along, so the original statement must be true.
+
+**General Usage**: To prove a statement $P$ by contradiction: assume $\neg P$ (the Logical Negation of $P$ — see that entry in `math_symbols.md`) is true instead, enumerate every way $\neg P$ could hold, and show each one leads to a logical impossibility — something that contradicts a fact already established. Since assuming $\neg P$ leads only to impossibilities, $\neg P$ must be false, and therefore $P$ is true.
+
+**Example.** Claim: there is no smallest positive real number.
+
+| Step | Reasoning |
+|---|---|
+| 1. Assume the opposite | Suppose there *is* a smallest positive real number; call it $x$, so $x>0$ |
+| 2. Derive a consequence | Consider $x/2$. Since $x>0$, also $x/2>0$, and $x/2 < x$ |
+| 3. Reach a contradiction | $x/2$ is a positive real number smaller than $x$ — but $x$ was assumed to be the *smallest* positive real number, so nothing can be smaller than it |
+| 4. Conclude | The assumption in Step 1 must be false; therefore, no smallest positive real number exists |
+
+**AI/ML Usage**: This is exactly the proof strategy used to establish Dijkstra's Algorithm's optimality (see the Dijkstra's Algorithm entry in this file): rather than directly demonstrating that every vertex's recorded cost is optimal, the proof assumes a vertex's cost *could* be non-optimal, exhaustively lists the only two ways that could happen (a cheaper route through the Closed Set (Explored Vertices), or a cheaper route through a still-unexplored vertex), and shows both are impossible given what non-negative edge weights and the Priority Queue's extraction order already guarantee.
+
+---
+
 <a id="pseudo-inverse"></a>
 ### Pseudo-Inverse
 
@@ -1688,6 +1982,19 @@ Since the total variance in the data is $3$ (the trace) and the larger eigenvalu
 **Example.** For $A=\begin{pmatrix}2&0\\0&3\end{pmatrix}$ and $\mathbf{v}=(x,y)$, the quadratic form $\mathbf{v}^\top A\mathbf{v}$ works out to $2x^2+3y^2$ — a direct, natural generalization of a plain single-variable quadratic term, now with one separate coefficient for each of the two dimensions involved.
 
 **AI/ML Usage**: Quadratic forms appear throughout machine learning, particularly in optimization: the loss surface (see that entry above) near a minimum can typically be closely approximated by a quadratic form built from the Hessian matrix, and whether that particular quadratic form is convex or not directly determines whether the nearby point genuinely is a true minimum at all.
+
+---
+
+<a id="raise-and-lower-states"></a>
+### RAISE and LOWER States
+
+**The Big Idea**: This builds on the D* (Dynamic A* Algorithm) entry — it's simply a two-color labeling of every state as either "still waiting to find out its true new cost" (Raise) or "already knows its true new cost" (Lower), which tells the algorithm exactly where to stop propagating.
+
+**General Usage**: Recall the key value $k(X)$, the minimum of a state's cost $h(X)$ across every update the graph has seen — before a change, always $k(X) = h(X)$. A state is a **Lower state** if $k(X) = h(X)$: either its cost never changed at all, or it changed but a local reroute has already restored it to a cost consistent with its original key value — in both cases, the path from $X$ is confirmed optimal. A state is a **Raise state** if $k(X) < h(X)$: its true cost has genuinely increased above what it used to be, and this increase has not yet been resolved. Algorithmically, D* expands outward through the wave of Raise states — marking each one for potential correction as it goes, without yet committing to a final value — until it reaches the boundary where a Lower state is encountered; only then does it know the correct values, and it propagates them back inward through the states it just marked.
+
+**Example.** After an obstacle newly blocks a cell: states far from the obstacle, on a completely different part of the map, keep $k(X) = h(X)$ throughout — Lower states, unaffected. States immediately downstream of the obstacle have their cost re-examined; if a one-step local detour restores their original cost, they become Lower states again (having briefly been in question). States whose only routes all passed through the obstacle keep $k(X) < h(X)$ — genuine Raise states — until the outward-expanding wave finally reaches a state with an unaffected alternate route, at which point that boundary state's known-good cost gets propagated back through every Raise state that led to it.
+
+**AI/ML Usage**: This Raise/Lower classification is the specific mechanism that lets D* (Dynamic A* Algorithm) avoid replanning from scratch: only the Raise states — genuinely affected by the change — ever need their cost recomputed, while every Lower state's already-known-optimal value is trusted and reused directly, which is exactly what makes dynamic replanning cheaper than a full re-search on a large map.
 
 ---
 
@@ -1758,6 +2065,27 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 **Example.** Without any regularization, a model might learn one particular feature's weight to be an enormous $1{,}000$, relying extremely heavily and precariously on just that one specific feature. Adding a regularization penalty specifically discourages such extreme, precarious weight values, gently pushing the model instead toward a more balanced, moderate solution that spreads its reliance more sensibly across several different features.
 
 **AI/ML Usage**: Regularization (in its various forms — L1, which pushes weights toward exactly zero, and L2, which shrinks weights toward zero more gently and gradually) is one of the single most fundamental, universal, and widely used techniques throughout all of machine learning for directly combating overfitting.
+
+---
+
+<a id="relaxation-graph-search"></a>
+### Relaxation (Graph Search)
+
+**The Big Idea**: This is bargain-hunting — every time you find a possibly cheaper way to reach somewhere you've already priced out, you write down the new price only if it's actually cheaper than the best price you already had.
+
+**General Usage**: Relaxing an edge from a current vertex to a neighbor means: (1) compute a *proposed* cost of reaching the neighbor by going through the current vertex — the current vertex's own cost-to-come, plus the cost of that one edge; (2) compare this proposed cost against the neighbor's best cost recorded so far (or note that the neighbor has no recorded cost yet); (3) only if the proposed cost is better (or the neighbor is new), update the neighbor's recorded cost and its parent pointer to point back through the current vertex.
+
+**Example.** Using the graph $S\!-\!A$ (cost $1$), $A\!-\!G$ (cost $1$), and direct $S\!-\!G$ (cost $10$): after $S$ and then $A$ have already been expanded once each, relaxing the edge $A\!-\!G$ works out as follows.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1 | Proposed cost via $A$: $\text{cost}(A) + \text{edge}(A,G) = 1 + 1$ | $2$ |
+| 2 | Compare to $G$'s currently recorded cost (set earlier, via the direct edge from $S$) | $\text{cost}(G) = 10$ |
+| 3 | Since $2 < 10$, the proposed cost is better | update $\text{cost}(G) \leftarrow 2$, $\text{parent}(G) \leftarrow A$ |
+
+Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
+
+**AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
 
 ---
 
@@ -1975,6 +2303,26 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 **Example.** A single color image is naturally represented as a 3-dimensional tensor: height, width, and color channel (red, green, blue) — and a whole batch of, say, 32 such images together forms a 4-dimensional tensor, adding one further dimension specifically for "which image in the batch."
 
 **AI/ML Usage**: Virtually all modern deep learning software is fundamentally built directly around tensors — every input, every intermediate computed value, and every one of a neural network's parameters is represented as a tensor, and the specialized hardware (GPUs and TPUs) that trains these networks is specifically, purpose-built for doing extremely fast, large-scale tensor computations.
+
+---
+
+<a id="tie-breaking-a-search"></a>
+### Tie-Breaking (A* Search)
+
+**The Big Idea**: This builds on A* Search (A-Star Algorithm) — among several frontier vertices that all currently look equally good, tie-breaking simply picks a smarter rule for which one to try first, instead of leaving the choice arbitrary.
+
+**General Usage**: When two vertices in A\*'s Priority Queue have the exact same priority value (cost-to-go plus heuristic), tie-breaking prefers the vertex with the **greater** cost-to-go — equivalently, the **smaller** heuristic value, since the two must add up to the same total. A smaller heuristic value means fewer unknowns remain between that vertex and the goal, i.e., it is estimated to genuinely be closer to the goal. Because this rule only ever decides the *order* among vertices that are already tied in priority — it never discards or deprioritizes a vertex that could lead to a cheaper path — it preserves A\*'s optimality guarantee completely, while typically directing the search toward the goal noticeably faster in practice.
+
+**Example.** Two vertices $X$ and $Y$ share the identical priority value $10$:
+
+| Vertex | Cost-to-go $g$ | Heuristic $h$ | $g + h$ | Tie-breaking preference |
+|---|---|---|---|---|
+| $X$ | $6$ | $4$ | $10$ | Preferred — smaller $h$, closer to goal |
+| $Y$ | $3$ | $7$ | $10$ | Explored second |
+
+Both are equally good by the priority value alone, but $X$'s smaller heuristic value marks it as the more promising one to try first.
+
+**AI/ML Usage**: A nearly-free optimization used in essentially every performant real-world implementation of A* Search (A-Star Algorithm) — since it costs nothing but a smarter comparison rule when priorities tie, and yet noticeably reduces how much of the search space is explored before the goal is found.
 
 ---
 
