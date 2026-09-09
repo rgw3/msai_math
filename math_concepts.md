@@ -7,66 +7,71 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 166 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 182 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* to Feature | Forward to Non-Parametric | Normal to Unknown-Word |
+| A* Search (A-Star Algorithm) to fastText (Subword Embeddings) | Feature Expansion to Newton's Method | Non-Parametric Method to Word2Vec |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) |
-| [Ackermann Steering](#ackermann-steering) | [Frontier / Open List](#frontier-open-list) | [NP-Hard](#np-hard) |
-| [Action Schema](#action-schema) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [Agnostic Learning](#agnostic-learning) | [Generative Model](#generative-model) | [One-vs-All](#one-vs-all) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthonormal Basis](#orthonormal-basis) |
-| [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Overfitting](#overfitting) |
-| [Backpointer](#backpointer) | [Gradient Descent](#gradient-descent) | [PAC Learning](#pac-learning) |
-| [Backpropagation](#backpropagation) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
-| [Bag of Words](#bag-of-words) | [GraphPlan](#graphplan) | [PDDL Variable Prefix](#pddl-variable-prefix) |
-| [Basis Function](#basis-function) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Batch](#batch) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Batch Normalization](#batch-normalization) | [Grounding / Instantiation](#grounding-instantiation) | [Planning Graph](#planning-graph) |
-| [Bayes' Rule](#bayes-rule) | [Hedge Algorithm](#hedge-algorithm) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Hinge Loss](#hinge-loss) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Hyperparameter](#hyperparameter) | [Posterior Distribution](#posterior-distribution) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Precision Matrix](#precision-matrix) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Indicator Function](#indicator-function) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Principal Component Analysis](#principal-component-analysis) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
-| [Centroid](#centroid) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Chernoff Bound](#chernoff-bound) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Quadratic Form](#quadratic-form) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Closed-World Assumption](#closed-world-assumption) | [Latent Variable](#latent-variable) | [Random Forest](#random-forest) |
-| [Clustering](#clustering) | [Lattice-Based Planning](#lattice-based-planning) | [Random Projection](#random-projection) |
-| [Computation Graph](#computation-graph) | [Likelihood](#likelihood) | [Rank](#rank) |
-| [Conditional Independence](#conditional-independence) | [Linear Programming](#linear-programming) | [Regularization](#regularization) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linearly Separable](#linearly-separable) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Loss Surface](#loss-surface) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Lower Bound](#lower-bound) | [Search Statistics](#search-statistics) |
-| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov's Inequality](#markovs-inequality) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Validation](#cross-validation) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
-| [Dead End](#dead-end) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
-| [Decision Boundary](#decision-boundary) | [Mean Squared Error](#mean-squared-error) | [Support Vector Machine](#support-vector-machine) |
-| [Decision Tree](#decision-tree) | [Minimum Description Length](#minimum-description-length) | [Surrogate Loss](#surrogate-loss) |
-| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Swept Volume](#swept-volume) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
-| [Discriminative Model](#discriminative-model) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dropout](#dropout) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tensor](#tensor) |
-| [Early Stopping](#early-stopping) | [Mutex](#mutex) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Naive Bayes](#naive-bayes) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [EM Algorithm](#em-algorithm) | [Named-Entity Type Labels](#named-entity-type-labels) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epoch](#epoch) | [Negative Log Likelihood](#negative-log-likelihood) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Neural Network](#neural-network) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Neuron](#neuron) | [Unknown-Word Token](#unknown-word-token) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Newton's Method](#newtons-method) |  |
-| [Feature Expansion](#feature-expansion) | [Non-Parametric Method](#non-parametric-method) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Feature Expansion](#feature-expansion) | [Non-Parametric Method](#non-parametric-method) |
+| [Ackermann Steering](#ackermann-steering) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) |
+| [Action Schema](#action-schema) | [Frontier / Open List](#frontier-open-list) | [NP-Hard](#np-hard) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Agnostic Learning](#agnostic-learning) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-Hot Encoding](#one-hot-encoding) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Generative Model](#generative-model) | [One-vs-All](#one-vs-all) |
+| [Arity](#arity) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Automatic Differentiation](#automatic-differentiation) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthonormal Basis](#orthonormal-basis) |
+| [Backpointer](#backpointer) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Overfitting](#overfitting) |
+| [Backpropagation](#backpropagation) | [Gradient Clipping](#gradient-clipping) | [PAC Learning](#pac-learning) |
+| [Bag of Words](#bag-of-words) | [Gradient Descent](#gradient-descent) | [PDDL](#pddl) |
+| [Basis Function](#basis-function) | [Graphical Lasso](#graphical-lasso) | [PDDL Variable Prefix](#pddl-variable-prefix) |
+| [Batch](#batch) | [GraphPlan](#graphplan) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Batch Normalization](#batch-normalization) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Bayes' Rule](#bayes-rule) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Planning Graph](#planning-graph) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Grounding / Instantiation](#grounding-instantiation) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Hedge Algorithm](#hedge-algorithm) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Hierarchical Softmax](#hierarchical-softmax) | [Posterior Distribution](#posterior-distribution) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Hinge Loss](#hinge-loss) | [Precision Matrix](#precision-matrix) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Hyperparameter](#hyperparameter) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Principal Component Analysis](#principal-component-analysis) |
+| [Centroid](#centroid) | [Indicator Function](#indicator-function) | [Prior Distribution](#prior-distribution) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Priority Queue](#priority-queue) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Jensen's Inequality](#jensens-inequality) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chernoff Bound](#chernoff-bound) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [K-Means Algorithm](#k-means-algorithm) | [Quadratic Form](#quadratic-form) |
+| [Closed-World Assumption](#closed-world-assumption) | [K-Nearest Neighbors](#k-nearest-neighbors) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Clustering](#clustering) | [Kernel Function](#kernel-function) | [Random Forest](#random-forest) |
+| [Computation Graph](#computation-graph) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Projection](#random-projection) |
+| [Conditional Independence](#conditional-independence) | [KL Divergence](#kl-divergence) | [Rank](#rank) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Latent Variable](#latent-variable) | [Regularization](#regularization) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Likelihood](#likelihood) | [Sample Complexity](#sample-complexity) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Linear Programming](#linear-programming) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Convex Function](#convex-function) | [Linearly Separable](#linearly-separable) | [Schur Complement](#schur-complement) |
+| [Coordinate Descent](#coordinate-descent) | [Log Likelihood](#log-likelihood) | [Search Statistics](#search-statistics) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Logistic Regression](#logistic-regression) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Covariance Matrix](#covariance-matrix) | [Loss Surface](#loss-surface) | [Skip-Gram Model](#skip-gram-model) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Lower Bound](#lower-bound) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Validation](#cross-validation) | [Markov Blanket](#markov-blanket) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Markov's Inequality](#markovs-inequality) | [Stopword](#stopword) |
+| [Dead End](#dead-end) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [STRIPS](#strips) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Support Vector Machine](#support-vector-machine) |
+| [Decision Boundary](#decision-boundary) | [Maximum Entropy Model](#maximum-entropy-model) | [Surrogate Loss](#surrogate-loss) |
+| [Decision Tree](#decision-tree) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Swept Volume](#swept-volume) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Mean Squared Error](#mean-squared-error) | [Symmetric Matrix](#symmetric-matrix) |
+| [Diagonal Matrix](#diagonal-matrix) | [Minimum Description Length](#minimum-description-length) | [Symmetric Relation](#symmetric-relation) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Model Complexity](#model-complexity) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Momentum](#momentum) | [Tensor](#tensor) |
+| [Discriminative Model](#discriminative-model) | [Monotonic Function](#monotonic-function) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Dropout](#dropout) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Early Stopping](#early-stopping) | [Mutex](#mutex) | [Union Bound](#union-bound) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Naive Bayes](#naive-bayes) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [EM Algorithm](#em-algorithm) | [Named-Entity Type Labels](#named-entity-type-labels) | [Unknown-Word Token](#unknown-word-token) |
+| [Epoch](#epoch) | [Negative Log Likelihood](#negative-log-likelihood) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Sampling](#negative-sampling) | [Word Embedding](#word-embedding) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Neural Network](#neural-network) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neuron](#neuron) | [Word2Vec](#word2vec) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Newton's Method](#newtons-method) |  |
 
 ## Concepts
 
@@ -584,6 +589,32 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 
 ---
 
+<a id="continuous-bag-of-words-cbow"></a>
+### Continuous Bag-of-Words (CBOW)
+
+**The Big Idea**: This is the mirror image of the Skip-Gram Model entry above, and needs no new mechanics beyond it — it's the same "fill in the blank" idea as a Mad-Libs sentence: instead of one word predicting the words around it, several surrounding words are added together and used to predict the single word that belongs in the middle.
+
+**General Usage**: Given a target word position with neighboring context words (for example $w_{-1}$, the word just before it, and $w_{+1}$, the word just after it), CBOW looks up each neighbor's context vector (see the Word2Vec entry above for word vectors vs. context vectors), adds those vectors together into one combined vector, and passes that sum through a matrix $W$ of word vectors and a Softmax Function (see that entry in the math_symbols file) to predict which vocabulary word belongs in the blank: $$P(w \mid w_{-1}, w_{+1}) = \text{softmax}\big(W(c(w_{-1}) + c(w_{+1}))\big)$$ where $c(\cdot)$ denotes a context vector. A wider window simply adds more neighboring context vectors into the same sum before this prediction step. Like skip-gram, CBOW needs no manually assigned labels — the "correct answer" for every training example is just whatever word actually appeared in that blank in the real text.
+
+**Example.** Toy sentence "the dog bit the man," predicting the missing word from its two neighbors "dog" (before) and "the" (after), over a toy vocabulary $V=\{\text{bit},\text{man}\}$ with embedding dimension $d=2$ (chosen small purely so the arithmetic is easy to follow by hand):
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Look up context vectors | $c_{\text{dog}}=(2,1)$, $c_{\text{the}}=(0,1)$ (assumed, for illustration) | — |
+| 2. Sum the context vectors | $(2,1)+(0,1)$ | $(2,2)$ |
+| 3. Word vector for "bit" | $w_{\text{bit}}=(1,1)$ (row of $W$) | — |
+| 4. Word vector for "man" | $w_{\text{man}}=(1,-1)$ (row of $W$) | — |
+| 5. Dot product with "bit" | $(1)(2)+(1)(2)$ | $4$ |
+| 6. Dot product with "man" | $(1)(2)+(-1)(2)$ | $0$ |
+| 7. Exponentiate | $e^{4}\approx 54.60$, $e^{0}=1$ | $54.60$ and $1$ |
+| 8. Normalize (softmax) | $54.60 \div (54.60+1)$ and $1\div(54.60+1)$ | $P(\text{bit})\approx 0.982$, $P(\text{man})\approx 0.018$ |
+
+The model confidently predicts "bit" — exactly the true missing word — because the assumed vectors were set up so the summed context aligns strongly with $w_{\text{bit}}$ and poorly with $w_{\text{man}}$; a real model reaches vectors like these only after training, not by assumption.
+
+**AI/ML Usage**: CBOW is the second of Word2Vec's two original training objectives (Mikolov et al., 2013), alongside skip-gram, which runs the same prediction in the opposite direction (see the Skip-Gram Model entry above). The two use the same number of parameters and the same basic training machinery, and the instructor's own material describes them as performing "very similarly" in practice; CBOW is sometimes preferred because averaging several context words together produces a smoother, less noisy training signal for frequent words, while skip-gram is sometimes preferred because it gives each individual context word its own separate training update, which tends to represent rare words a bit better.
+
+---
+
 <a id="convex-function"></a>
 ### Convex Function
 
@@ -607,6 +638,28 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 **Example.** To minimize $L(\mu,z)$ (a function of two variables), coordinate descent would first fix $z$ at its current value and find the best possible $\mu$ given that fixed $z$; then it would fix that newly-improved $\mu$ and find the best possible $z$ given it; then repeat this back-and-forth process, alternately improving one variable while holding the other still, until the values stop changing.
 
 **AI/ML Usage**: Coordinate descent is a practical alternative to full gradient descent whenever it's easier or more efficient to solve for one variable at a time exactly, rather than computing a full gradient across every variable simultaneously — it's used in algorithms like the Lasso (L1-regularized regression) and shows up as one specific technique inside the broader family of expectation-maximization style algorithms.
+
+---
+
+<a id="co-occurrence-matrix"></a>
+### Co-occurrence Matrix
+
+**The Big Idea**: This builds on the everyday idea of a tally table — the same kind of grid used to count, say, how many times each pair of dice values came up over many rolls — except here the rows and columns are labeled by vocabulary words instead of numbers, and each cell counts how often two words showed up near each other in real text.
+
+**General Usage**: A co-occurrence matrix is a $|V| \times |V|$ table (see the Vocabulary entry in the math_symbols file for $|V|$) whose entry in row $i$, column $j$ holds $\text{count}(w_i, c_j)$ — the number of times word $i$ and word $j$ occurred together, typically within some fixed nearby window of each other, somewhere across a large body of text. Building this table requires only one pass over the corpus; once it exists, every subsequent computation works directly from the counts in the table rather than re-reading the original text.
+
+**Example.** Toy corpus "the dog bit the dog," with a window of $1$ (only immediately adjacent words count as co-occurring), over the tiny vocabulary $\{\text{the},\text{dog},\text{bit}\}$:
+
+| Step | Adjacent pair read off the text | Tally update |
+|---|---|---|
+| 1 | (the, dog) | count(the,dog) += 1 |
+| 2 | (dog, bit) | count(dog,bit) += 1 |
+| 3 | (bit, the) | count(bit,the) += 1 |
+| 4 | (the, dog) | count(the,dog) += 1 |
+
+Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, count(dog,bit) $=1$, count(bit,the) $=1$, and every other cell $=0$ — a complete co-occurrence matrix built from nothing but counting adjacent word pairs.
+
+**AI/ML Usage**: A co-occurrence matrix is the shared raw material behind several different word-embedding techniques: the Pointwise Mutual Information matrix that Skip-Gram-with-negative-sampling implicitly factors (see the Matrix Factorization (Word Embeddings) entry below) is built from exactly this kind of table, and GloVe (see that entry) regresses directly on the logarithm of these same counts. Older, pre-neural techniques such as Latent Semantic Analysis likewise start from a co-occurrence-style matrix before compressing it with Singular Value Decomposition (see that entry).
 
 ---
 
@@ -675,6 +728,28 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 
 ---
 
+<a id="debiasing-word-embeddings"></a>
+### Debiasing (Word Embeddings)
+
+**The Big Idea**: This builds directly on the Vector Projection entry in the math_symbols file. If a specific direction in the embedding space can be shown to correspond to a social category like gender, then "removing" a word's association with that category is, geometrically, just subtracting off whatever part of its vector points along that direction — the same leftover-after-projection computation used there.
+
+**General Usage**: Debiasing refers to a family of post-processing techniques applied to an already-trained Word Embedding (see that entry below) to reduce the extent to which it reflects a social stereotype. The best-known version, hard debiasing (Bolukbasi et al., 2016), proceeds in two stages. First, identify a bias direction (or, more generally, a low-dimensional bias subspace) using several pairs of words that differ mainly along the category being targeted — for gender, pairs like (she, he) and (woman, man); a single pair gives a single direction vector, while combining several pairs (for example, by keeping the top principal component of their difference vectors; see the Principal Component Analysis entry) gives a more reliable, averaged-out direction. Second, for each word considered gender-neutral (an occupation like "homemaker," rather than an inherently gendered word like "queen"), neutralize its embedding by projecting it onto the bias direction and subtracting that projection off (see the Vector Projection entry in the math_symbols file), leaving a modified embedding with (approximately) zero remaining component along that direction.
+
+**Example.** Suppose the bias direction has already been reduced to a single unit vector $\hat{\mathbf{g}} = (-0.6,\ 0.8)$ (computed by normalizing the difference $\vec v_{\text{she}} - \vec v_{\text{he}}$ to length $1$; see the Euclidean Norm entry in the math_symbols file), and the word "homemaker" has toy 2-dimensional embedding $\vec v = (2,\ 5)$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Projection scalar, $\vec v \cdot \hat{\mathbf{g}}$ | $(2)(-0.6)+(5)(0.8)$ | $-1.2+4.0=2.8$ |
+| 2. Projection vector | $2.8\times(-0.6,\ 0.8)$ | $(-1.68,\ 2.24)$ |
+| 3. Debiased vector, $\vec v' = \vec v - \text{proj}$ | $(2-(-1.68),\ 5-2.24)$ | $(3.68,\ 2.76)$ |
+| 4. Check: $\vec v' \cdot \hat{\mathbf{g}}$ | $(3.68)(-0.6)+(2.76)(0.8)$ | $-2.208+2.208=0$ |
+
+The check in step 4 confirms the new vector $\vec v'$ has exactly zero remaining component along the bias direction — it has been "neutralized" with respect to that one direction, though, as the AI/ML Usage note below explains, this does not guarantee the word's other, non-gender-direction associations have also changed.
+
+**AI/ML Usage**: Bolukbasi et al. (2016) apply hard debiasing to a Word2Vec (see that entry below) embedding trained on Google News text and report that it substantially reduces gender stereotype in occupation words while leaving performance on standard word-similarity benchmarks essentially unchanged. However, Gonen and Goldberg (2019) show that this kind of debiasing is largely superficial: even after neutralizing the gender direction, words that used to be strongly gender-associated (such as "receptionist" or "warrior") still cluster together by their original gender association when grouped using ordinary distance in the embedding space, and a classifier can still recover a word's original gender association from its "debiased" vector with high accuracy. The lesson is that one learned direction is only a narrow measurement of bias, and removing it does not remove whatever broader, higher-dimensional geometric pattern in the embedding space encodes the underlying stereotype.
+
+---
+
 <a id="decision-boundary"></a>
 ### Decision Boundary
 
@@ -698,6 +773,34 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 **Example.** A decision tree for loan approval might first ask "income above \$50,000?" — if yes, branch to asking "credit score above 700?"; if no, branch to a different, further question. Following the chain of answers for one specific applicant traces one specific path down the tree, ending at a leaf holding the tree's final approve/deny prediction.
 
 **AI/ML Usage**: Decision trees are popular because they're easy for a person to read and directly interpret (you can trace exactly why a prediction was made, question by question), and they're the fundamental building block behind much more powerful ensemble methods like Random Forests and Gradient Boosting, which combine many individual decision trees together into one stronger, combined model.
+
+---
+
+<a id="deep-averaging-network-dan"></a>
+### Deep Averaging Network (DAN)
+
+**The Big Idea**: This builds directly on the Neural Network and Neuron entries above and the Mean entry in the math_symbols file — a DAN is nothing more than "average your inputs together, then feed that single average through an ordinary feedforward neural network," combining a computation you already know (averaging) with a model you already know (see the Neural Network entry).
+
+**General Usage**: A Deep Averaging Network takes a piece of text — a sentence or document made of $n$ words $c_1, c_2, \ldots, c_n$ — and looks up each word's Word Embedding (see that entry) $v_{c_1}, v_{c_2}, \ldots, v_{c_n}$, a Vector (see that entry in the math_symbols file) of numbers standing in for each word. It first computes their plain arithmetic average,
+$$av = \frac{1}{n}\sum_{i=1}^{n} v_{c_i},$$
+throwing away word order entirely, exactly the way the Bag of Words entry (see above) throws it away. That single averaged vector is then passed through one or more ordinary feedforward layers,
+$$h_1 = f(W_1 \cdot av + b_1), \qquad h_2 = f(W_2 \cdot h_1 + b_2),$$
+where $f$ is an Activation Function (see that entry in math_symbols.md), $W_1, W_2$ are learned Weight Vector-style matrices (see that entry), and $b_1, b_2$ are learned Bias Terms (see that entry) — exactly the "weighted sum, then activation function" computation described in the Neuron entry, just stacked into multiple layers, one feeding the next. The output of the last layer is finally fed to a Softmax Function (see that entry in math_symbols.md) to turn it into predicted probabilities over the possible output classes (for example, "positive" versus "negative" sentiment).
+
+**Example.** Take the three-word toy sentence "food was great" with small, illustrative 2-dimensional word embeddings (real DANs use hundreds of dimensions; two are used here purely so every number can be tracked by hand): $v_{food}=(1,0)$, $v_{was}=(0,1)$, $v_{great}=(3,3)$. Use a hidden-layer weight matrix $W_1=\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ with zero bias and a ReLU activation (see that entry in math_symbols.md), followed by an output weight matrix $W_s=\begin{pmatrix}2&0\\0&2\end{pmatrix}$ with zero bias, mapping to two classes, negative and positive.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Sum the three word vectors | $(1+0+3,\ 0+1+3)$ | $(4,\ 4)$ |
+| 2. Divide by $n=3$ to get the average $av$ | $(4/3,\ 4/3)$ | $\approx(1.33,\ 1.33)$ |
+| 3. Multiply by the hidden-layer weights $W_1$ | $\big(1(1.33)+(-1)(1.33),\ \ 1(1.33)+1(1.33)\big)$ | $(0,\ 2.67)$ |
+| 4. Add the (zero) bias and apply ReLU, $\max(0,\cdot)$ | $\max(0,0),\ \max(0,2.67)$ | $h_1=(0,\ 2.67)$ |
+| 5. Multiply by the output weights $W_s$ | $\big(2(0)+0(2.67),\ \ 0(0)+2(2.67)\big)$ | $(0,\ 5.33)$ |
+| 6. Apply softmax, $\dfrac{e^{q_i}}{\sum_j e^{q_j}}$ | $\dfrac{e^{0}}{e^{0}+e^{5.33}},\ \dfrac{e^{5.33}}{e^{0}+e^{5.33}}$ | $(0.005,\ 0.995)$ |
+
+The network predicts "positive" with about 99.5% confidence. Notice that once the three word vectors were averaged together in step 2, the network could no longer tell which original word had contributed which number — yet the two nonlinear layers still recovered a confident, correct-looking prediction, because "great" pulled the average far enough in its own direction that the pull survived the averaging and was then magnified by the weighted sums and the ReLU.
+
+**AI/ML Usage**: The Deep Averaging Network was introduced by Iyyer et al. (2015) for text classification tasks such as sentiment analysis, where it was shown to perform competitively with — and sometimes better than — considerably more complex "tree-structured" networks that explicitly model a sentence's grammatical structure (see the Skip-Gram Model entry for another example of a model that instead relies on a word's surrounding context), while training in a small fraction of the time. The published version of the DAN is also trained with a regularization technique the original paper calls "word dropout," a variant of ordinary Dropout (see that entry) that randomly deletes some of a training example's individual words entirely — rather than deleting values inside a hidden layer, the way standard dropout does — before computing the average, which reduces the model's reliance on any single word being present.
 
 ---
 
@@ -758,6 +861,26 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 **Example.** Logistic Regression (see that entry below) is a classic discriminative model: given an email's features, it directly outputs a probability that the email is spam, without ever trying to model what a "typical" spam email or a "typical" legitimate email actually looks like in full detail — it only cares about the dividing line between the two.
 
 **AI/ML Usage**: Discriminative models (logistic regression, SVMs, most modern neural network classifiers) are generally simpler to train and often more accurate for pure classification and regression tasks than their counterpart, generative models (see that entry), precisely because they focus their entire learning effort directly on the one specific question being asked.
+
+---
+
+<a id="distributional-hypothesis"></a>
+### Distributional Hypothesis
+
+**The Big Idea**: This isn't a piece of algebra so much as an assumption about language that licenses a numerical trick: if two words tend to show up surrounded by the same kinds of neighboring words, treat them as similar in meaning. Stating it requires no calculus or linear algebra, but it is the assumption that the Word Embedding and Word2Vec entries (see below) are built on top of.
+
+**General Usage**: The distributional hypothesis, attributed to linguist J. R. Firth (1957), holds that a word's meaning can be inferred from the contexts — the surrounding words — in which it typically appears, summarized in Firth's own phrase: "you shall know a word by the company it keeps." Two words that occur in similar surrounding contexts across a large body of text are assumed to have related meanings, even if the two words themselves never appear next to each other in any single sentence.
+
+**Example.** Consider four short sentences: "I watched the movie," "I watched the film," "The film inspired me," and "The movie inspired me."
+
+| Step | Observation |
+|---|---|
+| 1 | "movie" and "film" both appear as the direct object of "watched" (the pattern "I watched the ___"). |
+| 2 | "movie" and "film" both appear as the subject of "inspired me" (the pattern "The ___ inspired me"). |
+| 3 | Because "movie" and "film" occur in the same surrounding contexts in both sentence pairs, the distributional hypothesis says to treat them as semantically similar words. |
+| 4 | A different sentence, "I developed the film in the darkroom," uses "film" in a context ("developed ... in the darkroom") that "movie" never appears in — a reminder that this is a simplification, since "film" here refers to a photographic film reel, a different sense of the word than "movie" meaning a motion picture. |
+
+**AI/ML Usage**: The distributional hypothesis is the theoretical justification for essentially every word embedding method used in natural language processing, from older count-based approaches like Brown clustering to Word2Vec (see that entry) and the contextual embeddings used inside Transformer-based language models. Word2Vec operationalizes the hypothesis directly: it trains a word's vector representation to be predictive of the words that occur around it in real text, which is exactly the "company it keeps" idea stated as a numerical training objective (an objective is the quantity a learning algorithm is trying to optimize).
 
 ---
 
@@ -865,6 +988,27 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 
 ---
 
+<a id="fasttext-subword-embeddings"></a>
+### fastText (Subword Embeddings)
+
+**The Big Idea**: This builds directly on the Skip-Gram Model and Negative Sampling entries above, plus a piece of everyday string-slicing a reader already knows how to do by hand: chopping a word into all of its overlapping chunks of a fixed length, the same way you might list every 3-letter "slice" of a longer word. Nothing here requires new math beyond addition and the Dot Product (see that entry in the math_symbols file).
+
+**General Usage**: fastText (Bojanowski et al., 2017) trains word vectors exactly like Skip-Gram-with-negative-sampling (see the Negative Sampling entry above), except a word is no longer represented by one single row of a lookup table. Instead, each word is broken into all of its character n-grams — overlapping substrings of length $n$, for $n=3$ through $6$, with boundary markers `<` and `>` marking the start and end of the word — plus the whole word itself, and the word's score against a context vector $\bar c$ becomes the SUM of the dot products of every one of those n-gram vectors with $\bar c$: $$\Big(\sum_{g \,\in\, \text{ngrams}(w)} \bar w_g\Big)\cdot \bar c$$ A word that never appeared during training can still be embedded, because it can still be broken down into character n-grams that DID appear as pieces of other, familiar training words.
+
+**Example.** The word "where" decomposes into the n-grams $\langle$wh, whe, her, ere, re$\rangle$ (3-grams), $\langle$whe, wher, here, ere$\rangle$ (4-grams), $\langle$wher, where, here$\rangle$ (5-grams), and $\langle$where, where$\rangle$ (6-grams), using `<` and `>` as the boundary markers. To see the summing mechanic with simple numbers, use a toy embedding dimension of $d=1$ (so each vector is just a single number) and only 3-grams for a short word "cat" (n-grams $\langle$ca, cat, at$\rangle$):
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Look up each n-gram's vector | $w_{\langle\text{ca}}=0.5$, $w_{\text{cat}}=1.2$, $w_{\text{at}\rangle}=0.3$ (assumed, for illustration) | — |
+| 2. Sum the n-gram vectors | $0.5+1.2+0.3$ | $2.0$ (this is "cat"'s fastText word vector) |
+| 3. Multiply by a context score $c=2.0$ | $2.0 \times 2.0$ | $4.0$ |
+
+An ordinary skip-gram model would need one single, whole-word vector for "cat" to compute this same score; fastText instead assembles it fresh, every time, out of smaller, reusable pieces.
+
+**AI/ML Usage**: fastText's subword approach directly solves the out-of-vocabulary-word problem that limited earlier fixed-vocabulary embedding methods (see the Unknown-Word Token entry below) — a rare or novel word can still receive a reasonable vector purely from the n-grams it shares with familiar words, without that exact whole word ever needing to have appeared during training. This approach was quickly overtaken in popularity by pretrained contextual models such as BERT and GPT (see the Word2Vec entry's AI/ML Usage), which instead split rare words into a canonical sequence of learned "subword" pieces (using algorithms such as WordPiece or Byte-Pair Encoding) and compute a context-aware embedding for each piece using a Transformer, rather than summing a fixed table of n-gram vectors.
+
+---
+
 <a id="feature-expansion"></a>
 ### Feature Expansion
 
@@ -960,6 +1104,30 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 **Example.** Without careful initialization, a deep network's very first forward pass can produce numbers that are wildly, chaotically too large or shrink down to nearly zero by the time they reach the final layer, making the network extremely difficult to train right from the very start. Glorot initialization specifically chooses each layer's starting-weight range to help keep signal sizes roughly consistent as they pass all the way through the network.
 
 **AI/ML Usage**: This is one of several standard weight-initialization schemes (along with the closely related He initialization, tailored specifically for ReLU-based networks) that are essentially default, near-automatic settings in virtually every modern deep learning software library — proper initialization made a substantial, measurable difference in successfully training the earliest deep neural networks.
+
+---
+
+<a id="glove-global-vectors-for-word-representation"></a>
+### GloVe (Global Vectors for Word Representation)
+
+**The Big Idea**: This builds on the Co-occurrence Matrix entry above and ordinary linear regression from Algebra 2 — the everyday process of finding a line (or, here, a pair of vectors) whose predictions come as close as possible to a set of known target values, minimizing the total squared error between prediction and target. GloVe is exactly that familiar regression idea, just applied to the cells of a word-by-word counts table instead of points on a graph.
+
+**General Usage**: GloVe (Pennington, Socher, and Manning, 2014) builds one co-occurrence matrix over an entire corpus (see that entry above) whose target value for word $i$ and context word $j$ is $\log\big(\text{count}(w_i,c_j)\big)$, then learns a word vector $w_i$, a context vector $c_j$, and two scalar bias numbers $a_i$ and $b_j$ for every vocabulary word by minimizing the weighted squared error between the prediction $w_i^\top c_j + a_i + b_j$ and that log-count: $$\text{Objective} = \sum_{i,j} f\big(\text{count}(w_i,c_j)\big)\Big(w_i^\top c_j + a_i + b_j - \log\text{count}(w_i,c_j)\Big)^2$$ The weighting function $f$ down-weights very frequent word pairs (like "the" and "of") so they don't dominate the objective more than their actual informativeness warrants. Because training only ever needs this one counts matrix — never a repeated pass over the raw text — its cost depends on vocabulary size (quadratically, since the matrix is $|V|\times|V|$) but stays constant no matter how large the underlying corpus was; a corpus with ten times more text only changes the numbers inside the same size matrix.
+
+**Example.** Toy counts: suppose "cat" and "dog" co-occur $\text{count}(\text{cat},\text{dog})=8$ times, so the regression target is $\log(8)\approx 2.079$. Using assumed 1-dimensional vectors and biases (a real GloVe model reaches values like these only through training, not by assumption): $w_{\text{cat}}=1.5$, $c_{\text{dog}}=1.0$, $a_{\text{cat}}=0.2$, $b_{\text{dog}}=0.3$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Prediction | $w_{\text{cat}}\cdot c_{\text{dog}} + a_{\text{cat}} + b_{\text{dog}} = (1.5)(1.0)+0.2+0.3$ | $2.0$ |
+| 2. Target | $\log(8)$ | $\approx 2.079$ |
+| 3. Error | $2.0 - 2.079$ | $\approx -0.079$ |
+| 4. Squared error | $(-0.079)^2$ | $\approx 0.0062$ |
+| 5. Weight (example weighting $f(\text{count})=(\text{count}/100)^{0.75}$) | $(8/100)^{0.75}$ | $\approx 0.142$ |
+| 6. Weighted squared error | $0.142 \times 0.0062$ | $\approx 0.00088$ |
+
+Training adjusts every word vector, context vector, and bias across the whole matrix simultaneously to make sums of terms like this one as small as possible.
+
+**AI/ML Usage**: GloVe quickly became, in the instructor's own words, "by far the most common word vectors used today," and pretrained GloVe vectors — trained once on a huge web corpus and distributed as a downloadable table — became a standard drop-in input layer for countless NLP models in the years following its release, filling the same practical role as pretrained Word2Vec vectors (see that entry) but produced by this different, count-based regression procedure instead of Word2Vec's word-by-word prediction procedure.
 
 ---
 
@@ -1111,6 +1279,27 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 
 ---
 
+<a id="hierarchical-softmax"></a>
+### Hierarchical Softmax
+
+**The Big Idea**: This builds on the Softmax Function entry (math_symbols file) plus the everyday game of "20 questions" — guessing a number between 1 and 1,000,000 takes only about 20 yes/no "higher or lower?" questions, not a million individual guesses. Hierarchical softmax finds the right word the same way: a short sequence of yes/no questions, instead of one giant multiple-choice question with a huge number of options.
+
+**General Usage**: An ordinary softmax over a vocabulary $V$ requires one Dot Product (see that entry in the math_symbols file) per candidate word — $|V|$ dot products total — to score every possible word before normalizing. Hierarchical softmax instead arranges the vocabulary as the leaves of a binary tree, and predicting a word means walking from the tree's root down to that word's leaf, making one binary (yes/no) decision at each internal node along the way, with a small binary classifier trained at every internal node to decide which branch to take. A balanced binary tree with $|V|$ leaves has depth only $\log_2|V|$, so a prediction costs about $\log_2|V|$ dot products instead of $|V|$ of them — for $|V|=1{,}000{,}000$, that is roughly $20$ dot products instead of a million. The tree itself is typically built using Huffman coding, which assigns shorter root-to-leaf paths to more frequent words, so the words a model must predict most often are also the cheapest ones to compute. The total number of trainable parameters stays about the same as ordinary softmax (roughly $|V|\times d$, since a tree with $|V|$ leaves has $|V|-1$ internal-node classifiers, each needing a $d$-dimensional weight vector) — hierarchical softmax speeds up computation, not the number of things being learned.
+
+**Example.** A toy vocabulary of $4$ words, $\{a,b,c,d\}$, arranged in a balanced binary tree of depth $\log_2 4 = 2$: the root splits into two internal nodes, and each of those splits into two leaves. Predicting the word "c," found by going right at the root and then left at the next node:
+
+| Step | Decision | Classifier's probability |
+|---|---|---|
+| 1. At the root | Go right (toward the {c,d} side) | $0.7$ |
+| 2. At the right child | Go left (toward "c") | $0.6$ |
+| 3. Combine | Multiply the two decisions' probabilities: $0.7 \times 0.6$ | $P(\text{word}=c) = 0.42$ |
+
+Reaching "c" required exactly $2$ binary decisions — matching $\log_2 4=2$ — rather than $4$ separate dot products the way ordinary softmax would need.
+
+**AI/ML Usage**: Hierarchical softmax (Mnih and Hinton, 2008; also used in the original Word2Vec toolkit, Mikolov et al., 2013) was one of the earliest practical fixes for softmax's scaling problem in neural language models. The same binary-tree trick shows up anywhere a network must choose among an enormous number of output categories, such as extreme multi-label classification; in word-embedding work specifically, it has since been largely superseded by the simpler Negative Sampling technique (see that entry below), though the tree-based idea persists in other large-output-space applications.
+
+---
+
 <a id="hinge-loss"></a>
 ### Hinge Loss
 
@@ -1180,6 +1369,26 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 Inflating the heuristic can change which vertex looks more promising, steering the search more aggressively toward vertices with a smaller heuristic (i.e., that look closer to the goal), even when doing so is not guaranteed to be exactly optimal.
 
 **AI/ML Usage**: This is the idea behind Weighted A\*, a widely used family of real-time and "anytime" planning algorithms in robotics: when a hard time budget makes a guaranteed-optimal search infeasible, a bounded-suboptimal path delivered quickly (with a known worst-case penalty factor $F$) is often far more useful in practice than an optimal path delivered too late.
+
+---
+
+<a id="intrinsic-vs-extrinsic-downstream-evaluation"></a>
+### Intrinsic vs. Extrinsic (Downstream) Evaluation
+
+**The Big Idea**: Similar to judging a tool by testing it directly on its own — does the hammer's head stay attached, does its handle feel balanced — versus judging it by what you can build with it — does a house framed using this hammer turn out sound — a model or representation can likewise be judged either by measuring some property of itself directly, or by measuring how well it performs once it is actually plugged into a real, complete task.
+
+**General Usage**: Intrinsic evaluation judges a representation — most commonly a Word Embedding (see that entry) — using a task that examines the representation directly and in isolation, without involving any larger system built on top of it; a common example is a word-similarity task, where an embedding is scored on how closely the distances it assigns between word pairs (see Cosine Similarity and Vector Projection in math_symbols.md) match similarity scores that human annotators assigned to those same word pairs by hand. Extrinsic evaluation — also called downstream evaluation, and the task it is measured on called a downstream task — instead plugs the representation into a real, complete end-task model, such as a Deep Averaging Network (see that entry) trained for sentiment analysis, and measures how well the finished system performs on that actual task, for instance its classification accuracy. A representation can score well intrinsically without producing the best results extrinsically, because an intrinsic score cannot capture everything a specific downstream model actually needs in order to succeed.
+
+**Example.** Suppose two candidate word embeddings, Embedding A and Embedding B, are each evaluated both ways.
+
+| Embedding | Intrinsic score (correlation with human word-similarity judgments, max 1.0) | Extrinsic score (accuracy of a sentiment classifier built on top of it) |
+|---|---|---|
+| Embedding A | $0.72$ | $81\%$ |
+| Embedding B | $0.65$ | $85\%$ |
+
+Judged intrinsically, Embedding A looks like the better representation — its distances between word pairs agree more closely with human judgments ($0.72$ versus $0.65$). But when each embedding is instead plugged into an otherwise-identical sentiment classifier and evaluated on real, labeled sentiment data, Embedding B produces the classifier that is correct more often ($85\%$ versus $81\%$ accuracy). The two evaluations disagree about which embedding is "better" — exactly the situation this distinction exists to describe: a representation's intrinsic quality is not the same thing as, and does not always predict, how useful it turns out to be for a specific real, downstream task.
+
+**AI/ML Usage**: Word embeddings such as GloVe and Word2Vec (see those entries) are routinely evaluated both ways: intrinsically, on datasets of human-judged word-pair similarity scores or on word-analogy accuracy (see the Word Analogy entry); and extrinsically, by plugging them into downstream models for tasks like sentiment analysis, named-entity recognition, or question answering, and measuring the accuracy of the finished system. In practice, extrinsic evaluation is usually treated as the more important of the two, since it measures what a practitioner actually cares about — real task performance — while intrinsic scores are cheaper and faster to compute and mainly serve as a quick, rough proxy before running the more expensive downstream experiment.
 
 ---
 
@@ -1543,6 +1752,30 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="matrix-factorization-word-embeddings"></a>
+### Matrix Factorization (Word Embeddings)
+
+**The Big Idea**: This builds on the Singular Value Decomposition entry above (breaking one matrix into a product of smaller matrices), but is the more flexible kind of factorization: rather than an exact, closed-form formula with orthogonal pieces, here two ordinary matrices are found by optimization, and their product only needs to approximately reconstruct the original table's values. A reader who hasn't seen SVD can still follow this entry directly from the Co-occurrence Matrix entry above and ordinary matrix multiplication (row times column).
+
+**General Usage**: Given a $|V|\times|V|$ co-occurrence-derived matrix $M$ (see the Co-occurrence Matrix entry above), matrix factorization searches for a $|V|\times d$ matrix of word vectors and a second $|V|\times d$ matrix of context vectors whose product approximately reconstructs $M$: entry $(i,j)$ of that product should come out close to $M_{ij}$ for every word pair. Levy and Goldberg (2014) proved that Word2Vec's Skip-Gram-with-negative-sampling objective (see the Negative Sampling entry below) is, mathematically, already doing exactly this kind of factorization, on a specific matrix $M$ whose entry $(i,j)$ is the Pointwise Mutual Information of word $i$ and context word $j$ (see that entry in the math_symbols file), shifted down by $\log k$, where $k$ is the number of negative samples drawn per positive example: $$M_{ij} = \text{PMI}(w_i,c_j) - \log k$$ This factorization is also weighted, so that reconstructing the entries for frequent words matters more to the objective than reconstructing entries for rare ones, and it assumes negative examples are drawn from the unigram (plain word-frequency) distribution rather than a uniform distribution across the vocabulary.
+
+**Example.** Suppose a corpus contains $D=100$ total word/context pairs, "dog" appears as the word in $\text{count}(w{=}\text{dog})=20$ of them, "bit" appears as the context in $\text{count}(c{=}\text{bit})=10$ of them, and "dog" and "bit" appear together in $\text{count}(\text{dog},\text{bit})=5$ of them:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. $P(\text{dog},\text{bit})$ | $5/100$ | $0.05$ |
+| 2. $P(\text{dog})$ | $20/100$ | $0.2$ |
+| 3. $P(\text{bit})$ | $10/100$ | $0.1$ |
+| 4. PMI | $\log\big(0.05/(0.2\times 0.1)\big) = \log(2.5)$ | $\approx 0.916$ |
+| 5. Shift by $\log k$, with $k=5$ negative samples | $\log(5)$ | $\approx 1.609$ |
+| 6. $M_{ij} = \text{PMI} - \log k$ | $0.916 - 1.609$ | $\approx -0.693$ |
+
+(Any consistent logarithm base works throughout, since changing the base only rescales every entry by the same constant factor.) This negative target value means that, once negative sampling's built-in shift is accounted for, skip-gram-with-negative-sampling trains the word vector for "dog" and the context vector for "bit" so that their dot product moves toward $-0.693$, not toward the raw PMI value of $0.916$.
+
+**AI/ML Usage**: This equivalence explains why Skip-Gram-with-negative-sampling and GloVe (see that entry above), despite looking like very different algorithms — one predicts words one training pair at a time, the other regresses on a whole counts matrix at once — tend to produce similar-quality word vectors: both are, underneath, different practical routes to approximately factoring the same kind of word-by-word association matrix. It also connects modern neural word embeddings back to much older, pre-neural techniques such as Latent Semantic Analysis, which explicitly used Singular Value Decomposition (see that entry above) to factor a word-document matrix decades before Word2Vec existed.
+
+---
+
 <a id="maximum-entropy-model"></a>
 ### Maximum Entropy Model
 
@@ -1736,6 +1969,30 @@ Spam's score, $0.224$, is much larger than Not Spam's, $0.012$, so Naive Bayes p
 **Example.** If a model assigns a fairly high, confident probability of $0.9$ to the correct, true answer, $-\log(0.9)\approx 0.105$ — a small loss. If it instead only assigns a low probability of $0.1$ to the correct answer, $-\log(0.1)\approx 2.303$ — a much larger loss. Lower model confidence in the correct answer directly translates into a correspondingly higher negative-log-likelihood loss.
 
 **AI/ML Usage**: Negative log likelihood is, in fact, exactly the same underlying quantity as cross-entropy loss (see that entry above) for classification problems — the two names are essentially used interchangeably throughout machine learning literature, both referring to precisely the same widely-used loss function under two slightly different, equally common names.
+
+---
+
+<a id="negative-sampling"></a>
+### Negative Sampling
+
+**The Big Idea**: This builds on the Logistic Regression entry above — instead of asking one giant multiple-choice question with thousands of possible answers (an ordinary Softmax Function, see that entry in the math_symbols file), negative sampling reframes the same learning problem as a small pile of ordinary true/false questions, the same kind of yes/no check Algebra 2 already asks when verifying whether a proposed solution actually satisfies an equation.
+
+**General Usage**: Negative sampling turns a multi-class prediction problem (which of $|V|$ possible words belongs here?) into binary classification (is this a real word/context pair, or a fake one?). For every real, observed (positive) pair $(w,c)$ in the training text, a small number $k$ of negative pairs are created by keeping $w$ fixed and swapping in a different, randomly sampled context word — typically sampled according to how often each word appears overall (the unigram distribution) rather than uniformly at random. A classifier then scores any pair using the Dot Product (see that entry in the math_symbols file) of the two words' vectors, squashed through a Sigmoid Function (see that entry): $$P(y=1\mid w,c) = \frac{e^{\bar w\cdot \bar c}}{e^{\bar w\cdot \bar c}+1}$$ and training maximizes the log-probability of the positive pair's label being correct while also maximizing the log-probability that every one of the $k$ sampled negative pairs is correctly labeled negative: $$\text{Objective} = \log P(y=1\mid w,c) + \frac{1}{k}\sum_{i=1}^{k}\log P(y=0\mid w_i,c)$$ Because only $k{+}1$ dot products are needed per training example — one positive, $k$ negative — instead of one dot product against every word in the vocabulary, this is dramatically cheaper than an ordinary softmax over $|V|$ candidates, while still producing the property that matters: words used in similar ways end up with similar vectors, because similar contexts keep selecting for similar context vectors throughout this same positive/negative scoring process.
+
+**Example.** Word "bit," with an assumed positive pair (bit, the) and one negative pair (bit, cat), using toy 2-dimensional vectors: $\bar w_{\text{bit}}=(1,1)$, $\bar c_{\text{the}}=(1,0)$, $\bar c_{\text{cat}}=(-1,0)$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Positive dot product | $\bar w_{\text{bit}}\cdot \bar c_{\text{the}} = (1)(1)+(1)(0)$ | $1$ |
+| 2. $P(y{=}1\mid \text{bit},\text{the})$ | $e^{1}/(e^{1}+1) = 2.718/3.718$ | $\approx 0.731$ |
+| 3. Negative dot product | $\bar w_{\text{bit}}\cdot \bar c_{\text{cat}} = (1)(-1)+(1)(0)$ | $-1$ |
+| 4. $P(y{=}1\mid \text{bit},\text{cat})$ | $e^{-1}/(e^{-1}+1) = 0.368/1.368$ | $\approx 0.269$ |
+| 5. $P(y{=}0\mid \text{bit},\text{cat})$ | $1 - 0.269$ | $\approx 0.731$ |
+| 6. Objective (with $k=1$) | $\log(0.731) + \log(0.731)$ | $\approx -0.626$ (natural log) |
+
+Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\text{cat}}$ to push this objective higher — larger for the true pair's dot product, smaller for the fake pair's — across every training example in the corpus.
+
+**AI/ML Usage**: Skip-Gram-with-negative-sampling (Mikolov et al., 2013) is one of the most common techniques for training word embeddings specifically because it is the most computationally efficient of the alternatives covered in this material; negative sampling is also a common trick well beyond word embeddings, appearing anywhere a model must be trained against an enormous number of "wrong answer" candidates, including recommendation systems (sampling items a user did not click, rather than scoring every item in a catalog) and contrastive representation-learning methods for images and other data types.
 
 ---
 
@@ -2329,6 +2586,33 @@ Had the comparison gone the other way (proposed cost not lower than the recorded
 
 ---
 
+<a id="skip-gram-model"></a>
+### Skip-Gram Model
+
+**The Big Idea**: This entry writes out the exact formula behind one of Word2Vec's two training setups (see the Word2Vec entry above): a Softmax Function (see that entry in the math_symbols file) applied to the Dot Product (also in the math_symbols file) between a word vector and a context vector. If those two entries are already familiar, nothing here is new math — skip-gram just assembles them into one formula and states what that formula is trained to do.
+
+**General Usage**: Given a vocabulary $V$ of size $|V|$, skip-gram picks two hyperparameters (a setting chosen by a person before training, not learned from data): an embedding dimension $d$ (commonly 50-300) and a window size $K$. It assigns every vocabulary word $w$ two separate length-$d$ vectors, a word vector $\bar v_w$ and a context vector $\bar c_w$ (see the Word2Vec entry above for why two separate vectors are used). From a large body of text, every word token together with each of its up to $K$ neighboring tokens forms one training pair, written (word $=x$, context $=y$). Skip-gram then defines the probability of context word $y$ given center word $x$ as
+$$P(\text{context}=y \mid \text{word}=x) = \frac{\exp(\bar v_x \cdot \bar c_y)}{\displaystyle\sum_{y' \in V} \exp(\bar v_x \cdot \bar c_{y'})}$$
+— exactly a softmax applied to the list of dot-product scores $\bar v_x \cdot \bar c_{y'}$, one score for every word $y'$ in the vocabulary. This gives the formula the same shape as multi-class Logistic Regression (see that entry above) with $|V|$ possible classes: a large dot product (two vectors pointing in a similar direction) pushes a word's predicted probability up, and a small or negative dot product pushes it down. Collecting all the word vectors into one $|V|\times d$ matrix and all the context vectors into a second $|V|\times d$ matrix gives a total parameter count of $2|V|d$.
+
+**Example.** Toy corpus: a single two-word sentence, "I saw" (so $|V|=2$), with an embedding dimension of $d=2$ chosen only so the vectors can be drawn on an ordinary 2-D graph (real embeddings use 50-300 dimensions). With $K=1$, this corpus yields exactly two training pairs: (word=I, context=saw) and (word=saw, context=I). Suppose, purely for this illustration, the vectors already happen to be $\bar v_I=(1,0)$, $\bar v_{saw}=(0,1)$, $\bar c_{saw}=(1,0)$, and $\bar c_I=(0,1)$ — note that $\bar v_{saw}$ points in the exact same direction as $\bar c_I$, while $\bar v_{saw}$ and $\bar c_{saw}$ point in perpendicular directions. Compute $P(\text{context} \mid \text{word}=\text{saw})$ over the whole 2-word vocabulary:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Dot product with $\bar c_I$ | $\bar v_{saw}\cdot\bar c_I=(0)(0)+(1)(1)$ | $1$ (aligned vectors) |
+| 2. Dot product with $\bar c_{saw}$ | $\bar v_{saw}\cdot\bar c_{saw}=(0)(1)+(1)(0)$ | $0$ (orthogonal vectors) |
+| 3. Exponentiate each score | $\exp(1)\approx e\approx 2.718$, $\exp(0)=1$ | $\approx 2.718$ and $1$ |
+| 4. Sum over the vocabulary | $\exp(1)+\exp(0)$ | $\approx 3.718$ |
+| 5. $P(\text{context}=I\mid\text{word}=\text{saw})$ | $\exp(1)\div 3.718$ | $\approx 0.73$ |
+| 6. $P(\text{context}=\text{saw}\mid\text{word}=\text{saw})$ | $\exp(0)\div 3.718$ | $\approx 0.27$ |
+| 7. Check | $0.73+0.27$ | $=1$, a valid distribution |
+
+Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working an example like this by hand) gives the tidier fractions $\tfrac34$ and $\tfrac14$ instead of $0.73$ and $0.27$ — the same conclusion either way: the model assigns "I" a much higher probability of being in "saw"'s context than "saw" itself, exactly because the illustrative vectors were set up with $\bar v_{saw}$ aligned to $\bar c_I$ and orthogonal to $\bar c_{saw}$.
+
+**AI/ML Usage**: Skip-gram is one of Word2Vec's two training objectives — the other, continuous bag-of-words (CBOW), runs the same prediction in reverse, predicting a center word from its surrounding context words instead of predicting context from center. Computing the softmax's denominator exactly means summing over every word in the vocabulary for every single training pair, which becomes far too slow once a vocabulary reaches the hundreds of thousands of words typical of real text; production implementations of skip-gram approximate that sum instead, most commonly with a technique called negative sampling, which turns the multi-class prediction problem into a much cheaper series of binary (yes/no) comparisons against a small number of randomly chosen "wrong" context words rather than the entire vocabulary.
+
+---
+
 <a id="spectral-theorem"></a>
 ### Spectral Theorem
 
@@ -2584,3 +2868,91 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 **Example.** If a language model's fixed vocabulary includes common words like "cat" and "dog," but never includes a rare, obscure word like "platypus," encountering that unfamiliar word in new text would cause the model to substitute it directly with UNK — effectively treating "I saw a platypus" the exact same way it would treat "I saw a UNK."
 
 **AI/ML Usage**: Handling out-of-vocabulary words gracefully was a major, genuinely important practical challenge in earlier natural language processing systems — modern language models substantially reduce, though don't necessarily fully eliminate, this exact problem by using subword tokenization instead (breaking unfamiliar words down into smaller, familiar word-pieces the model does already recognize), rather than relying purely and only on one single, catch-all UNK token.
+
+---
+
+<a id="word-analogy-vector-offset-method"></a>
+### Word Analogy (Vector Offset Method)
+
+**The Big Idea**: This builds on the Word Embedding entry below and the Vector Projection entry in the math_symbols file — specifically the everyday idea of adding and subtracting arrows tip-to-tail. If related words end up as nearby vectors, the vector offset method takes that one step further: the *difference* between two related words' vectors can itself point in a consistent, reusable direction, so sliding another word's vector along that same offset tends to land near a word that completes the same kind of relationship.
+
+**General Usage**: Given a seed pair of words $a$ and $b$ that stand in some relationship (for example, $a=\text{man}$, $b=\text{king}$), the vector offset method answers "$a$ is to $b$ as $c$ is to what word?" for a third word $c$ (for example, $c=\text{woman}$) by computing the difference vector $\vec b-\vec a$, adding it to $\vec c$, and searching the vocabulary for whichever word's embedding is the nearest neighbor (see the K-Nearest Neighbors entry above, with $K=1$) of the resulting vector $\vec b-\vec a+\vec c$. Nearest-neighbor distance in this search is usually measured with cosine similarity (see that entry in the math_symbols file) rather than plain straight-line distance.
+
+**Example.** Suppose a toy 2-dimensional embedding assigns $\vec a=\vec v_{\text{man}}=(1,0)$ and $\vec b=\vec v_{\text{king}}=(1,3)$, and the vocabulary also contains $\vec v_{\text{woman}}=(0,0)$, $\vec v_{\text{queen}}=(0,3)$, $\vec v_{\text{princess}}=(0,3.2)$, and $\vec v_{\text{throne}}=(0,5)$. To solve "man is to king as woman is to what word?", set $c=\text{woman}$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Offset vector, $\vec b - \vec a$ | $(1,3)-(1,0)$ | $(0,3)$ |
+| 2. Predicted vector, $(\vec b-\vec a)+\vec c$ | $(0,3)+(0,0)$ | $(0,3)$ |
+| 3. Distance to "queen" | $\sqrt{(0-0)^2+(3-3)^2}$ | $0$ |
+| 4. Distance to "princess" | $\sqrt{(0-0)^2+(3-3.2)^2}$ | $0.2$ |
+| 5. Distance to "throne" | $\sqrt{(0-0)^2+(3-5)^2}$ | $2$ |
+
+The nearest neighbor of the predicted vector $(0,3)$ is "queen," at distance $0$ — closer than either "princess" or "throne" — so the method completes the analogy "man is to king as woman is to queen."
+
+**AI/ML Usage**: Mikolov et al. (2013) popularized this technique as a striking demonstration that Word2Vec (see that entry below) embeddings capture real relational structure, not just plain similarity. Bolukbasi et al. (2016) and Manzini et al. (2019) reuse the exact same mechanism to automatically surface a word embedding's stereotypes rather than relying on a person to hand-pick examples: solving "black is to homeless as caucasian is to what word?" the same mechanical way solves "man is to king as woman is to queen," and the surfaced completions (see the Debiasing (Word Embeddings) entry above) are what reveal the stereotype encoded in the vectors.
+
+---
+
+<a id="word-embedding"></a>
+### Word Embedding
+
+**The Big Idea**: This builds directly on the Vector entry from the math_symbols file and the Bag of Words and One-Hot Encoding entries above. A one-hot bag-of-words vector needs one dimension for every word in the vocabulary — a vocabulary of 10,000 words means a 10,000-dimensional vector with a single 1 and 9,999 zeros for each word — and every pair of distinct words sits at a right angle to (has a dot product of exactly zero with, see the Dot Product entry in the math_symbols file) every other word, no matter how related the two words actually are in meaning. A word embedding instead represents each word with a much shorter vector — commonly between 50 and 300 numbers, any of which can be any real number rather than just 0 or 1 — chosen so that words with related meanings end up as nearby vectors, close together and pointing in similar directions, rather than as mutually orthogonal (perpendicular) one-hot vectors.
+
+**General Usage**: A word embedding is a low-dimensional, dense (mostly non-zero) vector representation of a word, typically with somewhere between 50 and 300 entries, learned so that words used in similar ways end up mapped to vectors that are close together in that vector space. "Low-dimensional" is relative to the alternative: a one-hot or bag-of-words vector needs one dimension per vocabulary word (easily 10,000 or more), while an embedding compresses each word down to a few hundred numbers that still capture useful information about the word's meaning.
+
+**Example.** Suppose a vocabulary contains only the four words "movie," "film," "was," and "is," and each is given a 2-dimensional embedding (2 dimensions is chosen here only to make the arithmetic easy to follow by hand; real embeddings use 50-300 dimensions):
+
+| Word | Embedding vector |
+|---|---|
+| movie | $(0.1,\ 0.9)$ |
+| film | $(0.2,\ 0.8)$ |
+| was | $(0.9,\ 0.1)$ |
+| is | $(0.8,\ 0.2)$ |
+
+Compare "movie" and "film" using the dot product (see the Dot Product entry in the math_symbols file): $(0.1)(0.2) + (0.9)(0.8) = 0.02 + 0.72 = 0.74$. Now compare "movie" and "was": $(0.1)(0.9) + (0.9)(0.1) = 0.09 + 0.09 = 0.18$. The dot product between "movie" and "film" ($0.74$) is much larger than the dot product between "movie" and "was" ($0.18$), which is exactly the point of an embedding: the vectors for words with related meaning ("movie" and "film") point in more similar directions than the vectors for unrelated words ("movie" and "was"), whereas with one-hot vectors every one of these dot products would have come out to exactly $0$, with no way to tell the two comparisons apart.
+
+**AI/ML Usage**: Word embeddings are what let neural networks (see the Neural Network entry) work with text at all: raw one-hot word vectors give a network zero information about which words are related, so a network trained only on sentences containing "movie" has no way to generalize to a sentence containing "film" instead. Feeding the network embedding vectors instead means it can generalize to words it never saw during training, as long as their embeddings are close to the embeddings of words it did see. Word2Vec (see that entry) is the algorithm most associated with popularizing this technique, and the same basic idea — representing a discrete token as a dense, learned vector — underlies the input layer of virtually every modern NLP model, including large language models built on the Transformer architecture.
+
+---
+
+<a id="word-type-vs-word-token"></a>
+### Word Type vs. Word Token
+
+**The Big Idea**: This builds on the Vocabulary entry in the math_symbols file. It is really just the everyday distinction between "a kind of thing" and "one specific occurrence of that thing" — the same distinction as between the outcome "4" on a die (one type, out of six possible types) and each individual roll that happens to land on 4 (a new token every time), applied here to words instead of die faces.
+
+**General Usage**: A word type is one distinct entry in a vocabulary — a unique spelling, counted exactly once no matter how many times it shows up in a body of text. A word token is every individual occurrence of a word as it actually appears in running text, counted separately each time it appears. A vocabulary's size, $|V|$ (see the Vocabulary entry in the math_symbols file), counts types, never tokens.
+
+**Example.** Take the short sentence "the cat sat on the mat."
+
+| Count | What is being counted | Result |
+|---|---|---|
+| Tokens | every word position in the sentence, in order: the, cat, sat, on, the, mat | $6$ tokens |
+| Types | every distinct spelling that appears, counted once each: the, cat, sat, on, mat | $5$ types |
+
+"The" contributes $2$ tokens (it physically appears twice) but only $1$ type (there is only one distinct word "the" in the vocabulary this sentence draws from) — that gap between a $6$-token sentence and its $5$-type vocabulary is exactly what the type/token distinction is tracking.
+
+**AI/ML Usage**: Word2Vec and the Skip-Gram Model (see those entries) each learn exactly one word vector and one context vector per word TYPE, never per token. A common word like "movie" might appear as thousands of separate tokens scattered across a large training corpus, but the model only ever maintains a single $\bar v_{\text{movie}}$ and a single $\bar c_{\text{movie}}$; every one of those thousands of token occurrences simply contributes additional training signal toward improving that one shared pair of vectors, rather than each token getting a vector of its own. The same distinction underlies why a language model's vocabulary size $|V|$ — the number of types it can recognize — is typically vastly smaller than the number of word tokens it was trained on.
+
+---
+
+<a id="word2vec"></a>
+### Word2Vec
+
+**The Big Idea**: This builds directly on the Word Embedding and Distributional Hypothesis entries above. Word2Vec (Mikolov et al., 2013) is the specific, concrete recipe that turns the distributional hypothesis into a trainable algorithm: instead of just asserting that similar words share similar contexts, it sets up a prediction problem — given a word, predict the words around it — and the numbers a neural network learns in order to get good at that prediction problem become the word's embedding.
+
+**General Usage**: Word2Vec assigns every word $w$ in the vocabulary two separate vectors: a word vector $\bar v_w$ (used when $w$ is the word currently being considered) and a context vector $\bar c_w$ (used when $w$ appears in the surrounding context of some other word). The model is trained on a large amount of raw text to predict a word's surrounding context words given that word itself; the word vectors that come out of this training process, after seeing enough real text, end up placing words that keep similar company (per the Distributional Hypothesis entry) near one another in the embedding space.
+
+**Example.** A single training step, simplified, works like this. Suppose the training text contains the sentence "I watched the movie," and the model is currently predicting context words for "watched":
+
+| Step | What happens |
+|---|---|
+| 1 | Look up the current word vector $\bar v_{\text{watched}}$ for "watched." |
+| 2 | Use $\bar v_{\text{watched}}$ to compute a predicted probability for every word in the vocabulary being a nearby context word: take its dot product (see the Dot Product entry in the math_symbols file) with each candidate word's context vector $\bar c_w$, then pass all of those dot products through a softmax function (see the Softmax Function entry in the math_symbols file) to turn them into a valid probability distribution. |
+| 3 | Compare the predicted probabilities against the words that are actually nearby in the sentence — "I," "the," and "movie" are all real context words for "watched" here. |
+| 4 | Nudge $\bar v_{\text{watched}}$ and the context vectors of the true nearby words slightly closer together (and nudge $\bar v_{\text{watched}}$ slightly away from the context vectors of words that are not nearby), so the prediction gets a little more accurate the next time this word is seen. |
+| 5 | Repeat this process for every word in a very large collection of text, millions or billions of times, until the word vectors stabilize. |
+
+After enough repetitions of this process across enough text, words that tend to appear in the same kinds of contexts — such as "movie" and "film" — end up with word vectors that point in similar directions, purely as a side effect of both having learned to predict similar context words.
+
+**AI/ML Usage**: Word2Vec (2013) was the algorithm that made pretrained word embeddings a standard first step in nearly every natural language processing pipeline for years afterward, and it comes in two variants — continuous bag-of-words and skip-gram — that differ only in which direction the prediction runs (surrounding words predicting the center word, or the center word predicting its surrounding words). Its core idea, that a useful representation can be learned purely by setting up a self-supervised prediction task (one where the "labels" come from the raw text itself rather than from any human annotation) over unlabeled text, is also the same basic strategy used to pretrain modern large language models, just applied at a vastly larger scale and with a different network architecture (the Transformer, rather than the simple predictive model Word2Vec used).

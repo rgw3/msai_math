@@ -7,34 +7,34 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 169 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 171 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute to GeLU | Gini to Partial | Perceptron to Zero-One |
+| Absolute Value to GeLU | Gini Index / Gini Function to Partial Order | Perceptron Loss to Zero-One Loss |
 |---|---|---|
 | [Absolute Value](#absolute-value) | [Gini Index / Gini Function](#gini-index-gini-function) | [Perceptron Loss](#perceptron-loss) |
 | [Action Space](#action-space) | [Goal Set](#goal-set) | [Permutation](#permutation) |
 | [Activation Function](#activation-function) | [Gradient](#gradient) | [Phi, lowercase](#phi-lowercase) |
 | [Adjacency Matrix](#adjacency-matrix) | [Graph](#graph) | [Phi, uppercase](#phi-uppercase) |
 | [Admissible Heuristic](#admissible-heuristic) | [Greater Than / Less Than](#greater-than-less-than) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
-| [All-Ones Vector](#all-ones-vector) | [Halfspace](#halfspace) | [Positional Embedding](#positional-embedding) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hat Notation](#hat-notation) | [Potential Function](#potential-function) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hessian Matrix](#hessian-matrix) | [Precedence Relation](#precedence-relation) |
-| [Approximately Equal](#approximately-equal) | [Heuristic Function](#heuristic-function) | [Prime Notation](#prime-notation) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
-| [Assignment Arrow](#assignment-arrow) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Identity Matrix](#identity-matrix) | [Product Notation](#product-notation) |
-| [Attention Operator](#attention-operator) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
-| [Beta](#beta) | [Implies Arrow](#implies-arrow) | [Query, Key, and Value](#query-key-and-value) |
-| [Bias Term](#bias-term) | [Infinity](#infinity) | [Question-Mark Relation](#question-mark-relation) |
-| [Big-O Notation](#big-o-notation) | [Initial State](#initial-state) | [Real Numbers](#real-numbers) |
-| [Binary Label Set](#binary-label-set) | [Integral](#integral) | [Receptive Field](#receptive-field) |
-| [Binomial Coefficient](#binomial-coefficient) | [Inverse Hessian](#inverse-hessian) | [Regression Function](#regression-function) |
-| [Blocks World](#blocks-world) | [Jacobian](#jacobian) | [ReLU](#relu) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size](#kernel-kernel-size) | [Rotation Matrix](#rotation-matrix) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label](#label) | [Sampling Notation](#sampling-notation) |
-| [Concept Class](#concept-class) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
-| [Conditional Bar](#conditional-bar) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Configuration Space](#configuration-space) | [Lambda, lowercase](#lambda-lowercase) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [All-Ones Vector](#all-ones-vector) | [Halfspace](#halfspace) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hat Notation](#hat-notation) | [Positional Embedding](#positional-embedding) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hessian Matrix](#hessian-matrix) | [Potential Function](#potential-function) |
+| [Approximately Equal](#approximately-equal) | [Heuristic Function](#heuristic-function) | [Precedence Relation](#precedence-relation) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Prime Notation](#prime-notation) |
+| [Assignment Arrow](#assignment-arrow) | [Hypothesis](#hypothesis) | [Probability / Probability Density](#probability-probability-density) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Identity Matrix](#identity-matrix) | [Probability Simplex](#probability-simplex) |
+| [Attention Operator](#attention-operator) | [If and Only If](#if-and-only-if) | [Product Notation](#product-notation) |
+| [Beta](#beta) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
+| [Bias Term](#bias-term) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
+| [Big-O Notation](#big-o-notation) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
+| [Binary Label Set](#binary-label-set) | [Integral](#integral) | [Real Numbers](#real-numbers) |
+| [Binomial Coefficient](#binomial-coefficient) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
+| [Blocks World](#blocks-world) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
+| [Concept Class](#concept-class) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
+| [Conditional Bar](#conditional-bar) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
+| [Configuration Space](#configuration-space) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
 | [Conjunction / Logical AND](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Set Braces](#set-braces) |
 | [Cosine Similarity](#cosine-similarity) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
 | [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Learning Rate](#learning-rate) | [Set Difference](#set-difference) |
@@ -45,29 +45,29 @@ All 169 entries, alphabetical. Read down the first column, then down the second,
 | [Delta, lowercase](#delta-lowercase) | [Logistic Function](#logistic-function) | [Sign Function](#sign-function) |
 | [Dimension / Count Variables](#dimension-count-variables) | [Loss Function](#loss-function) | [Softmax Function](#softmax-function) |
 | [Disjunction / Logical OR](#disjunction-logical-or) | [Margin](#margin) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix](#matrix) | [Standard Deviation](#standard-deviation) |
-| [Element-of Symbol](#element-of-symbol) | [Matrix Entry](#matrix-entry) | [State Space](#state-space) |
-| [Element-wise Operations](#element-wise-operations) | [Matrix Transpose](#matrix-transpose) | [State Transition Function](#state-transition-function) |
-| [Ellipsis](#ellipsis) | [Max Function](#max-function) | [Step Size](#step-size) |
-| [ELU](#elu) | [Mean](#mean) | [Stride](#stride) |
-| [Empty Set](#empty-set) | [Min Function](#min-function) | [Subset](#subset) |
-| [Epsilon](#epsilon) | [Mistake Bound](#mistake-bound) | [Summation](#summation) |
-| [Error Signal](#error-signal) | [Model Parameters](#model-parameters) | [Superscript Example Index](#superscript-example-index) |
-| [Eta](#eta) | [Mu](#mu) | [Tanh](#tanh) |
-| [Euclidean Norm](#euclidean-norm) | [N-Gram](#n-gram) | [TF-IDF](#tf-idf) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Nabla](#nabla) | [Theta](#theta) |
-| [Existential Quantifier](#existential-quantifier) | [Natural Numbers](#natural-numbers) | [Tilde Accent](#tilde-accent) |
-| [Expectation](#expectation) | [Negation Overbar](#negation-overbar) | [Training Set](#training-set) |
-| [Factorial](#factorial) | [Normal Distribution Notation](#normal-distribution-notation) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Not Equal](#not-equal) | [Universal Quantifier](#universal-quantifier) |
-| [Floor Function](#floor-function) | [Number Sign / Count](#number-sign-count) | [Variance](#variance) |
-| [Frobenius Norm](#frobenius-norm) | [Omega](#omega) | [Vector](#vector) |
-| [Function Composition](#function-composition) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Vector Overbar](#vector-overbar) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Outer Product](#outer-product) | [Vocabulary](#vocabulary) |
-| [Gain](#gain) | [Padding](#padding) | [Weight Vector](#weight-vector) |
-| [Gamma](#gamma) | [Parameterized Function / Model](#parameterized-function-model) | [Zero-One Loss](#zero-one-loss) |
-| [Gaussian CDF](#gaussian-cdf) | [Partial Derivative](#partial-derivative) |  |
-| [GeLU](#gelu) | [Partial Order](#partial-order) |  |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix](#matrix) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Element-of Symbol](#element-of-symbol) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
+| [Element-wise Operations](#element-wise-operations) | [Matrix Transpose](#matrix-transpose) | [State Space](#state-space) |
+| [Ellipsis](#ellipsis) | [Max Function](#max-function) | [State Transition Function](#state-transition-function) |
+| [ELU](#elu) | [Mean](#mean) | [Step Size](#step-size) |
+| [Empty Set](#empty-set) | [Min Function](#min-function) | [Stride](#stride) |
+| [Epsilon](#epsilon) | [Mistake Bound](#mistake-bound) | [Subset](#subset) |
+| [Error Signal](#error-signal) | [Model Parameters](#model-parameters) | [Summation](#summation) |
+| [Eta](#eta) | [Mu](#mu) | [Superscript Example Index](#superscript-example-index) |
+| [Euclidean Norm](#euclidean-norm) | [N-Gram](#n-gram) | [Tanh](#tanh) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Nabla](#nabla) | [TF-IDF](#tf-idf) |
+| [Existential Quantifier](#existential-quantifier) | [Natural Numbers](#natural-numbers) | [Theta](#theta) |
+| [Expectation](#expectation) | [Negation Overbar](#negation-overbar) | [Tilde Accent](#tilde-accent) |
+| [Factorial](#factorial) | [Normal Distribution Notation](#normal-distribution-notation) | [Training Set](#training-set) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Not Equal](#not-equal) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Floor Function](#floor-function) | [Number Sign / Count](#number-sign-count) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Omega](#omega) | [Variance](#variance) |
+| [Function Composition](#function-composition) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Vector](#vector) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Outer Product](#outer-product) | [Vector Overbar](#vector-overbar) |
+| [Gain](#gain) | [Padding](#padding) | [Vector Projection](#vector-projection) |
+| [Gamma](#gamma) | [Parameterized Function / Model](#parameterized-function-model) | [Vocabulary](#vocabulary) |
+| [Gaussian CDF](#gaussian-cdf) | [Partial Derivative](#partial-derivative) | [Weight Vector](#weight-vector) |
+| [GeLU](#gelu) | [Partial Order](#partial-order) | [Zero-One Loss](#zero-one-loss) |
 
 ## Symbols
 
@@ -1856,6 +1856,21 @@ On macOS: press Option+P for π directly; the subscript digit is typed right aft
 
 ---
 
+<a id="pointwise-mutual-information-pmi"></a>
+### Pointwise Mutual Information (PMI) — `PMI(x,y)`
+Symbol: none — written as the abbreviation "PMI" followed by the two items in parentheses, ordinary text  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This builds on the Probability / Probability Density entry above and ordinary fractions from Algebra 2, passed through a Logarithm (see that entry below) — PMI simply answers the everyday question "does knowing about $x$ change how likely $y$ seems?" with one precise number.
+
+**General Usage**: $$\text{PMI}(x,y) = \log\frac{P(x,y)}{P(x)\,P(y)}$$ compares how often $x$ and $y$ actually occur together, $P(x,y)$, against how often they would be expected to occur together purely by chance if they were statistically independent, $P(x)P(y)$ (see the Chain Rule (for Probability) entry in the math_concepts file for why independent events multiply this way). A PMI of $0$ means $x$ and $y$ occur together exactly as often as chance alone would predict; a positive PMI means they occur together more often than chance (a meaningful association); a negative PMI means they occur together less often than chance would predict.
+
+**Example.** Across a body of text with $D=1000$ total word pairs, suppose "peanut" and "butter" appear together $\text{count}(\text{peanut},\text{butter})=20$ times, "peanut" appears in $\text{count}(\text{peanut})=25$ pairs total, and "butter" appears in $\text{count}(\text{butter})=30$ pairs total. Then $P(\text{peanut},\text{butter}) = 20/1000 = 0.02$, $P(\text{peanut}) = 25/1000=0.025$, and $P(\text{butter})=30/1000=0.03$, so $$\text{PMI} = \log\!\left(\frac{0.02}{0.025\times 0.03}\right) = \log\!\left(\frac{0.02}{0.00075}\right) = \log(26.67) \approx 3.28$$ a strongly positive number, correctly reflecting that "peanut" and "butter" occur together far more often than their individual frequencies alone would predict.
+
+**AI/ML Usage**: PMI is the core ingredient of the matrix that Levy and Goldberg (2014) proved Word2Vec's Skip-Gram-with-negative-sampling algorithm is implicitly factoring (see the Matrix Factorization (Word Embeddings) entry in the math_concepts file) — building a word-by-context PMI matrix, shifted by $\log k$ (the number of negative samples), and factoring it with plain linear algebra produces embeddings with the same theoretical properties as training skip-gram directly. PMI is also used more broadly in NLP as a simple, unsupervised measure of how strongly two words are associated, such as for automatically detecting fixed phrases ("collocations") like "peanut butter" that behave more like a single unit than two independently chosen words.
+
+---
+
 <a id="positional-embedding"></a>
 ### Positional Embedding — `PE`
 Symbol: none — written as ordinary text  
@@ -2544,6 +2559,35 @@ On macOS: type the letter, then open the character picker (Fn/🌐), search "com
 **Example.** Writing $\bar{x} = (2,5,9)$ on a whiteboard means exactly the same thing as writing $\mathbf{x} = (2,5,9)$ in a printed textbook — both notations are naming the identical 3-dimensional vector, just using different visual conventions for "this is a vector, not a plain number."
 
 **AI/ML Usage**: Used, especially in course lecture notes and on physical whiteboards where bolding text isn't practical to write by hand, as a common substitute for bold vector notation — writing $\bar{x}$ for a feature vector, or $\bar{w}$ for a weight vector, means exactly, precisely the same underlying mathematical object as $\mathbf{x}$ or $\mathbf{w}$ printed in a formal textbook, just using a different visual convention to signal "this represents a vector, not a single plain number."
+
+---
+
+<a id="vector-projection"></a>
+### Vector Projection — `proj_u(v)`
+Symbol: none — "proj" is ordinary text, with the direction vector written as a small subscript  
+On macOS: type "proj" normally, followed by the subscript inline (or just write it on the line as proj_u(v)) — no special character is needed
+
+**The Big Idea**: Picture a flashlight shining straight down from directly overhead onto a tilted stick lying on a table: the stick's shadow on the table is its projection. Vector projection is the same idea done with numbers instead of light — it finds how much of one vector "lies along" the direction of another. It builds directly on the Dot Product entry and the Euclidean Norm entry above.
+
+**General Usage**: Given a vector $\mathbf{v}$ and a nonzero direction vector $\mathbf{u}$ (not necessarily length $1$), the projection of $\mathbf{v}$ onto $\mathbf{u}$ is itself a vector, computed as
+$$
+\text{proj}_{\mathbf{u}}(\mathbf{v}) = \left(\frac{\mathbf{v}\cdot\mathbf{u}}{\mathbf{u}\cdot\mathbf{u}}\right)\mathbf{u}
+$$
+The result always points along the same line as $\mathbf{u}$ (matching its direction or exactly opposite it), and its length measures how much of $\mathbf{v}$'s "content" points that way. If $\mathbf{u}$ has already been scaled to length $1$ (a unit vector, written $\hat{\mathbf{u}}$; see the Euclidean Norm entry), the formula simplifies, since $\hat{\mathbf{u}}\cdot\hat{\mathbf{u}}=1$, to $\text{proj}_{\hat{\mathbf{u}}}(\mathbf{v}) = (\mathbf{v}\cdot\hat{\mathbf{u}})\,\hat{\mathbf{u}}$. Subtracting the projection back off the original vector, $\mathbf{v} - \text{proj}_{\mathbf{u}}(\mathbf{v})$, leaves whatever part of $\mathbf{v}$ points perpendicular to $\mathbf{u}$; the two pieces always add back up to the original vector.
+
+**Example.** Let $\mathbf{u} = (3, 4)$ and $\mathbf{v} = (2, 6)$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. $\mathbf{v}\cdot\mathbf{u}$ | $(2)(3) + (6)(4)$ | $6+24=30$ |
+| 2. $\mathbf{u}\cdot\mathbf{u}$ | $3^2+4^2$ | $25$ |
+| 3. Scalar factor | $30/25$ | $1.2$ |
+| 4. $\text{proj}_{\mathbf{u}}(\mathbf{v}) = 1.2\,\mathbf{u}$ | $1.2\times(3,4)$ | $(3.6,\ 4.8)$ |
+| 5. Leftover, $\mathbf{v}-\text{proj}_{\mathbf{u}}(\mathbf{v})$ | $(2-3.6,\ 6-4.8)$ | $(-1.6,\ 1.2)$ |
+
+Check: the leftover piece should point perpendicular to $\mathbf{u}$, meaning its dot product with $\mathbf{u}$ should come out to exactly $0$: $(-1.6)(3)+(1.2)(4) = -4.8+4.8=0$. It does, confirming the projection was computed correctly.
+
+**AI/ML Usage**: Vector projection is the core mathematical tool behind measuring and modifying a specific "direction of meaning" inside a word embedding space (see the Word Embedding entry in the math_concepts file). Bolukbasi et al. (2016) measure how strongly a word leans toward a stereotype — for example, how strongly an occupation word's embedding leans "male" or "female" — by projecting it onto a direction defined by gendered word pairs, then attempt to remove that association by subtracting the projection back off, exactly the $\mathbf{v}-\text{proj}_{\mathbf{u}}(\mathbf{v})$ computation shown above (see the Debiasing (Word Embeddings) entry in the math_concepts file). More generally, projection is also the core operation behind Principal Component Analysis (see that entry), which finds the directions capturing the most variation in a dataset by repeatedly projecting data onto candidate directions.
 
 ---
 
