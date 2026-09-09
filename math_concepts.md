@@ -7,16 +7,17 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 157 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 166 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* to Fast | Feature to Normal | NP-Hard to Unknown-Word |
+| A* to Feature | Forward to Non-Parametric | Normal to Unknown-Word |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Feature Expansion](#feature-expansion) | [NP-Hard](#np-hard) |
-| [Action Schema](#action-schema) | [Frontier / Open List](#frontier-open-list) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Graphical Model](#gaussian-graphical-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [Agnostic Learning](#agnostic-learning) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-vs-All](#one-vs-all) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Generative Model](#generative-model) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Arity](#arity) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthonormal Basis](#orthonormal-basis) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) |
+| [Ackermann Steering](#ackermann-steering) | [Frontier / Open List](#frontier-open-list) | [NP-Hard](#np-hard) |
+| [Action Schema](#action-schema) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-Hot Encoding](#one-hot-encoding) |
+| [Agnostic Learning](#agnostic-learning) | [Generative Model](#generative-model) | [One-vs-All](#one-vs-all) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthonormal Basis](#orthonormal-basis) |
 | [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Overfitting](#overfitting) |
 | [Backpointer](#backpointer) | [Gradient Descent](#gradient-descent) | [PAC Learning](#pac-learning) |
 | [Backpropagation](#backpropagation) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
@@ -32,38 +33,40 @@ All 157 entries, alphabetical. Read down the first column, then down the second,
 | [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Principal Component Analysis](#principal-component-analysis) |
 | [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
 | [Centroid](#centroid) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Quadratic Form](#quadratic-form) |
-| [Chernoff Bound](#chernoff-bound) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Latent Variable](#latent-variable) | [Random Forest](#random-forest) |
-| [Closed-World Assumption](#closed-world-assumption) | [Likelihood](#likelihood) | [Random Projection](#random-projection) |
-| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Rank](#rank) |
-| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Regularization](#regularization) |
-| [Conditional Independence](#conditional-independence) | [Log Likelihood](#log-likelihood) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Logistic Regression](#logistic-regression) | [Sample Complexity](#sample-complexity) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Loss Surface](#loss-surface) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Lower Bound](#lower-bound) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Markov Blanket](#markov-blanket) | [Search Statistics](#search-statistics) |
-| [Covariance Matrix](#covariance-matrix) | [Markov's Inequality](#markovs-inequality) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Validation](#cross-validation) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
-| [Dead End](#dead-end) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
-| [Decision Boundary](#decision-boundary) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
-| [Decision Tree](#decision-tree) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
-| [Diagonal Matrix](#diagonal-matrix) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Discriminative Model](#discriminative-model) | [Mutex](#mutex) | [Tensor](#tensor) |
-| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Early Stopping](#early-stopping) | [Named-Entity Type Labels](#named-entity-type-labels) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Log Likelihood](#negative-log-likelihood) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [Union Bound](#union-bound) |
-| [Epoch](#epoch) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Newton's Method](#newtons-method) | [Unknown-Word Token](#unknown-word-token) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Non-Parametric Method](#non-parametric-method) |  |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Normal Equations](#normal-equations) |  |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Chernoff Bound](#chernoff-bound) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Quadratic Form](#quadratic-form) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Closed-World Assumption](#closed-world-assumption) | [Latent Variable](#latent-variable) | [Random Forest](#random-forest) |
+| [Clustering](#clustering) | [Lattice-Based Planning](#lattice-based-planning) | [Random Projection](#random-projection) |
+| [Computation Graph](#computation-graph) | [Likelihood](#likelihood) | [Rank](#rank) |
+| [Conditional Independence](#conditional-independence) | [Linear Programming](#linear-programming) | [Regularization](#regularization) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linearly Separable](#linearly-separable) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Convex Function](#convex-function) | [Loss Surface](#loss-surface) | [Schur Complement](#schur-complement) |
+| [Coordinate Descent](#coordinate-descent) | [Lower Bound](#lower-bound) | [Search Statistics](#search-statistics) |
+| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov's Inequality](#markovs-inequality) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Validation](#cross-validation) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
+| [Dead End](#dead-end) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
+| [Decision Boundary](#decision-boundary) | [Mean Squared Error](#mean-squared-error) | [Support Vector Machine](#support-vector-machine) |
+| [Decision Tree](#decision-tree) | [Minimum Description Length](#minimum-description-length) | [Surrogate Loss](#surrogate-loss) |
+| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Swept Volume](#swept-volume) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
+| [Discriminative Model](#discriminative-model) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dropout](#dropout) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tensor](#tensor) |
+| [Early Stopping](#early-stopping) | [Mutex](#mutex) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Naive Bayes](#naive-bayes) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [EM Algorithm](#em-algorithm) | [Named-Entity Type Labels](#named-entity-type-labels) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epoch](#epoch) | [Negative Log Likelihood](#negative-log-likelihood) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Neural Network](#neural-network) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Neuron](#neuron) | [Unknown-Word Token](#unknown-word-token) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Newton's Method](#newtons-method) |  |
+| [Feature Expansion](#feature-expansion) | [Non-Parametric Method](#non-parametric-method) |  |
 
 ## Concepts
 
@@ -86,6 +89,28 @@ All 157 entries, alphabetical. Read down the first column, then down the second,
 Notice A* did briefly expand $A$ (its priority looked best at Step 1), but it never *committed* to the path through $A$ — it kept $G$'s cost open to revision until $G$ itself became the minimum-priority item in the queue, by which point its recorded cost was already the true optimum.
 
 **AI/ML Usage**: A* is one of the most widely deployed algorithms in AI — used in GPS route planning, video-game pathfinding, and robot motion planning — precisely because it combines the guaranteed optimality of Dijkstra's Algorithm with the speed of a heuristic-guided search, whenever a reliably admissible heuristic (such as straight-line distance for physical navigation) is available.
+
+---
+
+<a id="ackermann-steering"></a>
+### Ackermann Steering
+
+**The Big Idea**: This is Algebra 2 circle geometry (arc length, radius) applied to a rigid body: every point on a body rotating about a fixed center traces an arc of a circle centered there. The genuinely new idea is that a car's whole body rotates about one shared, moment-by-moment center, and that its two steerable wheels must therefore point at two *different* angles to stay consistent with that one center — that mechanical reasoning goes beyond plain circle geometry.
+
+**General Usage**: Ackermann steering is the geometric arrangement used in ordinary cars that lets the front two wheels turn at slightly different angles so that all four wheels can roll cleanly along circular arcs around one shared **instantaneous center of turning**, without any wheel skidding sideways. A wheel can only roll without skidding in the direction perpendicular to its own axle, so the perpendicular line drawn outward from each wheel's axle must all cross through that one shared center at any instant the car is turning. The rear wheels share a single fixed axle, so that shared center always lies somewhere on the perpendicular line from the rear axle; matching that same point from each front wheel individually is what forces the two front wheels to differ in angle. Real cars enforce this with a mechanical linkage, but for planning and control it is far simpler to model the whole steering system as one virtual wheel out in front of the car, controlled by a single steering angle (or, equivalently, a single curvature value — see the Curvature entry in `math_symbols.md`).
+
+**Example.** A common simplified model (the "bicycle model") relates a car's wheelbase $L$ (the distance from the rear axle to the front axle) to the turning radius $R$ (measured to the rear axle's midpoint) and the virtual front wheel's steering angle $\delta$ by the right-triangle tangent ratio $\tan(\delta) = L/R$ — the same "opposite over adjacent" ratio from right-triangle trigonometry, applied to the triangle formed by the wheelbase and the turning radius.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. State the knowns | Wheelbase $L = 2.5$ m, desired turning radius $R = 10$ m | — |
+| 2. Apply the relation | $\tan(\delta) = L/R = 2.5/10$ | $\tan(\delta) = 0.25$ |
+| 3. Solve for $\delta$ | $\delta = \arctan(0.25)$ | $\delta \approx 14.04°$ |
+| 4. Check (reverse the ratio) | $R = L/\tan(\delta) = 2.5/\tan(14.04°) = 2.5/0.25$ | $R = 10$ m ✓, matches the original radius |
+
+So a virtual front wheel angled at about $14°$ makes this car trace a circle of radius $10$ meters.
+
+**AI/ML Usage**: Ackermann steering is the standard example of a real-world **kinematic constraint** (see the Kinematic Constraints and Control Parameters entry) in mobile-robotics and self-driving-car research — the fact that the car cannot move sideways or spin in place shapes essentially every motion planner built for it, since a geometrically direct path (like a straight line into a tight parking spot) may simply be undrivable. Planning approaches built specifically around this limitation include Reeds-Shepp curves and lattice-based planning (see that entry), both of which only ever propose paths the car's Ackermann steering can actually realize.
 
 ---
 
@@ -515,6 +540,24 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 
 ---
 
+<a id="configuration-space-c-space-obstacle"></a>
+### Configuration-Space (C-Space) Obstacle
+
+**The Big Idea**: This builds directly on the Configuration Space entry in `math_symbols.md` — that entry introduces $\mathcal C_{obs}$ as "the region to avoid," and this entry is about how that region is actually *computed* once the robot is a real, finite-sized shape rather than an infinitesimal point.
+
+**General Usage**: Pick one reference point on the robot's body (its "origin"). The configuration-space obstacle for a given physical obstacle is the set of every location the robot's origin could occupy such that the robot's shape, at its current orientation, would overlap that obstacle — equivalently, the physical obstacle's outline "grown outward" by sliding the robot's shape all the way around it. Once this expanded region has been computed, checking whether the robot's origin lies outside every C-space obstacle is enough to guarantee the whole robot is collision-free, so the robot can again be treated as an infinitesimal point (see the Configuration Space entry) for planning purposes — the robot's own shape has already been folded into the expanded obstacles. If the robot can also rotate, a differently-shaped C-space obstacle exists for each possible orientation, so the full C-space obstacle becomes a region in $(x, y, \theta)$ rather than only $(x, y)$.
+
+**Example.** Model a robot as a disk of radius $r = 0.5$ around its origin point, and a physical obstacle as a $2\times2$ square centered at the origin, occupying $x \in [-1, 1],\ y \in [-1, 1]$. The robot's origin collides with the square exactly when it comes within $r = 0.5$ of the square's boundary, so the C-space obstacle is the square grown outward by $0.5$ in every direction — a rounded rectangle spanning roughly $x \in [-1.5, 1.5],\ y \in [-1.5, 1.5]$, with quarter-circle corners of radius $0.5$.
+
+| Candidate robot-origin point | Distance to nearest square edge | Inside C-space obstacle? |
+|---|---|---|
+| $(1.2,\ 0)$ | Nearest edge point is $(1, 0)$, distance $0.2$ | Yes ($0.2 < 0.5$) — robot would collide |
+| $(1.6,\ 0)$ | Nearest edge point is $(1, 0)$, distance $0.6$ | No ($0.6 > 0.5$) — robot is safely clear |
+
+**AI/ML Usage**: This is the standard technique that turns motion planning for a physically-sized robot (a robot arm, a mobile robot, a self-driving car) into an ordinary point-based search problem: compute every C-space obstacle once, often as a one-time precomputation for a static environment, and then run any point-based planner (Dijkstra's Algorithm, A* Search, lattice-based planning — see those entries) directly in the resulting free space. This same "expand the obstacle by the shape of the moving object" idea (formally, a Minkowski sum) reappears throughout robotics and computational geometry wherever a finite-sized shape must be checked against an obstacle map.
+
+---
+
 <a id="consistent-hypothesis-consistency"></a>
 ### Consistent Hypothesis / Consistency
 
@@ -835,6 +878,26 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 
 ---
 
+<a id="forward-kinematics-and-inverse-kinematics"></a>
+### Forward Kinematics and Inverse Kinematics
+
+**The Big Idea**: Forward kinematics is an ordinary function in exactly the Algebra 2 sense of $f(x) = y$ — control-parameter inputs go in, a configuration or velocity output comes out. Inverse kinematics asks the equally familiar follow-up, "solve for the input" — except this equation is not always solvable, which is the genuinely new wrinkle beyond ordinary function inversion.
+
+**General Usage**: Forward kinematics is the mapping from a system's control parameters (see the Kinematic Constraints and Control Parameters entry) to the resulting configuration or velocity, built so that the system's kinematic constraints are satisfied automatically, by construction. Inverse kinematics is the reverse mapping: given a desired configuration (or a desired change in configuration), find control parameters that would achieve it. Because the kinematic constraints restrict which motions are physically achievable at all, inverse kinematics is not guaranteed to have a solution for every desired configuration — reaching an otherwise-unreachable configuration then requires a whole *sequence* of feasible motions rather than one single command.
+
+**Example.** Using the Ackermann car's parametric form from the Kinematic Constraints and Control Parameters entry, $\dot x = s\cos\theta,\ \dot y = s\sin\theta,\ \dot\theta = sc$, with speed $s$ and curvature $c$ as control parameters:
+
+| Step | Question | Computation | Result |
+|---|---|---|---|
+| 1 | Forward kinematics: given $s=2$ m/s, $c=0.1$ m$^{-1}$, $\theta=0°$, find the velocity | $\dot x = 2\cos(0°) = 2$; $\dot y = 2\sin(0°) = 0$; $\dot\theta = 2(0.1) = 0.2$ | Velocity $= (2,\ 0)$ m/s, turning at $0.2$ rad/s |
+| 2 | Inverse kinematics: at $\theta = 0°$, find $s, c$ that produce pure sideways motion, $\dot x = 0,\ \dot y = 2$ | From $\dot x = s\cos(0°) = s$, requiring $\dot x = 0$ forces $s = 0$. But then $\dot y = s\sin(0°) = 0 \cdot 0 = 0 \ne 2$ | **No solution exists** — no instantaneous $(s,c)$ can move this car sideways |
+
+Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back motions rather than one instantaneous command: the single desired velocity is outside what any one choice of control parameters can produce.
+
+**AI/ML Usage**: In robotics and autonomous-vehicle planning, forward kinematics is what a motion simulator uses to predict where a commanded control (steering and speed, or a robot arm's joint torques) will actually take the system, while inverse kinematics is what a planner or controller uses to work out which commands to issue to reach a desired pose — for example, computing the joint angles that place a robot arm's end effector (its "hand") at a target position, or the steering and speed commands needed to track a target trajectory.
+
+---
+
 <a id="frontier-open-list"></a>
 ### Frontier / Open List
 
@@ -897,6 +960,26 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 **Example.** Without careful initialization, a deep network's very first forward pass can produce numbers that are wildly, chaotically too large or shrink down to nearly zero by the time they reach the final layer, making the network extremely difficult to train right from the very start. Glorot initialization specifically chooses each layer's starting-weight range to help keep signal sizes roughly consistent as they pass all the way through the network.
 
 **AI/ML Usage**: This is one of several standard weight-initialization schemes (along with the closely related He initialization, tailored specifically for ReLU-based networks) that are essentially default, near-automatic settings in virtually every modern deep learning software library — proper initialization made a substantial, measurable difference in successfully training the earliest deep neural networks.
+
+---
+
+<a id="goal-biased-and-bidirectional-rrt-variants"></a>
+### Goal-Biased and Bidirectional RRT Variants
+
+**The Big Idea**: This builds directly on the Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT) entry — both variants below change nothing about how a single RRT step works; they only change *which state gets chosen* as the random target to steer toward, occasionally swapping a purely random sample for a more useful one.
+
+**General Usage**: A plain RRT explores every direction of the space evenly, since nothing biases where its random samples land — excellent for rapidly covering unknown space, but inefficient at actually reaching one specific goal, since progress toward the goal happens only by chance. A **goal-biased RRT** fixes this with one small change: some small fixed fraction of the time (the "goal bias," e.g. $0.05$, meaning $5\%$), the algorithm skips sampling a random state entirely and instead tries to steer directly toward the goal itself, pulling the tree more rapidly toward it. A **bidirectional RRT** goes further, growing two separate trees at once — one rooted at the start, one rooted at the goal — with an added bias term on each tree that occasionally targets a vertex from the *other* tree, pulling the two trees toward meeting each other in the middle rather than each one needing to blindly search the entire remaining space on its own.
+
+**Example.** With a goal bias of $p=0.05$ over $n=200$ growth iterations, the expected number of iterations spent steering directly at the goal, versus sampling a purely random state, is:
+
+| Quantity | Computation | Result |
+|---|---|---|
+| Expected goal-directed steering attempts | $n \times p = 200 \times 0.05$ | $10$ |
+| Expected purely random exploration steps | $n \times (1-p) = 200 \times 0.95$ | $190$ |
+
+Choosing $p$ is itself a tradeoff: in a mostly open environment, a larger goal bias is safe, since a direct shot at the goal is usually collision-free and gets there faster. In a maze-like environment with many obstacles, a large goal bias instead wastes iterations — a straight steer toward a distant goal is far more likely to be blocked by an obstacle along a maze-like path, so a smaller goal bias (fewer wasted direct attempts, more exploratory sampling) grows the tree faster overall.
+
+**AI/ML Usage**: Sampling-bias refinements of exactly this kind are standard in real motion-planning software used across robotics research and industry (for example, the widely used Open Motion Planning Library, OMPL) — goal bias and bidirectional growth are two of the simplest and most common such refinements layered on top of a base RRT (or PRM-family) planner, and biasing sampling toward other "useful" regions of a space in more sophisticated ways remains an active area of motion-planning research.
 
 ---
 
@@ -1230,6 +1313,31 @@ Classify the new point $P=(4,3)$. Compute the squared distance from $P$ to every
 
 ---
 
+<a id="kinematic-constraints-and-control-parameters"></a>
+### Kinematic Constraints and Control Parameters
+
+**The Big Idea**: A kinematic constraint is stated as an equation set equal to zero, which is the same Algebra 2 idea as a line's equation $ax+by=c$ defining a solution set — except here the "variables" are a system's instantaneous *rates of change* (velocities), so satisfying the equation restricts which velocities are legal at a given instant, not which points are legal.
+
+**General Usage**: Kinematic constraints are differential equations that any physically realizable motion of a system must satisfy at every instant — for example, encoding that a car cannot slide sideways. Control parameters are a smaller set of variables, with exactly as many dimensions as the system has independently controllable degrees of freedom, that parameterize every motion the kinematic constraints still permit.
+
+**Example.** For a car whose heading $\theta$ is measured from the $x$-axis, the forward-direction unit vector is $(\cos\theta, \sin\theta)$, and the direction perpendicular to it (sideways) is $(\sin\theta, -\cos\theta)$. "No sideways motion" means the velocity vector $(\dot x, \dot y)$ has zero component along that perpendicular direction:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Write the zero-component condition as a dot product | $(\dot x,\ \dot y)\cdot(\sin\theta,\ -\cos\theta) = 0$ | — |
+| 2. Expand the dot product | $\dot x\sin\theta + \dot y(-\cos\theta) = 0$ | — |
+| 3. Simplify | — | $\dot x \sin\theta - \dot y\cos\theta = 0$ (the **implicit-form** kinematic constraint) |
+
+A second, equivalent way to encode the same restriction is to parameterize every allowed motion directly, using control parameters speed $s$ and curvature $c$ (curvature $=1/\text{radius}$; see the Curvature entry in `math_symbols.md`): $\dot x = s\cos\theta,\ \dot y = s\sin\theta,\ \dot\theta = sc$. This is the **parametric form** — by construction, any values of $s$ and $c$ automatically satisfy the implicit form, which can be checked directly by substitution:
+
+$$\dot x \sin\theta - \dot y\cos\theta = (s\cos\theta)(\sin\theta) - (s\sin\theta)(\cos\theta) = s\cos\theta\sin\theta - s\sin\theta\cos\theta = 0$$
+
+which holds identically for *any* $s$, $c$, and $\theta$ — confirming the parametric form never violates the implicit constraint it was built to satisfy.
+
+**AI/ML Usage**: Every physical robot used in AI applications — wheeled mobile robots, self-driving cars, robot arms — has its own kinematic constraints and control parameters, and the same forward/inverse relationship between them (see the Forward Kinematics and Inverse Kinematics entry). Search-based motion planners cannot simply search over arbitrary velocities; they must search only over motions the kinematic constraints actually allow, which is precisely the problem lattice-based planning (see that entry) is built to solve.
+
+---
+
 <a id="kl-divergence"></a>
 ### KL Divergence
 
@@ -1253,6 +1361,27 @@ Classify the new point $P=(4,3)$. Compute the squared distance from $P$ to every
 **Example.** When modeling student test scores, "underlying ability" might be treated as a latent variable — genuinely real and directly influential on the observed scores, but never something you can measure precisely and directly the way you can simply read off a test score itself. A model has to infer likely values for this hidden ability purely from patterns in the observed, actually-measured test scores.
 
 **AI/ML Usage**: Latent variables are central to a huge range of ML models: Gaussian Mixture Models treat cluster membership as latent, Variational Autoencoders treat their compressed representation as latent, and topic models used for text analysis treat each document's underlying topic mixture as latent — in every one of these cases, something genuinely important is assumed to exist, but is never directly observed.
+
+---
+
+<a id="lattice-based-planning"></a>
+### Lattice-Based Planning
+
+**The Big Idea**: This extends Breadth-First Search (BFS), Dijkstra's Algorithm, and A* Search directly (see those entries) — same search-over-a-graph idea, with one change: instead of an edge being an arbitrary straight connection between grid cells, each edge is now one physically realizable motion (respecting the system's Kinematic Constraints), so every path the search can output is automatically drivable.
+
+**General Usage**: Lattice-based planning applies ordinary graph-search algorithms to systems with kinematic constraints by first building a small library of feasible **motion primitives** — short, precomputed curves such as "drive straight," "arc left," or "arc right," each ending at a specific relative change in position and heading — and then replicating that same library at every vertex of a discretized grid over the configuration space (now including heading, so each vertex is a discretized $(x, y, \theta)$ combination rather than only $(x,y)$). The result, called a "lattice," is a graph exactly like the ones used in ordinary grid search, except its edges are curves rather than straight lines, so any path A* or Dijkstra's Algorithm finds through it is guaranteed to be drivable by the real system.
+
+**Example.** A small motion-primitive library, each primitive specified as a change relative to the vehicle's current heading:
+
+| Primitive | $\Delta x$ (forward) | $\Delta y$ (lateral) | $\Delta\theta$ | Cost |
+|---|---|---|---|---|
+| Forward | $+1$ | $0$ | $0°$ | $1$ |
+| Arc left | $+1$ | $+1$ | $+90°$ | $1.4$ |
+| Arc right | $+1$ | $-1$ | $-90°$ | $1.4$ |
+
+From a lattice vertex at pose $(0, 0, 0°)$, these three primitives generate exactly three outgoing edges — to $(1, 0, 0°)$ at cost $1$, to $(1, 1, 90°)$ at cost $1.4$, and to $(1, -1, -90°)$ at cost $1.4$ — precomputed once and reused at every vertex of the lattice. A* or Dijkstra's Algorithm then explores this graph exactly as already described in those entries, popping the lowest-priority vertex and relaxing its neighbors, with no extra machinery required simply because the edges happen to be curves.
+
+**AI/ML Usage**: Lattice-based planning is used directly in autonomous-vehicle and outdoor mobile-robot path planning — the "state lattice" approach (Pivtoraiko, Knepper, and Kelly, "Differentially Constrained Mobile Robot Motion Planning in State Lattices," *Journal of Field Robotics* 26.3 (2009): 308–333) is the standard way production path planners combine the completeness and optimality guarantees of graph search (Dijkstra's Algorithm, A* Search) with motions that respect real actuator and vehicle limits.
 
 ---
 
@@ -1502,6 +1631,28 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** $f(x)=x^3$ is monotonically increasing — as $x$ gets bigger, $f(x)$ always gets bigger too, with absolutely no exceptions anywhere. By contrast, $f(x)=x^2$ is NOT monotonic over its full domain — it decreases for negative $x$ values but increases for positive $x$ values, changing direction right at $x=0$.
 
 **AI/ML Usage**: Whether a function used inside a model is monotonic often matters a great deal in machine learning — for instance, since the sigmoid and softmax functions (see the math_symbols file) are both monotonic, a model's raw output scores can be ranked in the exact same order before or after passing through them, which is why applying sigmoid or softmax never changes which class a classifier ultimately picks as its top prediction.
+
+---
+
+<a id="moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt"></a>
+### Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)
+
+**The Big Idea**: This builds on the Probabilistic Roadmap (PRM) entry — same "grow a graph by sampling" idea, except the graph is now grown incrementally, one new vertex at a time, rather than precomputed all at once. It also revisits the Forward Kinematics and Inverse Kinematics entry: finding a control that moves a system from one state toward another is exactly an inverse-kinematics problem, and just like inverse kinematics in general, it is not always solvable exactly.
+
+**General Usage**: **Moving Object Planning (MOP)** grows a tree one vertex at a time: repeatedly pick a vertex already in the tree, apply a randomly chosen control input to it, and — if the resulting new state is reachable without a collision — add it, and the edge that reached it, to the tree; repeat until the goal is reached. MOP's weakness is that it tends to keep extending the tree near wherever the tree already is, since a new vertex is always grown outward from an existing one, with nothing pulling growth toward the space that remains totally unexplored.
+
+**Rapidly-Exploring Random Trees (RRT)** fix exactly this weakness with one change: instead of picking an *existing* vertex to extend from, RRT first samples a random target state $x_{rand}$ anywhere in the space, finds whichever existing tree vertex $x_{near}$ is nearest to it, and calls a **steering function** to find a control that moves from $x_{near}$ as close to $x_{rand}$ as it can get in one step, producing a new vertex $x_{new}$ (which may not exactly reach $x_{rand}$, for exactly the reason inverse kinematics doesn't always have an exact solution). If the edge from $x_{near}$ to $x_{new}$ is collision-free, both are added to the tree. Because the tree starts out small relative to the whole space, a randomly sampled target is far more likely to land somewhere unexplored than somewhere already near the tree — which is exactly what pulls the tree rapidly outward into new territory, rather than clustering near itself the way MOP does.
+
+**Example.** Simplify the steering function to "move a fixed step length of $1$ straight toward the target, or all the way there if it is closer than $1$," with no obstacles, and trace two RRT growth iterations starting from a tree containing only $x_{init} = (0,0)$:
+
+| Iteration | $x_{rand}$ | Nearest neighbor & distance | Steering computation | $x_{new}$ |
+|---|---|---|---|---|
+| 1 | $(3,4)$ | Only $(0,0)$ exists; distance $=\sqrt{3^2+4^2}=5$ | Unit direction $=(3/5,\ 4/5)=(0.6,\ 0.8)$; move $1$ unit: $(0,0)+1\times(0.6,0.8)$ | $(0.6,\ 0.8)$ |
+| 2 | $(-2,1)$ | Distance to $(0,0)$: $\sqrt{(-2)^2+1^2}=\sqrt5\approx2.236$. Distance to $(0.6,0.8)$: $\sqrt{2.6^2+0.2^2}=\sqrt{6.8}\approx2.608$. Nearest is $(0,0)$ | Unit direction $=(-2/\sqrt5,\ 1/\sqrt5)\approx(-0.894,\ 0.447)$; move $1$ unit: $(0,0)+1\times(-0.894,0.447)$ | $(-0.894,\ 0.447)$ |
+
+**Check.** The new vertex should sit exactly one step-length from the vertex it grew from, since the steering function always moves a fixed distance of $1$: $\sqrt{(-0.894)^2+(0.447)^2} = \sqrt{0.799+0.200} \approx \sqrt{0.999} \approx 1$ ✓.
+
+**AI/ML Usage**: RRTs, and their many variants, are among the most widely used motion-planning algorithms in real robotics systems — for robot arms, mobile robots, and self-driving cars operating in continuous, often high-dimensional configuration spaces where an explicit grid or lattice (see the Lattice-Based Planning entry) would be impractical. Because each steering step already only needs to respect a system's actual kinematic constraints (see the Kinematic Constraints and Control Parameters entry), an RRT naturally grows a tree whose paths are directly drivable or executable by the real system, not merely geometrically short.
 
 ---
 
@@ -1939,6 +2090,30 @@ Since the total variance in the data is $3$ (the trace) and the larger eigenvalu
 
 ---
 
+<a id="probabilistic-roadmap-prm"></a>
+### Probabilistic Roadmap (PRM)
+
+**The Big Idea**: This builds on Dijkstra's Algorithm and A* Search (see those entries) plus the Configuration-Space (C-Space) Obstacle entry — the only new ingredient is *how the graph itself gets built* in the first place. Rather than a graph handed to you ready-made (a grid, or a lattice), a PRM builds its own graph by scattering random points into free space and connecting nearby ones, similar in spirit to how K-Nearest Neighbors (see that entry) looks at a point's closest neighbors, but here used to construct graph edges rather than to classify anything.
+
+**General Usage**: A probabilistic roadmap is built in two phases. In the **build phase**: (1) randomly sample a large number of points inside the configuration space; (2) discard any sample that falls inside a C-space obstacle; (3) for each remaining sample, look at its nearby samples (those within some fixed radius, up to some maximum number of connections) and add a graph edge to each one whose *straight-line connecting segment* is itself entirely obstacle-free — a candidate edge that would cut through a C-space obstacle is discarded, even if both of its endpoint samples are individually valid. Repeating this for every sample produces one fixed graph — the roadmap — built once, in advance, independent of any particular start or goal. In the **query phase**, run once for each new start/goal pair: add the start and goal as two more nodes to the existing roadmap, connect them into it using that same nearby-and-obstacle-free rule, and then run an ordinary graph-search algorithm (Dijkstra's Algorithm, A* Search) over the now-connected graph to find a path from start to goal.
+
+**Example.** A tiny roadmap build, using a connection radius that reaches exactly the neighbors shown:
+
+| Step | Action | Result |
+|---|---|---|
+| 1 | Sample $6$ random points in the configuration space | Points $P_1$ through $P_6$ |
+| 2 | Discard any sample landing inside a C-space obstacle | Suppose $P_5$ lands inside an obstacle and is discarded; $P_1, P_2, P_3, P_4, P_6$ remain |
+| 3 | For $P_1$, check the straight-line segment to each nearby remaining sample | Segment $P_1\!-\!P_2$ is obstacle-free; segment $P_1\!-\!P_3$ passes through an obstacle |
+| 4 | Add edges only for the obstacle-free segments | Edge $P_1\!-\!P_2$ is added; $P_1\!-\!P_3$ is **not** added, even though $P_3$ itself is a valid, obstacle-free sample |
+| 5 | Repeat Step 3–4 for every remaining sample | Roadmap graph now connects $P_1, P_2, P_4, P_6$ (assuming their mutual segments check out) |
+| 6 | Query phase: add a start $S$ and goal $G$, connect each into the roadmap the same way, then run A* or Dijkstra's Algorithm | A path such as $S \to P_1 \to P_2 \to G$ is returned, if the graph is connected |
+
+Step 3–4 is the detail easiest to miss: **both endpoints being individually valid samples is not enough** — the entire straight segment between them has to be checked too, since a straight line between two obstacle-free points can still pass directly through an obstacle sitting between them.
+
+**AI/ML Usage**: Probabilistic roadmaps are a standard motion-planning technique for robots operating in continuous, high-dimensional configuration spaces — a robot arm with several joints, for instance — where laying out an explicit grid or lattice (see the Lattice-Based Planning entry) becomes impractical as the number of dimensions grows. Because the expensive roadmap-building step only has to be done once for a given static environment, and can then be reused for any number of different start/goal queries afterward, PRM is especially well suited to environments where many different motion-planning queries will be asked of the same fixed space.
+
+---
+
 <a id="proof-by-contradiction"></a>
 ### Proof by Contradiction
 
@@ -2251,6 +2426,27 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 **Example.** Zero-one loss gives a flat, zero-signal gradient almost everywhere, offering gradient descent no useful, meaningful information about which direction to move in. Hinge loss instead gives a smoothly-varying, genuinely usable gradient signal, all while still generally penalizing exactly the same kinds of mistakes zero-one loss cares about — a smooth training tool standing in for a fundamentally non-smooth true target.
 
 **AI/ML Usage**: Virtually every classifier trained with gradient-based methods (essentially every modern neural network classifier) is actually trained by minimizing some surrogate loss, like cross-entropy or hinge loss, rather than the true, ultimate quantity of genuine interest, zero-one loss — with the final reported model performance still typically measured directly using ordinary zero-one loss (accuracy) at the very end, even though it was never the actual loss optimized during training itself.
+
+---
+
+<a id="swept-volume"></a>
+### Swept Volume
+
+**The Big Idea**: This is the ordinary idea of the area or volume "covered" by a shape, with one addition: the shape is moving, so the swept volume is the union of every position it occupies at every instant along a motion, rather than the shape sitting still in one place.
+
+**General Usage**: The swept volume of an agent executing some candidate motion is the union of every position the agent's shape occupies at every instant of time during that motion — an area in 2D, or a volume in 3D. A candidate motion is collision-free exactly when its swept volume shares no overlap with any obstacle in the environment. Because computing this overlap exactly can be computationally expensive, especially in 3D, it motivates precomputed alternatives such as the Configuration-Space (C-Space) Obstacle (see that entry), which checks collisions without a fresh volume computation for every candidate motion.
+
+**Example.** Model a robot as a disk of radius $r = 0.5$ moving in a straight line for a distance $d = 3$, without rotating. The swept region is a "stadium" shape: a $d \times 2r$ rectangle covering the straight-line sweep of the disk's center, plus a semicircular cap of radius $r$ at each end (together, one full circle):
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Rectangle area | $d \times 2r = 3 \times 1$ | $3$ |
+| 2. End-cap area (two semicircles = one circle) | $\pi r^2 = \pi (0.5)^2$ | $\approx 0.785$ |
+| 3. Total swept area | $3 + 0.785$ | $\approx 3.785$ square units |
+
+**Check.** If the robot doesn't move at all ($d=0$), the swept area should reduce to just the stationary disk's area, $\pi r^2 \approx 0.785$. Substituting $d=0$ into the formula gives $0 \times 2r + \pi r^2 = \pi r^2$ — exactly the stationary-disk case, confirming the formula behaves correctly at this limit.
+
+**AI/ML Usage**: Swept-volume collision checking underlies motion planning for robot arms and mobile robots with real physical extent — every candidate motion primitive in a Lattice-Based Planning system (see that entry) must be verified collision-free this way, or via the cheaper Configuration-Space (C-Space) Obstacle precomputation, before a search algorithm like A* is allowed to treat it as a valid graph edge.
 
 ---
 

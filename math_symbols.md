@@ -7,66 +7,67 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 167 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 169 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute to GeLU | Gini to Partial | Partial to Zero-One |
+| Absolute to GeLU | Gini to Partial | Perceptron to Zero-One |
 |---|---|---|
-| [Absolute Value — `\|x\|`](#absolute-value) | [Gini Index / Gini Function — `2a(1-a)`](#gini-index-gini-function) | [Partial Order — `≺`](#partial-order) |
-| [Action Space — `U(x)`](#action-space) | [Goal Set — `X_G`](#goal-set) | [Perceptron Loss — `L_perc`](#perceptron-loss) |
-| [Activation Function — `σ(·)`](#activation-function) | [Gradient — `∇_𝐱 f(𝐱)`](#gradient) | [Permutation — `Perm(·)`](#permutation) |
-| [Adjacency Matrix — `A_{i,j}`](#adjacency-matrix) | [Graph — `G = (V, E)`](#graph) | [Phi, lowercase — `φ`](#phi-lowercase) |
-| [Admissible Heuristic — `H(s) ≤ V*(s)`](#admissible-heuristic) | [Greater Than / Less Than — `>, <`](#greater-than-less-than) | [Phi, uppercase — `Φ`](#phi-uppercase) |
-| [All-Ones Vector — `𝟏`](#all-ones-vector) | [Halfspace — `sign(𝐰·𝐱 - θ)`](#halfspace) | [Pi, lowercase, as Population/Subgroup Label — `π₁, π₂`](#pi-lowercase-as-populationsubgroup-label) |
-| [Alpha / Slope Hyperparameter — `α`](#alpha-slope-hyperparameter) | [Hat Notation — `ŷ`](#hat-notation) | [Positional Embedding — `PE`](#positional-embedding) |
-| [Alpha-Beta Pruning Bounds — `α, β`](#alpha-beta-pruning-bounds) | [Hessian Matrix — `H`](#hessian-matrix) | [Potential Function — `φ`](#potential-function) |
-| [Approximately Equal — `≈`](#approximately-equal) | [Heuristic Function — `H(s), h(s)`](#heuristic-function) | [Precedence Relation — `≺`](#precedence-relation) |
-| [Arg Min / Arg Max — `arg min, arg max`](#arg-min-arg-max) | [Hold-Out Set / Validation Set — `H`](#hold-out-set-validation-set) | [Prime Notation — `S'`](#prime-notation) |
-| [Assignment Arrow — `←`](#assignment-arrow) | [Hypothesis — `h`](#hypothesis) | [Probability / Probability Density — `P(x)`](#probability-probability-density) |
-| [Asterisk for Optimal Value — `θ*`](#asterisk-for-optimal-value) | [Identity Matrix — `I`](#identity-matrix) | [Probability Simplex — `P^C`](#probability-simplex) |
-| [Attention Operator — `Attention(Q, K, V)`](#attention-operator) | [If and Only If — `⇔`](#if-and-only-if) | [Product Notation — `∏`](#product-notation) |
-| [Beta — `β`](#beta) | [Implies Arrow — `⇒`](#implies-arrow) | [Psi, uppercase — `Ψ`](#psi-uppercase) |
-| [Bias Term — `b`](#bias-term) | [Infinity — `∞`](#infinity) | [Query, Key, and Value — `Q, K, V`](#query-key-and-value) |
-| [Big-O Notation — `O(·)`](#big-o-notation) | [Initial State — `x_I`](#initial-state) | [Question-Mark Relation — `≥?, ≟`](#question-mark-relation) |
-| [Binary Label Set — `{-1, +1}`](#binary-label-set) | [Integral — `∫`](#integral) | [Real Numbers — `ℝ`](#real-numbers) |
-| [Binomial Coefficient — `C(n,k)`](#binomial-coefficient) | [Inverse Hessian — `H⁻¹, (∂²ℒ/∂w̄²)⁻¹`](#inverse-hessian) | [Receptive Field — `r`](#receptive-field) |
-| [Blocks World — `On, Clear, InHand, HandEmpty`](#blocks-world) | [Jacobian — `J_f`](#jacobian) | [Regression Function — `𝔼[Y \| X]`](#regression-function) |
-| [Boolean Cube / Bit-Vector Domain — `{0,1}ⁿ`](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size — `ω, h×w`](#kernel-kernel-size) | [ReLU — `ReLU(x)`](#relu) |
-| [Branching Factor and Search Depth — `b, d, b^d`](#branching-factor-and-search-depth) | [Label — `l, y`](#label) | [Rotation Matrix — `R_θ`](#rotation-matrix) |
-| [Concept Class — `𝒞, C`](#concept-class) | [Label Space — `𝒴`](#label-space) | [Sampling Notation — `x ∼ P`](#sampling-notation) |
-| [Conditional Bar — `\|`](#conditional-bar) | [Lambda Abstraction — `λx. …`](#lambda-abstraction) | [Scoring Function — `Ψ`](#scoring-function) |
-| [Configuration Space — `𝒞, q, 𝒞_free, 𝒞_obs`](#configuration-space) | [Lambda, lowercase — `λ`](#lambda-lowercase) | [Script L / Calligraphic L — `ℒ`](#script-l-calligraphic-l) |
-| [Conjunction / Logical AND — `∧`](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space — `z̄`](#latent-feature-vector-latent-feature-space) | [Set Braces — `{ }`](#set-braces) |
-| [Cosine Similarity — `cosθ`](#cosine-similarity) | [Leaky ReLU / PReLU — `LeakyReLU(x)`](#leaky-relu-prelu) | [Set Cardinality / Size of a Set — `\|S\|`](#set-cardinality-size-of-a-set) |
-| [Cost-to-Come and Cost-to-Go — `C(x), G(x)`](#cost-to-come-and-cost-to-go) | [Learning Rate — `α, ε, η`](#learning-rate) | [Set Difference — `A ∖ B`](#set-difference) |
-| [Covariance — `Cov(X,Y)`](#covariance) | [Less Than or Equal — `≤`](#less-than-or-equal) | [Set Union — `∪`](#set-union) |
-| [Data Distribution — `D, 𝒟`](#data-distribution) | [Literal, Grounded and Ungrounded — `P(a,b), P(X,b)`](#literal-grounded-and-ungrounded) | [Sigma, lowercase — `σ`](#sigma-lowercase) |
-| [Dataset — `𝒟`](#dataset) | [Logarithm — `log`](#logarithm) | [Sigma, uppercase — `Σ`](#sigma-uppercase) |
-| [Delta, lowercase — `δ`](#delta-lowercase) | [Logical Negation — `¬`](#logical-negation) | [Sigmoid Function — `σ(x)`](#sigmoid-function) |
-| [Dimension / Count Variables — `n, m, k, d, p, C, N`](#dimension-count-variables) | [Logistic Function — `eˣ/(1+eˣ)`](#logistic-function) | [Sign Function — `sign(x)`](#sign-function) |
-| [Disjunction / Logical OR — `∨`](#disjunction-logical-or) | [Loss Function — `l, L`](#loss-function) | [Softmax Function — `softmax(𝐯)`](#softmax-function) |
-| [Dot Product / Inner Product — `𝐯ᵀ 𝐰`](#dot-product-inner-product) | [Margin — `y 𝐰ᵀ f(𝐱), γ`](#margin) | [Softplus / Soft ReLU — `log(1+e^x)`](#softplus-soft-relu) |
-| [Element-of Symbol — `∈`](#element-of-symbol) | [Matrix — `𝐌`](#matrix) | [Standard Deviation — `σ`](#standard-deviation) |
-| [Element-wise Operations — `+, -, ·, /`](#element-wise-operations) | [Matrix Entry — `Mᵢ,ⱼ`](#matrix-entry) | [State Space — `X`](#state-space) |
-| [Ellipsis — `…`](#ellipsis) | [Matrix Transpose — `𝐌ᵀ`](#matrix-transpose) | [State Transition Function — `f, x' = f(x,u)`](#state-transition-function) |
-| [ELU — `ELU(x)`](#elu) | [Max Function — `max(a, b)`](#max-function) | [Step Size — `α`](#step-size) |
-| [Empty Set — `∅`](#empty-set) | [Mean — `μ`](#mean) | [Stride — `s`](#stride) |
-| [Epsilon — `ε`](#epsilon) | [Min Function — `min(a, b)`](#min-function) | [Subset — `⊆`](#subset) |
-| [Error Signal — `err(𝐳)`](#error-signal) | [Mistake Bound — `t`](#mistake-bound) | [Summation — `Σ`](#summation) |
-| [Eta — `η`](#eta) | [Model Parameters — `θ`](#model-parameters) | [Superscript Example Index — `xⁱ, xᵢ`](#superscript-example-index) |
-| [Euclidean Norm — `‖ 𝐯 ‖`](#euclidean-norm) | [Mu — `μ`](#mu) | [Tanh — `tanh(x)`](#tanh) |
-| [Euler's Number / Exponential Function — `e, e^x`](#eulers-number-exponential-function) | [N-Gram — `n`](#n-gram) | [TF-IDF — `tf×idf`](#tf-idf) |
-| [Existential Quantifier — `∃`](#existential-quantifier) | [Nabla — `∇`](#nabla) | [Theta — `θ`](#theta) |
-| [Expectation — `𝔼_P[f(x)]`](#expectation) | [Natural Numbers — `ℕ`](#natural-numbers) | [Tilde Accent — `x̃`](#tilde-accent) |
-| [Factorial — `n!`](#factorial) | [Negation Overbar — `x̄`](#negation-overbar) | [Training Set — `S`](#training-set) |
-| [Feature Extractor / Feature Function — `f(𝐱)`](#feature-extractor-feature-function) | [Normal Distribution Notation — `𝒩(μ, σ)`](#normal-distribution-notation) | [Uniform Distribution Notation — `𝒰(a, b)`](#uniform-distribution-notation) |
-| [Floor Function — `⌊ · ⌋`](#floor-function) | [Not Equal — `≠`](#not-equal) | [Universal Quantifier — `∀`](#universal-quantifier) |
-| [Frobenius Norm — `‖ 𝐌 ‖`](#frobenius-norm) | [Number Sign / Count — `#`](#number-sign-count) | [Variance — `σ², Var(x)`](#variance) |
-| [Function Composition — `∘`](#function-composition) | [Omega — `ω`](#omega) | [Vector — `𝐯`](#vector) |
-| [Function Mapping Arrow — `→`](#function-mapping-arrow) | [Optimal Cost / True Cost — `V*(s)`](#optimal-cost-true-cost) | [Vector Overbar — `𝐱̄`](#vector-overbar) |
-| [Gain — `Gain(xᵢ)`](#gain) | [Outer Product — `𝐯𝐰ᵀ`](#outer-product) | [Vocabulary — `V, \|V\|`](#vocabulary) |
-| [Gamma — `γ`](#gamma) | [Padding — `p`](#padding) | [Weight Vector — `𝐰`](#weight-vector) |
-| [Gaussian CDF — `Φ(x)`](#gaussian-cdf) | [Parameterized Function / Model — `f_θ`](#parameterized-function-model) | [Zero-One Loss — `0, 1`](#zero-one-loss) |
-| [GeLU — `GeLU(x)`](#gelu) | [Partial Derivative — `∂`](#partial-derivative) |  |
+| [Absolute Value](#absolute-value) | [Gini Index / Gini Function](#gini-index-gini-function) | [Perceptron Loss](#perceptron-loss) |
+| [Action Space](#action-space) | [Goal Set](#goal-set) | [Permutation](#permutation) |
+| [Activation Function](#activation-function) | [Gradient](#gradient) | [Phi, lowercase](#phi-lowercase) |
+| [Adjacency Matrix](#adjacency-matrix) | [Graph](#graph) | [Phi, uppercase](#phi-uppercase) |
+| [Admissible Heuristic](#admissible-heuristic) | [Greater Than / Less Than](#greater-than-less-than) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
+| [All-Ones Vector](#all-ones-vector) | [Halfspace](#halfspace) | [Positional Embedding](#positional-embedding) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hat Notation](#hat-notation) | [Potential Function](#potential-function) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hessian Matrix](#hessian-matrix) | [Precedence Relation](#precedence-relation) |
+| [Approximately Equal](#approximately-equal) | [Heuristic Function](#heuristic-function) | [Prime Notation](#prime-notation) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
+| [Assignment Arrow](#assignment-arrow) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Identity Matrix](#identity-matrix) | [Product Notation](#product-notation) |
+| [Attention Operator](#attention-operator) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
+| [Beta](#beta) | [Implies Arrow](#implies-arrow) | [Query, Key, and Value](#query-key-and-value) |
+| [Bias Term](#bias-term) | [Infinity](#infinity) | [Question-Mark Relation](#question-mark-relation) |
+| [Big-O Notation](#big-o-notation) | [Initial State](#initial-state) | [Real Numbers](#real-numbers) |
+| [Binary Label Set](#binary-label-set) | [Integral](#integral) | [Receptive Field](#receptive-field) |
+| [Binomial Coefficient](#binomial-coefficient) | [Inverse Hessian](#inverse-hessian) | [Regression Function](#regression-function) |
+| [Blocks World](#blocks-world) | [Jacobian](#jacobian) | [ReLU](#relu) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size](#kernel-kernel-size) | [Rotation Matrix](#rotation-matrix) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label](#label) | [Sampling Notation](#sampling-notation) |
+| [Concept Class](#concept-class) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
+| [Conditional Bar](#conditional-bar) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Configuration Space](#configuration-space) | [Lambda, lowercase](#lambda-lowercase) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Set Braces](#set-braces) |
+| [Cosine Similarity](#cosine-similarity) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Learning Rate](#learning-rate) | [Set Difference](#set-difference) |
+| [Covariance](#covariance) | [Less Than or Equal](#less-than-or-equal) | [Set Union](#set-union) |
+| [Curvature (Path)](#curvature-path) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Sigma, lowercase](#sigma-lowercase) |
+| [Data Distribution](#data-distribution) | [Logarithm](#logarithm) | [Sigma, uppercase](#sigma-uppercase) |
+| [Dataset](#dataset) | [Logical Negation](#logical-negation) | [Sigmoid Function](#sigmoid-function) |
+| [Delta, lowercase](#delta-lowercase) | [Logistic Function](#logistic-function) | [Sign Function](#sign-function) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Loss Function](#loss-function) | [Softmax Function](#softmax-function) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Margin](#margin) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix](#matrix) | [Standard Deviation](#standard-deviation) |
+| [Element-of Symbol](#element-of-symbol) | [Matrix Entry](#matrix-entry) | [State Space](#state-space) |
+| [Element-wise Operations](#element-wise-operations) | [Matrix Transpose](#matrix-transpose) | [State Transition Function](#state-transition-function) |
+| [Ellipsis](#ellipsis) | [Max Function](#max-function) | [Step Size](#step-size) |
+| [ELU](#elu) | [Mean](#mean) | [Stride](#stride) |
+| [Empty Set](#empty-set) | [Min Function](#min-function) | [Subset](#subset) |
+| [Epsilon](#epsilon) | [Mistake Bound](#mistake-bound) | [Summation](#summation) |
+| [Error Signal](#error-signal) | [Model Parameters](#model-parameters) | [Superscript Example Index](#superscript-example-index) |
+| [Eta](#eta) | [Mu](#mu) | [Tanh](#tanh) |
+| [Euclidean Norm](#euclidean-norm) | [N-Gram](#n-gram) | [TF-IDF](#tf-idf) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Nabla](#nabla) | [Theta](#theta) |
+| [Existential Quantifier](#existential-quantifier) | [Natural Numbers](#natural-numbers) | [Tilde Accent](#tilde-accent) |
+| [Expectation](#expectation) | [Negation Overbar](#negation-overbar) | [Training Set](#training-set) |
+| [Factorial](#factorial) | [Normal Distribution Notation](#normal-distribution-notation) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Not Equal](#not-equal) | [Universal Quantifier](#universal-quantifier) |
+| [Floor Function](#floor-function) | [Number Sign / Count](#number-sign-count) | [Variance](#variance) |
+| [Frobenius Norm](#frobenius-norm) | [Omega](#omega) | [Vector](#vector) |
+| [Function Composition](#function-composition) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Vector Overbar](#vector-overbar) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Outer Product](#outer-product) | [Vocabulary](#vocabulary) |
+| [Gain](#gain) | [Padding](#padding) | [Weight Vector](#weight-vector) |
+| [Gamma](#gamma) | [Parameterized Function / Model](#parameterized-function-model) | [Zero-One Loss](#zero-one-loss) |
+| [Gaussian CDF](#gaussian-cdf) | [Partial Derivative](#partial-derivative) |  |
+| [GeLU](#gelu) | [Partial Order](#partial-order) |  |
 
 ## Symbols
 
@@ -489,6 +490,21 @@ On macOS: type normally from the keyboard
 **Example.** Suppose $X$ is hours studied and $Y$ is test score, and across several students, more studying always came with a higher score. That consistent upward relationship gives a positive covariance, say $\text{Cov}(X,Y) = 12$. If instead more studying tended to come with lower scores (perhaps rushed, sleep-deprived students), the covariance would come out negative instead, say $\text{Cov}(X,Y) = -8$.
 
 **AI/ML Usage**: Used to understand how features in a dataset relate to each other before building a model. Two features with high covariance carry overlapping, redundant information, which can cause a problem called multicollinearity in linear regression (making it hard to tell which feature is actually responsible for a prediction). Covariance matrices — grids capturing the covariance between every pair of features at once — are the mathematical foundation of Principal Component Analysis (PCA), a widely used technique for shrinking a dataset down to fewer, more informative features before training a model on it.
+
+---
+
+<a id="curvature-path"></a>
+### Curvature (Path) — `c`
+Symbol: c, an ordinary lowercase letter c, used here specifically for path curvature — not to be confused with other common uses of c (such as the speed of light)
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is just a reciprocal, $c = 1/R$ — the same "flip the fraction" operation from Algebra 2 (like turning a slope of $2$ into a reciprocal slope of $1/2$), applied to a turning radius $R$ instead of a slope.
+
+**General Usage**: For a vehicle or path bending along a circular arc of radius $R$, its curvature is $c = 1/R$: a large turning radius (a gentle, wide turn) gives a small curvature, and a small turning radius (a sharp, tight turn) gives a large curvature. A curvature of $c=0$ corresponds to driving perfectly straight ($R = \infty$).
+
+**Example.** A car turning along an arc of radius $R = 5$ meters has curvature $c = 1/5 = 0.2$ per meter. A gentler turn along a radius of $R=20$ meters has a smaller curvature, $c = 1/20 = 0.05$ per meter — confirming that the wider turn corresponds to the smaller curvature value.
+
+**AI/ML Usage**: In mobile-robot and self-driving-car motion planning, curvature is commonly used (alongside speed) as one of the two control parameters that parameterize every feasible motion of a steered vehicle (see the Kinematic Constraints and Control Parameters entry in `math_concepts.md`) — a motion planner must keep its chosen curvature within the vehicle's maximum turning capability (its minimum turning radius) at every point along a planned path.
 
 ---
 
@@ -2101,6 +2117,21 @@ On macOS: open the character picker (Fn/🌐) and search "script capital l" — 
 **General Usage**: $\mathcal{L}$ commonly denotes a loss function — see Loss Function for a fully worked numeric example, since it plays exactly the same role, just written in a different, fancier font.
 
 **AI/ML Usage**: The standard symbol for the loss function that a neural network's entire training process is trying to minimize at every single step. You'll see $\mathcal{L}(\theta)$ or $\mathcal{L}(w)$ used in essentially every deep learning research paper as the exact quantity that gradient descent (the standard training algorithm, which repeatedly nudges a model's numbers to reduce its errors) is being applied to reduce, step after step, throughout training.
+
+---
+
+<a id="special-euclidean-group-in-2d"></a>
+### Special Euclidean Group in 2D — `SE(2)`
+Symbol: none — the capital letters S and E, typed normally, followed by "(2)"
+On macOS: type normally from the keyboard; no special characters are needed
+
+**The Big Idea**: This builds directly on the Configuration Space entry — $SE(2)$ is just the *name* mathematicians give to the specific configuration space of a rigid object that can move around freely in a flat 2D plane: every combination of a position and a facing direction.
+
+**General Usage**: $SE(2)$ is the set of all possible 2D poses of a rigid body — every combination of a position $(x,y)$ and an orientation (heading) $\theta$. Writing a system's configuration space as $[x, y, \theta] \in SE(2)$ (see the Configuration Space entry in this file) is a compact way of saying "this system's state is fully described by a position and a heading in the plane."
+
+**Example.** A car's pose after driving around a room can be fully described by three numbers: how far east it is ($x$), how far north it is ($y$), and which way it's facing ($\theta$, an angle). Any such triple $(x, y, \theta)$ is one member of $SE(2)$ — for instance, the pose "3 meters east, 2 meters north, facing $90°$" is written $(3, 2, 90°) \in SE(2)$.
+
+**AI/ML Usage**: $SE(2)$ is the standard way robotics and autonomous-vehicle research describes the configuration space of any ground vehicle or mobile robot that moves in a plane, as opposed to $SE(3)$ (used for objects like drones or robot arms that can also move and rotate in full 3D space). Writing "Configuration Space: $[x,y,\theta] \in SE(2)$" is shorthand for exactly the kind of configuration space already described in the Configuration Space entry, specialized to planar rigid-body motion.
 
 ---
 
