@@ -7,68 +7,69 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 172 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 175 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Gini Index / Gini Function | Goal Set to Perceptron Loss | Permutation to Zero-One Loss |
+| Absolute Value to Goal Set | Gradient to Phi, lowercase | Phi, uppercase to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Goal Set](#goal-set) | [Permutation](#permutation) |
-| [Action Space](#action-space) | [Gradient](#gradient) | [Phi, lowercase](#phi-lowercase) |
-| [Activation Function](#activation-function) | [Graph](#graph) | [Phi, uppercase](#phi-uppercase) |
-| [Adjacency Matrix](#adjacency-matrix) | [Greater Than / Less Than](#greater-than-less-than) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
-| [Admissible Heuristic](#admissible-heuristic) | [Halfspace](#halfspace) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
-| [All-Ones Vector](#all-ones-vector) | [Hat Notation](#hat-notation) | [Positional Embedding](#positional-embedding) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hessian Matrix](#hessian-matrix) | [Potential Function](#potential-function) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Heuristic Function](#heuristic-function) | [Precedence Relation](#precedence-relation) |
-| [Approximately Equal](#approximately-equal) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Prime Notation](#prime-notation) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Hypothesis](#hypothesis) | [Probability / Probability Density](#probability-probability-density) |
-| [Assignment Arrow](#assignment-arrow) | [Identity Matrix](#identity-matrix) | [Probability Simplex](#probability-simplex) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [If and Only If](#if-and-only-if) | [Product Notation](#product-notation) |
-| [Attention Operator](#attention-operator) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
-| [Beta](#beta) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
-| [Bias Term](#bias-term) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
-| [Big-O Notation](#big-o-notation) | [Integral](#integral) | [Real Numbers](#real-numbers) |
-| [Binary Label Set](#binary-label-set) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
-| [Binomial Coefficient](#binomial-coefficient) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
-| [Blocks World](#blocks-world) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
-| [Concept Class](#concept-class) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
-| [Conditional Bar](#conditional-bar) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Configuration Space](#configuration-space) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
-| [Cosine Similarity](#cosine-similarity) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
-| [Covariance](#covariance) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
-| [Curvature (Path)](#curvature-path) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
-| [Data Distribution](#data-distribution) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
-| [Dataset](#dataset) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
-| [Delta, lowercase](#delta-lowercase) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Margin](#margin) | [Softmax Function](#softmax-function) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
-| [Element-of Symbol](#element-of-symbol) | [Matrix Transpose](#matrix-transpose) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Element-wise Operations](#element-wise-operations) | [Max Function](#max-function) | [State Space](#state-space) |
-| [Ellipsis](#ellipsis) | [Mean](#mean) | [State Transition Function](#state-transition-function) |
-| [ELU](#elu) | [Min Function](#min-function) | [Step Size](#step-size) |
-| [Empty Set](#empty-set) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
-| [Epsilon](#epsilon) | [Model Parameters](#model-parameters) | [Subset](#subset) |
-| [Error Signal](#error-signal) | [Mu](#mu) | [Summation](#summation) |
-| [Eta](#eta) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
-| [Euclidean Norm](#euclidean-norm) | [Nabla](#nabla) | [Tanh](#tanh) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
-| [Existential Quantifier](#existential-quantifier) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
-| [Expectation](#expectation) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
-| [Factorial](#factorial) | [Not Equal](#not-equal) | [Training Set](#training-set) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Number Sign / Count](#number-sign-count) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Floor Function](#floor-function) | [Omega](#omega) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Variance](#variance) |
-| [Function Composition](#function-composition) | [Outer Product](#outer-product) | [Vector](#vector) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Padding](#padding) | [Vector Overbar](#vector-overbar) |
-| [Gain](#gain) | [Parameterized Function / Model](#parameterized-function-model) | [Vector Projection](#vector-projection) |
-| [Gamma](#gamma) | [Partial Derivative](#partial-derivative) | [Vocabulary](#vocabulary) |
-| [Gaussian CDF](#gaussian-cdf) | [Partial Order](#partial-order) | [Weight Vector](#weight-vector) |
+| [Absolute Value](#absolute-value) | [Gradient](#gradient) | [Phi, uppercase](#phi-uppercase) |
+| [Action Space](#action-space) | [Graph](#graph) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
+| [Activation Function](#activation-function) | [Greater Than / Less Than](#greater-than-less-than) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
+| [Adjacency Matrix](#adjacency-matrix) | [Halfspace](#halfspace) | [Positional Embedding](#positional-embedding) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hat Notation](#hat-notation) | [Potential Function](#potential-function) |
+| [All-Ones Vector](#all-ones-vector) | [Hessian Matrix](#hessian-matrix) | [Precedence Relation](#precedence-relation) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Heuristic Function](#heuristic-function) | [Prime Notation](#prime-notation) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
+| [Approximately Equal](#approximately-equal) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Identity Matrix](#identity-matrix) | [Product Notation](#product-notation) |
+| [Assignment Arrow](#assignment-arrow) | [If and Only If](#if-and-only-if) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
+| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
+| [Beta](#beta) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
+| [Bias Term](#bias-term) | [Integral](#integral) | [Real Numbers](#real-numbers) |
+| [Big-O Notation](#big-o-notation) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
+| [Binary Label Set](#binary-label-set) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
+| [Binomial Coefficient](#binomial-coefficient) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
+| [Blocks World](#blocks-world) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
+| [Concept Class](#concept-class) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Conditional Bar](#conditional-bar) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Configuration Space](#configuration-space) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Cosine Similarity](#cosine-similarity) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
+| [Covariance](#covariance) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
+| [Curvature (Path)](#curvature-path) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
+| [Data Distribution](#data-distribution) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
+| [Dataset](#dataset) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
+| [Delta, lowercase](#delta-lowercase) | [Margin](#margin) | [Softmax Function](#softmax-function) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix Transpose](#matrix-transpose) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Element-of Symbol](#element-of-symbol) | [Max Function](#max-function) | [State Space](#state-space) |
+| [Element-wise Operations](#element-wise-operations) | [Mean](#mean) | [State Transition Function](#state-transition-function) |
+| [Ellipsis](#ellipsis) | [Min Function](#min-function) | [Step Size](#step-size) |
+| [ELU](#elu) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
+| [Empty Set](#empty-set) | [Model Parameters](#model-parameters) | [Subset](#subset) |
+| [Epsilon](#epsilon) | [Mu](#mu) | [Summation](#summation) |
+| [Error Signal](#error-signal) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
+| [Eta](#eta) | [Nabla](#nabla) | [Tanh](#tanh) |
+| [Euclidean Norm](#euclidean-norm) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
+| [Existential Quantifier](#existential-quantifier) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
+| [Expectation](#expectation) | [Not Equal](#not-equal) | [Training Set](#training-set) |
+| [Factorial](#factorial) | [Number Sign / Count](#number-sign-count) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Omega](#omega) | [Universal Quantifier](#universal-quantifier) |
+| [Floor Function](#floor-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Unknown-Word Token](#unknown-word-token) |
+| [Frobenius Norm](#frobenius-norm) | [Outer Product](#outer-product) | [Variance](#variance) |
+| [Function Composition](#function-composition) | [Padding](#padding) | [Vector](#vector) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Parameterized Function / Model](#parameterized-function-model) | [Vector Overbar](#vector-overbar) |
+| [Gain](#gain) | [Partial Derivative](#partial-derivative) | [Vector Projection](#vector-projection) |
+| [Gamma](#gamma) | [Partial Order](#partial-order) | [Vocabulary](#vocabulary) |
+| [Gaussian CDF](#gaussian-cdf) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Weight Vector](#weight-vector) |
 | [GeLU](#gelu) | [Perceptron Loss](#perceptron-loss) | [Zero-One Loss](#zero-one-loss) |
-| [Gini Index / Gini Function](#gini-index-gini-function) |  |  |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Permutation](#permutation) |  |
+| [Goal Set](#goal-set) | [Phi, lowercase](#phi-lowercase) |  |
 
 ## Symbols
 
@@ -1784,6 +1785,21 @@ On macOS: open the character picker (Fn/🌐) and search "precedes" — no Optio
 
 ---
 
+<a id="pddl-variable-prefix"></a>
+### PDDL Variable Prefix — `?x`
+Symbol: ?, ordinary question mark, written directly in front of a variable name with no space (e.g. `?x`, `?from`)  
+On macOS: type normally from the keyboard — Shift+/ (slash)
+
+**The Big Idea**: This builds directly on the Literal, Grounded and Ungrounded entry above — the `?` prefix is simply one specific language's (PDDL's) chosen way of visually marking a variable, like $X$ in $P(X,b)$, so it's clearly, unmistakably distinguishable from a specific, concrete object's name, the same underlying distinction Algebra 2 already draws between a variable like $x$ and a specific number like $5$.
+
+**General Usage**: In PDDL (Planning Domain Definition Language, the standard language for writing AI planning problems — see PDDL in the math_concepts file), variable names are conventionally written with a leading question mark, like `?x` or `?from`, to visually distinguish them at a glance from specific, concrete object names, which are written without that leading question mark at all.
+
+**Example.** An action schema (a template describing a general kind of action a planner can take, before it's filled in with any specific objects — see Action Schema in the math_concepts file) parameter list written as `(Drive ?p ?from ?to)` immediately signals that $p$, $\textit{from}$, and $\textit{to}$ are all variables — placeholders standing in for whatever specific objects eventually get substituted in. A grounded fact — one with actual objects substituted in for every variable — like `(At Alice Home)` uses no leading question marks at all, since `Alice` and `Home` are both specific, concrete objects, not variables.
+
+**AI/ML Usage**: This is purely a syntax and readability convention specific to PDDL, but it's an extremely useful, immediately visible one for a person reading through a planning file: it lets a reader instantly tell apart general, reusable templates from specific, fully grounded facts, just by glancing at whether a leading `?` is present or absent.
+
+---
+
 <a id="perceptron-loss"></a>
 ### Perceptron Loss — `L_perc`
 Symbol: none — written as ordinary text, usually L or ℓ with a "perc" subscript  
@@ -1972,6 +1988,21 @@ On macOS: press Option+Shift+P
 **Example.** $\prod_{i=1}^{4} i = 1 \times 2 \times 3 \times 4 = 24$ — start at $i=1$, multiply in each whole number up through $4$. (Notice this is exactly the same computation as $4!$.)
 
 **AI/ML Usage**: Used to write out the total likelihood of an entire dataset under a probabilistic model, assuming — as is commonly and conveniently assumed — that every training example was generated independently of the others. The overall likelihood is the product of each individual example's own likelihood, which is exactly why maximum likelihood estimation (a very common, foundational statistical technique for fitting a model to data) formulas are usually first written using a $\prod$, before typically being converted into a much easier-to-work-with sum by taking a logarithm of the whole expression (see Logarithm and Log Likelihood).
+
+---
+
+<a id="pseudo-inverse"></a>
+### Pseudo-Inverse — `A†`
+Symbol: †, the dagger (also called an obelisk), written as a superscript directly after a matrix's name, e.g. $A^\dagger$; some textbooks instead use a superscript plus sign meaning the same thing, $A^+$  
+On macOS: press Option+T to type † directly
+
+**The Big Idea**: This builds directly on the Identity Matrix entry above and the Matrix Transpose entry above — the pseudo-inverse is a generalized version of an ordinary matrix inverse, marked with a raised symbol right after the matrix name the same way transpose is marked with a raised T, and it's specifically designed to still work even for matrices that don't have a normal, standard inverse at all.
+
+**General Usage**: For a matrix $D$, the pseudo-inverse $D^\dagger$ generalizes the ordinary matrix inverse to work even for matrices that aren't square, or that don't have a standard inverse for any other reason. It's specifically defined so that it behaves as much like a true inverse as mathematically possible, even in these more difficult, otherwise-uninvertible cases.
+
+**Example.** Let $D=\begin{pmatrix}1\\2\end{pmatrix}$, a $2\times1$ matrix with more rows than columns, which has no ordinary inverse at all since ordinary matrix inversion is only defined for square matrices. Its pseudo-inverse is computed as $D^\dagger = (D^\top D)^{-1}D^\top$: first $D^\top D = 1^2+2^2 = 5$, a single number, so $D^\dagger = \tfrac{1}{5}\begin{pmatrix}1&2\end{pmatrix} = \begin{pmatrix}0.2&0.4\end{pmatrix}$. Multiplying back confirms it behaves like a true inverse where it can: $D^\dagger D = (0.2)(1)+(0.4)(2) = 1$, matching the $1\times1$ identity matrix (see Identity Matrix above) exactly, even though $D$ itself had no ordinary inverse to check against.
+
+**AI/ML Usage**: The pseudo-inverse is used to solve linear regression problems (see Normal Equations in the math_concepts file) where the normal equations would otherwise fail — for instance, whenever there are more features than training examples available, making the matrix $X^\top X$ non-invertible in the ordinary sense — providing a robust, well-defined solution even in these otherwise trickier, edge-case situations.
 
 ---
 
@@ -2530,6 +2561,21 @@ On macOS: open the character picker (Fn/🌐) and search "for all" — no Option
 **Example.** $\forall x \in \mathbb{R},\ x^2 \ge 0$ says "for every real number $x$, $x^2$ is greater than or equal to zero" — and indeed, testing any real number you like, positive, negative, or zero, its square always comes out non-negative, with no exceptions anywhere.
 
 **AI/ML Usage**: Used in formal mathematical proofs and guarantees within learning theory — for instance, stating a PAC-learning bound (a formal guarantee about how much data is needed to learn reliably) that's proven to hold "for all" possible data distributions a learner might encounter, or specifying that a planning algorithm's precondition logically must hold true for every single relevant object in its domain before an action can legally be taken.
+
+---
+
+<a id="unknown-word-token"></a>
+### Unknown-Word Token — `UNK`
+Symbol: UNK, three capital letters read as "unknown"; sometimes wrapped in angle brackets as `<UNK>` to visually match other special tokens like the Start-of-Sentence Token's `<s>` (see that entry above)  
+On macOS: type normally from the keyboard — for the bracketed `<UNK>` variant, Shift+, (comma) for < and Shift+. (period) for >
+
+**The Big Idea**: This builds on the Vocabulary entry above — the unknown-word token is simply the designated placeholder a model falls back on whenever it encounters a word that isn't actually in its fixed vocabulary $V$, the same basic idea as padding a short list with a filler value whenever a real entry is missing (compare with the Start-of-Sentence Token entry above).
+
+**General Usage**: UNK is a special placeholder token used to represent any word encountered by a model that isn't part of its fixed vocabulary $V$ (see Vocabulary above — the fixed list of every word a model recognizes). Rather than failing outright or crashing entirely, the model substitutes UNK and continues processing normally, in a well-defined, predictable way.
+
+**Example.** If a language model's fixed vocabulary includes common words like "cat" and "dog," but never includes a rare, obscure word like "platypus," encountering that unfamiliar word in new text causes the model to substitute it directly with UNK — effectively treating "I saw a platypus" the exact same way it would treat "I saw a UNK."
+
+**AI/ML Usage**: Handling out-of-vocabulary words gracefully was a major, genuinely important practical challenge in earlier natural language processing systems (NLP, the subfield of AI/ML concerned with processing human language) — modern language models substantially reduce, though don't necessarily fully eliminate, this exact problem by using subword tokenization instead (breaking unfamiliar words down into smaller, familiar word-pieces the model does already recognize), rather than relying purely and only on one single, catch-all UNK token.
 
 ---
 

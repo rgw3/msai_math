@@ -7,76 +7,75 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 198 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 195 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Frontier / Open List | Gaussian Graphical Model to Non-Parametric Method | Normal Equations to Word2Vec |
+| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Neuron | Newton's Method to Word2Vec |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Normal Equations](#normal-equations) |
-| [Absolute Discounting](#absolute-discounting) | [Gaussian Mixture Model](#gaussian-mixture-model) | [NP-Hard](#np-hard) |
-| [Ackermann Steering](#ackermann-steering) | [Generative Model](#generative-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Action Schema](#action-schema) | [Geometric Mean](#geometric-mean) | [One-Hot Encoding](#one-hot-encoding) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [One-vs-All](#one-vs-all) |
-| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthonormal Basis](#orthonormal-basis) |
-| [Arity](#arity) | [Gradient Clipping](#gradient-clipping) | [Overfitting](#overfitting) |
-| [Automatic Differentiation](#automatic-differentiation) | [Gradient Descent](#gradient-descent) | [PAC Learning](#pac-learning) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
-| [Backpointer](#backpointer) | [GraphPlan](#graphplan) | [PDDL Variable Prefix](#pddl-variable-prefix) |
-| [Backpropagation](#backpropagation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Bag of Words](#bag-of-words) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Perplexity](#perplexity) |
-| [Basis Function](#basis-function) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Batch](#batch) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
-| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Hyperparameter](#hyperparameter) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Principal Component Analysis](#principal-component-analysis) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
-| [Centroid](#centroid) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Chernoff Bound](#chernoff-bound) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Quadratic Form](#quadratic-form) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Closed-World Assumption](#closed-world-assumption) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Random Forest](#random-forest) |
-| [Clustering](#clustering) | [Latent Variable](#latent-variable) | [Random Projection](#random-projection) |
-| [Computation Graph](#computation-graph) | [Lattice-Based Planning](#lattice-based-planning) | [Rank](#rank) |
-| [Conditional Independence](#conditional-independence) | [Likelihood](#likelihood) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linear Programming](#linear-programming) | [Regularization](#regularization) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Linearly Separable](#linearly-separable) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Loss Surface](#loss-surface) | [Search Statistics](#search-statistics) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
-| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
-| [Cross-Validation](#cross-validation) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
-| [Dead End](#dead-end) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Decision Boundary](#decision-boundary) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
-| [Decision Tree](#decision-tree) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
-| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotonic Function](#monotonic-function) | [Symmetric Matrix](#symmetric-matrix) |
-| [Discriminative Model](#discriminative-model) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dropout](#dropout) | [Multinomial Distribution](#multinomial-distribution) | [Tensor](#tensor) |
-| [Early Stopping](#early-stopping) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Mutex](#mutex) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [EM Algorithm](#em-algorithm) | [N-Gram Language Model](#n-gram-language-model) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epoch](#epoch) | [Naive Bayes](#naive-bayes) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Named-Entity Type Labels](#named-entity-type-labels) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Negative Log Likelihood](#negative-log-likelihood) | [Unknown-Word Token](#unknown-word-token) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Negative Sampling](#negative-sampling) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Neural Network](#neural-network) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Feature Expansion](#feature-expansion) | [Neuron](#neuron) | [Word Embedding](#word-embedding) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Newton's Method](#newtons-method) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Frontier / Open List](#frontier-open-list) | [Non-Parametric Method](#non-parametric-method) | [Word2Vec](#word2vec) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Newton's Method](#newtons-method) |
+| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Non-Parametric Method](#non-parametric-method) |
+| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Normal Equations](#normal-equations) |
+| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [NP-Hard](#np-hard) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Agnostic Learning](#agnostic-learning) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [One-Hot Encoding](#one-hot-encoding) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [One-vs-All](#one-vs-all) |
+| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Orthonormal Basis](#orthonormal-basis) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Gradient Descent](#gradient-descent) | [Overfitting](#overfitting) |
+| [Backpointer](#backpointer) | [Graphical Lasso](#graphical-lasso) | [PAC Learning](#pac-learning) |
+| [Backpropagation](#backpropagation) | [GraphPlan](#graphplan) | [PDDL](#pddl) |
+| [Bag of Words](#bag-of-words) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Basis Function](#basis-function) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Perplexity](#perplexity) |
+| [Batch](#batch) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Batch Normalization](#batch-normalization) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
+| [Bayes' Rule](#bayes-rule) | [Hierarchical Softmax](#hierarchical-softmax) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Hyperparameter](#hyperparameter) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Principal Component Analysis](#principal-component-analysis) |
+| [Centroid](#centroid) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chernoff Bound](#chernoff-bound) | [Kernel Function](#kernel-function) | [Quadratic Form](#quadratic-form) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Closed-World Assumption](#closed-world-assumption) | [KL Divergence](#kl-divergence) | [Random Forest](#random-forest) |
+| [Clustering](#clustering) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Random Projection](#random-projection) |
+| [Computation Graph](#computation-graph) | [Latent Variable](#latent-variable) | [Rank](#rank) |
+| [Conditional Independence](#conditional-independence) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Likelihood](#likelihood) | [Regularization](#regularization) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Linear Programming](#linear-programming) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Linearly Separable](#linearly-separable) | [Sample Complexity](#sample-complexity) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Log Likelihood](#log-likelihood) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Convex Function](#convex-function) | [Logistic Regression](#logistic-regression) | [Schur Complement](#schur-complement) |
+| [Coordinate Descent](#coordinate-descent) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Search Statistics](#search-statistics) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Loss Surface](#loss-surface) | [Self-Attention](#self-attention) |
+| [Covariance Matrix](#covariance-matrix) | [Lower Bound](#lower-bound) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Blanket](#markov-blanket) | [Skip-Gram Model](#skip-gram-model) |
+| [Cross-Validation](#cross-validation) | [Markov Model](#markov-model) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Markov's Inequality](#markovs-inequality) | [Spectral Theorem](#spectral-theorem) |
+| [Dead End](#dead-end) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Decision Boundary](#decision-boundary) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
+| [Decision Tree](#decision-tree) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Mean Squared Error](#mean-squared-error) | [Support Vector Machine](#support-vector-machine) |
+| [Diagonal Matrix](#diagonal-matrix) | [Minimum Description Length](#minimum-description-length) | [Surrogate Loss](#surrogate-loss) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Model Complexity](#model-complexity) | [Swept Volume](#swept-volume) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
+| [Discriminative Model](#discriminative-model) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dropout](#dropout) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
+| [Early Stopping](#early-stopping) | [Multinomial Distribution](#multinomial-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [EM Algorithm](#em-algorithm) | [Mutex](#mutex) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epoch](#epoch) | [N-Gram Language Model](#n-gram-language-model) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Naive Bayes](#naive-bayes) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Named-Entity Type Labels](#named-entity-type-labels) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Negative Log Likelihood](#negative-log-likelihood) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Negative Sampling](#negative-sampling) | [Word Embedding](#word-embedding) |
+| [Feature Expansion](#feature-expansion) | [Neural Network](#neural-network) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Neuron](#neuron) | [Word2Vec](#word2vec) |
 
 ## Concepts
 
@@ -1046,7 +1045,7 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 
 An ordinary skip-gram model would need one single, whole-word vector for "cat" to compute this same score; fastText instead assembles it fresh, every time, out of smaller, reusable pieces.
 
-**AI/ML Usage**: fastText's subword approach directly solves the out-of-vocabulary-word problem that limited earlier fixed-vocabulary embedding methods (see the Unknown-Word Token entry below) — a rare or novel word can still receive a reasonable vector purely from the n-grams it shares with familiar words, without that exact whole word ever needing to have appeared during training. This approach was quickly overtaken in popularity by pretrained contextual models such as BERT and GPT (see the Word2Vec entry's AI/ML Usage), which instead split rare words into a canonical sequence of learned "subword" pieces (using algorithms such as WordPiece or Byte-Pair Encoding) and compute a context-aware embedding for each piece using a Transformer, rather than summing a fixed table of n-gram vectors.
+**AI/ML Usage**: fastText's subword approach directly solves the out-of-vocabulary-word problem that limited earlier fixed-vocabulary embedding methods (see the Unknown-Word Token entry in the math_symbols file) — a rare or novel word can still receive a reasonable vector purely from the n-grams it shares with familiar words, without that exact whole word ever needing to have appeared during training. This approach was quickly overtaken in popularity by pretrained contextual models such as BERT and GPT (see the Word2Vec entry's AI/ML Usage), which instead split rare words into a canonical sequence of learned "subword" pieces (using algorithms such as WordPiece or Byte-Pair Encoding) and compute a context-aware embedding for each piece using a Transformer, rather than summing a fixed table of n-gram vectors.
 
 ---
 
@@ -2312,19 +2311,6 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 
 ---
 
-<a id="pddl-variable-prefix"></a>
-### PDDL Variable Prefix
-
-**The Big Idea**: This builds directly on the Literal, Grounded and Ungrounded entry — the `?` prefix is simply PDDL's specific, chosen way of visually marking a variable (like $X$ in $P(X,b)$) so it's clearly, unmistakably distinguishable from a specific, concrete object's name.
-
-**General Usage**: In PDDL files, variable names are conventionally written with a leading question mark, like `?x` or `?from`, to visually distinguish them at a glance from specific, concrete object names, which are written without that leading question mark at all.
-
-**Example.** An action schema parameter list written as `(Drive ?p ?from ?to)` immediately signals that $p$, $\textit{from}$, and $\textit{to}$ are all variables — placeholders standing in for whatever specific objects eventually get substituted in — while a grounded fact like `(At Alice Home)` uses no leading question marks at all, since `Alice` and `Home` are both specific, concrete, actual objects, not variables.
-
-**AI/ML Usage**: This is purely a syntax and readability convention specific to PDDL, but it's an extremely useful, immediately visible one for a person reading through a planning file, since it lets you instantly tell apart general, reusable templates from specific, fully grounded facts, just by glancing at whether a leading `?` is present or absent.
-
----
-
 <a id="perceptron-algorithm"></a>
 ### Perceptron Algorithm
 
@@ -2559,19 +2545,6 @@ Step 3–4 is the detail easiest to miss: **both endpoints being individually va
 | 4. Conclude | The assumption in Step 1 must be false; therefore, no smallest positive real number exists |
 
 **AI/ML Usage**: This is exactly the proof strategy used to establish Dijkstra's Algorithm's optimality (see the Dijkstra's Algorithm entry in this file): rather than directly demonstrating that every vertex's recorded cost is optimal, the proof assumes a vertex's cost *could* be non-optimal, exhaustively lists the only two ways that could happen (a cheaper route through the Closed Set (Explored Vertices), or a cheaper route through a still-unexplored vertex), and shows both are impossible given what non-negative edge weights and the Priority Queue's extraction order already guarantee.
-
----
-
-<a id="pseudo-inverse"></a>
-### Pseudo-Inverse
-
-**The Big Idea**: This builds directly on the Identity Matrix entry from the math_symbols file — the pseudo-inverse is a generalized version of an ordinary matrix inverse, specifically designed to still work even for matrices that don't have a normal, standard inverse at all.
-
-**General Usage**: The pseudo-inverse, $D^\dagger$, generalizes the ordinary matrix inverse to work even for matrices that aren't square, or that don't have a standard inverse for some other reason. It's specifically defined so that it behaves as much like a true inverse as mathematically possible, even in these more difficult, otherwise-uninvertible cases.
-
-**Example.** A rectangular matrix — say, one with more rows than columns — has no ordinary inverse at all, since ordinary matrix inversion is only even defined for square matrices in the first place. Its pseudo-inverse, however, still exists and can be computed directly, and it provides the closest possible mathematical approximation to "undoing" that specific matrix's transformation.
-
-**AI/ML Usage**: The pseudo-inverse is used to solve linear regression problems where the normal equations (see that entry above) would otherwise fail — for instance, whenever there are more features than training examples available, making the matrix $X^\top X$ non-invertible in the ordinary sense — providing a robust, reliable, well-defined solution even in these otherwise trickier, edge-case situations.
 
 ---
 
@@ -3078,19 +3051,6 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 **Example.** In principle, this theorem guarantees that even a comparatively simple, single-hidden-layer network $f(\mathbf{x};\mathbf{w},V)$ could theoretically learn to approximate an extremely complicated function — like the exact rule mapping raw pixel values directly to correct image labels — remarkably well, given a sufficiently, possibly enormously large number of hidden neurons to work with.
 
 **AI/ML Usage**: This theorem is why neural networks are described as extraordinarily powerful, flexible model families in principle — but in practice, real neural networks tend to use many separate layers (deep networks) rather than one single, extremely wide layer, since deep, layered architectures have consistently proven both easier to actually train successfully and more efficient in practice than trying to rely on one single, impractically enormous hidden layer instead.
-
----
-
-<a id="unknown-word-token"></a>
-### Unknown-Word Token
-
-**The Big Idea**: This builds on the Vocabulary entry from the math_symbols file — the unknown-word token is simply the designated placeholder a model falls back on whenever it encounters a word that isn't actually in its fixed vocabulary $V$.
-
-**General Usage**: The unknown-word token, often written UNK, is a special placeholder symbol used to represent any word encountered by a model that isn't part of its fixed vocabulary $V$. Rather than failing outright or crashing entirely, the model instead substitutes UNK and continues processing normally, in a well-defined, predictable way.
-
-**Example.** If a language model's fixed vocabulary includes common words like "cat" and "dog," but never includes a rare, obscure word like "platypus," encountering that unfamiliar word in new text would cause the model to substitute it directly with UNK — effectively treating "I saw a platypus" the exact same way it would treat "I saw a UNK."
-
-**AI/ML Usage**: Handling out-of-vocabulary words gracefully was a major, genuinely important practical challenge in earlier natural language processing systems — modern language models substantially reduce, though don't necessarily fully eliminate, this exact problem by using subword tokenization instead (breaking unfamiliar words down into smaller, familiar word-pieces the model does already recognize), rather than relying purely and only on one single, catch-all UNK token.
 
 ---
 
