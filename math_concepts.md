@@ -7,71 +7,76 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 182 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 198 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to fastText (Subword Embeddings) | Feature Expansion to Newton's Method | Non-Parametric Method to Word2Vec |
+| A* Search (A-Star Algorithm) to Frontier / Open List | Gaussian Graphical Model to Non-Parametric Method | Normal Equations to Word2Vec |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Feature Expansion](#feature-expansion) | [Non-Parametric Method](#non-parametric-method) |
-| [Ackermann Steering](#ackermann-steering) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) |
-| [Action Schema](#action-schema) | [Frontier / Open List](#frontier-open-list) | [NP-Hard](#np-hard) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Agnostic Learning](#agnostic-learning) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Generative Model](#generative-model) | [One-vs-All](#one-vs-all) |
-| [Arity](#arity) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Automatic Differentiation](#automatic-differentiation) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthonormal Basis](#orthonormal-basis) |
-| [Backpointer](#backpointer) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Overfitting](#overfitting) |
-| [Backpropagation](#backpropagation) | [Gradient Clipping](#gradient-clipping) | [PAC Learning](#pac-learning) |
-| [Bag of Words](#bag-of-words) | [Gradient Descent](#gradient-descent) | [PDDL](#pddl) |
-| [Basis Function](#basis-function) | [Graphical Lasso](#graphical-lasso) | [PDDL Variable Prefix](#pddl-variable-prefix) |
-| [Batch](#batch) | [GraphPlan](#graphplan) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Batch Normalization](#batch-normalization) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Bayes' Rule](#bayes-rule) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Planning Graph](#planning-graph) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Grounding / Instantiation](#grounding-instantiation) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Hedge Algorithm](#hedge-algorithm) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Hierarchical Softmax](#hierarchical-softmax) | [Posterior Distribution](#posterior-distribution) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Hinge Loss](#hinge-loss) | [Precision Matrix](#precision-matrix) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Hyperparameter](#hyperparameter) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Principal Component Analysis](#principal-component-analysis) |
-| [Centroid](#centroid) | [Indicator Function](#indicator-function) | [Prior Distribution](#prior-distribution) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Priority Queue](#priority-queue) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Jensen's Inequality](#jensens-inequality) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chernoff Bound](#chernoff-bound) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [K-Means Algorithm](#k-means-algorithm) | [Quadratic Form](#quadratic-form) |
-| [Closed-World Assumption](#closed-world-assumption) | [K-Nearest Neighbors](#k-nearest-neighbors) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Clustering](#clustering) | [Kernel Function](#kernel-function) | [Random Forest](#random-forest) |
-| [Computation Graph](#computation-graph) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Projection](#random-projection) |
-| [Conditional Independence](#conditional-independence) | [KL Divergence](#kl-divergence) | [Rank](#rank) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Latent Variable](#latent-variable) | [Regularization](#regularization) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Likelihood](#likelihood) | [Sample Complexity](#sample-complexity) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Linear Programming](#linear-programming) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Linearly Separable](#linearly-separable) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Log Likelihood](#log-likelihood) | [Search Statistics](#search-statistics) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Logistic Regression](#logistic-regression) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Covariance Matrix](#covariance-matrix) | [Loss Surface](#loss-surface) | [Skip-Gram Model](#skip-gram-model) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Lower Bound](#lower-bound) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Validation](#cross-validation) | [Markov Blanket](#markov-blanket) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Markov's Inequality](#markovs-inequality) | [Stopword](#stopword) |
-| [Dead End](#dead-end) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [STRIPS](#strips) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Support Vector Machine](#support-vector-machine) |
-| [Decision Boundary](#decision-boundary) | [Maximum Entropy Model](#maximum-entropy-model) | [Surrogate Loss](#surrogate-loss) |
-| [Decision Tree](#decision-tree) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Swept Volume](#swept-volume) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Mean Squared Error](#mean-squared-error) | [Symmetric Matrix](#symmetric-matrix) |
-| [Diagonal Matrix](#diagonal-matrix) | [Minimum Description Length](#minimum-description-length) | [Symmetric Relation](#symmetric-relation) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Model Complexity](#model-complexity) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Momentum](#momentum) | [Tensor](#tensor) |
-| [Discriminative Model](#discriminative-model) | [Monotonic Function](#monotonic-function) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Dropout](#dropout) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Early Stopping](#early-stopping) | [Mutex](#mutex) | [Union Bound](#union-bound) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Naive Bayes](#naive-bayes) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [EM Algorithm](#em-algorithm) | [Named-Entity Type Labels](#named-entity-type-labels) | [Unknown-Word Token](#unknown-word-token) |
-| [Epoch](#epoch) | [Negative Log Likelihood](#negative-log-likelihood) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Sampling](#negative-sampling) | [Word Embedding](#word-embedding) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Neural Network](#neural-network) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neuron](#neuron) | [Word2Vec](#word2vec) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Newton's Method](#newtons-method) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Normal Equations](#normal-equations) |
+| [Absolute Discounting](#absolute-discounting) | [Gaussian Mixture Model](#gaussian-mixture-model) | [NP-Hard](#np-hard) |
+| [Ackermann Steering](#ackermann-steering) | [Generative Model](#generative-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Action Schema](#action-schema) | [Geometric Mean](#geometric-mean) | [One-Hot Encoding](#one-hot-encoding) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [One-vs-All](#one-vs-all) |
+| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthonormal Basis](#orthonormal-basis) |
+| [Arity](#arity) | [Gradient Clipping](#gradient-clipping) | [Overfitting](#overfitting) |
+| [Automatic Differentiation](#automatic-differentiation) | [Gradient Descent](#gradient-descent) | [PAC Learning](#pac-learning) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
+| [Backpointer](#backpointer) | [GraphPlan](#graphplan) | [PDDL Variable Prefix](#pddl-variable-prefix) |
+| [Backpropagation](#backpropagation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Bag of Words](#bag-of-words) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Perplexity](#perplexity) |
+| [Basis Function](#basis-function) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Batch](#batch) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
+| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Hyperparameter](#hyperparameter) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Principal Component Analysis](#principal-component-analysis) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
+| [Centroid](#centroid) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kernel Function](#kernel-function) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Chernoff Bound](#chernoff-bound) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Quadratic Form](#quadratic-form) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Closed-World Assumption](#closed-world-assumption) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Random Forest](#random-forest) |
+| [Clustering](#clustering) | [Latent Variable](#latent-variable) | [Random Projection](#random-projection) |
+| [Computation Graph](#computation-graph) | [Lattice-Based Planning](#lattice-based-planning) | [Rank](#rank) |
+| [Conditional Independence](#conditional-independence) | [Likelihood](#likelihood) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linear Programming](#linear-programming) | [Regularization](#regularization) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Linearly Separable](#linearly-separable) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Convex Function](#convex-function) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Schur Complement](#schur-complement) |
+| [Coordinate Descent](#coordinate-descent) | [Loss Surface](#loss-surface) | [Search Statistics](#search-statistics) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
+| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
+| [Cross-Validation](#cross-validation) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
+| [Dead End](#dead-end) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Decision Boundary](#decision-boundary) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
+| [Decision Tree](#decision-tree) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
+| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotonic Function](#monotonic-function) | [Symmetric Matrix](#symmetric-matrix) |
+| [Discriminative Model](#discriminative-model) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dropout](#dropout) | [Multinomial Distribution](#multinomial-distribution) | [Tensor](#tensor) |
+| [Early Stopping](#early-stopping) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Mutex](#mutex) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [EM Algorithm](#em-algorithm) | [N-Gram Language Model](#n-gram-language-model) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epoch](#epoch) | [Naive Bayes](#naive-bayes) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Named-Entity Type Labels](#named-entity-type-labels) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Negative Log Likelihood](#negative-log-likelihood) | [Unknown-Word Token](#unknown-word-token) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Negative Sampling](#negative-sampling) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Neural Network](#neural-network) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Feature Expansion](#feature-expansion) | [Neuron](#neuron) | [Word Embedding](#word-embedding) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Newton's Method](#newtons-method) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Frontier / Open List](#frontier-open-list) | [Non-Parametric Method](#non-parametric-method) | [Word2Vec](#word2vec) |
 
 ## Concepts
 
@@ -94,6 +99,29 @@ All 182 entries, alphabetical. Read down the first column, then down the second,
 Notice A* did briefly expand $A$ (its priority looked best at Step 1), but it never *committed* to the path through $A$ — it kept $G$'s cost open to revision until $G$ itself became the minimum-priority item in the queue, by which point its recorded cost was already the true optimum.
 
 **AI/ML Usage**: A* is one of the most widely deployed algorithms in AI — used in GPS route planning, video-game pathfinding, and robot motion planning — precisely because it combines the guaranteed optimality of Dijkstra's Algorithm with the speed of a heuristic-guided search, whenever a reliably admissible heuristic (such as straight-line distance for physical navigation) is available.
+
+---
+
+<a id="absolute-discounting"></a>
+### Absolute Discounting
+
+**The Big Idea**: This builds directly on Maximum Likelihood Estimation above and on the Smoothing (Language Models) entry below — absolute discounting is one specific, concrete recipe for smoothing: take a small, fixed slice off of every observed count, and hand that reserved amount over to a simpler, lower-order model instead of just letting unseen events get a probability of exactly zero.
+
+**General Usage**: For an n-gram context $c$ and following word $w$, absolute discounting defines the smoothed probability as $$P_{AD}(w \mid c) = \frac{\max\big(\text{count}(c,w) - k,\ 0\big)}{\text{count}(c)} + \lambda\, P_{AD}(w \mid c')$$ where $0 < k < 1$ is a fixed constant subtracted from every observed count, $c'$ is the shorter, lower-order context obtained by dropping the oldest word from $c$ (see Backoff (N-Gram Models) below), and $\lambda$ is chosen exactly large enough to make the whole distribution sum to $1$ again — precisely replacing the total amount of probability mass taken away by the $-k$ discount. Concretely, $\lambda$ equals the number of distinct word types observed following context $c$, times $k$, divided by $\text{count}(c)$.
+
+**Example.** Suppose the 4-word context "want to go to" was observed $\text{count}(c)=4$ times in a corpus, followed by "Maui" twice, "class" once, and "campus" once (three distinct word types following this context), and let $k=0.2$. Each observed count is discounted by $k$:
+
+| Word $w$ | $\text{count}(c,w)$ | $\text{count}(c,w) - k$ |
+|---|---|---|
+| Maui | 2 | $2 - 0.2 = 1.8$ |
+| class | 1 | $1 - 0.2 = 0.8$ |
+| campus | 1 | $1 - 0.2 = 0.8$ |
+
+The reserved mass $\lambda$ going to the lower-order backoff model is $\lambda = \dfrac{(\text{3 word types}) \times 0.2}{4} = \dfrac{0.6}{4} = 0.15$. So, for instance, $P_{AD}(\text{Maui} \mid \text{want to go to}) = \frac{1.8}{4} + 0.15 \cdot P_{AD}(\text{Maui} \mid \text{to go to})$ — mostly the discounted relative frequency, plus a small top-up borrowed from the simpler trigram model.
+
+**Check.** The three discounted counts by themselves sum to $1.8+0.8+0.8=3.4$ out of the original total of $4$, leaving exactly $4 - 3.4 = 0.6$ of raw count "taken away" — matching the $0.6$ used in the $\lambda$ numerator above, confirming the reserved mass was computed consistently with how much was actually discounted.
+
+**AI/ML Usage**: Absolute discounting is a foundational, historically important technique for estimating n-gram language models (see N-Gram Language Model above), used heavily before recurrent neural networks and Transformer-based language models became the standard approach. Its main refinement, Kneser-Ney Smoothing (see that entry below), is the version most commonly encountered in practice and used in real n-gram language modeling toolkits.
 
 ---
 
@@ -203,6 +231,19 @@ The final `dist[1][3] = 4` correctly reflects the two-edge route $1 \to 2 \to 3$
 **Example.** If a calculation is "square the input, then add 1, then take the square root," a computer using autodiff doesn't need someone to work out the derivative of the whole combined formula in one shot — it tracks the derivative through each of the three small steps individually (squaring, then adding, then square-rooting) and multiplies those small derivatives together automatically to get the final answer.
 
 **AI/ML Usage**: Autodiff is exactly the technology that makes training modern neural networks practical at all — libraries like PyTorch and TensorFlow use it to automatically compute the gradient of a loss function with respect to every single one of a network's potentially billions of weights, which would be utterly impossible for a person to work out by hand, every single training step.
+
+---
+
+<a id="backoff-n-gram-models"></a>
+### Backoff (N-Gram Models)
+
+**The Big Idea**: This builds directly on the N-Gram Language Model and Absolute Discounting entries above — backoff is the general strategy of falling back to a simpler, shorter-context model whenever the more detailed, longer-context model doesn't have enough data to trust, the same instinct as falling back on a rule of thumb once a highly specific piece of advice doesn't apply to your exact situation.
+
+**General Usage**: A backoff scheme estimates a high-order n-gram probability as a combination of (1) a term based directly on the full, longer context, and (2) a smaller correction term built from a shorter, lower-order context (one word less), recursively. Formally, if $c$ is an $n{-}1$-word context and $c'$ is $c$ with its oldest word dropped, a backoff estimate has the shape $P(w \mid c) = (\text{term using } c) + \lambda \cdot P(w \mid c')$, where $P(w\mid c')$ is itself defined the exact same way, recursively, in terms of an even shorter context — all the way down to the unconditional, single-word probability $P(w)$, called the unigram, which requires no context at all.
+
+**Example.** Backing off a 4-gram context "want to go to" one step at a time: first to the trigram context "to go to," then to the bigram context "go to," then to the single-word context "to," and finally to no context at all — the plain unigram probability $P(\text{Austin})$. Because "Austin" appeared somewhere in the training corpus, $P(\text{Austin}) > 0$ is guaranteed at this final, unconditional level, even if every one of the more specific, longer contexts above it had a count of exactly zero.
+
+**AI/ML Usage**: Backoff is the structural idea that makes Absolute Discounting (see that entry above) and Kneser-Ney Smoothing (see that entry below) actually guarantee every word a nonzero probability: no matter how sparse the data is for a long, specific context, recursively falling back to shorter and shorter contexts always eventually reaches a level with enough data to produce a reliable, nonzero estimate.
 
 ---
 
@@ -1094,6 +1135,19 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 
 ---
 
+<a id="geometric-mean"></a>
+### Geometric Mean
+
+**The Big Idea**: This builds directly on the Mean entry in the math_symbols file — the ordinary (arithmetic) mean adds a set of numbers and divides by how many there are; the geometric mean instead *multiplies* them together and takes the corresponding root, which is the natural way to average numbers that combine by multiplying rather than by adding.
+
+**General Usage**: The geometric mean of $n$ positive numbers $x_1,\dots,x_n$ is $\sqrt[n]{x_1\times x_2\times\cdots\times x_n}$ — multiply all the numbers together, then take the $n$-th root of that product. It is always less than or equal to the ordinary arithmetic mean of the same numbers, and the two are only exactly equal when all the numbers being averaged are identical.
+
+**Example.** Find the geometric mean of $4$ and $9$: multiply them, $4 \times 9 = 36$; then take the square root (the $2$nd root, since there are $2$ numbers), $\sqrt{36} = 6$. Compare this to the ordinary arithmetic mean of the same two numbers, $(4+9)/2 = 6.5$ — the geometric mean ($6$) comes out smaller, illustrating the general rule that the geometric mean never exceeds the arithmetic mean.
+
+**AI/ML Usage**: Because taking a logarithm converts multiplication into addition (see Logarithm in the math_symbols file), averaging a set of numbers *in log space* and then converting back is mathematically equivalent to taking their geometric mean directly — this is exactly the relationship behind Perplexity (see that entry below), whose defining formula averages log-probabilities and then exponentiates, which is precisely why perplexity works out to the geometric mean of the model's branching factor rather than the plain arithmetic mean.
+
+---
+
 <a id="glorot-xavier-initialization"></a>
 ### Glorot / Xavier Initialization
 
@@ -1560,6 +1614,19 @@ which holds identically for *any* $s$, $c$, and $\theta$ — confirming the para
 
 ---
 
+<a id="kneser-ney-smoothing"></a>
+### Kneser-Ney Smoothing
+
+**The Big Idea**: This builds directly on Absolute Discounting above — Kneser-Ney smoothing uses the exact same discount-and-backoff structure, changing only what the lower-order backoff distribution measures: instead of asking "how often did this word occur," it asks "in how many different contexts has this word occurred at all."
+
+**General Usage**: Kneser-Ney smoothing is a refinement of absolute discounting (see that entry above) in which the lower-order backoff distributions are reweighted according to a word's **fertility** — informally, the number of distinct contexts that word has been observed to follow — rather than that word's raw frequency of occurrence. The underlying intuition is that a word which shows up after many different preceding words is a genuinely good, flexible choice to fall back on for an unseen context, whereas a word that happens to be frequent overall but only ever follows one specific preceding word is a poor choice to back off to for a different, unseen context.
+
+**Example.** Compare two words that are equally frequent overall: "Francisco," which (outside of proper nouns like "San Francisco") almost always follows just the single word "San," versus a word like "go," which follows a huge variety of different preceding words ("want to go," "need to go," "going to go," and so on). Even if both words have identical raw counts in a corpus, ordinary absolute discounting would back off to them equally, while Kneser-Ney smoothing correctly rates "go" as the far more fertile, more broadly useful word to fall back on for a context it has never specifically seen before.
+
+**AI/ML Usage**: Kneser-Ney smoothing is, in practice, the specific smoothing scheme most commonly used whenever n-gram language models (see that entry above) are actually built and deployed, precisely because this fertility-based reweighting produces noticeably better estimates for unseen word sequences than plain absolute discounting alone.
+
+---
+
 <a id="latent-variable"></a>
 ### Latent Variable
 
@@ -1680,6 +1747,19 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="long-short-term-memory-lstm"></a>
+### Long Short-Term Memory (LSTM)
+
+**The Big Idea**: This builds directly on the Recurrent Neural Network (RNN) entry above — an LSTM is an RNN cell redesigned with an extra piece of memory and a set of learned "gates" specifically so that useful information can survive being carried forward across many time steps without automatically fading away, the way a plain RNN's hidden state tends to (see Vanishing Gradient Problem above).
+
+**General Usage**: An LSTM cell keeps two pieces of state instead of one: the ordinary hidden state $h$ (as in a plain RNN) and an additional **cell state** $c$, which acts as a more protected memory channel. At each time step, three learned gates — each an ordinary neural network layer producing values between $0$ and $1$ (via a sigmoid, see Sigmoid Function in `math_symbols.md`) — control the flow of information: a **forget gate** decides how much of the old cell state to keep, an **input gate** decides how much new information to add, and an **output gate** decides how much of the (updated) cell state to expose as the new hidden state. Multiplying by a gate value close to $1$ lets information pass through largely unchanged, which is what allows useful information to survive across many time steps far better than a plain RNN's repeated tanh-and-multiply update allows.
+
+**Example.** In processing the sentence "The reviewer, who has seen thousands of films, thought this one was great," a plain RNN's hidden state would need to preserve the subject's positive framing across the entire long parenthetical clause "who has seen thousands of films," repeatedly passing it through a tanh nonlinearity at every intervening word (see Vanishing Gradient Problem above) — exactly the situation where that information tends to fade. An LSTM's forget gate can instead learn to hold the cell state's relevant information nearly constant (a gate value near $1$) across that entire clause, protecting it from the repeated-multiplication decay a plain RNN suffers, and releasing it back into the hidden state once "great" is reached.
+
+**AI/ML Usage**: LSTMs were, for many years, the dominant architecture for sequence-modeling tasks in NLP — machine translation, speech recognition, and language modeling all relied heavily on them before Transformers (see that entry's mentions throughout this file) became the standard. Even though LSTMs meaningfully reduce the vanishing gradient problem compared to a plain RNN, they do not eliminate it — very long sequences (on the order of hundreds or thousands of words) remain genuinely difficult for an LSTM to learn from, which was a key practical motivation for developing the Transformer architecture instead.
+
+---
+
 <a id="loss-surface"></a>
 ### Loss Surface
 
@@ -1716,6 +1796,19 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** In a graphical model, a variable's Markov blanket typically consists of its direct "parents," its direct "children," and any other variables that share a child with it (its "co-parents"). Once you already know all of these specific, directly connected variables, learning about anything else, further away, in the graph tells you absolutely nothing new about that original variable.
 
 **AI/ML Usage**: The Markov blanket concept is central to understanding and efficiently working with Bayesian networks and other graphical models — it's also directly relevant to feature selection in machine learning, since a variable's Markov blanket is, in a precise theoretical sense, exactly the minimal, complete set of features that are actually needed to predict it as accurately as possible.
+
+---
+
+<a id="markov-model"></a>
+### Markov Model
+
+**The Big Idea**: This builds directly on Conditional Independence above — a Markov model is what you get when you deliberately assume that something happening next only depends on a short, fixed-size recent window, and is conditionally independent of everything further back once that window is known. It is the same kind of simplifying assumption as approximating a long, winding graph of a function with just its last few points.
+
+**General Usage**: A sequence (of words, states, weather observations, or any other items occurring one after another) is said to follow an order-$k$ Markov model (or to have the Markov property of order $k$) when each item's probability, conditioned on the entire history before it, is assumed to equal its probability conditioned on only the previous $k$ items: $P(x_i \mid x_1,\dots,x_{i-1}) = P(x_i \mid x_{i-k},\dots,x_{i-1})$. A first-order Markov model (the most common default, often simply called "a Markov model" or "a Markov chain") conditions on only the single previous item, $k=1$.
+
+**Example.** Suppose a simplified weather model tracks only "Sunny" or "Rainy" days, and assumes first-order Markov behavior: tomorrow's weather depends only on today's, not on any earlier day. Given $P(\text{Rainy tomorrow} \mid \text{Sunny today}) = 0.2$, the Markov assumption says this exact probability is used regardless of whether the past week was all sun, all rain, or some mixture — every day's history collapses down to just "what happened yesterday."
+
+**AI/ML Usage**: Hidden Markov Models (HMMs) for part-of-speech tagging assume each tag depends only on the tag immediately before it, exactly this first-order Markov property applied to a sequence of grammatical tags. An n-gram language model (see that entry) is precisely an order-$(n-1)$ Markov model applied to a sequence of words: predicting each word using only the previous $n-1$ words, rather than the entire sentence so far, is what makes it computationally tractable to estimate from real text.
 
 ---
 
@@ -1889,6 +1982,32 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="multi-head-self-attention"></a>
+### Multi-Head Self-Attention
+
+**The Big Idea**: This builds directly on Self-Attention above — a single self-attention computation tends to produce softmax distributions that are too sharply "peaky," concentrating almost all of their weight on just one position even when several positions are genuinely relevant. Multi-head self-attention's fix is simple: run several independent copies of the same self-attention computation side by side, each with its own separately learned $W^Q$, $W^K$, $W^V$ matrices, and combine their outputs afterward.
+
+**General Usage**: Multi-head self-attention runs $h$ independent **heads** of self-attention in parallel on the same input embeddings $E$. Each head $i$ has its own randomly initialized, separately learned weight matrices $W_i^Q$, $W_i^K$, $W_i^V$, and computes its own output $Z_i = \text{Attention}(EW_i^Q, EW_i^K, EW_i^V)$ exactly as in ordinary self-attention (see that entry above). Because every head's matrices are different, each head can learn to attend to different information. The $h$ resulting output matrices $Z_0, Z_1, \dots, Z_{h-1}$ are then **concatenated** side by side into one wide matrix, and that concatenated matrix is multiplied by one further learned matrix $W^O$ to project it back down to the original embedding size — producing a single output the same shape as the original input, exactly as with a single self-attention head (see Self-Attention above), but now built by blending information gathered by several independently attending heads.
+
+**Example.** For the sentence "I visited New ___," a single attention head tends to place most of its weight on just one of "visited" or "New," rather than a genuinely balanced split between them, since softmax distributions are empirically observed to become peaky in practice (concentrating on one dominant match) rather than spreading evenly across several equally relevant positions. With two heads instead of one, head $0$ can learn (via its own separately trained $W_0^Q, W_0^K$) to attend heavily to "visited," while head $1$ independently learns to attend heavily to "New." Concatenating $Z_0$ (informed by "visited") and $Z_1$ (informed by "New") and multiplying by $W^O$ produces one output vector that has successfully incorporated both pieces of information — something neither head could achieve on its own.
+
+**AI/ML Usage**: The original Transformer (Vaswani et al., 2017) uses $8$ attention heads per layer. Multi-head self-attention is standard in essentially every modern Transformer-based architecture (BERT, GPT, and their descendants), precisely because it lets a single layer combine several different kinds of contextual information at once — one head might learn to track syntactic relationships (like subject-verb agreement) while another tracks longer-range semantic cues — rather than requiring many additional stacked layers to gradually combine that same information one relationship at a time.
+
+---
+
+<a id="multinomial-distribution"></a>
+### Multinomial Distribution
+
+**The Big Idea**: This builds on the Bernoulli Distribution entry above — a Bernoulli distribution describes one flip of a two-sided coin (success or failure); a multinomial distribution is the natural generalization to a "die" with many sides, where each roll lands on exactly one of several possible categories instead of just two.
+
+**General Usage**: A multinomial distribution assigns a probability to each of several mutually exclusive, exhaustive outcomes (categories), with every probability between $0$ and $1$ and all of them summing to exactly $1$. Over a set of $V$ categories $\{c_1,\dots,c_V\}$, it is fully specified by $V$ parameters $p_1,\dots,p_V$ (one probability per category), where $\sum_{k=1}^{V} p_k = 1$.
+
+**Example.** A weighted six-sided die is a multinomial distribution over $V=6$ categories. Suppose it is weighted so that $P(1)=P(2)=P(3)=P(4)=P(5)=0.1$ and $P(6)=0.5$. Check that these are valid multinomial parameters: $\sum_{k=1}^{6} p_k = 0.1+0.1+0.1+0.1+0.1+0.5 = 1.0$ ✓ — every outcome's probability is between $0$ and $1$, and they sum to exactly $1$, so this is a valid multinomial distribution (a very lopsided one, strongly favoring rolling a $6$).
+
+**AI/ML Usage**: An n-gram language model (see N-Gram Language Model) represents $P(w_i \mid \text{context})$ — the probability of the next word, given some fixed context — as one multinomial distribution over the entire vocabulary $V$ (see the Vocabulary entry in the math_symbols file) for every possible context, so a bigram model alone requires $|V|\times|V|$ parameters: one full multinomial distribution (of $|V|$ parameters each) for every one of the $|V|$ possible single-word contexts. The Softmax Function (see the math_symbols file) is the standard way a neural network produces valid multinomial parameters as its output, since it guarantees the outputs are all positive and sum to $1$.
+
+---
+
 <a id="multivariate-normal-distribution"></a>
 ### Multivariate Normal Distribution
 
@@ -1912,6 +2031,21 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** In a planning problem, the fact "the door is open" and the fact "the door is closed" are mutex with respect to each other — a planner should never allow both of them to be true in the very same state at once, since that combination is a logical, physical impossibility.
 
 **AI/ML Usage**: Mutex relationships are computed and heavily used inside planning graphs (see Planning Graph below) — tracking exactly which facts and actions are mutually exclusive with each other at each successive level of the graph is precisely what lets algorithms like GraphPlan quickly and efficiently rule out large numbers of genuinely impossible plans, without ever having to search through them individually one by one.
+
+---
+
+<a id="n-gram-language-model"></a>
+### N-Gram Language Model
+
+**The Big Idea**: This combines three ideas already built up elsewhere in this file and in the math_symbols file: the Chain Rule (for Probability), which breaks the probability of a whole sentence into one conditional probability per word; the Markov Model assumption above, which shortens "everything said so far" down to just the last few words; and the N-Gram entry in the math_symbols file, which names that fixed-length window of words. An n-gram language model is simply what results from applying a Markov assumption to language, using n-grams as the fixed window.
+
+**General Usage**: A language model assigns a probability $P(\bar w)$ to an entire sequence of words $\bar w = w_1,\dots,w_M$. By the chain rule, this always equals $P(\bar w) = \prod_{i=1}^{M} P(w_i \mid w_1,\dots,w_{i-1})$ exactly, with no assumption yet — but conditioning on the entire, ever-growing history becomes unworkable to estimate from real data. An **n-gram language model** makes an order-$(n-1)$ Markov assumption (see Markov Model above): each word's probability is conditioned on only the previous $n-1$ words, rather than the full history: $$P(\bar w) = \prod_{i=1}^{M} P\big(w_i \mid w_{i-n+1},\dots,w_{i-1}\big)$$ A **2-gram (bigram) model** ($n=2$) conditions each word on only the single word before it, e.g. $P(w_3\mid w_1,w_2) \approx P(w_3\mid w_2)$ — $w_3$ is treated as conditionally independent of $w_1$, given $w_2$ (see Conditional Independence above). A **3-gram (trigram) model** ($n=3$) conditions on the previous two words. In practice $n$ is typically some small number between about $3$ and $7$. A special start-of-sentence marker (see the Start-of-Sentence Token entry in the math_symbols file) is used in place of real words whenever the conditioning window would otherwise reach before the start of the sentence — a bigram model uses one such marker for $w_1$, a trigram model uses two for $w_1$, and so on.
+
+For a fixed order $n$, every one of these conditional distributions $P(w_i \mid \text{context})$ is a Multinomial Distribution (see that entry above) over the entire vocabulary $V$ — one full multinomial per distinct context, so a bigram model alone requires $|V|\times|V|$ parameters in total (see the Vocabulary entry in the math_symbols file). These parameters are estimated from a large corpus (a large body of real text) using Maximum Likelihood Estimation (see that entry above): the probability of a word $w$ following a one-word context $c$ is simply how often $w$ followed $c$ in the corpus, divided by how often $c$ occurred at all: $$P(w \mid c) = \frac{\text{count}(c, w)}{\text{count}(c)}$$ (see the Number Sign / Count entry in the math_symbols file — $\text{count}(\cdot)$ here is that same counting idea, written as a function call rather than with the $\#$ shorthand).
+
+**Example.** Suppose a tiny corpus produces the following counts: $\text{count}(\text{the}) = 1000$ (the word "the" appears 1000 times total), and among those 1000 occurrences, "the dog" appears 5 times, so $\text{count}(\text{the}, \text{dog}) = 5$. The maximum-likelihood bigram estimate is: $$P(\text{dog} \mid \text{the}) = \frac{\text{count}(\text{the}, \text{dog})}{\text{count}(\text{the})} = \frac{5}{1000} = 0.005$$ Repeating this same division for every word that ever follows "the" in the corpus (house, cat, and so on) produces a full multinomial distribution over the vocabulary — and because a huge number of different words can plausibly follow a common word like "the," this distribution typically comes out very flat (spread thin across many words, none of them highly likely), rather than sharply peaked on one obvious next word.
+
+**AI/ML Usage**: Historically, n-gram language models had three main uses. First, **generation** — in phrase-based machine translation, candidate translated phrases are stitched together, and an n-gram language model scores whether the resulting combination reads as plausible, fluent language in the target language. Second, **grammatical error correction** — checking whether swapping in a different word (e.g. a different article, like "a" for "the") substantially raises the n-gram probability of the surrounding text flags likely errors. Third, and most influential for later methods, framing "predict the next word" as a task at all is the same core idea that Word2Vec's Skip-Gram Model (see that entry above) built into a practical way of learning word embeddings — an n-gram language model can, in this sense, be viewed as an early ancestor of the neural language-modeling objectives that produced modern word embeddings and, later, large language models.
 
 ---
 
@@ -2204,6 +2338,30 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 
 ---
 
+<a id="perplexity"></a>
+### Perplexity
+
+**The Big Idea**: This builds directly on Negative Log Likelihood above and the Geometric Mean entry above — perplexity is simply the negative log likelihood of a model's predictions, averaged and then run back through the exponential function to undo the logarithm, converting an abstract log-probability score back into an intuitive "on average, about this many equally likely choices" number.
+
+**General Usage**: For a sequence of $n$ words $w_1,\dots,w_n$, perplexity is defined as $$\text{Perplexity} = \exp\!\left(-\frac{1}{n}\sum_{i=1}^{n}\log P(w_i \mid w_1,\dots,w_{i-1})\right)$$ — the exponential of the average negative log likelihood the model assigns to each word, given everything before it. Lower perplexity is better: it means the model was, on average, assigning higher probability to the words that actually occurred. Perplexity is always evaluated on held-out data (see Hold-Out Set / Validation Set in the math_symbols file) — data the model did not train on — never on the model's own training data, since the whole point is to measure how well the model generalizes to genuinely new text.
+
+**Example.** Suppose a language model assigns probabilities $\tfrac14, \tfrac13, \tfrac14, \tfrac13$ to four words it is asked to predict, each given its correct preceding context.
+
+| Word | Probability $P$ | $-\log P$ (natural log) |
+|---|---|---|
+| 1 | $1/4$ | $-\ln(0.25) \approx 1.386$ |
+| 2 | $1/3$ | $-\ln(0.333) \approx 1.099$ |
+| 3 | $1/4$ | $-\ln(0.25) \approx 1.386$ |
+| 4 | $1/3$ | $-\ln(0.333) \approx 1.099$ |
+
+Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 1.242$. Perplexity is $\exp(1.242) \approx 3.464$.
+
+**Check.** Perplexity has a second, equivalent interpretation as the geometric mean (see that entry above) of the "branching factor" — informally, $1/P$ — of each prediction: here the four denominators are $4,3,4,3$, so their geometric mean is $\sqrt[4]{4\times3\times4\times3} = \sqrt[4]{144} = \sqrt{12} \approx 3.464$ — exactly matching the perplexity computed above via log-averaging and exponentiating, confirming the two routes to the same number agree.
+
+**AI/ML Usage**: Perplexity is the standard metric for evaluating language models (see N-Gram Language Model above), used in place of accuracy precisely because next-word prediction has no single "correct" answer to check against — a model can only be judged by how much probability it assigned to whichever word actually occurred. Perplexity values are mostly meaningful only in relative comparisons between language models evaluated on the same data, rather than as an absolute, universal quality score, and reported values commonly range anywhere from about $10$ to $200$ depending on the specific task and dataset.
+
+---
+
 <a id="phrase-structure-category-labels"></a>
 ### Phrase-Structure Category Labels
 
@@ -2240,6 +2398,19 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 **Example.** An algorithm taking $n^2$ steps for $n=10$ inputs takes $100$ steps; for $n=100$ inputs, it takes $10{,}000$ steps — very manageable, entirely reasonable growth. An algorithm instead taking $2^n$ steps takes just $1{,}024$ steps for $n=10$, but for $n=100$ it would require an absolutely astronomical, physically infeasible number of steps — a dramatically, qualitatively different kind of growth entirely.
 
 **AI/ML Usage**: Whether a learning algorithm is efficient (polynomial-time) or not is a central, foundational concern in computational learning theory — PAC learning specifically requires an efficient learner in this precise technical sense, and much of algorithmic research in machine learning is directly devoted to finding provably efficient algorithms for problems that would otherwise, in the worst case, require impractically, infeasibly long running times.
+
+---
+
+<a id="positional-encoding"></a>
+### Positional Encoding
+
+**The Big Idea**: This builds directly on Self-Attention above and the Positional Embedding entry in `math_symbols.md` — self-attention treats every position symmetrically (see Section 3 of the Self-Attention notes), so from its perspective, the word "visited" in position 2 of a sentence looks exactly the same as the word "ate" in position 2 of a *different* sentence, with no notion of position built in at all. Positional encoding is any scheme for fixing this by injecting position information into the model.
+
+**General Usage**: Positional encoding refers to a family of techniques for telling a Transformer where each token sits in a sequence, since self-attention itself has no inherent sense of order. The simplest scheme, **absolute positional encoding**, encodes each sequence position ($1, 2, 3, \dots$) as its own learned embedding vector — drawn from a second embedding table, entirely separate from the word-embedding table, associating "position 1" with one vector, "position 2" with another, and so on — and simply **adds** that position vector directly to the corresponding word's embedding before the rest of the model ever sees it. An alternative, presented in Vaswani et al. (2017), uses **fixed** (non-learned) sinusoidal positional encodings instead of learned ones: $$PE_{(pos,\,2i)} = \sin\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right), \qquad PE_{(pos,\,2i+1)} = \cos\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$ where $pos$ is the token's position in the sequence and $i$ indexes which pair of embedding dimensions is being computed, so different dimensions of the encoding oscillate through sine and cosine at different frequencies.
+
+**Example.** Under the sinusoidal scheme, positions $1$ and $2$ produce nearly identical encoding vectors — only their highest-frequency dimensions (the ones with the smallest denominator, changing fastest as $pos$ increases) differ noticeably between adjacent positions. Positions $1$ and $20$, however, produce visibly different vectors, since many more of the sine/cosine dimensions have had time to complete a meaningful fraction of their cycle over that larger gap. Because dot products between similar vectors are larger than dot products between dissimilar ones (see Dot Product / Inner Product in `math_symbols.md`), this means nearby positions automatically get higher dot products (and so, all else equal, more attention) than distant ones — a useful default bias built directly into the representation, before any training has even happened.
+
+**AI/ML Usage**: Absolute positional encoding using a learned table (the simpler, first-described scheme above) is what is actually used by models like GPT-3, despite being a departure from the sinusoidal scheme originally proposed in Vaswani et al. (2017). More recent variants exist as well: **relative positional encoding** (used in T5) drops absolute position entirely and instead injects, directly into the query-times-key computation, only the *distance* between two tokens; **ALiBi** (Attention with Linear Biases; Press et al., 2022) similarly uses relative distance, adding a penalty term $m\cdot[-(i-1),\dots,-2,-1,0]$ directly onto the attention scores before the softmax, where $m$ is a different constant slope for each attention head, so that different heads can learn to prefer nearby tokens versus a more uniform spread over the whole sequence, using far fewer additional parameters than a learned table would require. Surprisingly, Kazemnejad et al. (2023) found that a **causal** Transformer (one whose self-attention is restricted to only look into the past, rather than in both directions) can learn to determine each token's position organically, without any explicit positional encoding at all (**NoPE**) — because a model restricted to looking only backward can, in effect, learn to count how many tokens have come before it, a trick unavailable to a model that can also look forward. Despite this result, using an explicit positional encoding scheme remains standard practice in most models trained today.
 
 ---
 
@@ -2487,6 +2658,19 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 
 ---
 
+<a id="recurrent-neural-network-rnn"></a>
+### Recurrent Neural Network (RNN)
+
+**The Big Idea**: This builds directly on the Neural Network entry above and on the Deep Averaging Network entry's weakness (throwing away word order) — an RNN processes a sequence one item at a time, using the exact same small set of parameters at every step, while carrying forward a running summary vector so that earlier items can still influence how later ones are interpreted. It is the same everyday idea as reading a sentence left to right, updating your understanding of "what's happened so far" one word at a time, rather than either staring at every word simultaneously in a fixed grid (a feedforward network's approach) or throwing all the words into a bag and losing their order entirely (a Deep Averaging Network's approach).
+
+**General Usage**: An RNN is built around a repeated **cell**: a small piece of computation that takes an input vector $x$ (for example, one word's embedding) together with a **hidden state** vector $h$ carried over from the previous step, and produces both an output $y$ and an updated hidden state to pass forward to the next step. The exact same cell, with the exact same learned parameters, is applied once per item in the sequence — so, unlike a feedforward network's fixed-size input layer, an RNN can process a sequence of any length using a fixed, unchanging number of parameters. Some RNN variants, such as the LSTM (see Long Short-Term Memory (LSTM) below), carry an additional **cell state** $c$ alongside $h$ as a second channel of memory.
+
+**Example.** Feeding the sentence "the movie was great" into an RNN one word at a time, the cell's hidden state updates after each word: after "the," "movie," and "was," the hidden state carries only fairly neutral information, but upon processing "great," the cell can update its hidden state to reflect that a positive sentiment word has now been seen, and the final output $y$ can reflect an overall positive classification. Now feed in "it was not great" instead: the cell's hidden state changes again upon seeing "not," entering a state that represents "an upcoming sentiment word should be flipped," so that when "great" is processed next, the model correctly produces a negative overall output — a feedforward network sharing no parameters across positions, or a DAN averaging every word's vector together with no memory of order, could not capture this word-order-dependent flip nearly as naturally.
+
+**AI/ML Usage**: RNNs were, for a long time, the standard architecture for sequence-modeling tasks in NLP, including language modeling and sentiment classification, precisely because their fixed per-step parameter count lets them handle inputs of any length without the context-size limitations of a feedforward neural language model (see Section 3.4 of the Neural Language Models notes). Their main practical weaknesses are the Vanishing Gradient Problem (see that entry below) and poor parallelization — because each step's computation genuinely depends on the previous step's output, an RNN cannot process the many steps of a long sequence simultaneously the way a Transformer can, which is a major reason Transformers have largely replaced RNNs in modern large-scale NLP systems.
+
+---
+
 <a id="regularization"></a>
 ### Regularization
 
@@ -2573,6 +2757,19 @@ Had the comparison gone the other way (proposed cost not lower than the recorded
 
 ---
 
+<a id="self-attention"></a>
+### Self-Attention
+
+**The Big Idea**: This builds directly on the Attention Operator entry in `math_symbols.md` — plain attention has one query looking up a separate set of keys; self-attention is what happens when every single word in a sequence plays **both** roles at once, simultaneously acting as a query asking "what should I pay attention to" and as a key that every other word's query can match against.
+
+**General Usage**: Given a sequence of $n$ token embeddings stacked into a matrix $E$ (one embedding per row), self-attention computes three new matrices by multiplying $E$ by three learned weight matrices: $Q = EW^Q$, $K = EW^K$, and $V = EW^V$ (see Query, Key, and Value in `math_symbols.md`). An $n\times n$ matrix of attention scores is then computed as $S = QK^\top$, so that entry $S_{ij} = q_i \cdot k_j$ measures how compatible token $i$'s query is with token $j$'s key. Applying softmax to each **row** of $S$ turns every row into its own probability distribution — this is where the "row-wise softmax" name comes from — producing the attention matrix $A$. The final output is $AEW^V$ (equivalently $AV$): each output row is a weighted combination of the value vectors, using that row's own attention distribution as the weights. Vaswani et al. (2017) write this whole computation as one formula: $$\text{Attention}(Q,K,V) = \text{softmax}\!\left(\frac{QK^\top}{\sqrt{d_k}}\right)V$$ where the extra division by $\sqrt{d_k}$ (the dimension of the key vectors) rescales the scores purely to keep the softmax from becoming too sharply peaked; it does not change which computation is fundamentally being performed.
+
+**Example.** Take the toy sequence "A A B A" with one-hot embeddings $A=[1,0]$, $B=[0,1]$, and the matrices $W^Q = \begin{bmatrix}0&1\\0&1\end{bmatrix}$ (every row identical, so every token's query becomes exactly $[0,1]$ — "look for B's," regardless of the token's own identity) and $W^K = \begin{bmatrix}10&0\\0&10\end{bmatrix}$ (a diagonal scaling matrix). Then $Q = EW^Q$ has all four rows equal to $[0,1]$, and $K = EW^K$ has rows $[10,0],[10,0],[0,10],[10,0]$. Every row of $S=QK^\top$ works out to $[0,0,10,0]$ — identical across all four rows, because every query is identical — meaning every single token in the sequence, regardless of its own identity, ends up attending most strongly to position 3, the B. This directly demonstrates the payoff: after a row-wise softmax, every position's output is dominated by the value at the one position holding the information (the B) that matters for this task.
+
+**AI/ML Usage**: Self-attention is the core computational mechanism inside every Transformer layer, and it is what the paper "Attention Is All You Need" (Vaswani et al., 2017) is named for. Compared to a Recurrent Neural Network (see that entry above), self-attention has two major practical advantages, laid out directly in that paper: its sequential-operations count is $O(1)$ — meaning the entire computation is fully parallelizable, unlike an RNN's genuinely sequential, $O(n)$ chain of steps — and its maximum path length between any two tokens is also $O(1)$, meaning any token can directly attend to any other token in a single step, regardless of how far apart they are, unlike an RNN, where information has to pass through every intervening time step. The trade-off is that self-attention's complexity per layer is $O(n^2 \cdot d)$ (quadratic in the sequence length $n$), since the full $n\times n$ attention matrix must be computed and stored — this is markedly worse than an RNN's $O(n\cdot d^2)$ for very long sequences, and is the main practical limitation that motivates later, more memory-efficient variants of attention.
+
+---
+
 <a id="singular-value-decomposition"></a>
 ### Singular Value Decomposition
 
@@ -2613,6 +2810,19 @@ Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working 
 
 ---
 
+<a id="smoothing-language-models"></a>
+### Smoothing (Language Models)
+
+**The Big Idea**: This builds directly on Maximum Likelihood Estimation above — plain MLE counting works fine until a particular combination of words simply never appeared in the training data, at which point it declares that combination flatly impossible (probability exactly $0$). Smoothing is the general fix: deliberately hold back a small amount of probability from things that were observed, and hand it to things that were not, the same everyday instinct as leaving a little room in a budget for expenses you didn't specifically plan for.
+
+**General Usage**: Smoothing refers to any technique that adjusts raw maximum-likelihood estimates so that no possible outcome is ever assigned a probability of exactly zero just because it happened not to appear in one particular finite training corpus. Every smoothing technique works by taking some probability mass away from observed events and redistributing it across unobserved ones, in a way designed to still sum to exactly $1$ overall.
+
+**Example.** A maximum-likelihood bigram model that has never once seen the phrase "want to go to Reykjavik" in its training corpus assigns $P(\text{Reykjavik}\mid\text{to}) = 0$ — declaring that continuation flatly impossible, even though it's a perfectly ordinary English sentence that simply never happened to appear in this particular, finite body of text. A smoothing technique instead reserves a small amount of probability for exactly this kind of unseen event, so that an unusual but grammatical sentence isn't assigned zero probability purely as an artifact of a limited training sample.
+
+**AI/ML Usage**: Smoothing is essential for making n-gram language models (see that entry above) usable at all — without it, every sentence containing even a single previously unseen word combination would be assigned zero probability overall, regardless of how fluent or ordinary the rest of the sentence is. Absolute Discounting and Kneser-Ney Smoothing (see those entries above) are two concrete, widely used smoothing techniques; this general need for smoothing is also one of the practical motivations behind moving toward neural language models, which represent words as continuous vectors (see Word Embedding) and so naturally generalize to sequences they never saw verbatim during training, rather than relying on hard, discrete counts.
+
+---
+
 <a id="spectral-theorem"></a>
 ### Spectral Theorem
 
@@ -2623,6 +2833,19 @@ Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working 
 **Example.** A covariance matrix is always symmetric, so the spectral theorem guarantees it can always be cleanly decomposed this exact way — this specific decomposition is precisely what PCA relies directly on: the resulting eigenvectors give the principal directions of maximum variance, and the corresponding eigenvalues directly tell you exactly how much variance each specific direction actually captures.
 
 **AI/ML Usage**: The spectral theorem is a foundational result in linear algebra used constantly throughout machine learning, particularly anywhere a symmetric matrix like a covariance or precision matrix genuinely needs to be understood, decomposed, or analyzed in terms of its own natural, underlying, fundamental directions.
+
+---
+
+<a id="state-space-model-sequence-modeling"></a>
+### State-Space Model (Sequence Modeling)
+
+**The Big Idea**: This builds directly on the Recurrent Neural Network (RNN) entry above — a state-space model processes a sequence the same step-by-step way an RNN does, carrying forward a running state from one step to the next, but is built out of update equations specifically chosen so that most of that step-by-step computation can still be restructured to run in parallel, rather than being forced through a genuinely one-step-at-a-time chain the way an ordinary RNN is.
+
+**General Usage**: A state-space model updates a hidden state at each step using an equation with a similar role to an RNN's hidden-state update, but designed with specific mathematical structure (typically a particular form of linear update) that allows the sequence of states across every time step to be computed using efficient, parallelizable operations rather than one full sequential pass through the data.
+
+**Example.** Where a plain RNN must finish computing its hidden state at position $10$ before it can even begin computing the hidden state at position $11$ (see Recurrent Neural Network (RNN) above), a state-space model's particular update structure permits large chunks of that same step-by-step computation to be reorganized and computed together, in parallel, much the way a Transformer's attention computation can be — trading some of an RNN's unrestricted flexibility for a specific mathematical structure that parallelizes far better.
+
+**AI/ML Usage**: State-space models (such as the S4 and Mamba architectures) are a more recent line of research aimed at recovering an RNN-like ability to summarize an unboundedly long sequence with a fixed-size state, while avoiding both the vanishing gradient problem (see that entry below) and the poor parallelization that limit plain RNNs and LSTMs (see Long Short-Term Memory (LSTM) above) — positioning them as a possible alternative to Transformers for very long sequences, an active and still-developing area of research.
 
 ---
 
@@ -2868,6 +3091,19 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 **Example.** If a language model's fixed vocabulary includes common words like "cat" and "dog," but never includes a rare, obscure word like "platypus," encountering that unfamiliar word in new text would cause the model to substitute it directly with UNK — effectively treating "I saw a platypus" the exact same way it would treat "I saw a UNK."
 
 **AI/ML Usage**: Handling out-of-vocabulary words gracefully was a major, genuinely important practical challenge in earlier natural language processing systems — modern language models substantially reduce, though don't necessarily fully eliminate, this exact problem by using subword tokenization instead (breaking unfamiliar words down into smaller, familiar word-pieces the model does already recognize), rather than relying purely and only on one single, catch-all UNK token.
+
+---
+
+<a id="vanishing-gradient-problem"></a>
+### Vanishing Gradient Problem
+
+**The Big Idea**: This builds directly on Backpropagation and the Tanh entry in the math_symbols file — the vanishing gradient problem is what happens when a training signal has to pass backward through many repeated multiplications by numbers smaller than $1$, so that by the time it reaches an early step, it has been multiplied down to almost nothing.
+
+**General Usage**: The vanishing gradient problem occurs when the gradient used to update a model's parameters (see Backpropagation above) shrinks rapidly, step by step, as it is propagated backward through many sequential computations — such as the many time steps of a Recurrent Neural Network (see that entry above) — until it becomes so small that the earliest steps receive almost no usable training signal at all. It has two distinct, compounding causes in a plain RNN: (1) the tanh activation function (see Tanh in `math_symbols.md`) has a very flat slope whenever its input is far from $0$ (outside roughly $[-2,2]$), so its own local gradient is nearly $0$ there; and (2) the RNN's hidden-state update repeatedly multiplies by the same weight matrix $V$ at every time step, and depending on that matrix's eigenvalues (see Eigenvalue and Eigenvector above), repeated multiplication by it can shrink (or, conversely, explode) the signal exponentially as it passes through more and more time steps.
+
+**Example.** Picture the tanh function's characteristic S-curve: near its center ($x=0$) it is fairly steep, so a gradient passing through it there shrinks only modestly. But far out on either flattened tail of the curve (say $x=5$ or $x=-5$), the curve is nearly horizontal — its local gradient is nearly $0$. A gradient signal that has to pass backward through $20$ time steps of an RNN, at each of which the tanh's input happens to sit out on one of these flat tails, gets multiplied by a near-$0$ number $20$ separate times in a row — shrinking it down to an amount far too small to meaningfully update the parameters responsible for information from 20 steps back.
+
+**AI/ML Usage**: The vanishing gradient problem is the central reason plain RNNs struggle to learn dependencies that span many time steps — such as remembering that a sentence contained the word "not" many words before the word it needs to affect (see Recurrent Neural Network (RNN) above). The Long Short-Term Memory (LSTM) architecture (see that entry above) was developed specifically to reduce this problem, using gated pathways designed so that useful information can pass through many time steps with a gradient closer to $1$ rather than being repeatedly shrunk — though even LSTMs do not eliminate the problem entirely for very long sequences, which is one of the key practical motivations behind the Transformer architecture's very different, non-recurrent design.
 
 ---
 

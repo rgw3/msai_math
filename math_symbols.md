@@ -7,67 +7,68 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 171 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 172 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to GeLU | Gini Index / Gini Function to Partial Order | Perceptron Loss to Zero-One Loss |
+| Absolute Value to Gini Index / Gini Function | Goal Set to Perceptron Loss | Permutation to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Gini Index / Gini Function](#gini-index-gini-function) | [Perceptron Loss](#perceptron-loss) |
-| [Action Space](#action-space) | [Goal Set](#goal-set) | [Permutation](#permutation) |
-| [Activation Function](#activation-function) | [Gradient](#gradient) | [Phi, lowercase](#phi-lowercase) |
-| [Adjacency Matrix](#adjacency-matrix) | [Graph](#graph) | [Phi, uppercase](#phi-uppercase) |
-| [Admissible Heuristic](#admissible-heuristic) | [Greater Than / Less Than](#greater-than-less-than) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
-| [All-Ones Vector](#all-ones-vector) | [Halfspace](#halfspace) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hat Notation](#hat-notation) | [Positional Embedding](#positional-embedding) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hessian Matrix](#hessian-matrix) | [Potential Function](#potential-function) |
-| [Approximately Equal](#approximately-equal) | [Heuristic Function](#heuristic-function) | [Precedence Relation](#precedence-relation) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Prime Notation](#prime-notation) |
-| [Assignment Arrow](#assignment-arrow) | [Hypothesis](#hypothesis) | [Probability / Probability Density](#probability-probability-density) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Identity Matrix](#identity-matrix) | [Probability Simplex](#probability-simplex) |
-| [Attention Operator](#attention-operator) | [If and Only If](#if-and-only-if) | [Product Notation](#product-notation) |
-| [Beta](#beta) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
-| [Bias Term](#bias-term) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
-| [Big-O Notation](#big-o-notation) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
-| [Binary Label Set](#binary-label-set) | [Integral](#integral) | [Real Numbers](#real-numbers) |
-| [Binomial Coefficient](#binomial-coefficient) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
-| [Blocks World](#blocks-world) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
-| [Concept Class](#concept-class) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
-| [Conditional Bar](#conditional-bar) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
-| [Configuration Space](#configuration-space) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Set Braces](#set-braces) |
-| [Cosine Similarity](#cosine-similarity) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Learning Rate](#learning-rate) | [Set Difference](#set-difference) |
-| [Covariance](#covariance) | [Less Than or Equal](#less-than-or-equal) | [Set Union](#set-union) |
-| [Curvature (Path)](#curvature-path) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Sigma, lowercase](#sigma-lowercase) |
-| [Data Distribution](#data-distribution) | [Logarithm](#logarithm) | [Sigma, uppercase](#sigma-uppercase) |
-| [Dataset](#dataset) | [Logical Negation](#logical-negation) | [Sigmoid Function](#sigmoid-function) |
-| [Delta, lowercase](#delta-lowercase) | [Logistic Function](#logistic-function) | [Sign Function](#sign-function) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Loss Function](#loss-function) | [Softmax Function](#softmax-function) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Margin](#margin) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix](#matrix) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Element-of Symbol](#element-of-symbol) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
-| [Element-wise Operations](#element-wise-operations) | [Matrix Transpose](#matrix-transpose) | [State Space](#state-space) |
-| [Ellipsis](#ellipsis) | [Max Function](#max-function) | [State Transition Function](#state-transition-function) |
-| [ELU](#elu) | [Mean](#mean) | [Step Size](#step-size) |
-| [Empty Set](#empty-set) | [Min Function](#min-function) | [Stride](#stride) |
-| [Epsilon](#epsilon) | [Mistake Bound](#mistake-bound) | [Subset](#subset) |
-| [Error Signal](#error-signal) | [Model Parameters](#model-parameters) | [Summation](#summation) |
-| [Eta](#eta) | [Mu](#mu) | [Superscript Example Index](#superscript-example-index) |
-| [Euclidean Norm](#euclidean-norm) | [N-Gram](#n-gram) | [Tanh](#tanh) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Nabla](#nabla) | [TF-IDF](#tf-idf) |
-| [Existential Quantifier](#existential-quantifier) | [Natural Numbers](#natural-numbers) | [Theta](#theta) |
-| [Expectation](#expectation) | [Negation Overbar](#negation-overbar) | [Tilde Accent](#tilde-accent) |
-| [Factorial](#factorial) | [Normal Distribution Notation](#normal-distribution-notation) | [Training Set](#training-set) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Not Equal](#not-equal) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Floor Function](#floor-function) | [Number Sign / Count](#number-sign-count) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Omega](#omega) | [Variance](#variance) |
-| [Function Composition](#function-composition) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Vector](#vector) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Outer Product](#outer-product) | [Vector Overbar](#vector-overbar) |
-| [Gain](#gain) | [Padding](#padding) | [Vector Projection](#vector-projection) |
-| [Gamma](#gamma) | [Parameterized Function / Model](#parameterized-function-model) | [Vocabulary](#vocabulary) |
-| [Gaussian CDF](#gaussian-cdf) | [Partial Derivative](#partial-derivative) | [Weight Vector](#weight-vector) |
-| [GeLU](#gelu) | [Partial Order](#partial-order) | [Zero-One Loss](#zero-one-loss) |
+| [Absolute Value](#absolute-value) | [Goal Set](#goal-set) | [Permutation](#permutation) |
+| [Action Space](#action-space) | [Gradient](#gradient) | [Phi, lowercase](#phi-lowercase) |
+| [Activation Function](#activation-function) | [Graph](#graph) | [Phi, uppercase](#phi-uppercase) |
+| [Adjacency Matrix](#adjacency-matrix) | [Greater Than / Less Than](#greater-than-less-than) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
+| [Admissible Heuristic](#admissible-heuristic) | [Halfspace](#halfspace) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
+| [All-Ones Vector](#all-ones-vector) | [Hat Notation](#hat-notation) | [Positional Embedding](#positional-embedding) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hessian Matrix](#hessian-matrix) | [Potential Function](#potential-function) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Heuristic Function](#heuristic-function) | [Precedence Relation](#precedence-relation) |
+| [Approximately Equal](#approximately-equal) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Prime Notation](#prime-notation) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Hypothesis](#hypothesis) | [Probability / Probability Density](#probability-probability-density) |
+| [Assignment Arrow](#assignment-arrow) | [Identity Matrix](#identity-matrix) | [Probability Simplex](#probability-simplex) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [If and Only If](#if-and-only-if) | [Product Notation](#product-notation) |
+| [Attention Operator](#attention-operator) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
+| [Beta](#beta) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
+| [Bias Term](#bias-term) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
+| [Big-O Notation](#big-o-notation) | [Integral](#integral) | [Real Numbers](#real-numbers) |
+| [Binary Label Set](#binary-label-set) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
+| [Binomial Coefficient](#binomial-coefficient) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
+| [Blocks World](#blocks-world) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
+| [Concept Class](#concept-class) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
+| [Conditional Bar](#conditional-bar) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Configuration Space](#configuration-space) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
+| [Cosine Similarity](#cosine-similarity) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
+| [Covariance](#covariance) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
+| [Curvature (Path)](#curvature-path) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
+| [Data Distribution](#data-distribution) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
+| [Dataset](#dataset) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
+| [Delta, lowercase](#delta-lowercase) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Margin](#margin) | [Softmax Function](#softmax-function) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
+| [Element-of Symbol](#element-of-symbol) | [Matrix Transpose](#matrix-transpose) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Element-wise Operations](#element-wise-operations) | [Max Function](#max-function) | [State Space](#state-space) |
+| [Ellipsis](#ellipsis) | [Mean](#mean) | [State Transition Function](#state-transition-function) |
+| [ELU](#elu) | [Min Function](#min-function) | [Step Size](#step-size) |
+| [Empty Set](#empty-set) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
+| [Epsilon](#epsilon) | [Model Parameters](#model-parameters) | [Subset](#subset) |
+| [Error Signal](#error-signal) | [Mu](#mu) | [Summation](#summation) |
+| [Eta](#eta) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
+| [Euclidean Norm](#euclidean-norm) | [Nabla](#nabla) | [Tanh](#tanh) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
+| [Existential Quantifier](#existential-quantifier) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
+| [Expectation](#expectation) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
+| [Factorial](#factorial) | [Not Equal](#not-equal) | [Training Set](#training-set) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Number Sign / Count](#number-sign-count) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Floor Function](#floor-function) | [Omega](#omega) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Variance](#variance) |
+| [Function Composition](#function-composition) | [Outer Product](#outer-product) | [Vector](#vector) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Padding](#padding) | [Vector Overbar](#vector-overbar) |
+| [Gain](#gain) | [Parameterized Function / Model](#parameterized-function-model) | [Vector Projection](#vector-projection) |
+| [Gamma](#gamma) | [Partial Derivative](#partial-derivative) | [Vocabulary](#vocabulary) |
+| [Gaussian CDF](#gaussian-cdf) | [Partial Order](#partial-order) | [Weight Vector](#weight-vector) |
+| [GeLU](#gelu) | [Perceptron Loss](#perceptron-loss) | [Zero-One Loss](#zero-one-loss) |
+| [Gini Index / Gini Function](#gini-index-gini-function) |  |  |
 
 ## Symbols
 
@@ -2308,6 +2309,21 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter sig
 **Example.** For the numbers $2,4,6,8,10$, the mean is $\mu=6$. The differences from the mean are $-4,-2,0,2,4$; squaring them gives $16,4,0,4,16$, averaging to $8$ (this average of squared differences is the variance); taking the square root gives the standard deviation, $\sigma = \sqrt{8} \approx 2.83$ — describing roughly how far, on average, each number sits from the mean of $6$.
 
 **AI/ML Usage**: A core part of standard data preprocessing — dividing every feature by its own standard deviation, so that all features end up on a roughly comparable numerical scale, is an extremely common step taken before training many types of ML models. It's also central to defining Gaussian (bell-curve) distributions used throughout probabilistic machine learning, including the noise model used inside Variational Autoencoders and modern image-generating diffusion models.
+
+---
+
+<a id="start-of-sentence-token"></a>
+### Start-of-Sentence Token — `<s>`
+Symbol: <s>, angle brackets around a lowercase s, read as "start of sentence"  
+On macOS: type normally from the keyboard — Shift+, (comma) for < and Shift+. (period) for >
+
+**The Big Idea**: No new math — this is a placeholder, the same idea as padding a short list with a filler value so every entry has something in the same fixed position. Here, the filler stands in for "the words before the sentence began," since there aren't any real ones to condition on yet.
+
+**General Usage**: $\langle s\rangle$ is a special symbol inserted immediately before the first real word of a sentence, used purely so that a model conditioning on "the previous word" (or previous several words) always has something to condition on, even when generating or scoring the very first word or words of a sentence.
+
+**Example.** In a 2-gram (bigram) model, the first real word $w_1$ of a sentence is conditioned on $\langle s\rangle$ instead of on a real previous word: $P(w_1 \mid \langle s\rangle)$. A 3-gram (trigram) model needs its conditioning window filled two words deep, so it uses two copies: $P(w_1 \mid \langle s\rangle, \langle s\rangle)$, then $P(w_2 \mid \langle s\rangle, w_1)$, and only from the third word onward are both conditioning slots filled with real words.
+
+**AI/ML Usage**: Used throughout n-gram language modeling (see N-Gram Language Model in the math_concepts file) to handle the start of every sentence in a training corpus uniformly, without needing special-case formulas just for the first word or two. An analogous end-of-sentence token (often written $\langle /s\rangle$) is commonly used the same way at the other end, marking where a sentence stops so a model can learn when to stop generating.
 
 ---
 
