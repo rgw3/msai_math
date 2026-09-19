@@ -7,75 +7,81 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 195 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 212 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Neuron | Newton's Method to Word2Vec |
+| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Non-Parametric Method | Normal Equations to Word2Vec |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Newton's Method](#newtons-method) |
-| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Non-Parametric Method](#non-parametric-method) |
-| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Normal Equations](#normal-equations) |
-| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [NP-Hard](#np-hard) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Agnostic Learning](#agnostic-learning) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [One-Hot Encoding](#one-hot-encoding) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [One-vs-All](#one-vs-all) |
-| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Automatic Differentiation](#automatic-differentiation) | [Gradient Clipping](#gradient-clipping) | [Orthonormal Basis](#orthonormal-basis) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Gradient Descent](#gradient-descent) | [Overfitting](#overfitting) |
-| [Backpointer](#backpointer) | [Graphical Lasso](#graphical-lasso) | [PAC Learning](#pac-learning) |
-| [Backpropagation](#backpropagation) | [GraphPlan](#graphplan) | [PDDL](#pddl) |
-| [Bag of Words](#bag-of-words) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Basis Function](#basis-function) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Perplexity](#perplexity) |
-| [Batch](#batch) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Batch Normalization](#batch-normalization) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
-| [Bayes' Rule](#bayes-rule) | [Hierarchical Softmax](#hierarchical-softmax) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Hyperparameter](#hyperparameter) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Principal Component Analysis](#principal-component-analysis) |
-| [Centroid](#centroid) | [Jensen's Inequality](#jensens-inequality) | [Prior Distribution](#prior-distribution) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Priority Queue](#priority-queue) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [K-Means Algorithm](#k-means-algorithm) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chernoff Bound](#chernoff-bound) | [Kernel Function](#kernel-function) | [Quadratic Form](#quadratic-form) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Closed-World Assumption](#closed-world-assumption) | [KL Divergence](#kl-divergence) | [Random Forest](#random-forest) |
-| [Clustering](#clustering) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Random Projection](#random-projection) |
-| [Computation Graph](#computation-graph) | [Latent Variable](#latent-variable) | [Rank](#rank) |
-| [Conditional Independence](#conditional-independence) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Likelihood](#likelihood) | [Regularization](#regularization) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Linear Programming](#linear-programming) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Linearly Separable](#linearly-separable) | [Sample Complexity](#sample-complexity) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Log Likelihood](#log-likelihood) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Convex Function](#convex-function) | [Logistic Regression](#logistic-regression) | [Schur Complement](#schur-complement) |
-| [Coordinate Descent](#coordinate-descent) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Search Statistics](#search-statistics) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Loss Surface](#loss-surface) | [Self-Attention](#self-attention) |
-| [Covariance Matrix](#covariance-matrix) | [Lower Bound](#lower-bound) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Blanket](#markov-blanket) | [Skip-Gram Model](#skip-gram-model) |
-| [Cross-Validation](#cross-validation) | [Markov Model](#markov-model) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Markov's Inequality](#markovs-inequality) | [Spectral Theorem](#spectral-theorem) |
-| [Dead End](#dead-end) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Decision Boundary](#decision-boundary) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
-| [Decision Tree](#decision-tree) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Mean Squared Error](#mean-squared-error) | [Support Vector Machine](#support-vector-machine) |
-| [Diagonal Matrix](#diagonal-matrix) | [Minimum Description Length](#minimum-description-length) | [Surrogate Loss](#surrogate-loss) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Model Complexity](#model-complexity) | [Swept Volume](#swept-volume) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Momentum](#momentum) | [Symmetric Matrix](#symmetric-matrix) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Normal Equations](#normal-equations) |
+| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [NP-Hard](#np-hard) |
+| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [One-Hot Encoding](#one-hot-encoding) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [One-vs-All](#one-vs-all) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthonormal Basis](#orthonormal-basis) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Overfitting](#overfitting) |
+| [Arity](#arity) | [Gradient Clipping](#gradient-clipping) | [PAC Learning](#pac-learning) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Gradient Descent](#gradient-descent) | [PDDL](#pddl) |
+| [Automatic Differentiation](#automatic-differentiation) | [Graphical Lasso](#graphical-lasso) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [GraphPlan](#graphplan) | [Perplexity](#perplexity) |
+| [Backpointer](#backpointer) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Backpropagation](#backpropagation) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Planner Completeness](#planner-completeness) |
+| [Bag of Words](#bag-of-words) | [Grounding / Instantiation](#grounding-instantiation) | [Planning Graph](#planning-graph) |
+| [Basis Function](#basis-function) | [Hedge Algorithm](#hedge-algorithm) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Batch](#batch) | [Hierarchical Softmax](#hierarchical-softmax) | [Positional Encoding](#positional-encoding) |
+| [Batch Normalization](#batch-normalization) | [Hinge Loss](#hinge-loss) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Bayes' Rule](#bayes-rule) | [Hyperparameter](#hyperparameter) | [Posterior Distribution](#posterior-distribution) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Precision Matrix](#precision-matrix) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Principal Component Analysis](#principal-component-analysis) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Informed RRT*](#informed-rrt) | [Prior Distribution](#prior-distribution) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Priority Queue](#priority-queue) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jensen's Inequality](#jensens-inequality) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Centroid](#centroid) | [K-Means Algorithm](#k-means-algorithm) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Quadratic Form](#quadratic-form) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kernel Function](#kernel-function) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Chernoff Bound](#chernoff-bound) | [Kinodynamic Planning](#kinodynamic-planning) | [Random Forest](#random-forest) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [Random Projection](#random-projection) |
+| [Closed-World Assumption](#closed-world-assumption) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Rank](#rank) |
+| [Clustering](#clustering) | [Latent Variable](#latent-variable) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Computation Graph](#computation-graph) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Conditional Independence](#conditional-independence) | [Likelihood](#likelihood) | [Regularization](#regularization) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linear Programming](#linear-programming) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Consistent Heuristic](#consistent-heuristic) | [Linearly Separable](#linearly-separable) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lipschitz Continuity](#lipschitz-continuity) | [Sample Complexity](#sample-complexity) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Log Likelihood](#log-likelihood) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Logistic Regression](#logistic-regression) | [Schur Complement](#schur-complement) |
+| [Convex Function](#convex-function) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Search Statistics](#search-statistics) |
+| [Coordinate Descent](#coordinate-descent) | [Loss Surface](#loss-surface) | [Self-Attention](#self-attention) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lower Bound](#lower-bound) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
+| [Cross-Validation](#cross-validation) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
+| [Dead End](#dead-end) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Decision Boundary](#decision-boundary) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
+| [Decision Tree](#decision-tree) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
+| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotone Convergence](#monotone-convergence) | [Symmetric Matrix](#symmetric-matrix) |
 | [Discriminative Model](#discriminative-model) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
 | [Distributional Hypothesis](#distributional-hypothesis) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dropout](#dropout) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
-| [Early Stopping](#early-stopping) | [Multinomial Distribution](#multinomial-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [EM Algorithm](#em-algorithm) | [Mutex](#mutex) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epoch](#epoch) | [N-Gram Language Model](#n-gram-language-model) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Naive Bayes](#naive-bayes) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Named-Entity Type Labels](#named-entity-type-labels) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Negative Log Likelihood](#negative-log-likelihood) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Negative Sampling](#negative-sampling) | [Word Embedding](#word-embedding) |
-| [Feature Expansion](#feature-expansion) | [Neural Network](#neural-network) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Neuron](#neuron) | [Word2Vec](#word2vec) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
+| [Dropout](#dropout) | [Multinomial Distribution](#multinomial-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Early Stopping](#early-stopping) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Triangle Inequality](#triangle-inequality) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Mutex](#mutex) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [N-Gram Language Model](#n-gram-language-model) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [EM Algorithm](#em-algorithm) | [Naive Bayes](#naive-bayes) | [Union Bound](#union-bound) |
+| [Epoch](#epoch) | [Named-Entity Type Labels](#named-entity-type-labels) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Log Likelihood](#negative-log-likelihood) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Negative Sampling](#negative-sampling) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neural Network](#neural-network) | [Word Embedding](#word-embedding) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Neuron](#neuron) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Feature Expansion](#feature-expansion) | [Newton's Method](#newtons-method) | [Word2Vec](#word2vec) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Non-Parametric Method](#non-parametric-method) |  |
 
 ## Concepts
 
@@ -172,6 +178,19 @@ So a virtual front wheel angled at about $14°$ makes this car trace a circle of
 
 ---
 
+<a id="adaptive-workspace-biasing"></a>
+### Adaptive Workspace Biasing
+
+**The Big Idea**: This builds on the Probabilistic Roadmap (PRM) and Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT) entries, and on the Goal-Biased and Bidirectional RRT Variants entry: it is another way of choosing samples non-uniformly, but the pull comes from features of the physical environment rather than from the goal.
+
+**General Usage**: **Sampling-based planners** find robot motions by drawing random points in the **configuration space** (see the Configuration Space entry in the math_symbols file — the space of all robot poses, with one axis per joint or degree of freedom). They struggle with **narrow openings** (a door, a slot, a small hole) because any solution must pass through them, yet uniformly random samples almost never land there. Adaptive workspace biasing exploits the fact that the **workspace** (the ordinary 2D/3D physical world) has far fewer dimensions than the configuration space: a quantity precomputed in the workspace, and/or a bias learned over workspace features, indicates where narrow openings are, and samples in the configuration space are drawn with higher probability near them.
+
+**Example.** A wall with a small hole; a uniform sampler has a $0.1\%$ chance per sample of landing near the hole. In a run of $1{,}000$ samples that is only about $1{,}000\times0.001=1$ useful sample. If the bias raises that chance to $20\%$, it is about $1{,}000\times0.20=200$ useful samples. Reported result: an L-shaped beam passing through a hole in a wall needed $2924$ tree nodes with uniform sampling but only $404$ with workspace feature biasing, about $7.2$ times fewer ($2924/404\approx7.24$).
+
+**AI/ML Usage**: The bias can be *learned* from workspace features, a machine-learning step layered on classical planning; the idea is used in robot manipulation planners. The benefit grows with dimension, because a narrow opening occupies a vanishing fraction of a high-dimensional space.
+
+---
+
 <a id="agnostic-learning"></a>
 ### Agnostic Learning
 
@@ -217,6 +236,33 @@ The final `dist[1][3] = 4` correctly reflects the two-edge route $1 \to 2 \to 3$
 **Example.** $\text{HandEmpty}$ has arity 0 — it's just a flat statement, true or false, about nothing in particular. $\text{Clear}(A)$ has arity 1 — it's a statement about exactly one object, $A$. $\text{On}(A,B)$ has arity 2 — it relates exactly two objects, $A$ and $B$, to each other.
 
 **AI/ML Usage**: Knowing a predicate's arity matters when building or reading a formal AI planning domain (like one written in PDDL), since every use of that predicate throughout the whole domain must consistently supply exactly that many arguments — using $\text{On}(A)$ somewhere, with only one argument, when $\text{On}$ was defined with arity 2, would be an error in the planning domain.
+
+---
+
+<a id="asymptotic-optimality"></a>
+### Asymptotic Optimality
+
+**The Big Idea**: A limit, from Algebra 2 sequences, is where a list of numbers heads as it goes on forever (for example $1, \tfrac12, \tfrac13, \dots$ heads to $0$); you also met the idea when graphing rational functions and horizontal asymptotes. Asymptotic optimality applies it to a planner's answers: the path it returns may not be the best right now, but as it is given more and more samples $n$ its cost gets arbitrarily close to the best possible cost. The randomness that requires the "probability" language goes beyond Algebra 2; see the Planner Completeness entry for the on/off question of finding any path at all, and the Infinity entry in the math_symbols file.
+
+**General Usage**: A planner is **optimal** if nothing costs less than the solution it returns (there may be several equally cheap best solutions). A randomized planner that draws $n$ random samples is **asymptotically optimal** if, as $n \to \infty$, the cost of the best path it has found converges (with probability $1$) to the cost of the true optimal path. It gives no guarantee at any fixed finite $n$. It is a separate property from probabilistic completeness (see that entry), which is only about whether *some* path is found, not how cheap: an algorithm can eventually find a path without its cost approaching the best. The plain RRT and any PRM variant that connects each point to a fixed number of neighbors are provably not asymptotically optimal; RRT*, RRG and PRM* are, provided the connection radius constant exceeds a threshold (see the Connection Radius Constant entry in the math_symbols file).
+
+**Example.** A robot's true shortest path has cost $10$. A sampling-based planner run with more and more samples returns best-path costs as follows.
+
+| Samples $n$ | Best path cost found | Gap to optimal ($10$) |
+|---|---|---|
+| 100 | 14.0 | 4.0 |
+| 1,000 | 11.5 | 1.5 |
+| 10,000 | 10.3 | 0.3 |
+| 100,000 | 10.05 | 0.05 |
+
+1. The gap shrinks each time $n$ grows tenfold.
+2. No finite $n$ is promised to reach exactly $10$, but the gap can be made as small as you like by taking $n$ large enough. That is the meaning of "converges to optimal."
+3. Contrast: a planner whose best costs are $15, 13.5, 13.1, 13.0$ and then stay near $13$ has a gap that never closes (about $3$ forever), so it is not asymptotically optimal.
+4. Formula version: if the best cost after $n$ samples is $100+\tfrac{500}{n}$ against an optimum of $100$, the gap $500/n\to0$, yet at $n=100$ the answer is still $5\%$ above optimal.
+
+(All numbers above are invented for illustration.)
+
+**AI/ML Usage**: PRM* and RRT* (rapidly-exploring random tree variants) in robot motion planning are proven asymptotically optimal, at the price of extra work per sample compared with plain RRT: PRM* connects each sampled point to neighbors within a radius that shrinks as $\gamma (\log n / n)^{1/d}$ (see the Simple PRM (sPRM) and PRM* entry), and RRT* rewires its tree (see the Rapidly-Exploring Random Graph (RRG) and RRT* entry). Practical planners are run for a fixed time budget, and asymptotic optimality means that running longer keeps improving the path toward the best possible one; Informed RRT* speeds up how fast the limit is approached (see that entry). See also the Monotone Convergence entry.
 
 ---
 
@@ -414,6 +460,28 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="boundary-value-problem-bvp"></a>
+### Boundary Value Problem (BVP)
+
+**The Big Idea**: In Algebra 2 you solved problems like "find the line through two given points." A boundary value problem is the same kind of question, one step up: instead of two points on a line, you know where something must **start** and where it must **end**, and you must find the rule (here, a whole schedule of commands) that connects them. It goes beyond Algebra 2 because the connection must obey an equation about rates of change (see the Time Derivative entry in the math_symbols file).
+
+**General Usage**: A **boundary value problem** specifies a rule for how a quantity changes over time (a differential equation) plus requirements on the quantity at both ends of a time interval, $t=0$ and $t=T$ (the two "boundaries"), and asks for the input history that satisfies all of them. A related but different question, an **initial value problem**, gives only the starting state and asks where the system ends up; that one can always be answered by simulating forward. A boundary value problem is harder because the end is pinned in advance, so the unknown input has to be found, and for most real systems no closed-form formula for it exists.
+
+**Example.** A hovercraft moves along a line with acceleration equal to a constant command $u$, starting at position $0$ with velocity $0$ (see the Double Integrator and Bang-Bang Control entry). We want it at position $8$ after $T=4$ seconds.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Position under constant acceleration from rest | $p(t)=\tfrac12 u\,t^2$ | — |
+| 2. Impose the end requirement $p(4)=8$ | $\tfrac12 u\,(4)^2 = 8$ | — |
+| 3. Simplify | $8u = 8$ | — |
+| 4. Solve for $u$ | $u = 1$ | $u=1$ |
+
+Check: with $u=1$, $p(4)=\tfrac12(1)(16)=8$ ✓. This one is solvable by hand only because the start, end, and command are so simple; adding limits on the allowed commands, obstacles, or a demand for the fastest possible arrival quickly makes exact solutions unavailable.
+
+**AI/ML Usage**: In motion planning, an ideal "steering function" (the step of a Rapidly-Exploring Random Tree that moves from one state toward a target state) is exactly a boundary value problem: find controls $\pi:[0,T]\to U$ with $\dot x=f(x,\pi(t))$, $x(0)=x_{near}$, $x(T)=x_{rand}$. Because it is not analytically solvable for most real robots, practical planners replace it with the approximate strategies in the Random Control and Best Control Steering entry.
+
+---
+
 <a id="breadth-first-search-bfs"></a>
 ### Breadth-First Search (BFS)
 
@@ -600,6 +668,31 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 | $(1.6,\ 0)$ | Nearest edge point is $(1, 0)$, distance $0.6$ | No ($0.6 > 0.5$) — robot is safely clear |
 
 **AI/ML Usage**: This is the standard technique that turns motion planning for a physically-sized robot (a robot arm, a mobile robot, a self-driving car) into an ordinary point-based search problem: compute every C-space obstacle once, often as a one-time precomputation for a static environment, and then run any point-based planner (Dijkstra's Algorithm, A* Search, lattice-based planning — see those entries) directly in the resulting free space. This same "expand the obstacle by the shape of the moving object" idea (formally, a Minkowski sum) reappears throughout robotics and computational geometry wherever a finite-sized shape must be checked against an obstacle map.
+
+---
+
+<a id="consistent-heuristic"></a>
+### Consistent Heuristic
+
+**The Big Idea**: You know the triangle inequality from geometry: going directly from one point to another is never longer than taking a detour through a third point. A consistent heuristic requires the same thing of a cost *estimate*: estimating straight to the goal from $x$ must never be more than "take one step to a neighbor, then use that neighbor's estimate." It builds on the Admissible Heuristic entry in the math_symbols file, and is a strictly stronger requirement.
+
+**General Usage**: Let $h(x)$ be a **heuristic** (a quick estimate of the cost from state $x$ to the goal) and $c(x,n)$ the cost of the single edge from $x$ to a neighbor $n$. The heuristic is **consistent** if for every state $x$ and every neighbor $n$ of $x$,
+
+$$
+h(x) \le h(n) + c(x,n).
+$$
+
+A consistent heuristic (with $h=0$ at the goal) is also admissible. Consequence: the priority $g(x)+h(x)$ used by A* (see the A* Search entry) never decreases along a path, so once A* removes a state from its frontier, its cost-so-far is already optimal and never needs to be revised, which means no re-ordering of the priority queue.
+
+**Example.** A path $A \to B \to G$ with edge costs $c(A,B)=1$ and $c(B,G)=3$. True costs to the goal: $c(B)=3$, $c(A)=4$.
+
+1. Try $h(A)=4$, $h(B)=0$. Admissible: $4\le 4$ and $0 \le 3$.
+2. Consistency test on edge $A\to B$: is $h(A) \le h(B)+c(A,B)$, i.e. $4 \le 0+1 = 1$? No. Admissible but **not** consistent.
+3. Try $h(A)=4$, $h(B)=3$. Test: $4 \le 3+1 = 4$. Yes.
+4. Test the edge $B \to G$ with $h(G)=0$: $h(B)=3 \le 0+3 = 3$. Yes, so this heuristic is consistent.
+5. Check the priorities: $f(A)=0+4=4$; $f(B)=1+3=4$; $f(G)=4+0=4$. They never decrease.
+
+**AI/ML Usage**: A* with an admissible and consistent heuristic is *optimally efficient* (no other algorithm using the same information expands fewer states), and it needs no priority-queue re-ordering, which speeds up route finding in navigation software, game AI, and robot path planning. Common heuristics such as straight-line distance on a map are consistent.
 
 ---
 
@@ -924,6 +1017,27 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 
 ---
 
+<a id="double-integrator-and-bang-bang-control"></a>
+### Double Integrator and Bang-Bang Control
+
+**The Big Idea**: You know that position, velocity, and acceleration are connected: velocity is how fast position changes, and acceleration is how fast velocity changes. A **double integrator** is the simplest physical system built on exactly that chain, and **bang-bang control** is the simplest kind of command for it: only "fully on" or "fully off," like a light switch instead of a dimmer.
+
+**General Usage**: A **double integrator** is a system whose command is an acceleration $u$: $\dot p = v$ (position changes at the rate of the velocity) and $\dot v = u$ (velocity changes at the rate of the command). "Double" because going from the command to the position requires accumulating ("integrating," i.e. summing up the effect over time) twice. A **bang-bang** controller can only choose from a few extreme commands, such as maximum push forward, maximum push backward, or none. For a hovercraft on a plane with state $x=[p_x,p_y,v_x,v_y]$, four on/off thrusters give the command set $u\in\{(1,0),(-1,0),(0,1),(0,-1)\}$, and $f(x,u)=[v_x,v_y,u_x,u_y]^{T}$.
+
+**Example.** A hovercraft at rest at $p_x=0$ fires its $+x$ thruster ($u_x=1$) for $2$ seconds, then coasts. Use constant-acceleration formulas: $v = v_0 + u\,\Delta t$ and $p = p_0 + v_0\,\Delta t + \tfrac12 u\,\Delta t^2$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Velocity after the burn | $v = 0 + (1)(2)$ | $v=2$ |
+| 2. Position after the burn | $p = 0 + 0 + \tfrac12(1)(2)^2$ | $p=2$ |
+| 3. Coast for 3 more seconds ($u=0$, so $v$ stays $2$) | $p = 2 + (2)(3)$ | $p=8$ |
+
+Check: total distance $=$ average speed during the burn $\times$ time $+$ coast $=(1)(2)+(2)(3)=2+6=8$ ✓.
+
+**AI/ML Usage**: Used as a standard test system in kinodynamic motion planning (planning that respects both a robot's motion directions and its acceleration limits): the tree-growing planner Rapidly-Exploring Random Tree (RRT) applies one of the four thruster commands for a short duration, integrates $\dot x=f(x,u)$ forward, and obtains smooth, dynamically feasible curves. See the Kinodynamic Planning entry.
+
+---
+
 <a id="dropout"></a>
 ### Dropout
 
@@ -960,6 +1074,27 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 **Example.** If a matrix stretches every vector along the direction $(1,0)$ to exactly twice its original length, while leaving vectors along $(0,1)$ completely unchanged, then $(1,0)$ is an eigenvector with eigenvalue $2$, and $(0,1)$ is an eigenvector with eigenvalue $1$ — these are the two special "pure stretch, no rotation" directions belonging to that specific matrix.
 
 **AI/ML Usage**: Eigenvalues and eigenvectors are the mathematical foundation of Principal Component Analysis (PCA, see that entry), the Spectral Theorem, and many dimensionality-reduction techniques throughout machine learning — genuinely understanding them well is essential for a solid grasp of the linear algebra that underlies a large fraction of modern ML methods.
+
+---
+
+<a id="ellipse-locus-definition"></a>
+### Ellipse (Locus Definition)
+
+**The Big Idea**: A circle is the set of points at a fixed distance from *one* center. An ellipse is the natural next step from Algebra 2's conic sections: the set of points whose distances to *two* fixed points add up to a constant.
+
+**General Usage**: A **locus** is the set of all points satisfying one rule. An **ellipse** with **foci** $F_1$ and $F_2$ and constant $2a$ is the locus $\{P : |PF_1|+|PF_2|=2a\}$, where $2a$ must exceed the distance between the foci. Points with sum less than $2a$ are inside, greater than $2a$ outside. With focal distance $2c=|F_1F_2|$, the semi-major axis is $a$ and the semi-minor axis is $b=\sqrt{a^2-c^2}$.
+
+**Example.** $F_1=(-3,0)$, $F_2=(3,0)$, $2a=10$.
+
+| Point | Distances to $F_1$, $F_2$ | Sum | Verdict |
+|---|---|---|---|
+| $(0,4)$ | $5,\ 5$ | $10$ | on |
+| $(0,0)$ | $3,\ 3$ | $6$ | inside |
+| $(0,6)$ | $\sqrt{45},\ \sqrt{45}$ | $\approx13.42$ | outside |
+
+*Check:* $b=\sqrt{5^2-3^2}=4$, and the top of the ellipse $(0,4)$ is indeed the point on it.
+
+**AI/ML Usage**: Informed RRT* uses this locus with the start and goal as foci and the best path length as $2a$ (see the Informed RRT* entry). Ellipses also describe contours of a Gaussian's covariance in ML.
 
 ---
 
@@ -1425,6 +1560,19 @@ Inflating the heuristic can change which vertex looks more promising, steering t
 
 ---
 
+<a id="informed-rrt"></a>
+### Informed RRT*
+
+**The Big Idea**: This builds on the Rapidly-Exploring Random Graph (RRG) and RRT* entry and the Ellipse (Locus Definition) entry. It is the same "don't waste effort where it can't help" logic as pruning a search in Algebra-style reasoning: once you hold an answer of cost $c$, ignore every option that already costs more than $c$.
+
+**General Usage**: **Informed RRT\*** runs ordinary RRT* until a first solution of length $c_{best}$ is found. From then on it draws new samples only from the ellipse whose foci are the start and goal and whose distance-sum is $c_{best}$. A point outside the ellipse has $|\text{start},x|+|x,\text{goal}|>c_{best}$, so any path through it is longer than the current solution and cannot improve it. As better solutions are found, the ellipse shrinks; in an obstacle-free world it collapses to the straight line.
+
+**Example.** Start and goal $100$ apart ($c_{min}=100$). With $c_{best}=148.24$: semi-major $a=74.12$, semi-minor $b=\tfrac12\sqrt{148.24^2-100^2}\approx54.72$, area $\pi ab\approx12{,}741$. With $c_{best}=107.12$: $a=53.56$, $b\approx19.20$, area $\approx3{,}231$, about $4\times$ smaller. At $c_{best}=100$: $b=0$, area $0$.
+
+**AI/ML Usage**: A published comparison in a random-obstacle world reached the same solution cost in $0.9$ s where RRT* needed $17.3$ s. Informed RRT* is a standard option in motion-planning libraries.
+
+---
+
 <a id="intrinsic-vs-extrinsic-downstream-evaluation"></a>
 ### Intrinsic vs. Extrinsic (Downstream) Evaluation
 
@@ -1600,6 +1748,28 @@ which holds identically for *any* $s$, $c$, and $\theta$ — confirming the para
 
 ---
 
+<a id="kinodynamic-planning"></a>
+### Kinodynamic Planning
+
+**The Big Idea**: Ordinary path planning asks only "which route avoids the obstacles?" as if a robot could turn and stop instantly. Kinodynamic planning adds the reality you know from driving: you cannot slide sideways (a restriction on which directions you can move; see the Kinematic Constraints and Control Parameters entry) and you cannot change speed instantly (a restriction on acceleration). The name joins **kino**matic and **dyna**mic.
+
+**General Usage**: Kinodynamic planning finds a path **and the commands to drive it**, for a system described by four things: a configuration space $\mathcal{C}$ (all poses, see the Configuration-Space Obstacle entry); a state $x=(q,\dot q)$ that bundles a pose $q$ with its velocity $\dot q$ (see the Time Derivative entry in the math_symbols file); a set of allowed commands $u\in U$ ("controls"); and the rule $\dot x = f(x,u)$ (the forward kinodynamic function) saying how the state changes under a command. Because the state includes velocity, two visits to the same position at different velocities are different states.
+
+**Example.** A hovercraft ($\mathcal{C}=\mathbb{R}^2$) has state $(p_x,p_y,v_x,v_y)=(0,0,1,0)$ and applies command $u=(0,1)$ for $\Delta t=1$ s. With $p\leftarrow p+v\Delta t+\tfrac12 u\Delta t^2$ and $v\leftarrow v+u\Delta t$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. New $p_x$ | $0 + (1)(1) + \tfrac12(0)(1)^2$ | $1$ |
+| 2. New $p_y$ | $0 + (0)(1) + \tfrac12(1)(1)^2$ | $0.5$ |
+| 3. New $v_x$ | $1 + (0)(1)$ | $1$ |
+| 4. New $v_y$ | $0 + (1)(1)$ | $1$ |
+
+New state $(1,\ 0.5,\ 1,\ 1)$: it still moves right at speed $1$, and has picked up upward velocity — it did not turn instantly, which is exactly the dynamic constraint. Check: the state changed only through position and velocity, never jumping ✓.
+
+**AI/ML Usage**: Kinodynamic planning underlies motion planning for cars, drones, and hovercraft-like robots. The Rapidly-Exploring Random Tree (RRT) algorithm (see the Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT) entry) is adapted by sampling states as position-velocity pairs and letting the steering function return a command and a duration, which are stored on each tree edge. See also the Random Control and Best Control Steering entry and the Boundary Value Problem (BVP) entry.
+
+---
+
 <a id="kl-divergence"></a>
 ### KL Divergence
 
@@ -1696,6 +1866,28 @@ From a lattice vertex at pose $(0, 0, 0°)$, these three primitives generate exa
 **Example.** Two clearly separated clusters of red and blue dots, with an obvious visible gap between them, are linearly separable — you can easily draw a single straight line straight through that gap with a ruler. But if the red and blue dots are arranged in two nested, concentric circles, one inside the other, no single straight line could ever separate them perfectly — that data is decidedly NOT linearly separable.
 
 **AI/ML Usage**: Whether or not data is linearly separable directly determines whether simple linear classifiers (like the Perceptron or plain logistic regression) can achieve perfect accuracy on it — the Perceptron's Mistake Bound guarantee (see the math_symbols file) specifically requires linear separability to hold in order for its formal, provable performance guarantee to actually apply.
+
+---
+
+<a id="lipschitz-continuity"></a>
+### Lipschitz Continuity
+
+**The Big Idea**: In Algebra 2, a line $y=mx+b$ changes at the fixed rate $m$: moving $x$ by $1$ moves $y$ by exactly $m$, so the steepness never exceeds $|m|$. A function is **Lipschitz continuous** when it is allowed to be curvy, but its steepness is still capped by some fixed number — no sudden jumps and no infinitely steep cliffs.
+
+**General Usage**: A function $f$ is **Lipschitz continuous** with constant $L\ge 0$ if for any two inputs $x$ and $y$: $\|f(x)-f(y)\|\le L\,\|x-y\|$, where $\|\cdot\|$ is the distance between two points (see the Euclidean Norm entry in the math_symbols file). In words: the output distance between two points is at most $L$ times the input distance between them. A smaller $L$ means a gentler function.
+
+**Example.** Test $f(x)=3x+1$ with $L=3$ using $x=2$ and $y=5$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Output at each input | $f(2)=7,\ f(5)=16$ | — |
+| 2. Output distance | $\lvert 7-16\rvert$ | $9$ |
+| 3. Input distance | $\lvert 2-5\rvert$ | $3$ |
+| 4. Compare with $L\times$ input distance | $3\times 3=9$ | $9\le 9$ ✓ |
+
+Second check: $f(x)=x^2$ on all real numbers is not Lipschitz for any single $L$, since between $0$ and $x$ the ratio $\lvert x^2-0\rvert/\lvert x-0\rvert=\lvert x\rvert$ grows without bound.
+
+**AI/ML Usage**: A robot whose dynamics function $f(x,u)$ is Lipschitz (in the state $x$) cannot behave erratically: nearby states have similar rates of change, so simulated motion is predictable. Completeness guarantees for sampling-based kinodynamic planners (see the Probabilistic Completeness entry) assume Lipschitz continuous dynamics. The constant also appears when bounding how quickly a neural network's output can change with its input.
 
 ---
 
@@ -1943,6 +2135,19 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** Without momentum, if the gradient briefly points in a slightly different, noisy direction for just one single step, the update immediately, fully follows that noisy blip. With momentum, the update instead blends that one brief, noisy blip together with the accumulated direction of many recent previous steps, producing a much smoother, steadier, less easily distracted overall path toward the minimum.
 
 **AI/ML Usage**: Momentum is a standard, widely used component of most modern optimization algorithms, including Adam (see Adaptive Optimization Methods above), and it's one of the single most effective, simple techniques for meaningfully speeding up and stabilizing the training of deep neural networks compared to plain, unmodified gradient descent.
+
+---
+
+<a id="monotone-convergence"></a>
+### Monotone Convergence
+
+**The Big Idea**: In Algebra 2 a sequence is monotone if it never reverses direction (always increasing or always decreasing). Monotone convergence means the best-solution cost never goes up as more samples are added.
+
+**General Usage**: A sampling-based planner has **monotone convergence** if the cost of its best found solution is non-increasing as the number of samples grows: each new sample can only keep or improve the answer.
+
+**Example.** Best costs after $n=10,20,30,40$ samples: $9,\ 8,\ 8,\ 7$ (monotone: never rises). A sequence $9,\ 8,\ 8.5,\ 7$ is not monotone because it worsens from $8$ to $8.5$.
+
+**AI/ML Usage**: A column in the standard comparison of sampling-based planners: RRT, RRG and RRT* have it, while PRM* and $k$-sPRM do not.
 
 ---
 
@@ -2361,6 +2566,24 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 
 ---
 
+<a id="planner-completeness"></a>
+### Planner Completeness
+
+**The Big Idea**: In Algebra 2 you sometimes ask whether an equation has a solution at all, before asking what it is. Completeness is the planning version: is the algorithm *guaranteed* to find a solution whenever one exists? It is a yes-or-no guarantee about finding any answer, not about the answer being cheap; that is Asymptotic Optimality. For randomized algorithms the guarantee becomes probabilistic; see Probabilistic Completeness.
+
+**General Usage**: A planner is **complete** in a domain if, for any start and goal that have a valid obstacle-free path between them, it is guaranteed to find at least one such path. If no path exists, the definition promises nothing. Search algorithms such as A* (see the A* Search entry) are complete on a graph. A companion notion is **efficiency**: how many state expansions (search) or random samples (sampling) are needed before a solution is found.
+
+**Example.** A tiny graph: start $S$ connects to $A$, and $A$ connects to goal $G$; a separate node $Z$ connects to nothing.
+
+1. A path $S \to A \to G$ exists.
+2. A complete planner, given this graph, must return $S\to A\to G$ (or another valid path).
+3. If the goal were instead $Z$, no path exists; completeness does not require the planner to find one, but a good implementation reports failure.
+4. A planner that only ever explored the first neighbor of each node could miss the path if $S$ had two neighbors and the path went through the second. Such a planner is **incomplete**.
+
+**AI/ML Usage**: Completeness is a basic design criterion for robot and game path planners and for automated symbolic planners: search-based ones (A*, Dijkstra) are complete on finite graphs, while sampling-based ones (PRM, RRT) are only probabilistically complete (see the entry of that name).
+
+---
+
 <a id="planning-graph"></a>
 ### Planning Graph
 
@@ -2504,6 +2727,28 @@ Since the total variance in the data is $3$ (the trace) and the larger eigenvalu
 
 ---
 
+<a id="probabilistic-completeness"></a>
+### Probabilistic Completeness
+
+**The Big Idea**: A **complete** planner (see the Planner Completeness entry) is guaranteed to find a path whenever one exists, like an exhaustive search that eventually checks every possibility. A randomized planner cannot promise that on any single run, since unlucky random samples might miss a narrow doorway. The promise is weakened to something you can believe: "if you keep going, the chance of having found a path gets as close to $1$ as you like." Getting arbitrarily close to $1$ is the same idea as a sequence approaching a limit, and the shrinking failure chance is the exponential decay of $e^{-an}$ (see the Euler's Number / Exponential Function entry in the math_symbols file). Probability itself is new beyond Algebra 2 (see the Probability / Probability Density entry).
+
+**General Usage**: A randomized planner using $n$ random samples is **probabilistically complete** if, whenever a solution exists, the probability that it has found a valid, collision-free path tends to $1$ as $n \to \infty$: $\mathbb{P}[\text{solution found after } n \text{ samples}]\to 1$. It says nothing about how quickly, or how cheap the path is (that is asymptotic optimality; see that entry). Many proofs establish a quantitative form: there are constants $a>0$ and $n_0$ such that the failure probability is at most $e^{-an}$ for all $n>n_0$ (written out in the Probabilistic Completeness Bound entry in the math_symbols file), by finding a fixed positive per-sample success chance and modeling progress as a chain of steps along a solution path. Typical assumptions: the space is a bounded region (rescaled to a unit hypercube $[0,1]^d$, see the Unit Hypercube entry); the goal is a small ball around a goal point (a single point has zero chance of being sampled); and some solution path stays a positive distance (its "clearance") from every obstacle, so it is not squeezed through a gap of zero width. Known results: the simple PRM, plain geometric RRTs, RRG and RRT* are probabilistically complete; connecting each PRM vertex only to its single nearest neighbor is not; kinodynamic RRTs with a fixed time step and best-input extension are not; kinodynamic RRTs with random controls and random durations and Lipschitz continuous dynamics are (see the Lipschitz Continuity entry).
+
+**Example.** Suppose each independent random sample has probability $p=0.01$ of landing in a small region that a solution needs. Probability of missing it in all $n$ samples is $(1-p)^n=(0.99)^n$, so the probability of hitting it at least once is $1-(0.99)^n$.
+
+| $n$ (samples) | $(0.99)^n$ | $1-(0.99)^n$ |
+|---|---|---|
+| 1 | $0.99$ | $0.01$ |
+| 100 | $\approx 0.366$ | $\approx 0.634$ |
+| 500 | $\approx 0.0066$ | $\approx 0.993$ |
+| 1000 | $\approx 0.0000432$ | $\approx 0.99996$ |
+
+The probability climbs toward $1$ but never reaches it at any finite $n$, which is exactly what "probabilistically complete" means. Check: $(0.99)^{100}=e^{100\ln 0.99}\approx e^{-1.005}\approx0.366$ ✓. For the quantitative bound with $a=0.1$: at $n=50$, $e^{-5}\approx0.0067$, and to beat success probability $0.999$ we need $an>\ln1000\approx6.91$, i.e. $n>69.1$.
+
+**AI/ML Usage**: The basic correctness guarantee for sampling-based robot motion planners such as the Rapidly-Exploring Random Tree (RRT) and the Probabilistic Roadmap (PRM) (see the Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT) entry and the Probabilistic Roadmap (PRM) entry), which plan in spaces too large to search completely: rather than asking "does it always find a path?", theory asks "does the chance of success approach $1$?" Related properties, asymptotic optimality and efficiency (how many samples are needed), are analyzed the same way.
+
+---
+
 <a id="probabilistic-roadmap-prm"></a>
 ### Probabilistic Roadmap (PRM)
 
@@ -2574,6 +2819,30 @@ Step 3–4 is the detail easiest to miss: **both endpoints being individually va
 
 ---
 
+<a id="random-control-and-best-control-steering"></a>
+### Random Control and Best Control Steering
+
+**The Big Idea**: A robot that cannot turn or stop instantly cannot simply "go straight to" a target state. You must instead choose a command, apply it for a short while, and see where you end up — like steering a shopping cart with a sticky wheel: you push, watch, and adjust. The two strategies differ in how the command is chosen: by dice (random control) or by trial-and-pick-the-best (best control). This builds on the Boundary Value Problem entry: both are cheap substitutes for an unsolvable exact steering problem.
+
+**General Usage**: Both strategies output a new state reached by **numerically integrating** the robot's motion rule $\dot x = f(x,u)$ (stepping forward in time in small pieces; see the Runge-Kutta Method entry) from a nearby tree state $x_{near}$ for a duration $\Delta t$, which is either fixed or sampled from $[0,\Delta t_{max}]$.
+- **Random control:** sample one command $u$ from the allowed set $U$ at random, integrate, and use the result. Nothing guides it toward the target $x_{rand}$, but it still explores rapidly, because the nearest-neighbor step makes states at the edge of explored space the most likely to be extended.
+- **Best control:** try a fixed finite set of commands $u_1,\dots,u_N$, integrate each, and keep the command $u_i^{*}$ whose result lies closest to $x_{rand}$.
+
+**Example.** Double integrator (see the Double Integrator and Bang-Bang Control entry) with state $(p_x,p_y,v_x,v_y)=(0,0,1,0)$, target $x_{rand}=(3,0,1,0)$, $\Delta t=1$, commands $\{(1,0),(-1,0),(0,1),(0,-1)\}$. Distance is ordinary distance over all four numbers.
+
+| Step | Command | Result state | Distance to target |
+|---|---|---|---|
+| 1 | $(1,0)$ | $(1.5,0,2,0)$ | $\sqrt{1.5^2+1^2}=\sqrt{3.25}\approx1.80$ |
+| 2 | $(-1,0)$ | $(0.5,0,0,0)$ | $\sqrt{2.5^2+1^2}=\sqrt{7.25}\approx2.69$ |
+| 3 | $(0,1)$ | $(1,0.5,1,1)$ | $\sqrt{2^2+0.5^2+1^2}=\sqrt{5.25}\approx2.29$ |
+| 4 | $(0,-1)$ | $(1,-0.5,1,-1)$ | $\approx2.29$ |
+
+Best control picks $(1,0)$ (distance $1.80$, the smallest). Random control would pick each with probability $1/4$. Check for step 1: $p_x=0+(1)(1)+\tfrac12(1)(1)^2=1.5$, $v_x=1+1=2$ ✓.
+
+**AI/ML Usage**: Used inside kinodynamic versions of the Rapidly-Exploring Random Tree (RRT) planner (see the Kinodynamic Planning entry). Despite looking more goal-directed, best control with a fixed time step is known not to be probabilistically complete, while random controls with random durations are, given Lipschitz dynamics (see the Probabilistic Completeness and Lipschitz Continuity entries).
+
+---
+
 <a id="random-forest"></a>
 ### Random Forest
 
@@ -2631,6 +2900,29 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 
 ---
 
+<a id="rapidly-exploring-random-graph-rrg-and-rrt"></a>
+### Rapidly-Exploring Random Graph (RRG) and RRT*
+
+**The Big Idea**: This builds on the Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT) entry: RRT grows a tree, one new vertex hooked to one parent. RRG and RRT* add connections so that better routes can replace worse ones, using one Algebra-2-level idea: comparing sums. When attaching a new point, do not just hook it to the closest neighbor; add up (cost so far to the neighbor) + (edge cost to the new point) for every neighbor in a small ball around it, and choose the smallest sum. Then check whether neighbors would get a smaller sum by going through the new point instead. Cost-to-come is described in the Cost-to-Come and Cost-to-Go entry (math_symbols file).
+
+**General Usage**: **RRG** grows like RRT, but connects each new vertex to *every* existing collision-free vertex within a shrinking connection radius, producing a graph with loops. **RRT\*** keeps a tree. Each iteration: (1) sample a random point $x_{rand}$; (2) find the nearest tree vertex $x_{nearest}$; (3) steer from it toward $x_{rand}$ to get $x_{new}$; (4) collect all tree vertices within the ball of radius $r$ around $x_{new}$ (see the RRT* Neighborhood Radius entry in the math_symbols file); (5) choose as the parent of $x_{new}$ the collision-free vertex $x$ in the ball minimizing $\text{Cost}(x)+c(x,x_{new})$, where $\text{Cost}(x)$ is the tree-path cost from the start and $c$ the edge cost; (6) **rewire**: for each ball vertex $x$, if $\text{Cost}(x_{new})+c(x_{new},x)<\text{Cost}(x)$ and the motion is collision-free, delete $x$'s old parent edge and make $x_{new}$ its parent. Both are probabilistically complete and asymptotically optimal (see those entries), with RRT* keeping RRT's $O(n)$ query and space cost.
+
+**Example.** Start $S=(0,0)$; tree: $Q=(3,0)$ (parent $S$, cost $3$), $P=(3,2)$ (parent $Q$, cost $5$), $R=(6,4)$ (parent $P$, cost $5+\sqrt{13}=8.606$). New point $x_{new}=(5,2)$, ball radius $3$, edge cost = straight-line length.
+
+| Step | Computation | Result |
+|---|---|---|
+| Distances to $x_{new}$ | $P: 2$; $R:\sqrt5=2.236$; $Q:\sqrt8=2.828$; $S:5.385$ | $P,R,Q$ in ball; $P$ nearest |
+| Cost through each parent | $P: 5+2=7$; $R: 8.606+2.236=10.842$; $Q: 3+2.828=5.828$ | Choose $Q$; $\text{Cost}(x_{new})=5.828$ |
+| Rewire $P$ | $5.828+2=7.828$ vs $5$ | keep |
+| Rewire $Q$ | $5.828+2.828=8.657$ vs $3$ | keep |
+| Rewire $R$ | $5.828+2.236=8.064$ vs $8.606$ | re-parent $R$ to $x_{new}$; cost $8.064$ |
+
+**Check.** Plain RRT would have given $x_{new}$ cost $7$ and left $R$ at $8.606$; RRT* lowers them to $5.828$ and $8.064$. A smaller rewiring case: vertex $B$ has cost $10$ via parent $A$; a new vertex $N$ has cost $6$ and the edge $N\to B$ has length $3$; since $6+3=9<10$, $B$'s parent changes from $A$ to $N$ and its cost becomes $9$.
+
+**AI/ML Usage**: RRT* is a standard optimal motion planner for robot arms, mobile robots and vehicles, available in planning libraries such as OMPL; variants such as Informed RRT* build on it (see that entry). Compared with plain RRT, its trees fan out from the start and its path cost, and trial-to-trial variance of that cost, both fall as samples are added, while plain RRT's cost plateaus above the optimum.
+
+---
+
 <a id="recurrent-neural-network-rnn"></a>
 ### Recurrent Neural Network (RNN)
 
@@ -2675,6 +2967,30 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
 
 **AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
+
+---
+
+<a id="runge-kutta-method"></a>
+### Runge-Kutta Method
+
+**The Big Idea**: To predict where something moving ends up, Algebra 2 gives you a formula when the motion is simple (constant speed: distance $=$ rate $\times$ time). When the speed itself keeps changing by a rule you cannot solve by hand, you can still get a very good answer by walking forward in many small time steps, using the current rate of change to take each step. The Runge-Kutta method is a smarter way of taking each step: instead of trusting the rate at the start of the step alone, it samples the rate at several points inside the step and averages them.
+
+**General Usage**: Given $\dot x = f(x,u)$ (see the Time Derivative entry in the math_symbols file) and a step size $h$, the simplest method (Euler) is $x_{next}=x+h\,f(x,u)$. The classical fourth-order Runge-Kutta (RK4) computes four slopes, $k_1=f(x,u)$, $k_2=f\big(x+\tfrac h2 k_1,u\big)$, $k_3=f\big(x+\tfrac h2 k_2,u\big)$, $k_4=f(x+h\,k_3,u)$, and takes $x_{next}=x+\tfrac h6\,(k_1+2k_2+2k_3+k_4)$: a weighted average that weights the two midpoint slopes double.
+
+**Example.** Take $\dot x = x$ (rate equals current value), $x(0)=1$, $h=1$; the exact answer at $t=1$ is $e\approx2.7183$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. $k_1$ | $f(1)=1$ | $1$ |
+| 2. $k_2$ | $f(1+0.5\cdot1)=1.5$ | $1.5$ |
+| 3. $k_3$ | $f(1+0.5\cdot1.5)=1.75$ | $1.75$ |
+| 4. $k_4$ | $f(1+1\cdot1.75)=2.75$ | $2.75$ |
+| 5. Weighted sum | $1+2(1.5)+2(1.75)+2.75=10.25$ | $10.25$ |
+| 6. Advance | $x=1+\tfrac16(10.25)$ | $\approx2.7083$ |
+
+For comparison, one Euler step gives $1+1\cdot1=2$. RK4 ($2.7083$) is within $0.01$ of the exact $e=2.7183$ ✓, Euler is off by $0.72$.
+
+**AI/ML Usage**: Robot planners use it to predict the result of applying a command for a duration (see the Random Control and Best Control Steering entry). It is also the method behind "neural ODE" models, which integrate a learned rate-of-change function with an off-the-shelf solver of this type.
 
 ---
 
@@ -2740,6 +3056,41 @@ Had the comparison gone the other way (proposed cost not lower than the recorded
 **Example.** Take the toy sequence "A A B A" with one-hot embeddings $A=[1,0]$, $B=[0,1]$, and the matrices $W^Q = \begin{bmatrix}0&1\\0&1\end{bmatrix}$ (every row identical, so every token's query becomes exactly $[0,1]$ — "look for B's," regardless of the token's own identity) and $W^K = \begin{bmatrix}10&0\\0&10\end{bmatrix}$ (a diagonal scaling matrix). Then $Q = EW^Q$ has all four rows equal to $[0,1]$, and $K = EW^K$ has rows $[10,0],[10,0],[0,10],[10,0]$. Every row of $S=QK^\top$ works out to $[0,0,10,0]$ — identical across all four rows, because every query is identical — meaning every single token in the sequence, regardless of its own identity, ends up attending most strongly to position 3, the B. This directly demonstrates the payoff: after a row-wise softmax, every position's output is dominated by the value at the one position holding the information (the B) that matters for this task.
 
 **AI/ML Usage**: Self-attention is the core computational mechanism inside every Transformer layer, and it is what the paper "Attention Is All You Need" (Vaswani et al., 2017) is named for. Compared to a Recurrent Neural Network (see that entry above), self-attention has two major practical advantages, laid out directly in that paper: its sequential-operations count is $O(1)$ — meaning the entire computation is fully parallelizable, unlike an RNN's genuinely sequential, $O(n)$ chain of steps — and its maximum path length between any two tokens is also $O(1)$, meaning any token can directly attend to any other token in a single step, regardless of how far apart they are, unlike an RNN, where information has to pass through every intervening time step. The trade-off is that self-attention's complexity per layer is $O(n^2 \cdot d)$ (quadratic in the sequence length $n$), since the full $n\times n$ attention matrix must be computed and stored — this is markedly worse than an RNN's $O(n\cdot d^2)$ for very long sequences, and is the main practical limitation that motivates later, more memory-efficient variants of attention.
+
+---
+
+<a id="simple-prm-sprm-and-prm"></a>
+### Simple PRM (sPRM) and PRM*
+
+**The Big Idea**: This is a variation on the Probabilistic Roadmap (PRM) entry, which explains how a graph is built from random points in free space. It adds only one decision: how large a neighborhood each point uses when connecting to others. In Algebra 2 terms, that is one parameter (a radius) and one formula for it, so the new material is the reasoning about what the formula guarantees.
+
+**General Usage**: Both algorithms build a graph $G=(V,E)$. Start with $V = \{x_{\text{init}}\}$ plus $n$ random samples from the obstacle-free space, and $E=\emptyset$. For each vertex $v$, take $U$ = the other vertices within radius $r$ of $v$; for each $u \in U$, if the straight segment between $v$ and $u$ is collision-free, add edges $(v,u)$ and $(u,v)$. Return $G$.
+
+- **sPRM** (simple PRM) uses a **fixed** radius $r$. It is probabilistically complete (see the Probabilistic Completeness entry), and, as shown by comparison with PRM*, asymptotically optimal.
+- **PRM\*** uses a radius that **shrinks** with the number of samples $n$:
+$$
+r(n) = \gamma_{\text{PRM}} \left(\frac{\log n}{n}\right)^{1/d},
+$$
+with $d$ the dimension of the space, $\log$ the natural logarithm, and $\gamma_{\text{PRM}}$ a constant that must exceed $2(1+1/d)^{1/d}\big(\mu(\mathcal{X}_{\text{free}})/\zeta_d\big)^{1/d}$ (see the Measure (Volume) of a Set and Unit Ball Volume entries in the math_symbols file) for asymptotic optimality (see the Asymptotic Optimality entry). It is also probabilistically complete.
+- **Why sPRM inherits optimality:** run on the same samples, sPRM's edge set contains PRM*'s edge set, so every path PRM* can find is available to sPRM.
+- The "full" PRM with extras such as k-nearest neighbors or bounded degree is much harder to analyze; connecting each vertex only to its single nearest neighbor is provably incomplete.
+
+**Example.** PRM* radius for $d=2$ and (illustrative) $\gamma_{\text{PRM}}=1$.
+
+| $n$ | $\log n$ | $\log n / n$ | $r = \sqrt{\log n / n}$ |
+|---|---|---|---|
+| 100 | 4.605 | 0.04605 | 0.215 |
+| 1,000 | 6.908 | 0.006908 | 0.083 |
+| 10,000 | 9.210 | 0.000921 | 0.030 |
+
+1. Take the natural logarithm of $n$.
+2. Divide by $n$.
+3. Take the $1/d$ power; for $d=2$ this is a square root.
+4. Multiply by $\gamma_{\text{PRM}}$ (here $1$).
+
+The radius shrinks as more samples are drawn, but slowly enough to keep the roadmap connected.
+
+**AI/ML Usage**: PRM* is the standard "optimal roadmap" method for planning robot arm and vehicle motion in a known environment: build the roadmap once, then answer many start-goal queries with a graph search such as A*. Its radius rule is a reusable design pattern in randomized geometric algorithms: use more neighbors when data is sparse and fewer as the sample grows dense.
 
 ---
 
@@ -2999,6 +3350,23 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 Both are equally good by the priority value alone, but $X$'s smaller heuristic value marks it as the more promising one to try first.
 
 **AI/ML Usage**: A nearly-free optimization used in essentially every performant real-world implementation of A* Search (A-Star Algorithm) — since it costs nothing but a smarter comparison rule when priorities tie, and yet noticeably reduces how much of the search space is explored before the goal is found.
+
+---
+
+<a id="triangle-inequality"></a>
+### Triangle Inequality
+
+**The Big Idea**: In geometry class you learned that in any triangle no side is longer than the sum of the other two, because walking straight is never longer than a detour. The same rule holds for distances between points in any number of dimensions. It uses distance as defined in the Euclidean Norm entry (math_symbols file).
+
+**General Usage**: For any three points $a, b, c$: $\|a-c\|\le\|a-b\|+\|b-c\|$. It can be chained through any number of intermediate points: $\|a-e\|\le\|a-b\|+\|b-c\|+\|c-d\|+\|d-e\|$. It is used to turn several small known distances into an upper bound on an unknown one.
+
+**Example.** Points $a=(0,0)$, $b=(3,0)$, $c=(3,4)$.
+1. Direct distance: $\|a-c\|=\sqrt{3^2+4^2}=5$.
+2. Detour through $b$: $\|a-b\|=3$ and $\|b-c\|=4$, total $7$.
+3. Check: $5\le 7$, true.
+4. Equality holds only when $b$ lies on the straight segment from $a$ to $c$: for $b'=(1.5,2)$, $\|a-b'\|+\|b'-c\|=2.5+2.5=5=\|a-c\|$.
+
+**AI/ML Usage**: Used to prove guarantees about distance-based methods: for example, in motion-planning proofs (RRT) five distances each at most $\nu/5$ are chained to show the nearest tree vertex is within $\nu$ of a path point; it is also why nearest-neighbor search can prune far-away points in K-Nearest Neighbors data structures, and it is one of the axioms a function must satisfy to count as a distance metric.
 
 ---
 

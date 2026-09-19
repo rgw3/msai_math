@@ -7,69 +7,74 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 175 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 190 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Goal Set | Gradient to Phi, lowercase | Phi, uppercase to Zero-One Loss |
+| Absolute Value to Goal Set | Gradient to Positional Embedding | Potential Function to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Gradient](#gradient) | [Phi, uppercase](#phi-uppercase) |
-| [Action Space](#action-space) | [Graph](#graph) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) |
-| [Activation Function](#activation-function) | [Greater Than / Less Than](#greater-than-less-than) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |
-| [Adjacency Matrix](#adjacency-matrix) | [Halfspace](#halfspace) | [Positional Embedding](#positional-embedding) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hat Notation](#hat-notation) | [Potential Function](#potential-function) |
-| [All-Ones Vector](#all-ones-vector) | [Hessian Matrix](#hessian-matrix) | [Precedence Relation](#precedence-relation) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Heuristic Function](#heuristic-function) | [Prime Notation](#prime-notation) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
-| [Approximately Equal](#approximately-equal) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Identity Matrix](#identity-matrix) | [Product Notation](#product-notation) |
-| [Assignment Arrow](#assignment-arrow) | [If and Only If](#if-and-only-if) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
-| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
-| [Beta](#beta) | [Initial State](#initial-state) | [Question-Mark Relation](#question-mark-relation) |
-| [Bias Term](#bias-term) | [Integral](#integral) | [Real Numbers](#real-numbers) |
-| [Big-O Notation](#big-o-notation) | [Inverse Hessian](#inverse-hessian) | [Receptive Field](#receptive-field) |
-| [Binary Label Set](#binary-label-set) | [Jacobian](#jacobian) | [Regression Function](#regression-function) |
-| [Binomial Coefficient](#binomial-coefficient) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
-| [Blocks World](#blocks-world) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
-| [Concept Class](#concept-class) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Conditional Bar](#conditional-bar) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Configuration Space](#configuration-space) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Cosine Similarity](#cosine-similarity) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
-| [Covariance](#covariance) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
-| [Curvature (Path)](#curvature-path) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
-| [Data Distribution](#data-distribution) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
-| [Dataset](#dataset) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
-| [Delta, lowercase](#delta-lowercase) | [Margin](#margin) | [Softmax Function](#softmax-function) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Matrix Entry](#matrix-entry) | [Standard Deviation](#standard-deviation) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Matrix Transpose](#matrix-transpose) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Element-of Symbol](#element-of-symbol) | [Max Function](#max-function) | [State Space](#state-space) |
-| [Element-wise Operations](#element-wise-operations) | [Mean](#mean) | [State Transition Function](#state-transition-function) |
-| [Ellipsis](#ellipsis) | [Min Function](#min-function) | [Step Size](#step-size) |
-| [ELU](#elu) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
-| [Empty Set](#empty-set) | [Model Parameters](#model-parameters) | [Subset](#subset) |
-| [Epsilon](#epsilon) | [Mu](#mu) | [Summation](#summation) |
-| [Error Signal](#error-signal) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
-| [Eta](#eta) | [Nabla](#nabla) | [Tanh](#tanh) |
-| [Euclidean Norm](#euclidean-norm) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
-| [Existential Quantifier](#existential-quantifier) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
-| [Expectation](#expectation) | [Not Equal](#not-equal) | [Training Set](#training-set) |
-| [Factorial](#factorial) | [Number Sign / Count](#number-sign-count) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Omega](#omega) | [Universal Quantifier](#universal-quantifier) |
-| [Floor Function](#floor-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Unknown-Word Token](#unknown-word-token) |
-| [Frobenius Norm](#frobenius-norm) | [Outer Product](#outer-product) | [Variance](#variance) |
-| [Function Composition](#function-composition) | [Padding](#padding) | [Vector](#vector) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Parameterized Function / Model](#parameterized-function-model) | [Vector Overbar](#vector-overbar) |
-| [Gain](#gain) | [Partial Derivative](#partial-derivative) | [Vector Projection](#vector-projection) |
-| [Gamma](#gamma) | [Partial Order](#partial-order) | [Vocabulary](#vocabulary) |
-| [Gaussian CDF](#gaussian-cdf) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Weight Vector](#weight-vector) |
-| [GeLU](#gelu) | [Perceptron Loss](#perceptron-loss) | [Zero-One Loss](#zero-one-loss) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Permutation](#permutation) |  |
-| [Goal Set](#goal-set) | [Phi, lowercase](#phi-lowercase) |  |
+| [Absolute Value](#absolute-value) | [Gradient](#gradient) | [Potential Function](#potential-function) |
+| [Action Space](#action-space) | [Graph](#graph) | [Precedence Relation](#precedence-relation) |
+| [Activation Function](#activation-function) | [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) |
+| [Adjacency Matrix](#adjacency-matrix) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
+| [All-Ones Vector](#all-ones-vector) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
+| [Approximately Equal](#approximately-equal) | [Hypothesis](#hypothesis) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Identity Matrix](#identity-matrix) | [Psi, uppercase](#psi-uppercase) |
+| [Assignment Arrow](#assignment-arrow) | [If and Only If](#if-and-only-if) | [Query, Key, and Value](#query-key-and-value) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Implies Arrow](#implies-arrow) | [Question-Mark Relation](#question-mark-relation) |
+| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
+| [Ball of Radius r](#ball-of-radius-r) | [Initial State](#initial-state) | [Receptive Field](#receptive-field) |
+| [Best Solution Cost](#best-solution-cost) | [Integral](#integral) | [Regression Function](#regression-function) |
+| [Beta](#beta) | [Inverse Hessian](#inverse-hessian) | [ReLU](#relu) |
+| [Bias Term](#bias-term) | [Jacobian](#jacobian) | [Rotation Matrix](#rotation-matrix) |
+| [Big-O Notation](#big-o-notation) | [Kernel / Kernel Size](#kernel-kernel-size) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Binary Label Set](#binary-label-set) | [Label](#label) | [Sample Space](#sample-space) |
+| [Binomial Coefficient](#binomial-coefficient) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
+| [Blocks World](#blocks-world) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Set Intersection](#set-intersection) |
+| [Concept Class](#concept-class) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Conditional Bar](#conditional-bar) | [Learning Rate](#learning-rate) | [Set Braces](#set-braces) |
+| [Configuration Space](#configuration-space) | [Less Than or Equal](#less-than-or-equal) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Difference](#set-difference) |
+| [Connection Radius Constant](#connection-radius-constant) | [Logarithm](#logarithm) | [Set Union](#set-union) |
+| [Cosine Similarity](#cosine-similarity) | [Logical Negation](#logical-negation) | [Sigma, lowercase](#sigma-lowercase) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Logistic Function](#logistic-function) | [Sigma, uppercase](#sigma-uppercase) |
+| [Covariance](#covariance) | [Loss Function](#loss-function) | [Sigmoid Function](#sigmoid-function) |
+| [Curvature (Path)](#curvature-path) | [Margin](#margin) | [Sign Function](#sign-function) |
+| [Data Distribution](#data-distribution) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
+| [Dataset](#dataset) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Delta, lowercase](#delta-lowercase) | [Matrix Transpose](#matrix-transpose) | [Standard Deviation](#standard-deviation) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Max Function](#max-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mean](#mean) | [State Space](#state-space) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [State Transition Function](#state-transition-function) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Min Function](#min-function) | [Step Size](#step-size) |
+| [Element-of Symbol](#element-of-symbol) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
+| [Element-wise Operations](#element-wise-operations) | [Model Parameters](#model-parameters) | [Subset](#subset) |
+| [Ellipsis](#ellipsis) | [Mu](#mu) | [Summation](#summation) |
+| [ELU](#elu) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
+| [Empty Set](#empty-set) | [Nabla](#nabla) | [Tanh](#tanh) |
+| [Epsilon](#epsilon) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
+| [Error Signal](#error-signal) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
+| [Eta](#eta) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
+| [Euclidean Norm](#euclidean-norm) | [Not Equal](#not-equal) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Number Sign / Count](#number-sign-count) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Omega](#omega) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Expectation](#expectation) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Unit Ball Volume](#unit-ball-volume) |
+| [Factorial](#factorial) | [Outer Product](#outer-product) | [Unit Hypercube](#unit-hypercube) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Padding](#padding) | [Universal Quantifier](#universal-quantifier) |
+| [Floor Function](#floor-function) | [Parameterized Function / Model](#parameterized-function-model) | [Unknown-Word Token](#unknown-word-token) |
+| [Free Space](#free-space) | [Partial Derivative](#partial-derivative) | [Variance](#variance) |
+| [Frobenius Norm](#frobenius-norm) | [Partial Order](#partial-order) | [Vector](#vector) |
+| [Function Composition](#function-composition) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Vector Overbar](#vector-overbar) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Perceptron Loss](#perceptron-loss) | [Vector Projection](#vector-projection) |
+| [Gain](#gain) | [Permutation](#permutation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gamma](#gamma) | [Phi, lowercase](#phi-lowercase) | [Vocabulary](#vocabulary) |
+| [Gaussian CDF](#gaussian-cdf) | [Phi, uppercase](#phi-uppercase) | [Weight Vector](#weight-vector) |
+| [GeLU](#gelu) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Zero-One Loss](#zero-one-loss) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |  |
+| [Goal Set](#goal-set) | [Positional Embedding](#positional-embedding) |  |
 
 ## Symbols
 
@@ -270,6 +275,41 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="ball-of-radius-r"></a>
+### Ball of Radius r — `B_r(x)`
+Symbol: a capital B with a subscript radius $r$ and (optionally) the center $x$ in parentheses, written $B_r(x)$; there is no single Unicode character for it  
+On macOS: build it from an ordinary capital B and a subscript; in LaTeX type `B_{r}(x)`
+
+**The Big Idea**: In Algebra 2 you met the circle: all points at a fixed distance from a center, $(x-h)^2+(y-k)^2 = r^2$. A "ball" is the filled-in version (the circle plus everything inside it), and the idea extends to any number of dimensions. See the Euclidean Norm entry for how distance is measured.
+
+**General Usage**: $B_r(x)$ is the set of all points whose distance from the center $x$ is at most $r$: $B_r(x)=\{y : \|y-x\| \le r\}$. In 2 dimensions it is a disk, in 3 dimensions a solid sphere, and in $d$ dimensions it is called a hyperball (its boundary is a hypersphere). Two facts are used constantly: a ball is **convex** (the straight segment between any two points inside it stays inside it), and its volume is a positive number for any $r>0$. When only the size matters, $|B_r|$ or "Volume of Ball($r$)" denotes its volume.
+
+**Example.** In 2 dimensions with center $x=(0,0)$ and $r=5$, $B_5(0,0)$ is the disk of radius 5.
+1. Is $y=(3,4)$ in it? Distance: $\|y-x\|=\sqrt{3^2+4^2}=\sqrt{25}=5$.
+2. Since $5\le 5$, yes, $y$ is in the ball (on its edge).
+3. Is $z=(4,4)$ in it? $\|z-x\|=\sqrt{32}\approx 5.66 > 5$, so no.
+4. Convexity check: the midpoint of $(3,4)$ and $(-3,-4)$ is $(0,0)$, which is inside; any midpoint of two members is a member.
+5. Area of this 2D ball: $\pi r^2 = 25\pi \approx 78.5$.
+
+**AI/ML Usage**: In sampling-based robot motion planning (for example a Rapidly-exploring Random Tree, RRT), a small ball around a waypoint on a path is the target a random sample must land in to make progress; the chance a uniform random sample lands there is the ball's volume divided by the volume of the whole search space, and a proof that the planner eventually succeeds needs only that this ratio is positive. Balls also define "neighborhoods" in K-Nearest Neighbors-style methods (all training points within distance $r$ of a query) and in clustering algorithms.
+
+---
+
+<a id="best-solution-cost"></a>
+### Best Solution Cost — `c_best, c_min`
+Symbol: c, an ordinary lowercase letter c, with a subscript word (best or min)  
+On macOS: type normally from the keyboard; the subscript is written with an underscore in plain text, c_best
+
+**The Big Idea**: This is just a variable name, like $x$ or $y$ in Algebra 2, chosen to hold "the cost of the best answer so far" — the same way you might write $m$ for the smallest value seen while scanning a list. See the Optimal Cost / True Cost entry for the related idea of the best possible cost.
+
+**General Usage**: In path planning, $c_{best}$ is the length (or other cost) of the cheapest complete path from start to goal that the algorithm has found so far; it can only stay the same or decrease as the search continues. $c_{min}$ is the smallest cost that is theoretically possible, which in a world with no obstacles is the straight-line distance from start to goal.
+
+**Example.** A planner's first path from start to goal has length $148.24$, its next has length $107.12$, and the straight-line distance between start and goal is $100$. Then $c_{best}$ goes $148.24 \to 107.12$ (never upward), and $c_{min}=100$. The gap $c_{best}-c_{min}$ shrinks from $48.24$ to $7.12$, measuring how far from ideal the current answer is.
+
+**AI/ML Usage**: Informed RRT* (see the Informed RRT* entry in the math_concepts file) uses $c_{best}$ as the fixed distance-sum that defines the ellipse in which it keeps drawing samples; each time a cheaper path is found, $c_{best}$ drops and the ellipse shrinks. In general, "best cost so far" is the bookkeeping variable of almost every anytime optimization algorithm — one that can be stopped at any moment and still return its best answer so far.
+
+---
+
 <a id="beta"></a>
 ### Beta — `β`
 Symbol: β, Greek small letter beta  
@@ -450,6 +490,31 @@ On macOS: open the character picker (Fn/🌐) and search "logical and" — be ca
 
 ---
 
+<a id="connection-radius-constant"></a>
+### Connection Radius Constant — `γ_PRM, γ_RRT*`
+Symbol: γ, Greek small letter gamma, with a subscript naming the algorithm  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter gamma"; the subscript is written with an underscore in plain text, γ_RRT*
+
+**The Big Idea**: Same idea as a slope or a scaling constant in Algebra 2: a single number that stretches a formula up or down without changing its shape. See the Gamma entry for the Greek letter itself; here it scales a distance.
+
+**General Usage**: Sampling-based planners connect a new sample only to existing samples within a **connection radius** $r(n)$ that shrinks as the number of samples $n$ grows, typically written $r(n)=\gamma\left(\frac{\log n}{n}\right)^{1/d}$, where $d$ is the number of dimensions. The constant $\gamma$ sets how large that radius is. Guarantees such as asymptotic optimality (see the Asymptotic Optimality entry in the math_concepts file) require $\gamma$ to exceed a threshold: for RRT*, $\gamma_{RRT^*} > \left(2\left(1+\frac{1}{d}\right)\right)^{1/d}\left(\frac{\mu(X_{free})}{\zeta_d}\right)^{1/d}$, and for RRG/PRM* the similar $\gamma_{PRM} > 2\left(1+\frac{1}{d}\right)^{1/d}\left(\frac{\mu(X_{free})}{\zeta_d}\right)^{1/d}$.
+
+**Example.** In a 2D world ($d=2$) with free area $\mu(X_{free})=100$ and $\zeta_2=\pi\approx3.1416$:
+
+| Step | Computation | Result |
+|---|---|---|
+| Shared factor | $\left(\frac{100}{\pi}\right)^{1/2}=\sqrt{31.83}$ | $5.642$ |
+| RRT* multiplier | $\left(2\times1.5\right)^{1/2}=\sqrt3$ | $1.732$ |
+| RRT* threshold | $1.732\times5.642$ | $\gamma_{RRT^*}>9.77$ |
+| RRG multiplier | $2\times1.5^{1/2}=2\times1.2247$ | $2.449$ |
+| RRG threshold | $2.449\times5.642$ | $\gamma_{PRM}>13.82$ |
+
+Any $\gamma$ above these numbers satisfies the respective condition.
+
+**AI/ML Usage**: This constant appears in the theory behind RRT*, RRG and PRM*, the standard asymptotically optimal robot motion planners (see the Rapidly-Exploring Random Graph (RRG) and RRT* entry in the math_concepts file). In practice, planning libraries such as OMPL choose the radius automatically from a formula of this kind so users do not tune it by hand.
+
+---
+
 <a id="cosine-similarity"></a>
 ### Cosine Similarity — `cosθ`
 Symbol: none — "cos" is ordinary text; θ is Greek small letter theta  
@@ -552,6 +617,29 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter del
 **Example.** A statement like "for any small $\delta > 0$..." is common in math proofs — it might say, for instance, "if two numbers differ by less than $\delta = 0.01$, treat them as practically equal." Compare this to $\Delta x$, which means something different: if $x$ changes from $3$ to $7$, then $\Delta x = 7-3 = 4$ describes that specific change, while $\delta$ alone, without the capital, is usually just naming a general small-number tolerance rather than measuring an actual change.
 
 **AI/ML Usage**: Frequently used in learning theory to represent an accepted "failure probability" when proving a formal guarantee about a learning algorithm. A typical PAC-learning theorem (Probably Approximately Correct learning, a mathematical framework describing how many examples are needed to learn reliably) is phrased as: "with probability at least $1-\delta$, the algorithm's learned model will have error below some target amount." Setting $\delta = 0.05$ means you're accepting a 5% chance the guarantee might fail, in exchange for the guarantee otherwise holding — smaller values of $\delta$ demand a stronger, more reliable guarantee, generally at the cost of needing more training data.
+
+---
+
+<a id="delta-uppercase-time-step"></a>
+### Delta, Uppercase / Time Step — `Δt`
+Symbol: Δ, Greek capital letter delta (a triangle); written together with a variable, as in Δt, it means "a change in t"  
+On macOS: open the character picker (Fn/🌐) and search "greek capital letter delta" — take care not to pick "increment" (U+2206), a look-alike mathematical operator, or the lowercase δ
+
+**The Big Idea**: In Algebra 2 you computed slope as "change in $y$ over change in $x$," often written $\dfrac{\Delta y}{\Delta x}$. $\Delta$ is exactly that "change in" shorthand, and $\Delta t$ is simply "the change in time" — how much time passes between two moments. See also the lowercase Delta entry, which is a different symbol.
+
+**General Usage**: $\Delta t$ (read "delta t") is the length of a span of time: if you start a clock at time $t_1$ and stop it at $t_2$, then $\Delta t = t_2 - t_1$. When a system is simulated or controlled in steps, $\Delta t$ is the **time step** or **duration** of one step. It is a single quantity; the $\Delta$ and the $t$ are not multiplied.
+
+**Example.** A robot starts moving at $t_1 = 2$ seconds and stops at $t_2 = 5$ seconds.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Write the definition | $\Delta t = t_2 - t_1$ | — |
+| 2. Substitute the values | $\Delta t = 5 - 2$ | — |
+| 3. Subtract | $\Delta t = 3$ | 3 seconds |
+
+If the robot moves at a constant $4$ meters per second, it travels $4 \times \Delta t = 4 \times 3 = 12$ meters in that span.
+
+**AI/ML Usage**: In robot planning, the tree-growing algorithm called a Rapidly-Exploring Random Tree (RRT) can be adapted to robots with real motion limits: each new branch is made by applying a command (a "control") for a duration $\Delta t$, and $\Delta t$ is stored on the branch so the plan can be replayed exactly. The same symbol is the step size when a computer approximates continuous motion by many small time steps (see the Runge-Kutta Method entry in the math_concepts file).
 
 ---
 
@@ -822,6 +910,21 @@ On macOS: open the character picker (Fn/🌐) and search "floor" and select each
 **Example.** $\lfloor 3.7 \rfloor = 3$ (round down from 3.7). $\lfloor 3.1 \rfloor = 3$ as well (still rounds down, even though 3.1 is barely above 3). For a negative number, $\lfloor -3.2 \rfloor = -4$ — it rounds down toward negative infinity, not toward zero, so it lands on the next integer below $-3.2$, which is $-4$, not $-3$.
 
 **AI/ML Usage**: Used in describing the output size of a convolutional neural network layer (a type of neural network architecture especially suited to image and video processing) — the exact width and height of the output after applying a filter is computed using a formula involving input size, filter size, stride, and padding, and that formula is wrapped in a floor function, since the number of times a filter can slide across an image must always come out as a whole number.
+
+---
+
+<a id="free-space"></a>
+### Free Space — `X_free`
+Symbol: 𝒳 or X, a capital X (often script) with the subscript word free  
+On macOS: type normally from the keyboard; for the script 𝒳 open the character picker (Fn/🌐) and search "script capital x"; the subscript is written with an underscore in plain text, X_free
+
+**The Big Idea**: Same "set of allowed values" idea as a solution set in Algebra 2, applied to positions instead of numbers. It is the state-space version of $\mathcal{C}_{free}$ (see the Configuration Space entry), and it is one of three pieces that define a path-planning problem, together with the Initial State and Goal Set entries.
+
+**General Usage**: $X_{free}$ is the set of all collision-free states the robot may occupy: the state space (see the State Space entry) with every state that touches an obstacle removed. A path-planning problem is written as the triple $(X_{free}, x_{init}, X_{goal})$, where $x_{init}$ is the single starting state and $X_{goal}$ is the set of states that count as success. A path is a continuous route that starts at $x_{init}$, stays entirely inside $X_{free}$, and ends in $X_{goal}$.
+
+**Example.** A robot in a $10\times10$ room containing a $2\times2$ table: $X_{free}$ is every position in the room not touching the table, of area $100-4=96$; $x_{init}=(1,1)$; $X_{goal}$ might be the small square $[9,10]\times[9,10]$. The point $(5,5)$ inside the table is not in $X_{free}$, so no path may pass through it.
+
+**AI/ML Usage**: Theorems about sampling-based planners such as RRT* are stated for exactly this triple: for example, "the chance that the algorithm's vertex set overlaps $X_{goal}$ approaches 1" (see the Probabilistic Completeness Bound entry). The size (volume) of $X_{free}$ also enters formulas such as the connection radius constant (see the Connection Radius Constant and Measure (Volume) of a Set entries).
 
 ---
 
@@ -1515,6 +1618,27 @@ On macOS: press Option+M for µ (the micro sign, which looks identical and is us
 
 ---
 
+<a id="measure-volume-of-a-set"></a>
+### Measure (Volume) of a Set — `μ(S)`
+Symbol: μ, Greek small letter mu (with parentheses around the set); do not confuse with the micro sign µ  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter mu" — pick the Greek one (U+03BC), not the "micro sign" (U+00B5) that Option+M types, which looks almost identical
+
+**The Big Idea**: In geometry class you computed length (of a segment), area (of a rectangle) and volume (of a box). $\mu(S)$ is the single symbol that means "the size of the set $S$", whichever of those three it is: length for a set on a line, area for a flat region, volume for a solid, and the analogous quantity in more than three dimensions. It goes beyond Algebra 2 only in that $S$ may be a strange, irregular region; the idea is unchanged. This symbol is unrelated to the mean $\mu$ (see the Mu entry), which is a number describing the center of data.
+
+**General Usage**: For a region $S$ of space, $\mu(S)$ is its size, in the natural units for the dimension: length in 1D, area in 2D, volume in 3D and higher (formally, its **Lebesgue measure**). It is never negative, bigger regions have bigger $\mu$, and if two regions do not overlap, $\mu$ of their union is the sum of their $\mu$ values.
+
+**Example.** A rectangular room of width $4$ m and depth $3$ m, viewed from above as a region $S$ of flat space.
+
+1. It is a 2-dimensional region, so $\mu$ means area.
+2. $\mu(S) = 4 \times 3 = 12$ square meters.
+3. Put a $2\times 1$ rectangular table inside it, occupying region $T$: $\mu(T) = 2 \times 1 = 2$ square meters.
+4. The floor left over, $S \setminus T$ (see the Set Difference entry), has $\mu(S \setminus T) = 12 - 2 = 10$ square meters.
+5. Other shapes: for the interval $[2,7]$, $\mu=7-2=5$; for a disk of radius $2$, $\mu=\pi\times2^2\approx12.57$.
+
+**AI/ML Usage**: In robot motion planning, the free space $\mathcal{X}_{\text{free}}$ (see the Free Space entry) is the set of configurations that do not hit an obstacle, and $\mu(\mathcal{X}_{\text{free}})$ is its volume. Sampling-based planners such as PRM* and RRT* (see the Simple PRM (sPRM) and PRM* entry and the Rapidly-Exploring Random Graph (RRG) and RRT* entry in the math_concepts file) require a connection-radius constant larger than a threshold that includes $\mu(\mathcal{X}_{\text{free}})$ (see the Connection Radius Constant entry); a roomier free space needs a larger constant. In probability, $\mu$ is also how "the chance of landing in a region" under a uniform distribution is defined: region size divided by total size.
+
+---
+
 <a id="min-function"></a>
 ### Min Function — `min(a, b)`
 Symbol: none — written as ordinary text  
@@ -1946,6 +2070,21 @@ On macOS: type the apostrophe key (left of Return) — or find the true prime ch
 
 ---
 
+<a id="probabilistic-completeness-bound"></a>
+### Probabilistic Completeness Bound — `P(V_n ∩ X_goal ≠ ∅) > 1 − e^(−an)`
+Symbol: a fixed expression: a probability $\mathbb{P}$ that is greater than $1-e^{-an}$, with $a>0$ a constant and $n$ the number of random samples drawn  
+On macOS: type $1-e^{-an}$ normally; for $\mathbb{P}$ use the blackboard-bold letter (character picker, Fn/🌐, search "double-struck capital p"), or just write P
+
+**The Big Idea**: This is the exponential-decay idea from Algebra 2 (a quantity like $e^{-an}$ that shrinks by the same factor each time $n$ goes up by one) subtracted from $1$. See the Euler's Number / Exponential Function entry for $e^x$, and the Probability entry for $P(x)$.
+
+**General Usage**: $\mathbb{P}\big(\{V_n \cap \mathcal{X}_{goal} \neq \emptyset\}\big) > 1-e^{-an}$ for all $n>n_0$ says: the chance that, after $n$ random samples, at least one vertex of the search tree (the set $V_n$) lies inside the goal region $\mathcal{X}_{goal}$ is at least $1-e^{-an}$. The constants $a>0$ and $n_0$ (a whole number) depend on the problem's map, not on $n$. Because $e^{-an}\to 0$ as $n$ grows, the bound tends to $1$. See the Set Intersection, Empty Set and Not Equal entries for $\cap$, $\emptyset$ and $\neq$.
+
+**Example.** Take $a=0.05$. At $n=20$: $e^{-0.05\cdot 20}=e^{-1}\approx 0.368$, so the bound is $1-0.368=0.632$. At $n=100$: $e^{-5}\approx 0.0067$, so the bound is $\approx 0.993$. At $n=200$: $e^{-10}\approx 0.0000454$, bound $\approx 0.99995$. Each time $n$ goes up the failure allowance $e^{-an}$ is multiplied down, so the guarantee closes in on certainty.
+
+**AI/ML Usage**: This is the form of the guarantee for the Rapidly-Exploring Random Tree (RRT), a robot motion-planning algorithm that grows a tree of collision-free motions toward random sample points. It is the formal statement of probabilistic completeness (see the Probabilistic Completeness entry in the math_concepts file). Bounds of the form $1-e^{-an}$ appear throughout the analysis of randomized algorithms.
+
+---
+
 <a id="probability-probability-density"></a>
 ### Probability / Probability Density — `P(x)`
 Symbol: P, an ordinary capital letter P  
@@ -1988,6 +2127,25 @@ On macOS: press Option+Shift+P
 **Example.** $\prod_{i=1}^{4} i = 1 \times 2 \times 3 \times 4 = 24$ — start at $i=1$, multiply in each whole number up through $4$. (Notice this is exactly the same computation as $4!$.)
 
 **AI/ML Usage**: Used to write out the total likelihood of an entire dataset under a probabilistic model, assuming — as is commonly and conveniently assumed — that every training example was generated independently of the others. The overall likelihood is the product of each individual example's own likelihood, which is exactly why maximum likelihood estimation (a very common, foundational statistical technique for fitting a model to data) formulas are usually first written using a $\prod$, before typically being converted into a much easier-to-work-with sum by taking a logarithm of the whole expression (see Logarithm and Log Likelihood).
+
+---
+
+<a id="progress-radius"></a>
+### Progress Radius — `\nu = \min(\eta, d_goal, d_clearance)`
+Symbol: $\nu$, Greek small letter nu (looks like a slanted "v" but with a rounded left stroke; do not confuse with the Latin letter v)  
+On macOS: open the character picker (Fn/globe key) and search "greek small letter nu" -- pick the one named exactly "Greek Small Letter Nu" (not "Latin Small Letter V")
+
+**The Big Idea**: You already know a minimum from Algebra 2 (the smaller of two numbers). The progress radius is just the smallest of three lengths that each could limit an algorithm, so that one number is safe with respect to all of them. See the Min Function and Eta entries.
+
+**General Usage**: $\nu=\min(\eta,\;d_{\text{goal}},\;d_{\text{clearance}})$, where $\eta$ is the longest single extension a planner can make, $d_{\text{goal}}$ is the radius of the goal region, and $d_{\text{clearance}}$ is the distance from a chosen solution path to the nearest obstacle. Because $\nu$ is at most the clearance, every point within distance $\nu$ of the path is obstacle-free.
+
+**Example.** Let $\eta=0.5$, $d_{\text{goal}}=0.3$, $d_{\text{clearance}}=0.2$.
+1. List the three values: $0.5,\;0.3,\;0.2$.
+2. The smallest is $0.2$, so $\nu=0.2$.
+3. A path of length $L=1.6$ is cut into pieces of length $\nu/5=0.04$.
+4. The number of pieces is $m=5L/\nu=5(1.6)/0.2=40$.
+
+**AI/ML Usage**: Used in proofs that sampling-based motion planners (for example RRT, the Rapidly-exploring Random Tree, which grows a tree of reachable positions by random sampling) are probabilistically complete, meaning the chance of finding a solution approaches 1 as the number of random samples grows. The proof steps along the solution path in increments of $\nu/5$.
 
 ---
 
@@ -2124,6 +2282,47 @@ On macOS: type R normally; for θ, open the character picker (Fn/🌐) and searc
 
 ---
 
+<a id="rrt-neighborhood-radius"></a>
+### RRT* Neighborhood Radius — `min{γ (log|V| / |V|)^(1/d), η}`
+Symbol: a fixed expression built from $\gamma$ (Greek small gamma), $\eta$ (Greek small eta), $\log$, the size $|V|$ of the vertex set, and the dimension $d$  
+On macOS: type the letters and operators normally; for $\gamma$ and $\eta$ open the character picker (Fn/🌐) and search "greek small letter gamma" / "greek small letter eta"
+
+**The Big Idea**: This combines entries already: the Min Function ($\min\{a,b\}$ picks the smaller), the Logarithm, Set Cardinality ($|V|$ = number of items), Gamma and Eta (named constants), and fractional exponents from Algebra 2 ($x^{1/2}$ is a square root, $x^{1/d}$ is the $d$-th root).
+
+**General Usage**: In the RRT* algorithm (see the Rapidly-Exploring Random Graph (RRG) and RRT* entry in the math_concepts file), when a new vertex is added to a tree $V$ of vertices, all existing vertices closer than a radius $r$ are examined as possible parents or as vertices to reroute. The radius is $r=\min\{\gamma(\log|V|/|V|)^{1/d},\ \eta\}$, where $d$ is the number of dimensions of the space planned in, $\gamma$ is a constant that must be large enough for the optimality guarantee, and $\eta$ is a cap on the radius. As the tree grows, $\log|V|/|V|$ shrinks, so $r$ shrinks; the $\log$ keeps the expected number of neighbors from falling to zero.
+
+**Example.** With $d=2$, $\gamma=10$, $\eta=3$ and natural logarithm:
+
+| $\lvert V\rvert$ | $\log\lvert V\rvert/\lvert V\rvert$ | Square root ($1/d=1/2$) | Times $\gamma$ | Cap by $\eta=3$ |
+|---|---|---|---|---|
+| 4 | $1.386/4=0.3466$ | $0.5887$ | $5.887$ | $3$ |
+| 100 | $4.605/100=0.04605$ | $0.2146$ | $2.146$ | $2.146$ |
+| 1000 | $6.908/1000=0.006908$ | $0.0831$ | $0.831$ | $0.831$ |
+
+**AI/ML Usage**: Used inside RRT*, a widely used optimal motion-planning algorithm for robot arms and mobile robots. The shrinking radius is what lets RRT* rewire the tree efficiently while still converging to the cheapest path as the number of samples grows (Karaman and Frazzoli's analysis).
+
+---
+
+<a id="sample-space"></a>
+### Sample Space — `Ω`
+Symbol: Ω, Greek capital letter omega; the lowercase ω is a different symbol (see the Omega entry)  
+On macOS: press Option+Z, or open the character picker (Fn/🌐) and search "greek capital letter omega" — avoid the "ohm sign" Ω (U+2126), which looks the same
+
+**The Big Idea**: You already know the idea from solution sets: the set of all values that satisfy an equation. $\Omega$ is the set of every possible outcome of a random experiment, and a single outcome is written with the lowercase $\omega$. It goes beyond Algebra 2 only because the "outcome" can be large, such as an entire sequence of random draws.
+
+**General Usage**: In probability, $\Omega$ is the sample space: the set of all outcomes that could occur. One specific outcome is $\omega \in \Omega$ (see the Element-of Symbol entry). A statement like "for all $\omega \in \Omega$" means "no matter how the randomness turned out."
+
+**Example.** Roll one six-sided die.
+
+1. The possible outcomes are $\Omega = \{1,2,3,4,5,6\}$.
+2. One particular result, say a $4$, is $\omega = 4$, and $\omega \in \Omega$.
+3. A property holding "for all $\omega \in \Omega$" must be true for each of the six results. For example, "the roll is at most $6$" holds for every $\omega$.
+4. Roll two dice: each outcome is now a pair such as $\omega = (3,5)$, and $\Omega$ has $6 \times 6 = 36$ elements.
+
+**AI/ML Usage**: In the analysis of randomized planners, $\Omega$ is the set of all possible random sample draws, and a fixed $\omega$ is one particular batch of $n$ sampled points. Proofs about PRM-style planners (see the Simple PRM (sPRM) and PRM* entry in the math_concepts file) compare two algorithms run on the same $\omega$, showing something like "for all $\omega \in \Omega$, one algorithm's graph contains the other's." Any statement about a probability of success is a statement about how much of $\Omega$ leads to success.
+
+---
+
 <a id="sampling-notation"></a>
 ### Sampling Notation — `x ∼ P`
 Symbol: ∼, the tilde operator (people commonly use the ordinary keyboard tilde ~ instead)  
@@ -2164,6 +2363,27 @@ On macOS: open the character picker (Fn/🌐) and search "script capital l" — 
 **General Usage**: $\mathcal{L}$ commonly denotes a loss function — see Loss Function for a fully worked numeric example, since it plays exactly the same role, just written in a different, fancier font.
 
 **AI/ML Usage**: The standard symbol for the loss function that a neural network's entire training process is trying to minimize at every single step. You'll see $\mathcal{L}(\theta)$ or $\mathcal{L}(w)$ used in essentially every deep learning research paper as the exact quantity that gradient descent (the standard training algorithm, which repeatedly nudges a model's numbers to reduce its errors) is being applied to reduce, step after step, throughout training.
+
+---
+
+<a id="set-intersection"></a>
+### Set Intersection — `∩`
+Symbol: ∩, the intersection sign (U+2229); it looks like an upside-down U, and the union sign ∪ is the reverse  
+On macOS: open the character picker (Fn/🌐) and search "intersection" — pick the plain "intersection" ∩, not the larger "n-ary intersection" ⋂, and take care not to pick the union symbol ∪
+
+**The Big Idea**: You have solved systems of inequalities, and the solution is the set of points that satisfy both at once, the overlap of two shaded regions. That overlap is exactly an intersection. It is the "and" partner of the Set Union entry ($\cup$, "in either"); the logical version is the Conjunction entry ($\wedge$).
+
+**General Usage**: For two sets $A$ and $B$, $A \cap B$ is the set of all elements that belong to both $A$ and $B$. If they share nothing, $A \cap B = \emptyset$ (see the Empty Set entry).
+
+**Example.** Let $A = \{1,2,3,4\}$ and $B = \{3,4,5,6\}$.
+
+1. Check each element of $A$: $1$ is not in $B$; $2$ is not in $B$; $3$ is in $B$; $4$ is in $B$.
+2. The shared elements are $3$ and $4$, so $A \cap B = \{3,4\}$.
+3. Compare the union: $A \cup B = \{1,2,3,4,5,6\}$, which contains everything from either set.
+4. Check a disjoint case: for $\{1,2\}$ and $\{7,8\}$, no element appears in both, so the intersection is $\emptyset$.
+5. Inequalities: for the system $x>1$ and $x<5$, $\{x>1\}\cap\{x<5\}=\{1<x<5\}$.
+
+**AI/ML Usage**: In motion planning, $V \cap \mathcal{X}_{\text{goal}}$ is the set of sampled vertices that landed inside the goal region; probabilistic completeness for sampling-based planners asks for that overlap to be non-empty (see the Probabilistic Completeness Bound entry and the Probabilistic Completeness entry in the math_concepts file). In data work, the intersection of two search results or two sets of labels finds the items they have in common, and overlap between predicted and true regions of an image is measured the same way.
 
 ---
 
@@ -2345,7 +2565,7 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter sig
 
 <a id="start-of-sentence-token"></a>
 ### Start-of-Sentence Token — `<s>`
-Symbol: <s>, angle brackets around a lowercase s, read as "start of sentence"  
+Symbol: `<s>`, angle brackets around a lowercase s, read as "start of sentence"  
 On macOS: type normally from the keyboard — Shift+, (comma) for < and Shift+. (period) for >
 
 **The Big Idea**: No new math — this is a placeholder, the same idea as padding a short list with a filler value so every entry has something in the same fixed position. Here, the filler stands in for "the words before the sentence began," since there aren't any real ones to condition on yet.
@@ -2519,6 +2739,30 @@ On macOS: type the letter, then open the character picker (Fn/🌐), search "com
 
 ---
 
+<a id="time-derivative-dot-notation"></a>
+### Time Derivative (Dot Notation) — `ẋ`
+Symbol: a dot placed above a letter, as in ẋ or q̇ (a "combining dot above" mark, U+0307, drawn over the letter); in LaTeX it is written `\dot{x}`  
+On macOS: open the character picker (Fn/🌐) and search "combining dot above" and insert it right after the letter — it may not display well in every font, so in written math it is usually typeset (e.g. $\dot{x}$) rather than typed
+
+**The Big Idea**: You already know that speed is "how fast position changes," and that slope is "how fast $y$ changes as $x$ changes." A dot over a letter is the same idea, with time as the thing that changes: $\dot x$ means "how fast $x$ is changing per unit time." Where an entry needs it, this is a small step into calculus (the notion of an instantaneous rate of change, see the Partial Derivative entry for the general notion); for the constant-rate cases below, Algebra 2 slope is all you need.
+
+**General Usage**: For a quantity $x$ that changes over time, $\dot x$ (read "x dot") is its **rate of change with respect to time**, also called its **time derivative**. Two dots, $\ddot x$ ("x double dot"), mean the rate of change of the rate of change. If $q$ is a position, then $\dot q$ is velocity and $\ddot q$ is acceleration. A statement like $\dot x = f(x,u)$ is a rule: it says how fast the state $x$ is changing, given the current state $x$ and a command $u$.
+
+**Example.** A car's position along a road is $q(t) = 3t$ meters after $t$ seconds.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Find the position at two times | $q(2)=3(2)=6$ and $q(5)=3(5)=15$ | 6 m and 15 m |
+| 2. Compute the change in position | $15-6$ | 9 m |
+| 3. Compute the change in time | $5-2$ | 3 s |
+| 4. Divide (this is the slope of the line $q=3t$) | $\dot q = 9/3$ | $3$ m/s |
+
+Because the position is a straight line, its rate of change is the same at every moment: $\dot q = 3$ m/s, the slope. Check: $q$'s coefficient of $t$ is $3$ ✓.
+
+**AI/ML Usage**: In robot motion planning, a robot's **state** is often written $x=(q,\dot q)$: its position $q$ together with its velocity $\dot q$. The rule $\dot x = f(x,u)$ (see the State Transition Function entry, which is the same idea for discrete steps) describes how the robot's state evolves when command $u$ is applied, and planners built on it are called kinodynamic planners (see the Kinodynamic Planning entry in the math_concepts file).
+
+---
+
 <a id="training-set"></a>
 ### Training Set — `S`
 Symbol: S, an ordinary capital letter S  
@@ -2546,6 +2790,54 @@ On macOS: open the character picker (Fn/🌐) and search "script capital u" and 
 **Example.** Drawing repeatedly from $\mathcal{U}(0,1)$ might produce values like $0.42$, then $0.87$, then $0.03$ — every value between 0 and 1 is exactly as likely as every other, unlike a bell curve, which favors values near its center.
 
 **AI/ML Usage**: Commonly used to describe exactly how a neural network's weights are randomly initialized right before training even begins, which turns out to matter a lot for whether training goes smoothly. A widely used scheme called Xavier or Glorot initialization draws each individual initial weight from a uniform distribution over a carefully, mathematically chosen range, specifically designed to help training start off numerically stable, rather than exploding or vanishing right from the very first few updates.
+
+---
+
+<a id="unit-ball-volume"></a>
+### Unit Ball Volume — `ζ_d`
+Symbol: ζ, Greek small letter zeta, with the subscript $d$ for the number of dimensions  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter zeta"
+
+**The Big Idea**: You know that a circle of radius $1$ has area $\pi$ and a sphere of radius $1$ has volume $\tfrac{4}{3}\pi$. $\zeta_d$ is the same idea for any number of dimensions $d$: the volume of the ball of radius $1$. It goes beyond Algebra 2 only in that $d$ can exceed $3$, where you cannot picture the ball but can still compute its volume. See the Measure (Volume) of a Set entry for what volume means here, and the Ball of Radius r entry for the ball itself.
+
+**General Usage**: $\zeta_d$ is the volume of the **unit ball** (all points within distance $1$ of the center) in $d$-dimensional space. A ball of radius $r$ in $d$ dimensions has volume $\zeta_d\, r^d$.
+
+| Dimension $d$ | Shape | $\zeta_d$ |
+|---|---|---|
+| 1 | interval $[-1,1]$ | $2$ |
+| 2 | disk of radius 1 | $\pi\approx3.1416$ |
+| 3 | sphere of radius 1 | $\tfrac43\pi\approx4.1888$ |
+
+**Example.** Volumes of balls of radius $r=2$.
+
+1. In $d=1$: the ball is the segment from $-2$ to $2$, so the volume (length) is $\zeta_1 \cdot 2^1 = 2 \cdot 2 = 4$. Check: $2-(-2)=4$.
+2. In $d=2$: $\zeta_2 \cdot 2^2 = \pi \cdot 4 \approx 12.57$, the area of a circle of radius $2$.
+3. In $d=3$: $\zeta_3 \cdot 2^3 = \tfrac{4}{3}\pi \cdot 8 \approx 33.51$, the volume of a sphere of radius $2$.
+
+**AI/ML Usage**: In sampling-based planning, the number of neighbors within a search radius $r$ depends on the ball volume $\zeta_d\, r^d$. The optimality conditions for PRM* and RRT* contain the ratio $\mu(\mathcal{X}_{\text{free}})/\zeta_d$, comparing the volume of the free space to the volume of a unit ball, so that the connection radius is chosen large enough for the roadmap to stay connected (see the Connection Radius Constant entry, and the Simple PRM (sPRM) and PRM* entry in the math_concepts file).
+
+---
+
+<a id="unit-hypercube"></a>
+### Unit Hypercube — `[0,1]^d`
+Symbol: [0,1]^d — square brackets around 0 and 1 (a closed interval, meaning both endpoints are included) with a small raised d giving the number of dimensions  
+On macOS: type normally from the keyboard; the raised d is written as a superscript in typeset math (`[0,1]^d`)
+
+**The Big Idea**: You have already met $[0,1]$ as the set of all numbers from $0$ to $1$ (an interval, from Algebra 2 inequalities: $0 \le x \le 1$). Stacking $d$ copies of that interval, one per coordinate, gives a square when $d=2$ (all points $(x,y)$ with both between $0$ and $1$) and a cube when $d=3$. "Hypercube" is the same shape in any number $d$ of dimensions, which you cannot draw when $d>3$ but can still describe with the same rule. See the Real Numbers entry.
+
+**General Usage**: $[0,1]^d$ is the set of all lists $(x_1, x_2, \dots, x_d)$ of $d$ real numbers such that every entry satisfies $0 \le x_i \le 1$. The exponent $d$ is the number of dimensions (number of coordinates), not a power in the usual multiplication sense. Its volume is $1\times 1\times\cdots\times 1=1$ for every $d$, so the probability that a uniformly random point lands in a region inside it equals that region's volume. Any bounded region of space can be rescaled (stretched or shrunk, one coordinate at a time) to fit inside it, so it is a convenient standard shape for stating results.
+
+**Example.** For $d=2$, test whether three points lie in $[0,1]^2$.
+
+| Point | Coordinates in $[0,1]$? | In $[0,1]^2$? |
+|---|---|---|
+| $(0.3,\ 0.9)$ | $0\le0.3\le1$ yes; $0\le0.9\le1$ yes | Yes |
+| $(1,\ 0)$ | both endpoints allowed, yes | Yes |
+| $(0.5,\ 1.2)$ | $1.2 > 1$, no | No |
+
+Rescaling check: a room spanning $x$ from $0$ to $8$ meters and $y$ from $0$ to $5$ meters becomes a unit square by dividing every $x$ by $8$ and every $y$ by $5$; the point $(4, 2.5)$ maps to $(0.5, 0.5)$ ✓. Probability check: a disk of radius $0.1$ inside the unit square has area $\pi(0.1)^2\approx 0.0314$, so a uniform random point lands in it with probability about $3.1\%$.
+
+**AI/ML Usage**: Used to state the setting of motion-planning theory: a robot's space of possible positions (its configuration space) is modeled as $[0,1]^d$, where $d$ is the number of independent ways it can move (for a robot arm, the number of joints), and random samples are drawn uniformly from it. The ratio "volume of target region / volume of cube" is then the per-sample success probability. Proofs that a sampling-based planner such as a Rapidly-Exploring Random Tree (RRT) will eventually find a path (see the Probabilistic Completeness entry in the math_concepts file) are typically stated for this shape. The same normalization is used for random search over hyperparameters, each rescaled to lie in $[0,1]$.
 
 ---
 
@@ -2650,6 +2942,21 @@ The result always points along the same line as $\mathbf{u}$ (matching its direc
 Check: the leftover piece should point perpendicular to $\mathbf{u}$, meaning its dot product with $\mathbf{u}$ should come out to exactly $0$: $(-1.6)(3)+(1.2)(4) = -4.8+4.8=0$. It does, confirming the projection was computed correctly.
 
 **AI/ML Usage**: Vector projection is the core mathematical tool behind measuring and modifying a specific "direction of meaning" inside a word embedding space (see the Word Embedding entry in the math_concepts file). Bolukbasi et al. (2016) measure how strongly a word leans toward a stereotype — for example, how strongly an occupation word's embedding leans "male" or "female" — by projecting it onto a direction defined by gendered word pairs, then attempt to remove that association by subtracting the projection back off, exactly the $\mathbf{v}-\text{proj}_{\mathbf{u}}(\mathbf{v})$ computation shown above (see the Debiasing (Word Embeddings) entry in the math_concepts file). More generally, projection is also the core operation behind Principal Component Analysis (see that entry), which finds the directions capturing the most variation in a dataset by repeatedly projecting data onto candidate directions.
+
+---
+
+<a id="vertex-set-after-n-samples"></a>
+### Vertex Set After n Samples — `V_n`
+Symbol: V, an ordinary capital letter V with subscript n (sometimes a superscript naming the algorithm, as in V_n^RRT*)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: A set is a labeled collection, as in Algebra 2 solution sets; $V_n$ is simply "the collection of all nodes in the graph so far," relabeled after each new sample so that the subscript records how many samples have been drawn.
+
+**General Usage**: In a sampling-based planner that grows a graph or tree, $V_n$ is the set of **vertices** (nodes, each a robot state) after $n$ samples. The statement $V_n\cap X_{goal}\ne\emptyset$ ("the overlap of $V_n$ with the goal set is not empty") means at least one vertex lies in the goal region, i.e. a path to the goal has been found.
+
+**Example.** After $n=3$ samples an RRT has $V_3=\{(0,0),(1,0),(1,1)\}$. If the goal region is the square $[2,3]\times[2,3]$, the overlap $V_3\cap X_{goal}=\emptyset$ (no vertex is in it), so no solution yet. After a fourth sample lands at $(2.5,2.5)$, $V_4\cap X_{goal}=\{(2.5,2.5)\}\ne\emptyset$, so a solution exists.
+
+**AI/ML Usage**: Probabilistic-completeness theorems are stated as bounds on $\mathbb{P}(V_n\cap X_{goal}\ne\emptyset)$ (see the Probabilistic Completeness entry in the math_concepts file).
 
 ---
 
