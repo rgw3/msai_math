@@ -296,15 +296,15 @@ On macOS: build it from an ordinary capital B and a subscript; in LaTeX type `B_
 ---
 
 <a id="best-solution-cost"></a>
-### Best Solution Cost — `c_best, c_min`
-Symbol: c, an ordinary lowercase letter c, with a subscript word (best or min)  
+### Best Solution Cost — `c_best`
+Symbol: c, an ordinary lowercase letter c, with the subscript word best  
 On macOS: type normally from the keyboard; the subscript is written with an underscore in plain text, c_best
 
 **The Big Idea**: This is just a variable name, like $x$ or $y$ in Algebra 2, chosen to hold "the cost of the best answer so far" — the same way you might write $m$ for the smallest value seen while scanning a list. See the Optimal Cost / True Cost entry for the related idea of the best possible cost.
 
-**General Usage**: In path planning, $c_{best}$ is the length (or other cost) of the cheapest complete path from start to goal that the algorithm has found so far; it can only stay the same or decrease as the search continues. $c_{min}$ is the smallest cost that is theoretically possible, which in a world with no obstacles is the straight-line distance from start to goal.
+**General Usage**: In path planning, $c_{best}$ is the length (or other cost) of the cheapest complete path from start to goal that the algorithm has found so far; it can only stay the same or decrease as the search continues (a new path replaces the old one only when it is cheaper). In a world with no obstacles nothing can beat the straight line from start to goal, so that distance is the smallest value $c_{best}$ can ever reach.
 
-**Example.** A planner's first path from start to goal has length $148.24$, its next has length $107.12$, and the straight-line distance between start and goal is $100$. Then $c_{best}$ goes $148.24 \to 107.12$ (never upward), and $c_{min}=100$. The gap $c_{best}-c_{min}$ shrinks from $48.24$ to $7.12$, measuring how far from ideal the current answer is.
+**Example.** A planner's first path from start to goal has length $148.24$, its next has length $107.12$, and the straight-line distance between start and goal is $100$. Then $c_{best}$ goes $148.24 \to 107.12$ (never upward). The gap between $c_{best}$ and the straight-line distance $100$ shrinks from $48.24$ to $7.12$, measuring how far from ideal the current answer is.
 
 **AI/ML Usage**: Informed RRT* (see the Informed RRT* entry in the math_concepts file) uses $c_{best}$ as the fixed distance-sum that defines the ellipse in which it keeps drawing samples; each time a cheaper path is found, $c_{best}$ drops and the ellipse shrinks. In general, "best cost so far" is the bookkeeping variable of almost every anytime optimization algorithm — one that can be stopped at any moment and still return its best answer so far.
 
@@ -2077,9 +2077,9 @@ On macOS: type $1-e^{-an}$ normally; for $\mathbb{P}$ use the blackboard-bold le
 
 **The Big Idea**: This is the exponential-decay idea from Algebra 2 (a quantity like $e^{-an}$ that shrinks by the same factor each time $n$ goes up by one) subtracted from $1$. See the Euler's Number / Exponential Function entry for $e^x$, and the Probability entry for $P(x)$.
 
-**General Usage**: $\mathbb{P}\big(\{V_n \cap \mathcal{X}_{goal} \neq \emptyset\}\big) > 1-e^{-an}$ for all $n>n_0$ says: the chance that, after $n$ random samples, at least one vertex of the search tree (the set $V_n$) lies inside the goal region $\mathcal{X}_{goal}$ is at least $1-e^{-an}$. The constants $a>0$ and $n_0$ (a whole number) depend on the problem's map, not on $n$. Because $e^{-an}\to 0$ as $n$ grows, the bound tends to $1$. See the Set Intersection, Empty Set and Not Equal entries for $\cap$, $\emptyset$ and $\neq$.
+**General Usage**: $\mathbb{P}\big(\{V_n \cap \mathcal{X}_{goal} \neq \emptyset\}\big) > 1-e^{-an}$ for all $n>n_0$ says: the chance that, after $n$ random samples, at least one vertex of the search tree (the set $V_n$) lies inside the goal region $\mathcal{X}_{goal}$ is strictly greater than $1-e^{-an}$. The constants $a>0$ and $n_0$ (a whole number) depend on the problem's map, not on $n$. Because $e^{-an}\to 0$ as $n$ grows, the bound tends to $1$. See the Set Intersection, Empty Set and Not Equal entries for $\cap$, $\emptyset$ and $\neq$.
 
-**Example.** Take $a=0.05$. At $n=20$: $e^{-0.05\cdot 20}=e^{-1}\approx 0.368$, so the bound is $1-0.368=0.632$. At $n=100$: $e^{-5}\approx 0.0067$, so the bound is $\approx 0.993$. At $n=200$: $e^{-10}\approx 0.0000454$, bound $\approx 0.99995$. Each time $n$ goes up the failure allowance $e^{-an}$ is multiplied down, so the guarantee closes in on certainty.
+**Example.** Take $a=0.05$ (and suppose $n_0$ is smaller than the values of $n$ used). At $n=20$: $e^{-0.05\cdot 20}=e^{-1}\approx 0.368$, so the bound is $1-0.368=0.632$. At $n=100$: $e^{-5}\approx 0.0067$, so the bound is $\approx 0.993$. At $n=200$: $e^{-10}\approx 0.0000454$, bound $\approx 0.99995$. Each extra sample multiplies the failure allowance $e^{-an}$ by $e^{-a}<1$, so the guarantee closes in on certainty.
 
 **AI/ML Usage**: This is the form of the guarantee for the Rapidly-Exploring Random Tree (RRT), a robot motion-planning algorithm that grows a tree of collision-free motions toward random sample points. It is the formal statement of probabilistic completeness (see the Probabilistic Completeness entry in the math_concepts file). Bounds of the form $1-e^{-an}$ appear throughout the analysis of randomized algorithms.
 
@@ -2131,7 +2131,7 @@ On macOS: press Option+Shift+P
 ---
 
 <a id="progress-radius"></a>
-### Progress Radius — `\nu = \min(\eta, d_goal, d_clearance)`
+### Progress Radius — `ν = min(η, d_goal, d_clearance)`
 Symbol: $\nu$, Greek small letter nu (looks like a slanted "v" but with a rounded left stroke; do not confuse with the Latin letter v)  
 On macOS: open the character picker (Fn/globe key) and search "greek small letter nu" -- pick the one named exactly "Greek Small Letter Nu" (not "Latin Small Letter V")
 
@@ -2289,7 +2289,7 @@ On macOS: type the letters and operators normally; for $\gamma$ and $\eta$ open 
 
 **The Big Idea**: This combines entries already: the Min Function ($\min\{a,b\}$ picks the smaller), the Logarithm, Set Cardinality ($|V|$ = number of items), Gamma and Eta (named constants), and fractional exponents from Algebra 2 ($x^{1/2}$ is a square root, $x^{1/d}$ is the $d$-th root).
 
-**General Usage**: In the RRT* algorithm (see the Rapidly-Exploring Random Graph (RRG) and RRT* entry in the math_concepts file), when a new vertex is added to a tree $V$ of vertices, all existing vertices closer than a radius $r$ are examined as possible parents or as vertices to reroute. The radius is $r=\min\{\gamma(\log|V|/|V|)^{1/d},\ \eta\}$, where $d$ is the number of dimensions of the space planned in, $\gamma$ is a constant that must be large enough for the optimality guarantee, and $\eta$ is a cap on the radius. As the tree grows, $\log|V|/|V|$ shrinks, so $r$ shrinks; the $\log$ keeps the expected number of neighbors from falling to zero.
+**General Usage**: In the RRT* algorithm (see the Rapidly-Exploring Random Graph (RRG) and RRT* entry in the math_concepts file), when a new vertex is added to a tree $V$ of vertices, all existing vertices closer than a radius $r$ are examined as possible parents or as vertices to reroute. The radius is $r=\min\{\gamma(\log|V|/|V|)^{1/d},\ \eta\}$, where $d$ is the number of dimensions of the space planned in, $\gamma$ is a constant that must be large enough for the optimality guarantee, and $\eta$ is a cap on the radius. Once the tree is large, $\log|V|/|V|$ shrinks as $|V|$ grows, so $r$ shrinks; the cap $\eta$ stops the radius from being enormous while the tree is still tiny.
 
 **Example.** With $d=2$, $\gamma=10$, $\eta=3$ and natural logarithm:
 
@@ -2299,7 +2299,7 @@ On macOS: type the letters and operators normally; for $\gamma$ and $\eta$ open 
 | 100 | $4.605/100=0.04605$ | $0.2146$ | $2.146$ | $2.146$ |
 | 1000 | $6.908/1000=0.006908$ | $0.0831$ | $0.831$ | $0.831$ |
 
-**AI/ML Usage**: Used inside RRT*, a widely used optimal motion-planning algorithm for robot arms and mobile robots. The shrinking radius is what lets RRT* rewire the tree efficiently while still converging to the cheapest path as the number of samples grows (Karaman and Frazzoli's analysis).
+**AI/ML Usage**: Used inside RRT*, a widely used optimal motion-planning algorithm for robot arms and mobile robots. It sets the size of the neighborhood of nearby vertices that RRT* examines for each new vertex, and it shrinks as the tree grows (Karaman and Frazzoli's analysis).
 
 ---
 
@@ -2814,7 +2814,7 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter zet
 2. In $d=2$: $\zeta_2 \cdot 2^2 = \pi \cdot 4 \approx 12.57$, the area of a circle of radius $2$.
 3. In $d=3$: $\zeta_3 \cdot 2^3 = \tfrac{4}{3}\pi \cdot 8 \approx 33.51$, the volume of a sphere of radius $2$.
 
-**AI/ML Usage**: In sampling-based planning, the number of neighbors within a search radius $r$ depends on the ball volume $\zeta_d\, r^d$. The optimality conditions for PRM* and RRT* contain the ratio $\mu(\mathcal{X}_{\text{free}})/\zeta_d$, comparing the volume of the free space to the volume of a unit ball, so that the connection radius is chosen large enough for the roadmap to stay connected (see the Connection Radius Constant entry, and the Simple PRM (sPRM) and PRM* entry in the math_concepts file).
+**AI/ML Usage**: In sampling-based planning, the optimality conditions for RRG, PRM* and RRT* contain the ratio $\mu(\mathcal{X}_{\text{free}})/\zeta_d$, comparing the volume of the free space to the volume of a unit ball; the connection-radius constant must exceed a threshold built from it (see the Connection Radius Constant entry, and the Simple PRM (sPRM) and PRM* entry in the math_concepts file).
 
 ---
 
@@ -2954,7 +2954,7 @@ On macOS: type normally from the keyboard
 
 **General Usage**: In a sampling-based planner that grows a graph or tree, $V_n$ is the set of **vertices** (nodes, each a robot state) after $n$ samples. The statement $V_n\cap X_{goal}\ne\emptyset$ ("the overlap of $V_n$ with the goal set is not empty") means at least one vertex lies in the goal region, i.e. a path to the goal has been found.
 
-**Example.** After $n=3$ samples an RRT has $V_3=\{(0,0),(1,0),(1,1)\}$. If the goal region is the square $[2,3]\times[2,3]$, the overlap $V_3\cap X_{goal}=\emptyset$ (no vertex is in it), so no solution yet. After a fourth sample lands at $(2.5,2.5)$, $V_4\cap X_{goal}=\{(2.5,2.5)\}\ne\emptyset$, so a solution exists.
+**Example.** Start an RRT at $x_{init}=(0,0)$. After $n=3$ samples suppose the tree holds $V_3=\{(0,0),(1,0),(1,1)\}$ (a sample whose motion hit an obstacle is discarded, so $V_n$ can hold fewer than $n+1$ vertices). If the goal region is the square $[2,3]\times[2,3]$, the overlap $V_3\cap X_{goal}=\emptyset$ (no vertex is in it), so no solution yet. If the fourth sample adds a vertex at $(2.5,2.5)$, then $V_4\cap X_{goal}=\{(2.5,2.5)\}\ne\emptyset$, so a solution exists.
 
 **AI/ML Usage**: Probabilistic-completeness theorems are stated as bounds on $\mathbb{P}(V_n\cap X_{goal}\ne\emptyset)$ (see the Probabilistic Completeness entry in the math_concepts file).
 
