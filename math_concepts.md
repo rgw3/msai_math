@@ -7,81 +7,92 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 212 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 246 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Non-Parametric Method | Normal Equations to Word2Vec |
+| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Nucleus Sampling (Top-p Sampling) | Objective Function / Training Objective to WordPiece Tokenization |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Normal Equations](#normal-equations) |
-| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [NP-Hard](#np-hard) |
-| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [One-vs-All](#one-vs-all) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Orthonormal Basis](#orthonormal-basis) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Overfitting](#overfitting) |
-| [Arity](#arity) | [Gradient Clipping](#gradient-clipping) | [PAC Learning](#pac-learning) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Gradient Descent](#gradient-descent) | [PDDL](#pddl) |
-| [Automatic Differentiation](#automatic-differentiation) | [Graphical Lasso](#graphical-lasso) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [GraphPlan](#graphplan) | [Perplexity](#perplexity) |
-| [Backpointer](#backpointer) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Backpropagation](#backpropagation) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Planner Completeness](#planner-completeness) |
-| [Bag of Words](#bag-of-words) | [Grounding / Instantiation](#grounding-instantiation) | [Planning Graph](#planning-graph) |
-| [Basis Function](#basis-function) | [Hedge Algorithm](#hedge-algorithm) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Batch](#batch) | [Hierarchical Softmax](#hierarchical-softmax) | [Positional Encoding](#positional-encoding) |
-| [Batch Normalization](#batch-normalization) | [Hinge Loss](#hinge-loss) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Bayes' Rule](#bayes-rule) | [Hyperparameter](#hyperparameter) | [Posterior Distribution](#posterior-distribution) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Precision Matrix](#precision-matrix) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Principal Component Analysis](#principal-component-analysis) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Informed RRT*](#informed-rrt) | [Prior Distribution](#prior-distribution) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Priority Queue](#priority-queue) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jensen's Inequality](#jensens-inequality) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Centroid](#centroid) | [K-Means Algorithm](#k-means-algorithm) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Quadratic Form](#quadratic-form) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kernel Function](#kernel-function) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [Chernoff Bound](#chernoff-bound) | [Kinodynamic Planning](#kinodynamic-planning) | [Random Forest](#random-forest) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [KL Divergence](#kl-divergence) | [Random Projection](#random-projection) |
-| [Closed-World Assumption](#closed-world-assumption) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Rank](#rank) |
-| [Clustering](#clustering) | [Latent Variable](#latent-variable) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Computation Graph](#computation-graph) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Conditional Independence](#conditional-independence) | [Likelihood](#likelihood) | [Regularization](#regularization) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linear Programming](#linear-programming) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Consistent Heuristic](#consistent-heuristic) | [Linearly Separable](#linearly-separable) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lipschitz Continuity](#lipschitz-continuity) | [Sample Complexity](#sample-complexity) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Log Likelihood](#log-likelihood) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Logistic Regression](#logistic-regression) | [Schur Complement](#schur-complement) |
-| [Convex Function](#convex-function) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Search Statistics](#search-statistics) |
-| [Coordinate Descent](#coordinate-descent) | [Loss Surface](#loss-surface) | [Self-Attention](#self-attention) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lower Bound](#lower-bound) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Covariance Matrix](#covariance-matrix) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
-| [Cross-Validation](#cross-validation) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
-| [Dead End](#dead-end) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Decision Boundary](#decision-boundary) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
-| [Decision Tree](#decision-tree) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
-| [Diagonal Matrix](#diagonal-matrix) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Monotone Convergence](#monotone-convergence) | [Symmetric Matrix](#symmetric-matrix) |
-| [Discriminative Model](#discriminative-model) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
-| [Dropout](#dropout) | [Multinomial Distribution](#multinomial-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Early Stopping](#early-stopping) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Triangle Inequality](#triangle-inequality) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Mutex](#mutex) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [N-Gram Language Model](#n-gram-language-model) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [EM Algorithm](#em-algorithm) | [Naive Bayes](#naive-bayes) | [Union Bound](#union-bound) |
-| [Epoch](#epoch) | [Named-Entity Type Labels](#named-entity-type-labels) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Log Likelihood](#negative-log-likelihood) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Negative Sampling](#negative-sampling) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neural Network](#neural-network) | [Word Embedding](#word-embedding) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Neuron](#neuron) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Feature Expansion](#feature-expansion) | [Newton's Method](#newtons-method) | [Word2Vec](#word2vec) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Non-Parametric Method](#non-parametric-method) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Objective Function / Training Objective](#objective-function-training-objective) |
+| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [One-Hot Encoding](#one-hot-encoding) |
+| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-vs-All](#one-vs-all) |
+| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [Orthonormal Basis](#orthonormal-basis) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Overfitting](#overfitting) |
+| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PAC Learning](#pac-learning) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GLUE Benchmark](#glue-benchmark) | [PDDL](#pddl) |
+| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Gradient Clipping](#gradient-clipping) | [Perplexity](#perplexity) |
+| [Automatic Differentiation](#automatic-differentiation) | [Gradient Descent](#gradient-descent) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Graphical Lasso](#graphical-lasso) | [Planner Completeness](#planner-completeness) |
+| [Backpointer](#backpointer) | [GraphPlan](#graphplan) | [Planning Graph](#planning-graph) |
+| [Backpropagation](#backpropagation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Bag of Words](#bag-of-words) | [Greedy Decoding](#greedy-decoding) | [Positional Encoding](#positional-encoding) |
+| [BART](#bart) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Basis Function](#basis-function) | [Grounding / Instantiation](#grounding-instantiation) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Batch](#batch) | [Hedge Algorithm](#hedge-algorithm) | [Posterior Distribution](#posterior-distribution) |
+| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Precision Matrix](#precision-matrix) |
+| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Beam Search](#beam-search) | [Hyperparameter](#hyperparameter) | [Principal Component Analysis](#principal-component-analysis) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Prior Distribution](#prior-distribution) |
+| [BERT](#bert) | [Indicator Function](#indicator-function) | [Priority Queue](#priority-queue) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Informed RRT*](#informed-rrt) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Jensen's Inequality](#jensens-inequality) | [Quadratic Form](#quadratic-form) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jump Point Search (JPS)](#jump-point-search-jps) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [K-Means Algorithm](#k-means-algorithm) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Random Forest](#random-forest) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kernel Function](#kernel-function) | [Random Projection](#random-projection) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Rank](#rank) |
+| [Centroid](#centroid) | [Kinodynamic Planning](#kinodynamic-planning) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [KL Divergence](#kl-divergence) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Regularization](#regularization) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Latent Variable](#latent-variable) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Chernoff Bound](#chernoff-bound) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Layer Normalization](#layer-normalization) | [RoBERTa](#roberta) |
+| [Closed-World Assumption](#closed-world-assumption) | [Likelihood](#likelihood) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Sample Complexity](#sample-complexity) |
+| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Conditional Independence](#conditional-independence) | [Lipschitz Continuity](#lipschitz-continuity) | [Schur Complement](#schur-complement) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Log Likelihood](#log-likelihood) | [Search Statistics](#search-statistics) |
+| [Consistent Heuristic](#consistent-heuristic) | [Logistic Regression](#logistic-regression) | [Self-Attention](#self-attention) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Semantic Parsing](#semantic-parsing) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Loss Surface](#loss-surface) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Lower Bound](#lower-bound) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Coordinate Descent](#coordinate-descent) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Covariance Matrix](#covariance-matrix) | [Masked Language Modeling](#masked-language-modeling) | [Sparse Attention](#sparse-attention) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Cross-Validation](#cross-validation) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
+| [Dead End](#dead-end) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Minimum Description Length](#minimum-description-length) | [Subword Tokenization](#subword-tokenization) |
+| [Decision Boundary](#decision-boundary) | [Model Complexity](#model-complexity) | [Support Vector Machine](#support-vector-machine) |
+| [Decision Tree](#decision-tree) | [Momentum](#momentum) | [Surrogate Loss](#surrogate-loss) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monotone Convergence](#monotone-convergence) | [Swept Volume](#swept-volume) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monotonic Function](#monotonic-function) | [Symmetric Matrix](#symmetric-matrix) |
+| [Diagonal Matrix](#diagonal-matrix) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Syntactic Parsing](#syntactic-parsing) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multinomial Distribution](#multinomial-distribution) | [T5](#t5) |
+| [Discriminative Model](#discriminative-model) | [Multitask Learning](#multitask-learning) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Teacher Forcing](#teacher-forcing) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Mutex](#mutex) | [Tensor](#tensor) |
+| [Dropout](#dropout) | [N-Gram Language Model](#n-gram-language-model) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Early Stopping](#early-stopping) | [Naive Bayes](#naive-bayes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Negative Log Likelihood](#negative-log-likelihood) | [Transformer Architecture](#transformer-architecture) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Negative Sampling](#negative-sampling) | [Triangle Inequality](#triangle-inequality) |
+| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Neural Scaling Laws](#neural-scaling-laws) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epoch](#epoch) | [Neural Text Degeneration](#neural-text-degeneration) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Newton's Method](#newtons-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Next Sentence Prediction](#next-sentence-prediction) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Non-Parametric Method](#non-parametric-method) | [Word Embedding](#word-embedding) |
+| [Feature Expansion](#feature-expansion) | [Normal Equations](#normal-equations) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [NP-Hard](#np-hard) | [Word2Vec](#word2vec) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [WordPiece Tokenization](#wordpiece-tokenization) |
 
 ## Concepts
 
@@ -356,6 +367,29 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="bart"></a>
+### BART
+
+**The Big Idea**: This builds directly on the Encoder-Decoder Architecture and Denoising Autoencoder entries below — BART trains a full sequence-to-sequence Transformer (see Encoder-Decoder Architecture) using the Denoising Autoencoder recipe (see that entry): corrupt a piece of text on purpose, then train the model to output the original, clean version of it.
+
+**General Usage**: BART (Bidirectional and Auto-Regressive Transformers) is a sequence-to-sequence Transformer pretrained as a denoising autoencoder (see that entry): a piece of text is corrupted using one of several noising strategies, fed into a bidirectional encoder exactly like BERT's (see the BERT entry above), and an autoregressive decoder — one whose self-attention is causal (see Causal (Masked) Self-Attention above), so it generates output one token at a time — is trained to reconstruct the original, uncorrupted text from the encoder's representation of the corrupted input. Because BART has both an encoder and a decoder, its encoder alone can be used anywhere a BERT-style encoder-only model would be used, and it can additionally perform genuine sequence-to-sequence tasks, such as translation or summarization, that an encoder alone cannot.
+
+**Example.** The BART paper explores several ways of corrupting a short toy document made of five tokens, written as two "sentences," `ABC` and `DE` (shown as `ABC.DE.`, with a period marking the end of each sentence), before asking the model to recover the clean version, `ABC.DE.`:
+
+| Corruption strategy | What it does | Example (from `ABC.DE.`) |
+|---|---|---|
+| Token Masking | Replaces individual tokens with a mask placeholder, one for one, so the corrupted sequence stays the same length as the original | `A_C._E.` |
+| Token Deletion | Removes tokens outright with no placeholder left behind, so the model must also detect *that* something is missing, not only recover *what* it was | `A.C.E.` |
+| Sentence Permutation | Shuffles the order of the sentences making up the document | `DE.ABC.` |
+| Document Rotation | Treats the document as a loop and rotates it to begin at a different, randomly chosen token | `C.DE.AB` |
+| Text Infilling | Collapses a whole span of consecutive tokens — of any length, including a span of zero tokens — into a single mask placeholder, so the model cannot tell from the mask how many tokens, if any, it stands for | `A_.D_E.` |
+
+Every one of these corrupted sequences is paired with the same target output, `ABC.DE.`, and the encoder-decoder model is trained to produce that target regardless of which corruption produced the input it was given.
+
+**AI/ML Usage**: Once pretrained this way, BART is fine-tuned (see Fine-Tuning (Transfer Learning) below) on a labeled dataset for a specific downstream task. For text summarization, the fine-tuning data is a set of (news article, human-written summary) pairs, so the model learns to apply the same "recover the missing or important content" skill it built during pretraining to the specific job of compressing a long input down to a short summary of it.
+
+---
+
 <a id="basis-function"></a>
 ### Basis Function
 
@@ -408,6 +442,39 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="beam-search"></a>
+### Beam Search
+
+**The Big Idea**: Picture choosing a sentence one word at a time by always writing down every word you could possibly add next, then throwing away all but a handful of the most promising options before moving on to the next word — that handful is a "beam." This is a direct generalization of picking the single best next value at every step (which Algebra 2 already does implicitly whenever you compare candidate answers and keep only the largest, e.g. finding the maximum of a short list of numbers): instead of keeping just $1$ best option, beam search keeps a small, fixed number of them, $K$, at every step (see the Dimension / Count Variables entry in `math_symbols.md` for $k$). Keeping only $1$ option is a special case of beam search called **greedy decoding** (see the Greedy Decoding entry below) — beam search softens greedy decoding's all-or-nothing commitment just enough to explore a few more possibilities, without exploring all of them.
+
+**General Usage**: Beam search is an approximate algorithm for finding a high-probability output sequence $y_1, y_2, \ldots, y_n$ from a model that produces the next item's probability distribution one step at a time — either a language model, which places a distribution $P(y_i \mid y_1, \ldots, y_{i-1})$ over the next token given only the tokens generated so far, or a sequence-to-sequence model (see the Encoder-Decoder Architecture entry above), which places a distribution $P(y_i \mid \mathbf{x}, y_1, \ldots, y_{i-1})$ over the next output token given both an input $\mathbf{x}$ and the output tokens generated so far. A model like this defines a probability for every possible complete sequence (multiply the conditional probability of each token, given everything before it, all the way through the sequence), but checking every possible sequence directly — an approach called **exhaustive search** — requires considering $|V|^n$ complete sequences (see the Vocabulary entry in `math_symbols.md` for $V$, the set of all tokens the model can produce): $|V|$ choices for the first token, times $|V|$ choices for the second, and so on for all $n$ positions. Because $|V|^n$ grows exponentially in the sequence length $n$, exhaustive search is computationally infeasible for anything beyond very short outputs.
+
+Beam search avoids this cost by never letting the number of candidate sequences it tracks grow past a fixed **beam width** $K$, chosen in advance. It works as follows, starting from an empty sequence:
+
+1. Ask the model for a distribution over the very first token, and keep only the $K$ single-token sequences ("hypotheses") with the highest probability; discard every other possible first token.
+2. For each of the $K$ surviving hypotheses, ask the model for a distribution over the next token, producing $K \times |V|$ candidate two-token hypotheses in total (each surviving hypothesis extended by every word in the vocabulary). Score each candidate by its total sequence probability so far (the product of every conditional probability along that path), then keep only the $K$ highest-scoring candidates and discard the rest.
+3. Repeat step 2 for every remaining position, always expanding the current $K$ survivors by the full vocabulary and always pruning back down to the top $K$, until a sequence of the target length $n$ has been produced (or every surviving hypothesis has generated a designated "end of sequence" token).
+4. Return the single highest-probability complete sequence among the final $K$ survivors.
+
+Because a low-probability partial sequence is discarded before it is ever extended, beam search is not guaranteed to find the true highest-probability sequence the way exhaustive search is — a hypothesis that looks mediocre after one token but would have led to the single best full sequence can be pruned away too early. It is, however, dramatically cheaper, which is the entire point of using it.
+
+**Example.** Suppose a language model's vocabulary includes (among many other words, represented here by "...") the words "The," "A," "due," and "I," and the beam width is set to $K=3$. At the very first step, the model reports these illustrative probabilities for the first token (invented numbers, chosen only to demonstrate the mechanics, not real model output):
+
+| Step | Action | Result |
+|---|---|---|
+| 1 | Model outputs $P(y_1)$ over the vocabulary | "The" $=0.01$, "A" $=0.005$, "due" $=0.004$, "I" $=0.003$, ... (many more, all smaller) |
+| 2 | Keep top $K=3$, discard the rest | Kept: "The," "A," "due." Discarded: "I" (only $0.003$) and everything below it |
+| 3 | Expand each survivor with every vocabulary word; e.g., expanding "The" alone already produces $\lvert V\rvert$ two-word candidates | "The dog" $=0.0004$, "The cat" $=0.0003$, "The fish" $=0.0002$, ... (each survivor produces its own such list, for $K\times\lvert V\rvert$ candidates total) |
+| 4 | Score by total path probability and keep top $K=3$ overall | E.g. "The dog" survives if it is among the 3 best of all $K\times\lvert V\rvert$ two-word candidates, competing against continuations of "A" and "due" too |
+| 5 | Repeat expand-then-prune for each remaining position, up to length $n$ | Final beam holds $K$ complete length-$n$ sequences |
+| 6 | Return the best of the final $K$ | The single highest total-probability sequence among the survivors |
+
+Multiplying probabilities along a path explains why the numbers shrink so fast: "The dog" $=0.0004$ is $P(\text{"The"})=0.01$ times a (here, invented) conditional probability of about $0.04$ that "dog" follows "The," since $0.01\times0.04=0.0004$; every additional token multiplies in another number smaller than $1$, so joint probabilities shrink quickly the longer a hypothesis gets — exactly the shrinking pattern behind why $|V|^n$ becomes so enormous for exhaustive search.
+
+**AI/ML Usage**: Beam search is used heavily in sequence-to-sequence conditional generation tasks such as machine translation, where producing a genuinely high-probability output matters a great deal: greedy decoding can commit early to a word that later forces a poor continuation, while beam search's wider (but still bounded) search reliably finds something of higher probability. Counting how many times the underlying neural network itself must be run (a "transformer call," one full forward pass producing one distribution over the next token) gives beam search's practical runtime: $1$ call at the first step, then $K$ calls at each of the remaining $n-1$ steps (one per surviving hypothesis, since each must be fed through the model separately), for a total often approximated as $O(Kn)$ calls — versus $O(|V|^n)$ complete sequences for exhaustive search. Over the whole run, beam search scores roughly $K\times|V|\times n$ candidate hypotheses in total (summing the $K\times|V|$ candidates generated at each of the $n$ steps), polynomial in $n$ rather than exponential. In practice, real implementations almost always work with sums of log-probabilities rather than products of raw probabilities (see the Log Likelihood entry above), since multiplying many probabilities smaller than $1$ quickly underflows a computer's floating-point numbers; taking a logarithm turns that product into a sum without changing which sequence scores highest, because the logarithm is a monotonic function (see that entry above). Larger, better-trained language models reduce the practical need for beam search, since they tend to assign high probability to a partial sequence only when a good continuation genuinely exists, an implicit form of "planning ahead" that a small model lacks — combined with beam search's extra computational cost, this is why beam search is used more sparingly with today's largest models than with earlier, smaller ones.
+
+---
+
 <a id="bernoulli-distribution"></a>
 ### Bernoulli Distribution
 
@@ -418,6 +485,19 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 **Example.** A coin that lands heads 70% of the time is described by a Bernoulli distribution with $\theta=0.7$ — a single flip is either heads (success, probability $0.7$) or tails (failure, probability $0.3$), and that's the entire distribution: two outcomes, one number describing their relative likelihood.
 
 **AI/ML Usage**: The Bernoulli distribution is the standard mathematical model for any binary (yes/no) outcome in machine learning — for instance, the output of a binary classifier is often literally modeled as a Bernoulli distribution, with $\theta$ being the model's own predicted probability that a given example belongs to the positive class.
+
+---
+
+<a id="bert"></a>
+### BERT
+
+**The Big Idea**: This builds directly on the Transformer Architecture and Self-Attention entries below — BERT takes the Transformer's self-attention, which already lets every word look at every other word in a sentence at once, and trains it with an objective (see Masked Language Modeling below) specifically designed to take full advantage of that two-directional view, rather than restricting it to only look one way as a plain language model must.
+
+**General Usage**: BERT (Bidirectional Encoder Representations from Transformers) is a pretrained language representation model built from stacked Transformer encoder layers (see Transformer Architecture and Encoder-Decoder Architecture below), trained on two objectives at once: Masked Language Modeling, which predicts words that have been hidden from the input, and Next Sentence Prediction, which predicts whether two chunks of text genuinely follow one another (see both entries below). Because every layer's self-attention is left unrestricted — every position can attend to every other position, both earlier and later in the sequence — BERT produces a "deeply bidirectional" representation of each word, one computed from the entire surrounding sentence jointly, rather than the "shallow" bidirectionality of a model that only concatenates two independently-computed, one-directional views (see the Long Short-Term Memory (LSTM) entry below for the recurrent kind of one-directional model this replaces).
+
+**Example.** Given the input "John visited [MASK] yesterday," BERT's stacked self-attention layers let the model's representation of the masked position draw on "John," "visited," and "yesterday" simultaneously — words from both sides of the gap — when predicting that the missing word is "Madagascar." A one-directional model reading only "John visited" would have to guess without ever seeing "yesterday" at all.
+
+**AI/ML Usage**: BERT (Devlin et al., 2019, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding") is fine-tuned — meaning all of its parameters continue to be updated, rather than frozen — directly on a wide range of downstream natural language processing tasks, from question answering to sentence-pair classification, typically by adding one small additional output layer on top of its final representations. It was highly influential in establishing the "pretrain a large Transformer, then fine-tune it" recipe that much of modern natural language processing is built on.
 
 ---
 
@@ -504,6 +584,54 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 
 ---
 
+<a id="byte-pair-encoding-bpe"></a>
+### Byte Pair Encoding (BPE)
+
+**The Big Idea**: This builds on the Subword Tokenization entry below: BPE is the single most common, concrete recipe for actually building a vocabulary of subword pieces. Underneath the machine-learning framing, the core operation is nothing beyond Algebra 2 — it is simply tallying how often each pair of neighboring symbols shows up, and repeatedly gluing together whichever pair's tally is currently the largest, the same "count them all, then pick the biggest count" reasoning used to find the most common score on a set of quiz grades.
+
+**General Usage**: BPE starts by treating every character of every word in a large body of training text (a **corpus**) as its own separate symbol, so the starting vocabulary is simply the character set. It then repeats a fixed two-step merge operation some chosen number of times: (1) count how many times every pair of symbols that sit next to each other anywhere in the corpus occurs, weighting each occurrence by how often the word containing it appears in the corpus as a whole, and (2) merge the single most frequent pair everywhere it occurs, creating one new, longer symbol that takes the place of the two shorter ones it replaced. Each merge shrinks the corpus's symbol-level view by combining two symbols into one, while growing the vocabulary by exactly one new symbol; running enough merges (often tens of thousands) eventually turns many whole common words into single symbols, while rare or unfamiliar words are left broken into a handful of smaller, still-common pieces, rather than being replaced by a single catch-all Unknown-Word Token (see that entry in `math_symbols.md`).
+
+**Example.** This tiny corpus is constructed purely to make the merge steps easy to check by hand; it is not a real training set. Suppose the entire corpus consists of three "words," split into characters with a trailing end-of-word marker `_` (see the Word-Boundary Marker entry in `math_symbols.md`) attached to the last character of each, occurring with the frequencies shown:
+
+| Word | Split into symbols | Frequency |
+|---|---|---|
+| "aa" | `a a _` | 4 |
+| "aab" | `a a b _` | 2 |
+| "ab" | `a b _` | 1 |
+
+| Merge step | Adjacent-pair counts (weighted by word frequency) | Most frequent pair | New symbol |
+|---|---|---|---|
+| 1 | $(a,a){=}4{+}2{=}6$, $(a,\_){=}4$, $(a,b){=}2{+}1{=}3$, $(b,\_){=}2{+}1{=}3$ | $(a,a)$ with $6$ | `aa` |
+| 2 | After merge 1, words read: `aa _` (4), `aa b _` (2), `a b _` (1). Pairs: $(aa,\_){=}4$, $(aa,b){=}2$, $(b,\_){=}2{+}1{=}3$, $(a,b){=}1$ | $(aa,\_)$ with $4$ | `aa_` |
+| 3 | After merge 2, words read: `aa_` (4, now a single symbol), `aa b _` (2), `a b _` (1). Pairs: $(aa,b){=}2$, $(b,\_){=}2{+}1{=}3$, $(a,b){=}1$ | $(b,\_)$ with $3$ | `b_` |
+
+After three merges, the vocabulary contains the original characters `a`, `b` plus three new symbols, `aa`, `aa_`, and `b_`; the three words are now represented as `aa_` (a single symbol), `aa` + `b_`, and `a` + `b_` respectively — each merge step used only the counting-and-picking-the-largest reasoning described above, recomputed fresh after every merge since a merge can change which pairs are adjacent to each other.
+
+**AI/ML Usage**: BPE was introduced for neural machine translation by Sennrich, Haddow, and Birch (2016) as a way to let a translation model handle rare and unseen words without a fixed word-level vocabulary, and it (or a byte-level variant of it) has since been used to build the subword vocabulary for a wide range of pretrained Transformer language models, including GPT-2, GPT-3, and RoBERTa (see that entry above). Real BPE vocabularies are typically built with tens of thousands of merges — a 30,000-merge vocabulary is a commonly cited example — which is large enough to represent most common words as single tokens while still being able to fall back to smaller, shared pieces for anything rare. Bostrom and Durrett (2020) later found that BPE's purely frequency-driven merges tend to produce less linguistically natural pieces than an alternative, perplexity-driven approach (see the WordPiece Tokenization entry below).
+
+---
+
+<a id="c4-colossal-clean-crawled-corpus"></a>
+### C4 (Colossal Clean Crawled Corpus)
+
+**The Big Idea**: This is the raw-material counterpart to the Neural Scaling Laws entry below: a neural scaling law describes how a model's performance improves as more training data is used, and C4 is a concrete, extremely large pool of that training data, assembled specifically to let a language model be pretrained (see Fine-Tuning (Transfer Learning) above) at very large scale.
+
+**General Usage**: C4 (the Colossal Clean Crawled Corpus) is a very large, automatically filtered snapshot of Common Crawl — a continuously updated, publicly available scrape of the World Wide Web — built specifically to serve as unlabeled pretraining text for large language models. Producing it requires substantial automatic cleaning of the raw web scrape: removing duplicate passages, non-natural-language text such as source code or page-navigation boilerplate, and other low-quality content, so the result is both extremely large and reasonably high in text quality. The cleaned corpus totals roughly 750 GB of text.
+
+**Example.** Comparing C4 to a small, hand-labeled dataset makes the difference in scale concrete. A typical hand-labeled text-classification dataset might total a few megabytes of text, while C4 totals 750 GB:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Approximate size of a small labeled dataset | a few megabytes | $\approx 10^{6}$ bytes |
+| 2. Approximate size of C4 | 750 GB | $\approx 7.5\times10^{11}$ bytes |
+| 3. Ratio of the two | $\dfrac{7.5\times10^{11}}{10^{6}}$ | $\approx 7.5\times10^{5}$ |
+
+C4 is therefore on the order of hundreds of thousands of times larger than a typical small, hand-labeled dataset — though unlike such a dataset, C4 carries no task-specific labels at all; it is used purely as unlabeled running text.
+
+**AI/ML Usage**: C4 was introduced as the pretraining corpus for T5 (see the T5 entry below). An experiment run on it — pretraining separate models on progressively smaller, fixed pools of unique C4 tokens, each pool repeated enough times to match the same overall number of training tokens — showed that more unique pretraining data reliably improves downstream task performance, establishing pretraining-data scale and quality as a lever for improving large language models, alongside model size and training compute (see Neural Scaling Laws below). Because assembling and cleaning a corpus at this scale is itself a substantial engineering effort, C4 became a widely reused resource for pretraining later large language models rather than something each new project reassembles independently.
+
+---
+
 <a id="cauchy-schwarz-inequality"></a>
 ### Cauchy-Schwarz Inequality
 
@@ -514,6 +642,19 @@ Following the parent pointers back from $G$ gives the path $S \to G$ directly �
 **Example.** If $\lVert\mathbf{v}\rVert=3$ and $\lVert\mathbf{w}\rVert=4$, the Cauchy-Schwarz inequality guarantees their dot product can never exceed $3\times4=12$ in absolute value, no matter what direction each vector points — the two vectors would have to point in exactly the same direction to actually reach that maximum value of $12$.
 
 **AI/ML Usage**: This inequality is a foundational tool used to prove many other important results throughout machine learning theory and statistics — for instance, it's directly related to why cosine similarity (see that entry) is always guaranteed to fall between $-1$ and $1$, no matter which two vectors are being compared.
+
+---
+
+<a id="causal-masked-self-attention"></a>
+### Causal (Masked) Self-Attention
+
+**The Big Idea**: This builds directly on the Self-Attention entry above — ordinary self-attention lets every token look at every other token in the sequence, both earlier and later ones. Causal (or "masked") self-attention adds exactly one restriction on top of that: each token is only allowed to look at itself and the tokens that came before it, never at tokens that come later. It is the same idea as reading a sentence left to right and only being allowed to use the words you have already read to decide what comes next — no peeking ahead.
+
+**General Usage**: Recall that ordinary self-attention computes an $n\times n$ matrix of attention scores $S=QK^\top$, one row per token, where entry $S_{ij}$ measures how much token $i$ should attend to token $j$ (see Self-Attention above). A causal mask forces every entry $S_{ij}$ with $j>i$ (a "future" token $j$ appearing after the current token $i$) to $-\infty$ before the row-wise softmax is applied. Since $e^{-\infty}=0$, softmax then assigns exactly $0$ probability to every future position, so token $i$'s output can only be a weighted combination of value vectors from position $i$ and earlier. Drawn as a grid with rows and columns both indexed by token position, the allowed (non-masked) entries form a triangular region on and below the diagonal, which is why the mask is often described as "triangular."
+
+**Example.** For a 4-token sequence, ordinary self-attention would allow every one of the $4\times4=16$ position pairs to attend to each other. A causal mask removes every pair whose second index is larger than its first, leaving only the $1+2+3+4=10$ pairs on or below the diagonal: token $1$ may attend only to token $1$; token $2$ may attend to tokens $1$ and $2$; token $3$ may attend to tokens $1$, $2$, and $3$; and token $4$ may attend to all four tokens. Each row of the resulting attention matrix therefore has zeros in every "future" column, and that row's own softmax weights redistribute entirely over the remaining, non-future columns.
+
+**AI/ML Usage**: Causal self-attention is what turns a Transformer encoder (see Encoder-Decoder Architecture below), which is normally allowed to look in both directions at once, into a valid **decoder-only language model** such as GPT: since a language model must predict the next word using only the words seen so far, it would be both circular during training and impossible at generation time (when future words do not exist yet) to let a position attend to tokens after it. Every causal (autoregressive) Transformer language model applies this same triangular mask inside every self-attention computation in every layer.
 
 ---
 
@@ -809,6 +950,26 @@ Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, coun
 
 ---
 
+<a id="cross-attention-encoder-decoder-attention"></a>
+### Cross-Attention (Encoder-Decoder Attention)
+
+**The Big Idea**: This builds directly on Self-Attention and Multi-Head Self-Attention above, plus the Query, Key, and Value entry in the math_symbols file. In self-attention, every token attends to other tokens from its *own* sequence. Cross-attention is the exact same Attention Operator computation, except the queries come from one sequence while the keys and values come from a completely different, already-finished sequence.
+
+**General Usage**: Cross-attention (also called encoder-decoder attention) is a multi-head attention sublayer, placed inside a decoder block, that lets each position of the sequence currently being generated gather information from every position of a separately encoded input sequence. Its Query vectors are computed from the decoder's own hidden states, while its Key and Value vectors are computed once from the encoder's finished output and reused, unchanged, at every decoding step.
+
+**Example.** Translating the English input "the movie was great" into French: the encoder reads all four input words once and produces four fixed vectors. Then, at every single decoding step (generating "le," then "film," then "était," then "bon"), the decoder's cross-attention sublayer forms a fresh Query from whatever the decoder has generated so far, but the Keys and Values it attends over are always those same four encoder vectors, computed only once at the very start.
+
+| Decoding step | Decoder's Query built from | Keys/Values attended over |
+|---|---|---|
+| Generate "le" | start token | the 4 fixed encoder vectors |
+| Generate "film" | "le" | the same 4 fixed encoder vectors |
+| Generate "était" | "le," "film" | the same 4 fixed encoder vectors |
+| Generate "bon" | "le," "film," "était" | the same 4 fixed encoder vectors |
+
+**AI/ML Usage**: Cross-attention is the second of the two multi-head attention sublayers inside each decoder block of the original Transformer's encoder-decoder architecture (Vaswani et al., 2017, "Attention Is All You Need"; see the Encoder-Decoder Architecture and Transformer Architecture entries above). It is the specific mechanism that lets a machine translation, summarization, or dialogue model decide, at the moment it writes each output token, which parts of the input are most relevant — without ever needing to re-run or modify the encoder itself.
+
+---
+
 <a id="cross-entropy-loss"></a>
 ### Cross-Entropy Loss
 
@@ -934,6 +1095,19 @@ where $f$ is an Activation Function (see that entry in math_symbols.md), $W_1, W
 The network predicts "positive" with about 99.5% confidence. Notice that once the three word vectors were averaged together in step 2, the network could no longer tell which original word had contributed which number — yet the two nonlinear layers still recovered a confident, correct-looking prediction, because "great" pulled the average far enough in its own direction that the pull survived the averaging and was then magnified by the weighted sums and the ReLU.
 
 **AI/ML Usage**: The Deep Averaging Network was introduced by Iyyer et al. (2015) for text classification tasks such as sentiment analysis, where it was shown to perform competitively with — and sometimes better than — considerably more complex "tree-structured" networks that explicitly model a sentence's grammatical structure (see the Skip-Gram Model entry for another example of a model that instead relies on a word's surrounding context), while training in a small fraction of the time. The published version of the DAN is also trained with a regularization technique the original paper calls "word dropout," a variant of ordinary Dropout (see that entry) that randomly deletes some of a training example's individual words entirely — rather than deleting values inside a hidden layer, the way standard dropout does — before computing the average, which reduces the model's reliance on any single word being present.
+
+---
+
+<a id="denoising-autoencoder"></a>
+### Denoising Autoencoder
+
+**The Big Idea**: This builds on the everyday idea of learning by restoration — imagine being shown a photograph with parts of it scribbled out and being asked to redraw the whole photograph from memory; doing this well requires actually understanding what was in the photograph, not just copying pixels. A denoising autoencoder trains a neural network to do exactly this with data instead of photographs.
+
+**General Usage**: An autoencoder is a neural network trained to reproduce its own input, usually by first compressing it down (encoding it) and then expanding it back out (decoding it) into something the same size and shape as the original. A **denoising autoencoder** is a specific variant: instead of being given a clean input and asked to reproduce that same clean input, the network is given a deliberately corrupted ("noised") version of the input, and it must still reproduce the original, uncorrupted version. Because the network cannot simply copy its input straight to its output — the input it sees is broken, and the target it must produce is not — it is forced to learn something about the underlying structure of the data in order to recover whatever the corruption destroyed.
+
+**Example.** Suppose the original, clean data is the short sequence of tokens `A B C D E`, and a corruption process deletes token `C` and replaces token `D` with a mask, producing the noised input `A B _ E` (length 4, one shorter than the original). A denoising autoencoder trained on this pair cannot simply copy its input to its output, since the input and the correct target are different lengths and different sequences; it must instead have learned enough about which sequences of tokens are plausible to reconstruct the missing `C` and recover the identity of the masked `D`, producing `A B C D E` at its output.
+
+**AI/ML Usage**: The denoising autoencoder principle is the pretraining recipe behind BART (see that entry above), a sequence-to-sequence Transformer pretrained to recover a clean document from a corrupted version of it. It is also the same basic principle underlying Masked Language Modeling (see that entry) as used in BERT, although BERT only ever reconstructs the masked positions themselves rather than an entire sequence, and does so with an encoder alone rather than a full encoder-decoder pair.
 
 ---
 
@@ -1099,6 +1273,19 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 
 ---
 
+<a id="elmo-embeddings-from-language-models"></a>
+### ELMo (Embeddings from Language Models)
+
+**The Big Idea**: This builds on the Long Short-Term Memory (LSTM) entry below — ELMo runs two separate LSTMs over a sentence, one reading it forward and one reading it backward, and glues their outputs together, the same basic idea as reading a sentence twice from opposite ends and then simply setting your two sets of notes side by side, without ever cross-checking them against each other.
+
+**General Usage**: ELMo produces a contextualized vector representation of each word in a sentence — a vector for a word that depends on its surrounding context, unlike a plain, fixed word embedding (see the Word Embedding entry below) — by running a forward LSTM (reading left to right) and a separate backward LSTM (reading right to left) over the sentence, then concatenating the two LSTMs' hidden states at each word's position into one combined vector. Because the two LSTMs never influence each other's computation, this is described as "shallow" bidirectionality: each direction is computed completely independently, and only stapled together afterward, rather than being combined within a single, joint computation.
+
+**Example.** In the sentence "A stunning ballet dancer, Copeland is one of the best performers to see live," ELMo's forward LSTM reaches "Copeland" having already read "A stunning ballet dancer," so it captures that Copeland is a dancer; its backward LSTM reaches "Copeland" having already read (in reverse) "performers to see live," so it captures that Copeland is a performer. ELMo's final representation of "Copeland" concatenates these two independently-computed pieces of information into one longer vector.
+
+**AI/ML Usage**: ELMo (Peters et al., 2018, "Deep Contextualized Word Representations") was one of the first widely used pretrained contextual word representation models, typically used by computing its vectors once and then holding them fixed ("frozen") as input features to a separate downstream model, rather than continuing to update ELMo's own parameters on the downstream task. Its shallow, concatenation-based bidirectionality was a key motivation for BERT (see that entry above), which instead trains a single, jointly bidirectional model using Masked Language Modeling (see that entry below).
+
+---
+
 <a id="em-algorithm"></a>
 ### EM Algorithm
 
@@ -1109,6 +1296,19 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 **Example.** When clustering data into groups where you don't know each point's true group membership in advance, the E-step estimates how likely each point is to belong to each candidate group (given the current guess at each group's center), and the M-step then recalculates each group's center based on those estimated memberships — alternating back and forth repeatedly, gradually refining both pieces together until the answer stabilizes.
 
 **AI/ML Usage**: EM is the standard algorithm used to fit Gaussian Mixture Models (see that entry) and appears throughout probabilistic machine learning wherever a model includes some hidden, unobserved structure that needs to be estimated jointly and simultaneously alongside the model's other, directly-fitted parameters.
+
+---
+
+<a id="encoder-decoder-architecture"></a>
+### Encoder-Decoder Architecture
+
+**The Big Idea**: This is the same everyday idea as translating a sentence: first you read and fully understand the source sentence (build up some internal representation of what it means), and only then start writing the translation, one word at a time, using that understanding to guide each word you choose. An encoder-decoder model is built the same way, with one network doing the "reading and understanding" (the encoder) and a second network doing the "writing" (the decoder).
+
+**General Usage**: An encoder-decoder architecture is a model made of two separate stacks: an **encoder**, which takes in a full input sequence at once and produces one output vector per input position (a contextual representation of each input token), and a **decoder**, which generates an output sequence one token at a time, using both the tokens it has already generated and the encoder's output. The original Transformer architecture (Vaswani et al., 2017, "Attention Is All You Need") is presented exactly this way: an encoder stack built from repeated Transformer blocks (see Transformer Architecture below), and a similarly structured decoder stack, so that the whole model maps one sequence of tokens to another sequence of tokens (for example, one language into another).
+
+**Example.** Ignoring the exact internal computation, the shape of the problem alone shows why two separate stacks are useful: encoding the 3-word English sentence "I like cats" only ever requires looking at those exact 3 words, all at once, to build a representation of the sentence's meaning. Decoding a French translation, "J'aime les chats," is a different kind of task: the decoder must produce one word at a time, and at the moment it produces "aime" it may only use the words it has already generated ("J'") plus the finished representation of the whole English sentence from the encoder — it cannot yet know it is about to produce "les chats," because those words do not exist yet.
+
+**AI/ML Usage**: A Transformer encoder-decoder model is the standard architecture for sequence-to-sequence tasks such as machine translation and summarization (used, for example, in BART and T5). The encoder and decoder differ in an important way: the encoder's self-attention lets every position see every other position (see Self-Attention above), while the decoder's self-attention must be causal (see Causal (Masked) Self-Attention above), since it generates its output one token at a time and cannot see tokens it has not produced yet. For plain language modeling, where the goal is only to predict the next token in a single sequence rather than map one sequence to another, the decoder-only design — keeping just one stack and applying a causal mask throughout — is sufficient on its own, which is exactly the architecture used by GPT-style models.
 
 ---
 
@@ -1195,6 +1395,29 @@ An ordinary skip-gram model would need one single, whole-word vector for "cat" t
 **Example.** A linear model given only the raw feature $x$ can only ever draw a straight line. Expanding the feature set to $(x, x^2)$ lets that exact same linear-model algorithm now fit a full parabola — the model itself hasn't changed at all, only the richer set of features it's been handed to work with.
 
 **AI/ML Usage**: Feature expansion was a central technique in classical, pre-deep-learning machine learning — since raw data (like an image or unprocessed text) rarely comes with directly useful features already built in, engineers spent enormous effort hand-designing good expanded features; today, deep neural networks largely automate this entire process, learning their own useful expanded features directly and automatically from raw data instead.
+
+---
+
+<a id="fine-tuning-transfer-learning"></a>
+### Fine-Tuning (Transfer Learning)
+
+**The Big Idea**: This is ordinary Gradient Descent (see that entry) with one change: instead of starting from random weights, training starts from weights a model already learned on a different, larger task. It is the same relationship as solving a new word problem being easier once you already know a general method for problems like it, rather than working out the whole approach again from a blank page.
+
+**General Usage**: Fine-tuning is a two-stage training procedure. First, a model is **pretrained**: its weights are trained on some large, general-purpose objective (for example, predicting masked-out words in ordinary text). Second, for a specific downstream task, a small task-specific output layer is attached on top of the pretrained model, and training continues — using gradient descent, exactly as in ordinary training — on the new task's own labeled data, updating *all* of the model's weights (the pretrained ones together with the new layer's), typically for a small number of epochs (see the Epoch entry) and with a small learning rate, so the pretrained weights move only a modest distance from where they started. This is contrasted with **feature extraction** ("using a model frozen"), in which the pretrained weights are left completely unchanged and only the new output layer is trained.
+
+**Example.** Suppose a model was pretrained so that its single weight is $w = 2.0$, computing a prediction $\hat y = wx$. Fine-tuning continues training this same weight $w$ — rather than freezing it — on one new labeled example from a downstream task, $(x=3,\, y=8)$, using squared-error loss $L=(y-\hat y)^2$ and one step of gradient descent with a small learning rate $\eta = 0.01$:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Prediction | $\hat y = wx = 2.0 \times 3$ | $6.0$ |
+| 2. Error | $y - \hat y = 8 - 6.0$ | $2.0$ |
+| 3. Loss | $(y-\hat y)^2 = (2.0)^2$ | $4.0$ |
+| 4. Gradient of loss w.r.t. $w$ | $\dfrac{\partial L}{\partial w} = -2x(y-\hat y) = -2(3)(2.0)$ | $-12.0$ |
+| 5. Updated weight | $w \leftarrow w - \eta\dfrac{\partial L}{\partial w} = 2.0 - 0.01(-12.0)$ | $2.12$ |
+
+Fine-tuning nudges $w$ itself from $2.0$ to $2.12$ toward better fitting the new example. A feature-extraction approach would instead leave $w=2.0$ fixed forever and train only a brand-new separate parameter (for example, a multiplier applied on top of $wx$) to fit the new data, never touching $w$ at all.
+
+**AI/ML Usage**: Fine-tuning the *entire* pretrained network is the standard way BERT is adapted to a downstream task (see the BERT entry): all of BERT's Transformer weights continue training, together with one small new output layer, directly on the labeled data for tasks such as sentiment classification or entailment. This is a genuine design choice rather than the only option — the same pretrained ELMo model (see that entry) is typically used the opposite way, as a frozen feature extractor, because empirically fine-tuning ELMo's weights tends to hurt its performance on many tasks, while fine-tuning BERT's weights tends to help. Which approach works better is therefore an empirical property of the specific pretrained model, not a universal rule.
 
 ---
 
@@ -1320,6 +1543,26 @@ Training adjusts every word vector, context vector, and bias across the whole ma
 
 ---
 
+<a id="glue-benchmark"></a>
+### GLUE Benchmark
+
+**The Big Idea**: This is a standardized final exam given to every "student" (model) so their scores can be fairly compared. Rather than each research group grading its own model on its own custom, one-off test, GLUE fixes the questions (the datasets), the grading rule (the metric) for each question, and how to combine several question scores into one overall score (an average) — the only genuinely new idea is that averaging several different tasks' scores together, on different scales, into one number, is itself a modeling choice, not a law of nature.
+
+**General Usage**: The General Language Understanding Evaluation (GLUE) benchmark is a fixed collection of nine English text-classification tasks — some taking a single sentence as input (for example, judging whether a sentence is grammatically acceptable), most taking a *pair* of sentences (for example, judging whether they are paraphrases, or whether one entails the other; see the Textual Entailment (Natural Language Inference) entry) — each with its own official train/test split and evaluation metric (plain accuracy; F1, the harmonic mean of precision and recall; Matthews correlation coefficient, a single number between $-1$ and $1$ summarizing a binary classifier's performance that stays informative even when one class is much rarer than the other; or Pearson/Spearman correlation, which measure how closely a model's predicted similarity scores track human-assigned ones). A single overall **GLUE score** is then reported as the average of a model's metric values across all nine tasks, giving one number that summarizes broad "language understanding" rather than performance on any one task alone.
+
+**Example.** Suppose a model is evaluated on a toy three-task benchmark (far smaller than the real nine-task GLUE) and scores $50$ on task 1, $90$ on task 2, and $80$ on task 3:
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Sum the task scores | $50 + 90 + 80$ | $220$ |
+| 2. Divide by the number of tasks | $220 / 3$ | $\approx 73.3$ |
+
+The single reported benchmark score is the average, $\approx 73.3$ — exactly the same averaging idea GLUE uses over its real nine tasks, just with three toy scores standing in for the actual metrics (Matthews correlation, accuracy, F1, and so on) that GLUE's real tasks report.
+
+**AI/ML Usage**: Wang et al. (2019) introduced GLUE specifically to let a single pretrained model — such as BERT, ELMo, or GPT (see those entries) — be evaluated across a broad range of sentence- and sentence-pair-level tasks using one standardized procedure, rather than requiring a separate, hand-designed comparison for every dataset. BERT's large improvement in average GLUE score over prior systems (including ELMo and GPT) was one of the headline results establishing BERT's effectiveness. As pretrained models improved further, later benchmarks (such as SuperGLUE) were introduced with harder tasks, since models eventually approached the practical ceiling of GLUE's original tasks.
+
+---
+
 <a id="goal-biased-and-bidirectional-rrt-variants"></a>
 ### Goal-Biased and Bidirectional RRT Variants
 
@@ -1420,6 +1663,19 @@ Notice the slope is negative at every one of these steps (since all these guesse
 Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ — even though the true cheapest path, $S \to B \to G$, costs only $2$. The heuristic's misleadingly low value at $A$ ($h(A)=0$, which is admissible but not remotely tight — the true remaining cost from $A$ is $5$) was enough to lure the search down the wrong branch permanently, precisely because nothing in the priority value remembered that reaching $A$ had already cost something too.
 
 **AI/ML Usage**: Greedy Best-First Search is faster in practice than A* Search (A-Star Algorithm) — see that entry — because it commits to whichever option currently looks nearest to the goal, without the bookkeeping A* does to keep cheaper-but-currently-unfavored paths open. That speed comes at the direct cost of the optimality guarantee, which is exactly why A\*'s extra ingredient (tracking real cost-to-come alongside the heuristic) matters whenever a genuinely optimal answer, not just a fast plausible one, is required.
+
+---
+
+<a id="greedy-decoding"></a>
+### Greedy Decoding
+
+**The Big Idea**: This is the simplest possible way to turn a model's next-token probabilities into an actual sequence: at every step, just pick whichever single option currently has the highest probability, the same everyday idea as always choosing the largest number in a list (arg max — see the Arg Min / Arg Max entry in `math_symbols.md`), and never reconsider that choice afterward. It is unrelated to Greedy Best-First Search (see that entry above) beyond sharing the word "greedy" — that entry is about pathfinding through a graph, while this one is about generating language one token at a time; it is, however, exactly the special case of Beam Search (see that entry above) where the beam width is $K=1$.
+
+**General Usage**: Greedy decoding generates a sequence $y_1, y_2, \ldots, y_n$ from a model that produces a probability distribution over the next token at each step by always choosing $y_i = \arg\max_{y_i} P(y_i \mid y_1, \ldots, y_{i-1})$ — the single highest-probability next token given everything chosen so far — and committing to it immediately, with no ability to revisit or undo that choice once later tokens reveal it was a poor one.
+
+**Example.** Suppose a model's first-step distribution assigns "The" the highest probability of any word, so greedy decoding immediately outputs "The." At the second step, among all continuations of "The," suppose "The fish" happens to have a higher probability than "The dog," even though "The dog" would have been part of the single highest-probability *complete* sentence overall. Greedy decoding has no way to discover this: having already committed to "The" and then to whichever second word looks best at that moment, it can only ever build on the choices it already made, never comparing whole alternative sequences against each other the way Beam Search's wider comparison (keeping $K>1$ candidates alive) can.
+
+**AI/ML Usage**: Greedy decoding is extremely cheap to run — it requires only $n$ total calls to the underlying neural network for a length-$n$ sequence, the smallest possible number, compared to Beam Search's roughly $K$ times as many. It is used throughout natural language generation whenever speed matters more than finding the single best possible output, and despite its simplicity it "actually works pretty well in practice" for many tasks. Its main weakness is that a single early misstep can permanently derail the rest of the generated sequence, since there is no mechanism to reconsider an earlier token once a poor later continuation reveals the mistake — the exact problem that Beam Search's wider (but still bounded) comparison of hypotheses is designed to reduce.
 
 ---
 
@@ -1831,6 +2087,29 @@ From a lattice vertex at pose $(0, 0, 0°)$, these three primitives generate exa
 
 ---
 
+<a id="layer-normalization"></a>
+### Layer Normalization
+
+**The Big Idea**: This builds on the ordinary idea of "putting numbers on the same scale" — the same reason a teacher might convert both a quiz out of 10 and an exam out of 100 into percentages before averaging them, so neither one unfairly dominates just because of the units it happens to be measured in. Layer normalization performs the same kind of rescaling, but on the numbers flowing through a neural network's layers rather than on test scores.
+
+**General Usage**: Layer normalization rescales the vector produced by a layer so that its entries have a consistent, predictable scale (specifically, zero mean and unit variance across the entries of that one vector), before optionally applying a small learned per-entry scale and shift. For an input vector $x=(x_1,\dots,x_d)$, it first computes the ordinary mean $\mu=\frac{1}{d}\sum_{i=1}^d x_i$ and the ordinary standard deviation $\sigma$ of the $d$ entries (see Mean and Standard Deviation in the math_symbols file), then produces the output $\hat x_i=\frac{x_i-\mu}{\sigma}$ for each entry — the same "subtract the mean, divide by the standard deviation" standardization used throughout statistics.
+
+**Example.** Take a small 4-entry vector $x=(2,4,4,6)$ coming out of one layer of a network.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Mean | $\mu=(2+4+4+6)/4$ | $4$ |
+| 2. Deviations | $x_i-\mu$ for each entry | $(-2,0,0,2)$ |
+| 3. Variance | average of squared deviations: $(4+0+0+4)/4$ | $2$ |
+| 4. Standard deviation | $\sigma=\sqrt{2}$ | $\approx1.414$ |
+| 5. Normalized output | $\hat x_i=(x_i-\mu)/\sigma$ | $(-1.414,\ 0,\ 0,\ 1.414)$ |
+
+Check: the normalized vector's own mean is $0$ and its own variance is $1$, exactly the consistent scale layer normalization is designed to produce, regardless of what scale the original numbers happened to be on.
+
+**AI/ML Usage**: Deep networks such as the Transformer stack many layers on top of each other (see Transformer Architecture below), and different layers' outputs can naturally drift to very different scales during training. Because every layer in the stack is trained together using one single, shared learning rate (see Learning Rate in the math_symbols file), a scale mismatch between layers can make training unstable or slow: an update size that is sensible for one layer's scale may be far too large or too small for another's. Layer normalization is applied after (or, in some later architectures, before) each sublayer in a Transformer block, keeping every layer's output on a comparable scale so the entire deep stack can be trained smoothly with one shared learning rate.
+
+---
+
 <a id="likelihood"></a>
 ### Likelihood
 
@@ -2014,6 +2293,19 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** If a random variable's expected value is $\mathbb{E}[X]=10$, Markov's inequality guarantees the probability that $X$ turns out to be $50$ or more is at most $\frac{10}{50}=0.2$, or 20% — this specific bound holds true regardless of the exact underlying shape of the distribution, requiring nothing more than knowing that value is never negative.
 
 **AI/ML Usage**: Markov's inequality is the foundational building block that both Chebyshev's Inequality and Chernoff Bounds (see those entries above) are ultimately derived from — it's typically among the very first, most basic probabilistic tools introduced in a machine learning theory course, precisely because so many other, more powerful and precise bounds are built directly on top of it.
+
+---
+
+<a id="masked-language-modeling"></a>
+### Masked Language Modeling
+
+**The Big Idea**: This builds on the ordinary idea of a fill-in-the-blank exercise (the same basic task addressed a different way by the N-Gram Language Model entry below) — instead of predicting the next word in a sentence from only the words before it, masked language modeling hides a word in the *middle* of a sentence and asks a model to guess it using the words on both sides, the same task as filling in a blank using the whole sentence around it, not just the words that came before the blank.
+
+**General Usage**: Masked language modeling (MLM) is a training objective in which some percentage of the tokens in a piece of text (typically around 15%) are replaced with a special Mask Token (see that entry in `math_symbols.md`), and a model is trained to predict each hidden token's original identity using the entire remaining sequence — tokens before **and** after the mask — as context. This differs from ordinary (unidirectional) language modeling, which predicts each word only from the words that came before it and therefore cannot use two-directional context, because doing so would let a multi-layered, unrestricted self-attention model indirectly "see" the very word it is trying to predict (see the Causal (Masked) Self-Attention entry above for the restriction ordinary language modeling relies on instead).
+
+**Example.** Given the sentence "John visited Madagascar yesterday," masked language modeling might hide the third word, producing the input "John visited [MASK] yesterday." A model reads this entire sequence — including "yesterday," which comes *after* the hidden word — and is trained to predict that the missing token is "Madagascar." Only a fraction of a sentence's words are masked at once (roughly 15%); masking every word would leave no context anywhere in the sentence for the model to base any prediction on.
+
+**AI/ML Usage**: Masked language modeling is the core pretraining objective behind BERT (see that entry above) and its many descendants. It allows a Transformer's self-attention (see the Self-Attention entry below) to remain completely unrestricted — every position attending to every other position, in both directions, in every layer — since the token being predicted has been removed from the input entirely rather than merely hidden by an attention restriction, leaving no way for its identity to leak through indirectly.
 
 ---
 
@@ -2213,6 +2505,27 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="multitask-learning"></a>
+### Multitask Learning
+
+**The Big Idea**: This builds on the Fine-Tuning (Transfer Learning) entry above — ordinary fine-tuning takes one pretrained model and specializes it further on one downstream task's labeled data. Multitask learning is the natural extension: instead of specializing a separate copy of the model for each task, one single model is trained on the labeled data from several different tasks at the same time, so its parameters must become good at all of them at once rather than any one of them alone.
+
+**General Usage**: Multitask learning is a training setup in which a single model's parameters are updated using training examples drawn from more than one task, rather than from just one. Concretely, this usually means combining the labeled datasets for several tasks into one larger pool of training examples — possibly reformatting each task's inputs and outputs into a shared format so the same model architecture can be used for all of them — and training on that combined pool, so a single set of weights is shaped by every task's training signal simultaneously, instead of training one separate model per task.
+
+**Example.** Suppose two tasks each have a small labeled training set: Task A has $3$ examples and Task B has $2$ examples. Single-task training would produce two separate models, one trained only on Task A's $3$ examples and one trained only on Task B's $2$ examples. Multitask training instead pools all $5$ examples into one combined training set and trains a single model on that pool:
+
+| Step | Action | Resulting training pool size |
+|---|---|---|
+| 1. Single-task model for Task A | Train only on Task A's examples | $3$ |
+| 2. Single-task model for Task B | Train only on Task B's examples | $2$ |
+| 3. Multitask model | Pool Task A's and Task B's examples together | $3+2=5$ |
+
+The multitask model in step 3 is a single model exposed to both tasks' training signal at once, rather than the two separate, task-specific models produced in steps 1 and 2.
+
+**AI/ML Usage**: T5 (see the T5 entry below) emphasized multitask fine-tuning as a major design goal: fine-tuning one pretrained sequence-to-sequence model (see Sequence-to-Sequence (Seq2Seq) Task above) on many downstream datasets at once, rather than one fine-tuned copy per dataset. UnifiedQA (Khashabi et al., 2020) is a concrete realization of this idea for question answering: a single, large T5 model is fine-tuned across question-answering datasets spanning several different task formats — extractive span selection, free-form generation, multiple choice, and yes/no judgment — all reformatted into the same text-to-text input/output shape, and that one model achieves strong results across every format it was fine-tuned on.
+
+---
+
 <a id="multivariate-normal-distribution"></a>
 ### Multivariate Normal Distribution
 
@@ -2348,6 +2661,51 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 
 ---
 
+<a id="neural-scaling-laws"></a>
+### Neural Scaling Laws
+
+**The Big Idea**: You already know from Algebra 2 that a power function like $y = x^2$ or $y=x^{-1}$ produces a curve, not a straight line, when plotted the ordinary way. A **neural scaling law** says that a model's test loss (see Negative Log Likelihood above) follows a power-law curve like this as some resource — model size, training data, or compute — is scaled up. The reason this is worth its own name is a plotting trick: taking the logarithm of both sides of a power-law equation $y=a x^{b}$ gives $\log y = \log a + b\log x$, which is exactly the equation of a straight line (see Logarithm in `math_symbols.md`), with slope $b$ and intercept $\log a$. So a relationship that looks like a curve on ordinary axes becomes a straight line once both axes are redrawn on a logarithmic scale — which is exactly why these results are shown as straight lines on log-log plots.
+
+**General Usage**: A neural scaling law is an empirically observed relationship of the form $$L \approx \left(\frac{X}{X_0}\right)^{-\alpha}$$ where $L$ is a model's test loss, $X$ is some resource being scaled up (for example the number of trainable parameters $N$, the size of the training dataset $D$, or the total compute $C$ used for training), $X_0$ is a constant that sets the scale, and $\alpha$ is a constant that controls how quickly loss improves as $X$ grows. Because this is a power law with a negative exponent, loss keeps decreasing smoothly and predictably as $X$ increases, but with diminishing returns — each additional doubling of $X$ buys a smaller absolute reduction in loss than the previous doubling did, even though loss never fully levels off (unlike many older architectures, which eventually saturate and stop improving no matter how much bigger they are made).
+
+**Example.** One published neural scaling law relates test loss $L$ to the number of (non-embedding) parameters $N$ in a Transformer language model: $$L = \left(\frac{N}{8.8\times10^{13}}\right)^{-0.076}$$ Computing $L$ for two very different model sizes shows the predictable-but-diminishing pattern directly:
+
+| Step | Parameters $N$ | Computation | Loss $L$ |
+|---|---|---|---|
+| 1 | $10^9$ (1 billion) | $\left(\dfrac{10^9}{8.8\times10^{13}}\right)^{-0.076} = (1.136\times10^{-5})^{-0.076}$ | $\approx 2.38$ |
+| 2 | $10^{11}$ (100 billion, i.e. $100\times$ more parameters) | $\left(\dfrac{10^{11}}{8.8\times10^{13}}\right)^{-0.076} = (1.136\times10^{-3})^{-0.076}$ | $\approx 1.67$ |
+
+Multiplying the parameter count by $100$ only reduced the loss from about $2.38$ to about $1.67$ — a real, meaningful improvement, but nowhere near a $100\times$ change, which is precisely the "diminishing returns, but still genuinely improving" signature of a power law.
+
+**AI/ML Usage**: Kaplan et al. (2020) showed that Transformer language models obey neural scaling laws individually in compute, dataset size, and parameter count, each producing a very regular, straight-line relationship on a log-log plot of test loss versus that resource. This result is a major reason Transformers became the dominant architecture for large language models: it gave researchers good empirical evidence that building a model $10\times$ or $100\times$ larger, with proportionally more data and compute, would reliably keep improving performance — a property that did not hold nearly as well for earlier architectures such as Recurrent Neural Networks (see that entry above), which tend to hit a saturation point where adding more parameters stops helping. Neural scaling laws are the empirical foundation behind the industry strategy of training ever-larger language models, and they also motivate the search for more computationally efficient architectures (see Sparse Attention below), since the main practical obstacle to continued scaling is the compute needed to train these very large models, not any sign that bigger models stop improving.
+
+---
+
+<a id="neural-text-degeneration"></a>
+### Neural Text Degeneration
+
+**The Big Idea**: This builds directly on the Beam Search entry above — Algebra 2 already covers what happens when you multiply several fractions less than $1$ together (the product keeps shrinking), and a decoding method that only ever asks "which next token keeps this running product as large as possible" can still end up choosing a bad overall sequence, because it never once asks whether the finished sequence sounds right as a whole.
+
+**General Usage**: Neural text degeneration is the tendency of decoding methods that try to maximize a generated sequence's total probability — greedy decoding and Beam Search (see those entries above) — to produce pathological, repetitive, looping text once a language model is used for open-ended generation (such as story writing) rather than a task with one clearly correct answer (such as machine translation). The root cause is that a language model is **locally normalized**: at each step it only ever defines a probability for the next single token given the tokens so far, $P(y_i \mid y_1,\ldots,y_{i-1})$, never a direct score for how good an entire finished sequence is. Because repeating a phrase that was already high-probability keeps producing more high per-token probabilities, a search procedure that is purely chasing the highest total product of these probabilities (or, equivalently, the highest sum of their logarithms — see Log Likelihood above) can lock permanently onto a repetitive loop, even though the result is obviously bad to any human reader.
+
+**Example.** Given the prompt "In a shocking finding, scientists discovered a herd of unicorns living in a remote, previously unexplored valley in the Andes Mountains," GPT-2 under beam search (beam width $32$) continues the story by repeating the six-token fragment "Universidad Nacional Autónoma de México" over and over. Breaking down why this happens, step by step:
+
+| Step | Claim | Why it holds |
+|---|---|---|
+| 1 | $P(\text{Nacional}\mid \ldots\ \text{Universidad})$ is high | "Universidad Nacional" is an extremely common institutional-name pattern in the model's training data |
+| 2 | $P(\text{Autónoma}\mid \ldots\ \text{Universidad Nacional})$ is high | Same reasoning — this three-word phrase is itself a common fixed pattern |
+| 3 | $P(\text{de}\mid \ldots\ \text{Universidad Nacional Autónoma})$ is high | Same reasoning |
+| 4 | $P(\text{México}\mid \ldots\ \text{Universidad Nacional Autónoma de})$ is high | Same reasoning; together these four tokens form a very common, high-probability institution name |
+| 5 | $P(\text{/}\mid \ldots\ \text{México})$ and $P(\text{Universidad}\mid \ldots\ \text{México /})$ may be individually low | These are the two "boundary" tokens that restart the phrase — only 2 of the 6 tokens in the repeated unit |
+| 6 | The whole 6-token repeated fragment still scores well overall | Since 4 of its 6 tokens are individually very high-probability, multiplying all six token probabilities together still gives a larger product than most alternative, non-repeating continuations that beam search also considered |
+| 7 | Once the loop starts, it is self-reinforcing | Having just generated the fragment once makes the model even more likely to predict it again next, so the same high per-token probabilities keep recurring indefinitely |
+
+Beam search's objective is exactly this running product (see Beam Search above), so it keeps choosing the loop even though the resulting text is obviously bad to a human reader; each word is individually likely given the words before it, but the sequence as a whole is not.
+
+**AI/ML Usage**: Neural text degeneration — a term introduced by Holtzman et al. (2019), "The Curious Case of Neural Text Degeneration" — is the main reason maximization-based decoding (greedy decoding, Beam Search) is avoided for open-ended text generation tasks such as story writing, and is one of the central motivations for sampling-based decoding methods such as Nucleus Sampling (Top-p Sampling) (see that entry below), which never tries to find the single highest-probability sequence in the first place. A separate family of models called globally-normalized models (including energy-based models), which score a complete sequence directly rather than one token at a time, can in principle avoid this failure mode, but are substantially more computationally expensive to train and use, and are not covered further here.
+
+---
+
 <a id="neuron"></a>
 ### Neuron
 
@@ -2371,6 +2729,19 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 **Example.** Plain gradient descent, walking downhill on a steep, narrow, elongated valley, can end up zig-zagging wastefully back and forth across the narrow width of the valley instead of moving efficiently along its length. Newton's method, by additionally accounting for the valley's specific curved shape (via the Hessian), can compute a much more direct, efficient update that heads straight toward the true bottom, rather than bouncing repeatedly between the valley's steep walls.
 
 **AI/ML Usage**: Newton's method typically needs far fewer iterations to converge than plain gradient descent, but each individual iteration is significantly more computationally expensive, since it requires computing and inverting a full Hessian matrix — for the enormous parameter counts common in modern deep learning, this cost is usually prohibitive, which is exactly why gradient descent variants remain the practical default there instead.
+
+---
+
+<a id="next-sentence-prediction"></a>
+### Next Sentence Prediction
+
+**The Big Idea**: This is a straightforward yes/no classification task, the same underlying idea as the Bernoulli Distribution entry above (one trial, two possible outcomes) — given two chunks of text, decide whether the second one genuinely follows the first, or does not.
+
+**General Usage**: Next sentence prediction (NSP) is a training objective in which a model is given two chunks of text, packed into one input, and trained to predict whether the second chunk is the true, contiguous continuation of the first (labeled `IsNext`) or an unrelated chunk drawn at random from elsewhere in the corpus (labeled `NotNext`). Training examples are constructed so that the true, contiguous pairing is used 50% of the time and a random pairing is used the other 50% of the time, giving a balanced two-class prediction problem. The prediction itself is made from a single dedicated summary position at the start of the input (see the CLS Token entry in `math_symbols.md`), which is trained to attend across the whole input and aggregate whatever information the decision requires.
+
+**Example.** Pairing the chunk "John visited Madagascar yesterday and really enjoyed it." with the true next chunk of the same passage would be labeled `IsNext`. Pairing that same first chunk instead with an unrelated chunk such as "I like Madonna." — drawn at random from elsewhere in the corpus, with no real topical connection to Madagascar — would be labeled `NotNext`, since the two chunks are not a genuine continuation of one another.
+
+**AI/ML Usage**: Next sentence prediction was introduced alongside Masked Language Modeling (see that entry above) as BERT's second pretraining objective, intended to give the model direct practice at judging relationships between two spans of text — useful for downstream tasks like question answering and natural language inference that inherently involve comparing two pieces of text (see the Textual Entailment (Natural Language Inference) entry below). Later work, including the RoBERTa paper (Liu et al., 2019, "RoBERTa: A Robustly Optimized BERT Pretraining Approach"), found that removing the next-sentence-prediction objective entirely, while keeping masked language modeling, did not hurt — and could even improve — downstream performance, suggesting NSP's original contribution was smaller than first believed.
 
 ---
 
@@ -2410,6 +2781,37 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 **Example.** The traveling salesperson problem — finding the shortest possible route that visits every city on a list exactly once — is a classic example of an NP-hard problem. For a small number of cities it's genuinely easy to solve directly; but as the number of cities grows, the number of possible routes to check explodes so explosively fast that no computer, however powerful, can realistically check every single one for a sufficiently large list of cities.
 
 **AI/ML Usage**: Many important, practically relevant AI problems are NP-hard, including general planning and many constraint satisfaction problems — this is precisely why so much of AI research focuses on heuristics, approximations, and clever, targeted search techniques that work well in most realistic, practical cases, rather than on trying to find one single, perfectly guaranteed, always-fast algorithm that provably cannot exist for every conceivable worst case.
+
+---
+
+<a id="nucleus-sampling-top-p-sampling"></a>
+### Nucleus Sampling (Top-p Sampling)
+
+**The Big Idea**: This builds on the Sampling Notation entry in `math_symbols.md` ($x\sim P$) and on Neural Text Degeneration above — sorting a list of numbers from largest to smallest and adding a running total until it first crosses a target value is exactly the kind of running-sum computation Algebra 2 already covers with sequences and partial sums; nucleus sampling is just that idea applied to a sorted list of token probabilities.
+
+**General Usage**: Nucleus sampling (also called **top-p sampling**) is a decoding method for generating text from a language model that avoids both of the failure modes above — Beam Search's degeneration (see Neural Text Degeneration above) and plain random sampling's tendency to occasionally draw a very low-probability, sentence-derailing token — by sampling from a *dynamically truncated* version of the model's next-token distribution. Only the smallest set of highest-probability tokens whose probabilities add up to at least a chosen threshold $p$ (commonly $p=0.9$ or $p=0.95$) is kept; every lower-probability token is discarded before sampling. The algorithm has four steps:
+
+1. Compute the full next-token probability distribution $P(y_i \mid y_1,\ldots,y_{i-1})$ over every token in the vocabulary (see Vocabulary in `math_symbols.md`).
+2. Sort every token from highest probability to lowest.
+3. Walk down the sorted list, adding up probabilities as you go, until the running total first reaches the threshold $p$. This smallest high-probability prefix is called the **nucleus**.
+4. Discard every token that did not make it into the nucleus, renormalize the remaining probabilities so they sum back to $1$ (divide each one by the nucleus's total probability), and sample the next token from this renormalized, truncated distribution (see Sampling Notation in `math_symbols.md`).
+
+Because the cutoff is based on a percentage of probability *mass* rather than a fixed *count* of tokens, the nucleus automatically grows when the model is uncertain (probability spread thinly over many plausible next tokens) and shrinks when the model is confident (probability concentrated on just one or two tokens) — the truncation point adapts to the shape of the distribution at each individual step, rather than always keeping the same fixed number of tokens.
+
+**Example.** Suppose a language model's distribution over what comes next in "they live in a remote desert uninterrupted by ___" assigns probability $0.01$ to "roads," $0.01$ to "towns," $0.01$ to "people," and $0.005$ to "civilization" — together with many further, unlisted words filling out a combined "good options" group that makes up roughly $90\%$ of the total probability mass — while a long tail of much rarer words, including "town" at just $0.0005$, makes up the remaining $10\%$. With the threshold $p$ set to include the "good options" group and exclude the long tail, nucleus sampling draws the next word only from the "good options" group; "town," despite being a grammatically plausible word in that sentence, can never be selected at this step, no matter how many times sampling is repeated, because it falls below the cutoff.
+
+*Clarifying step, not part of the original illustration:* to see exactly what "renormalize" means arithmetically, suppose (only for this arithmetic check) the nucleus kept just the four listed tokens above and nothing else. Their probabilities sum to $0.01+0.01+0.01+0.005=0.035$. Renormalizing divides each one by this smaller total:
+
+| Token | Original probability | Renormalized probability |
+|---|---|---|
+| roads | $0.01$ | $0.01/0.035\approx 0.286$ |
+| towns | $0.01$ | $0.01/0.035\approx 0.286$ |
+| people | $0.01$ | $0.01/0.035\approx 0.286$ |
+| civilization | $0.005$ | $0.005/0.035\approx 0.143$ |
+
+These renormalized values sum to (approximately) $1$, as required of any valid probability distribution, and sampling proceeds using these new values instead of the originals.
+
+**AI/ML Usage**: Holtzman et al. (2019), "The Curious Case of Neural Text Degeneration," introduced nucleus sampling and compared it against greedy decoding, Beam Search, and plain (untruncated) sampling on GPT-2-generated stories, using Perplexity (see that entry above), Self-BLEU (how similar generated samples are to *each other*; a high value signals repetitive, low-diversity output), Repetition % (how much of the generated text falls into repeated loops), and HUSE (Human Unified with Statistical Evaluation, a metric that folds in actual human judgments of quality). Greedy decoding and Beam Search scored very low perplexity but very high repetition (over $70\%$ for greedy decoding); plain sampling had low repetition but perplexity even higher than genuine human-written text (i.e., it was "too surprising," or too random); nucleus sampling with $p=0.95$ achieved perplexity close to human-written text, repetition close to the human rate, and by far the best HUSE score. This combination of good fluency and good diversity is why nucleus sampling, or close variants of it, is the default decoding method behind many production large language model APIs, including the open-ended responses produced by systems such as ChatGPT.
 
 ---
 
@@ -2621,6 +3023,19 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 **Example.** Under the sinusoidal scheme, positions $1$ and $2$ produce nearly identical encoding vectors — only their highest-frequency dimensions (the ones with the smallest denominator, changing fastest as $pos$ increases) differ noticeably between adjacent positions. Positions $1$ and $20$, however, produce visibly different vectors, since many more of the sine/cosine dimensions have had time to complete a meaningful fraction of their cycle over that larger gap. Because dot products between similar vectors are larger than dot products between dissimilar ones (see Dot Product / Inner Product in `math_symbols.md`), this means nearby positions automatically get higher dot products (and so, all else equal, more attention) than distant ones — a useful default bias built directly into the representation, before any training has even happened.
 
 **AI/ML Usage**: Absolute positional encoding using a learned table (the simpler, first-described scheme above) is what is actually used by models like GPT-3, despite being a departure from the sinusoidal scheme originally proposed in Vaswani et al. (2017). More recent variants exist as well: **relative positional encoding** (used in T5) drops absolute position entirely and instead injects, directly into the query-times-key computation, only the *distance* between two tokens; **ALiBi** (Attention with Linear Biases; Press et al., 2022) similarly uses relative distance, adding a penalty term $m\cdot[-(i-1),\dots,-2,-1,0]$ directly onto the attention scores before the softmax, where $m$ is a different constant slope for each attention head, so that different heads can learn to prefer nearby tokens versus a more uniform spread over the whole sequence, using far fewer additional parameters than a learned table would require. Surprisingly, Kazemnejad et al. (2023) found that a **causal** Transformer (one whose self-attention is restricted to only look into the past, rather than in both directions) can learn to determine each token's position organically, without any explicit positional encoding at all (**NoPE**) — because a model restricted to looking only backward can, in effect, learn to count how many tokens have come before it, a trick unavailable to a model that can also look forward. Despite this result, using an explicit positional encoding scheme remains standard practice in most models trained today.
+
+---
+
+<a id="position-wise-feed-forward-network"></a>
+### Position-wise Feed-Forward Network
+
+**The Big Idea**: This builds directly on the idea of an ordinary feedforward neural network — a function that multiplies its input by a weight matrix, adds a bias, and applies a nonlinearity (see Activation Function and ReLU in the math_symbols file). The only new idea is "position-wise": inside a Transformer, this exact same small network is applied separately to every single token's vector, one at a time, with no token ever looking at any other token during this step — unlike self-attention, which is entirely about tokens looking at each other.
+
+**General Usage**: The position-wise feed-forward network (FFN) used in a Transformer block takes a single token's vector $x$ of dimension $d_{\text{model}}$ and computes $$\text{FFN}(x)=\max(0,\,xW_1+b_1)\,W_2+b_2$$ where $W_1$ (shape $d_{\text{model}}\times d_{ff}$) and $b_1$ expand the vector up to a larger inner dimension $d_{ff}$, the $\max(0,\cdot)$ is the ReLU activation function applied entrywise (see ReLU in the math_symbols file), and $W_2$ (shape $d_{ff}\times d_{\text{model}}$) and $b_2$ project the result back down to $d_{\text{model}}$. This is an ordinary one-hidden-layer feedforward network — nothing about its internal computation is specific to language or to Transformers — except that the exact same weights $W_1,b_1,W_2,b_2$ are reused, unchanged, at every token position in the sequence.
+
+**Example.** Suppose a Transformer block receives 3 word vectors as input: self-attention first lets all 3 vectors look at each other and produce 3 new, context-aware output vectors. The position-wise feed-forward network then takes over: it runs vector 1 through $\text{FFN}(\cdot)$ by itself, then vector 2 through the exact same $\text{FFN}(\cdot)$ by itself, then vector 3 through the exact same $\text{FFN}(\cdot)$ by itself, producing 3 new output vectors — one per input vector, entirely independently, with no interaction between them at this step. Only the self-attention step, before this one, was responsible for letting information flow between the 3 positions.
+
+**AI/ML Usage**: In the original Transformer (Vaswani et al., 2017), $d_{\text{model}}=512$ while the feed-forward inner dimension is $d_{ff}=2048$ — four times larger — and this pattern of a much wider inner layer continues in later, larger models. Because $W_1$ and $W_2$ together contain roughly $2\times d_{\text{model}}\times d_{ff}$ parameters per layer, and this dwarfs the parameter count of the attention projections, the position-wise feed-forward layers hold the large majority of a Transformer's total parameters and, in large models, the large majority of its computation (floating-point operations) as well — one commonly offered explanation for why large language models can memorize and recall so many facts is that these wide feed-forward layers function as a kind of large associative memory.
 
 ---
 
@@ -2950,6 +3365,26 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 
 ---
 
+<a id="residual-connection-skip-connection"></a>
+### Residual Connection (Skip Connection)
+
+**The Big Idea**: Picture a highway running alongside a series of exits: a driver can choose to take an exit (drive through a layer's computation) or simply stay on the highway and skip it entirely. A residual connection gives a neural network exactly that option, layer by layer, by adding a layer's own input back onto its output, so that "do nothing" (pass the input straight through, unchanged) is always available as a fallback if a particular layer is not helpful for a given input.
+
+**General Usage**: For a layer (or sublayer) that computes some function $F(x)$ from an input $x$, a residual connection changes the layer's effective output from just $F(x)$ to $x+F(x)$ — the original input is added back on top of whatever the layer computed. Because addition is being used, $x$ and $F(x)$ must have the exact same dimension for this to be defined.
+
+**Example.** Suppose a single sublayer computes $F(x)=0.1x^2$ for a scalar input, and is given the input $x=3$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Ordinary layer output | $F(x)=0.1(3)^2$ | $0.9$ |
+| 2. Add the residual (input) | $x+F(x)=3+0.9$ | $3.9$ |
+
+If instead this particular sublayer had learned to be nearly useless for this input (say $F(x)\approx0$), the residual output would be $x+F(x)\approx x$ — the network effectively skips the layer and passes the original input straight through, rather than being forced through a possibly-unhelpful transformation.
+
+**AI/ML Usage**: Residual connections were introduced for very deep image-recognition networks (ResNets) and are now standard in every Transformer block (see Transformer Architecture below), wrapped around both the multi-head self-attention sublayer and the position-wise feed-forward sublayer (see Position-wise Feed-Forward Network above). Their main benefit is enabling gradients to flow more directly from a network's output back to its earliest layers during backpropagation (see Backpropagation and Vanishing Gradient Problem above): without a residual path, a gradient must be multiplied through every intervening layer's derivative on its way backward, and in a very deep network this repeated multiplication can shrink the gradient toward zero (the vanishing gradient problem), leaving early layers barely trained at all. The addition in $x+F(x)$ provides a direct, undiminished path for the gradient to flow along, letting a network be trained successfully even when it is dozens of layers deep, and it is also the reason every sublayer's output must share the same dimension $d_{\text{model}}$ as its input (see Dimension / Count Variables in the math_symbols file) — the addition $x+F(x)$ is only defined when both terms have the same shape.
+
+---
+
 <a id="relaxation-graph-search"></a>
 ### Relaxation (Graph Search)
 
@@ -2968,6 +3403,27 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
 
 **AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
+
+---
+
+<a id="roberta"></a>
+### RoBERTa
+
+**The Big Idea**: This builds directly on the BERT and Fine-Tuning (Transfer Learning) entries and adds no new mathematics beyond them — RoBERTa keeps BERT's architecture and training objective completely unchanged and only changes the *training recipe*: how much data is used, how masking is generated, and how long training runs. It is the same relationship as running the same weight-lifting program for a longer, better-fed training block and getting a stronger athlete without changing a single exercise.
+
+**General Usage**: RoBERTa ("**Ro**bustly optimized **BERT** pretraining **a**pproach") is a pretraining procedure that reuses BERT's Transformer-encoder architecture (see the Transformer Architecture entry) and its Masked Language Modeling objective (see that entry) unchanged, while revising several training choices found to matter more than originally realized: (1) roughly ten times more pretraining text; (2) **dynamic masking**, in which a fresh random set of masked positions is generated every time a training sequence is used, rather than fixing one masking pattern for that sequence at the very start of training and reusing it on every pass; (3) longer training (more optimization steps, larger batches); and (4) removing the Next Sentence Prediction objective (see that entry) entirely, instead packing each training input with full sentences sampled contiguously from a document.
+
+**Example.** Consider the training sentence "The cat sat on the mat" being encountered three separate times over the course of training (three different epochs; see the Epoch entry). Under BERT's original **static masking**, the positions to mask — say, "cat" and "mat" — are decided once before training begins, so the model sees exactly the same two blanks in this sentence every single time it is encountered:
+
+| Epoch | Static masking (BERT) | Dynamic masking (RoBERTa) |
+|---|---|---|
+| 1 | The [MASK] sat on the [MASK]. | The [MASK] sat [MASK] the mat. |
+| 2 | The [MASK] sat on the [MASK]. | [MASK] cat sat on the [MASK]. |
+| 3 | The [MASK] sat on the [MASK]. | The cat [MASK] on [MASK] mat. |
+
+Under RoBERTa's dynamic masking, a fresh pair of positions is chosen independently each time, so across enough passes through the data the model eventually practices predicting nearly every word in the sentence, rather than only ever practicing the same two.
+
+**AI/ML Usage**: Liu et al. (2019) showed that these training changes alone — with no architectural change to BERT at all — produce consistent improvements on downstream benchmarks such as SQuAD, MNLI, and SST-2, and that removing the Next Sentence Prediction objective did not hurt (and in some configurations slightly helped) performance, contrary to the original BERT paper's assumption that NSP was an essential part of pretraining. RoBERTa is distributed through libraries such as Facebook's fairseq and Hugging Face's Transformers, and is one of the most common drop-in replacements for the original BERT in current practice.
 
 ---
 
@@ -3060,6 +3516,40 @@ For comparison, one Euler step gives $1+1\cdot1=2$. RK4 ($2.7083$) is within $0.
 
 ---
 
+<a id="semantic-parsing"></a>
+### Semantic Parsing
+
+**The Big Idea**: This builds directly on the Lambda Abstraction entry in `math_symbols.md` — a semantic parser's entire job is to produce exactly that kind of un-named-function expression, automatically, from an ordinary English sentence.
+
+**General Usage**: Semantic parsing is the natural language processing (NLP, the subfield of AI/ML concerned with processing human language) task of translating a natural-language sentence into a formal, executable meaning representation — typically a logical or lambda-calculus expression — that a computer can run directly against a structured resource such as a database, rather than merely labeling the sentence's grammar (contrast with Syntactic Parsing below).
+
+**Example.** The question "What states border Texas" is translated into the logical expression $\lambda x.\ \text{state}(x) \wedge \text{borders}(x, e_{89})$. Reading it piece by piece: $\lambda x.\ \ldots$ says "the function that, for a candidate $x$, returns true or false according to what follows"; $\text{state}(x)$ is true exactly when $x$ is a US state; $\text{borders}(x, e_{89})$ is true exactly when $x$ borders the database entity coded $e_{89}$ (Texas); and $\wedge$ (logical AND) requires both conditions to hold at once. Running this function against a database of US states — checking every state $x$ and keeping only the ones where both conditions are true — returns exactly the states that border Texas, which is precisely how a computer would answer the original English question.
+
+**AI/ML Usage**: Modern semantic parsers are commonly trained as Sequence-to-Sequence (Seq2Seq) Task models (see that entry below): an encoder-decoder network reads the English question as its input sequence and generates the logical-form tokens one at a time as its output sequence, exactly like machine translation, just with a formal logical language playing the role of the "target language" instead of a foreign human language.
+
+---
+
+<a id="sequence-to-sequence-seq2seq-task"></a>
+### Sequence-to-Sequence (Seq2Seq) Task
+
+**The Big Idea**: This builds on ordinary function notation, extended to whole lists at once. A plain function maps one input to one output; the Transducer (Sequence Labeling) entry above maps a list of $n$ inputs to $n$ outputs, one per position. A sequence-to-sequence task goes a step further: it maps an entire input list to an entire output list, whose length need not match the input's length at all, and whose tokens are not tied to specific input positions.
+
+**General Usage**: A sequence-to-sequence (seq2seq) task is any task framed as mapping an input sequence of tokens to a (possibly different-length) output sequence of tokens, where the output is generated autoregressively — one token at a time, each conditioned on the input and on the output tokens already generated — rather than produced all at once or position by position. The standard way to build a model for this kind of task is the Encoder-Decoder Architecture (see that entry above).
+
+**Example.** Three tasks, all reframed as seq2seq:
+
+| Task | Input sequence | Output sequence | Input length | Output length |
+|---|---|---|---|---|
+| Syntactic parsing | "The dog ran" | `(S (NP (DT the) (NN dog) ) (VP (VBD ran) ) )` | 3 words | 11 tokens |
+| Semantic parsing | "What states border Texas" | $\lambda x.\ \text{state}(x)\wedge\text{borders}(x,e_{89})$ | 4 words | 7 symbols |
+| Machine translation | "the movie was great" | "le film était bon" | 4 words | 4 words |
+
+The table's second and third columns can each be any length — nothing forces the output to match the input in size, unlike a transducer, which always produces exactly one label per input token.
+
+**AI/ML Usage**: Encoder-decoder Transformers (see Encoder-Decoder Architecture and Transformer Architecture above) are the standard architecture for building seq2seq models for machine translation, text summarization, and dialogue systems. The key contrast with a Transducer (Sequence Labeling) is length: a transducer's output length is fixed to exactly match its input length, one label per position, while a seq2seq model's output length is independent of its input length and is discovered only by generating tokens until a Stop Token / End-of-Sequence Token (see that entry in `math_symbols.md`) is produced.
+
+---
+
 <a id="simple-prm-sprm-and-prm"></a>
 ### Simple PRM (sPRM) and PRM*
 
@@ -3148,6 +3638,26 @@ Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working 
 
 ---
 
+<a id="sparse-attention"></a>
+### Sparse Attention
+
+**The Big Idea**: This builds directly on the Self-Attention and Big-O Notation entries above. Ordinary self-attention connects every token to every other token — like a club where every single member is directly friends with every other member. **Sparse attention** is the idea of deliberately removing most of those connections ahead of time, using a fixed, chosen pattern, so that each token only directly "talks to" a small, bounded number of other tokens instead of all of them — the same everyday idea as a sparse matrix (mostly zero entries) being cheaper to store and compute with than a dense one where every entry is filled in.
+
+**General Usage**: In sparse attention, each query position is only allowed to attend to a limited, pre-specified subset of key positions, rather than to every position in the sequence. Common fixed patterns include a **sliding (local) window** (each position attends only to a fixed number $w$ of neighboring positions on either side), a **dilated window** (skipping positions at a regular interval so the same budget of connections reaches farther across the sequence), and a small number of **global** positions (a few designated positions, such as a special classification token, that attend to every position and that every position attends back to). Because each query now only attends to a bounded number of keys $w$ (a constant that does not grow with the sequence length $n$) instead of to all $n$ keys, the total attention computation over the whole sequence costs $O(n\cdot w)$ rather than the $O(n^2)$ of full self-attention (see Big-O Notation in `math_symbols.md`) — growing only linearly, rather than quadratically, as the sequence gets longer.
+
+**Example.** Comparing the number of query-key connections that must be computed, full attention versus a sliding window of $w=1$ (each token attends to itself plus one neighbor on each side, so up to 3 keys per token):
+
+| Sequence length $n$ | Full attention: $n \times n$ connections | Sliding window ($w=1$): at most $n \times 3$ connections |
+|---|---|---|
+| $8$ | $8 \times 8 = 64$ | $8 \times 3 = 24$ |
+| $1{,}000$ | $1{,}000 \times 1{,}000 = 1{,}000{,}000$ | $1{,}000 \times 3 = 3{,}000$ |
+
+At $n=8$ the saving is modest, but at $n=1{,}000$ full attention already requires roughly $333$ times as many connections as the sliding window does — and that ratio keeps growing without bound as $n$ increases further, which is the practical payoff of trading $O(n^2)$ for $O(n\cdot w)$.
+
+**AI/ML Usage**: Longformer (Beltagy et al., 2020) combines exactly these three patterns — a sliding window, a dilated sliding window on some layers, and global attention at a handful of designated positions — to let a Transformer process documents of up to $4{,}096$ tokens, far longer than ordinary full self-attention could handle affordably. The trade-off is that a position can no longer directly attend to arbitrary far-away positions outside these fixed patterns, so sparse attention is a genuine approximation to full self-attention (see the Self-Attention entry above for the mechanism it is restricting), trading some representational flexibility for a large reduction in computational cost.
+
+---
+
 <a id="spectral-theorem"></a>
 ### Spectral Theorem
 
@@ -3210,6 +3720,25 @@ Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working 
 **Example.** A STRIPS-style action "Pick up block A" might have the precondition $\text{Clear}(A) \wedge \text{HandEmpty}$ (block A must currently have nothing on top of it, and the hand must currently be empty), with effects $\neg\text{Clear}(A) \wedge \neg\text{HandEmpty} \wedge \text{Holding}(A)$ (afterward, A is no longer clear, the hand is no longer empty, and the hand is now specifically holding A).
 
 **AI/ML Usage**: STRIPS was genuinely foundational to the entire field of automated AI planning, and its core underlying representation — states as sets of true facts, actions defined by preconditions and effects — directly influenced essentially every later planning language, including the now-standard PDDL (see that entry), which is really a direct, modernized descendant of these original STRIPS ideas.
+
+---
+
+<a id="subword-tokenization"></a>
+### Subword Tokenization
+
+**The Big Idea**: Picture an index that could be organized either by single letters (fast to build, but useless for looking anything up quickly) or by whole words (easy to use, but the list of possible words is endless). Subword tokenization is the practical middle ground between these two extremes: a fixed, moderate-sized list of pieces, some as short as one letter and some as long as a whole common word, built so that any possible piece of text can always be spelled out of them.
+
+**General Usage**: A **vocabulary**, in a language model, is the complete fixed list of distinct symbols (a **vocabulary** — see the Vocabulary entry in `math_symbols.md`) the model can read as input or produce as output; every prediction requires computing a probability for every symbol in that list. Building the vocabulary directly out of whole words causes two opposite failures: a small word-level vocabulary cannot represent most of the words it will eventually encounter (forcing a generic **Unknown-Word Token**, see that entry in `math_symbols.md`, to stand in for anything unfamiliar and losing information about what the missing word actually was), while a large enough word-level vocabulary to cover most real words makes every single prediction step far more expensive to compute. Building the vocabulary out of individual characters instead avoids both problems — the vocabulary is tiny and every string can be spelled out of it — but represents every sentence as a far longer sequence of individual symbols, which is harder for a sequence model (especially a recurrent one such as a Long Short-Term Memory network, see that entry above, whose ability to carry information degrades over long distances — see the Vanishing Gradient Problem entry above) to learn from effectively. **Subword tokenization** breaks each word into one or more pieces drawn from a vocabulary that is built automatically from a large body of training text: a common whole word typically becomes a single piece of its own, while a rare or unfamiliar word is broken into a small number of smaller, more common pieces that the model has already learned from appearing inside many other words. Because any string can always be broken all the way down to individual characters if nothing larger in the vocabulary matches, a subword vocabulary never needs an Unknown-Word Token at all.
+
+**Example.** Real subword tokenizers mark, with some special symbol, which piece of a multi-piece word begins that word (see the Word-Boundary Marker entry in `math_symbols.md`), so the original spacing can be reconstructed afterward. Using a leading underscore for this marker, the (real) English word "portico" might be represented as three subword pieces:
+
+| Word | Subword pieces | Reconstructed |
+|---|---|---|
+| portico | `_port`, `i`, `co` | "portico" (`_port` starts a new word; `i` and `co`, with no marker, each glue onto the piece before them) |
+
+A common word such as "the," by contrast, would typically be represented as the single piece `_the` — no splitting needed — since it already occurs often enough in the training text to earn its own dedicated symbol in the vocabulary.
+
+**AI/ML Usage**: Essentially every modern pretrained Transformer language model — BERT, the GPT family, T5, BART, and RoBERTa among them (see those entries above) — uses some subword tokenization scheme as the very first step in processing any input text, so the specific scheme chosen becomes baked into the vocabulary the entire pretrained model is built on. The two dominant concrete recipes for automatically building a subword vocabulary from a training corpus are Byte Pair Encoding (see that entry above) and WordPiece Tokenization (see that entry below); an older, related approach, fastText (see the fastText (Subword Embeddings) entry above), instead sums fixed-length character-sequence pieces to build a word's embedding directly, rather than replacing the word with a sequence of learned subword tokens.
 
 ---
 
@@ -3308,6 +3837,47 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 
 ---
 
+<a id="syntactic-parsing"></a>
+### Syntactic Parsing
+
+**The Big Idea**: This builds directly on the Phrase-Structure Category Labels entry above — syntactic parsing is the task of actually producing the nested tree of those labels for a real sentence, rather than just knowing what the individual labels mean.
+
+**General Usage**: Syntactic parsing (also called constituency parsing) is the NLP task of analyzing a sentence's grammatical structure and producing a tree of nested phrase-structure categories (see Phrase-Structure Category Labels above) showing how the sentence's words group into larger and larger grammatical units.
+
+**Example.** The sentence "The dog ran" parses into the tree `(S (NP (DT the) (NN dog) ) (VP (VBD ran) ) )`, read from the outside in:
+
+| Bracket group | Category | Contains |
+|---|---|---|
+| Outermost | `S` (whole sentence) | everything below |
+| `(NP (DT the) (NN dog) )` | `NP` (noun phrase) | `DT` (determiner) "the" + `NN` (singular noun) "dog" |
+| `(VP (VBD ran) )` | `VP` (verb phrase) | `VBD` (past-tense verb) "ran" |
+
+**AI/ML Usage**: A parse tree written this way is naturally just one flat sequence of bracket-and-tag tokens, which is exactly why syntactic parsing can be reframed and solved as a Sequence-to-Sequence (Seq2Seq) Task (see that entry above): an encoder-decoder model reads the plain sentence as its input and generates the bracketed tree's tokens one at a time as its output, instead of relying on a specialized, tree-building parsing algorithm.
+
+---
+
+<a id="t5"></a>
+### T5
+
+**The Big Idea**: This builds directly on the Encoder-Decoder Architecture and Denoising Autoencoder entries above, the same way the BART entry above does: T5 trains a full sequence-to-sequence Transformer (see Encoder-Decoder Architecture) using a denoising recipe (see Denoising Autoencoder) — corrupt part of a piece of text on purpose, then train the model to recover what was corrupted. T5's specific way of corrupting text and shaping its target output is what distinguishes it from BART.
+
+**General Usage**: T5 (Text-to-Text Transfer Transformer) is a sequence-to-sequence Transformer pretrained using **span corruption**: one or more spans of consecutive tokens (a span may be a single token or several tokens long) are selected in a piece of text, and each selected span is deleted and replaced by its own unique **sentinel token** — a placeholder such as `<X>`, `<Y>`, `<Z>`, and so on (see the Sentinel Token entry in the math_symbols file) — producing the model's corrupted input. Unlike a denoising scheme whose target is the complete original text, T5's target is only a short sequence listing each sentinel token followed immediately by the exact span of text it replaced, in order, plus one further sentinel marking the end of the target. Because the decoder only ever has to generate these short masked spans rather than a whole reconstructed document, T5's pretraining shapes its decoder somewhat differently than a "reconstruct everything" scheme like BART's does, which affects which downstream tasks each model ends up being best suited for. T5 was also pretrained on an unusually large, purpose-built web-text corpus (see C4 above), and it was designed with an eye toward multitask fine-tuning — fine-tuning one model across many downstream tasks and datasets at once (see Multitask Learning above) — rather than one fine-tuned model per task.
+
+**Example.** Applying span corruption to the sentence "Thank you for inviting me to your party last week":
+
+| Step | Action | Result |
+|---|---|---|
+| 1. Original text | — | "Thank you for inviting me to your party last week." |
+| 2. Select spans to mask | Choose the two-word span "for inviting" and the one-word span "last" | — |
+| 3. Replace each span with a sentinel | "for inviting" $\to$ `<X>`; "last" $\to$ `<Y>` | Input: "Thank you `<X>` me to your party `<Y>` week." |
+| 4. Build the target | List each sentinel with the text it replaced, then append a final closing sentinel `<Z>` | Target: "`<X>` for inviting `<Y>` last `<Z>`" |
+
+Only the masked spans (tagged by their sentinels) appear in the target — the unmasked words "Thank you," "me to your party," and "week" are not reproduced anywhere in it, unlike a scheme whose target is the entire original sentence.
+
+**AI/ML Usage**: T5 (Raffel et al., 2019) was shown to perform well across a broad range of tasks, including machine translation and, via a downstream system called UnifiedQA (Khashabi et al., 2020), question answering in several different formats at once (see Multitask Learning above): a single fine-tuned T5 model can be pointed at extractive, free-form, multiple-choice, and yes/no question-answering datasets alike, simply by reformatting each one into the same text-to-text input/output shape. This flexibility — one pretrained architecture, repurposed for many superficially different tasks via reformatting alone rather than architectural changes — is a major reason text-to-text sequence-to-sequence pretraining became a widely used recipe for building large, general-purpose language models.
+
+---
+
 <a id="taylor-expansion-taylors-theorem"></a>
 ### Taylor Expansion / Taylor's Theorem
 
@@ -3321,6 +3891,29 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 
 ---
 
+<a id="teacher-forcing"></a>
+### Teacher Forcing
+
+**The Big Idea**: No new math is needed here — this is a plain, common-sense decision about how training examples are built, not a formula. Training a model to produce a whole sequence one piece at a time creates an obvious chicken-and-egg problem: when scoring the model's guess for the third word, should the model be shown the *true* first and second words, or whatever it just (possibly wrongly) guessed for them? Teacher forcing answers this the way a teacher checking a worksheet does: no matter what a student wrote for problem 2, the teacher always shows them the correct answer before problem 3, so one bad answer never snowballs into a whole string of worse ones. Concretely, during training a model is always shown the real, correct earlier words from the training data as context, never its own guesses, and every position's prediction is checked this way at once.
+
+**General Usage**: Given a training sequence of words $w_1, w_2, \ldots, w_n$, a language model's job at position $t$ is to predict $w_t$ from everything before it (see the N-Gram Language Model entry above for the general idea of predicting a word from its context). With teacher forcing, the context supplied to the model at every position is always the *true* sequence from the training data, never whatever the model itself would have predicted for the earlier positions. Because every position is "forced" to see the correct history regardless of what the model does elsewhere, every position's prediction can be scored independently and simultaneously in a single pass, rather than in a slow, sequential loop where each step has to wait on the model's own previous output.
+
+**Example.** Training on the sentence "I saw the dog running," with a placeholder start-of-sentence token (see the Start-of-Sentence Token entry in `math_symbols.md`) marking the beginning, teacher forcing builds one input/target pair per position, always using the *true* words as input regardless of what the model would guess:
+
+| Position | Input shown to the model (true words only) | Target (true next word) |
+|---|---|---|
+| 1 | start-of-sentence token | I |
+| 2 | start-of-sentence token, I | saw |
+| 3 | start-of-sentence token, I, saw | the |
+| 4 | start-of-sentence token, I, saw, the | dog |
+| 5 | start-of-sentence token, I, saw, the, dog | running |
+
+Notice that even if the model had incorrectly predicted, say, "cat" instead of "dog" at position 4, position 5 would still be shown the true word "dog" as part of its input — never the model's wrong guess "cat." That substitution of ground truth for the model's own (possibly incorrect) output is exactly what "forcing" refers to.
+
+**AI/ML Usage**: Teacher forcing is the standard way both transformer and (historically) recurrent neural network language models are trained: it is exactly what allows an entire training sentence's loss to be computed in one parallel pass — summing a negative log likelihood (see the Negative Log Likelihood entry above) at every position at once — instead of a slow, sequential pass that waits on the model's own output at each step. Its main downside is a mismatch between training and actual use: at generation time a language model has no ground-truth next words to be handed — it must condition on its own previously generated words, one at a time — so a model trained purely with teacher forcing has never practiced recovering from its own mistakes, a training/generation mismatch researchers call exposure bias.
+
+---
+
 <a id="tensor"></a>
 ### Tensor
 
@@ -3331,6 +3924,19 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 **Example.** A single color image is naturally represented as a 3-dimensional tensor: height, width, and color channel (red, green, blue) — and a whole batch of, say, 32 such images together forms a 4-dimensional tensor, adding one further dimension specifically for "which image in the batch."
 
 **AI/ML Usage**: Virtually all modern deep learning software is fundamentally built directly around tensors — every input, every intermediate computed value, and every one of a neural network's parameters is represented as a tensor, and the specialized hardware (GPUs and TPUs) that trains these networks is specifically, purpose-built for doing extremely fast, large-scale tensor computations.
+
+---
+
+<a id="textual-entailment-natural-language-inference"></a>
+### Textual Entailment (Natural Language Inference)
+
+**The Big Idea**: No new math is needed here — this is an ordinary classification problem, the same idea as any classifier choosing among a fixed set of categories (see the Label Space entry in `math_symbols.md`), except that the "input" being classified is a pair of sentences instead of a single sentence, and the fixed categories describe how the second sentence relates logically to the first.
+
+**General Usage**: Textual entailment (also called natural language inference, or NLI) is the task of reading two sentences — conventionally called the premise and the hypothesis — and classifying their relationship into one of three categories: **entailment** (the hypothesis is implied by the premise — if the premise is true, the hypothesis must also be true), **contradiction** (the hypothesis cannot be true at the same time as the premise), or **neutral** (the two sentences are unrelated, or the hypothesis is neither clearly implied nor clearly contradicted by the premise).
+
+**Example.** Premise: "The woman is driving a car." Hypothesis: "The woman is walking." A person cannot simultaneously be driving a car and walking — the two actions are mutually exclusive — so the correct label is **contradiction**. Contrast this with a different hypothesis for the same premise, "A person is operating a vehicle," which would instead be labeled **entailment** (it is implied by the premise), or a hypothesis like "The woman is wearing a red coat," which would be labeled **neutral** (the premise neither confirms nor rules this out).
+
+**AI/ML Usage**: Textual entailment is one of the tasks a Transformer-based sentence-pair classifier is trained to solve directly (see the CLS Token entry in `math_symbols.md` for how two sentences are packed into a single input using `[CLS]` and `[SEP]`): the encoded `[CLS]` vector is fed through a final matrix multiplication and Softmax Function (see that entry in `math_symbols.md`) to produce a probability over the three labels above. Strong performance on textual entailment benchmarks was one of the results that established BERT (Devlin et al., 2018, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding") as a major advance, since self-attention lets the model directly compare and align individual words across the two sentences — for example, recognizing that "driving" and "walking" describe incompatible actions — without requiring a custom architecture built specifically for comparing sentence pairs.
 
 ---
 
@@ -3351,6 +3957,50 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 Both are equally good by the priority value alone, but $X$'s smaller heuristic value marks it as the more promising one to try first.
 
 **AI/ML Usage**: A nearly-free optimization used in essentially every performant real-world implementation of A* Search (A-Star Algorithm) — since it costs nothing but a smarter comparison rule when priorities tie, and yet noticeably reduces how much of the search space is explored before the goal is found.
+
+---
+
+<a id="transducer-sequence-labeling"></a>
+### Transducer (Sequence Labeling)
+
+**The Big Idea**: This is function notation from Algebra 2, applied position by position — instead of a single function turning one input into one output, a transducer applies essentially the same "input in, prediction out" idea independently at every position of an ordered list, so a list of $n$ inputs yields a list of $n$ outputs, one per position, rather than the whole list being collapsed down to a single answer (contrast with the pooling approach described in the CLS Token entry in `math_symbols.md`, which does collapse a whole sequence to one answer).
+
+**General Usage**: A transducer is a model that receives a sequence of $n$ items and produces exactly $n$ outputs, one prediction per item, with the output sequence the same length as the input sequence. Built on top of a Self-Attention-based encoder (see the Self-Attention entry above) or an RNN, this is implemented by taking each position's own output vector and passing it, independently of every other position, through the same small "head" — typically one Matrix (see that entry in `math_symbols.md`) multiplication followed by a Softmax Function (see that entry in `math_symbols.md`) — to produce a probability distribution over a fixed set of possible labels for that one position.
+
+**Example.** Take the four-word sentence "the movie was great," with each word already encoded into its own vector by an upstream encoder. A transducer built for part-of-speech tagging applies the same linear-layer-then-softmax head to each of the four encoded vectors separately:
+
+| Position | Word | Encoded vector fed to the head | Predicted label |
+|---|---|---|---|
+| 1 | the | $enc_{\text{the}}$ | DT (determiner) |
+| 2 | movie | $enc_{\text{movie}}$ | NN (noun) |
+| 3 | was | $enc_{\text{was}}$ | VBD (past-tense verb) |
+| 4 | great | $enc_{\text{great}}$ | JJ (adjective) |
+
+Each row is computed completely independently of the other three — the head has no idea "movie" was tagged NN when it goes on to tag "was" — yet because each encoded vector was already built by an encoder that let every word "see" every other word (see the Self-Attention entry above), the predictions can still reflect the surrounding context even though the head itself only ever looks at one position at a time.
+
+**AI/ML Usage**: Sequence labeling (also called "token classification") is the standard pattern behind part-of-speech tagging (labeling each word with its grammatical role, as in the example above), named entity recognition (labeling each word as part of a person's name, a location, an organization, or none of these), and slot filling in voice-assistant systems (labeling each word of a spoken command with the role it plays, such as a city name or a date). Any encoder that produces one vector per input token — whether an RNN or a Transformer's Self-Attention-based encoder (see Transformer Architecture below) — can be turned into a transducer for one of these tasks simply by attaching this same lightweight per-position head.
+
+---
+
+<a id="transformer-architecture"></a>
+### Transformer Architecture
+
+**The Big Idea**: This entry ties together several pieces already built up elsewhere in this file and in the math_symbols file — Self-Attention, Multi-Head Self-Attention, the Position-wise Feed-Forward Network, the Residual Connection, and Layer Normalization — into the one repeating building block (a "Transformer block") that essentially every modern large language model is built by stacking, over and over.
+
+**General Usage**: A single Transformer block takes in a sequence of token vectors, each of dimension $d_{\text{model}}$, and alternates exactly two kinds of computation, each wrapped in a residual connection followed by layer normalization: first multi-head self-attention (letting every token gather information from every other token; see Multi-Head Self-Attention above), and then a position-wise feed-forward network (transforming each token's vector independently; see Position-wise Feed-Forward Network above). Because both sublayers are wrapped in residual connections, both must output a vector of the exact same dimension $d_{\text{model}}$ as their input (see Residual Connection (Skip Connection) above) — so the entire block maps a $d_{\text{model}}$-dimensional input to a $d_{\text{model}}$-dimensional output, and an arbitrary number $N$ of these blocks can therefore be stacked directly on top of one another, each one taking the previous block's output as its own input, without ever needing to change size.
+
+**Example.** Following one token vector through a single Transformer block, in order:
+
+| Step | Sublayer | What happens |
+|---|---|---|
+| 1 | Multi-head self-attention | The token's vector is updated using information gathered from every other token in the sequence (see Multi-Head Self-Attention above) |
+| 2 | Add residual | The block's original input vector is added back onto the attention output |
+| 3 | Layer normalization | The result of step 2 is rescaled to a consistent mean and variance (see Layer Normalization above) |
+| 4 | Position-wise feed-forward network | The single resulting vector is passed through the same small feedforward network used at every position (see Position-wise Feed-Forward Network above) |
+| 5 | Add residual | The output of step 3 (the block's input to the feed-forward sublayer) is added back onto the feed-forward output |
+| 6 | Layer normalization | The result of step 5 is rescaled again, producing the block's final $d_{\text{model}}$-dimensional output |
+
+**AI/ML Usage**: The original Transformer (Vaswani et al., 2017, "Attention Is All You Need") stacks $N=6$ of these blocks to build an encoder, and $6$ similarly structured blocks (with an added causal mask and an extra cross-attention step) to build a decoder, combined into a full Encoder-Decoder Architecture (see that entry above) for sequence-to-sequence tasks like translation. Restricting the design to only a stack of blocks with causal self-attention (see Causal (Masked) Self-Attention above), and no separate decoder, produces exactly the decoder-only architecture used by GPT-style language models. Model size is controlled mainly by $d_{\text{model}}$ (the width of every token vector) and the feed-forward inner dimension $d_{ff}$, together with the number of stacked blocks $N$: GPT-3's largest configuration scales $d_{\text{model}}$ up from the original Transformer's $512$ to $12{,}288$, while the attention-head dimension $d_k$ grows far less (from $64$ to $128$) — reflecting that most of a large Transformer's added computation and capacity comes from making the feed-forward layers and overall vector width larger, not from making the attention computation itself more complex.
 
 ---
 
@@ -3521,3 +4171,24 @@ Compare "movie" and "film" using the dot product (see the Dot Product entry in t
 After enough repetitions of this process across enough text, words that tend to appear in the same kinds of contexts — such as "movie" and "film" — end up with word vectors that point in similar directions, purely as a side effect of both having learned to predict similar context words.
 
 **AI/ML Usage**: Word2Vec (2013) was the algorithm that made pretrained word embeddings a standard first step in nearly every natural language processing pipeline for years afterward, and it comes in two variants — continuous bag-of-words and skip-gram — that differ only in which direction the prediction runs (surrounding words predicting the center word, or the center word predicting its surrounding words). Its core idea, that a useful representation can be learned purely by setting up a self-supervised prediction task (one where the "labels" come from the raw text itself rather than from any human annotation) over unlabeled text, is also the same basic strategy used to pretrain modern large language models, just applied at a vastly larger scale and with a different network architecture (the Transformer, rather than the simple predictive model Word2Vec used).
+
+---
+
+<a id="wordpiece-tokenization"></a>
+### WordPiece Tokenization
+
+**The Big Idea**: This builds directly on the Subword Tokenization and Byte Pair Encoding entries above. WordPiece Tokenization builds the same kind of subword vocabulary as Byte Pair Encoding (BPE), but changes the rule used to decide which pair of pieces to glue together at each step: instead of always picking whichever adjacent pair occurs most often (BPE's rule, pure counting), WordPiece picks whichever merge would most help a language model correctly predict the training text — a genuinely harder question to answer than a raw frequency count, since it requires actually measuring how a candidate vocabulary change affects prediction quality rather than just tallying occurrences.
+
+**General Usage**: Where BPE runs its merge loop a fixed, chosen number of times, WordPiece instead grows its vocabulary until it reaches a chosen target size, repeating: build a language model using the current vocabulary, then merge whichever candidate pair of adjacent pieces would most improve (lower) that language model's **Perplexity** (see that entry above) — the standard measure of how well a language model predicts real text, with lower perplexity meaning the model assigns higher probability, on average, to the words that actually occur. Directly testing every possible candidate merge this way — retraining a language model and remeasuring perplexity for each one — would be extremely computationally expensive, so practical implementations rely on efficient approximations rather than a literal brute-force search over every candidate at every step.
+
+**Example.** Consider a toy training corpus consisting of only the four-character string "aaab" (invented here purely to make the comparison concrete and checkable by hand). Splitting into individual characters gives the adjacent pairs $(a,a)$, occurring twice (at positions 1–2 and 2–3), and $(a,b)$, occurring once (at position 3–4) — by raw frequency alone, BPE would merge $(a,a)$, since $2>1$. Scoring each candidate merge instead by its effect on a simple **unigram** language model (one that assigns each token a probability equal to just how often it occurs overall, with no dependence on surrounding tokens) tells a different story:
+
+| Candidate merge | Re-tokenized "aaab" | New token frequencies | Resulting perplexity |
+|---|---|---|---|
+| (none — baseline) | `a`, `a`, `a`, `b` (4 tokens) | $P(a){=}\tfrac34$, $P(b){=}\tfrac14$ | $\approx 1.76$ |
+| Merge $(a,a)\to$ `aa` | `aa`, `a`, `b` (3 tokens) | each token occurs once: $P{=}\tfrac13$ for all three | $\exp(\ln 3) = 3.00$ |
+| Merge $(a,b)\to$ `ab` | `a`, `a`, `ab` (3 tokens) | $P(a){=}\tfrac23$, $P(ab){=}\tfrac13$ | $\exp\!\big(\text{-}\tfrac{2\ln(2/3)+\ln(1/3)}{3}\big) \approx 1.89$ |
+
+Merging $(a,b)$ leaves the corpus more predictable (perplexity $\approx 1.89$) than merging $(a,a)$ does (perplexity $3.00$), even though $(a,a)$ is the more frequent raw pair. A WordPiece-style, perplexity-driven criterion would therefore favor merging $(a,b)$ — the opposite of what plain frequency-based BPE would pick. This is a deliberately simplified illustration of the underlying principle; it does not reproduce the exact internal computation of any specific published implementation.
+
+**AI/ML Usage**: WordPiece was introduced by Schuster and Nakajima (2012) and is the tokenization method used to build BERT's vocabulary (see the BERT entry above; Devlin et al., 2019), where it additionally marks every non-initial piece of a split word with a leading `##` (see the Word-Boundary Marker entry in `math_symbols.md`). Google's SentencePiece library implements a closely related, efficient perplexity-driven method internally described as a **unigram language model** tokenizer (Kudo, 2018; used in production for Google's Neural Machine Translation system, Wu et al., 2016), and this family of perplexity-driven methods is collectively sometimes called "Unigram LM" tokenization to contrast it with frequency-driven BPE. Bostrom and Durrett (2020) compared the two families of methods directly and found that Unigram LM segmentations recover recognizable prefixes and suffixes (such as "tri-," "-s," and "-ly") far more often than BPE does, making them more linguistically plausible even though BPE achieved wider adoption first.

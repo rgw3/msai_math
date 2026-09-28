@@ -7,74 +7,76 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 190 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 196 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Goal Set | Gradient to Positional Embedding | Potential Function to Zero-One Loss |
+| Absolute Value to Gradient | Graph to Precedence Relation | Prime Notation to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Gradient](#gradient) | [Potential Function](#potential-function) |
-| [Action Space](#action-space) | [Graph](#graph) | [Precedence Relation](#precedence-relation) |
-| [Activation Function](#activation-function) | [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) |
-| [Adjacency Matrix](#adjacency-matrix) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
-| [All-Ones Vector](#all-ones-vector) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
-| [Approximately Equal](#approximately-equal) | [Hypothesis](#hypothesis) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Identity Matrix](#identity-matrix) | [Psi, uppercase](#psi-uppercase) |
-| [Assignment Arrow](#assignment-arrow) | [If and Only If](#if-and-only-if) | [Query, Key, and Value](#query-key-and-value) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Implies Arrow](#implies-arrow) | [Question-Mark Relation](#question-mark-relation) |
-| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
-| [Ball of Radius r](#ball-of-radius-r) | [Initial State](#initial-state) | [Receptive Field](#receptive-field) |
-| [Best Solution Cost](#best-solution-cost) | [Integral](#integral) | [Regression Function](#regression-function) |
-| [Beta](#beta) | [Inverse Hessian](#inverse-hessian) | [ReLU](#relu) |
-| [Bias Term](#bias-term) | [Jacobian](#jacobian) | [Rotation Matrix](#rotation-matrix) |
-| [Big-O Notation](#big-o-notation) | [Kernel / Kernel Size](#kernel-kernel-size) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Binary Label Set](#binary-label-set) | [Label](#label) | [Sample Space](#sample-space) |
-| [Binomial Coefficient](#binomial-coefficient) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
-| [Blocks World](#blocks-world) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Set Intersection](#set-intersection) |
-| [Concept Class](#concept-class) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Conditional Bar](#conditional-bar) | [Learning Rate](#learning-rate) | [Set Braces](#set-braces) |
-| [Configuration Space](#configuration-space) | [Less Than or Equal](#less-than-or-equal) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Difference](#set-difference) |
-| [Connection Radius Constant](#connection-radius-constant) | [Logarithm](#logarithm) | [Set Union](#set-union) |
-| [Cosine Similarity](#cosine-similarity) | [Logical Negation](#logical-negation) | [Sigma, lowercase](#sigma-lowercase) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Logistic Function](#logistic-function) | [Sigma, uppercase](#sigma-uppercase) |
-| [Covariance](#covariance) | [Loss Function](#loss-function) | [Sigmoid Function](#sigmoid-function) |
-| [Curvature (Path)](#curvature-path) | [Margin](#margin) | [Sign Function](#sign-function) |
-| [Data Distribution](#data-distribution) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
-| [Dataset](#dataset) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Delta, lowercase](#delta-lowercase) | [Matrix Transpose](#matrix-transpose) | [Standard Deviation](#standard-deviation) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Max Function](#max-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Mean](#mean) | [State Space](#state-space) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [State Transition Function](#state-transition-function) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Min Function](#min-function) | [Step Size](#step-size) |
-| [Element-of Symbol](#element-of-symbol) | [Mistake Bound](#mistake-bound) | [Stride](#stride) |
-| [Element-wise Operations](#element-wise-operations) | [Model Parameters](#model-parameters) | [Subset](#subset) |
-| [Ellipsis](#ellipsis) | [Mu](#mu) | [Summation](#summation) |
-| [ELU](#elu) | [N-Gram](#n-gram) | [Superscript Example Index](#superscript-example-index) |
-| [Empty Set](#empty-set) | [Nabla](#nabla) | [Tanh](#tanh) |
-| [Epsilon](#epsilon) | [Natural Numbers](#natural-numbers) | [TF-IDF](#tf-idf) |
-| [Error Signal](#error-signal) | [Negation Overbar](#negation-overbar) | [Theta](#theta) |
-| [Eta](#eta) | [Normal Distribution Notation](#normal-distribution-notation) | [Tilde Accent](#tilde-accent) |
-| [Euclidean Norm](#euclidean-norm) | [Not Equal](#not-equal) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Number Sign / Count](#number-sign-count) | [Training Set](#training-set) |
-| [Existential Quantifier](#existential-quantifier) | [Omega](#omega) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Expectation](#expectation) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Unit Ball Volume](#unit-ball-volume) |
-| [Factorial](#factorial) | [Outer Product](#outer-product) | [Unit Hypercube](#unit-hypercube) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Padding](#padding) | [Universal Quantifier](#universal-quantifier) |
-| [Floor Function](#floor-function) | [Parameterized Function / Model](#parameterized-function-model) | [Unknown-Word Token](#unknown-word-token) |
-| [Free Space](#free-space) | [Partial Derivative](#partial-derivative) | [Variance](#variance) |
-| [Frobenius Norm](#frobenius-norm) | [Partial Order](#partial-order) | [Vector](#vector) |
-| [Function Composition](#function-composition) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Vector Overbar](#vector-overbar) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Perceptron Loss](#perceptron-loss) | [Vector Projection](#vector-projection) |
-| [Gain](#gain) | [Permutation](#permutation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gamma](#gamma) | [Phi, lowercase](#phi-lowercase) | [Vocabulary](#vocabulary) |
-| [Gaussian CDF](#gaussian-cdf) | [Phi, uppercase](#phi-uppercase) | [Weight Vector](#weight-vector) |
-| [GeLU](#gelu) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Zero-One Loss](#zero-one-loss) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) |  |
-| [Goal Set](#goal-set) | [Positional Embedding](#positional-embedding) |  |
+| [Absolute Value](#absolute-value) | [Graph](#graph) | [Prime Notation](#prime-notation) |
+| [Action Space](#action-space) | [Greater Than / Less Than](#greater-than-less-than) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Activation Function](#activation-function) | [Halfspace](#halfspace) | [Probability / Probability Density](#probability-probability-density) |
+| [Adjacency Matrix](#adjacency-matrix) | [Hat Notation](#hat-notation) | [Probability Simplex](#probability-simplex) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hessian Matrix](#hessian-matrix) | [Product Notation](#product-notation) |
+| [All-Ones Vector](#all-ones-vector) | [Heuristic Function](#heuristic-function) | [Progress Radius](#progress-radius) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hypothesis](#hypothesis) | [Psi, uppercase](#psi-uppercase) |
+| [Approximately Equal](#approximately-equal) | [Identity Matrix](#identity-matrix) | [Query, Key, and Value](#query-key-and-value) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [If and Only If](#if-and-only-if) | [Question-Mark Relation](#question-mark-relation) |
+| [Assignment Arrow](#assignment-arrow) | [Implies Arrow](#implies-arrow) | [Real Numbers](#real-numbers) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Infinity](#infinity) | [Receptive Field](#receptive-field) |
+| [Attention Operator](#attention-operator) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
+| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [ReLU](#relu) |
+| [Best Solution Cost](#best-solution-cost) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
+| [Beta](#beta) | [Jacobian](#jacobian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Bias Term](#bias-term) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
+| [Big-O Notation](#big-o-notation) | [Label](#label) | [Sampling Notation](#sampling-notation) |
+| [Binary Label Set](#binary-label-set) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Blocks World](#blocks-world) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Intersection](#set-intersection) |
+| [CLS Token](#cls-token) | [Learning Rate](#learning-rate) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Concept Class](#concept-class) | [Less Than or Equal](#less-than-or-equal) | [Set Braces](#set-braces) |
+| [Conditional Bar](#conditional-bar) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Configuration Space](#configuration-space) | [Logarithm](#logarithm) | [Set Difference](#set-difference) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Logical Negation](#logical-negation) | [Set Union](#set-union) |
+| [Connection Radius Constant](#connection-radius-constant) | [Logistic Function](#logistic-function) | [Sigma, lowercase](#sigma-lowercase) |
+| [Cosine Similarity](#cosine-similarity) | [Loss Function](#loss-function) | [Sigma, uppercase](#sigma-uppercase) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Margin](#margin) | [Sigmoid Function](#sigmoid-function) |
+| [Covariance](#covariance) | [Mask Token](#mask-token) | [Sign Function](#sign-function) |
+| [Curvature (Path)](#curvature-path) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
+| [Data Distribution](#data-distribution) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Dataset](#dataset) | [Matrix Transpose](#matrix-transpose) | [Standard Deviation](#standard-deviation) |
+| [Delta, lowercase](#delta-lowercase) | [Max Function](#max-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mean](#mean) | [State Space](#state-space) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [State Transition Function](#state-transition-function) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Min Function](#min-function) | [Step Size](#step-size) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Mistake Bound](#mistake-bound) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Element-of Symbol](#element-of-symbol) | [Model Parameters](#model-parameters) | [Stride](#stride) |
+| [Element-wise Operations](#element-wise-operations) | [Mu](#mu) | [Subset](#subset) |
+| [Ellipsis](#ellipsis) | [N-Gram](#n-gram) | [Summation](#summation) |
+| [ELU](#elu) | [Nabla](#nabla) | [Superscript Example Index](#superscript-example-index) |
+| [Empty Set](#empty-set) | [Natural Numbers](#natural-numbers) | [Tanh](#tanh) |
+| [Epsilon](#epsilon) | [Negation Overbar](#negation-overbar) | [TF-IDF](#tf-idf) |
+| [Error Signal](#error-signal) | [Normal Distribution Notation](#normal-distribution-notation) | [Theta](#theta) |
+| [Eta](#eta) | [Not Equal](#not-equal) | [Tilde Accent](#tilde-accent) |
+| [Euclidean Norm](#euclidean-norm) | [Number Sign / Count](#number-sign-count) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Omega](#omega) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Expectation](#expectation) | [Outer Product](#outer-product) | [Unit Ball Volume](#unit-ball-volume) |
+| [Factorial](#factorial) | [Padding](#padding) | [Unit Hypercube](#unit-hypercube) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Parameterized Function / Model](#parameterized-function-model) | [Universal Quantifier](#universal-quantifier) |
+| [Floor Function](#floor-function) | [Partial Derivative](#partial-derivative) | [Unknown-Word Token](#unknown-word-token) |
+| [Free Space](#free-space) | [Partial Order](#partial-order) | [Variance](#variance) |
+| [Frobenius Norm](#frobenius-norm) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Vector](#vector) |
+| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Vector Overbar](#vector-overbar) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Vector Projection](#vector-projection) |
+| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vocabulary](#vocabulary) |
+| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Weight Vector](#weight-vector) |
+| [GeLU](#gelu) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Zero-One Loss](#zero-one-loss) |
+| [Goal Set](#goal-set) | [Potential Function](#potential-function) |  |
+| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) |  |
 
 ## Symbols
 
@@ -427,6 +429,21 @@ On macOS: type normally from the keyboard; no special character needed
 **Example.** Suppose at every point in a game you have $b=3$ possible moves, and you want to plan $d=4$ moves ahead. The total number of possible move sequences to consider is $b^d = 3^4 = 81$. If instead you had $b=10$ choices and planned $d=4$ moves ahead, that jumps to $10^4 = 10{,}000$ — increasing the branching factor even a little causes the total number of possibilities to explode much faster than increasing the depth by the same amount.
 
 **AI/ML Usage**: These two numbers directly determine whether a classical AI search or planning approach is computationally realistic to run at all. Game-playing AI is the classic example: chess has a branching factor around 35 (roughly 35 legal moves at each turn), and looking many moves ahead multiplies that out astronomically fast. This exact problem is why techniques like alpha-beta pruning, and more modern approaches like Monte Carlo Tree Search combined with a trained neural network to guess promising moves (the strategy behind AlphaZero, the AI system that mastered chess and Go), were developed — all specifically to avoid ever having to fully explore the enormous $b^d$ tree of raw possibilities.
+
+---
+
+<a id="cls-token"></a>
+### CLS Token — `[CLS]`
+Symbol: `[CLS]`, square brackets around the capital letters "CLS," short for "classification"; used as a special placeholder token  
+On macOS: type normally from the keyboard — `[CLS]` is ordinary bracket and letter characters, not a special symbol requiring a shortcut
+
+**The Big Idea**: This is a placeholder, the same basic idea as the Start-of-Sentence Token entry above — a designated filler position added to a sequence so that the network always has somewhere fixed to look, even though `[CLS]` does not correspond to any real word. Where the start-of-sentence token exists so a model always has "a previous word" to condition on, `[CLS]` exists so a model always has one dedicated position to read a summary of the whole sequence back out of.
+
+**General Usage**: `[CLS]` is a special token inserted at the very start of an input sequence before it is fed into a Transformer (see the Transformer Architecture entry in `math_concepts.md`). After Self-Attention (see that entry in `math_concepts.md`) has let every token exchange information with every other token, the position that started out as `[CLS]` holds a learned output vector that can be treated as a summary of the entire sequence, ready to be read off by a classifier. A companion token, `[SEP]` ("separator"), is used to mark the boundary between two separate sequences that are packed into one input, for example when comparing two sentences.
+
+**Example.** Given the four-word sentence "the movie was great," prepending `[CLS]` produces the five-token input sequence `[CLS], the, movie, was, great`. After this sequence is run through a Transformer, the position that started as `[CLS]` holds a vector that is the model's learned summary of the whole sentence — this is the one vector a classifier head reads, rather than reading any of the other four positions or averaging all of them together. Comparing two sentences works the same way with `[SEP]` added: `[CLS], the, woman, is, driving, a, car, [SEP], the, woman, is, walking`, where `[SEP]` marks where the first sentence ends and the second begins, and `[CLS]`'s final vector summarizes the pair together.
+
+**AI/ML Usage**: `[CLS]`-based pooling is the standard mechanism used by BERT (Devlin et al., 2018, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding") and its descendants for sequence classification and sentence-pair classification. Rather than manually averaging every token's output vector (see the Deep Averaging Network (DAN) entry in `math_concepts.md`), the model lets self-attention itself learn how to combine information into the `[CLS]` position; only that one output vector is then passed into a final matrix multiplication (see the Matrix entry above) and Softmax Function (see that entry above) to produce the class prediction. Because self-attention lets `[CLS]` attend to every other position with a learned weighting rather than a fixed uniform average, this approach can, in principle, do better than plain average pooling at deciding which words matter most for a given classification decision.
 
 ---
 
@@ -1543,6 +1560,21 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter gam
 
 ---
 
+<a id="mask-token"></a>
+### Mask Token — `[MASK]`
+Symbol: `[MASK]`, square brackets around the capital letters "MASK"; used as a special placeholder token  
+On macOS: type normally from the keyboard — `[MASK]` is ordinary bracket and letter characters, not a special symbol requiring a shortcut
+
+**The Big Idea**: This is the same placeholder idea as the CLS Token and Start-of-Sentence Token entries above — a designated filler position stands in for something that isn't really there. Here, `[MASK]` stands in for a real word that has been deliberately hidden from the model, the same way covering an answer on a worksheet with a sticky note leaves a visible blank where the answer would go.
+
+**General Usage**: `[MASK]` is a special token that replaces a chosen word in an input sequence before that sequence is fed into a model, so that the model can be trained to predict the original, hidden word from everything else around it. Because the real word is removed from the input entirely, rather than merely hidden by some rule about which positions may be looked at, a model reading a sequence containing `[MASK]` has no way to see the answer, no matter how much of the rest of the sequence it is allowed to look at.
+
+**Example.** Given the sentence "John visited Madagascar yesterday," masking the third word produces the input "John visited [MASK] yesterday." A model trained on many such examples learns to use the surrounding words — "John visited ___ yesterday" — to predict that the missing word is "Madagascar."
+
+**AI/ML Usage**: `[MASK]` is the central mechanism behind masked language modeling (see that entry in `math_concepts.md`), the training objective used by BERT (see the BERT entry in `math_concepts.md`; Devlin et al., 2019, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding") and many later models. Typically around 15% of the tokens in a training example are replaced with `[MASK]`, leaving the large majority of the sequence visible so the model still has ample bidirectional context — words both before and after each mask — to draw on when making its prediction.
+
+---
+
 <a id="matrix"></a>
 ### Matrix — `𝐌`
 Symbol: M, an ordinary capital letter set in bold  
@@ -2366,6 +2398,42 @@ On macOS: open the character picker (Fn/🌐) and search "script capital l" — 
 
 ---
 
+<a id="segment-embedding"></a>
+### Segment Embedding — `E_A / E_B`
+Symbol: $E_A$, $E_B$ — capital "E" for embedding, with a subscript $A$ or $B$ labeling which of two packed sentences a token belongs to; not to be confused with the token embedding $E_i$ (indexed by the token's identity) or the position embedding (indexed by the token's position in the sequence, see the Positional Embedding entry), both of which it is added to  
+On macOS: type "E", then open the character picker (Fn/🌐) and search "subscript latin small letter a" or "subscript latin small letter b" for a true subscript, or simply write it in plain text as `E_A` / `E_B` — there is no dedicated keyboard shortcut for a subscripted letter
+
+**The Big Idea**: This is exactly like a two-color highlighter used on a worksheet before handing it out: every line gets marked yellow (segment A) or green (segment B) depending only on which half of the worksheet it came from, regardless of what the words on that line actually say. $E_A$ and $E_B$ do the same job for a neural network, tagging every token as belonging to the first or second half of a two-sentence input.
+
+**General Usage**: In BERT's input representation, every token receives one of exactly two learned vectors, $E_A$ or $E_B$, according to which of two packed sentences ("segment A" or "segment B") it belongs to. This segment embedding is added elementwise to that token's token embedding and position embedding to form the token's actual input vector to the network (see the Positional Embedding entry for the sibling vector it is added alongside). Every token in the first sentence — including the leading `[CLS]` token and the `[SEP]` token that ends it — receives the same vector $E_A$; every token in the second sentence, including its own trailing `[SEP]`, receives the same vector $E_B$. Unlike the token embedding (a different vector for every distinct word) or the position embedding (a different vector at every position), there are only ever two distinct segment-embedding vectors used anywhere in the model.
+
+**Example.** For the two-sentence BERT input `[CLS] my dog is cute [SEP] he likes play ##ing [SEP]`:
+
+| Token | `[CLS]` | my | dog | is | cute | `[SEP]` | he | likes | play | `##ing` | `[SEP]` |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Segment embedding | $E_A$ | $E_A$ | $E_A$ | $E_A$ | $E_A$ | $E_A$ | $E_B$ | $E_B$ | $E_B$ | $E_B$ | $E_B$ |
+
+Every token up through the first `[SEP]` (inclusive) receives $E_A$; every token from `he` onward, including the second `[SEP]`, receives $E_B$ — a token's segment embedding depends only on which side of the first `[SEP]` it falls on, never on the token's own identity or position.
+
+**AI/ML Usage**: The segment embedding is a design feature specific to BERT (Devlin et al., 2019) and exists because self-attention has no built-in notion of "sentence boundary" beyond a single `[SEP]` token; adding $E_A$/$E_B$ gives every layer of self-attention an explicit, constant signal about which sentence a token came from. BERT relies on this signal for every sentence-pair task it is fine-tuned on — entailment, paraphrase detection, and similar tasks (see the Textual Entailment (Natural Language Inference) entry in `math_concepts.md`) — where the model must be able to tell the two input sentences apart.
+
+---
+
+<a id="sentinel-token"></a>
+### Sentinel Token — `<X>, <Y>, <Z>`
+Symbol: a short run of unique placeholder tokens, conventionally written with angle brackets around a letter — `<X>`, `<Y>`, `<Z>`, and so on — each one standing in for a different missing span of text  
+On macOS: type normally from the keyboard — angle brackets and letters are ordinary characters, Shift+, (comma) for < and Shift+. (period) for >, no special character needed
+
+**The Big Idea**: This is the same placeholder idea as the Mask Token entry above, with one difference: a single `[MASK]` always stands for exactly one hidden token, while each sentinel token here numbers several different missing spans so they can be told apart and matched back up later, the way labeling several blanks on a worksheet "(1)", "(2)", "(3)" lets you match each answer back to the blank it belongs to.
+
+**General Usage**: A sentinel token is one of a small set of unique placeholder tokens, each used to mark a different span of consecutive tokens that has been deleted from a piece of text. Because every masked span gets its own distinct sentinel, a sequence-to-sequence model's target output can list each sentinel together with the exact span of text it replaced, and it is always unambiguous which recovered span belongs at which position in the original text — unlike a single, repeated mask symbol, which cannot by itself distinguish a first gap from a second one.
+
+**Example.** Given the sentence "Thank you for inviting me to your party last week," masking the span "for inviting" with the sentinel `<X>` and the span "last" with the sentinel `<Y>` produces the corrupted input "Thank you `<X>` me to your party `<Y>` week." A model trained on this input is asked to produce the target "`<X>` for inviting `<Y>` last `<Z>`" — the third sentinel, `<Z>`, carries no text of its own and is appended purely to mark that the target sequence is finished.
+
+**AI/ML Usage**: Sentinel tokens are the mechanism behind T5's span-corruption pretraining objective (see the T5 entry in `math_concepts.md`; Raffel et al., 2019): rather than predicting an entire reconstructed document, T5's decoder is trained to generate only a short sequence of sentinel-tagged spans, which keeps the target sequence much shorter than the original input whenever only a small fraction of the text was masked.
+
+---
+
 <a id="set-intersection"></a>
 ### Set Intersection — `∩`
 Symbol: ∩, the intersection sign (U+2229); it looks like an upside-down U, and the union sign ∪ is the reverse  
@@ -2618,6 +2686,31 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter alp
 **General Usage**: Plays the same role as the learning rate — see Learning Rate for a full worked example, since it's the same idea under a different name.
 
 **AI/ML Usage**: Plays exactly the same role as the learning rate — controlling how far a gradient-based training algorithm moves a model's internal numbers with each individual update. See Learning Rate for a fuller explanation of why getting this particular setting right matters so much in practice.
+
+---
+
+<a id="stop-token-end-of-sequence-token"></a>
+### Stop Token / End-of-Sequence Token — `[STOP]`
+Symbol: `[STOP]`, square brackets around the word STOP in capital letters (other systems commonly write the same idea as `</s>` or `<EOS>`)  
+On macOS: type normally from the keyboard — Shift+[ and Shift+] for the brackets, no special character needed
+
+**The Big Idea**: This builds directly on the Start-of-Sentence Token entry above — it is the same placeholder idea, marking the other end of a sequence. But there is one key difference: the start token is only ever fed in as an input filler, while the stop token must be actively predicted by the model itself, as its own choice for what comes next.
+
+**General Usage**: A stop token (also called an end-of-sequence token) is a special entry in a model's vocabulary that a sequence-generation model can output just like any ordinary word. Producing it is the model's own signal that it has finished generating, telling the decoding process to halt rather than continue indefinitely.
+
+**Example.** Decoding French output one token at a time from the English input "the movie was great," the process halts exactly when `[STOP]` is generated:
+
+| Step | Token fed into the decoder | Predicted token (argmax of the softmax) | Continue decoding? |
+|---|---|---|---|
+| 1 | start token | le | Yes |
+| 2 | le | film | Yes |
+| 3 | film | était | Yes |
+| 4 | était | bon | Yes |
+| 5 | bon | `[STOP]` | No — halt |
+
+Without a stop token, the process in row 5 would have no principled way to know the sentence "le film était bon" is already complete, and could keep generating further words indefinitely.
+
+**AI/ML Usage**: Stop tokens are essential for autoregressive generation in tasks with a natural endpoint, such as machine translation or summarization (see Sequence-to-Sequence (Seq2Seq) Task in the math_concepts file): decoding repeatedly computes the Arg Min / Arg Max of the Softmax Function's output distribution and feeds the result back in as the next input (see Greedy Decoding in the math_concepts file), continuing only until `[STOP]` itself is the chosen output. Open-ended language modeling, by contrast, often has no comparable natural stopping point and can, in principle, be left to keep generating indefinitely.
 
 ---
 
@@ -2987,6 +3080,28 @@ On macOS: type normally from the keyboard; bold is just text formatting, not a s
 **Example.** For a model predicting house price from (square footage, number of bedrooms) with weights $\mathbf{w} = (150, 10000)$: a house with 2000 sq ft and 3 bedrooms gives a prediction (before adding any bias) of $150\times2000 + 10000\times3 = 300{,}000 + 30{,}000 = 330{,}000$ — each weight controls how strongly its matching feature pushes the final prediction up.
 
 **AI/ML Usage**: The primary, most fundamental set of parameters that actually get learned and adjusted during training across an enormous range of different ML models — linear regression, logistic regression, Support Vector Machines, and literally every single layer of every neural network all have their own weight vectors (or entire weight matrices, which are simply many weight vectors collected together), each one being carefully adjusted throughout training specifically to minimize the model's chosen loss function.
+
+---
+
+<a id="word-boundary-marker"></a>
+### Word-Boundary Marker — `_`
+Symbol: an underscore `_` (or, in real tokenizer libraries, the Unicode character "▁", U+2581 LOWER ONE EIGHTH BLOCK) attached to a subword piece to mark where one original word ends and the next begins, once a word has been split into several smaller pieces  
+On macOS: the plain underscore is Shift-Hyphen on any keyboard; for the "▁" character specifically, open the character picker (Fn/🌐) and search "lower one eighth block" — this is a distinct Unicode character from a plain underscore, not just a stylistic variant of it
+
+**The Big Idea**: Think about how a comma separates items in a written list, so a reader always knows where one item ends and the next begins. A word-boundary marker plays exactly this role for the pieces of a subword vocabulary (see the Subword Tokenization entry in `math_concepts.md`): once a word has been chopped up into several smaller symbols, this marker records which pieces were originally glued together into one word and which piece starts a brand-new one.
+
+**General Usage**: In a subword tokenization scheme, a word already broken into several pieces needs some way to be reassembled back into ordinary, correctly-spaced text. A word-boundary marker is attached to exactly one class of piece in every word — either the first piece only (marking "a new word starts here") or every piece except the first (marking "this piece glues onto the one before it, with no space") — depending on which convention a given library uses. Whichever convention is used, the marker is treated as part of the symbol itself for counting and vocabulary purposes, so the identical string of letters with and without the marker attached counts as two entirely different symbols.
+
+**Example.** Using the word-starts-here convention (an underscore marks the first piece of each word), the words "eco-tax" and, separately, "tax" on its own are tokenized as:
+
+| Word | Subword pieces |
+|---|---|
+| eco-tax | `_eco`, `tax` |
+| tax | `_tax` |
+
+Reading the marked pieces back into text: `_eco` begins a new word, and the `tax` that immediately follows it (no marker) glues directly onto it with no space, giving the single reconstructed word "ecotax." A later, separate `_tax` (marker present) is understood to start a brand-new word instead. Note that `tax` (no marker, continuing a word) and `_tax` (marker present, starting a word) are two different symbols in the vocabulary, even though they are spelled with the identical three letters.
+
+**AI/ML Usage**: Byte Pair Encoding (see that entry in `math_concepts.md`; Sennrich et al., 2016) and WordPiece-style tokenization (see the WordPiece Tokenization entry in `math_concepts.md`) both rely on some version of this marker so that the original, whitespace-separated input text can be losslessly reconstructed from a sequence of subword pieces. Real libraries differ only in which convention they use: Google's SentencePiece library marks the *first* piece of a word with the "▁" character described above, while the WordPiece tokenizer used by BERT instead marks every *non-initial* piece of a word with a leading `##` (so "playing" becomes the two pieces `play` and `##ing`) — the opposite convention, marking continuation rather than a word's start.
 
 ---
 
