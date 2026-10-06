@@ -7,92 +7,110 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 246 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 299 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Nucleus Sampling (Top-p Sampling) | Objective Function / Training Objective to WordPiece Tokenization |
+| A* Search (A-Star Algorithm) to Fine-Tuning (Transfer Learning) | Forward Kinematics and Inverse Kinematics to Open Class and Closed Class Words | Oracle Derivation to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Objective Function / Training Objective](#objective-function-training-objective) |
-| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [One-Hot Encoding](#one-hot-encoding) |
-| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [One-vs-All](#one-vs-all) |
-| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [Orthonormal Basis](#orthonormal-basis) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Overfitting](#overfitting) |
-| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PAC Learning](#pac-learning) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GLUE Benchmark](#glue-benchmark) | [PDDL](#pddl) |
-| [Arity](#arity) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Gradient Clipping](#gradient-clipping) | [Perplexity](#perplexity) |
-| [Automatic Differentiation](#automatic-differentiation) | [Gradient Descent](#gradient-descent) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Graphical Lasso](#graphical-lasso) | [Planner Completeness](#planner-completeness) |
-| [Backpointer](#backpointer) | [GraphPlan](#graphplan) | [Planning Graph](#planning-graph) |
-| [Backpropagation](#backpropagation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Bag of Words](#bag-of-words) | [Greedy Decoding](#greedy-decoding) | [Positional Encoding](#positional-encoding) |
-| [BART](#bart) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Basis Function](#basis-function) | [Grounding / Instantiation](#grounding-instantiation) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Batch](#batch) | [Hedge Algorithm](#hedge-algorithm) | [Posterior Distribution](#posterior-distribution) |
-| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Precision Matrix](#precision-matrix) |
-| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Beam Search](#beam-search) | [Hyperparameter](#hyperparameter) | [Principal Component Analysis](#principal-component-analysis) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Prior Distribution](#prior-distribution) |
-| [BERT](#bert) | [Indicator Function](#indicator-function) | [Priority Queue](#priority-queue) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Informed RRT*](#informed-rrt) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Jensen's Inequality](#jensens-inequality) | [Quadratic Form](#quadratic-form) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jump Point Search (JPS)](#jump-point-search-jps) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [K-Means Algorithm](#k-means-algorithm) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Random Forest](#random-forest) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kernel Function](#kernel-function) | [Random Projection](#random-projection) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Rank](#rank) |
-| [Centroid](#centroid) | [Kinodynamic Planning](#kinodynamic-planning) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [KL Divergence](#kl-divergence) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Regularization](#regularization) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Latent Variable](#latent-variable) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [Chernoff Bound](#chernoff-bound) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Layer Normalization](#layer-normalization) | [RoBERTa](#roberta) |
-| [Closed-World Assumption](#closed-world-assumption) | [Likelihood](#likelihood) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Sample Complexity](#sample-complexity) |
-| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Conditional Independence](#conditional-independence) | [Lipschitz Continuity](#lipschitz-continuity) | [Schur Complement](#schur-complement) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Log Likelihood](#log-likelihood) | [Search Statistics](#search-statistics) |
-| [Consistent Heuristic](#consistent-heuristic) | [Logistic Regression](#logistic-regression) | [Self-Attention](#self-attention) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Semantic Parsing](#semantic-parsing) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Loss Surface](#loss-surface) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Lower Bound](#lower-bound) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Coordinate Descent](#coordinate-descent) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Covariance Matrix](#covariance-matrix) | [Masked Language Modeling](#masked-language-modeling) | [Sparse Attention](#sparse-attention) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Cross-Validation](#cross-validation) | [Maximum Entropy Model](#maximum-entropy-model) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Stopword](#stopword) |
-| [Dead End](#dead-end) | [Mean Squared Error](#mean-squared-error) | [STRIPS](#strips) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Minimum Description Length](#minimum-description-length) | [Subword Tokenization](#subword-tokenization) |
-| [Decision Boundary](#decision-boundary) | [Model Complexity](#model-complexity) | [Support Vector Machine](#support-vector-machine) |
-| [Decision Tree](#decision-tree) | [Momentum](#momentum) | [Surrogate Loss](#surrogate-loss) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monotone Convergence](#monotone-convergence) | [Swept Volume](#swept-volume) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Monotonic Function](#monotonic-function) | [Symmetric Matrix](#symmetric-matrix) |
-| [Diagonal Matrix](#diagonal-matrix) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Syntactic Parsing](#syntactic-parsing) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multinomial Distribution](#multinomial-distribution) | [T5](#t5) |
-| [Discriminative Model](#discriminative-model) | [Multitask Learning](#multitask-learning) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Teacher Forcing](#teacher-forcing) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Mutex](#mutex) | [Tensor](#tensor) |
-| [Dropout](#dropout) | [N-Gram Language Model](#n-gram-language-model) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Early Stopping](#early-stopping) | [Naive Bayes](#naive-bayes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Negative Log Likelihood](#negative-log-likelihood) | [Transformer Architecture](#transformer-architecture) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Negative Sampling](#negative-sampling) | [Triangle Inequality](#triangle-inequality) |
-| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Neural Scaling Laws](#neural-scaling-laws) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epoch](#epoch) | [Neural Text Degeneration](#neural-text-degeneration) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Newton's Method](#newtons-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Next Sentence Prediction](#next-sentence-prediction) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Non-Parametric Method](#non-parametric-method) | [Word Embedding](#word-embedding) |
-| [Feature Expansion](#feature-expansion) | [Normal Equations](#normal-equations) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [NP-Hard](#np-hard) | [Word2Vec](#word2vec) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Oracle Derivation](#oracle-derivation) |
+| [Absolute Discounting](#absolute-discounting) | [Frontier / Open List](#frontier-open-list) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Accuracy (Classification)](#accuracy-classification) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Orthonormal Basis](#orthonormal-basis) |
+| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Overfitting](#overfitting) |
+| [Action Schema](#action-schema) | [Generative Likelihood](#generative-likelihood) | [PAC Learning](#pac-learning) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Generative Model](#generative-model) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Geometric Mean](#geometric-mean) | [PDDL](#pddl) |
+| [Add-One Smoothing](#add-one-smoothing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Penn Treebank](#penn-treebank) |
+| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GLUE Benchmark](#glue-benchmark) | [Perplexity](#perplexity) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [AlphaGo](#alphago) | [Gradient Clipping](#gradient-clipping) | [Planner Completeness](#planner-completeness) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Gradient Descent](#gradient-descent) | [Planning Graph](#planning-graph) |
+| [Arity](#arity) | [Graphical Lasso](#graphical-lasso) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [GraphPlan](#graphplan) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Automatic Differentiation](#automatic-differentiation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Positional Encoding](#positional-encoding) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Greedy Decoding](#greedy-decoding) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Backpointer](#backpointer) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Posterior Distribution](#posterior-distribution) |
+| [Backpropagation](#backpropagation) | [Grounding / Instantiation](#grounding-instantiation) | [Precision Matrix](#precision-matrix) |
+| [Bag of Words](#bag-of-words) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [BART](#bart) | [Hedge Algorithm](#hedge-algorithm) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Basis Function](#basis-function) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Principal Component Analysis](#principal-component-analysis) |
+| [Batch](#batch) | [Hidden Markov Model](#hidden-markov-model) | [Prior Distribution](#prior-distribution) |
+| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Priority Queue](#priority-queue) |
+| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Beam Search](#beam-search) | [Horizontal Markovization](#horizontal-markovization) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Hyperparameter](#hyperparameter) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [BERT](#bert) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Projective Tree](#projective-tree) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Quadratic Form](#quadratic-form) |
+| [Binarization](#binarization) | [Informed RRT*](#informed-rrt) | [Quiescence Search](#quiescence-search) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Iterative Deepening](#iterative-deepening) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jensen's Inequality](#jensens-inequality) | [Random Forest](#random-forest) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [K-Means Algorithm](#k-means-algorithm) | [Random Projection](#random-projection) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rank](#rank) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kernel Function](#kernel-function) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Centroid](#centroid) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kinodynamic Planning](#kinodynamic-planning) | [Regularization](#regularization) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [KL Divergence](#kl-divergence) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Chernoff Bound](#chernoff-bound) | [Latent Variable](#latent-variable) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [CKY Algorithm](#cky-algorithm) | [Lattice-Based Planning](#lattice-based-planning) | [RoBERTa](#roberta) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Law of Large Numbers](#law-of-large-numbers) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Closed-World Assumption](#closed-world-assumption) | [Layer Normalization](#layer-normalization) | [Sample Complexity](#sample-complexity) |
+| [Clustering](#clustering) | [Lexicalization](#lexicalization) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Likelihood](#likelihood) | [Schur Complement](#schur-complement) |
+| [Computation Graph](#computation-graph) | [Linear Programming](#linear-programming) | [Search Statistics](#search-statistics) |
+| [Conditional Independence](#conditional-independence) | [Linearly Separable](#linearly-separable) | [Self-Attention](#self-attention) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Lipschitz Continuity](#lipschitz-continuity) | [Semantic Parsing](#semantic-parsing) |
+| [Confusion Matrix](#confusion-matrix) | [Log Likelihood](#log-likelihood) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Conjunction Feature](#conjunction-feature) | [Logistic Regression](#logistic-regression) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Consistent Heuristic](#consistent-heuristic) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Loss Surface](#loss-surface) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Constituency Tests](#constituency-tests) | [Lower Bound](#lower-bound) | [Skip-Gram Model](#skip-gram-model) |
+| [Constituent](#constituent) | [Markov Blanket](#markov-blanket) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Markov Model](#markov-model) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Context-Free Grammar](#context-free-grammar) | [Markov's Inequality](#markovs-inequality) | [Sparse Attention](#sparse-attention) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Masked Language Modeling](#masked-language-modeling) | [Spectral Theorem](#spectral-theorem) |
+| [Convex Function](#convex-function) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Coordinate Descent](#coordinate-descent) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Covariance Matrix](#covariance-matrix) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Mean Squared Error](#mean-squared-error) | [Structured Classification](#structured-classification) |
+| [Cross-Validation](#cross-validation) | [Minimax Algorithm](#minimax-algorithm) | [Subword Tokenization](#subword-tokenization) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
+| [Dead End](#dead-end) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
+| [Decision Boundary](#decision-boundary) | [Monotone Convergence](#monotone-convergence) | [Symmetric Matrix](#symmetric-matrix) |
+| [Decision Tree](#decision-tree) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Syntactic Parsing](#syntactic-parsing) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [T5](#t5) |
+| [Dependency Parsing](#dependency-parsing) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Tag Lattice](#tag-lattice) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Depth-Limited Search](#depth-limited-search) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Teacher Forcing](#teacher-forcing) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multinomial Distribution](#multinomial-distribution) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Discriminative Model](#discriminative-model) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Mutex](#mutex) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Transformer Architecture](#transformer-architecture) |
+| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Dynamic Programming](#dynamic-programming) | [Named-Entity Type Labels](#named-entity-type-labels) | [Treebank](#treebank) |
+| [Early Stopping](#early-stopping) | [Negative Log Likelihood](#negative-log-likelihood) | [Triangle Inequality](#triangle-inequality) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Sampling](#negative-sampling) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Scaling Laws](#neural-scaling-laws) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [EM Algorithm](#em-algorithm) | [Neural Text Degeneration](#neural-text-degeneration) | [Union Bound](#union-bound) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Epoch](#epoch) | [Newton's Method](#newtons-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Next Sentence Prediction](#next-sentence-prediction) | [Vertical Markovization](#vertical-markovization) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Non-Parametric Method](#non-parametric-method) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normal Equations](#normal-equations) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [NP-Hard](#np-hard) | [Word Embedding](#word-embedding) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Objective Function / Training Objective](#objective-function-training-objective) | [Word2Vec](#word2vec) |
+| [Feature Expansion](#feature-expansion) | [One-Hot Encoding](#one-hot-encoding) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [One-vs-All](#one-vs-all) | [Zero-Sum Game](#zero-sum-game) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) |  |
 
 ## Concepts
 
@@ -138,6 +156,19 @@ The reserved mass $\lambda$ going to the lower-order backoff model is $\lambda =
 **Check.** The three discounted counts by themselves sum to $1.8+0.8+0.8=3.4$ out of the original total of $4$, leaving exactly $4 - 3.4 = 0.6$ of raw count "taken away" — matching the $0.6$ used in the $\lambda$ numerator above, confirming the reserved mass was computed consistently with how much was actually discounted.
 
 **AI/ML Usage**: Absolute discounting is a foundational, historically important technique for estimating n-gram language models (see N-Gram Language Model above), used heavily before recurrent neural networks and Transformer-based language models became the standard approach. Its main refinement, Kneser-Ney Smoothing (see that entry below), is the version most commonly encountered in practice and used in real n-gram language modeling toolkits.
+
+---
+
+<a id="accuracy-classification"></a>
+### Accuracy (Classification)
+
+**The Big Idea**: Accuracy is just a percentage, the same "part over whole" calculation as a test score: the number of answers a model got right divided by the number of answers it gave, times 100. Where Algebra 2 asks you to work with fractions and percents, this entry uses exactly that and nothing more.
+
+**General Usage**: For a model that assigns a label to each item (a classifier), accuracy is $\dfrac{\text{number of correct predictions}}{\text{total number of predictions}}$, usually written as a percentage. Its complement, the error rate, is $1-\text{accuracy}$. Accuracy is measured on a test set, a collection of examples held back and not used when the model was built, so that it reflects performance on new data.
+
+**Example.** Suppose a tagger labels 1000 words and 900 of its labels are correct. Step 1: divide the correct count by the total, $900 \div 1000 = 0.9$. Step 2: convert to a percentage, $0.9 \times 100 = 90\%$. Step 3: the error rate is $100\% - 90\% = 10\%$, which is 1 wrong label in every 10 words, so in a 20-word sentence the expected number of wrong labels is $0.10 \times 20 = 2$. A second check: a model that reaches $95\%$ makes $0.05 \times 20 = 1$ expected error in the same sentence, half as many.
+
+**AI/ML Usage**: Accuracy is the headline number for part-of-speech taggers (programs that label each word of a sentence as a noun, verb, and so on). Reported results are usually given twice: overall accuracy, and accuracy on words never seen during training. Because a few labels are very common and easy, a high accuracy can hide poor performance on the hard cases, which is why accuracy is often paired with a confusion matrix (see the Confusion Matrix entry).
 
 ---
 
@@ -202,6 +233,19 @@ So a virtual front wheel angled at about $14°$ makes this car trace a circle of
 
 ---
 
+<a id="add-one-smoothing"></a>
+### Add-One Smoothing
+
+**The Big Idea**: This builds directly on the Smoothing (Language Models) and Relative Frequency Estimation entries. Plain counting gives probability exactly $0$ to anything never seen. Add-one smoothing is the simplest fix: pretend every possible outcome was seen one extra time, using only addition and the division you already know from Algebra 2.
+
+**General Usage**: Add $1$ to the count of every possible outcome, then normalize as usual (divide each count by the new total of its group). Every outcome now has probability at least $\frac{1}{\text{new total}}$, and each group still sums to $1$. It is a form of regularization (see the Regularization entry): the estimates no longer match the training data exactly, in return for never ruling an outcome out.
+
+**Example.** Raw transition counts out of the tags $N$ and $V$ toward the next tag ($N$, $V$, or $STOP$) are $(0,2,0)$ and $(0,0,2)$. Add $1$ to every cell: $(1,3,1)$ and $(1,1,3)$. Each row now totals $5$, so dividing each cell by $5$ gives $(\tfrac15,\tfrac35,\tfrac15)$ and $(\tfrac15,\tfrac15,\tfrac35)$. The transition $V\to V$ went from probability $0$ to $\tfrac15$.
+
+**AI/ML Usage**: Used when estimating the probabilities of a hidden Markov model (a model that scores sequences of words and tags) and of n-gram language models, so a single unseen combination does not force an entire sentence's probability to $0$.
+
+---
+
 <a id="agnostic-learning"></a>
 ### Agnostic Learning
 
@@ -234,6 +278,91 @@ So a virtual front wheel angled at about $14°$ makes this car trace a circle of
 The final `dist[1][3] = 4` correctly reflects the two-edge route $1 \to 2 \to 3$ (cost $3+1=4$), beating the direct edge's cost of $10$ — discovered automatically, without ever running a separate search from vertex $1$.
 
 **AI/ML Usage**: Useful whenever a domain needs *repeated* shortest-path queries between many different pairs of vertices rather than a single start/goal pair — for example, a warehouse with many robots that frequently need optimal routes between arbitrary pairs of locations. Precomputing every pairwise distance once with Floyd-Warshall is far cheaper in the long run than re-running Dijkstra's Algorithm or A* Search (A-Star Algorithm) from scratch for every new start/goal request.
+
+---
+
+<a id="alpha-beta-pruning"></a>
+### Alpha-Beta Pruning
+
+**The Big Idea**: This builds directly on the Minimax Algorithm entry above, plus the everyday observation behind the Alpha-Beta Pruning Bounds entry in `math_symbols.md`: if you already know one entry in a list you're taking the minimum of, you immediately know the minimum can be at most that value, with no need to check the rest of the list to place a bound on it. Alpha-beta pruning is what happens when that same one-entry-is-enough-for-a-bound trick is applied at every level of a Minimax Algorithm game tree, so that entire branches can be skipped once they are provably unable to change the final answer, while still computing the exact same result plain minimax would have found.
+
+**General Usage**: As a depth-first search (see the Depth-First Search (DFS) entry above) walks down a minimax game tree, it carries two running bounds, $\alpha$ and $\beta$ (see the Alpha-Beta Pruning Bounds entry in `math_symbols.md`), from each node down to its children: $\alpha$ is the best (highest) value the max player has already secured somewhere else in the tree, and $\beta$ is the best (lowest) value the min player has already secured somewhere else. Two pruning rules follow directly from the recursive structure of the Minimax Algorithm:
+- **At a min-level node**, if a child's value is found to be $\le \alpha$, none of that node's remaining children need to be examined. The min player at this node can never do better than that value once it drops to or below $\alpha$, and a max-level ancestor already has a different way of guaranteeing at least $\alpha$, so it would never choose to enter this subtree regardless of what its unexamined siblings turn out to be.
+- **At a max-level node**, if a child's value is found to be $\ge \beta$, none of that node's remaining children need to be examined, by the mirror-image argument: a min-level ancestor already has a different way of guaranteeing at most $\beta$, so it would never choose to enter this subtree either.
+
+Both rules only ever discard subtrees that could not have changed which action the root ultimately picks, so alpha-beta pruning always returns the exact same value, and the exact same best move, that plain minimax would have returned — it is strictly a computational shortcut, never an approximation. How much work is actually saved depends heavily on the order in which each node's children are examined: examining the most promising children first triggers a prune sooner, while examining them in the worst possible order can trigger no pruning at all. With the best possible ordering, the number of leaves alpha-beta pruning must visit drops from minimax's $O(b^m)$ down to $O(b^{m/2})$ (see the Branching Factor and Search Depth entry in `math_symbols.md` for $b$ and $m$) — equivalent to being able to search twice as many plies deep in the same amount of computation.
+
+**Example.** Consider a max-level node with $\beta = 4$ already inherited from its parent, and four children whose values are not yet known. The children are examined one at a time, left to right, and the running bound on this node's own value is updated after each one:
+
+| Step | Child examined | Value seen | Running value range | Compare to $\beta=4$ |
+|---|---|---|---|---|
+| 1 | (before any child examined) | — | $[-\infty, \infty]$ | — |
+| 2 | 1st child | $1$ | $[1, \infty]$ | $1 < 4$, keep going |
+| 3 | 2nd child | $2$ | $[2, \infty]$ | $2 < 4$, keep going |
+| 4 | 3rd child | $3$ | $[3, \infty]$ | $3 < 4$, keep going |
+| 5 | 4th child | $6$ | $[6, 6]$ | $6 \ge 4$, but this was the last child anyway |
+
+In this left-to-right order, no pruning actually happens — the node's value only reaches $6$, which triggers the $\ge \beta$ condition, on the very last child, by which point every child has already been examined anyway. Now suppose the exact same four children are examined in the opposite order instead:
+
+| Step | Child examined | Value seen | Running value range | Compare to $\beta=4$ |
+|---|---|---|---|---|
+| 1 | 1st child (formerly the 4th) | $6$ | $[6, \infty]$ | $6 \ge 4$ |
+| 2 | — | — | — | Prune: the remaining 3 children never need to be examined |
+
+Examining the highest-value child first triggers the $\ge \beta$ pruning condition immediately, saving the work of examining the other three children entirely — while landing on the same conclusion (this node's value is at least $6$, so its max-level ancestor's alternative of at most $\beta=4$ will never be chosen through here) either way. This is exactly why the order children are examined in determines how close a real run comes to the best-case $O(b^{m/2})$ bound rather than the worst-case $O(b^m)$.
+
+**AI/ML Usage**: Alpha-beta pruning is the standard first optimization applied on top of the Minimax Algorithm in classical two-player game-playing programs, including chess and checkers engines, and it is what made searching several extra plies deeper computationally feasible on the hardware available to early game-playing AI. Since no exact function exists for choosing the very best child to examine first (having one would mean already knowing how to play the game perfectly), real engines instead rely on hand-designed move-ordering heuristics — for example, trying moves that capture an opponent's piece before other moves, since captures are disproportionately likely to be strong — to get empirically close to the theoretical $O(b^{m/2})$ best case without ever achieving it exactly. Alpha-beta pruning remains exact and lossless regardless of the ordering used; a poor ordering only costs extra computation, never correctness.
+
+---
+
+<a id="alphago"></a>
+### AlphaGo
+
+**The Big Idea**: AlphaGo doesn't require new mathematics beyond function notation and the idea of a weighted average — it is a concrete example of Monte Carlo Tree Search (see that entry below) in which two ordinary functions, called a policy and a value function, are each approximated by a neural network (see that entry in the math_symbols file) rather than computed by hand. A neural network, if unfamiliar, is simply a function built out of many simple, learned pieces — each piece a weighted sum followed by a small nonlinear reshaping step — whose combined output can approximate very complicated real-world relationships once the weights are tuned to data (see the Gradient Descent and Backpropagation entries).
+
+**General Usage**: AlphaGo (Silver et al., "Mastering the game of Go with deep neural networks and tree search," Nature 529.7587 (2016): 484-489) is a Go-playing program built around Monte Carlo Tree Search, using two neural networks:
+- A **policy network** approximates $p(a\mid s)$, the probability that a strong human player would take action $a$ in state $s$ (see the Probability / Probability Density entry in the math_symbols file for the conditional-probability notation).
+- A **value network** approximates $v^p(s)$, the expected outcome of the game starting from state $s$ if both players continue playing according to policy $p$ (see the Expectation entry in the math_symbols file).
+
+Both networks are first trained by supervised learning (a training method where each example comes with a known correct answer) on a large database of recorded human games, so that $p(a\mid s)$ matches what expert players actually did, and $v^p(s)$ is computed from the resulting $p$. Both are then further improved by reinforcement learning (a training method where a program improves by taking actions and observing their outcomes, rather than being shown correct answers directly) during self-play, in which different versions of the trained policy play against each other.
+
+**Example.** Suppose the policy network is asked about a specific mid-game board position $s$ and a specific candidate move $a$. It outputs $p(a\mid s) = 0.35$, meaning that, based on patterns learned from human games, a strong player would play this exact move about 35% of the time from this position. If the value network is separately asked to evaluate the same position, it might output $v^p(s) = 0.62$, meaning that a player to move from this position, with both sides continuing to play according to $p$, wins about 62% of the time on average. Neither number is computed by any formula a human could write down explicitly; both come from a network whose weights were tuned to fit millions of recorded and self-played games.
+
+**AI/ML Usage**: AlphaGo was the first computer program to defeat a professional human player at Go, a board game long considered far too complex for the brute-force search techniques (see the Minimax Algorithm entry above) that had earlier succeeded at chess. It combines its two neural networks directly with Monte Carlo Tree Search: the value network's output $v^p(s)$ initializes newly expanded leaf values, and the policy network's output $p(a\mid s)$ supplies the prior probability used in AlphaGo's tree policy (see the Upper Confidence Bound (UCB1 / UCT) entry in the math_symbols file for the general exploration formula this extends). A later system, AlphaGo Zero (Silver et al., "Mastering the game of Go without human knowledge," Nature 550.7676 (2017): 354-359), removed the human-game supervised-learning step entirely, learning both networks purely from reinforcement learning during self-play. This stands in contrast to Deep Blue, the earlier program that defeated world chess champion Garry Kasparov (Campbell, Hoane, and Hsu, "Deep Blue," Artificial Intelligence 134.1-2 (2002): 57-83), whose strength relied heavily on specialized chess-evaluation hardware and hand-crafted, game-specific heuristics rather than on general-purpose learned functions.
+
+---
+
+<a id="arc-standard-transition-system"></a>
+### Arc-Standard Transition System
+
+**The Big Idea**: This is a specific, small rule set for the Transition-Based Dependency Parsing entry below. It uses only ideas a reader already has from Algebra 2 (lists, and following a fixed recipe step by step) plus the stack notation $\sigma \mid w_{-1}$ (see the Stack Notation entry in the math_symbols file). There is nothing to compute numerically; the skill is applying three rewrite rules correctly.
+
+**General Usage**: The arc-standard system is a transition system, meaning a set of allowed operations for moving a parser from one state to the next. A state is a stack (see Stack Notation) plus a buffer (the words not yet read, with the next word at the front). Parsing starts with the stack $[\text{ROOT}]$ and the entire sentence in the buffer, and ends when the stack is $[\text{ROOT}]$ and the buffer is empty. There are three operations:
+
+- **Shift**: move the front word of the buffer onto the top of the stack.
+- **Left-Arc**: $\sigma \mid w_{-2}, w_{-1} \to \sigma \mid w_{-1}$, and $w_{-2}$ becomes a child of $w_{-1}$ (an arc is drawn from the head $w_{-1}$ to the child $w_{-2}$).
+- **Right-Arc**: $\sigma \mid w_{-2}, w_{-1} \to \sigma \mid w_{-2}$, and $w_{-1}$ becomes a child of $w_{-2}$.
+
+Left-arc and right-arc are called reduce operations because each shortens the stack. A word that has been made a child is removed from the stack, so it can never receive more children later; this is why a head must collect all of its right-hand children before it is made a child itself. A sentence of $n$ words needs exactly $n$ shifts and $n$ reduces, so $2n$ transitions.
+
+**Example.** For the sentence "I ate some spaghetti bolognese" (so $n=5$), the start state is stack $[\text{ROOT}]$ and buffer $[\text{I ate some spaghetti bolognese}]$.
+
+| Step | Operation | Stack after | Buffer after | Arc created |
+|---|---|---|---|---|
+| 1 | Shift | $[\text{ROOT I}]$ | $[\text{ate some spaghetti bolognese}]$ | none |
+| 2 | Shift | $[\text{ROOT I ate}]$ | $[\text{some spaghetti bolognese}]$ | none |
+| 3 | Left-Arc | $[\text{ROOT ate}]$ | $[\text{some spaghetti bolognese}]$ | ate $\to$ I |
+| 4 | Shift | $[\text{ROOT ate some}]$ | $[\text{spaghetti bolognese}]$ | none |
+| 5 | Shift | $[\text{ROOT ate some spaghetti}]$ | $[\text{bolognese}]$ | none |
+| 6 | Left-Arc | $[\text{ROOT ate spaghetti}]$ | $[\text{bolognese}]$ | spaghetti $\to$ some |
+| 7 | Shift | $[\text{ROOT ate spaghetti bolognese}]$ | $[\,]$ | none |
+| 8 | Right-Arc | $[\text{ROOT ate spaghetti}]$ | $[\,]$ | spaghetti $\to$ bolognese |
+| 9 | Right-Arc | $[\text{ROOT ate}]$ | $[\,]$ | ate $\to$ spaghetti |
+| 10 | Right-Arc | $[\text{ROOT}]$ | $[\,]$ | ROOT $\to$ ate |
+
+Check: 5 shifts plus 5 arcs gives $10 = 2n$ transitions, and the final stack is $[\text{ROOT}]$ with an empty buffer, as required.
+
+**AI/ML Usage**: Arc-standard is the best-known transition system for transition-based dependency parsers (see the Transition-Based Dependency Parsing entry below). A trained classifier chooses among the three operations at each state, using features such as the part-of-speech tags and words near the top of the stack and the front of the buffer, so that a whole sentence is parsed in a number of steps that grows linearly with its length.
 
 ---
 
@@ -527,6 +656,25 @@ Multiplying probabilities along a path explains why the numbers shrink so fast: 
 
 ---
 
+<a id="binarization"></a>
+### Binarization
+
+**The Big Idea**: This is a bookkeeping trick in the spirit of rewriting a long product $abcd$ as $a\cdot(b\cdot(c\cdot d))$: nothing about the value changes, but every operation now involves only two things at a time. Here the "things" are the child symbols of a grammar rule. Read the Context-Free Grammar entry first for what a rule and its parent are.
+
+**General Usage**: Binarization converts trees (and the rules read from them) so that every production has at most two children on its right-hand side, rather than three or more. A rule with many children is split into a chain of binary rules by introducing new **intermediate symbols**. Large rules are undesirable because they are rare and therefore hard to estimate reliably, and because the running time of the standard parsing algorithm grows with the largest number of children in any rule. There are two kinds:
+- **Lossless binarization** names each intermediate symbol after the children it still has to produce. The first rule keeps the original rule's probability $p$, and every later rule has probability $1$, so the product $p\cdot1\cdot1$ equals the original probability and the grammar keeps its meaning.
+- **Lossy binarization** reuses the original parent symbol for the intermediate nodes. The new rules then share probability with all other rules of that parent, which changes the grammar's meaning.
+
+**Example.** Binarize $VP\rightarrow VBD\ NP\ PP\ PP$ (a verb phrase with four children, as in a verb followed by an object and two prepositional phrases) losslessly.
+1. Write the first rule, keeping the verb and hiding the rest in an intermediate symbol: $VP\rightarrow VBD\ \ VP\text{-}[NP\ PP\ PP]$, with probability $p$.
+2. Rewrite the intermediate symbol, peeling off the next child: $VP\text{-}[NP\ PP\ PP]\rightarrow NP\ \ VP\text{-}[PP\ PP]$, with probability $1$.
+3. Rewrite the last intermediate symbol: $VP\text{-}[PP\ PP]\rightarrow PP\ PP$, with probability $1$.
+4. Check: $p\times1\times1=p$, the original rule's probability.
+
+**AI/ML Usage**: Used in the preprocessing of a treebank (a collection of sentences with their grammar trees attached) before learning a probabilistic context-free grammar for parsing sentences in natural language processing. It makes the grammar compatible with the CKY dynamic-programming parsing algorithm.
+
+---
+
 <a id="boosting-weak-learner"></a>
 ### Boosting / Weak Learner
 
@@ -723,6 +871,31 @@ C4 is therefore on the order of hundreds of thousands of times larger than a typ
 
 ---
 
+<a id="cky-algorithm"></a>
+### CKY Algorithm
+
+**The Big Idea**: This is a "fill in a table, smallest cases first" procedure, like building up a table of values in Algebra 2 where each new row uses earlier rows. The table here holds scores for pieces of a sentence, and the final answer is read from the one cell that covers the whole sentence. It goes beyond Algebra 2 in what the scores mean (logarithms of probabilities, see the Logarithm entry in the math_symbols file) and in the tree-shaped structure being built.
+
+**General Usage**: The CKY algorithm (named for its inventors Cocke, Kasami, and Younger) finds the most probable parse tree of a sentence under a probabilistic grammar whose rules each have at most two symbols on the right-hand side. A parse tree is a nested grouping of the words into labeled phrases (such as noun phrase NP and verb phrase VP). The algorithm keeps a table $t[i,j,X]$ (see the Chart Score entry in the math_symbols file). It first fills in single-word cells from the word probabilities, $t[i,i+1,X]=\log P(w_i\mid X)$. It then fills longer spans in order of increasing length with
+
+$$
+t[i,j,X]=\max_{i<k<j}\ \max_{X\to X_1X_2}\Big(\log P(X\to X_1X_2)+t[i,k,X_1]+t[k,j,X_2]\Big),
+$$
+
+where $k$ is a split point (see the Split Point entry in the math_symbols file). Storing, for each cell, the rule and split point that won (backpointers, see the Backpointer entry) lets the best tree be rebuilt from the top cell. Because there are about $n^2$ cells, each tries about $n$ split points, and the grammar adds a factor $G$, the running time is $O(n^3G)$.
+
+**Example.** Sentence "the child raises it", rules $\text{DT}\to\text{the}$, $\text{NN}\to\text{child}$, $\text{NNS}\to\text{raises}$, $\text{VBZ}\to\text{raises}$, $\text{PRP}\to\text{it}$ (each probability $1$), $\text{S}\to\text{NP VP}$ ($1$), $\text{NP}\to\text{DT NN}$ ($0.5$), $\text{NP}\to\text{NN NNS}$ ($0.5$), $\text{VP}\to\text{VBZ PRP}$ ($1$), with $\log 0.5=-1$.
+
+1. Word cells: $t[0,1,\text{DT}]=t[1,2,\text{NN}]=t[2,3,\text{NNS}]=t[2,3,\text{VBZ}]=t[3,4,\text{PRP}]=0$; every other entry is $-\infty$.
+2. Span $(0,2)$, only split $k=1$, rule $\text{NP}\to\text{DT NN}$: $-1+0+0=-1$.
+3. Span $(2,4)$, only split $k=3$, rule $\text{VP}\to\text{VBZ PRP}$: $0+0+0=0$.
+4. Span $(0,4)$, split $k=2$, rule $\text{S}\to\text{NP VP}$: $0+t[0,2,\text{NP}]+t[2,4,\text{VP}]=0+(-1)+0=-1$.
+5. The root score is $t[0,4,\text{S}]=-1$, so a parse exists; following the backpointers gives S over (NP over "the child") and (VP over "raises it").
+
+**AI/ML Usage**: CKY is the standard dynamic program for parsing with probabilistic context-free grammars in natural language processing (the branch of AI that handles human language), and is the direct tree-structured analogue of the Viterbi algorithm used for tagging sequences. Its refinements (handling rules with one symbol on the right, indexing the grammar, pruning low-scoring cells) are what make statistical parsers fast enough to use on real text.
+
+---
+
 <a id="closed-set-explored-vertices"></a>
 ### Closed Set (Explored Vertices)
 
@@ -765,6 +938,28 @@ C4 is therefore on the order of hundreds of thousands of times larger than a typ
 **Example.** Given a scatter plot of customer ages and spending amounts with no labels attached, a clustering algorithm might discover, entirely on its own, that the data naturally separates into three groups: young low-spenders, middle-aged high-spenders, and older moderate-spenders — categories nobody explicitly told the algorithm to look for.
 
 **AI/ML Usage**: Clustering (most commonly via the K-Means algorithm) is widely used for customer segmentation in marketing, for grouping similar documents or images together, and as an exploratory first step for understanding the natural structure hidden inside a new, unlabeled dataset before deciding what supervised model to build next.
+
+---
+
+<a id="co-occurrence-matrix"></a>
+### Co-occurrence Matrix
+
+**The Big Idea**: This builds on the everyday idea of a tally table — the same kind of grid used to count, say, how many times each pair of dice values came up over many rolls — except here the rows and columns are labeled by vocabulary words instead of numbers, and each cell counts how often two words showed up near each other in real text.
+
+**General Usage**: A co-occurrence matrix is a $|V| \times |V|$ table (see the Vocabulary entry in the math_symbols file for $|V|$) whose entry in row $i$, column $j$ holds $\text{count}(w_i, c_j)$ — the number of times word $i$ and word $j$ occurred together, typically within some fixed nearby window of each other, somewhere across a large body of text. Building this table requires only one pass over the corpus; once it exists, every subsequent computation works directly from the counts in the table rather than re-reading the original text.
+
+**Example.** Toy corpus "the dog bit the dog," with a window of $1$ (only immediately adjacent words count as co-occurring), over the tiny vocabulary $\{\text{the},\text{dog},\text{bit}\}$:
+
+| Step | Adjacent pair read off the text | Tally update |
+|---|---|---|
+| 1 | (the, dog) | count(the,dog) += 1 |
+| 2 | (dog, bit) | count(dog,bit) += 1 |
+| 3 | (bit, the) | count(bit,the) += 1 |
+| 4 | (the, dog) | count(the,dog) += 1 |
+
+Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, count(dog,bit) $=1$, count(bit,the) $=1$, and every other cell $=0$ — a complete co-occurrence matrix built from nothing but counting adjacent word pairs.
+
+**AI/ML Usage**: A co-occurrence matrix is the shared raw material behind several different word-embedding techniques: the Pointwise Mutual Information matrix that Skip-Gram-with-negative-sampling implicitly factors (see the Matrix Factorization (Word Embeddings) entry below) is built from exactly this kind of table, and GloVe (see that entry) regresses directly on the logarithm of these same counts. Older, pre-neural techniques such as Latent Semantic Analysis likewise start from a co-occurrence-style matrix before compressing it with Singular Value Decomposition (see that entry).
 
 ---
 
@@ -812,6 +1007,37 @@ C4 is therefore on the order of hundreds of thousands of times larger than a typ
 
 ---
 
+<a id="confusion-matrix"></a>
+### Confusion Matrix
+
+**The Big Idea**: A confusion matrix is a table, like the tables of values you built in Algebra 2, whose rows and columns are labeled with the possible answers. Each cell holds a count, so you can see at a glance which pairs of answers get mixed up, rather than only how many mistakes there were in total.
+
+**General Usage**: For a classifier with $k$ possible labels, the confusion matrix has $k$ rows and $k$ columns. By one common convention, the row is the correct (gold) label and the column is the label the model predicted; the cell where they meet counts how many items had that correct label and received that prediction. Cells on the diagonal (row label equals column label) are correct predictions; every off-diagonal cell is a specific kind of error. Some presentations leave the diagonal as 0 and show only errors, and add row and column totals.
+
+**Example.** Reading an error-only table of tag confusions: the cell in the row for the correct tag JJ (adjective) and the column for the predicted tag NN (noun) holds 177. Step 1: find the row labeled JJ. Step 2: move across to the column labeled NN. Step 3: read the number, 177, meaning 177 words that were really adjectives were labeled as nouns. Step 4: the row's total is 488, so these 177 account for $177 \div 488 \approx 0.36$, about 36%, of all the errors on correct-JJ words. The reverse cell (row NN, column JJ) holds a different number, 244, because the table is not symmetric: mistaking A for B is not the same event as mistaking B for A.
+
+**AI/ML Usage**: Confusion matrices are used to diagnose part-of-speech taggers and other classifiers (programs that assign each input one label from a fixed list). In tagging, the large off-diagonal cells point to linguistic reasons for errors, such as adjectives mistaken for nouns, verb particles mistaken for prepositions, and past tense mistaken for past participle. They tell a developer where to add features or better data.
+
+---
+
+<a id="conjunction-feature"></a>
+### Conjunction Feature
+
+**The Big Idea**: This builds on the Conjunction / Logical AND entry in the math_symbols file and the Indicator Function entry above: a conjunction feature is simply an indicator for a compound "A and B" condition, so a single coordinate of a feature vector can encode two facts at once.
+
+**General Usage**: A conjunction feature is a feature that equals $1$ only when several stated properties are all true at once, and $0$ otherwise. In tagging, the properties usually combine something observed in the input (such as the current word) with the label being considered (such as a tag). Each distinct combination gets its own coordinate in the feature vector, so the model can learn a separate weight for each combination.
+
+**Example.** For the sentence "Fed raises interest rates 0.5 percent" at position $3$ with candidate tag NN, the feature is
+$$\text{Indicator}\big[\text{current word} = \text{interest} \ \wedge\ \text{tag} = \text{NN}\big]$$
+1. Check the first property: is the current word "interest"? Yes.
+2. Check the second property: is the tag being considered NN? Yes.
+3. Both hold, so the indicator equals $1$.
+4. For the same position with candidate tag VBZ, the second property fails, so the indicator for "current word = interest and tag = VBZ" equals $0$.
+
+**AI/ML Usage**: Conjunction features are the building block of classifier-based taggers and of conditional random fields (a model that scores whole tag sequences). Because each such property string can be treated as a single "word" in a bag-of-words (see the Bag of Words entry), the features can be stored in one big lookup table instead of a hand-managed block layout, and the model is trained in the ordinary way.
+
+---
+
 <a id="consistent-heuristic"></a>
 ### Consistent Heuristic
 
@@ -850,6 +1076,47 @@ A consistent heuristic (with $h=0$ at the goal) is also admissible. Consequence:
 
 ---
 
+<a id="constituency-tests"></a>
+### Constituency Tests
+
+**The Big Idea**: This is a "does it behave as one block?" check, much like testing whether a group of terms in an algebra expression can be treated as a single quantity (for example, swapping $(x+3)$ for a single letter). If a group of words can be swapped, moved, or used as a standalone answer as one piece, it is probably one grammatical unit. See the Constituent entry for what a unit is.
+
+**General Usage**: Constituency tests are simple experiments on a sentence used to decide whether a group of adjacent words is a constituent (a unit in the sentence's grammatical tree). Three common ones are: substitution by a proform (replace the group by a pronoun or a stand-in such as "did so"), clefting (rewrite the sentence as "It was ___ that ...", with the candidate group in the blank), and answer ellipsis (check whether the group can stand alone as a short answer to a question). A group that passes is a good candidate unit; the tests can disagree or fail, so they are evidence, not proof.
+
+**Example.** Take the sentence "The children ate the cake with a spoon."
+
+1. Substitution: "The children" can be replaced by "they" ("They ate the cake with a spoon"), so "The children" is a unit.
+2. Substitution: "ate the cake" can be replaced by "did so" ("The children did so with a spoon"), so "ate the cake" is a unit.
+3. Clefting: "It was with a spoon that the children ate the cake" is grammatical, so "with a spoon" is a unit.
+4. Answer ellipsis: to "What did they eat?" the fragment "the cake" answers; to "How?" the fragment "with a spoon" answers. Both are units.
+
+**AI/ML Usage**: Syntactic parsers (software that automatically produces the grammatical tree of a sentence) are trained on human-built tree collections whose unit boundaries were chosen with tests like these. Knowing the tests helps explain why the parser's output trees are shaped the way they are, and where they are unclear, for example in coordination such as "she went to and bought food at the store."
+
+---
+
+<a id="constituent"></a>
+### Constituent
+
+**The Big Idea**: A constituent is to a sentence what a parenthesized group is to an algebra expression: a set of adjacent items that is handled as one unit, which can itself sit inside a larger group. If you can already read $2(3 + 4x)$ with the bracket group inside a bigger expression, you already have the nesting idea.
+
+**General Usage**: A constituent is a contiguous group of words that acts as one coherent unit in the grammar of a sentence, such as a noun phrase (NP), verb phrase (VP), or prepositional phrase (PP). Constituents nest: a sentence contains phrases, phrases contain smaller phrases, and the smallest units are single words tagged with a part of speech. A constituency tree draws these nested groups as a tree, with the whole sentence at the top and the part-of-speech tags just above the words. A node may have any number of children: one child is a unary rule, two is binary, three is ternary. See the Phrase-Structure Category Labels and Syntactic Parsing entries for the labels and for the task of producing the tree.
+
+**Example.** In "She ran to the building," written in bracket form:
+
+$$
+\text{(S (NP (PRP She)) (VP (VBD ran) (PP (IN to) (NP (DT the) (NN building)))))}
+$$
+
+1. The whole sentence, S, is the largest constituent.
+2. "She" is an NP with a single child (a unary rule: the pronoun tag PRP).
+3. "ran to the building" is a VP.
+4. Inside it, "to the building" is a PP, which itself contains the NP "the building".
+5. Each word sits under a part-of-speech tag (PRP, VBD, IN, DT, NN), the bottom layer of the tree.
+
+**AI/ML Usage**: Constituents are the basic output unit of constituency parsers in natural language processing. Downstream tasks such as information extraction (pulling out who did what to whom from text) and machine translation (converting between languages with different word order) read the verb, subject, and object off these units rather than off the raw word string.
+
+---
+
 <a id="constraint-satisfaction-problem"></a>
 ### Constraint Satisfaction Problem
 
@@ -860,6 +1127,30 @@ A consistent heuristic (with $h=0$ at the goal) is also admissible. Consequence:
 **Example.** In Sudoku, the variables are the empty cells, the domain for each is the digits 1–9, and the constraints are "no repeated digit in any row, column, or 3×3 box." A solved Sudoku puzzle is simply a full assignment of digits to every cell that satisfies all of those constraints simultaneously — exactly a CSP solution.
 
 **AI/ML Usage**: CSPs are a foundational framework in classical AI, used for problems like scheduling (assigning time slots to classes with no conflicts), resource allocation, and puzzle-solving — algorithms like backtracking search and constraint propagation, developed specifically for CSPs, remain widely used tools in real-world logistics and planning software today.
+
+---
+
+<a id="context-free-grammar"></a>
+### Context-Free Grammar
+
+**The Big Idea**: A grammar is a list of substitution rules, like "replace $x$ by $2y+1$" in algebra, applied repeatedly until no more substitutions are possible. Going beyond Algebra 2, the rules here replace symbols standing for categories of words, not numbers, and "context-free" means a rule depends only on the one symbol it replaces, not on its neighbors.
+
+**General Usage**: A context-free grammar (CFG) is a four-tuple $\{N,T,S,R\}$ (a four-item list written in braces) of:
+- $N$, the **non-terminals**: category symbols that can still be rewritten (phrase labels such as noun phrase NP, verb phrase VP, and part-of-speech tags such as NN, a noun);
+- $T$, the **terminals**: the symbols that appear in finished output, such as words;
+- $S$, the **start symbol**, the non-terminal where every derivation begins;
+- $R$, the **rules**: each has a parent symbol on the left of an arrow and its yield on the right.
+
+A **binary rule** has two symbols on the right ($S\rightarrow NP\ VP$); a **unary rule** has one (either a non-terminal, $VP\rightarrow VBD$, or a word, $DT\rightarrow\text{the}$). The unary rules from part-of-speech tags to words form the **lexicon**, and the part-of-speech tags themselves are called **preterminals**. A sentence is generated by starting at $S$ and repeatedly applying rules.
+
+**Example.** Generate a sentence skeleton from the rules $S\rightarrow NP\ VP$, $NP\rightarrow DT\ NN$, $DT\rightarrow\text{the}$, $NN\rightarrow\text{cake}$.
+1. Start with $S$.
+2. Apply $S\rightarrow NP\ VP$: we have $NP\ VP$.
+3. Apply $NP\rightarrow DT\ NN$ to the $NP$: $DT\ NN\ VP$.
+4. Apply $DT\rightarrow\text{the}$: $\text{the}\ NN\ VP$.
+5. Apply $NN\rightarrow\text{cake}$: $\text{the cake}\ VP$, with the $VP$ still to be expanded by its own rules.
+
+**AI/ML Usage**: Context-free grammars describe the phrase structure of sentences in natural language processing (the field of getting computers to work with human language). A tree produced by a grammar is a constituency parse, and parsers search for the tree a grammar assigns to a given sentence. See the Probabilistic Context-Free Grammar entry for the version that scores trees.
 
 ---
 
@@ -912,28 +1203,6 @@ The model confidently predicts "bit" — exactly the true missing word — becau
 **Example.** To minimize $L(\mu,z)$ (a function of two variables), coordinate descent would first fix $z$ at its current value and find the best possible $\mu$ given that fixed $z$; then it would fix that newly-improved $\mu$ and find the best possible $z$ given it; then repeat this back-and-forth process, alternately improving one variable while holding the other still, until the values stop changing.
 
 **AI/ML Usage**: Coordinate descent is a practical alternative to full gradient descent whenever it's easier or more efficient to solve for one variable at a time exactly, rather than computing a full gradient across every variable simultaneously — it's used in algorithms like the Lasso (L1-regularized regression) and shows up as one specific technique inside the broader family of expectation-maximization style algorithms.
-
----
-
-<a id="co-occurrence-matrix"></a>
-### Co-occurrence Matrix
-
-**The Big Idea**: This builds on the everyday idea of a tally table — the same kind of grid used to count, say, how many times each pair of dice values came up over many rolls — except here the rows and columns are labeled by vocabulary words instead of numbers, and each cell counts how often two words showed up near each other in real text.
-
-**General Usage**: A co-occurrence matrix is a $|V| \times |V|$ table (see the Vocabulary entry in the math_symbols file for $|V|$) whose entry in row $i$, column $j$ holds $\text{count}(w_i, c_j)$ — the number of times word $i$ and word $j$ occurred together, typically within some fixed nearby window of each other, somewhere across a large body of text. Building this table requires only one pass over the corpus; once it exists, every subsequent computation works directly from the counts in the table rather than re-reading the original text.
-
-**Example.** Toy corpus "the dog bit the dog," with a window of $1$ (only immediately adjacent words count as co-occurring), over the tiny vocabulary $\{\text{the},\text{dog},\text{bit}\}$:
-
-| Step | Adjacent pair read off the text | Tally update |
-|---|---|---|
-| 1 | (the, dog) | count(the,dog) += 1 |
-| 2 | (dog, bit) | count(dog,bit) += 1 |
-| 3 | (bit, the) | count(bit,the) += 1 |
-| 4 | (the, dog) | count(the,dog) += 1 |
-
-Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, count(dog,bit) $=1$, count(bit,the) $=1$, and every other cell $=0$ — a complete co-occurrence matrix built from nothing but counting adjacent word pairs.
-
-**AI/ML Usage**: A co-occurrence matrix is the shared raw material behind several different word-embedding techniques: the Pointwise Mutual Information matrix that Skip-Gram-with-negative-sampling implicitly factors (see the Matrix Factorization (Word Embeddings) entry below) is built from exactly this kind of table, and GloVe (see that entry) regresses directly on the logarithm of these same counts. Older, pre-neural techniques such as Latent Semantic Analysis likewise start from a co-occurrence-style matrix before compressing it with Singular Value Decomposition (see that entry).
 
 ---
 
@@ -1111,6 +1380,67 @@ The network predicts "positive" with about 99.5% confidence. Notice that once th
 
 ---
 
+<a id="dependency-parsing"></a>
+### Dependency Parsing
+
+**The Big Idea**: This is the same "draw an arrow from one thing to the thing it relates to" idea as a family tree or a flowchart, applied to the words of a sentence. A sentence is a set of dots (the words), and a parse is a choice of which word each other word hangs from. If you have seen a graph (see the Graph entry in the math_symbols file) as dots joined by arrows, you already have the picture; what is new is the rule that each word gets exactly one parent.
+
+**General Usage**: Dependency parsing is the task of assigning a grammatical structure to a sentence by drawing directed arcs between its words. The word an arc leaves is the **head** (also called the parent or governor); the word it points to is the **dependent** (also called the child or modifier). A special extra symbol, ROOT, sits before the sentence and has no parent. Every real word has exactly one parent, and the arcs may not form a cycle (a chain of arrows that leads back to where it started), so the structure is a directed acyclic graph, in fact a tree rooted at ROOT. No phrase labels such as "noun phrase" are introduced; the structure is carried entirely by the word-to-word arcs. Each arc may also carry a label naming its grammatical role (subject, determiner, and so on); the hard part of the task is choosing the structure, and labels can be added afterwards by a separate classifier (a program that picks one label from a fixed list).
+
+**Example.** Take the sentence "the dog ran to the house," with part-of-speech tags DT NN VBD TO DT NN (DT = determiner, NN = noun, VBD = past-tense verb, TO = the word "to"). The parse is the following list of (head, dependent) pairs.
+
+| Step | Head | Dependent | Why |
+|---|---|---|---|
+| 1 | ROOT | ran | the verb is the top of the sentence |
+| 2 | ran | dog | "dog" is the most important word of "the dog" and attaches to the verb |
+| 3 | dog | the | "the" modifies "dog" |
+| 4 | ran | to | the prepositional phrase hangs from the verb |
+| 5 | to | house | "house" is the most important word of "the house" and attaches to "to" |
+| 6 | house | the | "the" modifies "house" |
+
+Check: there are 6 words and 6 arcs, every word appears exactly once in the Dependent column (one parent each), and following parents upward from any word always ends at ROOT with no repeats, so there is no cycle.
+
+**AI/ML Usage**: Dependency parsers are a standard step in natural language processing pipelines, because the arcs expose "who did what to whom" and so feed relation extraction (pulling facts such as "who submitted what" out of text). Common parsers include transition-based parsers, which build the arcs one step at a time, and graph-based parsers, which score every possible arc. Because the annotation scheme does not depend on word order, the same formalism (the Universal Dependencies project) is used to annotate dozens of languages, including ones with free word order.
+
+---
+
+<a id="depth-first-search-dfs"></a>
+### Depth-First Search (DFS)
+
+**The Big Idea**: Builds on the Breadth-First Search (BFS) entry above, but does the opposite: where BFS explores outward in even rings, one full step away from the start at a time, DFS instead picks one single path and follows it as far as it possibly can before ever backing up to try a different path — the same strategy as exploring a maze by always taking the first turn available and continuing until reaching a dead end, only then backtracking to the most recent turn that still has an unexplored option.
+
+**General Usage**: DFS explores a graph or tree by repeatedly moving to an unvisited neighbor of the current node, going deeper and deeper along a single path, and only backtracking to the most recently visited node that still has an unexplored neighbor once the current path reaches a dead end (a node with no unvisited neighbors). This is implemented with a Frontier / Open List (see that entry above) that behaves as a last-in-first-out (LIFO) stack, rather than BFS's first-in-first-out queue — or, equivalently, via recursion, since each recursive call is automatically held on the program's own call stack in exactly this last-in-first-out order.
+
+**Example.** Consider a small tree with root $R$, whose children are $A$ and $B$; $A$'s children are $C$ and $D$; $B$, $C$, and $D$ have no children. To visit the left-most child first, children are pushed onto the stack in reverse order, so the first child ends up on top and is popped next.
+
+| Step | Action | Stack after (top listed last) | Visited so far |
+|---|---|---|---|
+| 1 | Start: push $R$ | $[R]$ | (none) |
+| 2 | Pop $R$, visit it; push its children in reverse order ($B$, then $A$) | $[B, A]$ | $R$ |
+| 3 | Pop $A$, visit it; push its children in reverse order ($D$, then $C$) | $[B, D, C]$ | $R, A$ |
+| 4 | Pop $C$, visit it; $C$ has no children | $[B, D]$ | $R, A, C$ |
+| 5 | Pop $D$, visit it; $D$ has no children | $[B]$ | $R, A, C, D$ |
+| 6 | Pop $B$, visit it; $B$ has no children | $[\,]$ | $R, A, C, D, B$ |
+
+The final visiting order is $R, A, C, D, B$: DFS fully descends into $A$'s entire subtree (reaching leaves $C$ and $D$) before ever visiting $R$'s other child $B$ — the defining behavior that distinguishes it from BFS, which would instead visit $R$'s two children $A$ and $B$ before either of $A$'s children.
+
+**AI/ML Usage**: DFS is the traversal order used by the Minimax Algorithm (see that entry above) to explore a game tree: it fully evaluates one sequence of moves all the way down to a terminal state before backtracking to try the next one, which is exactly what keeps minimax's memory usage proportional only to the search depth rather than to the much larger total size of the tree (see the Branching Factor and Search Depth entry in `math_symbols.md`). DFS is also the basis for backtracking search algorithms used to solve Constraint Satisfaction Problems (see that entry above), and for classical AI planning algorithms more generally, which build up a solution one decision at a time and backtrack whenever a partial solution turns out to be a dead end.
+
+---
+
+<a id="depth-limited-search"></a>
+### Depth-Limited Search
+
+**The Big Idea**: Builds directly on the Depth-First Search (DFS) entry above, plus the everyday idea of "close enough": instead of following every path all the way down to wherever it naturally ends (which might be very deep, or even endless), depth-limited search agrees in advance to stop after a fixed number of steps, trading a guaranteed, predictable amount of work for an answer that is only an approximation.
+
+**General Usage**: Depth-limited search performs an ordinary Depth-First Search (see that entry above), but stops expanding any path once it has gone a fixed maximum number of steps deep — called the depth limit, or depth bound. A node reached exactly at the depth limit is treated as if it were a leaf for the purposes of stopping the search there, even though the search does not actually know what (if anything) lies beyond it. Because the search can be cut off before reaching a true terminal or goal state, depth-limited search gives up two things an unbounded search would otherwise guarantee: first, there is no guarantee the answer found is optimal (the best one possible), since a better option might exist just past the depth limit; second, whatever exact measure of quality is only well-defined at a true terminal state (see the utility function, defined in the Minimax Algorithm entry above) cannot be computed for a node that was cut off early, so an approximate stand-in — a Heuristic Evaluation Function (see that entry below) — has to be used at the depth limit instead.
+
+**Example.** Consider searching a tree that is actually $6$ levels deep, using a depth limit of $3$. An ordinary, unbounded depth-first search would continue all the way to depth $6$ along every path. A depth-limited search instead stops expanding as soon as it reaches depth $3$, treating every node at depth $3$ as if it were a leaf — even ones that, unseen, have further children at depths $4$, $5$, and $6$ that are never examined. If the actual best path through the tree only reveals its advantage at depth $5$, a depth limit of $3$ misses it entirely; this is exactly why depth-limited search cannot, in general, guarantee an optimal answer.
+
+**AI/ML Usage**: Depth-limited minimax is the standard way real game-playing programs (chess and Go engines, for example) make the Minimax Algorithm (see that entry above) computationally feasible: since real games are far too deep to search all the way to a terminal state in a reasonable amount of time (see the Branching Factor and Search Depth entry in `math_symbols.md`), the search is cut off at a fixed depth, and a Heuristic Evaluation Function estimates how good each cut-off position looks in place of the exact, but practically unreachable, game outcome.
+
+---
+
 <a id="diagonal-matrix"></a>
 ### Diagonal Matrix
 
@@ -1226,6 +1556,30 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 
 ---
 
+<a id="dynamic-programming"></a>
+### Dynamic Programming
+
+**The Big Idea**: In Algebra 2 you evaluate a sequence defined by a rule such as $a_n = a_{n-1} + 3$ by computing $a_1$, then $a_2$, then $a_3$, always reusing the value just found instead of starting over. Dynamic programming is that same habit applied to hard optimization problems: solve small pieces once, write the answers in a table, and build each bigger answer from answers already in the table.
+
+**General Usage**: A problem can be solved by dynamic programming when its best answer can be assembled from the best answers to smaller versions of the same problem (the sub-problems), and the same sub-problems would otherwise be solved again and again. The method has three parts: a table whose cells each stand for one sub-problem, a **base case** that fills the simplest cells directly, and a **recurrence** (a rule) that fills every other cell from cells already filled. Because each cell is computed once, the work grows with the size of the table rather than with the (often astronomically larger) number of complete candidate answers.
+
+**Example.** Find the largest total when walking down this 3-row triangle of numbers, moving each step to one of the two numbers directly below:
+
+Row 1: $3$. Row 2: $7, 4$. Row 3: $2, 4, 6$.
+
+Let the table entry for a number be "the best total of any walk from the top that ends on this number".
+
+1. Base case: the top cell is $3$.
+2. Row 2: the cell $7$ can only be reached from $3$, so its best total is $3+7=10$. The cell $4$ can only be reached from $3$, so $3+4=7$.
+3. Row 3, cell $2$: reachable only from $7$, so $10+2=12$.
+4. Row 3, cell $4$: reachable from $7$ (best $10$) or from $4$ (best $7$). Take the larger: $\max(10,7)+4=14$.
+5. Row 3, cell $6$: reachable only from $4$, so $7+6=13$.
+6. The largest entry in the last row is $14$, which is the answer. Only $1+2+3=6$ table cells were computed, instead of listing all $4$ complete walks, and for a triangle with many rows the saving is enormous because the number of walks doubles with every row.
+
+**AI/ML Usage**: Dynamic programming is the engine behind exact inference in sequence models. The Viterbi algorithm (see the Viterbi Algorithm entry) uses a table with one cell per (position, tag) pair to find the most likely tag sequence for a sentence in time proportional to the sentence length times the square of the number of tags, instead of examining every one of the (number of tags)$^{n}$ possible sequences. The same table-filling idea underlies parsing algorithms for grammars and the forward algorithm used to train hidden Markov models and conditional random fields.
+
+---
+
 <a id="early-stopping"></a>
 ### Early Stopping
 
@@ -1325,6 +1679,27 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 
 ---
 
+<a id="epsilon-greedy-policy"></a>
+### Epsilon-Greedy Policy
+
+**The Big Idea**: This builds directly on the Epsilon entry in the math_symbols file (a small chosen number, traditionally used for a tolerance) and on flipping two separate coins in sequence, an idea already familiar from basic probability: first a weighted coin decides whether to explore or exploit at all, and only then, if exploring is not chosen, a second coin decides which specific option to try.
+
+**General Usage**: An epsilon-greedy policy chooses among several available actions as follows: with probability $1-\epsilon$ (see the Epsilon entry in the math_symbols file), it picks an action uniformly at random from every option available; with the remaining probability $\epsilon$, it instead picks whichever action currently has the highest estimated value (see the Q-Function (Action-Value Function) entry in the math_symbols file), i.e. $\arg\max_a Q(s,a)$ (see the Arg Min / Arg Max entry in the math_symbols file). A larger $\epsilon$ makes the policy more exploitative, since it more often picks the currently-best-looking action; a smaller $\epsilon$ makes it more exploratory, since it more often picks purely at random. A key limitation is that a fixed $\epsilon$ never adapts: the policy explores at exactly the same rate after a great many samples, when the value estimates are already fairly reliable, as it did at the very start, when almost nothing was known.
+
+**Example.** Suppose a state $s$ has three available actions with current estimated values $Q(s,a_1)=0.2$, $Q(s,a_2)=0.7$, $Q(s,a_3)=-0.1$ (see the Q-Function (Action-Value Function) entry in the math_symbols file), and the policy uses $\epsilon = 0.9$.
+
+| Step | What happens | Result |
+|---|---|---|
+| 1. Flip the first (weighted) coin | Lands in the $1-\epsilon = 0.1$ region (probability $0.1$) or the $\epsilon = 0.9$ region (probability $0.9$) | Suppose it lands in the $\epsilon = 0.9$ region |
+| 2. Since the first coin favored exploitation, compare all three $Q$ values | $\arg\max_a Q(s,a)$: compare $0.2$, $0.7$, $-0.1$ | $a_2$, since $0.7$ is the largest |
+| 3. Chosen action | — | $a_2$ |
+
+Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second step would instead pick uniformly at random among $a_1$, $a_2$, and $a_3$, each with probability $\frac{1}{3}$, completely ignoring their $Q$ values.
+
+**AI/ML Usage**: Epsilon-greedy is one of the simplest possible tree policies for the selection step of Monte Carlo Tree Search (see that entry below), and it is used far more broadly throughout reinforcement learning generally, wherever an agent (a program that takes actions and receives feedback) must balance trying new actions against repeating ones already known to work well. Because it explores at a constant rate regardless of how much has already been learned, it is usually considered a weaker, less "informed" strategy than confidence-based alternatives such as the Upper Confidence Bound (UCB1 / UCT) entry in the math_symbols file, which automatically explores less as estimates become more reliable.
+
+---
+
 <a id="error-rate-training-error-empirical-error-rate"></a>
 ### Error Rate / Training Error / Empirical Error Rate
 
@@ -1335,6 +1710,19 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 **Example.** If a model makes 15 wrong predictions out of 200 total test examples, its empirical error rate is $\frac{15}{200}=0.075$, or 7.5%. This is a completely concrete, directly measurable number computed from one specific, actual dataset — as opposed to the model's true error rate, an abstract, generally unknowable quantity across every possible example it could ever encounter (see True Error / Generalization Error).
 
 **AI/ML Usage**: Training error is one of the most basic and universally reported metrics in machine learning, but it can be dangerously misleading on its own: a model with an extremely low training error might just be memorizing its specific training examples (overfitting) rather than genuinely learning to generalize — which is exactly why it's always compared side-by-side against a separate validation or test error.
+
+---
+
+<a id="exposure-bias-in-sequential-decision-models"></a>
+### Exposure Bias (in Sequential Decision Models)
+
+**The Big Idea**: A student who practices only on problems whose earlier steps have been checked and corrected for them never practices recovering from a wrong step. Exposure bias is the same gap for a model. It uses only the idea of training versus testing conditions, and is also described for language models in the Teacher Forcing entry in this file.
+
+**General Usage**: Exposure bias is the mismatch that arises when a model that makes a sequence of decisions is trained only on states reached by always making the correct previous decisions (the gold path), but at test time it must act on states produced by its own earlier choices, some of which are wrong. The model has never been "exposed" to states off the gold path, so it has no training on how to behave in them, and one early mistake can lead to a cascade of further errors. Remedies include formulating the problem as reinforcement learning (learning from rewards by trial and error) and sampling trajectories that stray from the gold path so the model is trained on them too.
+
+**Example.** A transition-based dependency parser for a sentence of $n$ words is trained on $2n$ (state, correct action) examples, one for each step of the oracle's derivation (see the Oracle Derivation entry). Every one of those states lies on the single gold path from the start state to the gold end state. Suppose that at test time the parser takes a wrong action at step 3. It is now in a state that no training example ever showed it, so the classifier's behavior there is untrained, and typically it is impossible to reach the correct tree again.
+
+**AI/ML Usage**: Exposure bias appears in transition-based parsing and, under the same name, in sequence generation with Teacher Forcing (see that entry). Practical mitigations are sampling off-gold-path trajectories during training and training with reinforcement-learning objectives; for parsing, the correct action is known at nearly every state, so simply sampling and labeling off-path states is lighter than full reinforcement learning.
 
 ---
 
@@ -1395,6 +1783,19 @@ An ordinary skip-gram model would need one single, whole-word vector for "cat" t
 **Example.** A linear model given only the raw feature $x$ can only ever draw a straight line. Expanding the feature set to $(x, x^2)$ lets that exact same linear-model algorithm now fit a full parabola — the model itself hasn't changed at all, only the richer set of features it's been handed to work with.
 
 **AI/ML Usage**: Feature expansion was a central technique in classical, pre-deep-learning machine learning — since raw data (like an image or unprocessed text) rarely comes with directly useful features already built in, engineers spent enormous effort hand-designing good expanded features; today, deep neural networks largely automate this entire process, learning their own useful expanded features directly and automatically from raw data instead.
+
+---
+
+<a id="feed-forward-window-tagger"></a>
+### Feed-Forward Window Tagger
+
+**The Big Idea**: Think of an Algebra 2 function $f(x)$ that takes a list of numbers and returns one number. A window tagger is such a function: its input is a list of numbers built from the words around the one being labeled, and its output is a score for each possible label. It goes beyond Algebra 2 in that the function is a neural network (see the Neural Network entry) whose coefficients are learned from examples.
+
+**General Usage**: To label the word at one position, look at a fixed window of neighbors, for example the previous word, the current word, and the next word. Each word is turned into a vector of numbers by a word embedding (see the Word Embedding entry). The three vectors are concatenated, meaning laid end to end into one longer vector, rather than added together. This keeps position information: the first block always means "previous word." The long vector is fed to a feed-forward network (a network whose layers pass numbers in one direction with no loops), whose output is a probability for each possible label. The tag with the highest probability is chosen. Extra features, such as embeddings of the character bigrams and trigrams (two- and three-letter pieces) of the word, can be concatenated in too.
+
+**Example.** To tag "interest" in "Fed raises interest rates in order to ...", the input is the stack of three blocks: the embedding of "raises" (previous word), the embedding of "interest" (current word), and the embedding of "rates" (next word), followed by any other word features. This stack is the feature vector $f(x)$ passed to the network. Because the blocks are concatenated rather than averaged, swapping "raises" and "rates" would change the input, which is exactly the position sensitivity wanted. By contrast, averaging the three embeddings would give the same result in either order.
+
+**AI/ML Usage**: Small feed-forward networks of this kind were used for part-of-speech tagging across many languages and matched or beat earlier recurrent-network taggers while being much smaller (Botha et al., 2017). The same pattern, embed a window of neighbors, concatenate, classify, is used for other labeling tasks in natural language processing.
 
 ---
 
@@ -1477,6 +1878,19 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 **Example.** Modeling adult heights with a GMM of two components might discover one bell-curve centered around 5'4" (roughly representing women) and a second centered around 5'9" (roughly representing men), each with its own separate spread, combined together — and for a specific height like 5'6", the model gives a genuine probability of belonging to each of the two overlapping groups, rather than forcing one single, definite category choice.
 
 **AI/ML Usage**: GMMs are fit using the EM algorithm (see that entry) and are widely used for soft clustering (where a data point can partially belong to more than one group at once), as well as for anomaly detection and for building a flexible, general-purpose model of complicated, multi-peaked data distributions.
+
+---
+
+<a id="generative-likelihood"></a>
+### Generative Likelihood
+
+**The Big Idea**: This builds on the Likelihood and Log Likelihood entries and on the Generative Model entry. Ordinary (conditional) likelihood asks how probable the labels are given the inputs; generative likelihood asks how probable the inputs and labels are together, as a pair.
+
+**General Usage**: For a training set of pairs $(\bar x^{(i)},\bar y^{(i)})$ (an input sequence and its label sequence), the generative (joint) log-likelihood is $\sum_i \log P(\bar y^{(i)},\bar x^{(i)})$. Training a generative model means choosing the parameters that make this sum as large as possible.
+
+**Example.** For a hidden Markov model the joint probability of one sentence factors into a start probability, one emission probability per word, and one transition probability per tag change. Taking the log turns this product into a sum: $\log P(y_1)+\sum_j\log P(x_j\mid y_j)+\sum_j\log P(y_j\mid y_{j-1})$, so each kind of factor can be handled on its own.
+
+**AI/ML Usage**: Hidden Markov models, naive Bayes classifiers, and probabilistic grammars are trained by maximizing this quantity, in contrast to logistic regression, which maximizes the conditional likelihood $P(y\mid x)$.
 
 ---
 
@@ -1711,6 +2125,29 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 
 ---
 
+<a id="head-word-and-lexicalization"></a>
+### Head Word and Lexicalization
+
+**The Big Idea**: Every phrase has a word that matters most, the way "dog" matters most in "the big brown dog": delete the other words and you still have a recognizable noun phrase. This entry names that word and shows how it is attached to a grammar. Nothing beyond Algebra 2 is needed; the new idea is only the bookkeeping of carrying one word upward as a label.
+
+**General Usage**: The **head word** of a phrase (a "constituent") is the single word that is most important for determining how the phrase fits into the rest of the sentence. It is found bottom-up: a one-word phrase has that word as head, and for a larger phrase the head is inherited from one of its children (for example, a noun phrase takes its noun, a verb phrase takes its verb, and a prepositional phrase takes its preposition). **Lexicalization** is the practice of writing each phrase label together with its head word in parentheses, such as $NP(dog)$ or $VP(ran)$, so the grammar can see the actual words as well as the categories. Each head-to-child link in a lexicalized tree then relates two specific words, independently of the phrase labels, and drawing those word-to-word links alone gives a dependency structure (see the Dependency Parsing entry above).
+
+**Example.** For "the dog ran to the house," the lexicalized tree has these labels, built bottom-up.
+
+| Step | Phrase | Head | Reason |
+|---|---|---|---|
+| 1 | NP over "the dog" | $NP(dog)$ | the noun is the most important word |
+| 2 | NP over "the house" | $NP(house)$ | the noun is the most important word |
+| 3 | PP over "to the house" | $PP(to)$ | the preposition is the head of a prepositional phrase |
+| 4 | VP over "ran to the house" | $VP(ran)$ | the verb is the head of a verb phrase |
+| 5 | S over the whole sentence | $S(ran)$ | the sentence takes the head of its verb phrase |
+
+Reading the links upward gives: "the" depends on "house", "house" depends on "to", and "to" depends on "ran".
+
+**AI/ML Usage**: Lexicalized probabilistic context-free grammars score a rule using the head words as well as the labels, which lets a parser learn that a particular verb prefers a particular preposition. The same head-finding step is used to convert phrase-structure treebanks (corpora of sentences with hand-annotated trees) into dependency treebanks.
+
+---
+
 <a id="hedge-algorithm"></a>
 ### Hedge Algorithm
 
@@ -1721,6 +2158,55 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 **Example.** Suppose you're combining predictions from several weather forecasters. After a rainy day, any forecaster who predicted "sunny" gets their trust weight multiplied down by some shrink factor $\beta<1$: $w_i^{\text{new}} = w_i^{\text{old}}\cdot\beta^{\,l_i}$, where $l_i$ measures how wrong that particular forecaster was — a forecaster who's repeatedly wrong ends up with a weight shrinking rapidly toward zero, while a consistently accurate forecaster keeps a much larger, more influential weight over time.
 
 **AI/ML Usage**: The Hedge algorithm is a foundational technique in online learning theory and is directly related to, and provides theoretical grounding for, boosting algorithms (see that entry) — it's also used in practical multi-armed bandit and expert-combination problems, wherever several separate models or strategies' predictions need to be intelligently combined together over time.
+
+---
+
+<a id="heuristic-evaluation-function"></a>
+### Heuristic Evaluation Function
+
+**The Big Idea**: Builds on the Weight Vector and Feature Extractor / Feature Function entries in `math_symbols.md`, combined the same way a weighted sum, or a Dot Product (see that entry in `math_symbols.md`), combines numbers: take several separately measured properties of a situation, multiply each one by a number that says how much it matters, and add up the results to get one overall score.
+
+**General Usage**: A heuristic evaluation function estimates how good a given non-terminal state is for a particular player, standing in for the exact utility function (see the Minimax Algorithm entry above) at states where that exact value cannot yet be known because the game has not actually ended. A common and simple form is a linear combination of features:
+$$
+\text{Eval}(s) = w_1 f_1(s) + w_2 f_2(s) + \cdots = \sum_i w_i f_i(s),
+$$
+where each $f_i(s)$ (see the Feature Extractor / Feature Function entry in `math_symbols.md`) measures one specific, chosen property of state $s$ believed to be relevant to how good that state is, and each corresponding weight $w_i$ (see the Weight Vector entry in `math_symbols.md`) is a number describing how strongly that property should count toward the overall estimate. This has exactly the same structure as the Dot Product of a weight vector and a feature vector.
+
+**Example.** Suppose a simplified evaluation function for a board game uses just two features: $f_1(s)=$ "number of the player's own pieces remaining" and $f_2(s)=$ "number of the opponent's pieces remaining," with weights $w_1=1$ and $w_2=-1$ (the player's own pieces count positively toward the score, while the opponent's remaining pieces count negatively, since more of them is bad news for the player). For a state $s$ where the player has $8$ pieces left and the opponent has $5$:
+$$
+\text{Eval}(s) = (1)(8) + (-1)(5) = 8 - 5 = 3.
+$$
+For a different state $s'$ where the player has $6$ pieces left and the opponent has $9$:
+$$
+\text{Eval}(s') = (1)(6) + (-1)(9) = 6 - 9 = -3.
+$$
+The negative score for $s'$ correctly signals that $s'$ looks worse for the player than $s$ does, purely from the material count captured by these two features.
+
+**AI/ML Usage**: Heuristic evaluation functions are what make depth-limited game-playing search (see the Depth-Limited Search entry above) practical on games like chess: a human expert, or, in modern systems, a trained model, chooses or learns features believed to correlate with a good position — material count, piece mobility, king safety, and so on for chess — and combines them into a single score. Classical chess engines used hand-designed linear evaluation functions of exactly this form for decades; modern systems such as AlphaZero instead train a neural network to output this evaluation directly from the raw board position, learning which patterns matter through self-play rather than having a human hand-specify the features and weights.
+
+---
+
+<a id="hidden-markov-model"></a>
+### Hidden Markov Model
+
+**The Big Idea**: This combines two ideas already in the math_concepts file: the Markov Model (what happens next depends only on the most recent item) and the Generative Model (a recipe for producing data). The "hidden" part is that the Markov chain runs on labels we cannot see, and each label produces something we can see. Algebra 2 offers no direct counterpart; the closest is a sequence defined by a rule that uses only the previous term, with the twist that the terms are random and only a noisy readout of them is visible.
+
+**General Usage**: A Hidden Markov Model (HMM) describes a sequence of hidden states $y_1,\dots,y_n$ (for tagging, tags from a tag set $\mathcal{T}$) and observed outputs $x_1,\dots,x_n$ (words from a vocabulary $\mathcal{V}$). It generates the data this way: choose $y_1$ from the initial distribution; emit $x_1$ from $y_1$; choose $y_2$ given $y_1$; emit $x_2$ given $y_2$; and so on, ending with a STOP outcome. This makes the joint probability
+
+$$
+P(\bar y,\bar x)=P(y_1)\,P(x_1\mid y_1)\,P(y_2\mid y_1)\,P(x_2\mid y_2)\cdots P(\text{STOP}\mid y_n).
+$$
+
+It rests on two independence assumptions: each state depends only on the previous state (the Markov assumption), and each output depends only on its own state. Three tables hold the parameters: the initial distribution, the transition matrix, and the emission matrix (see those entries in the math_symbols file).
+
+**Example.** Take a two-word sentence with tags $y_1=\text{DT}$, $y_2=\text{NN}$ and words $x_1=\text{the}$, $x_2=\text{dog}$. Suppose $P(\text{DT})=0.7$, $P(\text{the}\mid\text{DT})=1$, $P(\text{NN}\mid\text{DT})=1$, $P(\text{dog}\mid\text{NN})=0.5$, $P(\text{STOP}\mid\text{NN})=0.3$.
+
+1. Write the product: $P(y_1)\,P(x_1\mid y_1)\,P(y_2\mid y_1)\,P(x_2\mid y_2)\,P(\text{STOP}\mid y_2)$.
+2. Substitute: $0.7\times1\times1\times0.5\times0.3$.
+3. Multiply: $0.7\times1=0.7$; $0.7\times1=0.7$; $0.7\times0.5=0.35$; $0.35\times0.3=0.105$.
+4. So $P(\bar y,\bar x)=0.105$.
+
+**AI/ML Usage**: HMMs are a classic model for part-of-speech tagging and other sequence-labeling tasks, such as named entity recognition and speech recognition. Using one takes two steps: parameter estimation (fitting the three tables from data) and inference (finding the best hidden sequence for a new sentence).
 
 ---
 
@@ -1755,6 +2241,28 @@ Reaching "c" required exactly $2$ binary decisions — matching $\log_2 4=2$ —
 **Example.** If a correctly classified point has a large margin of $3$ (comfortably past the required threshold), hinge loss assigns it zero loss — no further reward needed for being extra correct. But a point sitting right at the edge of the boundary, with margin close to $0$, or one that's actually misclassified with a negative margin, receives an increasingly large, escalating penalty the worse that margin gets.
 
 **AI/ML Usage**: Hinge loss is the defining loss function used to train Support Vector Machines (see that entry) — unlike cross-entropy loss, it doesn't just want correct predictions, it specifically wants correct predictions with a comfortably large safety margin, which is exactly the "maximum margin" philosophy that SVMs are built entirely around.
+
+---
+
+<a id="horizontal-markovization"></a>
+### Horizontal Markovization
+
+**The Big Idea**: Algebra 2 sequences are often defined by a rule that uses only a few earlier terms, such as $a_n = a_{n-1} + a_{n-2}$ (only the last two terms matter). Horizontal Markovization applies the same "only remember the last few" idea to the children of a grammar rule, one child at a time. It also relies on the chain rule of probability (see the Chain Rule (for Probability) entry in the math_concepts file).
+
+**General Usage**: A grammar rule with many symbols on its right-hand side, such as $VP \to VBZ\ NP\ PP\ PP$, is first binarized (rewritten as a chain of rules with two symbols each) by generating the children one at a time under intermediate symbols. An intermediate symbol records the children generated so far in brackets. With horizontal order $h$, only the last $h$ generated children are kept in the bracket: $h=0$ keeps none (the symbol is just $VP$), $h=1$ keeps one, $h=2$ keeps two, and $h=\infty$ keeps all, which loses no information. Smaller $h$ gives a smaller grammar whose symbols are seen more often but which models less detail. In practice the head tag (the tag of the most important child, here the verb) is always kept.
+
+**Example.** For the rule $VP \to VBZ\ NP\ PP\ PP$, after the children $VBZ\ NP$ have been generated the intermediate symbol is:
+
+| $h$ | Symbol |
+|---|---|
+| 0 | $VP$ |
+| 1 | $VP\,[\ldots\,NP]$ |
+| 2 | $VP\,[\ldots\,VBZ\ NP]$ |
+| $\infty$ | $VP\,[VBZ\ NP]$ |
+
+With $h=1$ the earlier $VBZ$ has been forgotten, so this symbol is shared with any other $VP$ whose most recently generated child was an $NP$.
+
+**AI/ML Usage**: In parsing, the probability of the rule is the product of one-step probabilities, $P(VBZ \mid VP)\,P(NP \mid VP[VBZ])\cdots$, and $h$ controls what each step conditions on. Klein and Manning (2003) found that combining small $h$ with vertical context raised a basic treebank parser from about 71% to about 79% F1 (the fraction of tree nodes predicted correctly).
 
 ---
 
@@ -1847,6 +2355,28 @@ Inflating the heuristic can change which vertex looks more promising, steering t
 Judged intrinsically, Embedding A looks like the better representation — its distances between word pairs agree more closely with human judgments ($0.72$ versus $0.65$). But when each embedding is instead plugged into an otherwise-identical sentiment classifier and evaluated on real, labeled sentiment data, Embedding B produces the classifier that is correct more often ($85\%$ versus $81\%$ accuracy). The two evaluations disagree about which embedding is "better" — exactly the situation this distinction exists to describe: a representation's intrinsic quality is not the same thing as, and does not always predict, how useful it turns out to be for a specific real, downstream task.
 
 **AI/ML Usage**: Word embeddings such as GloVe and Word2Vec (see those entries) are routinely evaluated both ways: intrinsically, on datasets of human-judged word-pair similarity scores or on word-analogy accuracy (see the Word Analogy entry); and extrinsically, by plugging them into downstream models for tasks like sentiment analysis, named-entity recognition, or question answering, and measuring the accuracy of the finished system. In practice, extrinsic evaluation is usually treated as the more important of the two, since it measures what a practitioner actually cares about — real task performance — while intrinsic scores are cheaper and faster to compute and mainly serve as a quick, rough proxy before running the more expensive downstream experiment.
+
+---
+
+<a id="iterative-deepening"></a>
+### Iterative Deepening
+
+**The Big Idea**: Builds on the Depth-Limited Search entry above: rather than picking one single depth limit in advance and hoping it turns out to be a good choice, iterative deepening simply tries every depth limit in order, starting shallow and going one level deeper each time — the same way a cook might check food after a short bake, then a slightly longer one, then longer still, rather than guessing a single cook time up front and hoping it is right.
+
+**General Usage**: Iterative deepening repeatedly runs a Depth-Limited Search (see that entry above), first with a depth limit of $1$, then $2$, then $3$, and so on, discarding each previous, shallower search and starting over from the root every time the limit increases. This might sound wasteful, since the shallow levels are redone from scratch every time — but because the number of nodes at the deepest level of a tree with branching factor $b$ (see the Branching Factor and Search Depth entry in `math_symbols.md`) heavily outweighs the nodes at every shallower level combined, redoing the shallow levels costs relatively little compared to the newly explored depth. The key benefit is that iterative deepening turns a depth-limited search into an **anytime algorithm**: one that can be stopped after any amount of elapsed time and still have a complete, usable answer ready — specifically, the best answer found by whichever depth limit it most recently finished completely — because the depth limit is increased only for as long as a fixed compute-time budget allows, rather than being fixed to one predetermined value ahead of time.
+
+**Example.** Suppose a fixed compute-time budget allows enough time to run a depth-limited search to depth $1$, then depth $2$, then depth $3$, but not enough time remains afterward to finish depth $4$ before the budget runs out.
+
+| Step | Depth limit attempted | Outcome |
+|---|---|---|
+| 1 | 1 | Completes; best answer so far is based on a 1-ply lookahead |
+| 2 | 2 | Completes; best answer so far is now based on a 2-ply lookahead, replacing the depth-1 answer |
+| 3 | 3 | Completes; best answer so far is now based on a 3-ply lookahead, replacing the depth-2 answer |
+| 4 | 4 | Time budget runs out partway through; this search is abandoned, and the depth-3 answer (the last one that fully completed) is returned |
+
+The algorithm can be interrupted after any of these steps and still hand back a sensible answer: the best one found by the deepest limit that had time to finish completely.
+
+**AI/ML Usage**: Iterative deepening is standard in game-playing programs operating under a real-time constraint, such as a chess engine with a fixed amount of time per move, since the exact depth a fixed time budget will allow to complete cannot be known in advance and varies from position to position; iterative deepening sidesteps needing to know that depth ahead of time. The same general pattern — repeatedly redoing a cheaper version of a computation so a usable answer is always available when time runs out — reappears throughout real-time planning under the umbrella of anytime algorithms, for example in the family of algorithms that track $c_{best}$, the best solution cost found so far (see that entry in `math_symbols.md`).
 
 ---
 
@@ -2087,6 +2617,42 @@ From a lattice vertex at pose $(0, 0, 0°)$, these three primitives generate exa
 
 ---
 
+<a id="law-of-large-numbers"></a>
+### Law of Large Numbers
+
+**The Big Idea**: This builds on ordinary averaging from Algebra 2 (adding up a list of numbers and dividing by how many there are) and on the Sampling Notation entry in the math_symbols file — the law of large numbers is the formal guarantee behind the everyday intuition that flipping a fair coin many times gives a fraction of heads very close to $\frac12$, even though any short run of flips can look lopsided.
+
+**General Usage**: Given samples $x_1, x_2, \dots, x_N$ drawn independently from a distribution $P$ (written $x_i \sim P$; see Sampling Notation in the math_symbols file), the law of large numbers states that the sample average of a function $f$ evaluated at those samples converges to the true Expectation (see that entry in the math_symbols file) as the number of samples grows without bound:
+$$
+\mathbb{E}_P[f] = \lim_{N\to\infty} \frac{1}{N}\sum_{i=1}^N f(x_i), \qquad x_i \sim P.
+$$
+If the samples are instead drawn from a *different*, more convenient distribution — commonly a Uniform Distribution (see that entry in the math_symbols file), written $x_i \sim U[\cdot]$ — each term must first be corrected by multiplying by how likely that sample actually was under the true distribution $P$, written $p(x_i)$, before averaging:
+$$
+\mathbb{E}_P[f] = \lim_{N\to\infty} \frac{1}{N}\sum_{i=1}^N p(x_i)\,f(x_i), \qquad x_i \sim U[\cdot].
+$$
+Both forms say the same thing: average enough random samples together, weighted correctly for however they were actually drawn, and the average converges to the true expected value.
+
+**Example.** Suppose a fair six-sided die is rolled repeatedly (so the true expected value of a roll is $\mathbb{E}[f]=3.5$, as computed in the Expectation entry of the math_symbols file), and the following ten rolls occur, in order: $4, 1, 6, 3, 5, 2, 6, 1, 4, 5$. The running average after each roll is:
+
+| Rolls so far ($N$) | Roll just added | Running sum | Running average |
+|---|---|---|---|
+| 1 | 4 | 4 | $4.00$ |
+| 2 | 1 | 5 | $2.50$ |
+| 3 | 6 | 11 | $3.67$ |
+| 4 | 3 | 14 | $3.50$ |
+| 5 | 5 | 19 | $3.80$ |
+| 6 | 2 | 21 | $3.50$ |
+| 7 | 6 | 27 | $3.86$ |
+| 8 | 1 | 28 | $3.50$ |
+| 9 | 4 | 32 | $3.56$ |
+| 10 | 5 | 37 | $3.70$ |
+
+Even over just ten rolls, the running average is already hovering near the true value $3.5$ rather than drifting off toward, say, $1$ or $6$; the law of large numbers guarantees that as $N$ keeps growing, this running average settles arbitrarily close to $3.5$.
+
+**AI/ML Usage**: The law of large numbers is the formal justification for why training a model on a large dataset gives a reliable estimate of the true, unreachable expected loss across the entire real-world data distribution (see the empirical-loss discussion in the Expectation entry, math_symbols file) — the more training examples averaged over, the closer the computed training loss tracks the true loss. It is also the principle underlying Monte Carlo Estimation (see that entry below): random rollouts in Monte Carlo Tree Search, particle filters in robotics, and dropout-based uncertainty estimates in neural networks all lean on the same guarantee that averaging enough random samples converges to the quantity actually being estimated.
+
+---
+
 <a id="layer-normalization"></a>
 ### Layer Normalization
 
@@ -2107,6 +2673,19 @@ From a lattice vertex at pose $(0, 0, 0°)$, these three primitives generate exa
 Check: the normalized vector's own mean is $0$ and its own variance is $1$, exactly the consistent scale layer normalization is designed to produce, regardless of what scale the original numbers happened to be on.
 
 **AI/ML Usage**: Deep networks such as the Transformer stack many layers on top of each other (see Transformer Architecture below), and different layers' outputs can naturally drift to very different scales during training. Because every layer in the stack is trained together using one single, shared learning rate (see Learning Rate in the math_symbols file), a scale mismatch between layers can make training unstable or slow: an update size that is sensible for one layer's scale may be far too large or too small for another's. Layer normalization is applied after (or, in some later architectures, before) each sublayer in a Transformer block, keeping every layer's output on a comparable scale so the entire deep stack can be trained smoothly with one shared learning rate.
+
+---
+
+<a id="lexicalization"></a>
+### Lexicalization
+
+**The Big Idea**: Algebra 2 functions can depend on an input value; here a grammar symbol is made to depend on a word. Instead of the plain label $NP$, the label becomes $NP(lawyer)$: a noun phrase together with its most important word. It goes beyond Algebra 2 only in that the "inputs" are words rather than numbers.
+
+**General Usage**: In lexicalization every symbol of a parse tree is annotated with its head word, the most important word of that phrase. Heuristic: the head of a verb phrase is its verb, the head of a noun phrase is a noun, and the head of a sentence is also its verb. Hand-written head rules find heads (for example, the last word of a noun phrase before a preposition is typically the head). Heads are passed upward from child to parent. Because every symbol now carries a word, the grammar becomes enormous, and extra techniques are required to estimate and parse with it.
+
+**Example.** For "the lawyer questioned the witness": $NN(lawyer)$ gives $NP(lawyer)$; $Vt(questioned)$ gives $VP(questioned)$ and then $S(questioned)$; $NN(witness)$ gives $NP(witness)$. The tree is $S(questioned) \to NP(lawyer)\ VP(questioned)$, with $VP(questioned) \to Vt(questioned)\ NP(witness)$.
+
+**AI/ML Usage**: Lexicalized PCFG parsers by Collins and Charniak in the late 1990s reached about 89-90 F1 (percentage of correct tree nodes) on the English Penn Treebank. Words let the parser prefer "dogs and cats" over "houses and cats" as things to conjoin, which parent labels alone cannot do. Their difficulty of construction motivated dependency parsing.
 
 ---
 
@@ -2392,6 +2971,65 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="minimax-algorithm"></a>
+### Minimax Algorithm
+
+**The Big Idea**: This builds on ordinary function evaluation and on picking the biggest or smallest entry from a list (see the Max Function and Min Function entries in the math_symbols file) — minimax is simply "take turns picking the biggest number, then the smallest number, then the biggest number again," worked backward from the end of a game to its beginning, one level at a time.
+
+**General Usage**: Minimax is a method for choosing an action optimally in a two-player, turn-based game where one player's gain is exactly the other player's loss (see the Zero-Sum Game entry below). Represent the game as a tree: the root is the current state, each node's children are the states reachable by one legal move, and each **leaf** (a node with no children) is a finished game — a **terminal state** — labeled with a fixed number called its **utility**, describing how good that outcome is for the player the tree is being built for (for example $+1$ for a win, $-1$ for a loss, $0$ for a draw). One player, the **max player**, moves at some levels of the tree and always picks whichever available move leads to the largest utility; the other player, the **min player**, moves at the other levels and always picks whichever available move leads to the smallest utility, since a good outcome for the max player is exactly a bad outcome for the min player. Formally, the minimax value of a state $s$ is defined recursively:
+$$
+\text{MinimaxValue}(s) =
+\begin{cases}
+\text{Utility}(s) & s \text{ is a terminal state} \\
+\max_{s' \in \text{Successors}(s)} \text{MinimaxValue}(s') & \text{it is the max player's turn at } s \\
+\min_{s' \in \text{Successors}(s)} \text{MinimaxValue}(s') & \text{it is the min player's turn at } s
+\end{cases}
+$$
+Computing this value means working from the leaves of the tree back up to the root — each node's value is only known once every one of its children's values is known — which is why the computation is described as happening "bottom up." The max player then simply picks whichever of the root's child actions has the largest backed-up value; that choice is optimal in the specific sense that it guarantees the best outcome the max player can force, no matter which legal moves the min player makes in response, provided the min player always moves to minimize the max player's value in return.
+
+**Example.** Consider a small hypothetical game tree, four levels deep, where the root is the max player's turn:
+
+| Step | Node being evaluated | Computation | Value |
+|---|---|---|---|
+| 1 | Leftmost leaf under the left child (max player's move $a_1'$) | terminal state, a win for the max player | $+1$ |
+| 2 | Second leaf under the left child (max player's move $a_2'$) | terminal state, a loss for the max player | $-1$ |
+| 3 | Left child of the root (min player's turn) | $\min(+1,\,-1)$ — the min player prefers the smaller value, so it picks the move leading to $-1$ | $-1$ |
+| 4 | First leaf under the right child (min player's move) | terminal state, a draw | $0$ |
+| 5 | Second leaf under the right child (min player's move) | terminal state, a win for the max player | $+1$ |
+| 6 | Right child of the root (min player's turn) | $\min(0,\,+1)$ — the min player prefers the smaller value, so it picks the move leading to the draw, $0$ | $0$ |
+| 7 | Root (max player's turn) | $\max(-1,\,0)$ — the max player prefers the larger value, so it picks the action leading to the right child | $0$ |
+
+Reading the table bottom-to-top-in-value but top-to-bottom-in-computation-order shows the "bottom-up" nature of the algorithm: nothing at the root can be decided until both of its children's values are known, and neither child's value can be decided until all of *its* children's values (the leaves) are known. The final answer, a value of $0$, says that with both players playing optimally, this hypothetical game is a forced draw — the max player cannot force a win, but can always avoid a loss by choosing the right-hand action.
+
+In pseudocode, the whole procedure needs only three small functions: one that dispatches on whose turn it is, and one each for maximizing and minimizing over successor states.
+
+```
+Function MinimaxValue(State s, Player p):
+  if (p == 'Max'):
+    return MaxValue(s)
+  if (p == 'Min'):
+    return MinValue(s)
+
+Function MaxValue(State s):
+  v = -infinity
+  foreach s' in Successors(s):
+    v = Max(v, MinimaxValue(s', 'Min'))
+  return v
+
+Function MinValue(State s):
+  v = infinity
+  foreach s' in Successors(s):
+    v = Min(v, MinimaxValue(s', 'Max'))
+  return v
+```
+`MaxValue` and `MinValue` each call `MinimaxValue` back on every successor state, but flip which player's turn it is for that recursive call — exactly capturing that the two players alternate moves down the tree. `v` is initialized to negative infinity in `MaxValue` (so that the first real value found is guaranteed to beat it) and to positive infinity in `MinValue` (so that the first real value found is guaranteed to be smaller); see the Infinity entry in `math_symbols.md`.
+
+The same idea extends to more than two players: instead of tracking a single number per state (with the other player's value assumed to be its negation), each state's backed-up value becomes a **vector** (see the Vector entry in `math_symbols.md`) with one entry per player, and whichever player is moving at a given node picks whichever available successor vector has the largest entry in *that player's own* position of the vector, then passes the whole vector up unchanged.
+
+**AI/ML Usage**: Minimax is the foundational algorithm behind classical two-player game-playing programs, including early chess and checkers engines, and it remains the conceptual starting point that more advanced techniques build on: alpha-beta pruning (see the Alpha-Beta Pruning Bounds entry in `math_symbols.md`) computes the exact same values while skipping over branches that provably cannot change the final decision, and modern systems like AlphaZero replace the raw utility of a terminal state with a value estimated by a trained neural network, since real games like chess and Go are far too large to search all the way down to a terminal state. The same "take the min over the worst case" idea, outside of games, also underlies **robust optimization**, where a system is trained or designed to perform well even under the worst plausible conditions an adversary or the environment could produce.
+
+---
+
 <a id="minimum-description-length"></a>
 ### Minimum Description Length
 
@@ -2457,6 +3095,69 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="monte-carlo-estimation"></a>
+### Monte Carlo Estimation
+
+**The Big Idea**: This is a direct application of the Law of Large Numbers entry above — instead of computing a hard quantity (an area, a probability, an expected value) exactly, Monte Carlo estimation approximates it by running a simple random experiment many times and summarizing the results, the same way you might estimate the fraction of red marbles in a huge jar by drawing a sample handful and counting, rather than sorting every marble in the jar by hand.
+
+**General Usage**: Monte Carlo estimation approximates a quantity that is difficult or impossible to compute exactly by (1) drawing a large number of random samples related to that quantity, (2) evaluating some simple, cheap property of each sample, and (3) summarizing those evaluations (typically by averaging, or by counting a fraction) into an estimate. The Law of Large Numbers entry above guarantees that this estimate converges to the true value as the number of samples grows.
+
+**Example.** A classic Monte Carlo estimation of $\pi$: the area of a circle of radius $r$ is $\pi r^2$, so a circle of radius $1$ has area exactly $\pi$. Inscribe that circle inside a square running from $-1$ to $1$ on both axes (side length $2$), which has area $2\times 2=4$.
+
+| Step | What is computed | Result |
+|---|---|---|
+| 1 | Area of the unit circle ($r=1$) | $A(\text{circle}) = \pi(1)^2 = \pi$ |
+| 2 | Area of the enclosing square (side $2$) | $A(\text{square}) = 2^2 = 4$ |
+| 3 | Draw $N$ points uniformly at random inside the square (each coordinate drawn from a Uniform Distribution on $[-1,1]$; see that entry in the math_symbols file) | — |
+| 4 | Count $N_c$, the number of those $N$ points landing inside the circle (distance from the origin $\le 1$) | — |
+| 5 | As $N\to\infty$, the sampled fraction converges to the true ratio of the two areas (Law of Large Numbers) | $\displaystyle\lim_{N\to\infty}\frac{N_c}{N} = \frac{A(\text{circle})}{A(\text{square})} = \frac{\pi}{4}$ |
+| 6 | Solve for $\pi$ | $\displaystyle \pi = 4\lim_{N\to\infty}\frac{N_c}{N}$ |
+
+To see this converging in practice, suppose a small simulation is run at increasing sample sizes: at $N=20$ draws, $16$ land inside the circle, giving a rough estimate $\pi \approx 4\times\frac{16}{20} = 3.20$; at $N=1{,}000$ draws, $785$ land inside the circle, giving $\pi \approx 4\times\frac{785}{1000} = 3.14$ — visibly closer to the true value $3.14159\ldots$ as $N$ grows, exactly as the Law of Large Numbers predicts.
+
+**AI/ML Usage**: Monte Carlo estimation is exactly the technique used to approximate the Q-Function (Action-Value Function) (see that entry in the math_symbols file) in a game tree too large to search exhaustively: instead of backing up a value from every terminal state, the algorithm draws random terminal outcomes (or full Random Playout (Rollout)s, see that entry below) and averages their utilities. The same random-sampling-plus-averaging principle underlies Monte Carlo Tree Search (see that entry below, the algorithm behind DeepMind's AlphaGo and AlphaZero), particle filters used for robot localization, and dropout-based uncertainty estimation in neural networks.
+
+---
+
+<a id="monte-carlo-tree-search-mcts"></a>
+### Monte Carlo Tree Search (MCTS)
+
+**The Big Idea**: This builds directly on two entries already covered: Monte Carlo Estimation (approximating a hard-to-compute quantity by sampling and averaging) and the Minimax Algorithm (searching a game tree by alternating best-for-me and worst-for-me choices). MCTS is what results from refusing to build the entire game tree in advance — instead, the tree is grown one small piece at a time, always in the direction that a running, sample-based estimate says looks most promising, the same practical instinct as spending limited study time on the topics a few practice questions suggest are weakest, rather than re-reading a whole textbook cover to cover.
+
+**General Usage**: Monte Carlo Tree Search is a family of algorithms — not one single fixed algorithm — for choosing actions in games or decision problems whose full game tree (see the Graph entry in the math_symbols file for the general tree/graph idea) is far too large to search exhaustively (see the Minimax Algorithm entry above). Given however much computation time is available, MCTS repeats the following four-step cycle for as long as it is allowed to run:
+1. **Selection** — starting at the root of whatever partial tree has been built so far, repeatedly choose a child using a **tree policy** (a rule that balances exploration and exploitation, most commonly the Upper Confidence Bound (UCB1 / UCT) entry in the math_symbols file, or an Epsilon-Greedy Policy, see that entry above), until reaching a node that is not yet fully grown out (a leaf of the tree built so far).
+2. **Expansion** — add one new child node to the tree at that leaf, corresponding to one previously untried action.
+3. **Simulation** — estimate the value of this brand-new node by playing the game forward from it, usually with a fast, cheap policy (a **random playout**; see the Random Playout (Rollout) entry above), all the way to a finished game or a fixed cutoff.
+4. **Backpropagation** — using the outcome from simulation, walk back up the tree from the new node to the root, updating each visited node's running average value and its visit count.
+
+Because the value of every node is an average of samples, the Law of Large Numbers entry above guarantees these estimates become more reliable the more times a node is visited, and because the tree policy favors promising branches, computation is spent disproportionately where it is most useful, rather than spread evenly across a tree that may be far too large to explore in full.
+
+**Example.** Suppose only two selection-expansion-simulation-backpropagation cycles have run so far, starting from a single root node $S$ with two possible actions, $a_1$ and $a_2$, neither yet tried:
+
+| Cycle | Selection | Expansion | Simulation | Backpropagation |
+|---|---|---|---|---|
+| 1 | Root $S$ has untried actions, so it counts as a leaf of the current (empty) tree | Add a new child node for action $a_1$ | Play a random game forward from this child to a finished game, ending in a win, utility $+1$ | Set this child's estimate to $Q(S,a_1)=+1$ (1 sample so far); increment the visit counts of the child and of $S$ |
+| 2 | From $S$, action $a_2$ is still untried, so $S$ again counts as a leaf | Add a new child node for action $a_2$ | Play a random game forward from this child, ending in a loss, utility $-1$ | Set this child's estimate to $Q(S,a_2)=-1$ (1 sample so far); increment the visit counts of the child and of $S$ |
+
+After only these two cycles, the running estimates already distinguish $a_1$ ($Q=+1$) from $a_2$ ($Q=-1$), even though neither estimate is based on more than a single random playout — further cycles would revisit both children more often (guided by the tree policy) and average in more samples, sharpening both estimates exactly as the Law of Large Numbers entry describes.
+
+**AI/ML Usage**: MCTS is the algorithm family behind DeepMind's AlphaGo and AlphaZero (see the AlphaGo entry above), which combine the plain sampling-and-averaging approach described here with neural networks that supply a fast prior estimate of both leaf values and promising actions, sharply reducing how many random playouts are needed before the tree's estimates become useful. Outside of games, the same core idea — grow a search tree unevenly, spending computation where sampled estimates suggest it is most valuable — underlies planning algorithms used in robotics and general sequential decision-making under uncertainty.
+
+---
+
+<a id="most-frequent-tag-baseline"></a>
+### Most-Frequent-Tag Baseline
+
+**The Big Idea**: A baseline is the simplest reasonable answer, the one a more sophisticated method must beat. It is like guessing the most common option on a multiple-choice test every time: no cleverness, just a tally and a lookup, using only counting and the idea of a "most common value" (the mode) from Algebra 2 data work.
+
+**General Usage**: For part-of-speech tagging, count in the training data how often each word appears with each tag. At test time, assign every word the tag it appeared with most often, ignoring the surrounding words entirely. A word never seen in training has no counts, so this method has nothing to say about it.
+
+**Example.** If in the training data the word "the" is always tagged as a determiner, then every "the" in the test data is tagged determiner and is right every time. A word that is tagged as a noun more often than as a verb in training is always labeled a noun, even in a sentence where it is clearly acting as a verb, which is where this method makes its mistakes.
+
+**AI/ML Usage**: On the standard English Penn Treebank tagging benchmark this baseline already reaches about 90% accuracy, because many words (punctuation, "the", "a") have only one possible tag. This sets the bar for hidden Markov model taggers (about 95%) and neural taggers (about 97.5%), whose improvement is measured against it (see the Accuracy (Classification) entry).
+
+---
+
 <a id="moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt"></a>
 ### Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)
 
@@ -2476,6 +3177,26 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Check.** The new vertex should sit exactly one step-length from the vertex it grew from, since the steering function always moves a fixed distance of $1$: $\sqrt{(-0.894)^2+(0.447)^2} = \sqrt{0.799+0.200} \approx \sqrt{0.999} \approx 1$ ✓.
 
 **AI/ML Usage**: RRTs, and their many variants, are among the most widely used motion-planning algorithms in real robotics systems — for robot arms, mobile robots, and self-driving cars operating in continuous, often high-dimensional configuration spaces where an explicit grid or lattice (see the Lattice-Based Planning entry) would be impractical. Because each steering step already only needs to respect a system's actual kinematic constraints (see the Kinematic Constraints and Control Parameters entry), an RRT naturally grows a tree whose paths are directly drivable or executable by the real system, not merely geometrically short.
+
+---
+
+<a id="multi-armed-bandit-problem"></a>
+### Multi-Armed Bandit Problem
+
+**The Big Idea**: Picture several slot machines ("one-armed bandits") side by side, each with an unknown, possibly different average payout. This is a decision problem that can be reasoned about with nothing more than averages and counting — how many times has each machine been tried, and what has it paid out on average — but it captures, in the simplest possible setting, a genuine trade-off that goes beyond ordinary Algebra 2: whether to keep playing the machine that has paid out best so far (exploitation) or to try a machine that is known less well, on the chance it is actually better (exploration).
+
+**General Usage**: In the multi-armed bandit problem, there are $n$ options ("arms"), each with its own fixed but unknown average payout. At each step, a decision-maker chooses one arm to pull, observes a random payout drawn from that arm's own distribution, and the goal is to choose arms over time so that the total payout collected is as large as possible. Equivalently, the goal is to minimize **regret** — the cumulative gap between the payouts actually received and the payouts that would have been received by knowing the single best arm in advance and always pulling it. Because each arm's true average is unknown, only estimated from the samples drawn so far, an estimate based on few samples carries a wide confidence bound (a range the true average is likely to fall within — see the Upper Confidence Bound (UCB1 / UCT) entry in the math_symbols file), while an estimate based on many samples carries a narrow one; a good strategy must account for both an arm's estimated average and how wide its confidence bound still is, not simply chase whichever arm currently looks best.
+
+**Example.** Suppose two arms have each been pulled several times, with the following recorded payouts:
+
+| Arm | Payouts observed | Average $Q$ | Number of pulls $N$ |
+|---|---|---|---|
+| A | $+1, -1, +1$ | $\dfrac{1-1+1}{3} = 0.33$ | $3$ |
+| B | $+1$ | $\dfrac{1}{1} = 1.00$ | $1$ |
+
+Arm B has the higher average so far, but that average is based on a single pull, so it carries far less certainty than Arm A's average of three pulls — a sound strategy does not simply commit to Arm B forever on this evidence alone; it continues pulling both arms, weighted so that Arm B (having a wide confidence bound) is still worth trying again, until enough samples accumulate to be confident which arm is genuinely better. This is exactly the calculation the Upper Confidence Bound (UCB1 / UCT) formula automates, by combining the estimated average with a shrinking bonus for how few times an arm has been tried.
+
+**AI/ML Usage**: The multi-armed bandit problem is the mathematical model underlying the tree policy step of Monte Carlo Tree Search (see that entry above): each action available at a given node in the search tree is treated as one arm of a bandit problem, and the algorithm decides which action to explore next from that node using exactly the same exploration-versus-exploitation reasoning. Beyond game search, multi-armed bandit algorithms are used directly in real-world systems such as online advertising and recommendation, where each "arm" is a different ad, headline, or recommended item, and the system must balance showing options already known to perform well against still gathering enough data on newer options to know whether they might perform even better.
 
 ---
 
@@ -2796,7 +3517,7 @@ Beam search's objective is exactly this running product (see Beam Search above),
 3. Walk down the sorted list, adding up probabilities as you go, until the running total first reaches the threshold $p$. This smallest high-probability prefix is called the **nucleus**.
 4. Discard every token that did not make it into the nucleus, renormalize the remaining probabilities so they sum back to $1$ (divide each one by the nucleus's total probability), and sample the next token from this renormalized, truncated distribution (see Sampling Notation in `math_symbols.md`).
 
-Because the cutoff is based on a percentage of probability *mass* rather than a fixed *count* of tokens, the nucleus automatically grows when the model is uncertain (probability spread thinly over many plausible next tokens) and shrinks when the model is confident (probability concentrated on just one or two tokens) — the truncation point adapts to the shape of the distribution at each individual step, rather than always keeping the same fixed number of tokens.
+Because the cutoff is based on a percentage of probability *mass* rather than a fixed *count* of tokens, the nucleus automatically grows when the model is uncertain (probability spread thinly over many plausible next tokens) and shrinks when the model is confident (probability concentrated on just one or two tokens) — the truncation point adapts to the shape of the distribution at each individual step, rather than always keeping the same fixed number of tokens. In the extreme case where a single token's probability alone already meets or exceeds $p$, the nucleus contains only that one token, and the "sample" step has nothing else to draw — the outcome is deterministic for that step, just as it would be under greedy decoding. So nucleus sampling can introduce randomness at a given step, but — unlike a description that claims it *always* does — whether it actually does depends on how concentrated the distribution is at that step.
 
 **Example.** Suppose a language model's distribution over what comes next in "they live in a remote desert uninterrupted by ___" assigns probability $0.01$ to "roads," $0.01$ to "towns," $0.01$ to "people," and $0.005$ to "civilization" — together with many further, unlisted words filling out a combined "good options" group that makes up roughly $90\%$ of the total probability mass — while a long tail of much rarer words, including "town" at just $0.0005$, makes up the remaining $10\%$. With the threshold $p$ set to include the "good options" group and exclude the long tail, nucleus sampling draws the next word only from the "good options" group; "town," despite being a grammatically plausible word in that sentence, can never be selected at this step, no matter how many times sampling is repeated, because it falls below the cutoff.
 
@@ -2854,6 +3575,37 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 
 ---
 
+<a id="open-class-and-closed-class-words"></a>
+### Open Class and Closed Class Words
+
+**The Big Idea**: Algebra 2 has the idea of a set that can or cannot grow: the integers keep going, while the set $\{1, 2, 3\}$ is fixed. Word categories split the same way. Some categories keep growing as people invent new things (an open set), and some are essentially fixed (a closed set).
+
+**General Usage**: An *open class* of words is a grammatical category that new words regularly join: nouns, verbs, adjectives, and adverbs. A *closed class* is a category that rarely or never gains new members: determiners (*the*, *some*), conjunctions (*and*, *or*), pronouns, auxiliaries (a verb such as *had* that adds tense to another verb), modals (verbs like *could* that express ability or possibility), prepositions (*up*, *in*, *to*), and particles (a word like *up* that combines with a verb to form its meaning). Closed-class words are called *function words* because they organize a sentence more than they carry meaning of their own.
+
+**Example.** Test whether a category is open by asking whether a new member could appear:
+
+1. Computers did not exist, then they did, so a new common noun (*computer*) joined the nouns. Nouns are open.
+2. Companies are created all the time, so new proper nouns such as *IBM* keep arriving. Open.
+3. *tweet* is a verb that entered the language recently. Verbs are open.
+4. Nobody regularly invents a new word with the job of *the* or *and*, or a new way to express modality like *could*. Determiners, conjunctions, and modals are closed.
+
+**AI/ML Usage**: A part-of-speech tagger (see the Part-of-Speech Tagging entry) faces very different problems in the two classes. Closed-class words are few and extremely frequent, so a model can learn them well from labeled data. Open-class words include many that never appeared in the training data, so the tagger has to guess from context or from the word's spelling, such as its endings.
+
+---
+
+<a id="oracle-derivation"></a>
+### Oracle Derivation
+
+**The Big Idea**: Given a finished answer, you can often work out the steps that produce it, the way a teacher with the answer key can write out a correct solution path for any problem. An oracle does this for a parser: given the known correct tree, it writes out the correct sequence of operations. It needs only the Arc-Standard Transition System entry in this file.
+
+**General Usage**: An oracle is a procedure that takes a gold (known-correct) tree and returns the sequence of transition operations (the derivation) that builds that tree from the start state. It is the inverse of the transition system, which maps operation sequences to trees. Because several operation sequences can produce the same tree, an oracle uses fixed conventions to pick one; a common convention in the arc-standard system is to apply every left-arc as soon as it is possible, and to delay right-arcs until the head has received all its other children, and never to attach anything to $\text{ROOT}$ until the end. Each (state, correct operation) pair along the derivation becomes one training example.
+
+**Example.** For the gold tree of "I ate some spaghetti bolognese" (arcs ROOT $\to$ ate, ate $\to$ I, ate $\to$ spaghetti, spaghetti $\to$ some, spaghetti $\to$ bolognese), the oracle's sequence is: Shift, Shift, Left-Arc (ate $\to$ I), Shift, Shift, Left-Arc (spaghetti $\to$ some), Shift, Right-Arc (spaghetti $\to$ bolognese), Right-Arc (ate $\to$ spaghetti), Right-Arc (ROOT $\to$ ate). Counting: 10 operations for 5 words, so $2n = 10$ training examples. The first Left-Arc is applied as early as possible, as soon as "I" and "ate" are the top two stack items, even though the arc could technically be postponed.
+
+**AI/ML Usage**: Oracles convert a treebank (a collection of sentences with gold trees) into supervised training data for the classifier that drives a transition-based parser (see the Transition-Based Dependency Parsing entry). The word "oracle" is used in the same sense elsewhere in machine learning for any procedure that always knows the correct answer for a training example.
+
+---
+
 <a id="orthogonal-matrix"></a>
 ### Orthogonal Matrix
 
@@ -2906,6 +3658,24 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 
 ---
 
+<a id="part-of-speech-tagging"></a>
+### Part-of-Speech Tagging
+
+**The Big Idea**: In Algebra 2, the same symbol can play different roles depending on where it sits: in $x^2 + x$, the first $x$ is being squared and the second is added. Reading a symbol correctly means reading it in context. Part-of-speech tagging does the same for words: it labels each word in a sentence with its grammatical role, which depends on the surrounding words, not on the spelling alone.
+
+**General Usage**: *Part-of-speech (POS) tagging* is the task of assigning to every word of a sentence one label from a fixed list (the *tagset*), such as noun, verb, or determiner. A word is *ambiguous* when more than one label is possible for it in isolation (*record* can be a noun or a verb), and the tagger must use the whole sentence to choose. It is used as a first step before deeper analysis: choosing how to pronounce a word in speech synthesis, interpreting a word in information extraction (pulling structured facts out of text), and as a building block for syntactic parsing (see the Syntactic Parsing entry). The tags used in the English Penn Treebank data are described in the Penn Treebank Part-of-Speech Tags entry in the math_symbols file.
+
+**Example.** Using the word *record*:
+
+1. The text-to-speech system receives the spelling r-e-c-o-r-d.
+2. Two pronunciations exist, one for the noun (a *record* you listen to) and one for the verb (to *record* something).
+3. The spelling does not decide between them, so the system needs the tag, noun or verb, from the surrounding sentence.
+4. With the tag in hand, the system selects the matching pronunciation.
+
+**AI/ML Usage**: A POS tagger is a sequence-labeling model: it reads a sequence of words and outputs a sequence of tags of the same length. Early NLP work for English was done on Wall Street Journal text from the Penn Treebank. The tags then serve as input features for parsers and extractors. A tagger must rank very many candidate tag sequences (see the Tag Lattice entry).
+
+---
+
 <a id="pddl"></a>
 ### PDDL
 
@@ -2916,6 +3686,23 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 **Example.** A PDDL file typically has two separate parts: a "domain" file defining the general predicates and action schemas available (like $\text{On}$, $\text{Clear}$, and a general $\text{Move}$ action schema), and a separate "problem" file defining one specific instance's initial state and goal (like the actual, specific starting arrangement of blocks and the specific desired final arrangement).
 
 **AI/ML Usage**: PDDL has been the standard, dominant language for formally specifying AI planning problems since the mid-1990s, and it's used as the common, universal input format for essentially every major research planning system, allowing researchers to fairly compare different planning algorithms against each other on exactly the same, shared, standardized benchmark problems.
+
+---
+
+<a id="penn-treebank"></a>
+### Penn Treebank
+
+**The Big Idea**: Algebra 2 problems come with an answer key you can check against. A machine learning model needs the same: examples whose correct answers have been written down by people. The Penn Treebank is a famous answer key for English grammar.
+
+**General Usage**: The *Penn Treebank* is a corpus (a large collection of text) taken from the *Wall Street Journal*, in which each sentence has been annotated by people with its part-of-speech tags and its syntactic structure. Because the source is a financial newspaper, much of the text is about business and money. It defines the standard English tagset of 45 tags.
+
+**Example.** One sentence in this style is *Fed raises interest rates 0.5 percent*:
+
+1. Each word is written down together with the tag a human annotator judged correct.
+2. The intended answer is NNP, VBZ, NN, NNS, CD, NN.
+3. A model's predicted tags can then be compared word by word against these answers to count how many it got right.
+
+**AI/ML Usage**: Researchers train taggers and parsers on the Penn Treebank and report their accuracy on a held-out part of it, so results from different methods can be compared fairly. It is the standard benchmark data for English part-of-speech tagging and parsing (see the Part-of-Speech Tagging entry).
 
 ---
 
@@ -3013,19 +3800,6 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 
 ---
 
-<a id="positional-encoding"></a>
-### Positional Encoding
-
-**The Big Idea**: This builds directly on Self-Attention above and the Positional Embedding entry in `math_symbols.md` — self-attention treats every position symmetrically (see Section 3 of the Self-Attention notes), so from its perspective, the word "visited" in position 2 of a sentence looks exactly the same as the word "ate" in position 2 of a *different* sentence, with no notion of position built in at all. Positional encoding is any scheme for fixing this by injecting position information into the model.
-
-**General Usage**: Positional encoding refers to a family of techniques for telling a Transformer where each token sits in a sequence, since self-attention itself has no inherent sense of order. The simplest scheme, **absolute positional encoding**, encodes each sequence position ($1, 2, 3, \dots$) as its own learned embedding vector — drawn from a second embedding table, entirely separate from the word-embedding table, associating "position 1" with one vector, "position 2" with another, and so on — and simply **adds** that position vector directly to the corresponding word's embedding before the rest of the model ever sees it. An alternative, presented in Vaswani et al. (2017), uses **fixed** (non-learned) sinusoidal positional encodings instead of learned ones: $$PE_{(pos,\,2i)} = \sin\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right), \qquad PE_{(pos,\,2i+1)} = \cos\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$ where $pos$ is the token's position in the sequence and $i$ indexes which pair of embedding dimensions is being computed, so different dimensions of the encoding oscillate through sine and cosine at different frequencies.
-
-**Example.** Under the sinusoidal scheme, positions $1$ and $2$ produce nearly identical encoding vectors — only their highest-frequency dimensions (the ones with the smallest denominator, changing fastest as $pos$ increases) differ noticeably between adjacent positions. Positions $1$ and $20$, however, produce visibly different vectors, since many more of the sine/cosine dimensions have had time to complete a meaningful fraction of their cycle over that larger gap. Because dot products between similar vectors are larger than dot products between dissimilar ones (see Dot Product / Inner Product in `math_symbols.md`), this means nearby positions automatically get higher dot products (and so, all else equal, more attention) than distant ones — a useful default bias built directly into the representation, before any training has even happened.
-
-**AI/ML Usage**: Absolute positional encoding using a learned table (the simpler, first-described scheme above) is what is actually used by models like GPT-3, despite being a departure from the sinusoidal scheme originally proposed in Vaswani et al. (2017). More recent variants exist as well: **relative positional encoding** (used in T5) drops absolute position entirely and instead injects, directly into the query-times-key computation, only the *distance* between two tokens; **ALiBi** (Attention with Linear Biases; Press et al., 2022) similarly uses relative distance, adding a penalty term $m\cdot[-(i-1),\dots,-2,-1,0]$ directly onto the attention scores before the softmax, where $m$ is a different constant slope for each attention head, so that different heads can learn to prefer nearby tokens versus a more uniform spread over the whole sequence, using far fewer additional parameters than a learned table would require. Surprisingly, Kazemnejad et al. (2023) found that a **causal** Transformer (one whose self-attention is restricted to only look into the past, rather than in both directions) can learn to determine each token's position organically, without any explicit positional encoding at all (**NoPE**) — because a model restricted to looking only backward can, in effect, learn to count how many tokens have come before it, a trick unavailable to a model that can also look forward. Despite this result, using an explicit positional encoding scheme remains standard practice in most models trained today.
-
----
-
 <a id="position-wise-feed-forward-network"></a>
 ### Position-wise Feed-Forward Network
 
@@ -3036,6 +3810,19 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 **Example.** Suppose a Transformer block receives 3 word vectors as input: self-attention first lets all 3 vectors look at each other and produce 3 new, context-aware output vectors. The position-wise feed-forward network then takes over: it runs vector 1 through $\text{FFN}(\cdot)$ by itself, then vector 2 through the exact same $\text{FFN}(\cdot)$ by itself, then vector 3 through the exact same $\text{FFN}(\cdot)$ by itself, producing 3 new output vectors — one per input vector, entirely independently, with no interaction between them at this step. Only the self-attention step, before this one, was responsible for letting information flow between the 3 positions.
 
 **AI/ML Usage**: In the original Transformer (Vaswani et al., 2017), $d_{\text{model}}=512$ while the feed-forward inner dimension is $d_{ff}=2048$ — four times larger — and this pattern of a much wider inner layer continues in later, larger models. Because $W_1$ and $W_2$ together contain roughly $2\times d_{\text{model}}\times d_{ff}$ parameters per layer, and this dwarfs the parameter count of the attention projections, the position-wise feed-forward layers hold the large majority of a Transformer's total parameters and, in large models, the large majority of its computation (floating-point operations) as well — one commonly offered explanation for why large language models can memorize and recall so many facts is that these wide feed-forward layers function as a kind of large associative memory.
+
+---
+
+<a id="positional-encoding"></a>
+### Positional Encoding
+
+**The Big Idea**: This builds directly on Self-Attention above and the Positional Embedding entry in `math_symbols.md` — self-attention treats every position symmetrically (see Section 3 of the Self-Attention notes), so from its perspective, the word "visited" in position 2 of a sentence looks exactly the same as the word "ate" in position 2 of a *different* sentence, with no notion of position built in at all. Positional encoding is any scheme for fixing this by injecting position information into the model.
+
+**General Usage**: Positional encoding refers to a family of techniques for telling a Transformer where each token sits in a sequence, since self-attention itself has no inherent sense of order. The simplest scheme, **absolute positional encoding**, encodes each sequence position ($1, 2, 3, \dots$) as its own learned embedding vector — drawn from a second embedding table, entirely separate from the word-embedding table, associating "position 1" with one vector, "position 2" with another, and so on — and simply **adds** that position vector directly to the corresponding word's embedding before the rest of the model ever sees it. An alternative, presented in Vaswani et al. (2017), uses **fixed** (non-learned) sinusoidal positional encodings instead of learned ones: $$PE_{(pos,\,2i)} = \sin\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right), \qquad PE_{(pos,\,2i+1)} = \cos\!\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right)$$ where $pos$ is the token's position in the sequence and $i$ indexes which pair of embedding dimensions is being computed, so different dimensions of the encoding oscillate through sine and cosine at different frequencies.
+
+**Example.** Under the sinusoidal scheme, positions $1$ and $2$ produce nearly identical encoding vectors — only their highest-frequency dimensions (the ones with the smallest denominator, changing fastest as $pos$ increases) differ noticeably between adjacent positions. Positions $1$ and $20$, however, produce visibly different vectors, since many more of the sine/cosine dimensions have had time to complete a meaningful fraction of their cycle over that larger gap. Because dot products between similar vectors are larger than dot products between dissimilar ones (see Dot Product / Inner Product in `math_symbols.md`), this means nearby positions automatically get higher dot products (and so, all else equal, more attention) than distant ones — a useful default bias built directly into the representation, before any training has even happened.
+
+**AI/ML Usage**: Absolute positional encoding using a learned table (the simpler, first-described scheme above) is what is actually used by models like GPT-3, despite being a departure from the sinusoidal scheme originally proposed in Vaswani et al. (2017). More recent variants exist as well: **relative positional encoding** (used in T5) drops absolute position entirely and instead injects, directly into the query-times-key computation, only the *distance* between two tokens; **ALiBi** (Attention with Linear Biases; Press et al., 2022) similarly uses relative distance, adding a penalty term $m\cdot[-(i-1),\dots,-2,-1,0]$ directly onto the attention scores before the softmax, where $m$ is a different constant slope for each attention head, so that different heads can learn to prefer nearby tokens versus a more uniform spread over the whole sequence, using far fewer additional parameters than a learned table would require. Surprisingly, Kazemnejad et al. (2023) found that a **causal** Transformer (one whose self-attention is restricted to only look into the past, rather than in both directions) can learn to determine each token's position organically, without any explicit positional encoding at all (**NoPE**) — because a model restricted to looking only backward can, in effect, learn to count how many tokens have come before it, a trick unavailable to a model that can also look forward. Despite this result, using an explicit positional encoding scheme remains standard practice in most models trained today.
 
 ---
 
@@ -3075,6 +3862,24 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 **Example.** Two variables might show a fairly strong, non-zero raw covariance with each other, purely because they're both separately influenced by some third, common factor — yet their corresponding entry in the precision matrix could still be exactly zero, correctly, precisely revealing that they don't actually directly influence each other at all, once that shared third factor is properly, explicitly accounted for.
 
 **AI/ML Usage**: The precision matrix is exactly what Gaussian Graphical Models (see that entry) and Graphical Lasso (see that entry) are built directly around — since its exact pattern of zero and non-zero entries directly maps onto which variables are genuinely, directly connected to each other in the underlying graph, and which ones are only indirectly, coincidentally related through other variables.
+
+---
+
+<a id="prepositional-phrase-attachment-ambiguity"></a>
+### Prepositional Phrase Attachment Ambiguity
+
+**The Big Idea**: This is the grammar version of ambiguous order of operations: the same symbols, grouped two ways, give two different results. Writing $2 + 3 \times 4$ is unclear until you decide which operation groups first; likewise a phrase beginning with a preposition ("with a spoon") can be grouped with the verb or with a noun, and the meaning changes. See the Constituent entry for what grouping means in a sentence.
+
+**General Usage**: A prepositional phrase (PP) is a preposition plus its noun phrase, such as "with a spoon". PP attachment ambiguity is the situation where one PP could attach to more than one place in the sentence's tree, most often to the verb phrase (describing how the action happens) or to the preceding noun phrase (describing that noun). Each attachment is a different tree and a different meaning, and both are grammatically valid, so choosing between them needs knowledge about the world, not just about grammar.
+
+**Example.** "The children ate the cake with a spoon."
+
+1. Attach "with a spoon" to the verb phrase "ate the cake": the spoon is the instrument of eating.
+2. Attach "with a spoon" to the noun phrase "the cake": the cake itself has a spoon on or in it, the same structure as "the cake with some icing".
+3. Both trees use exactly the same words and the same part-of-speech tags; only the grouping differs.
+4. People pick reading 1 because they know how cakes and spoons are used; an automatic system has no such built-in knowledge, which is why this ambiguity is hard.
+
+**AI/ML Usage**: PP attachment is a classic hard case for syntactic parsers (programs that output a sentence's grammatical tree) and a standard test of whether a parser can use word-pair statistics, for example the likelihood of a preposition appearing next to a particular verb versus next to a particular noun.
 
 ---
 
@@ -3165,6 +3970,22 @@ The probability climbs toward $1$ but never reaches it at any finite $n$, which 
 
 ---
 
+<a id="probabilistic-context-free-grammar"></a>
+### Probabilistic Context-Free Grammar
+
+**The Big Idea**: This is a Context-Free Grammar in which every substitution rule is chosen at random with a stated chance, exactly like a spinner or a weighted die from Algebra 2 probability. It goes beyond Algebra 2 only in what is being chosen: grammar rules rather than numbers.
+
+**General Usage**: A probabilistic context-free grammar (PCFG) is a context-free grammar in which every rule has a probability, written $P(\text{rule}\mid\text{parent}(\text{rule}))$ (read "the chance of the rule given its parent symbol"; see the Conditional Bar entry in the math_symbols file). The one constraint is that for each parent symbol the probabilities of all the rules rewriting it sum to $1$, so each parent defines a proper probability distribution over its rewrites. The probability of a tree is the product of the probabilities of the rules it uses (see the Tree Probability under a PCFG entry in the math_symbols file). The rule probabilities are typically estimated from a treebank (a collection of sentences each labeled with its grammar tree) by counting how often each rule is used and dividing by the total count for its parent, which is maximum likelihood estimation (see that entry).
+
+**Example.** A noun phrase NP has two rules with probabilities $\tfrac12$ each, and a verb phrase VP has rules with probabilities $\tfrac14$ and $\tfrac34$.
+1. NP: $\tfrac12+\tfrac12=1$, so the constraint holds.
+2. VP: $\tfrac14+\tfrac34=1$, so the constraint holds.
+3. Counting check: if one NP rule is seen $3$ times and the other $4$ times in a treebank, the estimates are $\tfrac37$ and $\tfrac47$, and $\tfrac37+\tfrac47=1$.
+
+**AI/ML Usage**: PCFGs are the classic probabilistic model for constituency parsing in natural language processing: given a sentence $\bar{x}$, the parser returns the tree $\arg\max_T P(T\mid\bar{x})$ (see the Arg Min / Arg Max entry), computed with a dynamic-programming algorithm. They are the tree-structured counterpart of hidden Markov models, which are probabilistic models for sequences of tags.
+
+---
+
 <a id="probabilistic-roadmap-prm"></a>
 ### Probabilistic Roadmap (PRM)
 
@@ -3186,6 +4007,19 @@ The probability climbs toward $1$ but never reaches it at any finite $n$, which 
 Step 3–4 is the detail easiest to miss: **both endpoints being individually valid samples is not enough** — the entire straight segment between them has to be checked too, since a straight line between two obstacle-free points can still pass directly through an obstacle sitting between them.
 
 **AI/ML Usage**: Probabilistic roadmaps are a standard motion-planning technique for robots operating in continuous, high-dimensional configuration spaces — a robot arm with several joints, for instance — where laying out an explicit grid or lattice (see the Lattice-Based Planning entry) becomes impractical as the number of dimensions grows. Because the expensive roadmap-building step only has to be done once for a given static environment, and can then be reused for any number of different start/goal queries afterward, PRM is especially well suited to environments where many different motion-planning queries will be asked of the same fixed space.
+
+---
+
+<a id="projective-tree"></a>
+### Projective Tree
+
+**The Big Idea**: Write the words of a sentence in a row on a line and draw each arrow as an arch above the line. If you can do so without any two arches crossing, the tree is projective. This is a geometric property of a drawing, like asking whether a graph can be drawn without edges crossing; no formal math beyond Algebra 2 is required.
+
+**General Usage**: A dependency tree is **projective** if every subtree (a word together with all the words below it) covers a contiguous, unbroken span of the sentence, with no gap filled by a word that belongs elsewhere. This is equivalent to saying that the arcs, drawn above the sentence in its original word order, never cross. A tree with at least one crossing pair of arcs is **non-projective**. Non-projectivity arises when part of a phrase is moved away from its head (in English, "extraposition") and is common in languages with freer word order. Algorithms that only produce projective trees are simpler and faster, but cannot output a non-projective tree even when it is correct.
+
+**Example.** In "A hearing is scheduled on the issue today," the phrase "on the issue" modifies "hearing", but "is scheduled" sits between them. The arc from "hearing" to "on" therefore passes over "is" and "scheduled" and crosses other arcs (for instance the arc from "scheduled" to "today"), so the tree is non-projective. Steps: (1) place the words in order on a line; (2) draw the arc from "hearing" to "on"; (3) draw the arc from "scheduled" to "today"; (4) the first arc starts left of "scheduled" and ends right of it, while the second starts at "scheduled" and ends beyond "on", so they cross. Moving the phrase next to its head ("A hearing on the issue is scheduled today") removes the crossing.
+
+**AI/ML Usage**: Dependency parsing algorithms are classified by whether they can output non-projective trees. About 23% of the Czech sentences in one treebank (a corpus of hand-annotated parses) are non-projective (55,872 of 72,703 sentences are projective), so a parser restricted to projective trees cannot represent them. Many standard parsers assume projectivity for speed, and a parser for a free-word-order language must be able to handle the non-projective case.
 
 ---
 
@@ -3219,6 +4053,19 @@ Step 3–4 is the detail easiest to miss: **both endpoints being individually va
 **Example.** For $A=\begin{pmatrix}2&0\\0&3\end{pmatrix}$ and $\mathbf{v}=(x,y)$, the quadratic form $\mathbf{v}^\top A\mathbf{v}$ works out to $2x^2+3y^2$ — a direct, natural generalization of a plain single-variable quadratic term, now with one separate coefficient for each of the two dimensions involved.
 
 **AI/ML Usage**: Quadratic forms appear throughout machine learning, particularly in optimization: the loss surface (see that entry above) near a minimum can typically be closely approximated by a quadratic form built from the Hessian matrix, and whether that particular quadratic form is convex or not directly determines whether the nearby point genuinely is a true minimum at all.
+
+---
+
+<a id="quiescence-search"></a>
+### Quiescence Search
+
+**The Big Idea**: Builds on the Depth-Limited Search entry above: rather than stopping at exactly the same fixed depth everywhere, quiescence search recognizes that some points in the search are still mid-swing, and specifically keeps going a little further right there, while stopping everywhere else at the usual depth — the same instinct as pausing a video during a calm scene but letting a fast-action scene keep playing a few extra seconds until it settles down.
+
+**General Usage**: "Quiescent" means calm, still, or settled — the same root as the everyday word "quiet." Quiescence search extends Depth-Limited Search (see that entry above) by not always stopping at a single, fixed depth limit: at any node where the position is still changing rapidly — where one more step (one more ply) would still significantly change the score given by the Heuristic Evaluation Function (see that entry above) — the search keeps expanding further, in the same depth-first manner as ordinary minimax, until it reaches a "quiet" position where further expansion no longer changes the evaluation by very much. Only then does the search actually stop and apply the heuristic evaluation function, instead of applying it at an arbitrary, still-volatile position.
+
+**Example.** Consider a depth-limited search that is cut off at a fixed depth, and suppose the position at that cutoff happens to be in the middle of an exchange, where one player's piece is currently under direct attack and can be captured on the very next move. Evaluating the heuristic function at that exact instant — before the capture actually happens — would count that piece as "still on the board" for a player who is about to lose it, badly overstating that player's material score. Quiescence search instead recognizes this position as unsettled and keeps expanding a few plies further, through the capture (and any recapture that follows it), until the exchange is finished and the position is quiet again — only then applying the heuristic evaluation, so that it reflects the actual, settled outcome of the exchange rather than a misleading snapshot taken mid-exchange.
+
+**AI/ML Usage**: Quiescence search is a standard refinement used in essentially every serious chess-playing program, where it specifically extends the search through sequences of captures (and, in some implementations, checks) rather than cutting them off mid-sequence; the underlying problem it solves — a depth-limited search producing a misleadingly good or bad evaluation because it stopped right before something important happened — is commonly called the horizon effect (Russell and Norvig, *Artificial Intelligence: A Modern Approach*). More generally, the same principle — spend extra computation selectively, where it changes the answer the most, rather than uniformly everywhere — reappears throughout AI under different names, including in adaptive-resolution planning and in attention mechanisms (see the Self-Attention entry above) that let a model focus more computation on the parts of its input that matter most.
 
 ---
 
@@ -3287,6 +4134,23 @@ A single decision stump (the simplest possible one-question tree) trained on all
 Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resample, which tips its own individual majority the other way — trained alone, Tree B would confidently, but wrongly, predict "No rain" on a cloudy day. This is exactly the individual noise the forest is designed to cancel out: for a brand-new cloudy day, the three trees vote **Yes, No, Yes** — two votes to one — so the Random Forest's combined prediction is **Yes**, correctly matching the true majority pattern in the original, full dataset, even though one of its three trees individually got it wrong.
 
 **AI/ML Usage**: Random Forests are one of the most popular, reliable, and widely used machine learning algorithms for structured, tabular data (like spreadsheets of customer or financial data) — they're valued specifically for being accurate, robust against overfitting, and comparatively easy to use well, requiring relatively little careful hyperparameter tuning compared to many other, more finicky algorithms. This resample-many-trees-and-vote strategy is called "bagging" (bootstrap **agg**regat**ing**), and it's a direct, practical application of the Bias-Variance Trade-off (see that entry): a single decision tree tends to have low bias but high variance (it can fit its own particular training data very closely, including its noise, exactly like Tree B above), while averaging many such trees together, each trained on a different resample, keeps that same low bias but substantially reduces the variance — producing a combined model that's typically both more accurate and more stable than any one of its individual trees.
+
+---
+
+<a id="random-playout-rollout"></a>
+### Random Playout (Rollout)
+
+**The Big Idea**: This builds on the Sampling Notation entry in the math_symbols file and the Monte Carlo Estimation entry above — rather than reasoning about every possible way a game could unfold from some state, a random playout just actually "plays out" one specific, randomly chosen sequence of moves all the way to a finished game, the same way flipping a coin ten times in a row and writing down exactly what happened is a single random trial of that experiment.
+
+**General Usage**: A random playout (also called a rollout) is a single simulated trajectory from a given non-terminal state $s'$ forward to a terminal (leaf) state $\bar s$, produced by repeatedly choosing an action at each state along the way — either uniformly at random, or biased by a policy (a rule for choosing actions, possibly only partially accurate) that favors actions more likely to be taken by a real player — until the game ends. The terminal utility $u(\bar s)$ at wherever the trajectory happens to end (see the Minimax Algorithm entry for Utility) is then read off as one sample. Random playouts are the concrete mechanism used to draw the samples that a Monte Carlo Estimation (see that entry above) computation averages together to estimate a Q-Function (Action-Value Function) (see that entry in the math_symbols file).
+
+**Example.** Suppose six independent random playouts are run from the same mid-game state $s'$, ending in terminal utilities (win $=+1$, loss $=-1$; see the Minimax Algorithm entry) of $+1, -1, +1, +1, -1, +1$. Averaging these six samples gives an estimate of the expected value of being at $s'$:
+$$
+\hat Q(s') \approx \frac{1}{6}\big[(+1) + (-1) + (+1) + (+1) + (-1) + (+1)\big] = \frac{2}{6} \approx 0.33.
+$$
+Running more playouts from $s'$ and folding each new outcome into the running average — exactly as the Law of Large Numbers entry describes — produces a steadily more reliable estimate.
+
+**AI/ML Usage**: Random playouts are the core sampling mechanism in Monte Carlo Tree Search, the algorithm behind DeepMind's AlphaGo and its successors: each simulated playout contributes one sample toward a running estimate of how good a candidate move is. In practice, playouts are rarely left purely random for long — later playouts get biased using previously learned information (a trained policy or value network) rather than staying uniformly random, directly reflecting the "partially informed policy" idea described here.
 
 ---
 
@@ -3365,23 +4229,16 @@ Tree B happened to draw day 3 (a cloudy day it did NOT rain) twice in its resamp
 
 ---
 
-<a id="residual-connection-skip-connection"></a>
-### Residual Connection (Skip Connection)
+<a id="relative-frequency-estimation"></a>
+### Relative Frequency Estimation
 
-**The Big Idea**: Picture a highway running alongside a series of exits: a driver can choose to take an exit (drive through a layer's computation) or simply stay on the highway and skip it entirely. A residual connection gives a neural network exactly that option, layer by layer, by adding a layer's own input back onto its output, so that "do nothing" (pass the input straight through, unchanged) is always available as a fallback if a particular layer is not helpful for a given input.
+**The Big Idea**: This builds on Maximum Likelihood Estimation. For many models, "find the parameters that maximize the likelihood" has a closed-form answer that needs only counting and fractions, the same fractions as "3 out of 4 is $\tfrac34$."
 
-**General Usage**: For a layer (or sublayer) that computes some function $F(x)$ from an input $x$, a residual connection changes the layer's effective output from just $F(x)$ to $x+F(x)$ — the original input is added back on top of whatever the layer computed. Because addition is being used, $x$ and $F(x)$ must have the exact same dimension for this to be defined.
+**General Usage**: The maximum-likelihood probability of an event is its count divided by the total count of the group it competes in ("count and normalize"). No iterative optimizer such as gradient descent is needed.
 
-**Example.** Suppose a single sublayer computes $F(x)=0.1x^2$ for a scalar input, and is given the input $x=3$.
+**Example.** A coin is flipped four times and lands $H,H,H,T$. Its log-likelihood is $3\log p+\log(1-p)$. Its slope is $\frac3p-\frac1{1-p}$; setting that to $0$ gives $3(1-p)=p$, so $p=\tfrac34$, exactly the fraction of heads (3 of 4).
 
-| Step | Computation | Result |
-|---|---|---|
-| 1. Ordinary layer output | $F(x)=0.1(3)^2$ | $0.9$ |
-| 2. Add the residual (input) | $x+F(x)=3+0.9$ | $3.9$ |
-
-If instead this particular sublayer had learned to be nearly useless for this input (say $F(x)\approx0$), the residual output would be $x+F(x)\approx x$ — the network effectively skips the layer and passes the original input straight through, rather than being forced through a possibly-unhelpful transformation.
-
-**AI/ML Usage**: Residual connections were introduced for very deep image-recognition networks (ResNets) and are now standard in every Transformer block (see Transformer Architecture below), wrapped around both the multi-head self-attention sublayer and the position-wise feed-forward sublayer (see Position-wise Feed-Forward Network above). Their main benefit is enabling gradients to flow more directly from a network's output back to its earliest layers during backpropagation (see Backpropagation and Vanishing Gradient Problem above): without a residual path, a gradient must be multiplied through every intervening layer's derivative on its way backward, and in a very deep network this repeated multiplication can shrink the gradient toward zero (the vanishing gradient problem), leaving early layers barely trained at all. The addition in $x+F(x)$ provides a direct, undiminished path for the gradient to flow along, letting a network be trained successfully even when it is dozens of layers deep, and it is also the reason every sublayer's output must share the same dimension $d_{\text{model}}$ as its input (see Dimension / Count Variables in the math_symbols file) — the addition $x+F(x)$ is only defined when both terms have the same shape.
+**AI/ML Usage**: The emission, transition, and start probabilities of a hidden Markov model for part-of-speech tagging (labeling each word as a noun, verb, and so on) are estimated this way, as are the rule probabilities of a probabilistic grammar.
 
 ---
 
@@ -3403,6 +4260,26 @@ If instead this particular sublayer had learned to be nearly useless for this in
 Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
 
 **AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
+
+---
+
+<a id="residual-connection-skip-connection"></a>
+### Residual Connection (Skip Connection)
+
+**The Big Idea**: Picture a highway running alongside a series of exits: a driver can choose to take an exit (drive through a layer's computation) or simply stay on the highway and skip it entirely. A residual connection gives a neural network exactly that option, layer by layer, by adding a layer's own input back onto its output, so that "do nothing" (pass the input straight through, unchanged) is always available as a fallback if a particular layer is not helpful for a given input.
+
+**General Usage**: For a layer (or sublayer) that computes some function $F(x)$ from an input $x$, a residual connection changes the layer's effective output from just $F(x)$ to $x+F(x)$ — the original input is added back on top of whatever the layer computed. Because addition is being used, $x$ and $F(x)$ must have the exact same dimension for this to be defined.
+
+**Example.** Suppose a single sublayer computes $F(x)=0.1x^2$ for a scalar input, and is given the input $x=3$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Ordinary layer output | $F(x)=0.1(3)^2$ | $0.9$ |
+| 2. Add the residual (input) | $x+F(x)=3+0.9$ | $3.9$ |
+
+If instead this particular sublayer had learned to be nearly useless for this input (say $F(x)\approx0$), the residual output would be $x+F(x)\approx x$ — the network effectively skips the layer and passes the original input straight through, rather than being forced through a possibly-unhelpful transformation.
+
+**AI/ML Usage**: Residual connections were introduced for very deep image-recognition networks (ResNets) and are now standard in every Transformer block (see Transformer Architecture below), wrapped around both the multi-head self-attention sublayer and the position-wise feed-forward sublayer (see Position-wise Feed-Forward Network above). Their main benefit is enabling gradients to flow more directly from a network's output back to its earliest layers during backpropagation (see Backpropagation and Vanishing Gradient Problem above): without a residual path, a gradient must be multiplied through every intervening layer's derivative on its way backward, and in a very deep network this repeated multiplication can shrink the gradient toward zero (the vanishing gradient problem), leaving early layers barely trained at all. The addition in $x+F(x)$ provides a direct, undiminished path for the gradient to flow along, letting a network be trained successfully even when it is dozens of layers deep, and it is also the reason every sublayer's output must share the same dimension $d_{\text{model}}$ as its input (see Dimension / Count Variables in the math_symbols file) — the addition $x+F(x)$ is only defined when both terms have the same shape.
 
 ---
 
@@ -3529,6 +4406,19 @@ For comparison, one Euler step gives $1+1\cdot1=2$. RK4 ($2.7083$) is within $0.
 
 ---
 
+<a id="sequence-labeling-tagging"></a>
+### Sequence Labeling (Tagging)
+
+**The Big Idea**: This is function notation applied to a list, as in the Transducer (Sequence Labeling) entry: a list of $n$ inputs yields a list of $n$ outputs, one per position, instead of a single answer for the whole list. It goes beyond ordinary classification, which is one label per example, by making the order of the positions part of the problem.
+
+**General Usage**: In sequence labeling, the input is a sequence $\bar{x} = (x_1, \dots, x_n)$ (typically the words of a sentence) and the output is a sequence $\bar{y} = (y_1, \dots, y_n)$ of the same length, where $y_i$ is the label (tag) for $x_i$. Part-of-speech tagging, where each word receives a grammatical label such as a noun or verb tag, is the standard example. A simple solution trains one ordinary classifier and applies it independently at each position, using features that depend on the position (see the Positional Feature Function entry in the math_symbols file); a better solution models the labels jointly (see the Structured Classification entry).
+
+**Example.** The input words "Fed raises interest rates 0.5 percent" form $\bar{x}$. A tagger must output one tag per word, so its output $\bar{y}$ has the same number of entries as the input, with $y_3$ the tag for "interest" (for instance NN, a singular noun).
+
+**AI/ML Usage**: Part-of-speech tagging with a per-position logistic regression classifier is the simplest sequence labeler; Hidden Markov models and conditional random fields are the classic models that treat the whole tag sequence jointly.
+
+---
+
 <a id="sequence-to-sequence-seq2seq-task"></a>
 ### Sequence-to-Sequence (Seq2Seq) Task
 
@@ -3638,6 +4528,19 @@ Rounding $\exp(1)$ to $3$ for easy mental arithmetic (as is common when working 
 
 ---
 
+<a id="span-fencepost-indexing"></a>
+### Span (Fencepost Indexing)
+
+**The Big Idea**: This is the counting trick behind the "fence post problem": a fence with $n$ sections needs $n+1$ posts. Number the posts, and a stretch of fence is described by the numbers of its two end posts, so its length is just the larger number minus the smaller, a subtraction you already know.
+
+**General Usage**: In a sentence of $n$ words, number the $n+1$ gaps, including the two ends, from $0$ to $n$, so word $w_i$ sits between fencepost $i-1$ and fencepost $i$. A span $(i,j)$ with $i<j$ is the stretch of words between fencepost $i$ and fencepost $j$, and it contains $j-i$ words. The span $(i,i+1)$ is a single word and the span $(0,n)$ is the whole sentence.
+
+**Example.** For "the child raises it", fenceposts are $0$ before "the", $1$ between "the" and "child", $2$ between "child" and "raises", $3$ between "raises" and "it", $4$ after "it". Span $(0,2)$ is "the child" ($2-0=2$ words), span $(1,3)$ is "child raises" ($2$ words), span $(2,4)$ is "raises it", and span $(0,4)$ is all $4$ words. Check: the number of spans of length $2$ is $3$, since $(0,2)$, $(1,3)$, $(2,4)$ are the only ones.
+
+**AI/ML Usage**: Spans index the cells of the chart in the CKY parsing algorithm (see the CKY Algorithm entry), and the same convention is used to label phrases, named entities, and answer ranges in natural language processing (the branch of AI that handles human language).
+
+---
+
 <a id="sparse-attention"></a>
 ### Sparse Attention
 
@@ -3720,6 +4623,19 @@ At $n=8$ the saving is modest, but at $n=1{,}000$ full attention already require
 **Example.** A STRIPS-style action "Pick up block A" might have the precondition $\text{Clear}(A) \wedge \text{HandEmpty}$ (block A must currently have nothing on top of it, and the hand must currently be empty), with effects $\neg\text{Clear}(A) \wedge \neg\text{HandEmpty} \wedge \text{Holding}(A)$ (afterward, A is no longer clear, the hand is no longer empty, and the hand is now specifically holding A).
 
 **AI/ML Usage**: STRIPS was genuinely foundational to the entire field of automated AI planning, and its core underlying representation — states as sets of true facts, actions defined by preconditions and effects — directly influenced essentially every later planning language, including the now-standard PDDL (see that entry), which is really a direct, modernized descendant of these original STRIPS ideas.
+
+---
+
+<a id="structured-classification"></a>
+### Structured Classification
+
+**The Big Idea**: This goes one step beyond ordinary classification (choosing one label, as in logistic regression, which is a model that turns a weighted sum of features into a label probability): instead of one label, the output is a whole organized object, such as an ordered list of labels, whose parts are not independent of one another.
+
+**General Usage**: A structured classification (structured prediction) problem asks for an output with internal structure, such as a sequence of labels $(y_1, \dots, y_n)$, where $y_2$ comes right after $y_1$ and so on. The pieces cannot sensibly be treated as a bag of independent predictions, because some combinations of neighboring labels are far more plausible than others. Predicting each piece separately with a standard classifier can therefore produce "incoherent" outputs: every individual prediction looks reasonable, but the combination does not.
+
+**Example.** In tagging "Fed raises interest rates ...", a plural noun (NNS) is not typically followed by a singular noun (NN), and a VBZ (a present-tense verb with a third-person-singular subject) is not typically followed by a VBP (a present-tense verb with any other subject). An independent per-word classifier can still output such a pair. A structured model scores the whole tag sequence so that these clashing pairs are discouraged.
+
+**AI/ML Usage**: Hidden Markov models (a generative approach) and conditional random fields (a classifier-style approach with coherent output) are the standard structured models for sequence labeling such as part-of-speech tagging.
 
 ---
 
@@ -3878,6 +4794,24 @@ Only the masked spans (tagged by their sentinels) appear in the target — the u
 
 ---
 
+<a id="tag-lattice"></a>
+### Tag Lattice
+
+**The Big Idea**: In Algebra 2 you count outcomes by the multiplication principle: if you choose a shirt from 3 and pants from 2, you have $3 \times 2 = 6$ outfits. A sentence works the same way: pick one tag per word, and the number of complete choices is the product of the numbers of options.
+
+**General Usage**: A *tag lattice* is the table formed by writing each word of a sentence in a column and listing, beneath it, the tags it could take. A *path* is one choice of a single tag per word, left to right. If word $i$ has $k_i$ possible tags, the number of paths is $k_1 \times k_2 \times \cdots \times k_n$. Most paths are not sensible, and a tagger's job is to pick the best one.
+
+**Example.** For *Fed raises interest rates 0.5 percent*:
+
+1. Count the tags for each word: Fed has 3 (NNP, VBD, VBN), raises 2 (NNS, VBZ), interest 3 (NN, VBP, VB), rates 2 (NNS, VBZ), 0.5 has 1 (CD), percent has 1 (NN).
+2. Multiply: $3 \times 2 \times 3 \times 2 \times 1 \times 1 = 36$ paths.
+3. The intended path is NNP, VBZ, NN, NNS, CD, NN.
+4. A second grammatical path is NNP, NNS, VBP, NNS, CD, NN, which says "Fed raises" interest "rates". Both are valid syntactically; only world knowledge (rates cannot feel interest) rules out the second.
+
+**AI/ML Usage**: Tagging models score paths through such a lattice, and the best-scoring path is the prediction. Because the number of paths grows as a product, it grows exponentially with sentence length, so real taggers use dynamic programming or neural sequence models instead of listing every path.
+
+---
+
 <a id="taylor-expansion-taylors-theorem"></a>
 ### Taylor Expansion / Taylor's Theorem
 
@@ -3960,6 +4894,24 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 
 ---
 
+<a id="trace-and-co-indexation"></a>
+### Trace and Co-indexation
+
+**The Big Idea**: A trace is like a placeholder variable. In algebra, a variable such as $x$ stands in for a value that is specified elsewhere; a trace is an invisible word-slot that stands in for a phrase that appears elsewhere in the sentence. Co-indexation is the matching number that ties the two together, like using the same letter in two places.
+
+**General Usage**: In some grammatical analyses a verb needs an object that is not in its usual position in the sentence, because the object has moved elsewhere (for example into a word like "that"). The analysis puts an invisible placeholder (a trace, written with a star such as `*-1`) in the missing slot, and gives both the moved phrase (for example `WHNP-1`) and the trace the same index number. That shared number is the co-indexation. Because it links two distant places in the tree, the structure is technically a graph (a set of nodes and edges where nodes may be connected in more than one way) and no longer a pure tree (where each node has one parent).
+
+**Example.** In the noun phrase "a refund that the court estimated":
+
+1. The verb "estimated" needs an object, but nothing follows it in the text.
+2. An invisible NP, the trace `*-1`, is placed in the object position of "estimated".
+3. The word "that" is labeled `WHNP-1` (a "wh-" noun phrase, the kind that begins relative clauses).
+4. The same index 1 on `WHNP-1` and `*-1` records that the thing the court estimated is the thing that "that" stands for, which is "a refund".
+
+**AI/ML Usage**: Traces and co-indexation appear in the human-annotated tree collections used to train syntactic parsers. They are generally ignored or removed when building parsers because they are hard to predict correctly and their benefit to downstream applications is unclear.
+
+---
+
 <a id="transducer-sequence-labeling"></a>
 ### Transducer (Sequence Labeling)
 
@@ -4004,6 +4956,35 @@ Each row is computed completely independently of the other three — the head ha
 
 ---
 
+<a id="transition-based-dependency-parsing"></a>
+### Transition-Based Dependency Parsing
+
+**The Big Idea**: This is a greedy, step-by-step way of building a dependency tree (see the Dependency Parsing entry) with a pile of words (a stack) and a line of words still waiting (a buffer), like a compiler reading a program from left to right and never going back. It uses only lists and a recipe, so it needs nothing beyond Algebra 2 except the classification step, which is a separate idea (a model that picks one label from a fixed set).
+
+**General Usage**: A transition-based (or shift-reduce) parser builds a tree from a sequence of incremental decisions moving left to right through the sentence. It keeps two data structures: a stack holding the partially built tree and a buffer holding the rest of the sentence. At each state it applies one operation from a transition system (see the Arc-Standard Transition System entry), and it stops when the stack holds only $\text{ROOT}$ and the buffer is empty. To choose operations, a classifier scores each legal action $a$ from features of the current state, with the rule $\arg\max_{a} w^\top f(\text{stack}, \text{buffer}, a)$ (see the Arg Min / Arg Max and Dot Product entries in the math_symbols file); it is trained on the sequences produced by an oracle (see the Oracle Derivation entry) and run greedily at test time. The work grows linearly with the length of the sentence, compared with the cubic time of a chart-based method such as CKY.
+
+**Example.** For "I ate some spaghetti bolognese" (5 words), the parser performs 10 transitions. At the state with stack $[\text{ROOT ate some spaghetti}]$ and buffer $[\text{bolognese}]$, all three operations are legal, so the classifier must choose. The stack tags verb, determiner, noun (VBD, DT, NN) suggest a verb with a direct object that has a determiner, and the buffer word "bolognese" signals that the left-arc should happen before it is shifted; the correct choice is Left-Arc, making "spaghetti" the head of "some".
+
+**AI/ML Usage**: Transition-based parsers are widely used because they are fast and simple (just a classifier), and designing good features for the classifier was a task where neural networks first took off in natural language processing. Their main training difficulty is Exposure Bias (see that entry), because the classifier is trained only on states from the gold path.
+
+---
+
+<a id="treebank"></a>
+### Treebank
+
+**The Big Idea**: A treebank is a labeled dataset, like a table of inputs paired with correct answers from Algebra 2, except that each answer is a whole tree diagram rather than a number.
+
+**General Usage**: A treebank is a collection of sentences, each annotated with its correct grammar tree (its constituency parse). The trees are written by human annotators. Since each tree shows exactly which rules of a grammar were used, the grammar and its rule probabilities can be read off the treebank by counting.
+
+**Example.** Suppose a treebank contains $7$ noun phrases, and a particular rule rewriting NP is used in $3$ of them.
+1. Count the uses of the rule: $3$.
+2. Count all NP rewrites: $7$.
+3. The rule's estimated probability is $\tfrac37$.
+
+**AI/ML Usage**: A treebank is the training data for supervised parsing in natural language processing: grammar rules and their probabilities are estimated from it, and parsers are evaluated against held-out trees (trees kept aside and not used for training).
+
+---
+
 <a id="triangle-inequality"></a>
 ### Triangle Inequality
 
@@ -4018,6 +4999,19 @@ Each row is computed completely independently of the other three — the head ha
 4. Equality holds only when $b$ lies on the straight segment from $a$ to $c$: for $b'=(1.5,2)$, $\|a-b'\|+\|b'-c\|=2.5+2.5=5=\|a-c\|$.
 
 **AI/ML Usage**: Used to prove guarantees about distance-based methods: for example, in motion-planning proofs (RRT) five distances each at most $\nu/5$ are chained to show the nearest tree vertex is within $\nu$ of a path point; it is also why nearest-neighbor search can prune far-away points in K-Nearest Neighbors data structures, and it is one of the axioms a function must satisfy to count as a distance metric.
+
+---
+
+<a id="trigram-hmm-tag-pair-states"></a>
+### Trigram HMM (Tag-Pair States)
+
+**The Big Idea**: In Algebra 2 a sequence rule like $a_{n+1}=2a_n$ uses one previous term, while the Fibonacci rule $a_{n+1}=a_n+a_{n-1}$ uses two. A hidden Markov model (HMM; a model of a hidden sequence of labels that each produce a visible item, with each label depending only on the one before) is the one-previous-term kind. A trigram HMM gets the two-previous-terms behavior by a trick: it redefines what a "term" is, so that one state holds a pair of labels.
+
+**General Usage**: In a tagging HMM the states are tags and the visible items are words. The ordinary ("bigram") version conditions each tag on the single previous tag. The trigram version makes each state a pair (previous tag, current tag). For the sentence "Fed raises interest rates," the first state is $(\langle S\rangle, \text{NNP})$, where $\langle S\rangle$ is the start-of-sentence symbol (see the Start-of-Sentence Token entry in the symbols file), and the second is $(\text{NNP}, \text{VBZ})$. A transition goes from a pair to a pair, as in $P\big((\text{NNP},\text{VBZ}) \mid (\langle S\rangle,\text{NNP})\big)$, and is legal only if the current tag of the first pair equals the previous tag of the second. Emissions (the probability of the word) condition on both tags. Everything else, including the decoding procedure, works as before.
+
+**Example.** With the tag chain NNP, VBZ, NN for "Fed raises interest": Step 1: $y_1=(\langle S\rangle,\text{NNP})$. Step 2: from it, the only legal next states look like $(\text{NNP},\ ?)$; here $y_2=(\text{NNP},\text{VBZ})$. Step 3: from that, only states of the form $(\text{VBZ},\ ?)$ are legal; here $y_3=(\text{VBZ},\text{NN})$. In each step one tag is carried over and one new tag is added, so a path through these states is just the tag sequence, now with two tags of memory.
+
+**AI/ML Usage**: Trigram HMMs are a standard strong tagger for part-of-speech tagging, reaching about 95% accuracy on the Penn Treebank versus about 90% for the most-frequent-tag baseline (see that entry). Trigrams are considered the sweet spot: longer histories multiply the number of states and parameters so each is estimated from less data.
 
 ---
 
@@ -4083,6 +5077,38 @@ Each row is computed completely independently of the other three — the head ha
 **Example.** Picture the tanh function's characteristic S-curve: near its center ($x=0$) it is fairly steep, so a gradient passing through it there shrinks only modestly. But far out on either flattened tail of the curve (say $x=5$ or $x=-5$), the curve is nearly horizontal — its local gradient is nearly $0$. A gradient signal that has to pass backward through $20$ time steps of an RNN, at each of which the tanh's input happens to sit out on one of these flat tails, gets multiplied by a near-$0$ number $20$ separate times in a row — shrinking it down to an amount far too small to meaningfully update the parameters responsible for information from 20 steps back.
 
 **AI/ML Usage**: The vanishing gradient problem is the central reason plain RNNs struggle to learn dependencies that span many time steps — such as remembering that a sentence contained the word "not" many words before the word it needs to affect (see Recurrent Neural Network (RNN) above). The Long Short-Term Memory (LSTM) architecture (see that entry above) was developed specifically to reduce this problem, using gated pathways designed so that useful information can pass through many time steps with a gradient closer to $1$ rather than being repeatedly shrunk — though even LSTMs do not eliminate the problem entirely for very long sequences, which is one of the key practical motivations behind the Transformer architecture's very different, non-recurrent design.
+
+---
+
+<a id="vertical-markovization"></a>
+### Vertical Markovization
+
+**The Big Idea**: In Algebra 2 you attach a tag to a quantity to tell similar things apart (the $f_1$ and $f_2$ of two different functions). Vertical Markovization tags every grammar symbol with its parent's label, so the grammar can treat the same phrase type differently in different places. The underlying probability notion is the Markov idea (see the Markov Model entry in the math_concepts file): only a limited amount of surrounding history matters.
+
+**General Usage**: Given a parse tree, relabel every node $X$ having parent $Y$ as $X^Y$ (see the Parent Annotation Caret entry in the math_symbols file), with $S^{ROOT}$ at the top. The order $v$ counts how many levels of the node's own ancestry are visible: $v=1$ is the original tree, $v=2$ adds the parent, $v=3$ adds the grandparent as well. Rules read from the transformed trees have separate probabilities per context, at the cost of a larger grammar in which each symbol is estimated from fewer examples.
+
+**Example.** In a treebank, an NP is rewritten as a pronoun (PRP) 6% of the time overall, but 21% of the time under S and only 4% under VP. With parent annotation, $NP^S \to PRP$ and $NP^{VP} \to PRP$ are separate rules estimated separately, so the 21% and 4% can each be represented instead of the single 6%.
+
+**AI/ML Usage**: This is a standard preprocessing step for treebank PCFG parsers, applied before binarization. Klein and Manning (2003) report accuracy rising from 71.27 to 79.07 F1 when combined with horizontal Markovization (see the Horizontal Markovization entry above).
+
+---
+
+<a id="viterbi-algorithm"></a>
+### Viterbi Algorithm
+
+**The Big Idea**: Finding the vertex of a parabola gives both the best value and the input that produced it; Viterbi does the same for a whole sequence: it returns the best score and the best sequence of labels that earns it (see the Arg Min / Arg Max entry in the math symbols file). It beats trying every sequence by using dynamic programming (see the Dynamic Programming entry): at each position it keeps just one best score per possible label, and builds the next position's scores from them. This is a genuine step beyond Algebra 2, because it relies on probabilities and logarithms (see the Logarithm entry in the math symbols file).
+
+**General Usage**: Given a hidden Markov model, which assigns a joint probability $P(\bar{y},\bar{x})$ to a label sequence $\bar{y}$ and an observed sequence $\bar{x}$ as a product of **transition** probabilities $P(y_i\mid y_{i-1})$ (the chance of a label given the previous label) and **emission** probabilities $P(x_i\mid y_i)$ (the chance of an observed item given its label), the Viterbi algorithm finds $\arg\max_{\bar{y}} P(\bar{y}\mid\bar{x})$. Since $P(\bar{y}\mid\bar{x}) = P(\bar{y},\bar{x})/P(\bar{x})$ and $P(\bar{x})$ is the same for every $\bar{y}$, it is enough to maximize $\log P(\bar{y},\bar{x})$. The table entry $v_i(\tilde{y})$ (see the Viterbi Score entry in the math symbols file) is filled by a base case at position 1 and a recurrence at later positions, then one extra column for the end-of-sequence STOP symbol gives the best total score. **Backpointers** (see the Backpointer entry) record which previous label won each maximum, so the best label sequence itself is recovered by walking backward from STOP.
+
+**Example.** Tags $N$ and $V$; log-probability parameters: start $S(N)=S(V)=-1$; transitions $T(N\to N)=-2$, $T(N\to V)=-1$, $T(V\to N)=-1$, $T(V\to V)=-1$; emissions $E(N,\text{they})=-1$, $E(V,\text{they})=-3$, $E(N,\text{can})=-3$, $E(V,\text{can})=-1$. For the words "they can":
+
+1. $v_1(N) = S(N)+E(N,\text{they}) = -1-1 = -2$.
+2. $v_1(V) = S(V)+E(V,\text{they}) = -1-3 = -4$.
+3. Cell $v_2(N)$, option from $N$: $-2 + (-2) + (-3) = -7$. Option from $V$: $-4 + (-1) + (-3) = -8$. Keep the larger, $-7$, with backpointer $N$.
+4. Cell $v_2(V)$, option from $N$: $-2 + (-1) + (-1) = -4$. Option from $V$: $-4 + (-1) + (-1) = -6$. Keep $-4$, with backpointer $N$.
+5. Check by brute force over all $2^2=4$ sequences (sum of start, emission, transition, emission): $NN$: $-1-1-2-3=-7$; $NV$: $-1-1-1-1=-4$; $VN$: $-1-3-1-3=-8$; $VV$: $-1-3-1-1=-6$. The best is $NV$ with $-4$, matching the table (ignoring the STOP column), so the answer is "they = $N$, can = $V$".
+
+**AI/ML Usage**: Viterbi decoding is how a trained hidden Markov model tags a sentence with parts of speech or labels named entities. Because it only needs additive local scores, the same algorithm decodes conditional random fields and structured-perceptron taggers, where the scores are learned feature weights rather than log probabilities. A standard debugging check is to compare its output against brute-force enumeration on sentences of four or five words.
 
 ---
 
@@ -4192,3 +5218,24 @@ After enough repetitions of this process across enough text, words that tend to 
 Merging $(a,b)$ leaves the corpus more predictable (perplexity $\approx 1.89$) than merging $(a,a)$ does (perplexity $3.00$), even though $(a,a)$ is the more frequent raw pair. A WordPiece-style, perplexity-driven criterion would therefore favor merging $(a,b)$ — the opposite of what plain frequency-based BPE would pick. This is a deliberately simplified illustration of the underlying principle; it does not reproduce the exact internal computation of any specific published implementation.
 
 **AI/ML Usage**: WordPiece was introduced by Schuster and Nakajima (2012) and is the tokenization method used to build BERT's vocabulary (see the BERT entry above; Devlin et al., 2019), where it additionally marks every non-initial piece of a split word with a leading `##` (see the Word-Boundary Marker entry in `math_symbols.md`). Google's SentencePiece library implements a closely related, efficient perplexity-driven method internally described as a **unigram language model** tokenizer (Kudo, 2018; used in production for Google's Neural Machine Translation system, Wu et al., 2016), and this family of perplexity-driven methods is collectively sometimes called "Unigram LM" tokenization to contrast it with frequency-driven BPE. Bostrom and Durrett (2020) compared the two families of methods directly and found that Unigram LM segmentations recover recognizable prefixes and suffixes (such as "tri-," "-s," and "-ly") far more often than BPE does, making them more linguistically plausible even though BPE achieved wider adoption first.
+
+---
+
+<a id="zero-sum-game"></a>
+### Zero-Sum Game
+
+**The Big Idea**: This builds on ordinary addition and the idea of a negative number canceling out a positive one, both from Algebra 2 (for instance $x + (-x) = 0$) — in a zero-sum game, whatever one player gains, the other player loses, so the two players' scores always add up to the same fixed total (often $0$), exactly like a positive and a negative number that always cancel out.
+
+**General Usage**: A two-player game is zero-sum when the two players' utilities (see the Minimax Algorithm entry above for utility) always sum to a constant — commonly $0$ — for every possible outcome, so that one player winning is mathematically equivalent to the other player losing by the same amount. This means only a single number needs to be tracked to describe any outcome, since the second player's utility is always just the negative of the first player's: if the max player's utility at a terminal state is $u$, the min player's utility there is $-u$.
+
+**Example.** In a simplified card game where two players bet chips against each other, suppose the outcomes and each player's utility (measured directly in chips won or lost) are:
+
+| Outcome | Player A's utility | Player B's utility | Sum |
+|---|---|---|---|
+| Player A wins the round | $+5$ | $-5$ | $0$ |
+| Player B wins the round | $-3$ | $+3$ | $0$ |
+| Round is a tie (chips returned) | $0$ | $0$ | $0$ |
+
+In every row, Player A's utility and Player B's utility add up to exactly $0$ — confirming the game is zero-sum — even though the specific amount at stake ($5$ chips in one outcome, $3$ in another) is different from row to row. Because the two players' utilities are always negatives of each other, tracking just Player A's utility alone is enough to fully describe every outcome for both players.
+
+**AI/ML Usage**: The zero-sum assumption is exactly what justifies the Minimax Algorithm's simplification of tracking a single value per state, alternately maximized by one player and minimized by the other, instead of a separate value for each player (see the Minimax Algorithm entry above, and its extension to non-zero-sum, multi-player games via a vector of values). The same zero-sum framing appears directly in Generative Adversarial Networks (GANs), a technique for training two neural networks — a **generator**, which tries to produce convincing fake data, and a **discriminator**, which tries to catch the fakes — against each other in a min-max game (see the Min Function entry in `math_symbols.md`), where the generator's loss and the discriminator's loss are constructed to trade off directly against one another, the same competitive structure as a zero-sum game.

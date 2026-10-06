@@ -4,8 +4,8 @@ Two companion glossaries built for students in the University of Texas CDSO Mast
 
 ## Contents
 
-- **[math_symbols.md](math_symbols.md)** — every mathematical *symbol* and notation convention encountered across the program's coursework (calculus, linear algebra, probability, logic, set theory), alphabetized and defined. 165 entries.
-- **[math_concepts.md](math_concepts.md)** — every AI/ML and mathematical *concept* — ideas and techniques that don't have one dedicated symbol of their own, as opposed to notation — spanning calculus, linear algebra, probability, statistics, optimization, and classical AI. 139 entries.
+- **[math_symbols.md](math_symbols.md)** — every mathematical *symbol* and notation convention encountered across the program's coursework (calculus, linear algebra, probability, logic, set theory, plus the notation used in search and planning, motion planning, reinforcement learning, learning theory, neural networks, and natural language processing), alphabetized and defined. 210 entries.
+- **[math_concepts.md](math_concepts.md)** — every AI/ML and mathematical *concept* — ideas and techniques that don't have one dedicated symbol of their own, as opposed to notation — spanning calculus, linear algebra, probability, statistics, optimization, learning theory, deep learning, natural language processing, search and planning, motion planning and robotics, and game-playing AI. 299 entries.
 
 ## Who this is for
 
@@ -15,13 +15,16 @@ Every entry is written to stand on its own: it starts from what a typical Algebr
 
 ## How entries are structured
 
-Each entry generally includes:
+Each entry generally includes, in this order:
 
-- **The Big Idea** — how the symbol or concept connects back to something from Algebra 2, or to another entry already covered.
-- **General Usage** — a plain-language definition, independent of any one field.
-- **AI/ML Usage** — how it specifically shows up in the MSAI curriculum.
+- **The Big Idea**: how the symbol or concept connects back to something from Algebra 2, or to another entry already covered.
+- **General Usage**: a plain-language definition, independent of any one field.
+- **Example**: a small worked example that makes the definition concrete.
+- **AI/ML Usage**: how it specifically shows up in the MSAI curriculum.
 
-Symbol entries also note how to type or produce the character (e.g. keyboard shortcuts on macOS) where relevant.
+Every entry in `math_concepts.md` has all four parts. A few entries in `math_symbols.md` omit the Example.
+
+Every symbol entry in `math_symbols.md` also opens with a "Symbol:" line and an "On macOS:" line explaining how to type or produce the character (an ordinary keyboard key, an Option shortcut, or the character picker). Concept entries do not have these lines.
 
 ## How to use this
 
@@ -29,7 +32,7 @@ Both files are alphabetized with a three-column jump table at the top — read d
 
 ## Contributing
 
-Found a symbol or concept from lecture that isn't covered, or an explanation that's unclear? Open an issue or a pull request — additions should follow the existing entry format (Big Idea / General Usage / AI/ML Usage) and start from an Algebra 2 baseline rather than assuming prior exposure.
+Found a symbol or concept from lecture that isn't covered, or an explanation that's unclear? Open an issue or a pull request — additions should follow the existing entry format (Big Idea / General Usage / Example / AI/ML Usage, plus the Symbol and On macOS lines for symbol entries) and start from an Algebra 2 baseline rather than assuming prior exposure.
 
 ## License
 

@@ -7,76 +7,80 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 196 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 210 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Gradient | Graph to Precedence Relation | Prime Notation to Zero-One Loss |
+| Absolute Value to Greater Than / Less Than | Halfspace to Probabilistic Completeness Bound | Probability / Probability Density to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Graph](#graph) | [Prime Notation](#prime-notation) |
-| [Action Space](#action-space) | [Greater Than / Less Than](#greater-than-less-than) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Activation Function](#activation-function) | [Halfspace](#halfspace) | [Probability / Probability Density](#probability-probability-density) |
-| [Adjacency Matrix](#adjacency-matrix) | [Hat Notation](#hat-notation) | [Probability Simplex](#probability-simplex) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hessian Matrix](#hessian-matrix) | [Product Notation](#product-notation) |
-| [All-Ones Vector](#all-ones-vector) | [Heuristic Function](#heuristic-function) | [Progress Radius](#progress-radius) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Hypothesis](#hypothesis) | [Psi, uppercase](#psi-uppercase) |
-| [Approximately Equal](#approximately-equal) | [Identity Matrix](#identity-matrix) | [Query, Key, and Value](#query-key-and-value) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [If and Only If](#if-and-only-if) | [Question-Mark Relation](#question-mark-relation) |
-| [Assignment Arrow](#assignment-arrow) | [Implies Arrow](#implies-arrow) | [Real Numbers](#real-numbers) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Infinity](#infinity) | [Receptive Field](#receptive-field) |
-| [Attention Operator](#attention-operator) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
-| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [ReLU](#relu) |
-| [Best Solution Cost](#best-solution-cost) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
-| [Beta](#beta) | [Jacobian](#jacobian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Bias Term](#bias-term) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
-| [Big-O Notation](#big-o-notation) | [Label](#label) | [Sampling Notation](#sampling-notation) |
-| [Binary Label Set](#binary-label-set) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
-| [Binomial Coefficient](#binomial-coefficient) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Blocks World](#blocks-world) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Intersection](#set-intersection) |
-| [CLS Token](#cls-token) | [Learning Rate](#learning-rate) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Concept Class](#concept-class) | [Less Than or Equal](#less-than-or-equal) | [Set Braces](#set-braces) |
-| [Conditional Bar](#conditional-bar) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Configuration Space](#configuration-space) | [Logarithm](#logarithm) | [Set Difference](#set-difference) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Logical Negation](#logical-negation) | [Set Union](#set-union) |
-| [Connection Radius Constant](#connection-radius-constant) | [Logistic Function](#logistic-function) | [Sigma, lowercase](#sigma-lowercase) |
-| [Cosine Similarity](#cosine-similarity) | [Loss Function](#loss-function) | [Sigma, uppercase](#sigma-uppercase) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Margin](#margin) | [Sigmoid Function](#sigmoid-function) |
-| [Covariance](#covariance) | [Mask Token](#mask-token) | [Sign Function](#sign-function) |
-| [Curvature (Path)](#curvature-path) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
-| [Data Distribution](#data-distribution) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Dataset](#dataset) | [Matrix Transpose](#matrix-transpose) | [Standard Deviation](#standard-deviation) |
-| [Delta, lowercase](#delta-lowercase) | [Max Function](#max-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mean](#mean) | [State Space](#state-space) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [State Transition Function](#state-transition-function) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Min Function](#min-function) | [Step Size](#step-size) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Mistake Bound](#mistake-bound) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [Element-of Symbol](#element-of-symbol) | [Model Parameters](#model-parameters) | [Stride](#stride) |
-| [Element-wise Operations](#element-wise-operations) | [Mu](#mu) | [Subset](#subset) |
-| [Ellipsis](#ellipsis) | [N-Gram](#n-gram) | [Summation](#summation) |
-| [ELU](#elu) | [Nabla](#nabla) | [Superscript Example Index](#superscript-example-index) |
-| [Empty Set](#empty-set) | [Natural Numbers](#natural-numbers) | [Tanh](#tanh) |
-| [Epsilon](#epsilon) | [Negation Overbar](#negation-overbar) | [TF-IDF](#tf-idf) |
-| [Error Signal](#error-signal) | [Normal Distribution Notation](#normal-distribution-notation) | [Theta](#theta) |
-| [Eta](#eta) | [Not Equal](#not-equal) | [Tilde Accent](#tilde-accent) |
-| [Euclidean Norm](#euclidean-norm) | [Number Sign / Count](#number-sign-count) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Omega](#omega) | [Training Set](#training-set) |
-| [Existential Quantifier](#existential-quantifier) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Expectation](#expectation) | [Outer Product](#outer-product) | [Unit Ball Volume](#unit-ball-volume) |
-| [Factorial](#factorial) | [Padding](#padding) | [Unit Hypercube](#unit-hypercube) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Parameterized Function / Model](#parameterized-function-model) | [Universal Quantifier](#universal-quantifier) |
-| [Floor Function](#floor-function) | [Partial Derivative](#partial-derivative) | [Unknown-Word Token](#unknown-word-token) |
-| [Free Space](#free-space) | [Partial Order](#partial-order) | [Variance](#variance) |
-| [Frobenius Norm](#frobenius-norm) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Vector](#vector) |
-| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Vector Overbar](#vector-overbar) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Vector Projection](#vector-projection) |
-| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vocabulary](#vocabulary) |
-| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Weight Vector](#weight-vector) |
-| [GeLU](#gelu) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Zero-One Loss](#zero-one-loss) |
-| [Goal Set](#goal-set) | [Potential Function](#potential-function) |  |
-| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) |  |
+| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probability / Probability Density](#probability-probability-density) |
+| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability Simplex](#probability-simplex) |
+| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Product Notation](#product-notation) |
+| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Progress Radius](#progress-radius) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Pseudo-Inverse](#pseudo-inverse) |
+| [All-Ones Vector](#all-ones-vector) | [Hypothesis](#hypothesis) | [Psi, uppercase](#psi-uppercase) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Identity Matrix](#identity-matrix) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [If and Only If](#if-and-only-if) | [Query, Key, and Value](#query-key-and-value) |
+| [Approximately Equal](#approximately-equal) | [Implies Arrow](#implies-arrow) | [Question-Mark Relation](#question-mark-relation) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
+| [Assignment Arrow](#assignment-arrow) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
+| [Attention Operator](#attention-operator) | [Integral](#integral) | [ReLU](#relu) |
+| [Ball of Radius r](#ball-of-radius-r) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
+| [Best Solution Cost](#best-solution-cost) | [Jacobian](#jacobian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
+| [Bias Term](#bias-term) | [Label](#label) | [Sampling Notation](#sampling-notation) |
+| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
+| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
+| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Chart Score](#chart-score) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
+| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Intersection](#set-intersection) |
+| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Union](#set-union) |
+| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Sigma, lowercase](#sigma-lowercase) |
+| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigma, uppercase](#sigma-uppercase) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigmoid Function](#sigmoid-function) |
+| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sign Function](#sign-function) |
+| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Softmax Function](#softmax-function) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Split Point](#split-point) |
+| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Stack Notation](#stack-notation) |
+| [Dataset](#dataset) | [Mean](#mean) | [Standard Deviation](#standard-deviation) |
+| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [State Space](#state-space) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Transition Function](#state-transition-function) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [Step Size](#step-size) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stride](#stride) |
+| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Subset](#subset) |
+| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Summation](#summation) |
+| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Superscript Example Index](#superscript-example-index) |
+| [Emission Matrix](#emission-matrix) | [Normal Distribution Notation](#normal-distribution-notation) | [Tag Set](#tag-set) |
+| [Empty Set](#empty-set) | [Not Equal](#not-equal) | [Tanh](#tanh) |
+| [Epsilon](#epsilon) | [Number Sign / Count](#number-sign-count) | [TF-IDF](#tf-idf) |
+| [Error Signal](#error-signal) | [Omega](#omega) | [Theta](#theta) |
+| [Eta](#eta) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Tilde Accent](#tilde-accent) |
+| [Euclidean Norm](#euclidean-norm) | [Outer Product](#outer-product) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Padding](#padding) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Parameterized Function / Model](#parameterized-function-model) | [Transition Matrix](#transition-matrix) |
+| [Expectation](#expectation) | [Parent Annotation Caret](#parent-annotation-caret) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Factorial](#factorial) | [Partial Derivative](#partial-derivative) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Order](#partial-order) | [Unit Ball Volume](#unit-ball-volume) |
+| [Floor Function](#floor-function) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Unit Hypercube](#unit-hypercube) |
+| [Free Space](#free-space) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Perceptron Loss](#perceptron-loss) | [Unknown-Word Token](#unknown-word-token) |
+| [Function Composition](#function-composition) | [Permutation](#permutation) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Phi, lowercase](#phi-lowercase) | [Variance](#variance) |
+| [Gain](#gain) | [Phi, uppercase](#phi-uppercase) | [Vector](#vector) |
+| [Gamma](#gamma) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Overbar](#vector-overbar) |
+| [Gaussian CDF](#gaussian-cdf) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vector Projection](#vector-projection) |
+| [GeLU](#gelu) | [Positional Embedding](#positional-embedding) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Feature Function](#positional-feature-function) | [Viterbi Score](#viterbi-score) |
+| [Goal Set](#goal-set) | [Potential Function](#potential-function) | [Vocabulary](#vocabulary) |
+| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) | [Weight Vector](#weight-vector) |
+| [Graph](#graph) | [Prime Notation](#prime-notation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) | [Zero-One Loss](#zero-one-loss) |
 
 ## Symbols
 
@@ -432,6 +436,25 @@ On macOS: type normally from the keyboard; no special character needed
 
 ---
 
+<a id="chart-score"></a>
+### Chart Score — `t[i, j, X]`
+Symbol: the letter t followed by three comma-separated entries in square brackets: two position numbers $i, j$ and a label $X$; there are no lookalike variants to watch for  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is function notation like $f(x)$ from Algebra 2, except the function takes three inputs (two positions in a sentence and a grammar label) and the "table of values" is something a computer fills in. Square brackets are used instead of parentheses to signal "look this value up in a table."
+
+**General Usage**: In sentence parsing (working out the grammatical structure of a sentence), $t[i,j,X]$ is the stored score of the best way to build a piece of grammatical structure labeled $X$ (for example a noun phrase) over the stretch of words that starts at fencepost $i$ and ends at fencepost $j$ (see the Span entry in the math_concepts file). The score is a log probability (see the Logarithm entry in the math_symbols file). If $X$ cannot be built over that stretch at all, the score is $-\infty$ (see the Infinity entry in the math_symbols file).
+
+**Example.** Take the four-word sentence "the child raises it", with fencepost numbers $0$ before "the" and $4$ after "it".
+
+1. $t[0,1,\text{DT}] = 0$: the label DT (determiner) fits the word "the" with probability $1$, and $\log 1 = 0$.
+2. $t[0,1,\text{NN}] = -\infty$: the label NN (singular noun) cannot produce "the", and $\log 0 = -\infty$.
+3. $t[0,2,\text{NP}] = -1$: a noun phrase (NP) over "the child" is built with a rule worth $\log 0.5 = -1$ from two pieces each scoring $0$, so $-1 + 0 + 0 = -1$.
+
+**AI/ML Usage**: This is the table filled in by the CKY parsing algorithm (see the CKY Algorithm entry in the math_concepts file) for probabilistic context-free grammars, the classic statistical model of sentence structure in natural language processing (the branch of AI that handles human language). The same "best score per label per position" table idea appears as the tag-versus-position matrix of the Viterbi algorithm for tagging words with parts of speech.
+
+---
+
 <a id="cls-token"></a>
 ### CLS Token — `[CLS]`
 Symbol: `[CLS]`, square brackets around the capital letters "CLS," short for "classification"; used as a special placeholder token  
@@ -762,6 +785,30 @@ On macOS: type normally from the keyboard
 **Example.** For a positive input, say $x = 3$, $\text{ELU}(3) = 3$ — unchanged, just like the identity function. For a negative input, say $x = -2$ with $\alpha=1$: $\text{ELU}(-2) = 1\cdot(e^{-2}-1) \approx 1\cdot(0.135 - 1) = -0.865$. Notice this is close to, but not exactly, $-2$ — the negative side gets squashed smoothly toward $-1$ instead of cutting off sharply at $0$.
 
 **AI/ML Usage**: One of several ReLU variants sometimes used as a hidden-layer activation function inside a neural network — the step every layer performs to reshape its numbers before passing them along, which is what lets the network learn complex, curved patterns instead of only straight-line relationships. ELU was designed specifically to try to help networks train faster and end up more robust than plain ReLU, at the cost of being somewhat more expensive to compute on every single neuron, every single time it runs.
+
+---
+
+<a id="emission-matrix"></a>
+### Emission Matrix — `E`
+Symbol: E, an ordinary capital letter (some texts use a lowercase φ or $B$ for the same table)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is a table of numbers in the same spirit as a multiplication table: one row for each possible hidden "state", one column for each possible visible outcome, and each cell holds a probability. It goes beyond Algebra 2 only in that each row is a probability distribution (see the Probability Simplex entry in the math_symbols file) and the table is used by a model that works through a sequence (see the Hidden Markov Model entry in the math_concepts file).
+
+**General Usage**: In a Hidden Markov Model with $|\mathcal{T}|$ possible tags and a vocabulary of $|\mathcal{V}|$ words, the emission matrix $E$ has $|\mathcal{T}|$ rows and $|\mathcal{V}|$ columns. The entry in row $y$ and column $x$ is the probability of the word $x$ appearing given that the tag is $y$: $E[y,x]=P(x\mid y)$. Every row contains numbers between 0 and 1 that add up to 1, because a given tag must produce some word from the fixed vocabulary.
+
+**Example.** Suppose the tag set is $\{\text{NN},\text{DT}\}$ and the vocabulary is $\{\text{dog},\text{the},\text{cat}\}$:
+
+$$
+E=\begin{array}{c|ccc} & \text{dog} & \text{the} & \text{cat}\\ \hline \text{NN} & 0.5 & 0 & 0.5\\ \text{DT} & 0 & 1 & 0\end{array}
+$$
+
+1. Read the NN row: $P(\text{dog}\mid\text{NN})=0.5$, $P(\text{the}\mid\text{NN})=0$, $P(\text{cat}\mid\text{NN})=0.5$.
+2. Check the row sums to 1: $0.5+0+0.5=1$.
+3. Check the DT row: $0+1+0=1$.
+4. The matrix has $2$ rows and $3$ columns, which is $|\mathcal{T}|\times|\mathcal{V}|$.
+
+**AI/ML Usage**: In a Hidden Markov Model for part-of-speech tagging, the emission matrix stores how likely each word is under each grammatical tag; it is one of the three parameter blocks alongside the initial distribution and the transition matrix. It is typically estimated by counting how often each word appears with each tag in labeled text, then dividing by the tag's total count.
 
 ---
 
@@ -1272,6 +1319,26 @@ On macOS: press Option+5
 **Example.** As $x$ gets larger and larger — $10$, then $100$, then $1{,}000{,}000$ — the value of $x^2$ also grows without ever stopping or leveling off. Mathematicians describe this by saying "as $x \to \infty$ (as $x$ approaches infinity), $x^2 \to \infty$ too" — both quantities grow forever, with no final, largest value ever reached.
 
 **AI/ML Usage**: Appears when describing limiting, best-case, or worst-case behavior in machine learning theory — for instance, describing mathematically what happens to a model's expected error "as the number of training examples goes to infinity," a core theoretical question in learning theory about whether an algorithm is even capable of eventually learning the truth given enough data. It also shows up practically: the value of cross-entropy loss (the standard loss function for classification) technically approaches infinity as a model becomes extremely, catastrophically confident in a wrong answer — which is exactly why that loss function so strongly punishes overconfident mistakes.
+
+---
+
+<a id="initial-distribution"></a>
+### Initial Distribution — `s`
+Symbol: s, a lowercase letter (written as a capital S on some boards)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is just a list of probabilities, one per possible starting option, like the percentages on a pie chart that must total 100%. The new part is that the list describes where a random process begins (see the Probability Simplex entry in the math_symbols file).
+
+**General Usage**: In a Hidden Markov Model, the initial distribution $s$ is a vector with $|\mathcal{T}|$ entries (one per tag), where entry $y$ equals $P(y_1=y)$, the probability that the first tag of a sequence is $y$. All entries lie between 0 and 1 and they sum to 1.
+
+**Example.** With tag set $\{\text{NN},\text{DT},\text{VB}\}$, take $s=(0.2,\,0.7,\,0.1)$:
+
+1. Entry for NN: $P(y_1=\text{NN})=0.2$.
+2. Entry for DT: $P(y_1=\text{DT})=0.7$.
+3. Entry for VB: $P(y_1=\text{VB})=0.1$.
+4. Check: $0.2+0.7+0.1=1$, and every entry is between 0 and 1, so this is a valid distribution.
+
+**AI/ML Usage**: It is the first parameter used when a Hidden Markov Model generates or scores a tagged sentence: the factor $P(y_1)$ at the front of the joint probability. Unlike the unconstrained weights of many models, its entries are constrained to be probabilities.
 
 ---
 
@@ -1911,6 +1978,28 @@ On macOS: type f normally; for θ, open the character picker (Fn/🌐) and searc
 
 ---
 
+<a id="parent-annotation-caret"></a>
+### Parent Annotation Caret — `X^Y`
+Symbol: ^ (caret, U+005E), written between a grammar symbol and the label of its parent in a parse tree, as in NP^S. Do not confuse it with the exponent caret in $x^2$ or the hat accent $\hat{x}$.  
+On macOS: press Shift-6 on a US keyboard.
+
+**The Big Idea**: In Algebra 2 a label such as $f_1$ or $f'$ is a name with a small tag attached to tell related things apart. Here the tag is the parent: $NP^S$ is the ordinary label "noun phrase" with the extra information "found directly under a sentence node." A parse tree (a diagram showing how a sentence is built from phrases, like a family tree) gives every node exactly one parent, so the tag is always well defined.
+
+**General Usage**: Write $X^Y$ for a node with label $X$ whose parent node has label $Y$. The root has no parent, so it receives the artificial parent label $ROOT$, giving $S^{ROOT}$. Only labels of phrases and part-of-speech tags are tagged; the words at the bottom are not.
+
+**Example.** Take the tree for "She saw it": $S$ has children $NP$ and $VP$; $NP$ has child $PRP$ (over "She"); $VP$ has children $VBD$ (over "saw") and $PRP$ (over "it").
+
+1. The root: $S \to S^{ROOT}$.
+2. Children of $S$: $NP \to NP^S$ and $VP \to VP^S$.
+3. Child of $NP^S$: $PRP \to PRP^{NP}$.
+4. Children of $VP^S$: $VBD \to VBD^{VP}$ and $PRP \to PRP^{VP}$.
+
+The two $PRP$ nodes now have different labels, $PRP^{NP}$ and $PRP^{VP}$.
+
+**AI/ML Usage**: In a probabilistic context-free grammar (PCFG: a set of rewrite rules such as $NP \to DT\ NN$, each with a probability estimated from a treebank of human-parsed sentences), relabeling every node this way lets the grammar assign different probabilities to subject noun phrases ($NP^S$) and object noun phrases ($NP^{VP}$). This is the preprocessing step called vertical Markovization (see the Vertical Markovization entry in the math_concepts file).
+
+---
+
 <a id="partial-derivative"></a>
 ### Partial Derivative — `∂`
 Symbol: ∂, the partial-differential sign  
@@ -1953,6 +2042,43 @@ On macOS: type normally from the keyboard — Shift+/ (slash)
 **Example.** An action schema (a template describing a general kind of action a planner can take, before it's filled in with any specific objects — see Action Schema in the math_concepts file) parameter list written as `(Drive ?p ?from ?to)` immediately signals that $p$, $\textit{from}$, and $\textit{to}$ are all variables — placeholders standing in for whatever specific objects eventually get substituted in. A grounded fact — one with actual objects substituted in for every variable — like `(At Alice Home)` uses no leading question marks at all, since `Alice` and `Home` are both specific, concrete objects, not variables.
 
 **AI/ML Usage**: This is purely a syntax and readability convention specific to PDDL, but it's an extremely useful, immediately visible one for a person reading through a planning file: it lets a reader instantly tell apart general, reusable templates from specific, fully grounded facts, just by glancing at whether a leading `?` is present or absent.
+
+---
+
+<a id="penn-treebank-part-of-speech-tags"></a>
+### Penn Treebank Part-of-Speech Tags — `NN, NNS, NNP, VB, VBD, VBN, VBP, VBZ, CD`
+Symbol: short strings of capital Latin letters, each one a label for a kind of word; the letters abbreviate the category (N for noun, V for verb, B for base form, D for past tense, Z for the third-person "-s" ending, CD for cardinal number)  
+On macOS: ordinary keyboard letters, typed in capitals (hold Shift or use Caps Lock); no special character is needed
+
+**The Big Idea**: In Algebra 2 you label things with short names, such as $f$ for a function or $x$ for an unknown, so that you can talk about them compactly. These tags work the same way for words: instead of writing "a plural noun" every time, a tag such as NNS stands for it. The tags refine the everyday grammar categories (noun, verb, number) into finer, mutually exclusive labels, so that every word in a sentence receives exactly one.
+
+**General Usage**: A *part-of-speech tag* is a label saying what grammatical role a word plays in a particular sentence. The Penn Treebank English tagset has 45 tags. The ones most often met are:
+
+| Tag | Meaning | Example word |
+|---|---|---|
+| NN | noun, singular or mass | interest |
+| NNS | noun, plural | rates |
+| NNP | proper noun, singular | Fed |
+| VB | verb, base form (the bare infinitive) | interest, in "to interest" |
+| VBD | verb, past tense | fed |
+| VBN | verb, past participle (the form used after "had") | fed |
+| VBP | verb, present tense, not third-person singular | interest, in "I interest" |
+| VBZ | verb, present tense, third-person singular | raises |
+| CD | cardinal number | 0.5 |
+
+The same word can carry different tags in different sentences, so a tag belongs to a word in context, not to the word alone.
+
+**Example.** Take the sentence *Fed raises interest rates 0.5 percent* and list the tags a word could take in isolation:
+
+1. *Fed*: NNP, VBD, VBN, which is 3 tags.
+2. *raises*: NNS, VBZ, which is 2 tags.
+3. *interest*: NN, VBP, VB, which is 3 tags.
+4. *rates*: NNS, VBZ, which is 2 tags.
+5. *0.5*: CD, which is 1 tag. *percent*: NN, which is 1 tag.
+6. The number of complete tag sequences is the product: $3 \times 2 \times 3 \times 2 \times 1 \times 1 = 36$.
+7. One valid sequence is NNP, VBZ, NN, NNS, CD, NN, which reads as "Fed" (noun) "raises" (verb) "interest rates" (noun compound) "0.5 percent".
+
+**AI/ML Usage**: These tags are the output labels of a *part-of-speech tagger*, a model (a function whose internal numbers are fitted to data) that reads a sentence and predicts one tag per word. The Penn Treebank is the standard labeled collection of English text used to train and test such taggers, and the tags serve as inputs to later steps such as *syntactic parsing* (see the Syntactic Parsing entry in the math_concepts file). See also the Part-of-Speech Tagging and Tag Lattice entries in the math_concepts file.
 
 ---
 
@@ -2056,6 +2182,27 @@ On macOS: type normally from the keyboard
 **Example.** In the sentence "cats chase mice," the word "cats" is in position 1, "chase" is in position 2, and "mice" is in position 3. A positional embedding attaches a distinct numeric tag to each position, so even if a model looked at the words "in a bag" without inherent order, adding $\text{PE}$ would still let it know "cats" originally came before "chase."
 
 **AI/ML Usage**: An essential component of every Transformer-based model, including the large language models (like GPT and Claude) behind today's most capable AI chatbots. Because the core attention mechanism inside a Transformer processes an entire sequence of words all at once, rather than reading them strictly one after another the way a person reads a sentence, positional embeddings are specifically what give the model any sense of word order at all — without them, the model would have no built-in way to tell "dog bites man" apart from "man bites dog," since both sentences use the exact same words.
+
+---
+
+<a id="positional-feature-function"></a>
+### Positional Feature Function — `f(x̄, y, i)`
+Symbol: f, a lowercase letter, written with three inputs: x̄ (x with an overbar, the input sequence), y (a candidate label), and i (a position number)  
+On macOS: type normally from the keyboard; for the bar over x, see the Vector Overbar entry
+
+**The Big Idea**: This is function notation from Algebra 2, $f(x)$, except that the function now takes three inputs instead of one, and its output is a list of numbers (a vector) rather than a single number. It extends the Feature Extractor / Feature Function entry by adding "which label are we considering?" and "which position in the sequence are we looking at?"
+
+**General Usage**: For an input sequence $\bar{x} = (x_1, \dots, x_n)$ (for example the words of a sentence), a candidate label $y$ (for example a part-of-speech tag), and a position $i$ with $1 \le i \le n$, the vector $f(\bar{x}, y, i)$ describes the position-$i$ situation using numbers. Each coordinate of the vector is usually an indicator (see the Indicator Function entry in the math_concepts file) of a conjunction of properties, such as "the word at position $i$ is a certain word, and the label is $y$." Dropping the input $i$ gives $f(\bar{x}, y)$, which cannot tell one position from another.
+
+**Example.** Take the sentence "Fed raises interest rates 0.5 percent," the candidate label $y = \text{NN}$ (a singular noun), and position $i = 3$, so the current word is "interest," the previous word is "raises," and the next word is "rates." In the NN part of the vector, three coordinates equal $1$ and all others are $0$:
+
+1. the coordinate for "current word = interest," so its value is $1$;
+2. the coordinate for "previous word = raises," so its value is $1$;
+3. the coordinate for "next word = rates," so its value is $1$.
+
+Every coordinate belonging to a different label, such as VBZ, is $0$.
+
+**AI/ML Usage**: Used in classifier-based part-of-speech taggers, where the model scores each candidate tag at each position of a sentence using a weighted sum of these features (a logistic regression, a classifier that turns such scores into probabilities). Without the position input $i$ the features would be identical for every word in the sentence, so the tagger could only predict the same tag distribution everywhere. Conditional random fields, a model for tagging whole sequences, use the same kind of feature function with additional inputs for neighboring labels.
 
 ---
 
@@ -2208,6 +2355,21 @@ On macOS: open the character picker (Fn/🌐) and search "greek capital letter p
 **Example.** If comparing three candidate answers with scores $\Psi(\text{answer}_1)=4$, $\Psi(\text{answer}_2)=9$, $\Psi(\text{answer}_3)=2$, the highest-scoring one, answer 2, would typically be selected as the best guess.
 
 **AI/ML Usage**: Used in "structured prediction" problems — tasks where the model's output isn't just a single category, but an entire structured object, like a full sequence of grammatical tags for a sentence, or a whole parse tree. A scoring function $\Psi$ assigns a single overall score to a complete candidate output, and the model then searches over every reasonable candidate output to find whichever one earns the single highest score.
+
+---
+
+<a id="q-function-action-value-function"></a>
+### Q-Function (Action-Value Function) — `Q(s, a)`
+Symbol: Q, an ordinary uppercase letter used as function notation, applied to a state-action pair $(s,a)$ — not to be confused with the Query, Key, and Value entry's unrelated use of the same letter in attention notation  
+On macOS: type normally from the keyboard, no special character needed
+
+**The Big Idea**: This builds on ordinary function notation from Algebra 2 — writing $f(x)$ for "the output of $f$ at input $x$" — except that $Q$ takes two inputs, a state $s$ and an action $a$, instead of one. It also builds on the Expectation entry above: $Q(s,a)$ is defined as an expected value.
+
+**General Usage**: $Q(s,a)$ is the expected value of taking action $a$ at state $s$ — informally, "how good is it to do $a$ right now, averaged over everything that could happen afterward." At a state where it is the max player's turn (see the Minimax Algorithm entry in `math_concepts.md`), the best action is whichever maximizes $Q$, written $a^* = \arg\max_a Q(s,a)$ (see the Arg Min / Arg Max entry); at a state where it is the min player's turn, the best action instead minimizes the same shared $Q$-value, $a'^* = \arg\min_{a'} Q(s',a')$. This is a direct generalization of the plain backed-up minimax value used when a game tree is small enough to solve exactly: instead of only being defined by exhaustively backing up values from the leaves, $Q(s,a)$ leaves open exactly *how* the expectation gets computed — for instance, by Monte Carlo Estimation (see that entry in `math_concepts.md`) when the tree is far too large to explore exhaustively.
+
+**Example.** Suppose at state $s$ the player to move has three candidate actions $a_1, a_2, a_3$, and each has already been estimated (say, by averaging the outcomes of many random playouts — see the Random Playout (Rollout) entry in `math_concepts.md`) to have value $Q(s,a_1) = 0.2$, $Q(s,a_2) = 0.7$, $Q(s,a_3) = -0.1$. Since it is the max player's turn, the best action is $a^* = \arg\max_a Q(s,a) = a_2$, because $0.7$ is the largest of the three values — the player should take action $a_2$.
+
+**AI/ML Usage**: $Q(s,a)$ — often called the "Q-value" or "action-value function" — is one of the central objects in reinforcement learning generally, not just in adversarial game search. Algorithms such as Q-learning learn an approximation of $Q(s,a)$ directly from an agent's trial-and-error experience interacting with an environment, so the agent can act well without ever needing to know the environment's full dynamics in advance. Game-playing systems such as DeepMind's AlphaGo and AlphaZero combine a learned, Q-value-like estimate with Monte Carlo Tree Search to play Go and chess at a superhuman level, guiding the search toward moves a trained neural network estimates to be valuable rather than exploring every possibility uniformly.
 
 ---
 
@@ -2434,42 +2596,6 @@ On macOS: type normally from the keyboard — angle brackets and letters are ord
 
 ---
 
-<a id="set-intersection"></a>
-### Set Intersection — `∩`
-Symbol: ∩, the intersection sign (U+2229); it looks like an upside-down U, and the union sign ∪ is the reverse  
-On macOS: open the character picker (Fn/🌐) and search "intersection" — pick the plain "intersection" ∩, not the larger "n-ary intersection" ⋂, and take care not to pick the union symbol ∪
-
-**The Big Idea**: You have solved systems of inequalities, and the solution is the set of points that satisfy both at once, the overlap of two shaded regions. That overlap is exactly an intersection. It is the "and" partner of the Set Union entry ($\cup$, "in either"); the logical version is the Conjunction entry ($\wedge$).
-
-**General Usage**: For two sets $A$ and $B$, $A \cap B$ is the set of all elements that belong to both $A$ and $B$. If they share nothing, $A \cap B = \emptyset$ (see the Empty Set entry).
-
-**Example.** Let $A = \{1,2,3,4\}$ and $B = \{3,4,5,6\}$.
-
-1. Check each element of $A$: $1$ is not in $B$; $2$ is not in $B$; $3$ is in $B$; $4$ is in $B$.
-2. The shared elements are $3$ and $4$, so $A \cap B = \{3,4\}$.
-3. Compare the union: $A \cup B = \{1,2,3,4,5,6\}$, which contains everything from either set.
-4. Check a disjoint case: for $\{1,2\}$ and $\{7,8\}$, no element appears in both, so the intersection is $\emptyset$.
-5. Inequalities: for the system $x>1$ and $x<5$, $\{x>1\}\cap\{x<5\}=\{1<x<5\}$.
-
-**AI/ML Usage**: In motion planning, $V \cap \mathcal{X}_{\text{goal}}$ is the set of sampled vertices that landed inside the goal region; probabilistic completeness for sampling-based planners asks for that overlap to be non-empty (see the Probabilistic Completeness Bound entry and the Probabilistic Completeness entry in the math_concepts file). In data work, the intersection of two search results or two sets of labels finds the items they have in common, and overlap between predicted and true regions of an image is measured the same way.
-
----
-
-<a id="special-euclidean-group-in-2d"></a>
-### Special Euclidean Group in 2D — `SE(2)`
-Symbol: none — the capital letters S and E, typed normally, followed by "(2)"
-On macOS: type normally from the keyboard; no special characters are needed
-
-**The Big Idea**: This builds directly on the Configuration Space entry — $SE(2)$ is just the *name* mathematicians give to the specific configuration space of a rigid object that can move around freely in a flat 2D plane: every combination of a position and a facing direction.
-
-**General Usage**: $SE(2)$ is the set of all possible 2D poses of a rigid body — every combination of a position $(x,y)$ and an orientation (heading) $\theta$. Writing a system's configuration space as $[x, y, \theta] \in SE(2)$ (see the Configuration Space entry in this file) is a compact way of saying "this system's state is fully described by a position and a heading in the plane."
-
-**Example.** A car's pose after driving around a room can be fully described by three numbers: how far east it is ($x$), how far north it is ($y$), and which way it's facing ($\theta$, an angle). Any such triple $(x, y, \theta)$ is one member of $SE(2)$ — for instance, the pose "3 meters east, 2 meters north, facing $90°$" is written $(3, 2, 90°) \in SE(2)$.
-
-**AI/ML Usage**: $SE(2)$ is the standard way robotics and autonomous-vehicle research describes the configuration space of any ground vehicle or mobile robot that moves in a plane, as opposed to $SE(3)$ (used for objects like drones or robot arms that can also move and rotate in full 3D space). Writing "Configuration Space: $[x,y,\theta] \in SE(2)$" is shorthand for exactly the kind of configuration space already described in the Configuration Space entry, specialized to planar rigid-body motion.
-
----
-
 <a id="set-braces"></a>
 ### Set Braces — `{ }`
 Symbol: { and }, left and right curly brackets  
@@ -2512,6 +2638,27 @@ On macOS: type the backslash key directly — some texts write A − B instead, 
 **Example.** Let $A = \{1,2,3,4\}$ and $B=\{2,4\}$. Removing every element of $B$ from $A$ leaves $A \setminus B = \{1,3\}$ — just the elements unique to $A$.
 
 **AI/ML Usage**: Used to describe how a validation or test set is carved out and kept separate from a full dataset before training begins — written as Training Set $=$ Full Dataset $\setminus$ Test Set — a formal way of stating the crucial rule that a model must never train directly on the exact examples that will later be used to honestly evaluate how well it actually performs.
+
+---
+
+<a id="set-intersection"></a>
+### Set Intersection — `∩`
+Symbol: ∩, the intersection sign (U+2229); it looks like an upside-down U, and the union sign ∪ is the reverse  
+On macOS: open the character picker (Fn/🌐) and search "intersection" — pick the plain "intersection" ∩, not the larger "n-ary intersection" ⋂, and take care not to pick the union symbol ∪
+
+**The Big Idea**: You have solved systems of inequalities, and the solution is the set of points that satisfy both at once, the overlap of two shaded regions. That overlap is exactly an intersection. It is the "and" partner of the Set Union entry ($\cup$, "in either"); the logical version is the Conjunction entry ($\wedge$).
+
+**General Usage**: For two sets $A$ and $B$, $A \cap B$ is the set of all elements that belong to both $A$ and $B$. If they share nothing, $A \cap B = \emptyset$ (see the Empty Set entry).
+
+**Example.** Let $A = \{1,2,3,4\}$ and $B = \{3,4,5,6\}$.
+
+1. Check each element of $A$: $1$ is not in $B$; $2$ is not in $B$; $3$ is in $B$; $4$ is in $B$.
+2. The shared elements are $3$ and $4$, so $A \cap B = \{3,4\}$.
+3. Compare the union: $A \cup B = \{1,2,3,4,5,6\}$, which contains everything from either set.
+4. Check a disjoint case: for $\{1,2\}$ and $\{7,8\}$, no element appears in both, so the intersection is $\emptyset$.
+5. Inequalities: for the system $x>1$ and $x<5$, $\{x>1\}\cap\{x<5\}=\{1<x<5\}$.
+
+**AI/ML Usage**: In motion planning, $V \cap \mathcal{X}_{\text{goal}}$ is the set of sampled vertices that landed inside the goal region; probabilistic completeness for sampling-based planners asks for that overlap to be non-empty (see the Probabilistic Completeness Bound entry and the Probabilistic Completeness entry in the math_concepts file). In data work, the intersection of two search results or two sets of labels finds the items they have in common, and overlap between predicted and true regions of an image is measured the same way.
 
 ---
 
@@ -2613,6 +2760,57 @@ On macOS: type normally; the exponent caret is Shift+6
 **Example.** At $x=0$: $\log(1+e^0) = \log(2) \approx 0.69$ — notice this is NOT exactly $0$ like plain ReLU would give, it's a smooth, positive value even right at the "corner" point. At $x=10$ (clearly positive): $\log(1+e^{10}) \approx \log(22027) \approx 10.00005$ — extremely close to just $x$ itself, exactly like ReLU would give for a large positive input.
 
 **AI/ML Usage**: Occasionally used as a smoother, fully differentiable alternative to plain ReLU inside a neural network's hidden layers, specifically in cases where ReLU's sharp corner at $x=0$ could create numerical or optimization difficulties for that particular architecture. It also appears inside the mathematical formulas used to define certain probabilistic models, where its smoothness turns out to be mathematically convenient.
+
+---
+
+<a id="special-euclidean-group-in-2d"></a>
+### Special Euclidean Group in 2D — `SE(2)`
+Symbol: none — the capital letters S and E, typed normally, followed by "(2)"
+On macOS: type normally from the keyboard; no special characters are needed
+
+**The Big Idea**: This builds directly on the Configuration Space entry — $SE(2)$ is just the *name* mathematicians give to the specific configuration space of a rigid object that can move around freely in a flat 2D plane: every combination of a position and a facing direction.
+
+**General Usage**: $SE(2)$ is the set of all possible 2D poses of a rigid body — every combination of a position $(x,y)$ and an orientation (heading) $\theta$. Writing a system's configuration space as $[x, y, \theta] \in SE(2)$ (see the Configuration Space entry in this file) is a compact way of saying "this system's state is fully described by a position and a heading in the plane."
+
+**Example.** A car's pose after driving around a room can be fully described by three numbers: how far east it is ($x$), how far north it is ($y$), and which way it's facing ($\theta$, an angle). Any such triple $(x, y, \theta)$ is one member of $SE(2)$ — for instance, the pose "3 meters east, 2 meters north, facing $90°$" is written $(3, 2, 90°) \in SE(2)$.
+
+**AI/ML Usage**: $SE(2)$ is the standard way robotics and autonomous-vehicle research describes the configuration space of any ground vehicle or mobile robot that moves in a plane, as opposed to $SE(3)$ (used for objects like drones or robot arms that can also move and rotate in full 3D space). Writing "Configuration Space: $[x,y,\theta] \in SE(2)$" is shorthand for exactly the kind of configuration space already described in the Configuration Space entry, specialized to planar rigid-body motion.
+
+---
+
+<a id="split-point"></a>
+### Split Point — `k`
+Symbol: the lowercase Latin letter k; it is a name chosen by convention, not a special character  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is just a variable with an inequality attached, like "$1 < x < 5$" from Algebra 2: $k$ stands for any whole number strictly between two endpoints, and you are asked to try each allowed value.
+
+**General Usage**: When a piece of text from fencepost $i$ to fencepost $j$ is divided into a left part and a right part, the dividing fencepost is the split point $k$, with $i < k < j$. The left part covers $(i,k)$ and the right part covers $(k,j)$. Each different value of $k$ is a different way to divide the text in two.
+
+**Example.** For the stretch from fencepost $0$ to fencepost $2$ ("the child"), the only whole number with $0 < k < 2$ is $k = 1$, so there is exactly one split: "the" on the left and "child" on the right. For the whole sentence from $0$ to $4$, $k$ can be $1$, $2$, or $3$, giving three candidate splits: "the | child raises it", "the child | raises it", and "the child raises | it".
+
+**AI/ML Usage**: In the CKY parsing algorithm (see the CKY Algorithm entry in the math_concepts file), the score for a stretch of words is found by trying every split point $k$ and keeping the best one (a maximum, see the Max Function entry in the math_symbols file). Having to try $O(n)$ split points for each of the $O(n^2)$ stretches of an $n$-word sentence is what makes the algorithm's running time cubic in $n$.
+
+---
+
+<a id="stack-notation"></a>
+### Stack Notation — `σ | w₋₁`
+Symbol: σ (Greek small letter sigma) written for "the whole stack," a vertical bar `|` meaning "with this item on top," and a subscript such as `w₋₁` or `w₋₂` naming the top item and the one beneath it. Do not confuse this lowercase σ with the sigma used for a standard deviation or a sigmoid (see the Sigma, lowercase and Sigmoid Function entries).  
+On macOS: for σ, open the character picker (Fn/🌐) and search "greek small letter sigma," choosing the lowercase one (not the final-sigma ς); the bar `|` is Shift + the backslash key. In LaTeX it is `\sigma \mid w_{-1}`.
+
+**The Big Idea**: This builds on subscripts and function notation from Algebra 2, where a subscript such as $x_1$ names one item in a list. A **stack** is a list that can only be changed at one end, like a pile of plates where you can only add or remove the top plate. The notation gives names to the top of that pile by counting backward from it: $w_{-1}$ is the last (top) item, and $w_{-2}$ is the one just beneath it. The negative subscript is a naming convention for "counting from the end," not a negative number to compute with.
+
+**General Usage**: Let $\sigma$ stand for a stack, meaning a list of items in which only the last item (the top) is added or removed. Writing $\sigma \mid w_{-1}$ describes a stack whose top item is $w_{-1}$ and in which $\sigma$ stands for everything underneath it. Writing $\sigma \mid w_{-2}, w_{-1}$ describes a stack whose top two items are $w_{-2}$ (second from the top) and $w_{-1}$ (top), with $\sigma$ again standing for everything below. An arrow between two such patterns describes how an operation rewrites the stack: for example $\sigma \mid w_{-2}, w_{-1} \to \sigma \mid w_{-1}$ means "remove the top two items, then put back only $w_{-1}$."
+
+**Example.** Take the stack $[\text{ROOT}, \text{I}, \text{ate}]$, written with the top at the right, and apply the rewrite $\sigma \mid w_{-2}, w_{-1} \to \sigma \mid w_{-1}$.
+
+1. Match the pattern: the top item is $w_{-1} = \text{ate}$.
+2. The item just beneath it is $w_{-2} = \text{I}$.
+3. Everything below those two is $\sigma = [\text{ROOT}]$.
+4. The right-hand side keeps $\sigma$ and $w_{-1}$ only, so the new stack is $[\text{ROOT}, \text{ate}]$.
+5. The item $w_{-2} = \text{I}$ has been removed from the stack (in a parser, it would at this moment be recorded as a child of "ate").
+
+**AI/ML Usage**: This notation is used to define the operations of a transition-based dependency parser (see the Transition-Based Dependency Parsing entry in the math_concepts file), such as the left-arc and right-arc rules of the arc-standard system (see the Arc-Standard Transition System entry in the math_concepts file). A parser repeatedly rewrites its stack with these patterns while reading a sentence left to right, and a classifier that decides which rewrite to apply reads features taken from the top items $w_{-1}$ and $w_{-2}$ of the stack (a classifier is a model that picks one label from a fixed set of choices).
 
 ---
 
@@ -2774,6 +2972,25 @@ On macOS: type normally, using ^ (Shift+6) for a raised index and _ for a lowere
 
 ---
 
+<a id="tag-set"></a>
+### Tag Set — `𝒯, |𝒯|`
+Symbol: 𝒯, a script (calligraphic) capital T; $|\mathcal{T}|$ with vertical bars means the number of tags. Do not confuse it with the plain capital T used for the transition matrix  
+On macOS: open the character picker (Fn/🌐) and search "script capital T"; in LaTeX write `\mathcal{T}`
+
+**The Big Idea**: A set is just a list of allowed values, like the set of possible answers on a multiple-choice question (see the Vocabulary entry in the math_symbols file, which is the same idea for words). The vertical bars around a set mean "how many items it contains", just as absolute-value bars mean something different around a number.
+
+**General Usage**: The tag set $\mathcal{T}$ is the finite collection of labels a tagging model may assign, for example grammatical categories such as noun, verb, determiner, preposition. Writing $y_i\in\mathcal{T}$ says the tag at position $i$ is one of those labels.
+
+**Example.** If $\mathcal{T}=\{\text{NN},\text{DT},\text{VB}\}$ then:
+
+1. $|\mathcal{T}|=3$, because it lists three tags.
+2. $y_1=\text{DT}$ is allowed since DT is in $\mathcal{T}$.
+3. $y_1=\text{JJ}$ is not allowed, since JJ is not listed.
+
+**AI/ML Usage**: In Hidden Markov Model tagging, $|\mathcal{T}|$ sets the sizes of the parameters: the initial distribution has length $|\mathcal{T}|$, the transition matrix is $|\mathcal{T}|\times|\mathcal{T}|$, and the emission matrix is $|\mathcal{T}|\times|\mathcal{V}|$.
+
+---
+
 <a id="tanh"></a>
 ### Tanh — `tanh(x)`
 Symbol: none — written as ordinary text  
@@ -2871,6 +3088,52 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="transition-matrix"></a>
+### Transition Matrix — `T`
+Symbol: T, an ordinary capital letter (written as a plain T, distinct from the script tag-set symbol 𝒯)  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This is a square table where row $a$, column $b$ answers "if I am at $a$ now, how likely is $b$ next?", like a distance chart between cities but holding probabilities (see the Matrix and Matrix Entry entries in the math_symbols file). The new part is that each row must be a probability distribution (see the Probability Simplex entry in the math_symbols file).
+
+**General Usage**: In a Hidden Markov Model with tag set $\mathcal{T}$, the transition matrix $T$ is $|\mathcal{T}|\times|\mathcal{T}|$. The entry in row $y_{\text{curr}}$ and column $y_{\text{next}}$ is $P(y_{\text{next}}\mid y_{\text{curr}})$. The same matrix is used at every position in the sequence, and every row has entries between 0 and 1 that sum to 1 (once the probability of stopping is counted as one more possible outcome).
+
+**Example.** With tags $\{\text{DT},\text{NN}\}$, take rows $y_{\text{curr}}$ and columns $y_{\text{next}}$:
+
+$$
+T=\begin{array}{c|cc} & \text{DT} & \text{NN}\\ \hline \text{DT} & 0 & 1\\ \text{NN} & 0.4 & 0.6\end{array}
+$$
+
+1. The cell in row DT, column NN is $P(\text{NN}\mid\text{DT})=1$.
+2. The cell in row NN, column NN is $P(\text{NN}\mid\text{NN})=0.6$.
+3. Check row NN: $0.4+0.6=1$. Check row DT: $0+1=1$.
+
+**AI/ML Usage**: In Hidden Markov Model part-of-speech tagging, $T$ captures the syntactic "skeleton" of a sentence, such as how likely a noun is to follow a determiner. It is estimated by counting tag-to-tag pairs in labeled text.
+
+---
+
+<a id="tree-probability-pcfg"></a>
+### Tree Probability under a PCFG — `P(T) = ∏ P(r | parent(r))`
+Symbol: $P(T)$ for the probability of a parse tree $T$, built from the product sign $\prod$ (capital Greek letter pi) with the rule $r$ and its parent symbol $\text{parent}(r)$ written to the right  
+On macOS: for $\prod$, press Option+Shift+P; the rest is ordinary typing
+
+**The Big Idea**: You already know that the chance of several independent things all happening is found by multiplying their individual chances (Algebra 2 probability). This entry applies that to a tree: each rule used in the tree is one independent choice, so the chance of the whole tree is the product of the rule chances. Read the Product Notation, Conditional Bar, and Probabilistic Context-Free Grammar entries first for the pieces.
+
+**General Usage**: In a probabilistic context-free grammar, every rule $r$ has a probability $P(r \mid \text{parent}(r))$: the chance of choosing that rule given the symbol on its left-hand side (its parent). The probability of a whole tree $T$ is the product of these probabilities over every rule $r$ that appears in the tree:
+$$
+P(T)=\prod_{r\in T}P\big(r\mid\text{parent}(r)\big)
+$$
+A rule that is used twice in the tree is multiplied in twice.
+
+**Example.** Take a tree that uses exactly three rules: $S\rightarrow NP\ VP$ with probability $1$, $VP\rightarrow VBD$ with probability $\tfrac34$, and $NP\rightarrow DT\ NN$ with probability $\tfrac12$ (these are rules and probabilities from a small grammar; the lexical rules are left out to keep the arithmetic short).
+1. List the rules in the tree: the three above.
+2. Write the product: $P(T)=1\times\tfrac34\times\tfrac12$.
+3. Multiply the last two: $\tfrac34\times\tfrac12=\tfrac38$.
+4. Multiply by $1$: $P(T)=\tfrac38$.
+
+**AI/ML Usage**: This is how a probabilistic context-free grammar scores a candidate parse of a sentence in natural language processing (the field of getting computers to work with human language). A parser compares the scores of many candidate trees and returns the highest-scoring one: $\arg\max_T P(T\mid\bar{x})$ for a sentence $\bar{x}$ (see the Arg Min / Arg Max entry).
+
+---
+
 <a id="uniform-distribution-notation"></a>
 ### Uniform Distribution Notation — `𝒰(a, b)`
 Symbol: 𝒰, mathematical script capital U  
@@ -2964,6 +3227,35 @@ On macOS: type normally from the keyboard — for the bracketed `<UNK>` variant,
 
 ---
 
+<a id="upper-confidence-bound-ucb1-uct"></a>
+### Upper Confidence Bound (UCB1 / UCT) — `Q(a) + c√(log N / N_a)`
+Symbol: none — written as an ordinary formula combining existing notation (see the Q-Function (Action-Value Function) entry above)  
+On macOS: type normally from the keyboard; for the square-root sign, open the character picker (Fn/🌐) and search "square root sign", or write it in LaTeX as `\sqrt{}`
+
+**The Big Idea**: This builds directly on the Q-Function (Action-Value Function) entry above and on the idea of a confidence interval — a range around an estimate that gets narrower the more data you collect, similar to how a poll's "margin of error" shrinks as more people are surveyed. The upper confidence bound formula is nothing more than "take the estimated value, then add a bonus that is large when you're uncertain and small when you're confident" — arithmetic you could compute by hand once you're given the numbers.
+
+**General Usage**: For a choice (an "action" $a$) that has been tried some number of times, with an average payoff estimate $Q(a)$ (see the Q-Function (Action-Value Function) entry above), the upper confidence bound score is
+$$
+u(a) = Q(a) + c\sqrt{\dfrac{\log N}{N_a}}
+$$
+where $N$ is the total number of times the current situation (state) has been visited altogether, $N_a$ is the number of times this specific action $a$ has been chosen from that state so far, and $c$ is a constant, chosen ahead of time, that controls how much weight is placed on exploring versus exploiting (see the Multi-Armed Bandit Problem entry in the math_concepts file). A tree policy that always picks the action with the largest $u(a)$ balances two forces: $Q(a)$ rewards actions that have looked good so far (exploitation), while $c\sqrt{\log N / N_a}$ rewards actions that have been tried only a few times relative to how long the state itself has been explored (exploration) — the fewer times $N_a$ an action has been tried, the larger this second term grows, pushing the algorithm to give under-tried actions another chance. As $N_a$ grows large relative to $N$, this bonus term shrinks toward zero, and the choice of action becomes dominated by $Q(a)$ alone. This same construction, applied at every node of a growing search tree, is sometimes named UCT ("Upper Confidence bounds applied to Trees").
+
+**Example.** Suppose a state has been visited $N = 100$ times in total, and one candidate action has an average payoff so far of $Q(a) = 0.5$, having itself been chosen $N_a = 4$ times, with exploration constant $c = 1$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Compute $\log N$ | $\log 100 \approx 4.605$ | $4.605$ |
+| 2. Divide by $N_a$ | $4.605 / 4$ | $1.151$ |
+| 3. Take the square root | $\sqrt{1.151}$ | $\approx 1.073$ |
+| 4. Multiply by $c$ | $1 \times 1.073$ | $1.073$ |
+| 5. Add to $Q(a)$ | $0.5 + 1.073$ | $u(a) \approx 1.573$ |
+
+Now compare against a second action with the same average payoff $Q(a')=0.5$ but chosen far more often, $N_{a'} = 90$: $\log(100)/90 \approx 0.0512$, $\sqrt{0.0512}\approx 0.226$, giving $u(a') \approx 0.5 + 0.226 = 0.726$ — a much smaller exploration bonus, since this action's estimate is already based on many more samples and needs less encouragement to be tried again.
+
+**AI/ML Usage**: This formula is the standard tree policy used to select which branch of a search tree to expand next in Monte Carlo Tree Search (see that entry in the math_concepts file): at every node, the algorithm picks whichever child action currently has the highest $u(a)$, so the tree naturally grows deeper along promising, well-explored lines while still periodically revisiting under-explored ones. Real implementations almost always replace the theoretical constant (for example $c=\sqrt{2}$, the value that is provably optimal for payouts restricted to the range $[-1,1]$) with a value tuned by hand for the specific game, since real games' reward structures rarely match the bandit theory's exact assumptions. DeepMind's AlphaGo (see that entry in the math_concepts file) uses a closely related but distinct exploration bonus, $u(s,a)\propto P(s,a)/(1+N(s,a))$, which replaces the $\log N/N_a$ term with a decaying bonus weighted by a learned prior probability $P(s,a)$ from a trained policy network, rather than by uniform statistical confidence alone.
+
+---
+
 <a id="variance"></a>
 ### Variance — `σ², Var(x)`
 Symbol: σ, Greek small letter sigma, with a superscript two  
@@ -3050,6 +3342,35 @@ On macOS: type normally from the keyboard
 **Example.** Start an RRT at $x_{init}=(0,0)$. After $n=3$ samples suppose the tree holds $V_3=\{(0,0),(1,0),(1,1)\}$ (a sample whose motion hit an obstacle is discarded, so $V_n$ can hold fewer than $n+1$ vertices). If the goal region is the square $[2,3]\times[2,3]$, the overlap $V_3\cap X_{goal}=\emptyset$ (no vertex is in it), so no solution yet. If the fourth sample adds a vertex at $(2.5,2.5)$, then $V_4\cap X_{goal}=\{(2.5,2.5)\}\ne\emptyset$, so a solution exists.
 
 **AI/ML Usage**: Probabilistic-completeness theorems are stated as bounds on $\mathbb{P}(V_n\cap X_{goal}\ne\emptyset)$ (see the Probabilistic Completeness entry in the math_concepts file).
+
+---
+
+<a id="viterbi-score"></a>
+### Viterbi Score — `v_i(ỹ)`
+Symbol: $v_i(\tilde{y})$ — a lowercase "v" with a subscript position $i$, applied to a label written with a tilde, $\tilde{y}$ (U+0079 "y" with a combining tilde, U+0303; in LaTeX `\tilde{y}`). Do not confuse the tilde-topped $\tilde{y}$ with the barred $\bar{y}$, which means a whole sequence of labels.  
+On macOS: type the letter "y", then in a math document write `\tilde{y}`; in plain text open the character picker (Fn/🌐), search "combining tilde" (U+0303) and insert it right after the "y"
+
+**The Big Idea**: Think of a function-notation table from Algebra 2, where $f(x)$ gives one output for each input. $v_i(\tilde{y})$ is a table with two inputs: a position $i$ in a sentence and a candidate label $\tilde{y}$ for that position. Each cell holds one number, the best score any partial labeling of the sentence up to position $i$ can achieve under the rule that it ends with label $\tilde{y}$. The scores are logarithms of probabilities (see the Logarithm entry in the math symbols file), so they are at most $0$ and larger (closer to $0$) is better.
+
+**General Usage**: For a sentence of $n$ words and a label set $\mathcal{T}$ with $|\mathcal{T}|$ labels, the table has $n \times |\mathcal{T}|$ cells. The first position is filled by $v_1(\tilde{y}) = \log P(x_1\mid\tilde{y}) + \log P(\tilde{y})$, and later positions by
+$$
+v_i(\tilde{y}) = \log P(x_i\mid\tilde{y}) + \max_{\tilde{y}_{\text{prev}}}\Big[\log P(\tilde{y}\mid\tilde{y}_{\text{prev}}) + v_{i-1}(\tilde{y}_{\text{prev}})\Big].
+$$
+The three pieces are the emission score of the current word, the transition score from the previous label, and the best score already computed for the previous position.
+
+**Example.** With start score $\log P(N)=-1$, emission $\log P(\text{they}\mid N)=-1$, and the cell for the label $N$ at position $1$:
+
+1. Write the base-case formula: $v_1(N) = \log P(x_1\mid N) + \log P(N)$.
+2. Substitute the numbers: $v_1(N) = -1 + (-1)$.
+3. Add: $v_1(N) = -2$.
+
+For position 2 with the word "can", emission $\log P(\text{can}\mid N)=-3$, transition $\log P(N\mid N)=-2$, and a previous score of $-2$ for $N$ and $-4$ for $V$ with $\log P(N\mid V)=-1$:
+
+4. Candidate from $N$: $-2 + (-2) = -4$. Candidate from $V$: $-4 + (-1) = -5$.
+5. The maximum is $-4$.
+6. Add the emission: $v_2(N) = -3 + (-4) = -7$.
+
+**AI/ML Usage**: This is the quantity stored in each cell of the Viterbi algorithm's table (see the Viterbi Algorithm entry in the math concepts file) when decoding hidden Markov models for part-of-speech tagging. In conditional random fields and other structured models the same table is filled with learned feature scores instead of log probabilities, and the cell $v_{n+1}(\text{STOP})$ at the extra final column holds the score of the best complete sequence.
 
 ---
 
