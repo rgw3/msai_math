@@ -7,62 +7,66 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 210 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 222 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Greater Than / Less Than | Halfspace to Probabilistic Completeness Bound | Probability / Probability Density to Zero-One Loss |
+| Absolute Value to Greater Than / Less Than | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probability / Probability Density](#probability-probability-density) |
-| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability Simplex](#probability-simplex) |
-| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Product Notation](#product-notation) |
-| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Progress Radius](#progress-radius) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Pseudo-Inverse](#pseudo-inverse) |
-| [All-Ones Vector](#all-ones-vector) | [Hypothesis](#hypothesis) | [Psi, uppercase](#psi-uppercase) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Identity Matrix](#identity-matrix) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [If and Only If](#if-and-only-if) | [Query, Key, and Value](#query-key-and-value) |
-| [Approximately Equal](#approximately-equal) | [Implies Arrow](#implies-arrow) | [Question-Mark Relation](#question-mark-relation) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
-| [Assignment Arrow](#assignment-arrow) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
-| [Attention Operator](#attention-operator) | [Integral](#integral) | [ReLU](#relu) |
-| [Ball of Radius r](#ball-of-radius-r) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
+| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
+| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
+| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
+| [All-Ones Vector](#all-ones-vector) | [Hypothesis](#hypothesis) | [Proportional To](#proportional-to) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Identity Matrix](#identity-matrix) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
+| [Approximately Equal](#approximately-equal) | [Implies Arrow](#implies-arrow) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Importance Weight](#importance-weight) | [Query, Key, and Value](#query-key-and-value) |
+| [Assignment Arrow](#assignment-arrow) | [Index Range Colon](#index-range-colon) | [Question-Mark Relation](#question-mark-relation) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
+| [Attention Operator](#attention-operator) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
+| [Ball of Radius r](#ball-of-radius-r) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
+| [Belief](#belief) | [Integral](#integral) | [ReLU](#relu) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
 | [Best Solution Cost](#best-solution-cost) | [Jacobian](#jacobian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
-| [Bias Term](#bias-term) | [Label](#label) | [Sampling Notation](#sampling-notation) |
-| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
-| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
-| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Chart Score](#chart-score) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
+| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Mean Overbar](#sample-mean-overbar) |
+| [Bias Term](#bias-term) | [Label](#label) | [Sample Space](#sample-space) |
+| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
+| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Segment Embedding](#segment-embedding) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Sentinel Token](#sentinel-token) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Braces](#set-braces) |
+| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Chart Score](#chart-score) | [Limit](#limit) | [Set Difference](#set-difference) |
 | [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Intersection](#set-intersection) |
 | [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Union](#set-union) |
 | [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Sigma, lowercase](#sigma-lowercase) |
 | [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigma, uppercase](#sigma-uppercase) |
 | [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigmoid Function](#sigmoid-function) |
 | [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sign Function](#sign-function) |
-| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Softmax Function](#softmax-function) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Split Point](#split-point) |
-| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Stack Notation](#stack-notation) |
-| [Dataset](#dataset) | [Mean](#mean) | [Standard Deviation](#standard-deviation) |
-| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [State Space](#state-space) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Transition Function](#state-transition-function) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [Step Size](#step-size) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stride](#stride) |
-| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Subset](#subset) |
-| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Summation](#summation) |
-| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Superscript Example Index](#superscript-example-index) |
-| [Emission Matrix](#emission-matrix) | [Normal Distribution Notation](#normal-distribution-notation) | [Tag Set](#tag-set) |
-| [Empty Set](#empty-set) | [Not Equal](#not-equal) | [Tanh](#tanh) |
-| [Epsilon](#epsilon) | [Number Sign / Count](#number-sign-count) | [TF-IDF](#tf-idf) |
-| [Error Signal](#error-signal) | [Omega](#omega) | [Theta](#theta) |
-| [Eta](#eta) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Tilde Accent](#tilde-accent) |
-| [Euclidean Norm](#euclidean-norm) | [Outer Product](#outer-product) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Padding](#padding) | [Training Set](#training-set) |
+| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Sine and Cosine](#sine-and-cosine) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
+| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Split Point](#split-point) |
+| [Dataset](#dataset) | [Mean](#mean) | [Stack Notation](#stack-notation) |
+| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Standard Deviation](#standard-deviation) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Space](#state-space) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [State Transition Function](#state-transition-function) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Step Size](#step-size) |
+| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Stride](#stride) |
+| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Subset](#subset) |
+| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Summation](#summation) |
+| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Superscript Example Index](#superscript-example-index) |
+| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Tag Set](#tag-set) |
+| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tanh](#tanh) |
+| [Error Signal](#error-signal) | [Number Sign / Count](#number-sign-count) | [TF-IDF](#tf-idf) |
+| [Eta](#eta) | [Omega](#omega) | [Theta](#theta) |
+| [Euclidean Norm](#euclidean-norm) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Tilde Accent](#tilde-accent) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Outer Product](#outer-product) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Padding](#padding) | [Training Set](#training-set) |
 | [Existential Quantifier](#existential-quantifier) | [Parameterized Function / Model](#parameterized-function-model) | [Transition Matrix](#transition-matrix) |
 | [Expectation](#expectation) | [Parent Annotation Caret](#parent-annotation-caret) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
 | [Factorial](#factorial) | [Partial Derivative](#partial-derivative) | [Uniform Distribution Notation](#uniform-distribution-notation) |
@@ -79,8 +83,8 @@ All 210 entries, alphabetical. Read down the first column, then down the second,
 | [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Feature Function](#positional-feature-function) | [Viterbi Score](#viterbi-score) |
 | [Goal Set](#goal-set) | [Potential Function](#potential-function) | [Vocabulary](#vocabulary) |
 | [Gradient](#gradient) | [Precedence Relation](#precedence-relation) | [Weight Vector](#weight-vector) |
-| [Graph](#graph) | [Prime Notation](#prime-notation) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) | [Zero-One Loss](#zero-one-loss) |
+| [Graph](#graph) | [Predicted Belief](#predicted-belief) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) | [Zero-One Loss](#zero-one-loss) |
 
 ## Symbols
 
@@ -277,7 +281,7 @@ On macOS: type normally from the keyboard
 
 **Example.** Picture a very small version: one query vector represents the word "it" in a sentence, and there are three key vectors representing the words "dog," "park," and "ran." The attention operation computes a match score between the query for "it" and each key, then converts those scores into weights that add up to 1 — say $0.7$ for "dog," $0.2$ for "park," and $0.1$ for "ran." The final output for "it" is then a weighted blend: $0.7\cdot(\text{dog's value}) + 0.2\cdot(\text{park's value}) + 0.1\cdot(\text{ran's value})$ — mostly "about the dog," with a smaller contribution from the other words.
 
-**AI/ML Usage**: This is the single most important building block inside the "Transformer" architecture — the type of neural network design behind essentially every well-known modern AI language model, including ChatGPT and Claude, as well as many image- and speech-processing systems. Picture a model reading the sentence "The trophy didn't fit in the suitcase because it was too big" and trying to figure out what "it" refers to. Self-attention lets the model directly compare the word "it" against every other word in the sentence, compute a relevance score for each one, and blend information from the most relevant words (here, "trophy" scoring much higher than "suitcase") into its understanding of "it" — this is what lets these models correctly track relationships across long stretches of text far better than older designs could.
+**AI/ML Usage**: This is the single most important building block inside the "Transformer" architecture — the type of neural network design behind essentially every well-known modern AI language model, such as the widely used chatbots, as well as many image- and speech-processing systems. Picture a model reading the sentence "The trophy didn't fit in the suitcase because it was too big" and trying to figure out what "it" refers to. Self-attention lets the model directly compare the word "it" against every other word in the sentence, compute a relevance score for each one, and blend information from the most relevant words (here, "trophy" scoring much higher than "suitcase") into its understanding of "it" — this is what lets these models correctly track relationships across long stretches of text far better than older designs could.
 
 ---
 
@@ -298,6 +302,61 @@ On macOS: build it from an ordinary capital B and a subscript; in LaTeX type `B_
 5. Area of this 2D ball: $\pi r^2 = 25\pi \approx 78.5$.
 
 **AI/ML Usage**: In sampling-based robot motion planning (for example a Rapidly-exploring Random Tree, RRT), a small ball around a waypoint on a path is the target a random sample must land in to make progress; the chance a uniform random sample lands there is the ball's volume divided by the volume of the whole search space, and a proof that the planner eventually succeeds needs only that this ratio is positive. Balls also define "neighborhoods" in K-Nearest Neighbors-style methods (all training points within distance $r$ of a query) and in clustering algorithms.
+
+---
+
+<a id="belief"></a>
+### Belief — `Bel(x_t)`
+Symbol: the three ordinary letters B-e-l (short for "belief") followed by a state variable in parentheses, as in $\text{Bel}(x_t)$; written upright so it is not mistaken for a product of variables $B \cdot e \cdot l$. A bar over it, $\overline{\text{Bel}}$, marks a belief that has not yet been corrected by a sensor reading (see the Predicted Belief entry)  
+On macOS: no special character; type the letters B, e, l normally (in LaTeX, `\text{Bel}(x_t)`)
+
+**The Big Idea**: In Algebra 2, function notation $f(x)$ is a rule that takes an input and returns a number. $\text{Bel}(x)$ is the same kind of rule: feed in a possible state $x$ (for example a location) and it returns a non-negative number saying how strongly the system believes the true state is $x$. The new idea is that this number is a probability (see the Probability / Probability Density entry), and that it is a conditional probability (see the Conditional Bar entry) whose "given" part is everything the agent has done and sensed so far.
+
+**General Usage**: $\text{Bel}(x_t) = p(x_t \mid x_0, u_{1:t}, s_{1:t})$ is the probability distribution over the state $x_t$ (for example, an agent's position) at time step $t$, given the starting state $x_0$ (when it is known), all movement or odometry readings $u_{1:t}$ and all sensor observations $s_{1:t}$ (see the Index Range Colon and Odometry entries). It is a whole function over all possible states, not a single number: its values are never negative, and over a finite list of states they add to $1$ (for a continuous state they integrate to $1$). The observations and odometry are already-known fixed values, which is why they do not appear as inputs to $\text{Bel}$. At $t=0$ nothing has happened yet, so $\text{Bel}(x_0)=p(x_0)$, the starting distribution. A belief is a distribution, not an answer: even a perfectly computed belief can stay spread out when sensors are noisy or the surroundings look alike.
+
+**Example.** A robot could be in one of 4 cells and has no idea which, so $\text{Bel}=(0.25,\ 0.25,\ 0.25,\ 0.25)$. Its door sensor reports "door," and a door is 3 times as likely to produce that report as a wall; cells 2 and 3 are doors.
+
+1. Check the starting belief is valid: $0.25+0.25+0.25+0.25 = 1$.
+2. Multiply cell by cell by the relative likelihoods $(1, 3, 3, 1)$: $(0.25,\ 0.75,\ 0.75,\ 0.25)$.
+3. The total is now $2.0$, so divide every value by $2.0$: $\text{Bel}=(0.125,\ 0.375,\ 0.375,\ 0.125)$.
+4. Check: $0.125+0.375+0.375+0.125=1$. The belief now favors the door cells, but it is not certain: the chance of cell 1 or cell 4 is $0.125+0.125 = 0.25$.
+
+**AI/ML Usage**: Belief is the central quantity of the Bayes filter family used in robot localization and tracking (see the Bayes Filter entry in the math_concepts file): the algorithm's whole job is to update $\text{Bel}$ every time the robot moves or senses. It can be stored as a histogram, as a set of random samples (a particle filter), or as a bell curve (a Kalman filter). The same idea appears in reinforcement learning as the "belief state" of a partially observable decision process, where an agent cannot see the true state and must act on its belief about it.
+
+---
+
+<a id="belief-over-the-full-history"></a>
+### Belief over the Full History — `Bel(x_{1:t})`
+Symbol: the upright letters B-e-l followed, in parentheses, by a state variable whose subscript is an index range, as in $\text{Bel}(x_{1:t})$ (read "belief of x from 1 through t"); do not confuse it with $\text{Bel}(x_t)$, whose subscript is a single index and which is about one time step only  
+On macOS: no special character; type the letters B, e, l normally and Shift+; for the colon (in LaTeX, `\text{Bel}(x_{1:t})`)
+
+**The Big Idea**: In Algebra 2 a function can take one input, $f(x)$, or several inputs at once, $f(x, y, z)$. The ordinary belief (see the Belief entry) is a one-input rule: give it one possible state at the latest time step and it returns how plausible that state is. The belief over the full history is the several-input version: give it a whole list of states, one for every time step so far, and it returns how plausible that entire list is. The step beyond Algebra 2 is that the returned number is a conditional probability (see the Conditional Bar entry) of several things being true together (see the Joint Probability Distribution entry in the math_concepts file); the Index Range Colon entry explains the subscript $1{:}t$.
+
+**General Usage**: $\text{Bel}(x_{1:t}) = p(x_{1:t} \mid x_0, u_{1:t}, s_{1:t})$ is the joint probability distribution over the whole sequence of states $x_1, x_2, \dots, x_t$, given the starting state $x_0$, every movement reading $u_{1:t}$ (see the Odometry entry in the math_concepts file) and every sensor observation $s_{1:t}$. It is conditioned on exactly the same information as $\text{Bel}(x_t)$; only the left of the bar differs. Under the two Markov assumptions and the time causality assumption (see the Time Causality Assumption entry in the math_concepts file) it obeys the recursive rule $$\text{Bel}(x_{1:t}) \propto p(s_t \mid x_t)\; p(x_t \mid x_{t-1}, u_t)\; \text{Bel}(x_{1:t-1}),$$ where $p(s_t \mid x_t)$ is the observation likelihood and $p(x_t \mid x_{t-1}, u_t)$ is the motion model (see those entries in the math_concepts file) and $\propto$ means "equal up to a constant multiplier" (see the Proportional To entry). Unlike the rule for $\text{Bel}(x_t)$, this rule contains no sum or integral over the previous state, because the previous state is kept as part of the answer rather than removed (see the Marginalization entry in the math_concepts file).
+
+**Example.** A robot is in one of two cells, A or B. It starts in A ($x_0 = \text{A}$). At each step it is told to stay; it really stays with probability $0.8$ and slips to the other cell with probability $0.2$. Its sensor reports the correct cell with probability $0.9$ and the wrong one with probability $0.1$. At step 1 the sensor reports "A"; at step 2 it reports "B".
+
+1. Step 1, list every history of length one and multiply the motion factor by the sensor factor (the previous belief is $1$ because the start is known).
+
+| History $x_1$ | Motion $p(x_1 \mid \text{A})$ | Sensor $p(\text{"A"} \mid x_1)$ | Product |
+|---|---|---|---|
+| A | $0.8$ | $0.9$ | $0.72$ |
+| B | $0.2$ | $0.1$ | $0.02$ |
+
+2. The products total $0.72 + 0.02 = 0.74$. Divide each by $0.74$: $\text{Bel}(x_1{=}\text{A}) = 0.72/0.74 \approx 0.973$ and $\text{Bel}(x_1{=}\text{B}) = 0.02/0.74 \approx 0.027$. Check: $0.973 + 0.027 = 1$.
+3. Step 2, extend every history by one state and multiply the previous belief by the new motion factor and the new sensor factor.
+
+| History $(x_1, x_2)$ | $\text{Bel}(x_1)$ | Motion $p(x_2 \mid x_1)$ | Sensor $p(\text{"B"} \mid x_2)$ | Product |
+|---|---|---|---|---|
+| (A, A) | $0.973$ | $0.8$ | $0.1$ | $0.0778$ |
+| (A, B) | $0.973$ | $0.2$ | $0.9$ | $0.1751$ |
+| (B, A) | $0.027$ | $0.2$ | $0.1$ | $0.0005$ |
+| (B, B) | $0.027$ | $0.8$ | $0.9$ | $0.0194$ |
+
+4. The products total $0.0778 + 0.1751 + 0.0005 + 0.0194 = 0.2728$. Divide each by $0.2728$: $\text{Bel}(\text{A},\text{A}) \approx 0.285$, $\text{Bel}(\text{A},\text{B}) \approx 0.642$, $\text{Bel}(\text{B},\text{A}) \approx 0.002$, $\text{Bel}(\text{B},\text{B}) \approx 0.071$. Check: $0.285 + 0.642 + 0.002 + 0.071 = 1$.
+5. Notice that no step added rows together: each history kept its own row. To recover the ordinary single-step belief, add the rows that end in the same cell: $\text{Bel}(x_2{=}\text{B}) \approx 0.642 + 0.071 = 0.713$. That adding-up is exactly the sum (or integral) that the single-step update needs and the full-history update does not.
+
+**AI/ML Usage**: The full-history belief is the quantity a particle filter is derived from. A particle filter is a method that represents a probability distribution by a collection of random samples called particles, each one a concrete guess at the state; keeping one set of particles per time step represents $\text{Bel}(x_{1:t})$, and the recursive rule above says each new set can be built from the previous set using only the motion model and the observation likelihood. The same trajectory distribution is the target in robot mapping methods such as FastSLAM and in smoothing, where the goal is to estimate the whole path taken and not only the present position.
 
 ---
 
@@ -433,6 +492,26 @@ On macOS: type normally from the keyboard; no special character needed
 **Example.** Suppose at every point in a game you have $b=3$ possible moves, and you want to plan $d=4$ moves ahead. The total number of possible move sequences to consider is $b^d = 3^4 = 81$. If instead you had $b=10$ choices and planned $d=4$ moves ahead, that jumps to $10^4 = 10{,}000$ — increasing the branching factor even a little causes the total number of possibilities to explode much faster than increasing the depth by the same amount.
 
 **AI/ML Usage**: These two numbers directly determine whether a classical AI search or planning approach is computationally realistic to run at all. Game-playing AI is the classic example: chess has a branching factor around 35 (roughly 35 legal moves at each turn), and looking many moves ahead multiplies that out astronomically fast. This exact problem is why techniques like alpha-beta pruning, and more modern approaches like Monte Carlo Tree Search combined with a trained neural network to guess promising moves (the strategy behind AlphaZero, the AI system that mastered chess and Go), were developed — all specifically to avoid ever having to fully explore the enormous $b^d$ tree of raw possibilities.
+
+---
+
+<a id="cartesian-product"></a>
+### Cartesian Product — `A × B`
+Symbol: ×, the multiplication sign (U+00D7), used here between two sets; not the letter x  
+On macOS: open the character picker (Fn/🌐) and search "multiplication sign"; pick the plain "×" (MULTIPLICATION SIGN), not "✕" or "⨯"
+
+**The Big Idea**: In Algebra 2 you plot points $(x, y)$ on a coordinate plane, where $x$ comes from the horizontal number line and $y$ from the vertical one. The Cartesian product is the name for "every possible pair, first item from one collection, second item from another"; the coordinate plane is exactly the Cartesian product of the real numbers with themselves, $\mathbb{R} \times \mathbb{R}$ (see the Real Numbers entry).
+
+**General Usage**: For two sets $A$ and $B$, the Cartesian product $A \times B$ is the set of all ordered pairs $(a, b)$ with $a$ from $A$ and $b$ from $B$. "Ordered" means the position matters: $(a, b)$ and $(b, a)$ are different pairs. If $A$ has $m$ elements and $B$ has $n$ elements, then $A \times B$ has $m \cdot n$ elements.
+
+**Example.** Let $A = \{1, 2\}$ and $B = \{\text{red}, \text{blue}, \text{green}\}$.
+
+1. List the pairs whose first item is $1$: $(1,\text{red}),\ (1,\text{blue}),\ (1,\text{green})$.
+2. List the pairs whose first item is $2$: $(2,\text{red}),\ (2,\text{blue}),\ (2,\text{green})$.
+3. Together these six pairs are $A \times B$.
+4. Check the count: $2 \cdot 3 = 6$, matching the six pairs listed.
+
+**AI/ML Usage**: Used to state the input type of a function that takes more than one argument. In a type signature such as $f: A \times B \rightarrow \mathbb{R}$ (a function mapping, see the Function Mapping Arrow entry, from a pair of values, one from $A$ and one from $B$, to a real number), the product $A \times B$ says "this function needs one input from each set." For example, a function that returns how likely an outcome $x$ is when a second variable has the value $y$ is naturally written as taking a pair $(x, y)$ from such a product.
 
 ---
 
@@ -902,6 +981,33 @@ On macOS: type normally; the exponent is written with a caret, Shift+6
 
 ---
 
+<a id="evaluated-at-bar"></a>
+### Evaluated-At Bar — `f(x)|_{x=a}`
+Symbol: a tall vertical bar placed after an expression, with a small condition such as x=a written at its lower right. It is the ordinary vertical line character (U+007C VERTICAL LINE), drawn taller; do not confuse it with the Conditional Bar inside a probability, or with the two bars of Absolute Value.  
+On macOS: type Shift + Backslash for the bar `|`; in LaTeX write `\Big|_{x=a}` to get the tall version with its condition.
+
+**The Big Idea**: Algebra 2 already asks you to "evaluate $f(x)$ at $x = 3$": you replace every $x$ with 3 and compute. The evaluated-at bar is nothing more than a compact way of writing that instruction next to the expression itself, so the substitution travels with the formula.
+
+**General Usage**: $f(x)\,\big|_{x=a}$ means "take the expression $f(x)$ and substitute the value $a$ for $x$". If the expression has several variables, the bar fixes only the ones named beneath it and leaves the others free. When the expression is a conditional probability (see the Conditional Bar entry), the two bars do different jobs: the short one inside the parentheses means "given", and the tall one after the parentheses means "with this value plugged in".
+
+**Example.** Let $f(x) = x^2 + 2x$. Then
+
+$$
+f(x)\,\Big|_{x=3} = 3^2 + 2\cdot 3 = 9 + 6 = 15 .
+$$
+
+With two variables, let $g(x, y) = 2x + y$. Fixing only $x$:
+
+$$
+g(x, y)\,\Big|_{x=4} = 2\cdot 4 + y = 8 + y ,
+$$
+
+which is still an expression in $y$. Fixing both: $g(x,y)\,\big|_{x=4,\,y=1} = 8 + 1 = 9$, a single number.
+
+**AI/ML Usage**: In a particle filter (see the Particle Filter entry in the math_concepts file), a method that tracks a robot's position using many guessed positions called particles, the weight of particle $i$ is written $w^{i} = p(s_t \mid x_t)\,\big|_{x_t = \tilde{x}_t^{i}}$: the sensor model $p(s_t \mid x_t)$, which says how probable a sensor reading $s_t$ is from position $x_t$, with the position slot set to that particle's guessed position. The same bar appears when a gradient (a list of slopes, one per adjustable number of a model) is taken at the current parameter values, as in $\nabla_\theta L\,\big|_{\theta = \theta_0}$.
+
+---
+
 <a id="existential-quantifier"></a>
 ### Existential Quantifier — `∃`
 Symbol: ∃, "there exists"  
@@ -1307,6 +1413,64 @@ On macOS: open the character picker (Fn/🌐) and search "rightwards double arro
 
 ---
 
+<a id="importance-weight"></a>
+### Importance Weight — `w(x) = p(x)/q(x)`
+Symbol: w, the ordinary lowercase Latin letter w; often written with a hat, ŵ, for the raw (un-normalized) value. Do not confuse it with the Greek letter ω (omega), which looks similar in handwriting, or with the bold 𝐰 used for a weight vector.  
+On macOS: type the W key directly; for the hatted form, open the character picker (Fn/🌐), search "combining circumflex accent", and insert it after the w.
+
+**The Big Idea**: This is a ratio, exactly like the ratios of Algebra 2: one number divided by another, telling you how many times bigger the top is than the bottom. Here the top is how likely a value $x$ is under the distribution you care about, and the bottom is how likely the same $x$ is under the distribution your samples actually came from. A ratio above 1 says "this kind of sample is rarer in my data than it should be, so count it more"; a ratio below 1 says "this kind of sample is over-supplied, so count it less". The technique that uses these weights is described in the Importance Sampling entry in the math_concepts file.
+
+**General Usage**: For a target distribution $p(x)$ and a proposal distribution $q(x)$ (the distribution the samples are drawn from), the importance weight of a sample $x_i$ is
+$$
+w(x_i) = \frac{p(x_i)}{q(x_i)}.
+$$
+If $p$ and $q$ are identical, every weight is 1. The weight is undefined where $q(x) = 0$, and grows without limit as $q(x)$ approaches 0 while $p(x)$ stays positive. When $p$ is known only up to a constant multiple, the raw weights $\hat{w}_i$ are correct only up to that same constant, and are **normalized** by dividing each by the total, so that they add up to 1:
+$$
+w_i = \frac{\hat{w}_i}{\sum_j \hat{w}_j}.
+$$
+
+**Example.** Suppose a sample $x$ has target probability $p(x) = 0.8$ and proposal probability $q(x) = 0.5$. Its importance weight is
+$$
+w(x) = \frac{0.8}{0.5} = 1.6,
+$$
+so it counts as 1.6 samples' worth. A different sample with $p = 0.2$ and $q = 0.5$ has weight $\frac{0.2}{0.5} = 0.4$.
+
+Now normalize a set of raw weights. Take three samples with raw weights $\hat{w}_1 = 0.02$, $\hat{w}_2 = 0.06$, $\hat{w}_3 = 0.12$.
+
+| Step | Computation | Result |
+|---|---|---|
+| Add the raw weights | $0.02 + 0.06 + 0.12$ | $0.20$ |
+| Normalize sample 1 | $0.02 \div 0.20$ | $0.1$ |
+| Normalize sample 2 | $0.06 \div 0.20$ | $0.3$ |
+| Normalize sample 3 | $0.12 \div 0.20$ | $0.6$ |
+| Check the total | $0.1 + 0.3 + 0.6$ | $1.0$ |
+
+The ratios between the weights are unchanged - sample 3 still counts six times as much as sample 1 ($0.12 \div 0.02 = 6$ and $0.6 \div 0.1 = 6$) - but the weights now behave like probabilities.
+
+**AI/ML Usage**: In a particle filter (an algorithm that tracks a robot's location with a set of weighted guesses called particles), the importance weight of each particle works out to the observation likelihood $p(s_t \mid x_t)$: the probability of the sensor reading $s_t$ that was actually received, if the robot were at that particle's state $x_t$. The weights are normalized as above before the particles are resampled. The sum of the raw weights, $\sum_j \hat{w}_j$, is itself monitored as a health check: it is large when the particles explain the sensor data well and small when they do not.
+
+---
+
+<a id="index-range-colon"></a>
+### Index Range Colon — `x_{1:t}`
+Symbol: a subscript containing a start index, a colon, and an end index, as in $x_{1:t}$ (read "x from 1 to t"); the colon `:` is read "through"  
+On macOS: press Shift+; (semicolon) to type the colon; in LaTeX write `x_{1:t}`
+
+**The Big Idea**: In Algebra 2, a sequence is written term by term, $a_1, a_2, \dots, a_n$, and a summation $\sum_{i=1}^{t}$ uses a lower and an upper limit to say "from 1 up to $t$." The colon subscript names a whole stretch of a sequence with one symbol, doing the same job as the limits on a summation but for a list instead of an addition.
+
+**General Usage**: $x_{a:b}$ stands for the ordered list $x_a, x_{a+1}, \dots, x_b$: every value from index $a$ through index $b$, inclusive of both ends. It names one collection, not a single number, so it can sit on either side of a conditional bar, as in $p(x_{1:t} \mid s_{1:t})$ (see the Conditional Bar entry), where it most often means "given all of these." The list $x_{a:b}$ has $b-a+1$ entries.
+
+**Example.** Let $t = 4$ and let the measurements be $s_1 = 2$, $s_2 = 5$, $s_3 = 3$, $s_4 = 6$.
+
+1. $s_{1:4}$ means every measurement from step 1 through step 4.
+2. Write it out: $s_{1:4} = (2, 5, 3, 6)$, which has $4 - 1 + 1 = 4$ entries.
+3. The shorter range $s_{2:3}$ keeps only steps 2 and 3, so $s_{2:3} = (5, 3)$.
+4. Adding one new time step extends the list by one item: $s_{1:4} = (s_{1:3},\ s_4)$.
+
+**AI/ML Usage**: Standard wherever data arrives in a sequence. In a hidden Markov model (a model with a hidden state that changes step by step and produces visible outputs), the quantity $p(x_{1:t} \mid s_{1:t})$ asks for the most plausible history of hidden states given all outputs seen so far. In language models, $w_{1:t}$ denotes the first $t$ words of a sentence, used to predict word $t+1$. Splitting $s_{1:t}$ into $s_{1:t-1}$ and $s_t$ is the usual first move when deriving an update that processes one new item at a time (see the Bayes Filter entry in the math_concepts file).
+
+---
+
 <a id="infinity"></a>
 ### Infinity — `∞`
 Symbol: ∞, the infinity symbol  
@@ -1534,6 +1698,34 @@ On macOS: press Option+, (comma) — its partner ≥ is Option+.
 **Example.** $5 \le 5$ is true (equal counts), $4 \le 5$ is true (smaller counts), but $6 \le 5$ is false (bigger doesn't count either way).
 
 **AI/ML Usage**: Used to define the exact condition for an admissible search heuristic ($H(s) \le V^*(s)$, see Admissible Heuristic), and also to define constraints in optimization problems, such as requiring a trained model's weights to stay within some allowed size, $\lVert w \rVert \le c$, as part of a "constrained optimization" setup used in some specialized training scenarios.
+
+---
+
+<a id="limit"></a>
+### Limit — `lim`
+Symbol: lim, the three lowercase letters l-i-m, written upright with the approach condition (such as N → ∞) set underneath; not to be confused with "lim sup" or "lim inf," which are different, more advanced notions  
+On macOS: type the letters lim directly; for the arrow underneath, open the character picker (Fn/🌐) and search "rightwards arrow," choosing the plain → (U+2192)
+
+**The Big Idea**: In Algebra 2, the graph of $y = \frac{1}{x}$ has a horizontal asymptote at $y = 0$: as $x$ grows, the curve gets closer and closer to the line without ever landing on it. A limit is the precise name for "the value being approached." It is the first idea of calculus and goes one step beyond Algebra 2, but the asymptote picture is all that is needed to read it. See the Infinity entry first if the symbol $\infty$ is unfamiliar.
+
+**General Usage**: $\lim_{N\to\infty} a_N = L$ is read "the limit of $a_N$, as $N$ tends to infinity, equals $L$." It means that the values $a_N$ can be made as close to $L$ as desired by taking $N$ large enough, and that they stay that close for every larger $N$. The expression under "lim" says what is changing and what it is heading toward; it may be $N \to \infty$ (growing without bound) or $x \to c$ (approaching a particular number $c$). A limit describes where a quantity is heading, not a value it must actually reach.
+
+**Example.** Take $a_N = \frac{N+1}{N}$ and compute it for growing $N$:
+
+| $N$ | $a_N = \frac{N+1}{N}$ | Distance from 1 |
+|---|---|---|
+| 1 | $\frac{2}{1} = 2$ | $1$ |
+| 10 | $\frac{11}{10} = 1.1$ | $0.1$ |
+| 100 | $\frac{101}{100} = 1.01$ | $0.01$ |
+| 1000 | $\frac{1001}{1000} = 1.001$ | $0.001$ |
+
+Splitting the fraction shows why: $\frac{N+1}{N} = \frac{N}{N} + \frac{1}{N} = 1 + \frac{1}{N}$. As $N$ grows, $\frac{1}{N}$ shrinks toward $0$, so $a_N$ approaches $1$. No value of $N$ makes $a_N$ exactly $1$, yet
+
+$$
+\lim_{N\to\infty} \frac{N+1}{N} = 1 .
+$$
+
+**AI/ML Usage**: Limits state what an algorithm achieves "given enough" of something. The Law of Large Numbers (see that entry in the math_concepts file) says the average of a function over $N$ random samples has the true expected value as its limit as $N \to \infty$, which is the guarantee behind Monte Carlo Estimation (see that entry in the math_concepts file) and behind particle filters, which track a robot's position with a cloud of random samples. Limits also define the derivative used by Gradient Descent (see that entry in the math_concepts file), the procedure that trains most models by repeatedly nudging their numbers downhill on an error measure.
 
 ---
 
@@ -1855,6 +2047,26 @@ On macOS: type the letter, then open the character picker (Fn/🌐), search "com
 **Example.** If $x$ represents the true/false statement "the switch is on," then $\bar{x}$ represents "the switch is NOT on" — whenever $x$ is true, $\bar x$ is false, and whenever $x$ is false, $\bar{x}$ is true, just like $\neg x$.
 
 **AI/ML Usage**: Used in symbolic AI and Boolean-formula-based reasoning systems — including SAT solvers, specialized programs that efficiently solve giant true/false logic puzzles, which are sometimes used internally by advanced AI planning systems — to represent the negation of a variable, cleanly distinguishing "this fact is true" from "this fact is false" within a formal logical expression the solver is working with.
+
+---
+
+<a id="non-negative-real-numbers"></a>
+### Non-Negative Real Numbers — `ℝ^{0+}, ℝ_{≥0}`
+Symbol: ℝ with a superscript 0+, where ℝ is the "double-struck capital R" (U+211D); the same set is also written $\mathbb{R}_{\ge 0}$ or $\mathbb{R}^{+}\cup\{0\}$. Do not confuse with plain capital R  
+On macOS: open the character picker (Fn/🌐) and search "double-struck capital R"; pick "ℝ" (U+211D). In LaTeX, type `\mathbb{R}`
+
+**The Big Idea**: This builds on the Real Numbers entry: it is the real numbers with the negative half of the number line removed. On a number line, it is zero and everything to the right of zero. It is the answer set for any quantity that can never be negative, like a distance or an amount.
+
+**General Usage**: $\mathbb{R}^{0+}$ is the set of all real numbers greater than or equal to $0$. Writing $f(x) \in \mathbb{R}^{0+}$ says that the output of $f$ is always a real number that is zero or positive. Unlike the interval $[0,1]$ (see the Unit Hypercube entry for the one-dimensional case), there is no upper limit: $\mathbb{R}^{0+}$ goes on forever to the right.
+
+**Example.** Test whether each number belongs to $\mathbb{R}^{0+}$:
+
+1. $3.7$: it is real and $3.7 \ge 0$, so it belongs.
+2. $0$: it is real and $0 \ge 0$, so it belongs (zero is included).
+3. $-2$: it is real but $-2 < 0$, so it does not belong.
+4. $50$: it is real and $50 \ge 0$, so it belongs, even though $50$ is far larger than $1$ and so could never be a probability.
+
+**AI/ML Usage**: Appears as the declared output set of anything that must not be negative but is not capped at $1$: a probability density value, a loss value, or a distance. A probability density function (see the Probability Mass Function vs. Probability Density Function entry in the math_concepts file) is written $p(x) \in \mathbb{R}^{0+}$, and its code signature is "takes an outcome, returns an element of $\mathbb{R}^{0+}$."
 
 ---
 
@@ -2181,7 +2393,7 @@ On macOS: type normally from the keyboard
 
 **Example.** In the sentence "cats chase mice," the word "cats" is in position 1, "chase" is in position 2, and "mice" is in position 3. A positional embedding attaches a distinct numeric tag to each position, so even if a model looked at the words "in a bag" without inherent order, adding $\text{PE}$ would still let it know "cats" originally came before "chase."
 
-**AI/ML Usage**: An essential component of every Transformer-based model, including the large language models (like GPT and Claude) behind today's most capable AI chatbots. Because the core attention mechanism inside a Transformer processes an entire sequence of words all at once, rather than reading them strictly one after another the way a person reads a sentence, positional embeddings are specifically what give the model any sense of word order at all — without them, the model would have no built-in way to tell "dog bites man" apart from "man bites dog," since both sentences use the exact same words.
+**AI/ML Usage**: An essential component of every Transformer-based model, including the large language models behind today's most capable AI chatbots. Because the core attention mechanism inside a Transformer processes an entire sequence of words all at once, rather than reading them strictly one after another the way a person reads a sentence, positional embeddings are specifically what give the model any sense of word order at all — without them, the model would have no built-in way to tell "dog bites man" apart from "man bites dog," since both sentences use the exact same words.
 
 ---
 
@@ -2231,6 +2443,25 @@ On macOS: open the character picker (Fn/🌐) and search "precedes" — no Optio
 **General Usage**: $\prec$ ("precedes") and its reverse $\succ$ ("succeeds") describe ordering requirements — see Partial Order for a full worked example, since they share the identical symbol and idea.
 
 **AI/ML Usage**: Plays exactly the same role as Partial Order in AI planning systems — describing required orderings between different actions in a plan (this specific action must happen before that other one) without necessarily locking in one single, fully specified sequence for the entire plan.
+
+---
+
+<a id="predicted-belief"></a>
+### Predicted Belief — `\overline{Bel}(x_{t+1})`
+Symbol: the word Bel with a horizontal bar drawn over it, written $\overline{\text{Bel}}(x_{t+1})$; the bar is an overline accent, a lookalike of the bars used for averages and negation (see the Negation Overbar entry)  
+On macOS: no single key; type the letters and add the bar in LaTeX with `\overline{\text{Bel}}`
+
+**The Big Idea**: In Algebra 2 a prime or bar on a letter often marks "a modified version of the same thing," for example $x$ and $x'$. Here the bar marks a belief that has been moved forward in time but not yet corrected by a new sensor reading. See the Belief entry for what $\text{Bel}$ itself is.
+
+**General Usage**: $\overline{\text{Bel}}(x_{t+1}) = \int p(x_{t+1}\mid x_t,u_{t+1})\,\text{Bel}(x_t)\,dx_t$ is the belief about the next state using only the previous belief and the latest odometry $u_{t+1}$, before any observation at time $t+1$ is used (the integral becomes a sum over cells when the states are a finite list). It is the output of the predict step and the input to the update step (see the Bayes Filter entry in the math_concepts file).
+
+**Example.** A robot is in cell $1$ or cell $2$ with $\text{Bel}(1)=0.6$, $\text{Bel}(2)=0.4$. The motion model for the command "move right" says the robot moves one cell right with probability $0.8$ and stays where it is with probability $0.2$; cell $2$ is the last cell, so from cell $2$ it stays in cell $2$ with probability $1$.
+
+1. Ending in cell $1$ is possible only by "stay" from cell $1$: $\overline{\text{Bel}}(1) = 0.2\times 0.6 = 0.12$.
+2. Ending in cell $2$ is possible by "move" from cell $1$ or by anything from cell $2$: $\overline{\text{Bel}}(2) = 0.8\times 0.6 + 1\times 0.4 = 0.48+0.40 = 0.88$.
+3. Check: $0.12+0.88 = 1$.
+
+**AI/ML Usage**: In every Bayes filter (Kalman filter, histogram filter, particle filter), the predicted belief is what the filter holds after applying the motion model and before the sensor correction. When sensor readings arrive less often than motion commands, the filter replaces the belief by its predicted belief several times in a row.
 
 ---
 
@@ -2328,6 +2559,26 @@ On macOS: open the character picker (Fn/globe key) and search "greek small lette
 
 ---
 
+<a id="proportional-to"></a>
+### Proportional To — `∝`
+Symbol: ∝ (U+221D, PROPORTIONAL TO); it looks like a lowercase Greek alpha $\alpha$ or the infinity sign $\infty$ but is neither: it is open on the right and has no crossing loop  
+On macOS: open the character picker (Fn/🌐) and search "proportional to"; pick the one named "PROPORTIONAL TO" (U+221D), not the Greek letter alpha or the infinity sign
+
+**The Big Idea**: Algebra 2 covers direct variation, $y = kx$: $y$ is proportional to $x$ when one is a fixed constant multiple of the other. The symbol $y \propto x$ says the same thing while leaving the constant $k$ unspoken, so no new mathematics is needed beyond that.
+
+**General Usage**: $A \propto B$ means $A = kB$ for some fixed constant $k \neq 0$ that does not depend on the quantity that varies. It lets a derivation drop factors that do not matter for the question being asked. In probability, $p(x\mid d) \propto f(x)$ means the left side equals $f(x)$ divided by a single normalizing number, chosen so that the whole distribution adds (or integrates) to $1$ (see the Normalization of a Probability Distribution entry in the math_concepts file). Constants that are the same for every candidate $x$ may therefore be dropped while working and restored at the end.
+
+**Example.** Three states have unnormalized scores $f(A)=2$, $f(B)=6$, $f(C)=2$.
+
+1. Add the scores: $2+6+2=10$.
+2. The constant is $k = \tfrac{1}{10}$, because probabilities must add to $1$.
+3. Multiply each score by $k$: $p(A)=0.2$, $p(B)=0.6$, $p(C)=0.2$.
+4. Check: $0.2+0.6+0.2=1$, so $p \propto f$.
+
+**AI/ML Usage**: Bayes' rule is usually used in the form posterior $\propto$ likelihood $\times$ prior, $p(\theta \mid D) \propto p(D \mid \theta)\,p(\theta)$, because the denominator $p(D)$ is the same for every $\theta$ (see the Bayes' Rule entry in the math_concepts file). The update step of a Bayes filter likewise multiplies a likelihood by a prediction and rescales at the end. The softmax function (see the Softmax Function entry) is also a proportionality: output probabilities are proportional to $e^{z_i}$ and are then normalized.
+
+---
+
 <a id="pseudo-inverse"></a>
 ### Pseudo-Inverse — `A†`
 Symbol: †, the dagger (also called an obelisk), written as a superscript directly after a matrix's name, e.g. $A^\dagger$; some textbooks instead use a superscript plus sign meaning the same thing, $A^+$  
@@ -2382,7 +2633,7 @@ On macOS: type normally from the keyboard
 
 **General Usage**: $Q$, $K$, and $V$ are three groups of vectors used together in the attention mechanism — see Attention Operator for a full worked example.
 
-**AI/ML Usage**: The three learned mathematical projections that together define the attention mechanism inside every single layer of a Transformer — the neural network architecture that powers essentially all modern large language models, including GPT, Claude, and BERT, along with many vision and multimodal (text-plus-image) AI systems. Genuinely understanding what $Q$, $K$, and $V$ each represent, and how they combine, is essential to understanding at a fundamental level how these enormously influential modern AI models actually process and relate the different parts of their input.
+**AI/ML Usage**: The three learned mathematical projections that together define the attention mechanism inside every single layer of a Transformer — the neural network architecture that powers essentially all modern large language models, including the chatbot-style systems and BERT, along with many vision and multimodal (text-plus-image) AI systems. Genuinely understanding what $Q$, $K$, and $V$ each represent, and how they combine, is essential to understanding at a fundamental level how these enormously influential modern AI models actually process and relate the different parts of their input.
 
 ---
 
@@ -2494,6 +2745,33 @@ On macOS: type the letters and operators normally; for $\gamma$ and $\eta$ open 
 | 1000 | $6.908/1000=0.006908$ | $0.0831$ | $0.831$ | $0.831$ |
 
 **AI/ML Usage**: Used inside RRT*, a widely used optimal motion-planning algorithm for robot arms and mobile robots. It sets the size of the neighborhood of nearby vertices that RRT* examines for each new vertex, and it shrinks as the tree grows (Karaman and Frazzoli's analysis).
+
+---
+
+<a id="sample-mean-overbar"></a>
+### Sample Mean Overbar — `x̄`
+Symbol: x̄, a letter with a macron (a short bar) above it, read "x bar"; the same bar on another letter, such as f̄ ("f bar"), means the same thing for that quantity. The identical mark is also used for logical negation and for vectors (see the Negation Overbar and Vector Overbar entries), so the meaning must be taken from context  
+On macOS: type the letter, then open the character picker (Fn/🌐), search "combining macron," and choose U+0304; in LaTeX write \bar{x}
+
+**The Big Idea**: Algebra 2 already covers the average of a list of numbers: add them and divide by how many there are. The overbar is simply a compact name for that average, so that a long fraction does not have to be rewritten every time it is needed.
+
+**General Usage**: For values $x_1, x_2, \dots, x_N$, the sample mean is
+
+$$
+\bar{x} = \frac{1}{N}\sum_{i=1}^{N} x_i ,
+$$
+
+where $\sum$ means "add these up" (see the Summation entry). More generally, for a function $f$, $\bar{f} = \frac{1}{N}\sum_{i=1}^{N} f(x_i)$ is the average of the function's values at the samples. Once computed, $\bar{x}$ is a single fixed number: it does not change from one sample to the next. The sample mean is computed from data; the true mean of the underlying distribution is usually written $\mu$ (see the Mean entry), and $\bar{x}$ is an estimate of it.
+
+**Example.** For the four values $2, 4, 4, 10$:
+
+$$
+\bar{x} = \frac{2 + 4 + 4 + 10}{4} = \frac{20}{4} = 5 .
+$$
+
+The deviations from the mean are $2-5=-3$, $4-5=-1$, $4-5=-1$, and $10-5=5$. They add to $-3-1-1+5=0$, which is always true of deviations from $\bar{x}$ and is a quick check that the mean was computed correctly. Squaring the deviations and averaging gives the variance of the four values (see the Variance entry): $\frac{9+1+1+25}{4} = \frac{36}{4} = 9$.
+
+**AI/ML Usage**: Sample means appear wherever a quantity is estimated from data. In a particle filter, a method that tracks a robot's position with a cloud of random position guesses called particles, the reported position is the mean $\bar{x}$ of the particles and the uncertainty is the average of $(x_i - \bar{x})(x_i - \bar{x})^{T}$ (see the Sample Covariance Matrix entry in the math_concepts file). Batch Normalization (see that entry in the math_concepts file) subtracts the mean of each group of training examples from every example in the group, and Principal Component Analysis (see that entry in the math_concepts file) begins by subtracting $\bar{x}$ from every data point.
 
 ---
 
@@ -2730,6 +3008,29 @@ On macOS: type normally from the keyboard
 **Example.** $\text{sign}(7) = +1$. $\text{sign}(-4) = -1$. $\text{sign}(0) = 0$.
 
 **AI/ML Usage**: Defines precisely how the classic Perceptron algorithm — one of the earliest machine learning algorithms ever built — makes its actual prediction: it first computes a weighted sum of its inputs, then applies $\text{sign}(\cdot)$ directly to that number, converting it immediately into a final, clean binary class prediction of either $+1$ or $-1$, with nothing more complicated involved.
+
+---
+
+<a id="sine-and-cosine"></a>
+### Sine and Cosine — `sin θ, cos θ`
+Symbol: sin and cos, the abbreviations for sine and cosine, written upright and followed by an angle, often the Greek letter theta (θ). Do not confuse cos θ with "cosθ" used as shorthand for a similarity score between two vectors.  
+On macOS: type the letters sin and cos directly; for θ open the character picker (Fn/🌐), search "theta", and pick "Greek small letter theta".
+
+**The Big Idea**: This builds on right triangles and the Pythagorean theorem from geometry and Algebra 2. Pick an angle in a right triangle: sine and cosine are the two ratios that say how the slanted side (the hypotenuse) splits into an "up" part and an "across" part. If you travel a distance in a given direction, cosine tells you how far across you went and sine tells you how far up.
+
+**General Usage**: In a right triangle with an angle $\theta$, hypotenuse of length $h$, side next to the angle of length $a$ (adjacent), and side across from the angle of length $o$ (opposite),
+$$\cos\theta = \frac{a}{h}, \qquad \sin\theta = \frac{o}{h}.$$
+Rearranged, $a = h\cos\theta$ and $o = h\sin\theta$. Both values always lie between $-1$ and $1$, and they satisfy $\sin^2\theta + \cos^2\theta = 1$, which is the Pythagorean theorem divided through by $h^2$. For angles beyond $90°$ the same definitions are extended using a circle of radius $1$: the point reached by turning through the angle $\theta$ from the positive $x$ axis has coordinates $(\cos\theta, \sin\theta)$.
+
+**Example.** A right triangle has sides $3$, $4$, and hypotenuse $5$. Let $\theta$ be the angle between the side of length $4$ and the hypotenuse.
+
+1. Adjacent side $a = 4$, opposite side $o = 3$, hypotenuse $h = 5$.
+2. $\cos\theta = a/h = 4/5 = 0.8$.
+3. $\sin\theta = o/h = 3/5 = 0.6$.
+4. Check the identity: $\sin^2\theta + \cos^2\theta = 0.36 + 0.64 = 1$.
+5. Use them in reverse: walking $10$ units in the direction $\theta$ moves you $10 \times 0.8 = 8$ units across and $10 \times 0.6 = 6$ units up, and indeed $\sqrt{8^2 + 6^2} = \sqrt{100} = 10$.
+
+**AI/ML Usage**: In robotics, a robot at heading $\theta$ that drives a distance $d$ moves by $(d\cos\theta,\ d\sin\theta)$, and a range sensor reading of distance $r$ at angle $\theta$ is converted to a point with $x = r\cos\theta$, $y = r\sin\theta$ (see the Polar Coordinates entry in the math_concepts file). Sine and cosine fill the entries of the rotation matrix (see the Rotation Matrix entry). In Transformers, a type of neural network (a model built from layers of simple computing units) for sequences, sine and cosine waves of different frequencies are used to encode each token's position (see the Positional Encoding entry in the math_concepts file).
 
 ---
 

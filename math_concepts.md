@@ -7,110 +7,124 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 299 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 340 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Fine-Tuning (Transfer Learning) | Forward Kinematics and Inverse Kinematics to Open Class and Closed Class Words | Oracle Derivation to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to Generative Model | Geometric Mean to Overfitting | PAC Learning to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Oracle Derivation](#oracle-derivation) |
-| [Absolute Discounting](#absolute-discounting) | [Frontier / Open List](#frontier-open-list) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Accuracy (Classification)](#accuracy-classification) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Orthonormal Basis](#orthonormal-basis) |
-| [Ackermann Steering](#ackermann-steering) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Overfitting](#overfitting) |
-| [Action Schema](#action-schema) | [Generative Likelihood](#generative-likelihood) | [PAC Learning](#pac-learning) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Generative Model](#generative-model) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Geometric Mean](#geometric-mean) | [PDDL](#pddl) |
-| [Add-One Smoothing](#add-one-smoothing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Penn Treebank](#penn-treebank) |
-| [Agnostic Learning](#agnostic-learning) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GLUE Benchmark](#glue-benchmark) | [Perplexity](#perplexity) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [AlphaGo](#alphago) | [Gradient Clipping](#gradient-clipping) | [Planner Completeness](#planner-completeness) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Gradient Descent](#gradient-descent) | [Planning Graph](#planning-graph) |
-| [Arity](#arity) | [Graphical Lasso](#graphical-lasso) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [GraphPlan](#graphplan) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Automatic Differentiation](#automatic-differentiation) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Positional Encoding](#positional-encoding) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Greedy Decoding](#greedy-decoding) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Backpointer](#backpointer) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Posterior Distribution](#posterior-distribution) |
-| [Backpropagation](#backpropagation) | [Grounding / Instantiation](#grounding-instantiation) | [Precision Matrix](#precision-matrix) |
-| [Bag of Words](#bag-of-words) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [BART](#bart) | [Hedge Algorithm](#hedge-algorithm) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Basis Function](#basis-function) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Principal Component Analysis](#principal-component-analysis) |
-| [Batch](#batch) | [Hidden Markov Model](#hidden-markov-model) | [Prior Distribution](#prior-distribution) |
-| [Batch Normalization](#batch-normalization) | [Hierarchical Softmax](#hierarchical-softmax) | [Priority Queue](#priority-queue) |
-| [Bayes' Rule](#bayes-rule) | [Hinge Loss](#hinge-loss) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Beam Search](#beam-search) | [Horizontal Markovization](#horizontal-markovization) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Hyperparameter](#hyperparameter) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [BERT](#bert) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Projective Tree](#projective-tree) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Quadratic Form](#quadratic-form) |
-| [Binarization](#binarization) | [Informed RRT*](#informed-rrt) | [Quiescence Search](#quiescence-search) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Iterative Deepening](#iterative-deepening) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jensen's Inequality](#jensens-inequality) | [Random Forest](#random-forest) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [K-Means Algorithm](#k-means-algorithm) | [Random Projection](#random-projection) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rank](#rank) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kernel Function](#kernel-function) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Centroid](#centroid) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kinodynamic Planning](#kinodynamic-planning) | [Regularization](#regularization) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [KL Divergence](#kl-divergence) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Chernoff Bound](#chernoff-bound) | [Latent Variable](#latent-variable) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [CKY Algorithm](#cky-algorithm) | [Lattice-Based Planning](#lattice-based-planning) | [RoBERTa](#roberta) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Law of Large Numbers](#law-of-large-numbers) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Closed-World Assumption](#closed-world-assumption) | [Layer Normalization](#layer-normalization) | [Sample Complexity](#sample-complexity) |
-| [Clustering](#clustering) | [Lexicalization](#lexicalization) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Likelihood](#likelihood) | [Schur Complement](#schur-complement) |
-| [Computation Graph](#computation-graph) | [Linear Programming](#linear-programming) | [Search Statistics](#search-statistics) |
-| [Conditional Independence](#conditional-independence) | [Linearly Separable](#linearly-separable) | [Self-Attention](#self-attention) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Lipschitz Continuity](#lipschitz-continuity) | [Semantic Parsing](#semantic-parsing) |
-| [Confusion Matrix](#confusion-matrix) | [Log Likelihood](#log-likelihood) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Conjunction Feature](#conjunction-feature) | [Logistic Regression](#logistic-regression) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Consistent Heuristic](#consistent-heuristic) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Loss Surface](#loss-surface) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Constituency Tests](#constituency-tests) | [Lower Bound](#lower-bound) | [Skip-Gram Model](#skip-gram-model) |
-| [Constituent](#constituent) | [Markov Blanket](#markov-blanket) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Markov Model](#markov-model) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Context-Free Grammar](#context-free-grammar) | [Markov's Inequality](#markovs-inequality) | [Sparse Attention](#sparse-attention) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Masked Language Modeling](#masked-language-modeling) | [Spectral Theorem](#spectral-theorem) |
-| [Convex Function](#convex-function) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Coordinate Descent](#coordinate-descent) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Covariance Matrix](#covariance-matrix) | [Maximum Entropy Model](#maximum-entropy-model) | [Stopword](#stopword) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [STRIPS](#strips) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Mean Squared Error](#mean-squared-error) | [Structured Classification](#structured-classification) |
-| [Cross-Validation](#cross-validation) | [Minimax Algorithm](#minimax-algorithm) | [Subword Tokenization](#subword-tokenization) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Minimum Description Length](#minimum-description-length) | [Support Vector Machine](#support-vector-machine) |
-| [Dead End](#dead-end) | [Model Complexity](#model-complexity) | [Surrogate Loss](#surrogate-loss) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Momentum](#momentum) | [Swept Volume](#swept-volume) |
-| [Decision Boundary](#decision-boundary) | [Monotone Convergence](#monotone-convergence) | [Symmetric Matrix](#symmetric-matrix) |
-| [Decision Tree](#decision-tree) | [Monotonic Function](#monotonic-function) | [Symmetric Relation](#symmetric-relation) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Syntactic Parsing](#syntactic-parsing) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [T5](#t5) |
-| [Dependency Parsing](#dependency-parsing) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Tag Lattice](#tag-lattice) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Depth-Limited Search](#depth-limited-search) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Teacher Forcing](#teacher-forcing) |
-| [Diagonal Matrix](#diagonal-matrix) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multinomial Distribution](#multinomial-distribution) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Discriminative Model](#discriminative-model) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Trace and Co-indexation](#trace-and-co-indexation) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Mutex](#mutex) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Transformer Architecture](#transformer-architecture) |
-| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
-| [Dynamic Programming](#dynamic-programming) | [Named-Entity Type Labels](#named-entity-type-labels) | [Treebank](#treebank) |
-| [Early Stopping](#early-stopping) | [Negative Log Likelihood](#negative-log-likelihood) | [Triangle Inequality](#triangle-inequality) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Sampling](#negative-sampling) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Scaling Laws](#neural-scaling-laws) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [EM Algorithm](#em-algorithm) | [Neural Text Degeneration](#neural-text-degeneration) | [Union Bound](#union-bound) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Neuron](#neuron) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Epoch](#epoch) | [Newton's Method](#newtons-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Next Sentence Prediction](#next-sentence-prediction) | [Vertical Markovization](#vertical-markovization) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Non-Parametric Method](#non-parametric-method) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normal Equations](#normal-equations) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [NP-Hard](#np-hard) | [Word Embedding](#word-embedding) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Objective Function / Training Objective](#objective-function-training-objective) | [Word2Vec](#word2vec) |
-| [Feature Expansion](#feature-expansion) | [One-Hot Encoding](#one-hot-encoding) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [One-vs-All](#one-vs-all) | [Zero-Sum Game](#zero-sum-game) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Geometric Mean](#geometric-mean) | [PAC Learning](#pac-learning) |
+| [Absolute Discounting](#absolute-discounting) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Accuracy (Classification)](#accuracy-classification) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Particle Filter](#particle-filter) |
+| [Ackermann Steering](#ackermann-steering) | [GLUE Benchmark](#glue-benchmark) | [PDDL](#pddl) |
+| [Action Schema](#action-schema) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Penn Treebank](#penn-treebank) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Gradient Clipping](#gradient-clipping) | [Perplexity](#perplexity) |
+| [Add-One Smoothing](#add-one-smoothing) | [Gradient Descent](#gradient-descent) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Agnostic Learning](#agnostic-learning) | [Graphical Lasso](#graphical-lasso) | [Planner Completeness](#planner-completeness) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GraphPlan](#graphplan) | [Planning Graph](#planning-graph) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Point Cloud](#point-cloud) |
+| [AlphaGo](#alphago) | [Greedy Decoding](#greedy-decoding) | [Polar Coordinates](#polar-coordinates) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Arity](#arity) | [Grounding / Instantiation](#grounding-instantiation) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Positional Encoding](#positional-encoding) |
+| [Automatic Differentiation](#automatic-differentiation) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hedge Algorithm](#hedge-algorithm) | [Posterior Distribution](#posterior-distribution) |
+| [Backpointer](#backpointer) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Precision Matrix](#precision-matrix) |
+| [Backpropagation](#backpropagation) | [Hidden Markov Model](#hidden-markov-model) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Bag of Words](#bag-of-words) | [Hierarchical Softmax](#hierarchical-softmax) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Banana Distribution](#banana-distribution) | [Hinge Loss](#hinge-loss) | [Principal Component Analysis](#principal-component-analysis) |
+| [BART](#bart) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Prior Distribution](#prior-distribution) |
+| [Basis Function](#basis-function) | [Horizontal Markovization](#horizontal-markovization) | [Priority Queue](#priority-queue) |
+| [Batch](#batch) | [Hyperparameter](#hyperparameter) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Batch Normalization](#batch-normalization) | [Importance Sampling](#importance-sampling) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [In-Context Learning](#in-context-learning) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Bayes' Rule](#bayes-rule) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Probability Density Contour](#probability-density-contour) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Indicator Function](#indicator-function) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Beam Search](#beam-search) | [Induction Head](#induction-head) | [Projective Tree](#projective-tree) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Proof by Contradiction](#proof-by-contradiction) |
+| [BERT](#bert) | [Informed RRT*](#informed-rrt) | [Quadratic Form](#quadratic-form) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Instruction Tuning](#instruction-tuning) | [Quiescence Search](#quiescence-search) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Binarization](#binarization) | [Iterative Deepening](#iterative-deepening) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Jensen's Inequality](#jensens-inequality) | [Random Forest](#random-forest) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Joint Probability Distribution](#joint-probability-distribution) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Projection](#random-projection) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [K-Means Algorithm](#k-means-algorithm) | [Random Variable](#random-variable) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rank](#rank) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Kernel Function](#kernel-function) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Ray Casting](#ray-casting) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kinodynamic Planning](#kinodynamic-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Centroid](#centroid) | [KL Divergence](#kl-divergence) | [Regularization](#regularization) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Latent Variable](#latent-variable) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Chernoff Bound](#chernoff-bound) | [Law of Large Numbers](#law-of-large-numbers) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [CKY Algorithm](#cky-algorithm) | [Layer Normalization](#layer-normalization) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Lexicalization](#lexicalization) | [RoBERTa](#roberta) |
+| [Closed-World Assumption](#closed-world-assumption) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Clustering](#clustering) | [Likelihood](#likelihood) | [Sample Complexity](#sample-complexity) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Linear Programming](#linear-programming) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Conditional Independence](#conditional-independence) | [Lipschitz Continuity](#lipschitz-continuity) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Log Likelihood](#log-likelihood) | [Schur Complement](#schur-complement) |
+| [Confusion Matrix](#confusion-matrix) | [Logistic Regression](#logistic-regression) | [Search Statistics](#search-statistics) |
+| [Conjunction Feature](#conjunction-feature) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Self-Attention](#self-attention) |
+| [Consistent Heuristic](#consistent-heuristic) | [Loss Surface](#loss-surface) | [Semantic Parsing](#semantic-parsing) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lower Bound](#lower-bound) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Constituency Tests](#constituency-tests) | [Marginalization](#marginalization) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Constituent](#constituent) | [Markov Blanket](#markov-blanket) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Markov Model](#markov-model) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Context-Free Grammar](#context-free-grammar) | [Markov's Inequality](#markovs-inequality) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Masked Language Modeling](#masked-language-modeling) | [Skip-Gram Model](#skip-gram-model) |
+| [Convex Function](#convex-function) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Coordinate Descent](#coordinate-descent) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Maximum Entropy Model](#maximum-entropy-model) | [Sparse Attention](#sparse-attention) |
+| [Covariance Matrix](#covariance-matrix) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Mean Squared Error](#mean-squared-error) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Minimax Algorithm](#minimax-algorithm) | [Statistical Independence](#statistical-independence) |
+| [Cross-Validation](#cross-validation) | [Minimum Description Length](#minimum-description-length) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mobile Robot Localization](#mobile-robot-localization) | [Stopword](#stopword) |
+| [Dead End](#dead-end) | [Model Complexity](#model-complexity) | [STRIPS](#strips) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Momentum](#momentum) | [Structured Classification](#structured-classification) |
+| [Decision Boundary](#decision-boundary) | [Monotone Convergence](#monotone-convergence) | [Subword Tokenization](#subword-tokenization) |
+| [Decision Tree](#decision-tree) | [Monotonic Function](#monotonic-function) | [Support Vector Machine](#support-vector-machine) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Surrogate Loss](#surrogate-loss) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Swept Volume](#swept-volume) |
+| [Dependency Parsing](#dependency-parsing) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Matrix](#symmetric-matrix) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Motion Model](#motion-model) | [Symmetric Relation](#symmetric-relation) |
+| [Depth-Limited Search](#depth-limited-search) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Syntactic Parsing](#syntactic-parsing) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [T5](#t5) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tag Lattice](#tag-lattice) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Multinomial Distribution](#multinomial-distribution) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Teacher Forcing](#teacher-forcing) |
+| [Discriminative Model](#discriminative-model) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tensor](#tensor) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Mutex](#mutex) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Time Causality Assumption](#time-causality-assumption) |
+| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Named-Entity Type Labels](#named-entity-type-labels) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [Dynamic Programming](#dynamic-programming) | [Negative Log Likelihood](#negative-log-likelihood) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Early Stopping](#early-stopping) | [Negative Sampling](#negative-sampling) | [Transformer Architecture](#transformer-architecture) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Neural Network](#neural-network) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Scaling Laws](#neural-scaling-laws) | [Treebank](#treebank) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Text Degeneration](#neural-text-degeneration) | [Triangle Inequality](#triangle-inequality) |
+| [EM Algorithm](#em-algorithm) | [Neuron](#neuron) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Newton's Method](#newtons-method) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Epoch](#epoch) | [Next Sentence Prediction](#next-sentence-prediction) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Non-Parametric Method](#non-parametric-method) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Normal Equations](#normal-equations) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [NP-Hard](#np-hard) | [Vector Map](#vector-map) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Objective Function / Training Objective](#objective-function-training-objective) | [Vertical Markovization](#vertical-markovization) |
+| [Feature Expansion](#feature-expansion) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Few-Shot Prompting](#few-shot-prompting) | [Odometry](#odometry) | [Word Embedding](#word-embedding) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [One-Hot Encoding](#one-hot-encoding) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [One-vs-All](#one-vs-all) | [Word2Vec](#word2vec) |
+| [Frontier / Open List](#frontier-open-list) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Gaussian Graphical Model](#gaussian-graphical-model) | [Oracle Derivation](#oracle-derivation) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [Gaussian Mixture Model](#gaussian-mixture-model) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Sum Game](#zero-sum-game) |
+| [Generative Likelihood](#generative-likelihood) | [Orthonormal Basis](#orthonormal-basis) |  |
+| [Generative Model](#generative-model) | [Overfitting](#overfitting) |  |
 
 ## Concepts
 
@@ -496,6 +510,30 @@ With every gradient now in hand, Gradient Descent's update rule (see that entry)
 
 ---
 
+<a id="banana-distribution"></a>
+### Banana Distribution
+
+**The Big Idea**: Algebra 2 covers the unit circle: a point one unit from the origin in the direction of angle $\theta$ sits at $(\cos\theta, \sin\theta)$. That is all that is needed to see why this distribution exists. When a robot drives forward a fixed distance but its heading is slightly uncertain, its possible end points lie along an arc of a circle, not along a straight line, so the cloud of end points is bent like a banana. The link to probability (a "distribution" is a description of how likely each outcome is) goes beyond Algebra 2; read the Normal Distribution Notation entry in the math_symbols file first.
+
+**General Usage**: The banana distribution is the crescent-shaped spread of positions $(x, y)$ reached by a wheeled robot that repeats the same commanded motion many times with small random errors in its wheel speeds. Errors in heading accumulate during the motion and swing the end point sideways along an arc centered near the start, while errors in distance spread it along the direction of travel. The resulting cloud cannot be described by a Gaussian (bell-shaped) distribution in ordinary $x$, $y$ coordinates, because every contour of a two-dimensional Gaussian is an ellipse (see the Multivariate Normal Distribution entry and the Probability Density Contour entry), and an ellipse cannot bend. Long, Wolfe, Mashner and Chirikjian (2013) showed that the same cloud *is* Gaussian when the robot's pose (position plus heading) is written in exponential coordinates, a description of rigid motions taken from Lie-group theory (see the Special Euclidean Group in 2D entry in the math_symbols file).
+
+**Example.** A robot starts at the origin facing along the x axis and drives exactly $1$ m, but its heading turns out to be $-30°$, $0°$ or $+30°$.
+
+| Heading $\theta$ | $x = \cos\theta$ | $y = \sin\theta$ | End point |
+|---|---|---|---|
+| $-30°$ | $0.866$ | $-0.5$ | $(0.866, -0.5)$ |
+| $0°$ | $1$ | $0$ | $(1, 0)$ |
+| $+30°$ | $0.866$ | $0.5$ | $(0.866, 0.5)$ |
+
+1. If the three end points lay on a straight line, the middle one would sit at the midpoint of the outer two.
+2. The midpoint of the outer two is $\left(\frac{0.866 + 0.866}{2}, \frac{-0.5 + 0.5}{2}\right) = (0.866, 0)$.
+3. The actual middle point is $(1, 0)$, which is $1 - 0.866 = 0.134$ m farther forward.
+4. So the points bow outward: they lie on the circle $x^2 + y^2 = 1$ (check: $0.866^2 + 0.5^2 = 0.75 + 0.25 = 1$). Many headings between $-30°$ and $+30°$ fill in that arc, giving the banana shape.
+
+**AI/ML Usage**: In mobile robot localization (estimating where a robot is from its sensors), the motion model is the probability rule for where the robot ends up after a commanded motion (see the Motion Model entry). A simple motion model adds Gaussian noise to $x$, $y$ and heading separately, which produces circular or elliptical position uncertainty; the banana distribution is the standard evidence that this is only an approximation. Particle filters, which represent uncertainty as a cloud of sampled guesses rather than as a formula, reproduce the banana shape naturally when each sample's heading noise is applied before its forward motion, and the exponential-coordinate Gaussian of Long et al. lets formula-based filters such as the extended Kalman filter (a filter that tracks only a mean and a covariance) capture it too.
+
+---
+
 <a id="bart"></a>
 ### BART
 
@@ -558,6 +596,30 @@ Every one of these corrupted sequences is paired with the same target output, `A
 
 ---
 
+<a id="bayes-filter-recursive-bayesian-estimation"></a>
+### Bayes Filter (Recursive Bayesian Estimation)
+
+**The Big Idea**: Think of a running estimate you keep correcting: first guess where something has moved to, then correct the guess with a measurement. This builds on Bayes' Rule (for the correction) and Marginalization (for the guess), and on the Belief, Index Range Colon and Proportional To entries in the math_symbols file. In Algebra 2 a recursively defined sequence computes each term $a_n$ from $a_{n-1}$ by one fixed rule, starting from a given first term; a Bayes filter is the same structure applied to a probability distribution. It goes beyond Algebra 2 by working with whole probability distributions instead of single numbers.
+
+**General Usage**: A Bayes filter (also called recursive Bayesian estimation or Bayesian filtering) tracks the hidden state $x_t$ of a moving agent over time, using movement readings $u_t$ and sensor observations $s_t$, by maintaining the belief $\text{Bel}(x_t) = p(x_t \mid x_0, u_{1:t}, s_{1:t})$. Each cycle has two steps. **Predict**: when a movement reading $u_{t+1}$ arrives, push the belief forward with the motion model (see the Motion Model entry), $$\overline{\text{Bel}}(x_{t+1}) = \int p(x_{t+1}\mid x_t,u_{t+1})\,\text{Bel}(x_t)\,dx_t$$ (see the Predicted Belief entry in the math_symbols file). **Update**: when a sensor reading $s_{t+1}$ arrives, multiply by the observation likelihood (see the Observation Likelihood Model entry) and rescale, $$\text{Bel}(x_{t+1}) \propto p(s_{t+1}\mid x_{t+1})\,\overline{\text{Bel}}(x_{t+1}).$$ The recursion starts from $\text{Bel}(x_0)=p(x_0)$, and only the previous belief is needed, never the full history. Either step can be repeated alone when the other kind of data is missing: several predicts before one update if movement readings are more frequent than sensor readings, or several updates in a row in the opposite case.
+
+The recursion follows from three moves. First, split $s_{1:t}$ into $s_{1:t-1}$ and $s_t$ and apply Bayes' rule to flip the conditional into likelihood form, dropping the denominator (which does not depend on $x_t$) to get a proportionality. Second, marginalize over $x_{t-1}$ to introduce the previous state. Third, use the **Markov assumptions** (the new state depends only on the previous state and the latest movement reading; an observation depends only on the current state and fixed background information such as a map) and the time causality assumption (see that entry) to shorten the conditioning lists until the previous belief appears.
+
+**Example.** Two cells, $1$ and $2$, with old belief $\text{Bel}=(0.6,\ 0.4)$. The command is "move right": it succeeds with probability $0.8$ and the robot stays put with probability $0.2$ (from the last cell, a move always stays put). A sensor then reports "door," which it reports with probability $0.9$ in cell $1$ and $0.3$ in cell $2$.
+
+1. Predict, cell $1$: only "stay" works, $0.2\times 0.6 = 0.12$.
+2. Predict, cell $2$: "move" from cell $1$ plus "stay" from cell $2$, $0.8\times 0.6 + 1\times 0.4 = 0.88$. Check: $0.12+0.88=1$.
+3. Update, multiply each predicted value by its likelihood: cell $1$: $0.9\times 0.12 = 0.108$; cell $2$: $0.3\times 0.88 = 0.264$.
+4. Add: $0.108+0.264 = 0.372$.
+5. Normalize: $\text{Bel}(1) = 0.108/0.372 \approx 0.290$ and $\text{Bel}(2) = 0.264/0.372 \approx 0.710$.
+6. Check: $0.290+0.710 = 1$.
+
+Second check, on the derivation: after marginalizing over $x_{t-1}$ the term $p(x_t \mid x_{t-1}, x_0, u_{1:t}, s_{1:t-1})$ appears. The Markov assumption for motion drops $x_0$, $u_{1:t-1}$ and $s_{1:t-1}$, leaving $p(x_t \mid x_{t-1}, u_t)$, the motion model. The other term, $p(x_{t-1} \mid x_0, u_{1:t}, s_{1:t-1})$, conditions on $u_t$, which arrives after step $t-1$, so time causality drops it, leaving exactly $\text{Bel}(x_{t-1})$. Multiplying these two terms under the integral and then by the observation likelihood gives the Update formula above.
+
+**AI/ML Usage**: Bayes filters are the foundation of robot localization, SLAM (simultaneous localization and mapping, estimating position while building a map), and object tracking. The implementations differ in how the belief is stored: the Kalman filter assumes a bell-curve belief and computes the integral exactly (see the Normal Distribution Notation entry in the math_symbols file), the histogram filter divides the states into bins (see the Histogram Filter entry), and the particle filter stores the belief as a set of weighted random samples (see the Monte Carlo Estimation entry). In a Hidden Markov Model (see that entry) the same predict-then-update loop is known as the forward algorithm. Neural-network versions, such as differentiable particle filters, learn parts of the filter from data.
+
+---
+
 <a id="bayes-rule"></a>
 ### Bayes' Rule
 
@@ -568,6 +630,25 @@ Every one of these corrupted sequences is paired with the same target output, `A
 **Example.** Suppose 1% of emails are spam, and spam emails contain the word "free" 40% of the time, while non-spam emails contain "free" only 2% of the time. If a new email contains "free," Bayes' rule combines all three of these facts to correctly compute the actual, updated probability that this specific email is spam — a number noticeably higher than the original 1%, but still influenced by how rare spam was to begin with, not simply "40%."
 
 **AI/ML Usage**: Bayes' rule is the mathematical foundation of an entire family of ML approaches called Bayesian machine learning, and directly powers classic algorithms like the Naive Bayes classifier (see that entry, commonly used for spam filtering and text classification), which uses exactly this rule to combine prior probabilities with observed evidence to make a prediction.
+
+---
+
+<a id="bayesian-state-estimation"></a>
+### Bayesian State Estimation
+
+**The Big Idea**: This builds on Bayes' Rule, Posterior Distribution, and Prior Distribution, and on the Belief entry in the math_symbols file. Bayes' rule updates a belief when evidence arrives; state estimation applies that update over and over as time passes, to track a quantity (the "state") that cannot be observed directly. This entry states the problem; the Bayes Filter entry gives the algorithm that solves it.
+
+**General Usage**: Bayesian state estimation is the problem of maintaining a probability distribution over an agent's state $x$ at each time step, given what is known. The givens are a motion model (also called a state transition model), $p(x_{t+1} \mid x_t)$ or $p(x_{t+1} \mid x_t, u_t)$, which says how likely each next state is given the current state and, optionally, the odometry $u_t$ (see the Motion Model and Odometry entries); and an observation likelihood model (also called a sensor model), $p(s_t \mid x_t, D)$, which says how likely an observation $s_t$ is for a given state, optionally using prior data $D$ such as a map (see the Observation Likelihood Model entry). The unknown is the posterior distribution $p(x_t \mid x_0, u_{1:t}, s_{1:t}, D)$, so named because it is conditioned on all of the observations. Common variants differ in which conditioning variables are available: observations only, $p(x_{1:t} \mid s_{1:t})$; observations plus odometry; plus a known starting state $x_0$; plus prior data $D$. The models are functions of all of their variables and are evaluated at the specific odometry and observation values actually obtained.
+
+**Example.** A variant is identified by which variables appear to the right of the conditional bar (see the Conditional Bar entry in the math_symbols file).
+
+1. $p(x_{1:t} \mid s_{1:t})$ has only observations: no odometry and no known start.
+2. $p(x_{1:t} \mid u_{1:t}, s_{1:t})$ adds odometry $u_{1:t}$.
+3. $p(x_{1:t} \mid x_0, u_{1:t}, s_{1:t})$ adds a known starting state, for example a vehicle known to have begun in a particular garage.
+4. $p(x_{1:t} \mid x_0, u_{1:t}, s_{1:t}, D)$ adds prior data $D$, for example a map.
+5. Each step from variant 1 to variant 4 adds one more piece of known information, so the distribution on the left generally becomes more concentrated.
+
+**AI/ML Usage**: Bayesian state estimation is the problem behind the Bayes filter family used in robotics and tracking: histogram (grid) filters, Kalman filters, and particle filters. It is used for robot localization (see the Mobile Robot Localization entry), for tracking objects in camera images and radar, and for sensor fusion in phones and vehicles, where noisy GPS, motion sensors, and commands are combined into one belief about position.
 
 ---
 
@@ -707,6 +788,40 @@ Multiplying probabilities along a path explains why the numbers shrink so fast: 
 Check: with $u=1$, $p(4)=\tfrac12(1)(16)=8$ ✓. This one is solvable by hand only because the start, end, and command are so simple; adding limits on the allowed commands, obstacles, or a demand for the fastest possible arrival quickly makes exact solutions unavailable.
 
 **AI/ML Usage**: In motion planning, an ideal "steering function" (the step of a Rapidly-Exploring Random Tree that moves from one state toward a target state) is exactly a boundary value problem: find controls $\pi:[0,T]\to U$ with $\dot x=f(x,\pi(t))$, $x(0)=x_{near}$, $x(T)=x_{rand}$. Because it is not analytically solvable for most real robots, practical planners replace it with the approximate strategies in the Random Control and Best Control Steering entry.
+
+---
+
+<a id="bradley-terry-model"></a>
+### Bradley-Terry Model
+
+**The Big Idea**: Algebra 2 covers ratios and exponential functions, and those are the only two ingredients here. Suppose two teams have "strength" numbers 3 and 1. A natural guess is that the first team wins with probability $\frac{3}{3+1} = \frac{3}{4}$ — its share of the total strength. The Bradley-Terry model is exactly that share-of-the-total rule, with one refinement: each item's strength is written as $e$ raised to a score (see the Euler's Number / Exponential Function entry in the math_symbols file), which guarantees that strengths are positive even when scores are negative. It is the two-item case of the Softmax Function (see that entry in the math_symbols file).
+
+**General Usage**: The Bradley-Terry model is a model of pairwise preference. It assumes each item $i$ has an unobserved real-valued score $r_i$, and that when items 1 and 2 are compared, the probability that 1 is preferred is
+
+$$
+P(1 \succ 2) = \frac{\exp(r_1)}{\exp(r_1) + \exp(r_2)}
+$$
+
+where $\succ$ is read "is preferred to". Equal scores give probability $\tfrac{1}{2}$; the probability depends only on the *difference* $r_1 - r_2$, and approaches 1 as that difference grows. Its use is to run this in reverse: given many observed comparisons ("1 was preferred to 2"), find the scores that make the observed outcomes most probable (see the Maximum Likelihood Estimation entry). The fitting computation is the same as Logistic Regression (see that entry) on pairs, but what is kept afterward is the scoring function itself, which can then score a single item with no comparison partner.
+
+**Example.** Two responses have scores $r_1 = 2$ and $r_2 = 1$.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Exponentiate the first score | $e^{2}$ | $\approx 7.389$ |
+| 2. Exponentiate the second score | $e^{1}$ | $\approx 2.718$ |
+| 3. Add them | $7.389 + 2.718$ | $10.107$ |
+| 4. Divide | $7.389 \div 10.107$ | $\approx 0.731$ |
+
+So $P(1 \succ 2) \approx 0.731$, and $P(2 \succ 1) = 2.718 \div 10.107 \approx 0.269$; the two add to $1.000$.
+
+*Check that only the difference matters.* Shift both scores down by 5, to $r_1 = -3$ and $r_2 = -4$ (difference still 1): $e^{-3} \approx 0.0498$, $e^{-4} \approx 0.0183$, sum $0.0681$, and $0.0498 \div 0.0681 \approx 0.731$ — the same answer, even though both scores are now negative.
+
+*Check the equal-score case.* With $r_1 = r_2 = 2$: $7.389 \div (7.389 + 7.389) = 0.5$.
+
+*How fitting uses this.* If a person in fact preferred response 1, the model with scores $(2, 1)$ assigned that outcome probability 0.731. Scores $(3, 1)$ would have assigned it $e^3 \div (e^3 + e^1) = 20.086 \div 22.804 \approx 0.881$, which is higher, so that single observation pushes the fitted scores further apart; other observations push back, and fitting balances them all.
+
+**AI/ML Usage**: In Reinforcement Learning from Human Feedback (see that entry), human annotators compare pairs of responses written by a language model, and a neural network $r(\mathbf{x}, \mathbf{y})$ — the **reward model**, which scores response $\mathbf{y}$ to prompt $\mathbf{x}$ — is trained under the Bradley-Terry model so that $\exp(r(\mathbf{x},\mathbf{y}_1)) / [\exp(r(\mathbf{x},\mathbf{y}_1)) + \exp(r(\mathbf{x},\mathbf{y}_2))]$ matches how often people prefer $\mathbf{y}_1$. The same model underlies rating systems that rank chess players, sports teams, and competing AI systems from head-to-head results.
 
 ---
 
@@ -1206,6 +1321,31 @@ The model confidently predicts "bit" — exactly the true missing word — becau
 
 ---
 
+<a id="coordinate-frame-reference-frame"></a>
+### Coordinate Frame (Reference Frame)
+
+**The Big Idea**: Algebra 2 graphs every point on one fixed pair of axes. A coordinate frame is the recognition that the axes themselves are a choice: put the origin somewhere else, or turn the axes, and the same physical point gets different coordinates. Nothing about the point changed; only the description did. Converting between descriptions needs subtraction (to move the origin) and a rotation (to turn the axes); for the rotation, see the Rotation Matrix entry in the math_symbols file.
+
+**General Usage**: A coordinate frame is an origin together with a set of perpendicular axes; in the plane, an origin and an x axis and y axis. A position or heading is always stated *relative to* a frame, and the frame is usually written as a superscript, as in $T^{\text{map}}$ or $T^{\text{odom}}$. Robotics commonly uses three frames: a **map frame** fixed to the world, an **odometry frame** fixed at wherever the robot began counting its wheel motion (so its relation to the map is unknown), and a **body frame** (often called base_link) attached to the robot with one axis pointing straight ahead. To re-express a point $p$ given in frame A in a frame B whose origin is at $o$ and whose x axis is turned by angle $\theta$, both measured in A, subtract and then rotate back:
+
+$$
+p^{B} = R(-\theta)\,(p^{A} - o)
+$$
+
+where $R(\theta)$ sends $(x, y)$ to $(x\cos\theta - y\sin\theta,\; x\sin\theta + y\cos\theta)$. A *difference* of two positions in the same frame does not depend on where that frame's origin is, which is why relative motion can be extracted from a frame whose location is unknown.
+
+**Example.** In the odometry frame a robot is at $o = (2, 1)$ and faces $\theta = 90°$ (along the odometry frame's y axis). A landmark is at $p = (2, 4)$ in the same frame. Where is the landmark relative to the robot?
+
+1. Subtract the robot's position: $p - o = (2 - 2,\; 4 - 1) = (0, 3)$.
+2. Rotate back by the robot's heading, using $\theta = -90°$, where $\cos(-90°) = 0$ and $\sin(-90°) = -1$.
+3. New x: $x\cos\theta - y\sin\theta = 0 \cdot 0 - 3 \cdot (-1) = 3$.
+4. New y: $x\sin\theta + y\cos\theta = 0 \cdot (-1) + 3 \cdot 0 = 0$.
+5. In the robot's frame the landmark is at $(3, 0)$: three meters straight ahead and zero to the side. This matches the picture, since the robot faces "up" and the landmark is directly "above" it by $3$.
+
+**AI/ML Usage**: Robot localization and mapping algorithms move quantities between frames constantly. Wheel odometry (see the Odometry entry) is reported in the odometry frame, so a filter such as a particle filter (which tracks many sampled guesses of the robot's pose) first converts two successive odometry readings into a motion in the robot's own frame, then rotates that motion by each guess's map-frame heading and adds it to that guess's map-frame position. Sensor readings such as laser range scans are likewise measured in the robot's frame and must be transformed into the map frame before being compared with a map. Software such as the Robot Operating System keeps a tree of named frames (map, odom, base_link) for exactly this purpose.
+
+---
+
 <a id="covariance-matrix"></a>
 ### Covariance Matrix
 
@@ -1467,6 +1607,33 @@ The final visiting order is $R, A, C, D, B$: DFS fully descends into $A$'s entir
 
 ---
 
+<a id="differential-drive-robot"></a>
+### Differential-Drive Robot
+
+**The Big Idea**: This needs only averages and differences from basic algebra. A differential-drive robot has two side-by-side wheels driven by separate motors. The *average* of the two wheel speeds says how fast the robot moves forward, and the *difference* of the two wheel speeds (hence "differential") says how fast it turns. Nothing here goes beyond Algebra 2 except measuring angles in radians, where a full turn is $2\pi \approx 6.28$ radians.
+
+**General Usage**: A differential-drive ("diff-drive") robot is steered entirely by driving its left and right wheels at different speeds; it has no steering wheel. With left wheel speed $v_L$, right wheel speed $v_R$, and distance $b$ between the wheels, its forward speed $v$ and turning rate $\omega$ (omega, in radians per second, positive for a left turn) are
+
+$$
+v = \frac{v_R + v_L}{2}, \qquad \omega = \frac{v_R - v_L}{b}
+$$
+
+Equal wheel speeds give straight-line motion ($\omega = 0$). Equal and opposite wheel speeds give $v = 0$ with $\omega \neq 0$: the robot **turns in place**. This is the key contrast with a car (see the Ackermann Steering entry), which can change its heading only while also moving forward or backward. Because a diff-drive robot's rotation need not be accompanied by translation, its motion can be described as a translation part and a rotation part that are chosen independently.
+
+**Example.** A robot has wheels $b = 0.5$ m apart.
+
+| Case | $v_L$ (m/s) | $v_R$ (m/s) | $v = \frac{v_R + v_L}{2}$ | $\omega = \frac{v_R - v_L}{b}$ | Motion |
+|---|---|---|---|---|---|
+| A | $0.5$ | $0.5$ | $\frac{1.0}{2} = 0.5$ | $\frac{0}{0.5} = 0$ | Straight ahead |
+| B | $0.4$ | $0.6$ | $\frac{1.0}{2} = 0.5$ | $\frac{0.2}{0.5} = 0.4$ | Forward while curving left |
+| C | $-0.3$ | $0.3$ | $\frac{0}{2} = 0$ | $\frac{0.6}{0.5} = 1.2$ | Turning left in place |
+
+In case C the robot's center does not move at all, yet after $1$ second it has turned $1.2$ radians (about $69°$).
+
+**AI/ML Usage**: Many indoor research and service robots, and robot vacuum cleaners, are differential-drive, so it is the default platform in probabilistic robotics. Its simplicity also makes it a convenient *approximation* for more complicated vehicles: the widely used odometry motion model (the probability rule describing how far a robot's wheel-based motion estimate can be trusted; see the Motion Model entry) splits each motion into translation and rotation and gives each of the four combinations, translation error from translation, rotation error from translation, rotation error from rotation, and translation error from rotation, its own noise constant. That four-constant model is routinely applied to cars as well, since a real car simply never reports the in-place rotations the model would allow.
+
+---
+
 <a id="dijkstras-algorithm"></a>
 ### Dijkstra's Algorithm
 
@@ -1553,6 +1720,23 @@ Check: during the second burn the speed falls steadily from $2$ to $0$, so the a
 **Example.** With a dropout rate of $p=0.5$, roughly half of a given layer's neurons are randomly, independently switched off at every single training step — a different random half each time — so no neuron can ever count on any particular set of its neighbors reliably being present to lean on.
 
 **AI/ML Usage**: Dropout is one of the most widely used and effective regularization techniques for training large neural networks, specifically because it substantially helps prevent overfitting (see that entry), by strongly discouraging the network from becoming overly dependent on any small handful of specific neurons.
+
+---
+
+<a id="dynamic-bayesian-network"></a>
+### Dynamic Bayesian Network
+
+**The Big Idea**: Algebra 2 has function diagrams in which an arrow from $x$ to $y$ means "$y$ is computed from $x$." A dynamic Bayesian network (DBN) uses the same arrow-picture idea for random quantities, and repeats the picture once per time step. It builds on the Markov Blanket and Conditional Independence entries: the arrows are what determine which variables are conditionally independent of which.
+
+**General Usage**: A **Bayesian network** is a drawing in which each random variable is a node (a circle) and an arrow from one node to another says "the second variable depends directly on the first." The key rule is that, once a variable's direct parents (the nodes with arrows into it) are known, it is conditionally independent of every variable that is not downstream of it, that is, not reachable by following arrows forward from it (see the Markov Blanket entry). A **dynamic** Bayesian network describes a process unfolding over time: the same pattern of nodes and arrows is repeated at each time step, with arrows also running from one time step to the next. For tracking a moving agent, the typical nodes are the hidden state $x_i$ at each step, a movement reading $u_i$, a sensor observation $s_i$, and any fixed background information such as a map. The typical arrows are $x_{i-1} \to x_i$ and $u_i \to x_i$ (the new state depends on the previous state and the latest movement reading), and $x_i \to s_i$ plus $\text{map} \to s_i$ (each observation depends only on the current state and the map). Changing which arrows are present changes the independence assumptions, and any formula derived from the network must be re-derived.
+
+**Example.** Take three time steps, with nodes $x_0, x_1, x_2$ (states), $u_1, u_2$ (movement readings), $s_1, s_2$ (observations), and a map. Arrows: $x_0 \to x_1$, $x_1 \to x_2$; $u_1 \to x_1$, $u_2 \to x_2$; $x_1 \to s_1$, $x_2 \to s_2$; $\text{map} \to s_1$, $\text{map} \to s_2$.
+
+1. The arrows into $s_2$ come only from $x_2$ and the map. Nothing flows out of $s_2$, so once $x_2$ and the map are known, $s_2$ is independent of $x_0, x_1, u_1, u_2$ and $s_1$.
+2. The arrows into $x_2$ come only from $x_1$ and $u_2$. The variables downstream of $x_2$ are $s_2$ only, so once $x_1$ and $u_2$ are known, $x_2$ is independent of $x_0$, $u_1$, $s_1$ and the map. It is not independent of $s_2$, which is computed from it.
+3. If the motion were instead allowed to depend on the past two states, one more arrow, $x_0 \to x_2$, would have to be added, and the independence statement in step 2 would no longer drop $x_0$.
+
+**AI/ML Usage**: DBNs are the graphical form of the Hidden Markov Model (see that entry) and of the Bayes filters used for robot localization and object tracking (see the Bayes Filter entry): the hidden states are what is estimated, and the observations are what is measured. A Kalman filter and a particle filter are both inference algorithms that operate on a DBN of exactly this shape.
 
 ---
 
@@ -1799,6 +1983,34 @@ An ordinary skip-gram model would need one single, whole-word vector for "cat" t
 
 ---
 
+<a id="few-shot-prompting"></a>
+### Few-Shot Prompting
+
+**The Big Idea**: This is "learning from worked examples" in its most literal form, and it is the same skill Algebra 2 calls continuing a pattern: shown $(1, 3), (2, 6), (3, 9)$ and then $(4, \;?)$, a student answers 12 because the solved pairs reveal what is being asked. Few-shot prompting shows a language model a handful of solved input-output pairs, written out as text, followed by one unsolved input. It is In-Context Learning (see that entry) with $K \geq 1$ examples; with $K = 0$ it becomes Zero-Shot Prompting (see that entry). No training takes place — the model's weights are never changed (contrast the Fine-Tuning (Transfer Learning) entry).
+
+**General Usage**: Given $K$ labeled pairs $(\mathbf{x}_1, y_1), \ldots, (\mathbf{x}_K, y_K)$ and a new input $\mathbf{x}_{\text{test}}$, each piece is wrapped in a template $\mathbf{v}$ (see the Verbalizer (Prompt Template) entry) and the pieces are joined into one string, $\mathbf{v}(\mathbf{x}_1)\,\mathbf{v}(y_1)\,\ldots\,\mathbf{v}(\mathbf{x}_K)\,\mathbf{v}(y_K)\,\mathbf{v}(\mathbf{x}_{\text{test}})$, which ends exactly where the answer should begin. The model's continuation is the prediction. The solved pairs are called **demonstrations** or **in-context examples**. Three properties of the demonstrations affect accuracy even though none of them would matter to an ordinary trained classifier: *which* examples are chosen, the *order* they appear in, and the *balance* of their labels. In particular a model tends to favor labels that are frequent among the demonstrations and labels that appear in the most recent ones. **Calibration** corrects for this: the prompt is run once with a content-free ("null") test input to measure the model's built-in preference for each label, and each label's probability on a real input is then divided by its probability on the null input before the largest is chosen.
+
+**Example.** A 2-shot sentiment prompt, followed by calibration.
+
+| Piece | Text |
+|---|---|
+| $\mathbf{v}(\mathbf{x}_1)\,\mathbf{v}(y_1)$ | Review: Loved every minute. Sentiment: positive |
+| $\mathbf{v}(\mathbf{x}_2)\,\mathbf{v}(y_2)$ | Review: A total waste of time. Sentiment: negative |
+| $\mathbf{v}(\mathbf{x}_{\text{test}})$ | Review: Dull and far too long. Sentiment: |
+
+Suppose the model's probabilities for the next token are as follows, first with a null test input (the review replaced by "N/A") and then with the real one:
+
+| Label | $P$ on null input | $P$ on real input | Real $\div$ null | Normalized |
+|---|---|---|---|---|
+| positive | 0.60 | 0.54 | $0.54 \div 0.60 = 0.90$ | $0.90 \div 2.05 \approx 0.44$ |
+| negative | 0.40 | 0.46 | $0.46 \div 0.40 = 1.15$ | $1.15 \div 2.05 \approx 0.56$ |
+
+The sum used for normalizing is $0.90 + 1.15 = 2.05$, and the normalized values add to $0.44 + 0.56 = 1.00$. Without calibration the model would answer "positive" ($0.54 > 0.46$). But it leans toward "positive" even when given nothing to judge (0.60 on the null input). Relative to that lean, the real review *lowered* the probability of positive and *raised* the probability of negative, so the calibrated answer is "negative" ($0.56 > 0.44$) — the correct label for this review.
+
+**AI/ML Usage**: Few-shot prompting is the standard way to adapt a large language model (see the GPT (Generative Pre-trained Transformer) entry) to a task when only a few labeled examples exist. Empirically, going from zero examples to one usually gives the largest improvement, with much smaller gains after that. A notable finding is that replacing the demonstrations' correct labels with random ones often reduces accuracy only slightly, while removing the demonstrations altogether reduces it a great deal — evidence that demonstrations mostly communicate the *format* of the task, whereas the meaning of the labels comes from the model's original training. This is very different from a conventionally trained classifier, which fails if a large share of its training labels are wrong.
+
+---
+
 <a id="fine-tuning-transfer-learning"></a>
 ### Fine-Tuning (Transfer Learning)
 
@@ -1997,6 +2209,31 @@ Choosing $p$ is itself a tradeoff: in a mostly open environment, a larger goal b
 
 ---
 
+<a id="gpt-generative-pre-trained-transformer"></a>
+### GPT (Generative Pre-trained Transformer)
+
+**The Big Idea**: This is the N-Gram Language Model idea (see that entry) — predict the next word from the words before it — carried out by a very large Transformer (see the Transformer Architecture entry) instead of by a table of counts. Nothing beyond those two entries is needed to understand what a GPT model *is*; what makes the family remarkable is how large the models are, not any new piece of mathematics. From Algebra 2, the only tool required is function notation: the model is a function that takes a sequence of tokens (words or pieces of words) and returns one probability for every possible next token.
+
+**General Usage**: A GPT model is a **left-to-right (autoregressive) Transformer language model trained on raw text**. "Language model" means it estimates $P(y_n \mid y_1, \ldots, y_{n-1})$, the probability of the next token $y_n$ given the tokens so far (see the Conditional Bar entry in the math_symbols file). "Left-to-right" means each position may look only at earlier positions (see the Causal (Masked) Self-Attention entry). "Autoregressive" means text is produced one token at a time, each new token being appended to the input before the next is predicted. "Trained on raw text" means no human labels are required: at every position the correct answer is simply the token that actually came next. A GPT model has no separate encoder (contrast the Encoder-Decoder Architecture entry) and, unlike BERT (see that entry), it can generate text. The members of the family differ mainly in scale — the number of **parameters** (adjustable numbers set by training), the number of stacked layers, the number of attention heads per layer, and the length $d_{model}$ of the vector representing each token:
+
+| Model | Parameters | Layers | $d_{model}$ |
+|---|---|---|---|
+| GPT-2 (largest) | about 1.5 billion | 48 | 1600 |
+| GPT-3 (largest) | 175 billion | 96 | about 12,000 |
+
+**Example.** Generating two tokens after the context "The cat sat on the". Suppose the model's output probabilities are as shown, and the most probable token is chosen each time (see the Greedy Decoding entry):
+
+| Step | Context given to the model | Model's top probabilities for the next token | Token chosen |
+|---|---|---|---|
+| 1 | The cat sat on the | mat: 0.40, floor: 0.25, sofa: 0.15, (all others): 0.20 | mat |
+| 2 | The cat sat on the mat | ".": 0.55, and: 0.20, (all others): 0.25 | . |
+
+At each step the probabilities add to 1 (step 1: $0.40 + 0.25 + 0.15 + 0.20 = 1.00$; step 2: $0.55 + 0.20 + 0.25 = 1.00$). The token chosen in step 1 becomes part of the context in step 2 — that feeding-back of the model's own output is what "autoregressive" means. The probability the model assigns to the two-token continuation "mat ." is the product of the two steps (see the Chain Rule (for Probability) entry): $0.40 \times 0.55 = 0.22$.
+
+**AI/ML Usage**: GPT-2 (2019) was the first widely noticed model able to write several fluent, coherent sentences in a row. GPT-3 (2020), over a hundred times larger, showed that a sufficiently large model of this kind can perform a new task from a few examples written into its input, with no further training (see the In-Context Learning entry). Later systems built on the same design add further supervised training stages on top of language-model training (see the Fine-Tuning (Transfer Learning) entry). Models of this kind and scale are collectively called **large language models (LLMs)**.
+
+---
+
 <a id="gradient-clipping"></a>
 ### Gradient Clipping
 
@@ -2125,6 +2362,33 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 
 ---
 
+<a id="hallucination-and-grounding-factuality-of-language-models"></a>
+### Hallucination and Grounding (Factuality of Language Models)
+
+**The Big Idea**: Algebra 2 students already separate two questions about an answer: "does it look like the right kind of answer?" and "is it actually correct?" A response of $x = 4$ has the right form for the solution of an equation whether or not it satisfies the equation; only substituting it back in settles the matter. A language model (a model that predicts the next word from the words so far — see the GPT (Generative Pre-trained Transformer) entry) is trained only on the first question: it produces text that is *probable*, which is not the same as *true*. **Hallucination** is the name for the resulting failures, and **grounding** is the "substitute it back in" step — checking each claim against a trusted source. The only arithmetic involved is a fraction and a maximum (see the Max Function entry in the math_symbols file).
+
+**General Usage**: A language model **hallucinates** when it generates a statement that is false or unsupported. Two causes are that false statements repeated widely in its training text are, for that reason, probable text; and that the model cannot store every rarely mentioned fact, so for such facts it spreads moderate probability over several candidate answers. **Grounding** a generated text means checking it against source text, in three steps. (1) *Choose the source*, possibly by **retrieval** (searching a collection for relevant documents). (2) *Decompose* the generated text into separately checkable pieces — its sentences or, more finely, its **propositions**, the individual units of meaning a sentence expresses. (3) *Check* each piece against the source. Checking is often done with an entailment system (see the Textual Entailment (Natural Language Inference) entry), which outputs the probability that one text supports another: with source sentences $D_1, \ldots, D_m$ and a piece $S$, the support score for $S$ is $\max_i P(\text{entail} \mid D_i, S)$, the highest score over the source sentences. The fraction of pieces found to be supported is a factual-precision score for the text.
+
+**Example.** A source with three sentences, and a generated sentence decomposed into three propositions.
+
+Source: $D_1$ = "The bridge opened in 1932." $D_2$ = "It is 503 metres long." $D_3$ = "It carries road and rail traffic."
+
+Generated: "The bridge opened in 1932, is 800 metres long, and carries rail traffic."
+
+Suppose an entailment system gives these probabilities that each source sentence supports each proposition:
+
+| Proposition | vs. $D_1$ | vs. $D_2$ | vs. $D_3$ | Maximum | Supported (max $\geq 0.5$)? |
+|---|---|---|---|---|---|
+| $S_1$: The bridge opened in 1932. | 0.97 | 0.02 | 0.03 | 0.97 | Yes |
+| $S_2$: The bridge is 800 metres long. | 0.02 | 0.04 | 0.01 | 0.04 | No |
+| $S_3$: The bridge carries rail traffic. | 0.03 | 0.02 | 0.95 | 0.95 | Yes |
+
+Each maximum is the largest of the three numbers in its row: $\max(0.97, 0.02, 0.03) = 0.97$; $\max(0.02, 0.04, 0.01) = 0.04$; $\max(0.03, 0.02, 0.95) = 0.95$. Two of the three propositions are supported, so the factual-precision score is $2 \div 3 \approx 0.667$, or 66.7%. Checked as one undivided sentence, the generated text would simply have been marked unsupported; decomposition shows that two of its three claims are right and identifies the wrong one (the length).
+
+**AI/ML Usage**: Sentence-level entailment with a maximum over source sentences was developed for detecting factual inconsistencies in machine-written summaries; it fails when a claim is supported only by several source sentences jointly, in which case a document-level entailment system is used. Later systems use large language models for the decomposition and checking steps themselves — for example, scoring machine-written biographies by the percentage of their propositions supported by an encyclopedia. Full pipelines turn a passage into questions, retrieve evidence for each with a search engine, test whether passage and evidence agree, and edit the passage where they do not. All such systems make both kinds of error: flagging true statements for which no evidence was found, and missing false ones. Training with human feedback (see the Reinforcement Learning from Human Feedback (RLHF) entry) reduces hallucination chiefly by improving a model's **calibration** — answering when it is likely to be right and saying it does not know otherwise.
+
+---
+
 <a id="head-word-and-lexicalization"></a>
 ### Head Word and Lexicalization
 
@@ -2244,6 +2508,26 @@ Reaching "c" required exactly $2$ binary decisions — matching $\log_2 4=2$ —
 
 ---
 
+<a id="histogram-filter-discrete-bayes-filter"></a>
+### Histogram Filter (Discrete Bayes Filter)
+
+**The Big Idea**: Instead of a smooth curve, which needs a formula, store a bar chart: one probability per bin. Reading a bar's height is plain arithmetic, so this is the Bayes Filter loop (see that entry) carried out on a list of numbers, using only the multiplication, addition, and division you already know from Algebra 2.
+
+**General Usage**: A histogram filter (also called a discrete Bayes filter or Markov localization) divides the state space into cells and stores the belief (see the Belief entry in the math_symbols file) as one probability per cell, all adding to $1$. **Predict** becomes a weighted sum: each cell's new value is the sum, over every old cell, of the old value times the motion-model probability of moving from that old cell to this one (see the Motion Model entry). **Update** becomes cell-by-cell multiplication by the observation likelihood (see the Observation Likelihood Model entry), followed by dividing every value by the total. With a bell-curve motion model, the predict sum is a convolution of the histogram with a bell-curve kernel: peaks shift by the odometry and become wider and lower. Starting from a uniform belief, observations that are consistent with each other produce one sharp peak, while several equally consistent places produce several peaks, which is still the correct answer. The cost grows with the number of cells: on a 2D grid with $n$ cells per side, one cell's predict sum covers about $n^2$ cells, so all $n^2$ cells cost about $n^4$ operations (restricting the sum to nearby cells reduces this), and adding orientation or more degrees of freedom multiplies the cell count further.
+
+**Example.** A 3-cell hallway with belief $(0.5,\ 0.5,\ 0)$. The motion is "stay put with probability $0.8$, slip one cell right with probability $0.2$" (in the last cell, a slip stays put). Then a sensor reading has likelihoods $(0.1,\ 0.1,\ 0.8)$ for the three cells.
+
+1. Predict, cell $1$: only "stay" from cell $1$, $0.8\times 0.5 = 0.4$.
+2. Predict, cell $2$: "stay" from cell $2$ plus "slip" from cell $1$, $0.8\times 0.5 + 0.2\times 0.5 = 0.5$.
+3. Predict, cell $3$: "slip" from cell $2$, $0.2\times 0.5 = 0.1$. The predicted belief $(0.4,\ 0.5,\ 0.1)$ adds to $1$.
+4. Update, multiply cell by cell: $(0.4\times 0.1,\ 0.5\times 0.1,\ 0.1\times 0.8) = (0.04,\ 0.05,\ 0.08)$.
+5. The total is $0.17$, so divide each value by $0.17$: $\approx (0.235,\ 0.294,\ 0.471)$, which adds to $1$.
+6. Cost check: for $n=100$ cells per side, one cell's predict sum covers about $100^2 = 10{,}000$ cells, and all cells together need about $100^4 = 10^8$ operations.
+
+**AI/ML Usage**: Used for robot localization on grids and maps when the space is small enough to enumerate. Its cost growth with the number of cells is why large or high-dimensional problems (for example a flying drone with 6 degrees of freedom) use sample-based or bell-curve representations of the belief instead, such as particle filters and Kalman filters (see the Bayes Filter entry).
+
+---
+
 <a id="horizontal-markovization"></a>
 ### Horizontal Markovization
 
@@ -2279,6 +2563,71 @@ With $h=1$ the earlier $VBZ$ has been forgotten, so this symbol is shared with a
 
 ---
 
+<a id="importance-sampling"></a>
+### Importance Sampling
+
+**The Big Idea**: Algebra 2 covers weighted averages - a course grade where the final exam counts for more than a quiz is one. Importance sampling is a weighted average used to repair a mismatch: you want the average of some quantity under one probability distribution (the **target**), but the only random samples you have were drawn from a different distribution (the **proposal**). Rather than throwing those samples away, you keep them and give each one a correction weight. The idea of averaging samples at all is the Law of Large Numbers (see that entry above); the notion of a weighted average under a distribution is the Expectation entry in the math_symbols file, which is the right thing to read first. The continuous version uses an integral (see the Integral entry in the math_symbols file), which is a step beyond Algebra 2, but the discrete version below needs only multiplication and addition.
+
+**General Usage**: Let $p(x)$ be the target distribution and $q(x)$ the proposal distribution, and let $f(x)$ be any function whose average under $p$ is wanted. Multiplying and dividing by $q(x)$ changes nothing, but regroups the average under $p$ into an average under $q$:
+$$
+E_p\big(f(x)\big) = \int p(x)\,f(x)\,dx = \int q(x)\,\frac{p(x)}{q(x)}\,f(x)\,dx = E_q\!\left(\frac{p(x)}{q(x)}\,f(x)\right).
+$$
+The ratio $w(x) = p(x)/q(x)$ is the importance weight (see the Importance Weight entry in the math_symbols file). Given $N$ samples $x_1, \dots, x_N$ drawn from $q$ (written $x_i \sim q$; see Sampling Notation in the math_symbols file), the average is estimated by
+$$
+E_p\big(f(x)\big) \approx \frac{1}{N}\sum_{i=1}^{N} w(x_i)\,f(x_i), \qquad x_i \sim q.
+$$
+The weight is large where the proposal produces too few samples compared with the target and small where it produces too many, so the mismatch is undone. The method requires $q(x) > 0$ wherever $p(x) > 0$: a region the proposal never samples cannot be corrected by any weight, because no sample exists there to carry it.
+
+**Example.** Suppose $x$ can only be $A$ or $B$. The target says $p(A) = 0.8$, $p(B) = 0.2$, and the quantity of interest is $f(A) = 10$, $f(B) = 20$. The true average under the target is
+$$
+E_p(f) = 0.8 \times 10 + 0.2 \times 20 = 8 + 4 = 12.
+$$
+Now suppose samples can only be drawn from a fair coin flip, $q(A) = 0.5$, $q(B) = 0.5$. First compute the weights:
+$$
+w(A) = \frac{p(A)}{q(A)} = \frac{0.8}{0.5} = 1.6, \qquad w(B) = \frac{p(B)}{q(B)} = \frac{0.2}{0.5} = 0.4.
+$$
+Check the identity exactly, by averaging $w \cdot f$ under $q$:
+$$
+E_q(w f) = 0.5 \times (1.6 \times 10) + 0.5 \times (0.4 \times 20) = 0.5 \times 16 + 0.5 \times 8 = 8 + 4 = 12.
+$$
+It matches. Now do it with actual samples. Say four draws from $q$ come out $A, B, B, A$:
+
+| Sample $i$ | $x_i$ | $f(x_i)$ | $w(x_i)$ | $w(x_i)\,f(x_i)$ |
+|---|---|---|---|---|
+| 1 | $A$ | 10 | 1.6 | 16 |
+| 2 | $B$ | 20 | 0.4 | 8 |
+| 3 | $B$ | 20 | 0.4 | 8 |
+| 4 | $A$ | 10 | 1.6 | 16 |
+
+The weighted average is $\frac{16 + 8 + 8 + 16}{4} = \frac{48}{4} = 12$, the correct answer. The unweighted average of the same four samples would have been $\frac{10 + 20 + 20 + 10}{4} = 15$, which is the average under $q$, not under $p$ - the weights are what turn one into the other.
+
+**AI/ML Usage**: Importance sampling is the mathematical core of the update step of a particle filter, an algorithm that tracks the location of a robot using a cloud of weighted guesses called particles. The particles are first moved forward by a motion model (a rule for how the robot's position changes when it is commanded to move), which makes them samples from a proposal distribution; each is then weighted by the observation likelihood (how probable the actual sensor reading would be from that particle's position), which is exactly the importance weight needed to make them represent the target distribution, the updated belief about where the robot is. The same technique appears in off-policy reinforcement learning, where data gathered while following one decision-making rule is reweighted to evaluate a different rule.
+
+---
+
+<a id="in-context-learning"></a>
+### In-Context Learning
+
+**The Big Idea**: Algebra 2 already contains the core skill: "continue the pattern." Given the sequence 2, 4, 6, 8, a student supplies 10 without being told a rule, because the rule is evident from the terms already written. In-context learning asks a language model to do the same thing with text: the task is never stated as a formula and the model is never retrained; the pattern is simply written out, and the model continues it. This is the opposite of Fine-Tuning (see the Fine-Tuning (Transfer Learning) entry), where the model's weights are changed by Gradient Descent (see that entry).
+
+**General Usage**: In-context learning is using a pretrained language model on a new task **without any gradient updates** — without changing a single one of its weights — by placing a description of the task, some worked examples, or both, into the model's input (its **context**), followed by a new, unanswered case. The whole input is one ordinary string of text. Because a language model outputs the most probable continuation $P(y_n \mid y_1, \ldots, y_{n-1})$ of whatever it is given, and the most probable continuation of a list of solved cases followed by an unsolved one is the solution to the unsolved one, the model's continuation is taken as its answer. The number of worked examples in the context is the number of **shots**: **zero-shot** means none (a task description only), **one-shot** means one, and **few-shot** means a handful. The context can only *select* an ability the model already acquired during training; it cannot supply knowledge the model never had.
+
+**Example.** A few-shot prompt for finding the opposite of a word, with $K = 3$ examples:
+
+| Line | Text | Part |
+|---|---|---|
+| 1 | Give the opposite of each word. | task description |
+| 2 | hot => cold | example 1 |
+| 3 | up => down | example 2 |
+| 4 | early => late | example 3 |
+| 5 | open => | the new case (the prompt) |
+
+The five lines are joined into one string and given to the model. Suppose the model assigns these probabilities to the next token: "closed": 0.72, "shut": 0.15, "door": 0.03, everything else: 0.10 (total $0.72 + 0.15 + 0.03 + 0.10 = 1.00$). The highest-probability token, "closed", is read off as the answer. Counting the shots: lines 2 through 4 are the examples, so this is 3-shot. Deleting lines 2 through 4 would make it zero-shot; keeping only line 2 would make it one-shot. In none of these cases is any weight of the model changed.
+
+**AI/ML Usage**: In-context learning was established as a practical method by the GPT-3 model (see the GPT (Generative Pre-trained Transformer) entry), which was evaluated on standard benchmarks using only a few examples per task in its context. It is strongly dependent on model size: models with on the order of a billion parameters gain almost nothing from in-context examples, while models with over a hundred billion parameters improve sharply. Its results are also sensitive to which examples are chosen, the order they appear in, and the wording of the task description. It is the basis of **prompting**, the now-standard way of using large language models.
+
+---
+
 <a id="independent-and-identically-distributed"></a>
 ### Independent and Identically Distributed
 
@@ -2302,6 +2651,36 @@ With $h=1$ the earlier $VBZ$ has been forgotten, so this symbol is shared with a
 **Example.** The indicator function for "$x>5$" outputs $1$ for $x=7$ (since $7>5$ is true) and outputs $0$ for $x=3$ (since $3>5$ is false). Summing this indicator function across an entire dataset — adding up a $1$ for every example where the condition holds true, and a $0$ for every example where it doesn't — directly counts how many examples in total satisfy that particular condition.
 
 **AI/ML Usage**: Indicator functions show up constantly throughout machine learning formulas — zero-one loss (see that entry in the math_symbols file) is itself literally an indicator function checking whether $\hat y \ne y$, and indicator functions are the standard mathematical tool for converting any logical condition into something that can be directly summed, averaged, or otherwise combined arithmetically.
+
+---
+
+<a id="induction-head"></a>
+### Induction Head
+
+**The Big Idea**: This is a lookup, the same operation as reading a value from a table: to find what goes with $A$, locate the row where $A$ appeared and read off the entry beside it. Algebra 2 uses exactly this when a function is given as a table of $(x, y)$ pairs and $f(3)$ is found by locating $x = 3$ and reading the $y$ next to it. An induction head performs that lookup on the text a language model has already read: "the last time I saw this token, what came right after it?" It is built from Self-Attention (see that entry; the Multi-Head Self-Attention entry explains what a single "head" is), and nothing beyond those entries is required.
+
+**General Usage**: An induction head is a pair of attention heads in two different layers of a Transformer (see the Transformer Architecture entry) that together complete the pattern $\ldots[A][B]\ldots[A] \to [B]$: having seen token $A$ followed by token $B$ earlier, then meeting $A$ again, the model predicts $B$. The first head, in the earlier layer, copies into each position information about the token immediately before it, so every token carries a record of its predecessor. The second head, in the later layer, uses that record: from the current token $A$, it attends to whichever earlier position is recorded as "preceded by $A$" — which is the position holding $B$ — and copies that token forward, raising its **logit** (the raw score for a candidate next token, before scores are converted to probabilities; see the Softmax Function entry in the math_symbols file). The match need not be exact: the same machinery completes $[A^*][B^*]\ldots[A] \to [B]$ when $A^*$ is merely similar to $A$, which makes it a "fuzzy" or nearest-neighbor form of pattern completion (see the K-Nearest Neighbors entry). Because the second head depends on what the first wrote, an induction head cannot exist in a one-layer model.
+
+**Example.** The model has read the tokens below and must predict what follows position 7.
+
+| Position | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|
+| Token | red | K | 7 | blue | Q | red | K |
+
+*Step 1 — the first head records each token's predecessor:*
+
+| Position | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+|---|---|---|---|---|---|---|---|
+| Token | red | K | 7 | blue | Q | red | K |
+| Record: "preceded by" | (none) | red | K | 7 | blue | Q | red |
+
+*Step 2 — the second head, at position 7.* The current token is K. The head looks through positions 1 to 6 for one whose record says "preceded by K". Checking each: position 1 (none), 2 (red), 3 (K — a match), 4 (7), 5 (blue), 6 (Q). Only position 3 matches.
+
+*Step 3 — copy.* Position 3 holds the token 7, so the logit of 7 is raised and the model predicts **7**.
+
+Check against the pattern: $A$ = K and $B$ = 7; the text contained $\ldots$[K][7]$\ldots$[K], and the completion is [7]. Notice that position 2, which holds the token K itself, was *not* the one attended to — the head looks for what came *after* an earlier K, not for the earlier K.
+
+**AI/ML Usage**: Induction heads were identified in the study of Transformer circuits, a branch of **mechanistic interpretability** — research that tries to explain a neural network's behavior by identifying the specific internal components responsible for it. They are proposed as a mechanism behind In-Context Learning (see that entry): a prompt made of input-label pairs followed by a new input has the form $[A^*][B^*]\ldots[A]$, and completing it with a label is the induction pattern. Supporting evidence is that, during training of small attention-only Transformers with two or more layers, the ability to use context improves abruptly at the same point at which induction heads form, that the abrupt change comes earlier when the architecture is modified to make induction heads easier to form, and that removing the heads changes the model's behavior sharply.
 
 ---
 
@@ -2335,6 +2714,27 @@ Inflating the heuristic can change which vertex looks more promising, steering t
 **Example.** Start and goal $100$ apart. With $c_{best}=148.24$: semi-major $a=74.12$, semi-minor $b=\tfrac12\sqrt{148.24^2-100^2}\approx54.72$ (half the distance between the foci is $50$, and $b=\sqrt{a^2-50^2}$), area $\pi ab\approx12{,}741$. With $c_{best}=107.12$: $a=53.56$, $b\approx19.20$, area $\approx3{,}231$, about $4\times$ smaller. At $c_{best}=100$: $b=0$, area $0$.
 
 **AI/ML Usage**: A published comparison in a random-obstacle world reached the same solution cost in $0.9$ s where RRT* needed $17.3$ s. Informed RRT* is a standard option in motion-planning libraries.
+
+---
+
+<a id="instruction-tuning"></a>
+### Instruction Tuning
+
+**The Big Idea**: This is Fine-Tuning (see the Fine-Tuning (Transfer Learning) entry) applied to many tasks at once instead of one, with one addition: every training example begins with a sentence saying, in ordinary words, what is to be done. It combines that entry with Multitask Learning (see that entry). The everyday analogy is a mixed-review worksheet: instead of forty factoring problems in a row, each problem starts with its own instruction ("Factor.", "Solve for $x$.", "Graph."), and the student learns to read the instruction and switch methods accordingly — and, having done so, can often cope with an instruction they have not met before. No mathematics beyond those two entries is involved.
+
+**General Usage**: A language model pretrained to predict the next word models $P(\text{word} \mid \text{context})$, but it is used to produce $P(\text{answer} \mid \text{prompt})$. Instruction tuning closes that gap. Existing labeled datasets for many different tasks are converted into (prompted input, output) pairs by wrapping each input in a natural-language instruction, often written in several different wordings by different people. The pretrained model is then fine-tuned, by ordinary supervised training, on all of these pairs mixed together, so that the instruction is the only thing telling it which task to perform. The trained model is evaluated on **held-out tasks**: tasks, and preferably whole families of related tasks, none of whose data appeared in training, specified to the model only by a new instruction. Success on these is called **task generalization** or zero-shot generalization (see the Zero-Shot Prompting entry).
+
+**Example.** Converting three labeled examples from three datasets into instruction-tuning data, and counting the mixture.
+
+| Source dataset | Original input | Original label | Instruction added | Training pair (input $\to$ output) |
+|---|---|---|---|---|
+| Sentiment | "Loved it." | positive | "Is this review positive or negative?" | "Loved it. Is this review positive or negative?" $\to$ "positive" |
+| Translation | "cheese" | "fromage" | "Translate to French:" | "Translate to French: cheese" $\to$ "fromage" |
+| Arithmetic | "7 + 5" | 12 | "What is the sum?" | "7 + 5 What is the sum?" $\to$ "12" |
+
+Suppose 600 examples are taken from the sentiment dataset, 300 from translation, and 100 from arithmetic. The mixture has $600 + 300 + 100 = 1000$ training pairs, and a pair drawn at random is a sentiment example with probability $600 \div 1000 = 0.6$, a translation example with probability $0.3$, and an arithmetic example with probability $0.1$ (check: $0.6 + 0.3 + 0.1 = 1.0$). The model therefore sees the tasks interleaved, in roughly those proportions, and must rely on the instruction each time. A held-out test would then use a fourth task that contributed nothing to the 1000 pairs — for example "Does the second sentence follow from the first?" — given with its instruction and no examples.
+
+**AI/ML Usage**: The T0 model applied this recipe to a pretrained T5 model (see the T5 entry) using crowdsourced instructions, holding out entire task families such as natural language inference (see the Textual Entailment (Natural Language Inference) entry) for testing. Flan-PaLM and the smaller Flan-T5 scaled it to roughly 1,800 tasks and found that benchmark scores kept improving as more tasks were added, even for a model with hundreds of billions of parameters. Instruction-tuned models are much less sensitive than raw language models to the exact wording of a prompt and to the choice and order of in-context examples (see the Few-Shot Prompting entry). Instruction tuning is one of two main ways of adapting a pretrained language model to follow prompts; the other uses human judgments of the model's outputs as the training signal.
 
 ---
 
@@ -2390,6 +2790,27 @@ The algorithm can be interrupted after any of these steps and still hand back a 
 **Example.** For the convex function $f(x)=x^2$, take the two values $2$ and $8$. Squaring each first and then averaging gives $\frac{2^2+8^2}{2} = \frac{4+64}{2}=34$. Averaging first and then squaring instead gives $\left(\frac{2+8}{2}\right)^2 = 5^2 = 25$. Confirming Jensen's inequality: $34 \ge 25$, exactly as guaranteed.
 
 **AI/ML Usage**: Jensen's inequality is a foundational tool used throughout machine learning theory and probabilistic modeling — it's used, for instance, to derive and justify the "lower bound" (ELBO) formulas central to Variational Autoencoders and other techniques that approximate difficult-to-compute probability calculations with a more manageable, guaranteed lower bound instead.
+
+---
+
+<a id="joint-probability-distribution"></a>
+### Joint Probability Distribution
+
+**The Big Idea**: This builds on the Probability / Probability Density entry from the math_symbols file. Algebra 2 probability typically asks about one event at a time; a joint distribution is the same idea applied to two or more quantities at once, answering "how likely is this combination?"
+
+**General Usage**: For two random variables (see the Random Variable entry) $X$ and $Y$, the joint distribution $P(X, Y)$ gives the probability of each combination of an outcome of $X$ with an outcome of $Y$ happening together. It can always be split into a conditional distribution times a single-variable distribution, in two ways: $$P(X,Y) = P(X \mid Y)\,P(Y) = P(Y \mid X)\,P(X)$$ (the vertical bar is explained in the Conditional Bar entry in the math_symbols file). Summing a joint distribution over one of its variables recovers the distribution of the other (see the Marginalization entry). The sum of $P(X,Y)$ over every combination is $1$.
+
+**Example.** A bag holds 4 marbles. Two are red and square-patterned, one is red and plain, and one is blue and plain. Let $X$ be the color and $Y$ the pattern, and draw one marble at random.
+
+1. Each marble has probability $\tfrac{1}{4}$ of being drawn.
+2. $P(X=\text{red}, Y=\text{square}) = \tfrac{2}{4} = 0.5$.
+3. $P(X=\text{red}, Y=\text{plain}) = \tfrac{1}{4} = 0.25$.
+4. $P(X=\text{blue}, Y=\text{plain}) = \tfrac{1}{4} = 0.25$.
+5. $P(X=\text{blue}, Y=\text{square}) = 0$, since no such marble exists.
+6. Check: $0.5 + 0.25 + 0.25 + 0 = 1$.
+7. Check the split: $P(Y=\text{square}) = 0.5$ and $P(X=\text{red}\mid Y=\text{square}) = 1$, and $1 \times 0.5 = 0.5 = P(X=\text{red}, Y=\text{square})$.
+
+**AI/ML Usage**: A generative model learns a joint distribution over inputs and labels, or over all the words of a sentence, and then uses the two-way split above to compute whichever conditional it needs; Naive Bayes classifiers (see that entry) model $P(\text{features}, \text{label})$ exactly this way. In probabilistic state estimation, a robot's belief about its position and the map is a joint distribution that is repeatedly updated (see the Bayes Filter entry).
 
 ---
 
@@ -2689,6 +3110,26 @@ Check: the normalized vector's own mean is $0$ and its own variance is $1$, exac
 
 ---
 
+<a id="lidar-laser-range-finder"></a>
+### LIDAR (Laser Range Finder)
+
+**The Big Idea**: The Algebra 2 formula distance = rate × time is all a LIDAR needs. It sends out a pulse of laser light, times how long the pulse takes to bounce back, and converts that time into a distance. Doing this in many directions gives a set of distances to the surrounding surfaces.
+
+**General Usage**: A LIDAR (also called a laser scanner or laser range finder) is a sensor that measures the distance from itself to the nearest surface along each of many known directions. One sweep is called a **scan**. Each measurement is a direction (an angle) together with a **range** (a distance); converted to coordinates, each becomes one point where a surface was detected. Real readings are noisy, so the points lie near the true surfaces rather than exactly on them.
+
+**Example.** Light travels about $300{,}000{,}000$ meters per second. A pulse returns after $20$ nanoseconds, which is $0.000000020$ seconds.
+
+1. Total distance travelled by the light: $300{,}000{,}000 \times 0.000000020 = 6$ meters.
+2. That is the trip out and back, so the surface is $6 / 2 = 3$ meters away.
+3. If the beam was pointing straight ahead (angle $0^\circ$) from a sensor at the origin, the detected point is at $(3, 0)$.
+4. If the next beam, pointing straight left ($90^\circ$), returns a range of $2$ meters, its point is at $(0, 2)$.
+
+Two beams have given two points on the surrounding walls; a real scan gives hundreds.
+
+**AI/ML Usage**: In mobile robot localization (estimating where a robot is on a known map) the LIDAR scan is the observation fed to the observation likelihood model, which scores how probable that scan would be from a proposed robot position (see the Observation Likelihood Model (Sensor Model) entry). A particle filter (see the Particle Filter entry) uses that score to weight each of its guessed positions. LIDAR point sets are also the input to perception systems in self-driving cars that detect vehicles and pedestrians.
+
+---
+
 <a id="likelihood"></a>
 ### Likelihood
 
@@ -2833,6 +3274,24 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** In Variational Autoencoders, the true likelihood of the observed data is generally far too computationally difficult to calculate exactly. Instead, the model maximizes something called the ELBO (Evidence Lower BOund) — a genuine, guaranteed lower bound on that true likelihood — since maximizing the ELBO reliably pushes the true likelihood up as well, even though the true likelihood itself is never computed directly.
 
 **AI/ML Usage**: Working with a lower bound instead of an intractable true quantity is an extremely common and powerful strategy throughout probabilistic machine learning — Jensen's Inequality (see that entry above) is frequently the exact mathematical tool used to derive these useful, tractable lower bounds in the first place.
+
+---
+
+<a id="marginalization"></a>
+### Marginalization
+
+**The Big Idea**: This builds on the Summation and Integral entries from the math_symbols file and on the Joint Probability Distribution entry. In Algebra 2 you may have seen a two-way table of counts with row and column totals written in the margins; marginalizing is exactly "adding across a row to get the total in the margin," applied to probabilities. For continuous quantities the sum becomes an integral, which is calculus beyond Algebra 2, but the idea is the same sum.
+
+**General Usage**: Marginalization removes a variable you do not know or do not care about from a probability by summing over (for discrete variables) or integrating over (for continuous variables) every value that variable could take: $$P(a) = \sum_{b} P(a, b), \qquad p(a) = \int p(a, b)\,db .$$ Combined with the product rule $P(a,b) = P(a \mid b)\,P(b)$ (see the Conditional Bar entry in the math_symbols file), this gives the law of total probability: $$P(a) = \sum_{b} P(a \mid b)\,P(b),$$ a weighted sum over every way the outcome could have come about, each way weighted by how likely it is. Any variable already conditioned on stays on the right of every bar: $P(a \mid c) = \sum_{b} P(a \mid b, c)\,P(b \mid c)$. The rule works in both directions: read left to right it removes $b$ from an expression, and read right to left it introduces a helper variable $b$ that makes a hard calculation easier.
+
+**Example.** Suppose $P(\text{rain}, \text{windy}) = 0.1$, $P(\text{rain}, \text{calm}) = 0.2$, $P(\text{dry}, \text{windy}) = 0.3$ and $P(\text{dry}, \text{calm}) = 0.4$. To find $P(\text{rain})$ without caring about wind, add over both wind values:
+
+1. $P(\text{rain}) = P(\text{rain}, \text{windy}) + P(\text{rain}, \text{calm}) = 0.1 + 0.2 = 0.3$.
+2. Check: $P(\text{dry}) = 0.3 + 0.4 = 0.7$, and $0.3 + 0.7 = 1$, as total probability must.
+3. Second form: $P(\text{windy}) = 0.1+0.3 = 0.4$ and $P(\text{rain}\mid\text{windy}) = 0.1/0.4 = 0.25$; $P(\text{calm}) = 0.6$ and $P(\text{rain}\mid\text{calm}) = 0.2/0.6 = \tfrac{1}{3}$.
+4. Weight and add: $P(\text{rain}) = 0.25\times 0.4 + \tfrac{1}{3}\times 0.6 = 0.1 + 0.2 = 0.3$, the same answer. It lies between the two conditional values $0.25$ and $\tfrac{1}{3}$, as a weighted average must.
+
+**AI/ML Usage**: Marginalization is the basic operation for handling hidden quantities in probabilistic models. It is the predict step of a Bayes filter (see the Bayes Filter entry): the unknown previous state is summed or integrated out, each previous state weighted by its belief. A motion model that normally needs an odometry input $u$ can still be used when $u$ is unknown, for example when tracking a pedestrian, by marginalizing $u$ out. The Forward algorithm in Hidden Markov Models (see that entry) sums over all hidden state sequences to get the probability of an observed sequence, in latent variable models (see the Latent Variable entry) the unobserved variable is marginalized out to get the probability of the data, and Bayesian prediction averages over every possible value of the model parameters.
 
 ---
 
@@ -3043,6 +3502,24 @@ The same idea extends to more than two players: instead of tracking a single num
 
 ---
 
+<a id="mobile-robot-localization"></a>
+### Mobile Robot Localization
+
+**The Big Idea**: This builds on the Posterior Distribution and Conditional Bar entries and on the Belief entry in the math_symbols file. Think of it as an Algebra 2 style "solve for the unknown," except the unknown is a robot's own location, and instead of one exact answer the result is a set of likelihoods over many possible locations.
+
+**General Usage**: Mobile robot localization is the problem of working out where a moving robot is in a known world (usually a map) using two imperfect sources of information: odometry (see the Odometry entry), which records how far the robot believes it has moved, and sensor observations of its surroundings. It is hard because motion is imprecise (a commanded 1 m move might end up slightly shorter or longer) and sensing is noisy (a wall exactly 10 m away might be reported as slightly more or less). The standard solution keeps a belief, a probability density over possible locations, and updates it as new data arrive (see the Bayesian State Estimation and Bayes Filter entries).
+
+**Example.** A robot is told to drive forward 1 m, three times in a row.
+
+1. If motion were perfect, it would end up exactly $1 + 1 + 1 = 3$ m from its start.
+2. Suppose the three real moves are $0.97$ m, $1.04$ m, and $0.98$ m.
+3. The true distance is $0.97 + 1.04 + 0.98 = 2.99$ m, so the robot is off by $3 - 2.99 = 0.01$ m.
+4. The robot cannot see these individual errors, so it cannot know the exact $0.01$ m gap. Errors like these accumulate with every move, which is why odometry alone is not enough and sensor observations are needed to correct the estimate.
+
+**AI/ML Usage**: Localization is a core capability of self-driving cars, warehouse robots, and robot vacuums, and is commonly solved with particle filters and Kalman filters (methods that maintain a belief over position as new measurements arrive). The same problem appears in phone navigation, which fuses motion measurements with occasional GPS readings.
+
+---
+
 <a id="model-complexity"></a>
 ### Model Complexity
 
@@ -3155,6 +3632,24 @@ After only these two cycles, the running estimates already distinguish $a_1$ ($Q
 **Example.** If in the training data the word "the" is always tagged as a determiner, then every "the" in the test data is tagged determiner and is right every time. A word that is tagged as a noun more often than as a verb in training is always labeled a noun, even in a sentence where it is clearly acting as a verb, which is where this method makes its mistakes.
 
 **AI/ML Usage**: On the standard English Penn Treebank tagging benchmark this baseline already reaches about 90% accuracy, because many words (punctuation, "the", "a") have only one possible tag. This sets the bar for hidden Markov model taggers (about 95%) and neural taggers (about 97.5%), whose improvement is measured against it (see the Accuracy (Classification) entry).
+
+---
+
+<a id="motion-model"></a>
+### Motion Model
+
+**The Big Idea**: This builds on the Conditional Bar and Probability entries in the math_symbols file and on the Markov Model entry. In Algebra 2, a function like $y = 2x + 3$ takes an input and gives one exact output; a motion model is the same idea, except that the "output" is a spread of probabilities over where something ends up rather than one exact answer.
+
+**General Usage**: A motion model, written $p(x_{t+1} \mid x_t, u_{t+1})$, gives the probability that a moving agent is in state $x_{t+1}$ at the next time step, given that it was in state $x_t$ at the previous step and that the movement information (odometry, see the Odometry entry) was $u_{t+1}$. It is a function of all three quantities, centered on the expected outcome and spread out by errors such as wheel slip. It is normally built on the Markov assumption that, once $x_t$ and $u_{t+1}$ are known, older states and older odometry add no information. It is a limited, probabilistic approximation that can be built from knowledge of the physics or learned from data. A common continuous version is a bell curve centered on the noise-free prediction with a spread proportional to the distance moved, $p(x_{t+1}\mid x_t,u_{t+1}) = \mathcal{N}\big(x_t+u_{t+1},\ k\,|u_{t+1}|\big)$ (see the Normal Distribution Notation entry in the math_symbols file); the spread grows with distance because a robot that does not move has no motion error.
+
+**Example.** A discrete version on a grid, for the command "move 1 cell right," assigns probability $0.8$ to landing exactly 1 cell to the right, $0.1$ to 0 cells and $0.1$ to 2 cells. These add to $1$, and the largest value sits at the expected outcome. A continuous version, with $k = 0.1$:
+
+1. For $x_t = 5$ m and $u_{t+1} = 5$ m, the noise-free prediction is $5 + 5 = 10$ m, the center of the bell curve.
+2. The spread is $k\,|u_{t+1}| = 0.1 \times 5 = 0.5$ m.
+3. For a move of only $u_{t+1} = 1$ m from the same start, the center is $5+1 = 6$ m and the spread is $0.1 \times 1 = 0.1$ m, a much narrower curve.
+4. Changing either $x_t$ or $u_{t+1}$ changes the answer, which is what "a function of all three terms" means.
+
+**AI/ML Usage**: The motion model is the predict step of Bayes filters, such as the Kalman filter and particle filter, used for robot localization and for tracking objects such as pedestrians (see the Bayes Filter entry). A particle filter (a method that represents a belief by many sampled guesses) applies the motion model to move every sampled guess forward in time before the sensor reading is used to reweight them. In model-based reinforcement learning, the analogous learned transition model predicts the next state from the current state and action.
 
 ---
 
@@ -3378,7 +3873,7 @@ Training adjusts $\bar w_{\text{bit}}$, $\bar c_{\text{the}}$, and $\bar c_{\tex
 
 **Example.** A simple network for classifying handwritten digits might take in 784 raw pixel values, pass them through a hidden layer of 128 neurons (each independently computing its own weighted sum plus activation function), and finally output 10 numbers — one confidence score for each possible digit, 0 through 9 — with the network's specific weights determining exactly what patterns it has genuinely learned to detect along the way.
 
-**AI/ML Usage**: Neural networks are the foundational architecture underlying essentially all of modern deep learning — image recognition systems, large language models like GPT and Claude, and recommendation systems are all, in some specific form, neural networks trained via backpropagation on very large quantities of data.
+**AI/ML Usage**: Neural networks are the foundational architecture underlying essentially all of modern deep learning — image recognition systems, large language models (the systems behind modern chatbots), and recommendation systems are all, in some specific form, neural networks trained via backpropagation on very large quantities of data.
 
 ---
 
@@ -3492,6 +3987,23 @@ Beam search's objective is exactly this running product (see Beam Search above),
 
 ---
 
+<a id="normalization-of-a-probability-distribution"></a>
+### Normalization of a Probability Distribution
+
+**The Big Idea**: To turn a list of scores into percentages, you divide each score by the total. Normalization is that same step: it rescales non-negative numbers so they add up to $1$ and can be read as probabilities.
+
+**General Usage**: Given non-negative values $v_1, \ldots, v_n$ that are only proportional to the probabilities you want (see the Proportional To entry in the math_symbols file), compute the sum $Z = v_1 + \cdots + v_n$ and replace each value by $v_i / Z$. The results add up to $1$ and keep the same relative sizes. $Z$ is called the normalizing constant. (This is different from batch or layer normalization, which rescale values to a standard mean and spread; see the Batch Normalization and Layer Normalization entries.)
+
+**Example.** Unnormalized values $4,\ 1,\ 3,\ 2$.
+
+1. Sum: $Z = 4+1+3+2 = 10$.
+2. Divide each by $10$: $0.4,\ 0.1,\ 0.3,\ 0.2$.
+3. Check: $0.4+0.1+0.3+0.2 = 1$, and the ratio between the first and second values is still $4:1$.
+
+**AI/ML Usage**: A Bayes filter's observation update multiplies every cell of the belief by a likelihood, which destroys the total of $1$, so a second pass divides every cell by the sum (see the Bayes Filter entry). The softmax function (see the Softmax Function entry in the math_symbols file) is a normalization applied after exponentiating, and Naive Bayes and other posterior computations normalize in the same way.
+
+---
+
 <a id="np-hard"></a>
 ### NP-Hard
 
@@ -3546,6 +4058,61 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 **Example.** A full training objective might be written as $\sum_i \text{loss}(\hat y_i, y_i) + \lambda\lVert w\rVert^2$ — combining the summed prediction error across every single example with an added regularization penalty discouraging overly large weights, all rolled together into one single combined number that training tries to make as small as possible.
 
 **AI/ML Usage**: "Loss function," "cost function," and "training objective" are all essentially interchangeable terms used throughout machine learning to refer to this exact same central idea: whatever single overall number a training algorithm is directly, actively trying to minimize (or, less commonly, maximize) throughout the entire training process.
+
+---
+
+<a id="observation-likelihood-model-sensor-model"></a>
+### Observation Likelihood Model (Sensor Model)
+
+**The Big Idea**: This builds on the Conditional Bar entry in the math_symbols file and the Likelihood entry. Run a conditional probability backward from how you usually read it: instead of "given what I saw, where am I?", ask "if I were here, how likely is it that I would see this?" It is like the Algebra 2 habit of plugging a value into a function to see what comes out, except the output is "how probable is each possible sensor reading, if the world is in this particular state."
+
+**General Usage**: The observation likelihood model, written $p(s_t \mid x_t, D)$ (or $p(s_t \mid x_t)$ when the prior knowledge $D$ is understood), gives the probability of receiving sensor reading $s_t$ at time $t$ when the agent is in state $x_t$ and the prior knowledge of the world (such as a map) is $D$. It first predicts the reading expected from $x_t$ and $D$, then spreads probability around that expected value according to the sensor noise. It also reflects environmental factors (moving objects, surface reflectivity), sensor limitations (minimum and maximum range), and unmodeled random errors. A noisier sensor gives a wider spread; a precise sensor gives a narrower one. Under the Markov assumption for observations, earlier states and readings are not needed. Note that as a function of the state $x_t$ it is a likelihood, not a probability distribution: its values need not add to $1$ across states, which is why the filter rescales after using it (see the Bayes Filter entry). When a reading has only two outcomes, such as door or no door, $p(\text{door}\mid x)=1-p(\text{no door}\mid x)$, so only one needs storing.
+
+**Example.** A distance sensor faces a wall that the map says is at $x = 10$ m, and a door sensor works in a 3-cell hallway with a door only in cell 2.
+
+1. If the robot is at $x = 0$ m, the expected distance reading is $10 - 0 = 10$ m. The model assigns the highest probability to readings near $10$, a slightly lower probability to $10.1$ or $9.5$, and almost none to $15$.
+2. Moving the robot to $x = 4$ m changes the expected reading to $10 - 4 = 6$ m, so the whole spread shifts to center near $6$.
+3. For the door sensor, $p(\text{door}\mid x)=(0.1,\ 0.9,\ 0.1)$ over the three cells, so $p(\text{no door}\mid x)=(0.9,\ 0.1,\ 0.9)$.
+4. If the sensor reports a door, the likelihoods to multiply into the belief are $(0.1,\ 0.9,\ 0.1)$. They add to $1.1$, not $1$, confirming a likelihood across states is not a distribution.
+
+**AI/ML Usage**: In a particle filter or Bayes filter for robot localization, this model is the update step: each guess about the robot's position is weighted by $p(s_t \mid x_t, D)$ evaluated at the reading actually received, so guesses that would have produced that reading become more trusted (see the Bayes Filter entry). In Kalman filtering and SLAM it is called the measurement model, and in Hidden Markov Models (see that entry) the same role is played by the emission probability.
+
+---
+
+<a id="occupancy-grid-map"></a>
+### Occupancy Grid Map
+
+**The Big Idea**: This builds on graph paper from Algebra 2. Lay a grid of small squares over a floor plan and, in each square, write a number between $0$ and $1$ saying how likely it is that something solid is there. The filled-in sheet is an occupancy grid map. Probability itself goes beyond Algebra 2; see the Probability / Probability Density entry in the math_symbols file.
+
+**General Usage**: An occupancy grid map divides the world into a large number of equal cells and stores, for each cell, the probability that the cell is occupied by an obstacle rather than free. Values near $1$ mean "almost certainly a wall or object", values near $0$ mean "almost certainly empty", and values near $0.5$ mean "unknown". The map is in effect an image whose pixels are the cells. Its accuracy is limited by the cell size, and its memory use grows with the area covered divided by the area of one cell.
+
+**Example.** A room $10$ m by $8$ m is mapped with square cells $0.05$ m on a side.
+
+1. Cells along the $10$ m side: $10 \div 0.05 = 200$.
+2. Cells along the $8$ m side: $8 \div 0.05 = 160$.
+3. Total cells: $200 \times 160 = 32{,}000$.
+
+So $32{,}000$ probabilities are stored. Halving the cell size to $0.025$ m doubles the count along each side and gives $400 \times 320 = 128{,}000$ cells, four times as many.
+
+**AI/ML Usage**: Occupancy grids are the map format produced by many 2D LIDAR mapping systems, which update each cell's probability as new laser scans arrive, and they are the usual input to grid-based path planners such as A\* search (an algorithm that finds a shortest route through free cells). Compare the Vector Map entry, which stores walls as line segments instead of cells, and the Point Cloud entry.
+
+---
+
+<a id="odometry"></a>
+### Odometry
+
+**The Big Idea**: This builds on the idea of speed times time from Algebra 2 word problems: if you know how fast something moved and for how long, you know how far it went. Odometry is the running tally of how far a machine has moved, computed from its own motion measurements rather than from looking at the outside world.
+
+**General Usage**: Odometry is a record, at each time step, of how much an agent has moved, usually written $u_t$ (with $u_{1:t}$ for the whole history; see the Index Range Colon entry in the math_symbols file). It can come from wheel encoders (which count how much each wheel has rotated), from an inertial measurement unit (an accelerometer and gyroscope, as in a phone), or, when no such measurement exists, from the commands sent to the low-level motors (such as "drive forward 1 m" or wheel velocities and torques). Because wheels slip and motors are imprecise, odometry is useful but not exact, so it is treated as a random variable rather than an exact value and is combined with sensor observations (see the Bayesian State Estimation entry).
+
+**Example.** A wheel has circumference $0.5$ m and the wheel-rotation counter reads $6$ full rotations during one time step.
+
+1. Distance per rotation is the circumference, $0.5$ m.
+2. Distance moved this step is $6 \times 0.5 = 3$ m.
+3. So the odometry reading for this step is $u_t = 3$ m.
+4. If the wheel slipped slightly on the floor, the true motion could be a little less than $3$ m, which is why this number is only an estimate of the motion.
+
+**AI/ML Usage**: Wheel odometry, or the commanded motion, is the input $u$ to the motion model (see the Motion Model entry) in robot localization and SLAM (simultaneous localization and mapping, building a map while tracking position). Visual odometry (estimating motion from successive camera images) and inertial odometry (from accelerometers and gyroscopes) play the same role for drones, phones, and self-driving cars.
 
 ---
 
@@ -3676,6 +4243,32 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 
 ---
 
+<a id="particle-filter"></a>
+### Particle Filter
+
+**The Big Idea**: Algebra 2 teaches "guess and check" as a way to find a solution: try a value, see how well it fits, adjust. A particle filter is guess and check carried out with thousands of guesses at once, repeated every time new information arrives. It goes beyond Algebra 2 in using probability to move the guesses and to score them; the Bayes Filter (Recursive Bayesian Estimation) entry is the right thing to read first for the underlying idea.
+
+**General Usage**: A particle filter estimates the hidden state of a system (for example a robot's position) from noisy motion and sensor information. It represents its belief, a description of how probable each possible state is, by a set of sample states called **particles**; the set is the **particle cloud**. Many particles sit where the state is probable and few where it is not. Each cycle has three steps:
+
+1. **Predict.** Move every particle by drawing a random new state from the motion model, the probability distribution over the next state given the previous state and the measured motion (see the Motion Model entry and the Sampling Notation entry in the math_symbols file).
+2. **Update.** Give every particle a weight equal to the observation likelihood: how probable the actual sensor reading would be if the system were in that particle's state (see the Importance Weight entry in the math_symbols file).
+3. **Resample.** Draw a new set of particles from the old set with probability proportional to weight (see the Resampling entry).
+
+**Example.** A robot moves along a line. Four particles all start at position $0$. The robot reports moving $+1$. A sensor then reports that the robot is at position $1.0$.
+
+| Particle | Start | After predict (random draw near $0 + 1$) | Distance from sensor reading $1.0$ | Weight (smaller distance, larger weight) | Normalized weight |
+|---|---|---|---|---|---|
+| 1 | 0 | 0.8 | 0.2 | 2 | $2/10 = 0.2$ |
+| 2 | 0 | 1.0 | 0.0 | 4 | $4/10 = 0.4$ |
+| 3 | 0 | 1.1 | 0.1 | 3 | $3/10 = 0.3$ |
+| 4 | 0 | 1.5 | 0.5 | 1 | $1/10 = 0.1$ |
+
+The weights add to $2 + 4 + 3 + 1 = 10$, and dividing by 10 gives the last column. Resampling now draws four new particles using those probabilities. One possible outcome is positions $1.0, 1.0, 1.1, 0.8$: particle 2 was copied twice and particle 4, the worst match, was dropped. The cloud has tightened around the sensor reading, and the cycle repeats with these four as the starting particles.
+
+**AI/ML Usage**: Particle filters are a standard method for mobile robot localization, where the particles are possible poses (position and heading) of the robot on a known map, the motion model uses wheel odometry, and the weights come from comparing a LIDAR scan with what the map says should be seen (the algorithm is known as Monte Carlo localization). They are also used for tracking objects in video and, more generally, for estimating the hidden state in any model where the belief is too irregular to describe with a single bell curve.
+
+---
+
 <a id="pddl"></a>
 ### PDDL
 
@@ -3784,6 +4377,43 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 **Example.** Starting from $S_0=\{\text{At(Home)}\}$, level $A_0$ might include the action "Drive" (since its precondition, being at home, is already satisfied); level $S_1$ would then include both the original fact "At(Home)" (in case Drive isn't actually taken) and the new fact "At(Work)" (in case it is) — the graph keeps expanding this way, level after level, tracking every combination of facts and actions that remains reachable.
 
 **AI/ML Usage**: The planning graph structure is the core data structure that GraphPlan (see that entry) is built directly around — its layered structure, especially combined with the mutex relationships computed at each level, lets a planner efficiently rule out enormous numbers of clearly impossible action sequences well before ever needing to search through them individually one at a time.
+
+---
+
+<a id="point-cloud"></a>
+### Point Cloud
+
+**The Big Idea**: This builds on plotting ordered pairs $(x, y)$ from Algebra 2, extended to triples $(x, y, z)$ with a third number for height. Plot enough points on the surfaces of a room and the shape of the room becomes visible, the way a dot-to-dot picture shows its subject before the lines are drawn.
+
+**General Usage**: A point cloud is an unordered collection of points in space, each given by its coordinates $(x, y, z)$, and usually measured on the surfaces of real objects by a depth sensor. A single sensor sweep yields one cloud; clouds taken from different positions can be aligned with one another (a step called registration) and merged, and the accumulated result can serve as a map of the environment. A point cloud records where surfaces are but does not by itself say which points belong to the same object.
+
+**Example.** A sensor at the origin measures one point at distance $5$ m, straight ahead and level, and a second at distance $5$ m, straight ahead but $3$ m up and $4$ m forward.
+
+1. First point: $(x, y, z) = (5, 0, 0)$.
+2. Second point: $(x, y, z) = (4, 0, 3)$. Check its distance from the sensor: $\sqrt{4^2 + 0^2 + 3^2} = \sqrt{25} = 5$ m.
+3. The cloud so far is the set $\{(5,0,0),\ (4,0,3)\}$. A real scan contains hundreds of thousands of such points.
+
+**AI/ML Usage**: 3D LIDAR mapping algorithms build point cloud maps by registering successive scans. Neural networks (models built from layers of simple computing units) designed for point clouds, such as PointNet, take the list of coordinates directly as input to classify objects or detect cars and pedestrians for self-driving vehicles. See also the LIDAR (Laser Range Finder) entry.
+
+---
+
+<a id="polar-coordinates"></a>
+### Polar Coordinates
+
+**The Big Idea**: Algebra 2 locates a point by how far across and how far up it is, $(x, y)$. Polar coordinates locate the same point by how far away it is and in which direction, $(r, \theta)$, like saying "three miles to the northeast". Converting between the two descriptions uses the right-triangle definitions of sine and cosine (see the Sine and Cosine entry in the math_symbols file).
+
+**General Usage**: In polar coordinates a point is given by its distance $r \ge 0$ from the origin and the angle $\theta$ of the line to it, measured counterclockwise from the positive $x$ axis. The conversion to ordinary (Cartesian) coordinates is
+$$x = r\cos\theta, \qquad y = r\sin\theta,$$
+and the conversion back is $r = \sqrt{x^2 + y^2}$, with $\theta$ the angle whose cosine is $x/r$ and whose sine is $y/r$.
+
+**Example.** Convert the polar point $r = 10$, $\theta = 30°$ to $(x, y)$, using $\cos 30° \approx 0.866$ and $\sin 30° = 0.5$.
+
+1. $x = r\cos\theta = 10 \times 0.866 = 8.66$.
+2. $y = r\sin\theta = 10 \times 0.5 = 5$.
+3. The point is $(8.66,\ 5)$.
+4. Check by converting back: $r = \sqrt{8.66^2 + 5^2} = \sqrt{75.0 + 25} = \sqrt{100.0} = 10$, as it should be.
+
+**AI/ML Usage**: Range sensors report in polar form: a laser scanner gives a distance for each beam angle (see the LIDAR (Laser Range Finder) entry), and a robot's software converts each reading with $x = r\cos\theta$, $y = r\sin\theta$ to get the positions of detected obstacles. Radar and sonar data are handled the same way before being passed to mapping, localization, or object-detection algorithms.
 
 ---
 
@@ -4010,6 +4640,49 @@ Step 3–4 is the detail easiest to miss: **both endpoints being individually va
 
 ---
 
+<a id="probability-density-contour"></a>
+### Probability Density Contour
+
+**The Big Idea**: Algebra 2 covers solving $f(x) = c$ (where does a curve reach a given height?) and the equations of circles and ellipses. A probability density contour is exactly that question asked of a probability density function, the curve or surface whose height says how plausible each value is (see the Probability Mass Function vs. Probability Density Function entry). In one dimension the answer is a few points; in two dimensions it is a curve, just like a line of constant elevation on a hiking map.
+
+**General Usage**: For a density $p$ and a chosen constant $c$, the probability density contour is the set of all inputs at which the density equals $c$: all $x$ with $p(x) = c$, or all $(x, y)$ with $p(x, y) = c$. A drawing of several such sets for different values of $c$ is a **contour plot**. For a one-dimensional Gaussian (bell curve; see the Normal Distribution Notation entry in the math_symbols file) a contour is two points, one each side of the mean. For a two-dimensional Gaussian with zero mean, no tilt, and standard deviations $\sigma_x$ and $\sigma_y$ (see the Standard Deviation entry in the math_symbols file), the density depends on $x$ and $y$ only through the quantity $\frac{x^2}{\sigma_x^2} + \frac{y^2}{\sigma_y^2}$, so every contour is a curve on which that quantity is constant: a circle when $\sigma_x = \sigma_y$ and an ellipse otherwise (see the Ellipse (Locus Definition) entry). The shape of the contours therefore shows at a glance which directions the distribution treats as more or less uncertain.
+
+**Example.** One dimension first. The standard bell curve has height proportional to $e^{-x^2/2}$ (see the Euler's Number / Exponential Function entry in the math_symbols file), with its peak at $x = 0$ where the value is $e^{0} = 1$.
+
+1. Ask where the curve is at $e^{-1/2} \approx 0.607$ of its peak height: solve $e^{-x^2/2} = e^{-1/2}$.
+2. The exponents must match: $-\frac{x^2}{2} = -\frac{1}{2}$, so $x^2 = 1$.
+3. So $x = 1$ or $x = -1$. The contour is the two points $\{-1, +1\}$.
+
+Now two dimensions, with $\sigma_x = 2$ and $\sigma_y = 1$, on the contour where $\frac{x^2}{\sigma_x^2} + \frac{y^2}{\sigma_y^2} = 1$:
+
+1. Substitute: $\frac{x^2}{4} + \frac{y^2}{1} = 1$.
+2. Set $y = 0$: $\frac{x^2}{4} = 1$, so $x = \pm 2$. The contour passes through $(2, 0)$ and $(-2, 0)$.
+3. Set $x = 0$: $y^2 = 1$, so $y = \pm 1$. The contour passes through $(0, 1)$ and $(0, -1)$.
+4. This is an ellipse twice as long along x as along y, matching the fact that $\sigma_x$ is twice $\sigma_y$.
+5. Check with equal spreads $\sigma_x = \sigma_y = 1$: the equation becomes $x^2 + y^2 = 1$, a circle of radius $1$.
+
+**AI/ML Usage**: Contours are the standard way to picture uncertainty over two quantities. In robot localization, the uncertainty in a robot's position after a motion is drawn as a contour around its expected position: a motion model (the probability rule for where the robot ends up; see the Motion Model entry) that adds the same Gaussian noise to $x$ and $y$ produces a circle, a model that allows more error along the direction of travel than sideways produces an ellipse, and comparing those shapes with where real robots actually end up is how a model is judged and improved. The same pictures appear when plotting the components of a Gaussian mixture model (a density built by adding several bell-shaped bumps) and when plotting the loss surface (the error of a model as a function of two of its parameters) during training.
+
+---
+
+<a id="probability-mass-function-vs-probability-density-function"></a>
+### Probability Mass Function vs. Probability Density Function
+
+**The Big Idea**: This builds on the Probability / Probability Density entry in the math_symbols file and the Integral entry. For a variable with a countable list of outcomes, each outcome gets its own probability, and the probabilities add to $1$. For a variable that can land anywhere on a number line, there are too many outcomes for each to have a positive probability, so the function describes how tightly probability is packed around each point, and probability comes from area under the curve (the genuine leap beyond Algebra 2 is that area is computed with an integral).
+
+**General Usage**: A **probability mass function** (PMF), written with capital letters $P(X)$, is for a discrete random variable (a quantity with separate possible outcomes; see the Random Variable entry). It gives the probability of each individual outcome, so $P(X) \in [0,1]$ and $\sum_X P(X) = 1$. A **probability density function** (PDF), written with small letters $p(x)$, is for a continuous random variable. Its values are non-negative real numbers (see the Non-Negative Real Numbers entry in the math_symbols file) that can exceed $1$, it integrates to one, $\int_x p(x)\,dx = 1$, and a probability is obtained only for an interval: $$P(x \in [a,b]) = \int_a^b p(x)\,dx .$$ The probability of any single exact value is $0$. The density at a point is analogous to the mass density at a point inside a brick: the brick has a total mass, but a single infinitesimal point has no mass.
+
+**Example.** Take a continuous variable that is equally likely anywhere in $[0, 2]$, with density $p(x) = 0.5$ for $0 \le x \le 2$ and $0$ elsewhere.
+
+1. The total: the area of a rectangle of width $2$ and height $0.5$ is $2 \times 0.5 = 1$, as required.
+2. The probability of the interval $[0.5, 1.5]$ is the area of a rectangle of width $1$ and height $0.5$: $P(x\in[0.5,1.5]) = 1 \times 0.5 = 0.5$.
+3. The probability that $x$ equals exactly $1$ is the area of a rectangle of width $0$, which is $0$.
+4. Narrow the density: for $p(x)=4$ on $[0, 0.25]$, the total is $0.25 \times 4 = 1$, showing that a density value of $4$ is perfectly valid even though no probability can exceed $1$.
+
+**AI/ML Usage**: Neural networks that output continuous quantities (for example the mean and spread of a Normal distribution, see the Normal Distribution Notation entry) are trained by maximizing the density value assigned to the observed data (see the Likelihood entry), and probabilistic code typically exposes two operations on a distribution: sampling a value, and evaluating the density at a point, whose result is a non-negative real number.
+
+---
+
 <a id="projective-tree"></a>
 ### Projective Tree
 
@@ -4167,6 +4840,24 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 
 ---
 
+<a id="random-variable"></a>
+### Random Variable
+
+**The Big Idea**: In Algebra 2 a variable stands for an unknown number that you solve for and that has one fixed value. A random variable is a variable whose value is not fixed in advance but is decided by chance, and what you know about it is how likely each value is.
+
+**General Usage**: A random variable is a quantity whose value is the outcome of an uncertain process. It is conventionally written with a capital letter, such as $X$, and the specific values it can take are written with the matching small letter, such as $x$. It is **discrete** if it has a countable list of possible values (the number showing on a die) and **continuous** if it can take any value in a range (the angle at which a spinning wheel stops). Its behavior is described by a distribution: a probability mass function for a discrete one and a probability density function for a continuous one (see the Probability Mass Function vs. Probability Density Function entry).
+
+**Example.** Let $X$ be the number showing when a six-sided die is rolled.
+
+1. The possible values of $X$ are $1, 2, 3, 4, 5, 6$, so $X$ is discrete.
+2. Before the roll, $X$ has no single value; it has a distribution.
+3. After the roll lands on $4$, that outcome is $x = 4$.
+4. For a fair die each value has probability $\tfrac{1}{6}$, and the six probabilities add up to $6 \times \tfrac{1}{6} = 1$.
+
+**AI/ML Usage**: Every probabilistic model treats uncertain quantities as random variables: the label of an image, the next word in a sentence, or a noisy sensor reading. The statement "draw $x \sim p(x)$" (see the Sampling Notation entry in the math_symbols file) means picking one concrete value of the random variable according to its distribution, which is how generative models produce new text or images.
+
+---
+
 <a id="rank"></a>
 ### Rank
 
@@ -4203,6 +4894,25 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 
 ---
 
+<a id="ray-casting"></a>
+### Ray Casting
+
+**The Big Idea**: This builds on finding where two lines intersect, a standard Algebra 2 task done by solving two linear equations together. Ray casting asks: if a straight beam leaves this point in this direction, what is the first thing it hits, and how far away is that? The answer comes from intersecting the beam's line with every wall and keeping the nearest crossing.
+
+**General Usage**: Ray casting simulates a range sensor on a known map. For each beam, a line segment is constructed from the sensor's position in the beam's direction, from the sensor's minimum range out to its maximum range. The segment is tested for intersection against the obstacles in the map. If it crosses several, the crossing closest to the sensor is kept, because a real beam stops at the first surface. The distance to that crossing is the expected range for the beam; if nothing is crossed, the beam has no return within range.
+
+**Example.** A sensor sits at the origin and fires a beam along the positive $x$ axis, with maximum range $10$. The map has two vertical walls: one along the line $x = 4$ (from $y = -1$ to $y = 1$) and one along $x = 7$ (from $y = -2$ to $y = 2$).
+
+1. The beam is the set of points $(d, 0)$ for $0 \le d \le 10$, where $d$ is the distance traveled.
+2. Wall 1: the beam reaches $x = 4$ at the point $(4, 0)$. Is $y = 0$ within the wall's extent $-1 \le y \le 1$? Yes, so this is a crossing at distance $d = 4$.
+3. Wall 2: the beam reaches $x = 7$ at $(7, 0)$, and $y = 0$ lies within $-2 \le y \le 2$, so this is a crossing at distance $d = 7$.
+4. Keep the closer one: $\min(4, 7) = 4$.
+5. The expected range for this beam is $4$.
+
+**AI/ML Usage**: In particle filter localization (tracking many candidate robot positions and scoring each against sensor data), ray casting is run from every candidate position to produce the scan that position would be expected to see; comparing that with the real scan gives the candidate's score (see the Observation Likelihood Model (Sensor Model) entry). Robot simulators use the same computation to generate artificial sensor data for training and testing.
+
+---
+
 <a id="recurrent-neural-network-rnn"></a>
 ### Recurrent Neural Network (RNN)
 
@@ -4226,6 +4936,34 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 **Example.** Without any regularization, a model might learn one particular feature's weight to be an enormous $1{,}000$, relying extremely heavily and precariously on just that one specific feature. Adding a regularization penalty specifically discourages such extreme, precarious weight values, gently pushing the model instead toward a more balanced, moderate solution that spreads its reliance more sensibly across several different features.
 
 **AI/ML Usage**: Regularization (in its various forms — L1, which pushes weights toward exactly zero, and L2, which shrinks weights toward zero more gently and gradually) is one of the single most fundamental, universal, and widely used techniques throughout all of machine learning for directly combating overfitting.
+
+---
+
+<a id="reinforcement-learning-from-human-feedback-rlhf"></a>
+### Reinforcement Learning from Human Feedback (RLHF)
+
+**The Big Idea**: This is a genuine step beyond Algebra 2, and it combines three ideas that each have their own entry: Fine-Tuning (see the Fine-Tuning (Transfer Learning) entry), the Bradley-Terry Model (see that entry), and the Expectation, or long-run average (see the Expectation entry in the math_symbols file). The motivating observation is familiar from everyday life: it is far easier to say which of two essays is better than to write the ideal essay. RLHF builds a training method out of that easier judgment. People only ever compare a model's outputs; a second model learns to imitate those comparisons with a numeric score; and the first model is then trained to earn high scores.
+
+**General Usage**: RLHF trains a language model $p(\mathbf{y} \mid \mathbf{x})$ — which assigns probabilities to responses $\mathbf{y}$ given a prompt $\mathbf{x}$ — in three stages. (1) A base model is obtained by ordinary training, often followed by supervised fine-tuning on human-written demonstrations of good responses. (2) For many prompts, the model produces two or more responses and human annotators rank them; a **reward model** $r(\mathbf{x}, \mathbf{y})$, returning one real number per response, is fitted to these comparisons using the Bradley-Terry Model. (3) The language model is then adjusted by **reinforcement learning** — learning by trial, in which behavior that earns higher reward is made more likely — to maximize its **expected reward**, $\mathbb{E}_{\mathbf{x} \sim D,\, \mathbf{y} \sim p(\cdot \mid \mathbf{x})}[r(\mathbf{x}, \mathbf{y})]$: the average reward-model score of its own responses to prompts drawn from a dataset $D$ (see the Sampling Notation entry in the math_symbols file). A penalty based on KL Divergence (see that entry), which measures how far the new model's output probabilities have moved from the base model's, is subtracted so that the model does not drift far from where it started. The algorithm commonly used for stage 3 is **PPO** (proximal policy optimization); in reinforcement-learning vocabulary the language model is the **policy**, the thing that chooses actions.
+
+**Example.** Computing the expected reward for one prompt, before and after an update. Suppose that for a certain prompt the model can produce three responses, which the reward model scores as follows:
+
+| Response | Reward $r$ | Probability before | Probability after |
+|---|---|---|---|
+| A (clear and correct) | 2.0 | 0.2 | 0.5 |
+| B (correct but rambling) | 0.5 | 0.3 | 0.3 |
+| C (off-topic) | $-1.0$ | 0.5 | 0.2 |
+
+Each probability column adds to 1 ($0.2 + 0.3 + 0.5 = 1.0$ and $0.5 + 0.3 + 0.2 = 1.0$). The expected reward is each reward multiplied by its probability, summed:
+
+| | Computation | Expected reward |
+|---|---|---|
+| Before | $(2.0)(0.2) + (0.5)(0.3) + (-1.0)(0.5) = 0.40 + 0.15 - 0.50$ | $0.05$ |
+| After | $(2.0)(0.5) + (0.5)(0.3) + (-1.0)(0.2) = 1.00 + 0.15 - 0.20$ | $0.95$ |
+
+Shifting probability from the low-reward response C to the high-reward response A raised the expected reward from 0.05 to 0.95. That shift is what stage 3 does, a little at a time, across many prompts. Pushing all the probability onto A would give the maximum, 2.0, but would also move the model very far from its starting probabilities $(0.2, 0.3, 0.5)$; the KL penalty charges for that movement and so limits how far each response's probability changes.
+
+**AI/ML Usage**: RLHF is a key component of widely used conversational language-model systems. Its main advantage over Instruction Tuning (see that entry) is that it does not need correct answers written in advance, so it can be applied to open-ended requests — brainstorming, story writing, rewriting — for which no labeled dataset exists, and it can keep improving a model that already exceeds the quality of available datasets, provided people can still tell a better response from a worse one. In practice it is considered difficult to make reliable: reinforcement learning is sensitive to its settings, and the reward model is only as good as the consistency and quality of the human comparisons it was fitted to.
 
 ---
 
@@ -4260,6 +4998,28 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
 
 **AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
+
+---
+
+<a id="resampling-weighted-to-unweighted-samples"></a>
+### Resampling (Weighted to Unweighted Samples)
+
+**The Big Idea**: Algebra 2 covers weighted averages: a test worth 40% and a final worth 60% count differently toward a grade. A *weighted sample set* applies the same idea to a list of guesses: each guess (a "sample" or "particle") carries a number, its weight, saying how much it counts. Resampling replaces "few guesses, each with its own weight" by "the same number of guesses, all counting equally, with the heavy ones repeated". Nothing beyond fractions, proportions, and the idea of picking at random is needed. The notion of a probability distribution that the samples stand for is covered in the Probability / Probability Density entry in the math_symbols file.
+
+**General Usage**: Start with $N$ samples $x^1, \ldots, x^N$ with weights $w^1, \ldots, w^N$ that are non-negative and have been scaled to add up to 1 (see the Normalization of a Probability Distribution entry above). Resampling builds a new set of $N$ samples by making $N$ independent random picks from the old set, where each pick chooses sample $i$ with probability $w^i$, and a sample may be picked more than once. Every sample in the new set is then given the same weight, $1/N$. A standard way to make one pick with only an ordinary random number generator: lay $N$ bins end to end along the interval $[0, 1]$, giving bin $i$ the length $w^i$; draw a number uniformly at random from $[0, 1]$ (every value equally likely; see the Uniform Distribution Notation entry in the math_symbols file); return the sample whose bin contains the number. A wide bin is hit often, so heavy samples are duplicated; a narrow bin is rarely hit, so light samples tend to be dropped.
+
+**Example.** Take $N = 4$ samples $A, B, C, D$ with weights $0.1,\ 0.5,\ 0.1,\ 0.3$ (they add to $0.1 + 0.5 + 0.1 + 0.3 = 1.0$). The bin edges are running totals of the weights: $A$ owns $[0, 0.1)$, $B$ owns $[0.1, 0.6)$, $C$ owns $[0.6, 0.7)$, and $D$ owns $[0.7, 1.0]$. Suppose the four uniform random draws are $0.42,\ 0.91,\ 0.15,\ 0.66$.
+
+| Pick | Random draw | Bin containing it | Sample returned |
+|---|---|---|---|
+| 1 | $0.42$ | $[0.1, 0.6)$ | $B$ |
+| 2 | $0.91$ | $[0.7, 1.0]$ | $D$ |
+| 3 | $0.15$ | $[0.1, 0.6)$ | $B$ |
+| 4 | $0.66$ | $[0.6, 0.7)$ | $C$ |
+
+The new set is $B, D, B, C$, each with weight $1/4 = 0.25$. Sample $B$, which had the largest weight, now appears twice; sample $A$, with a small weight, was never picked and is gone. As a check, the expected number of copies of each sample is $N \cdot w^i$: for $B$ that is $4 \times 0.5 = 2$ copies, matching what happened; for $A$ it is $4 \times 0.1 = 0.4$, so most of the time $A$ gets zero copies.
+
+**AI/ML Usage**: Resampling is the third step of the particle filter, an algorithm that tracks an unknown quantity over time (for example a robot's position) by keeping a cloud of guesses called particles. After each sensor reading, every particle is given a weight equal to how well it explains the reading (see the Observation Likelihood Model (Sensor Model) entry above); resampling then turns the weighted particles back into equally weighted ones so they can all be moved forward together by the motion model (see the Motion Model entry above). It concentrates a fixed number of particles on the likely guesses instead of wasting them on unlikely ones. The same pick-in-proportion-to-weight operation appears in genetic algorithms, where it is called roulette-wheel selection, and in bootstrap methods in statistics.
 
 ---
 
@@ -4351,6 +5111,55 @@ For comparison, one Euler step gives $1+1\cdot1=2$. RK4 ($2.7083$) is within $0.
 **Example.** If you only have measurements from 50 specific people, you can directly compute their sample covariance matrix from exactly those 50 data points — but this is only an estimate, not necessarily the true covariance matrix that would describe every person in the entire, much larger population those 50 happened to be drawn from.
 
 **AI/ML Usage**: The sample covariance matrix is precisely what's actually computed in practice and fed into methods like PCA (see that entry) — since the true, full-population covariance matrix is essentially never directly, exactly knowable in any genuinely real-world machine learning setting.
+
+---
+
+<a id="sampled-representation-of-a-probability-distribution"></a>
+### Sampled Representation of a Probability Distribution
+
+**The Big Idea**: Algebra 2 describes a function by a formula or by a graph. A probability distribution can be described the same way, as a curve whose height says how likely each value is. A sampled representation describes it a third way: by a large collection of values drawn at random from it. This goes beyond Algebra 2 only in using random draws; the tool it relies on is ordinary averaging. Read the Sampling Notation entry in the math_symbols file and the Law of Large Numbers entry first.
+
+**General Usage**: A distribution $p$ is represented by $N$ samples $x_1, \dots, x_N$ drawn independently from it (see the Independent and Identically Distributed entry). The samples are crowded where $p$ is high and sparse where $p$ is low, so the curve is carried by the spacing of the samples, not by a stored list of its heights. Any quantity that is an expected value under $p$ (see the Expectation entry in the math_symbols file) is then estimated by a plain average over the samples:
+
+$$
+E_p[f(x)] \approx \frac{1}{N}\sum_{i=1}^{N} f(x_i),
+$$
+
+with the approximation becoming exact as $N$ grows without bound. Choosing $f(x) = x$ gives the mean; choosing $f(x) = (x-\bar{x})(x-\bar{x})^{T}$, where $\bar{x}$ is the mean, gives the variance; choosing $f$ to be 1 inside a region and 0 outside it (see the Indicator Function entry) gives the probability of that region, which is simply the fraction of samples that fall inside it. In robotics each sample is called a particle.
+
+**Example.** Suppose eight samples drawn from an unknown distribution are $1, 2, 2, 3, 3, 3, 4, 6$.
+
+| Quantity | Function $f$ | Computation over the samples | Result |
+|---|---|---|---|
+| Mean | $f(x) = x$ | $\frac{1+2+2+3+3+3+4+6}{8} = \frac{24}{8}$ | $3$ |
+| Variance | $f(x) = (x-3)^2$ | $\frac{4+1+1+0+0+0+1+9}{8} = \frac{16}{8}$ | $2$ |
+| Probability that $x \ge 4$ | $f(x) = 1$ if $x \ge 4$, else $0$ | $\frac{0+0+0+0+0+0+1+1}{8} = \frac{2}{8}$ | $0.25$ |
+
+The value $3$ occurs three times and $6$ only once, so $3$ influences every average three times as strongly; that repetition is how the samples encode that the distribution is higher near $3$ than near $6$. With only eight samples these three results are rough estimates; with thousands of samples they would settle close to the true values.
+
+**AI/ML Usage**: The particle filter, an algorithm for tracking the position of a robot from noisy motion and sensor data, stores its belief about the position as a set of samples precisely because the true belief may have several separate peaks or an irregular shape that no simple formula, such as a bell curve, can describe. The same idea underlies Monte Carlo Estimation (see that entry), sampling-based training of generative models (programs that produce new data resembling their training data), and Dropout-based uncertainty estimates (see the Dropout entry), where repeated random runs of a neural network serve as samples of its possible predictions.
+
+---
+
+<a id="sampling-importance-resampling-sir"></a>
+### Sampling Importance Resampling (SIR)
+
+**The Big Idea**: Suppose you want a fair collection of examples from some target source, but you can only draw examples from a different, easier source. Algebra 2's weighted average supplies the fix: draw from the easy source, then give each example a weight that corrects for the difference, and finally pick from the weighted examples in proportion to those weights. This is a genuine step beyond Algebra 2 because it relies on probability distributions (see the Probability / Probability Density entry in the math_symbols file), but the arithmetic involved is only multiplication, division, and proportions. Read the Resampling (Weighted to Unweighted Samples) entry above first.
+
+**General Usage**: Sampling Importance Resampling is a three-part recipe, one part per word of its name. (1) **Sampling**: draw $N$ samples $x^1, \ldots, x^N$ from a distribution that is easy to draw from, called the proposal. (2) **Importance**: give each sample an importance weight $w^i$ equal to the ratio of the target distribution's value to the proposal distribution's value at that sample, then divide every weight by the total so the weights add to 1. (3) **Resampling**: draw $N$ new samples from the weighted set, picking sample $i$ with probability $w^i$, and reset every weight to $1/N$. The result is an equally weighted set of samples that is distributed approximately according to the target, with the approximation improving as $N$ grows.
+
+**Example.** A target assigns probabilities $0.6,\ 0.3,\ 0.1$ to three outcomes $a, b, c$, but the only sampler available picks $a, b, c$ with equal probability $1/3$ each.
+
+| Step | What is done | Result |
+|---|---|---|
+| Sampling | Draw $N = 6$ samples from the equal-probability sampler | $a, b, c, a, c, b$ |
+| Importance (raw) | Weight $=$ target $\div$ proposal: $a$: $0.6 \div \tfrac13 = 1.8$; $b$: $0.3 \div \tfrac13 = 0.9$; $c$: $0.1 \div \tfrac13 = 0.3$ | $1.8,\ 0.9,\ 0.3,\ 1.8,\ 0.3,\ 0.9$ |
+| Importance (scaled) | Total $= 1.8 + 0.9 + 0.3 + 1.8 + 0.3 + 0.9 = 6.0$; divide each by $6.0$ | $0.30,\ 0.15,\ 0.05,\ 0.30,\ 0.05,\ 0.15$ |
+| Resampling | Pick 6 times in proportion to the scaled weights; reset weights to $1/6$ | on average $6 \times 0.30 = 1.8$ copies of each $a$ sample, $0.9$ of each $b$ sample, $0.3$ of each $c$ sample |
+
+Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $b$ samples $0.15 + 0.15 = 0.30$, and the two $c$ samples $0.05 + 0.05 = 0.10$, exactly the target probabilities $0.6,\ 0.3,\ 0.1$, even though the samples were drawn from a sampler that treated all three outcomes alike.
+
+**AI/ML Usage**: The basic particle filter, used for example to work out where a robot is on a map, is Sampling Importance Resampling repeated at every time step. Sampling is done by moving each particle (each guess for the robot's position) according to the motion model, the rule describing how the robot's commands change its position (see the Motion Model entry above). The importance weight of each particle is the observation likelihood, the probability of the actual sensor reading if the robot were at that particle (see the Observation Likelihood Model (Sensor Model) entry above). Resampling then returns an equally weighted particle set for the next time step. The overall recursion being approximated is described in the Bayes Filter (Recursive Bayesian Estimation) entry above.
 
 ---
 
@@ -4475,6 +5284,26 @@ The radius shrinks as more samples are drawn, but slowly enough to keep the road
 
 ---
 
+<a id="simultaneous-localization-and-mapping-slam"></a>
+### Simultaneous Localization and Mapping (SLAM)
+
+**The Big Idea**: Algebra 2 has systems of equations in which two unknowns must be found together because each depends on the other. SLAM is a much larger version of that situation: a robot needs a map to work out where it is, and needs to know where it is to draw the map, so it must estimate both at once.
+
+**General Usage**: SLAM is the problem of building a map of an unknown environment from a moving sensor's measurements while at the same time estimating the sensor's own path through that map. The inputs are sensor readings (laser scans or camera images) and usually motion measurements; the outputs are a map and a trajectory. Because small motion errors accumulate, SLAM systems look for **loop closures**, moments when the robot recognizes a place it has visited before, and use them to correct the accumulated drift.
+
+**Example.** A robot in a straight corridor starts at position $0$ and sees a door $5$ m ahead.
+
+1. It records the door on its map at position $0 + 5 = 5$ m.
+2. It drives forward; its wheel sensors say it moved $2$ m, so it believes it is at $2$ m.
+3. It measures the same door again, now $2.8$ m ahead. From the map, the door is at $5$ m, so this measurement says the robot is at $5 - 2.8 = 2.2$ m.
+4. The two estimates of the robot's position, $2$ m and $2.2$ m, disagree. Trusting them equally, the robot settles on the average, $(2 + 2.2) \div 2 = 2.1$ m.
+
+The map was used to correct the position, and the corrected position will be used to place the next thing the robot sees: localization and mapping feeding each other.
+
+**AI/ML Usage**: SLAM is a core capability for robot vacuum cleaners, warehouse robots, drones, augmented-reality headsets, and self-driving cars. Laser-based systems commonly output an occupancy grid or a point cloud (see the Occupancy Grid Map and Point Cloud entries), while camera-based (visual) SLAM systems track distinctive image points and output a sparse set of 3D landmark positions.
+
+---
+
 <a id="singular-value-decomposition"></a>
 ### Singular Value Decomposition
 
@@ -4584,6 +5413,24 @@ At $n=8$ the saving is modest, but at $n=1{,}000$ full attention already require
 **Example.** Where a plain RNN must finish computing its hidden state at position $10$ before it can even begin computing the hidden state at position $11$ (see Recurrent Neural Network (RNN) above), a state-space model's particular update structure permits large chunks of that same step-by-step computation to be reorganized and computed together, in parallel, much the way a Transformer's attention computation can be — trading some of an RNN's unrestricted flexibility for a specific mathematical structure that parallelizes far better.
 
 **AI/ML Usage**: State-space models (such as the S4 and Mamba architectures) are a more recent line of research aimed at recovering an RNN-like ability to summarize an unboundedly long sequence with a fixed-size state, while avoiding both the vanishing gradient problem (see that entry below) and the poor parallelization that limit plain RNNs and LSTMs (see Long Short-Term Memory (LSTM) above) — positioning them as a possible alternative to Transformers for very long sequences, an active and still-developing area of research.
+
+---
+
+<a id="statistical-independence"></a>
+### Statistical Independence
+
+**The Big Idea**: This builds on the Conditional Bar entry from the math_symbols file. Two events are independent when learning about one tells you nothing new about the other, which is the same fact Algebra 2 uses when multiplying the chances of two unrelated events. The Conditional Independence entry covers the related case where this holds only after a third variable is known.
+
+**General Usage**: Two random variables $X$ and $Y$ are independent if and only if conditioning on one leaves the distribution of the other unchanged: $$P(X \mid Y) = P(X), \qquad P(Y \mid X) = P(Y).$$ Equivalently, their joint distribution is simply the product of the single-variable distributions: $$P(X, Y) = P(X)\,P(Y).$$ This follows from the splitting $P(X,Y)=P(X\mid Y)P(Y)$ (see the Joint Probability Distribution entry): when $P(X\mid Y)=P(X)$, the conditioning variable drops out and a product remains.
+
+**Example.** Flip a fair coin and roll a fair die. Let $X$ be the coin result and $Y$ the die result.
+
+1. $P(X=\text{heads}) = \tfrac{1}{2}$ and $P(Y=3) = \tfrac{1}{6}$.
+2. The die roll does not change the coin, so $P(X=\text{heads}\mid Y=3) = \tfrac{1}{2} = P(X=\text{heads})$.
+3. The joint probability is $P(X=\text{heads}, Y=3) = \tfrac{1}{2}\times\tfrac{1}{6} = \tfrac{1}{12}$.
+4. Check with the product rule: $P(X=\text{heads})\,P(Y=3) = \tfrac{1}{2}\cdot\tfrac{1}{6} = \tfrac{1}{12}$, matching step 3.
+
+**AI/ML Usage**: Independence is the simplifying assumption that makes models computable. The Naive Bayes classifier (see that entry) assumes the features are independent given the label, so a joint probability over thousands of words becomes a product of thousands of small terms; the i.i.d. assumption on training data (see the Independent and Identically Distributed entry) states that each example is independent of the others.
 
 ---
 
@@ -4894,6 +5741,23 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 
 ---
 
+<a id="time-causality-assumption"></a>
+### Time Causality Assumption
+
+**The Big Idea**: This builds on the Conditional Independence entry and the Conditional Bar entry in the math_symbols file. It formalizes common sense: something that happens later cannot change what already happened.
+
+**General Usage**: The time causality assumption states that future inputs do not influence past states: once the earlier history is given, a movement reading $u_t$ that arrives after step $t-1$ carries no extra information about the state $x_{t-1}$. In symbols, $$p(x_{t-1} \mid x_0, u_{1:t}, s_{1:t-1}) = p(x_{t-1} \mid x_0, u_{1:t-1}, s_{1:t-1}).$$ The past can influence the future; the reverse is not allowed. Note what this does not say: a later sensor observation can still teach you about an earlier state (a measurement now can reveal where you must have been before), so later observations are not claimed to be independent of earlier states in general.
+
+**Example.** Let $x_{t-1}$ be a robot's position at step $t-1$, and let $u_t$ be the command "drive forward 1 m" issued afterwards.
+
+1. The command is chosen and executed after the robot is already at $x_{t-1}$.
+2. So telling you the command does not change the probability of where the robot was: $p(x_{t-1} \mid \dots, u_t) = p(x_{t-1} \mid \dots)$.
+3. In an expression such as the left side of the formula above, $u_t$ can therefore be dropped from the conditioning list, leaving the previous belief.
+
+**AI/ML Usage**: Together with the Markov assumptions, it is what lets recursive Bayes filters (see the Bayes Filter entry) update a belief one time step at a time using only the latest measurement, without revisiting the past. The same idea appears in causal masking of sequence models (see the Causal (Masked) Self-Attention entry), where each position may look only at earlier positions.
+
+---
+
 <a id="trace-and-co-indexation"></a>
 ### Trace and Co-indexation
 
@@ -5080,6 +5944,56 @@ Each row is computed completely independently of the other three — the head ha
 
 ---
 
+<a id="vector-map"></a>
+### Vector Map
+
+**The Big Idea**: Algebra 2 describes a line segment completely by its two endpoints. A vector map applies that to a building: every wall is stored as one segment, written as four numbers $x_1, y_1, x_2, y_2$, and the whole map is simply the list of segments.
+
+**General Usage**: A vector map represents the fixed obstacles of an environment as a list of geometric primitives, most often line segments given by their endpoint coordinates. Unlike a grid map it involves no discretization: a wall is stored at its exact coordinates. Its memory use depends on the number of walls rather than on the area covered, and predicting what a straight sensor beam would hit reduces to line-segment intersection tests (see the Ray Casting entry).
+
+**Example.** A rectangular room $6$ m wide and $4$ m deep, with one corner at the origin, is stored as four segments:
+
+| Wall | $x_1$ | $y_1$ | $x_2$ | $y_2$ |
+|---|---|---|---|---|
+| Bottom | 0 | 0 | 6 | 0 |
+| Right | 6 | 0 | 6 | 4 |
+| Top | 6 | 4 | 0 | 4 |
+| Left | 0 | 4 | 0 | 0 |
+
+That is $4 \times 4 = 16$ numbers. The length of the right wall, from its endpoints, is $\sqrt{(6-6)^2 + (4-0)^2} = \sqrt{16} = 4$ m. A grid map of the same room with $0.05$ m cells would need $120 \times 80 = 9{,}600$ cells.
+
+**AI/ML Usage**: Vector maps are used in robot localization, where an algorithm such as a particle filter (which tracks many candidate positions) must predict laser readings quickly for thousands of candidates; segment intersection against a compact wall list makes that fast. High-definition road maps for self-driving cars are also vector maps, storing lane boundaries and road edges as connected line segments. Compare the Occupancy Grid Map entry.
+
+---
+
+<a id="verbalizer-prompt-template"></a>
+### Verbalizer (Prompt Template)
+
+**The Big Idea**: This is a fill-in-the-blank form letter. Algebra 2 already uses the same idea in function notation: a formula such as $f(x) = 3x + 2$ is a fixed frame with a slot, and plugging in a value for $x$ fills the slot. A verbalizer is a fixed frame of *words* with a slot for a piece of text; plugging a data point into the slot produces the exact string that is handed to a language model (a model that predicts the next word from the words so far — see the N-Gram Language Model entry for the basic idea).
+
+**General Usage**: A verbalizer $\mathbf{v}$ is a template that takes a raw input $\mathbf{x}$ and wraps it in surrounding text to produce a prompt string $\mathbf{v}(\mathbf{x})$. It typically does two jobs: it marks what kind of thing the input is (for instance by placing a word like "Review:" in front of it), and it ends with an unfinished sentence whose natural completion is the answer being sought. The language model's continuation of $\mathbf{v}(\mathbf{x})$ is then read as the prediction. Because the unfinished sentence can name the allowed answers, the verbalizer also determines the **label space** — the set of answers the model is being asked to choose among. There is no single correct verbalizer for a task; different wordings of the same request are different verbalizers and can give different accuracy.
+
+**Example.** Take the verbalizer
+
+$$
+\mathbf{v}(\mathbf{x}) = \text{``Message: ''} + \mathbf{x} + \text{`` Is this message spam or not spam? It is''}
+$$
+
+where $+$ means joining pieces of text end to end.
+
+| Step | Action | Result |
+|---|---|---|
+| 1 | Choose the input | $\mathbf{x}$ = "You have won a free cruise, click here." |
+| 2 | Fill the slot | "Message: You have won a free cruise, click here. Is this message spam or not spam? It is" |
+| 3 | Give the string to the model | the model continues with "spam" |
+| 4 | Read off the label | $y$ = spam |
+
+Reusing the same verbalizer on a second input, $\mathbf{x}$ = "Lunch at noon tomorrow?", changes only the slot: "Message: Lunch at noon tomorrow? Is this message spam or not spam? It is". The frame is identical; only $\mathbf{x}$ differs, exactly as $f(2)$ and $f(5)$ use the same formula with different inputs.
+
+**AI/ML Usage**: Verbalizers are the working unit of prompting large language models (see the In-Context Learning and Zero-Shot Prompting entries). Studies that generate many verbalizers for one task find that those the model itself considers more natural — those with lower perplexity (see the Perplexity entry) — tend to give higher accuracy, while a wide range of reasonable wordings perform about equally well. Choosing and adjusting a verbalizer by hand is called **prompt engineering**; searching for one automatically is called **prompt optimization**.
+
+---
+
 <a id="vertical-markovization"></a>
 ### Vertical Markovization
 
@@ -5218,6 +6132,35 @@ After enough repetitions of this process across enough text, words that tend to 
 Merging $(a,b)$ leaves the corpus more predictable (perplexity $\approx 1.89$) than merging $(a,a)$ does (perplexity $3.00$), even though $(a,a)$ is the more frequent raw pair. A WordPiece-style, perplexity-driven criterion would therefore favor merging $(a,b)$ — the opposite of what plain frequency-based BPE would pick. This is a deliberately simplified illustration of the underlying principle; it does not reproduce the exact internal computation of any specific published implementation.
 
 **AI/ML Usage**: WordPiece was introduced by Schuster and Nakajima (2012) and is the tokenization method used to build BERT's vocabulary (see the BERT entry above; Devlin et al., 2019), where it additionally marks every non-initial piece of a split word with a leading `##` (see the Word-Boundary Marker entry in `math_symbols.md`). Google's SentencePiece library implements a closely related, efficient perplexity-driven method internally described as a **unigram language model** tokenizer (Kudo, 2018; used in production for Google's Neural Machine Translation system, Wu et al., 2016), and this family of perplexity-driven methods is collectively sometimes called "Unigram LM" tokenization to contrast it with frequency-driven BPE. Bostrom and Durrett (2020) compared the two families of methods directly and found that Unigram LM segmentations recover recognizable prefixes and suffixes (such as "tri-," "-s," and "-ly") far more often than BPE does, making them more linguistically plausible even though BPE achieved wider adoption first.
+
+---
+
+<a id="zero-shot-prompting"></a>
+### Zero-Shot Prompting
+
+**The Big Idea**: "Zero-shot" means zero worked examples. In an Algebra 2 class this is the difference between a homework set that opens with a solved sample problem and one that only states the instructions: with only instructions, the student must rely entirely on what they already know. Zero-shot prompting puts a language model in that position — it receives a description of the task in words and nothing else. It is the $K = 0$ case of In-Context Learning (see that entry), and like all in-context learning it involves no training at all (contrast the Fine-Tuning (Transfer Learning) entry).
+
+**General Usage**: In zero-shot prompting, an input $\mathbf{x}$ is wrapped in a template (see the Verbalizer (Prompt Template) entry) that states the task in natural language, and the resulting string is given to a pretrained language model. For a classification task there are two ways to obtain the answer. (1) **Generate and parse**: let the model write freely and read the label out of what it wrote; the risk is that the model writes something that is not one of the allowed labels. (2) **Compare label probabilities**: do not generate; instead read off the probability the model assigns to each allowed label as the next token, $P(\ell \mid \mathbf{x})$ for each label $\ell$, and return the label with the highest value. The second way can only ever return a valid label, and dividing each label's probability by the sum over the labels (see the Normalization of a Probability Distribution entry) gives a proper probability distribution over the labels. In both ways, the model's sense of what each label means comes only from its original training text, since no examples are supplied.
+
+**Example.** A review is wrapped as "Review: The food was fine but the service was slow. Out of positive, negative, or neutral, this review is". Suppose the model's next-token probabilities for the three labels are:
+
+| Label $\ell$ | $P(\ell \mid \mathbf{x})$ |
+|---|---|
+| positive | 0.06 |
+| neutral | 0.30 |
+| negative | 0.24 |
+
+These add to $0.06 + 0.30 + 0.24 = 0.60$, not 1, because the remaining 0.40 is spread over every other word the model could have produced. Normalizing:
+
+| Label | Computation | Normalized probability |
+|---|---|---|
+| positive | $0.06 \div 0.60$ | 0.10 |
+| neutral | $0.30 \div 0.60$ | 0.50 |
+| negative | $0.24 \div 0.60$ | 0.40 |
+
+Check: $0.10 + 0.50 + 0.40 = 1.00$. The largest is neutral, so the prediction is $y$ = neutral. Normalizing never changes which label is largest; it only rescales the three numbers so they form a distribution.
+
+**AI/ML Usage**: Zero-shot prompting is the everyday way of using instruction-following large language models: the user types a request and the model carries it out with no examples. With earlier models such as GPT-3 (see the GPT (Generative Pre-trained Transformer) entry) zero-shot accuracy was often poor and examples were needed (see the Few-Shot Prompting entry); models given additional training to follow instructions handle zero-shot requests far better. An early sign of the ability was that appending "tl;dr" to a passage led a language model to produce a summary, because that abbreviation introduces summaries throughout internet text.
 
 ---
 

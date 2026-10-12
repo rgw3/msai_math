@@ -4,8 +4,8 @@ Two companion glossaries built for students in the University of Texas CDSO Mast
 
 ## Contents
 
-- **[math_symbols.md](math_symbols.md)** — every mathematical *symbol* and notation convention encountered across the program's coursework (calculus, linear algebra, probability, logic, set theory, plus the notation used in search and planning, motion planning, reinforcement learning, learning theory, neural networks, and natural language processing), alphabetized and defined. 210 entries.
-- **[math_concepts.md](math_concepts.md)** — every AI/ML and mathematical *concept* — ideas and techniques that don't have one dedicated symbol of their own, as opposed to notation — spanning calculus, linear algebra, probability, statistics, optimization, learning theory, deep learning, natural language processing, search and planning, motion planning and robotics, and game-playing AI. 299 entries.
+- **[math_symbols.md](math_symbols.md)** — every mathematical *symbol* and notation convention encountered across the program's coursework (calculus, trigonometry, linear algebra, probability, logic, set theory, plus the notation used in search and planning, motion planning, robot state estimation and localization, reinforcement learning, learning theory, neural networks, and natural language processing), alphabetized and defined. 222 entries.
+- **[math_concepts.md](math_concepts.md)** — every AI/ML and mathematical *concept* — ideas and techniques that don't have one dedicated symbol of their own, as opposed to notation — spanning calculus, linear algebra, probability, statistics, optimization, learning theory, deep learning, natural language processing and large language models (prompting, in-context learning, instruction tuning), search and planning, motion planning and robotics, robot state estimation and localization (Bayes, histogram, and particle filters, sensing and mapping, SLAM), and game-playing AI. 340 entries.
 
 ## Who this is for
 
