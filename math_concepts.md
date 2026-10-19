@@ -7,124 +7,138 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 340 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 382 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Generative Model | Geometric Mean to Overfitting | PAC Learning to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to Forward Kinematics and Inverse Kinematics | Frontier / Open List to Oracle Derivation | Orthogonal Matrix to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Geometric Mean](#geometric-mean) | [PAC Learning](#pac-learning) |
-| [Absolute Discounting](#absolute-discounting) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Accuracy (Classification)](#accuracy-classification) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Particle Filter](#particle-filter) |
-| [Ackermann Steering](#ackermann-steering) | [GLUE Benchmark](#glue-benchmark) | [PDDL](#pddl) |
-| [Action Schema](#action-schema) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Penn Treebank](#penn-treebank) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Gradient Clipping](#gradient-clipping) | [Perplexity](#perplexity) |
-| [Add-One Smoothing](#add-one-smoothing) | [Gradient Descent](#gradient-descent) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Agnostic Learning](#agnostic-learning) | [Graphical Lasso](#graphical-lasso) | [Planner Completeness](#planner-completeness) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GraphPlan](#graphplan) | [Planning Graph](#planning-graph) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Point Cloud](#point-cloud) |
-| [AlphaGo](#alphago) | [Greedy Decoding](#greedy-decoding) | [Polar Coordinates](#polar-coordinates) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Arity](#arity) | [Grounding / Instantiation](#grounding-instantiation) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Positional Encoding](#positional-encoding) |
-| [Automatic Differentiation](#automatic-differentiation) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hedge Algorithm](#hedge-algorithm) | [Posterior Distribution](#posterior-distribution) |
-| [Backpointer](#backpointer) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Precision Matrix](#precision-matrix) |
-| [Backpropagation](#backpropagation) | [Hidden Markov Model](#hidden-markov-model) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [Bag of Words](#bag-of-words) | [Hierarchical Softmax](#hierarchical-softmax) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Banana Distribution](#banana-distribution) | [Hinge Loss](#hinge-loss) | [Principal Component Analysis](#principal-component-analysis) |
-| [BART](#bart) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Prior Distribution](#prior-distribution) |
-| [Basis Function](#basis-function) | [Horizontal Markovization](#horizontal-markovization) | [Priority Queue](#priority-queue) |
-| [Batch](#batch) | [Hyperparameter](#hyperparameter) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Batch Normalization](#batch-normalization) | [Importance Sampling](#importance-sampling) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [In-Context Learning](#in-context-learning) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Bayes' Rule](#bayes-rule) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Probability Density Contour](#probability-density-contour) |
-| [Bayesian State Estimation](#bayesian-state-estimation) | [Indicator Function](#indicator-function) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
-| [Beam Search](#beam-search) | [Induction Head](#induction-head) | [Projective Tree](#projective-tree) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Proof by Contradiction](#proof-by-contradiction) |
-| [BERT](#bert) | [Informed RRT*](#informed-rrt) | [Quadratic Form](#quadratic-form) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Instruction Tuning](#instruction-tuning) | [Quiescence Search](#quiescence-search) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Binarization](#binarization) | [Iterative Deepening](#iterative-deepening) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Jensen's Inequality](#jensens-inequality) | [Random Forest](#random-forest) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Joint Probability Distribution](#joint-probability-distribution) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [Bradley-Terry Model](#bradley-terry-model) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Projection](#random-projection) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [K-Means Algorithm](#k-means-algorithm) | [Random Variable](#random-variable) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rank](#rank) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Kernel Function](#kernel-function) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Ray Casting](#ray-casting) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kinodynamic Planning](#kinodynamic-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Centroid](#centroid) | [KL Divergence](#kl-divergence) | [Regularization](#regularization) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Latent Variable](#latent-variable) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Chernoff Bound](#chernoff-bound) | [Law of Large Numbers](#law-of-large-numbers) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
-| [CKY Algorithm](#cky-algorithm) | [Layer Normalization](#layer-normalization) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Lexicalization](#lexicalization) | [RoBERTa](#roberta) |
-| [Closed-World Assumption](#closed-world-assumption) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Clustering](#clustering) | [Likelihood](#likelihood) | [Sample Complexity](#sample-complexity) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Linear Programming](#linear-programming) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
-| [Conditional Independence](#conditional-independence) | [Lipschitz Continuity](#lipschitz-continuity) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Log Likelihood](#log-likelihood) | [Schur Complement](#schur-complement) |
-| [Confusion Matrix](#confusion-matrix) | [Logistic Regression](#logistic-regression) | [Search Statistics](#search-statistics) |
-| [Conjunction Feature](#conjunction-feature) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Self-Attention](#self-attention) |
-| [Consistent Heuristic](#consistent-heuristic) | [Loss Surface](#loss-surface) | [Semantic Parsing](#semantic-parsing) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lower Bound](#lower-bound) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Constituency Tests](#constituency-tests) | [Marginalization](#marginalization) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Constituent](#constituent) | [Markov Blanket](#markov-blanket) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Markov Model](#markov-model) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
-| [Context-Free Grammar](#context-free-grammar) | [Markov's Inequality](#markovs-inequality) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Masked Language Modeling](#masked-language-modeling) | [Skip-Gram Model](#skip-gram-model) |
-| [Convex Function](#convex-function) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Coordinate Descent](#coordinate-descent) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Maximum Entropy Model](#maximum-entropy-model) | [Sparse Attention](#sparse-attention) |
-| [Covariance Matrix](#covariance-matrix) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Mean Squared Error](#mean-squared-error) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Minimax Algorithm](#minimax-algorithm) | [Statistical Independence](#statistical-independence) |
-| [Cross-Validation](#cross-validation) | [Minimum Description Length](#minimum-description-length) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mobile Robot Localization](#mobile-robot-localization) | [Stopword](#stopword) |
-| [Dead End](#dead-end) | [Model Complexity](#model-complexity) | [STRIPS](#strips) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Momentum](#momentum) | [Structured Classification](#structured-classification) |
-| [Decision Boundary](#decision-boundary) | [Monotone Convergence](#monotone-convergence) | [Subword Tokenization](#subword-tokenization) |
-| [Decision Tree](#decision-tree) | [Monotonic Function](#monotonic-function) | [Support Vector Machine](#support-vector-machine) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Surrogate Loss](#surrogate-loss) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Swept Volume](#swept-volume) |
-| [Dependency Parsing](#dependency-parsing) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Matrix](#symmetric-matrix) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Motion Model](#motion-model) | [Symmetric Relation](#symmetric-relation) |
-| [Depth-Limited Search](#depth-limited-search) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Syntactic Parsing](#syntactic-parsing) |
-| [Diagonal Matrix](#diagonal-matrix) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [T5](#t5) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tag Lattice](#tag-lattice) |
-| [Differential-Drive Robot](#differential-drive-robot) | [Multinomial Distribution](#multinomial-distribution) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Teacher Forcing](#teacher-forcing) |
-| [Discriminative Model](#discriminative-model) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tensor](#tensor) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Mutex](#mutex) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Time Causality Assumption](#time-causality-assumption) |
-| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Named-Entity Type Labels](#named-entity-type-labels) | [Trace and Co-indexation](#trace-and-co-indexation) |
-| [Dynamic Programming](#dynamic-programming) | [Negative Log Likelihood](#negative-log-likelihood) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Early Stopping](#early-stopping) | [Negative Sampling](#negative-sampling) | [Transformer Architecture](#transformer-architecture) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Neural Network](#neural-network) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Scaling Laws](#neural-scaling-laws) | [Treebank](#treebank) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Text Degeneration](#neural-text-degeneration) | [Triangle Inequality](#triangle-inequality) |
-| [EM Algorithm](#em-algorithm) | [Neuron](#neuron) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Newton's Method](#newtons-method) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Epoch](#epoch) | [Next Sentence Prediction](#next-sentence-prediction) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Non-Parametric Method](#non-parametric-method) | [Union Bound](#union-bound) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Normal Equations](#normal-equations) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [NP-Hard](#np-hard) | [Vector Map](#vector-map) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Objective Function / Training Objective](#objective-function-training-objective) | [Vertical Markovization](#vertical-markovization) |
-| [Feature Expansion](#feature-expansion) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Few-Shot Prompting](#few-shot-prompting) | [Odometry](#odometry) | [Word Embedding](#word-embedding) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [One-Hot Encoding](#one-hot-encoding) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [One-vs-All](#one-vs-all) | [Word2Vec](#word2vec) |
-| [Frontier / Open List](#frontier-open-list) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Gaussian Graphical Model](#gaussian-graphical-model) | [Oracle Derivation](#oracle-derivation) | [Zero-Shot Prompting](#zero-shot-prompting) |
-| [Gaussian Mixture Model](#gaussian-mixture-model) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Sum Game](#zero-sum-game) |
-| [Generative Likelihood](#generative-likelihood) | [Orthonormal Basis](#orthonormal-basis) |  |
-| [Generative Model](#generative-model) | [Overfitting](#overfitting) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Frontier / Open List](#frontier-open-list) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Absolute Discounting](#absolute-discounting) | [Gaussian Graphical Model](#gaussian-graphical-model) | [Orthonormal Basis](#orthonormal-basis) |
+| [Accuracy (Classification)](#accuracy-classification) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Overfitting](#overfitting) |
+| [Ackermann Steering](#ackermann-steering) | [Generative Likelihood](#generative-likelihood) | [PAC Learning](#pac-learning) |
+| [Action Schema](#action-schema) | [Generative Model](#generative-model) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Geometric Mean](#geometric-mean) | [Particle Filter](#particle-filter) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [PDDL](#pddl) |
+| [Add-One Smoothing](#add-one-smoothing) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Penn Treebank](#penn-treebank) |
+| [Adversarial Example](#adversarial-example) | [GLUE Benchmark](#glue-benchmark) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Adversarial Filtering](#adversarial-filtering) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Perplexity](#perplexity) |
+| [Agnostic Learning](#agnostic-learning) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Gradient Clipping](#gradient-clipping) | [Planner Completeness](#planner-completeness) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Gradient Descent](#gradient-descent) | [Planning Graph](#planning-graph) |
+| [AlphaGo](#alphago) | [Graphical Lasso](#graphical-lasso) | [Point Cloud](#point-cloud) |
+| [Annotation Artifact](#annotation-artifact) | [GraphPlan](#graphplan) | [Polar Coordinates](#polar-coordinates) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Arity](#arity) | [Greedy Decoding](#greedy-decoding) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Positional Encoding](#positional-encoding) |
+| [Automatic Differentiation](#automatic-differentiation) | [Grounding / Instantiation](#grounding-instantiation) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Post-Hoc Explanation](#post-hoc-explanation) |
+| [Backpointer](#backpointer) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Posterior Distribution](#posterior-distribution) |
+| [Backpropagation](#backpropagation) | [Hedge Algorithm](#hedge-algorithm) | [Precision Matrix](#precision-matrix) |
+| [Bag of Words](#bag-of-words) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Banana Distribution](#banana-distribution) | [Hidden Markov Model](#hidden-markov-model) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [BART](#bart) | [Hierarchical Softmax](#hierarchical-softmax) | [Principal Component Analysis](#principal-component-analysis) |
+| [Basis Function](#basis-function) | [Hinge Loss](#hinge-loss) | [Prior Distribution](#prior-distribution) |
+| [Batch](#batch) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Priority Queue](#priority-queue) |
+| [Batch Normalization](#batch-normalization) | [Horizontal Markovization](#horizontal-markovization) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Hyperparameter](#hyperparameter) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Bayes' Rule](#bayes-rule) | [Hypothesis-Only Baseline](#hypothesis-only-baseline) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Image Captioning](#image-captioning) | [Probability Density Contour](#probability-density-contour) |
+| [Beam Search](#beam-search) | [Importance Sampling](#importance-sampling) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [In-Context Learning](#in-context-learning) | [Program-Aided Language Model](#program-aided-language-model) |
+| [BERT](#bert) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Projective Tree](#projective-tree) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Induction Head](#induction-head) | [Quadratic Form](#quadratic-form) |
+| [Binarization](#binarization) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Quiescence Search](#quiescence-search) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Informed RRT*](#informed-rrt) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Instruction Tuning](#instruction-tuning) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Integrated Gradients](#integrated-gradients) | [Random Forest](#random-forest) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Iterative Deepening](#iterative-deepening) | [Random Projection](#random-projection) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Jensen's Inequality](#jensens-inequality) | [Random Variable](#random-variable) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Joint Probability Distribution](#joint-probability-distribution) | [Rank](#rank) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Centroid](#centroid) | [K-Means Algorithm](#k-means-algorithm) | [Ray Casting](#ray-casting) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Recall (Classification)](#recall-classification) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kernel Function](#kernel-function) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Chain-of-Thought Prompting](#chain-of-thought-prompting) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Regularization](#regularization) |
+| [Challenge Set](#challenge-set) | [Kinodynamic Planning](#kinodynamic-planning) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [KL Divergence](#kl-divergence) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Chernoff Bound](#chernoff-bound) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [CKY Algorithm](#cky-algorithm) | [Latent Variable](#latent-variable) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [Classical NLP Pipeline](#classical-nlp-pipeline) | [Lattice-Based Planning](#lattice-based-planning) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Law of Large Numbers](#law-of-large-numbers) | [RoBERTa](#roberta) |
+| [Closed-World Assumption](#closed-world-assumption) | [Layer Normalization](#layer-normalization) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Clustering](#clustering) | [Lexical Baseline](#lexical-baseline) | [Saliency Map (Gradient-Based Saliency)](#saliency-map-gradient-based-saliency) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lexicalization](#lexicalization) | [Sample Complexity](#sample-complexity) |
+| [Compositionality](#compositionality) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Computation Graph](#computation-graph) | [Likelihood](#likelihood) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Concatenation (of Vectors)](#concatenation-of-vectors) | [LIME (Local Interpretable Model-Agnostic Explanations)](#lime-local-interpretable-model-agnostic-explanations) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Conditional Independence](#conditional-independence) | [Linear Programming](#linear-programming) | [Scalar Mix (Layer Weighting)](#scalar-mix-layer-weighting) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linearly Separable](#linearly-separable) | [Schur Complement](#schur-complement) |
+| [Confusion Matrix](#confusion-matrix) | [Lipschitz Continuity](#lipschitz-continuity) | [Search Statistics](#search-statistics) |
+| [Conjunction Feature](#conjunction-feature) | [Local Explanation](#local-explanation) | [Self-Ask Prompting](#self-ask-prompting) |
+| [Consistent Heuristic](#consistent-heuristic) | [Log Likelihood](#log-likelihood) | [Self-Attention](#self-attention) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Logistic Regression](#logistic-regression) | [Semantic Parsing](#semantic-parsing) |
+| [Constituency Tests](#constituency-tests) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Semantic Role Labeling](#semantic-role-labeling) |
+| [Constituent](#constituent) | [Loss Surface](#loss-surface) | [Sentiment Analysis](#sentiment-analysis) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Lower Bound](#lower-bound) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Context-Free Grammar](#context-free-grammar) | [Macro Average](#macro-average) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Contextual Word Representation](#contextual-word-representation) | [Majority-Class Baseline](#majority-class-baseline) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Marginalization](#marginalization) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Coordinate Descent](#coordinate-descent) | [Markov Model](#markov-model) | [Skip-Gram Model](#skip-gram-model) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Markov's Inequality](#markovs-inequality) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Coreference Resolution](#coreference-resolution) | [Masked Language Modeling](#masked-language-modeling) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Counterfactual](#counterfactual) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Sparse Attention](#sparse-attention) |
+| [Covariance Matrix](#covariance-matrix) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Entropy Model](#maximum-entropy-model) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Statistical Independence](#statistical-independence) |
+| [Cross-Validation](#cross-validation) | [Mean Squared Error](#mean-squared-error) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Crowdsourcing (Data Annotation)](#crowdsourcing-data-annotation) | [Minimax Algorithm](#minimax-algorithm) | [Stopword](#stopword) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Minimum Description Length](#minimum-description-length) | [STRIPS](#strips) |
+| [Data Augmentation](#data-augmentation) | [Mobile Robot Localization](#mobile-robot-localization) | [Structured Classification](#structured-classification) |
+| [Data Manifold](#data-manifold) | [Model Complexity](#model-complexity) | [Subword Tokenization](#subword-tokenization) |
+| [Dead End](#dead-end) | [Model Probing](#model-probing) | [Support Vector Machine](#support-vector-machine) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Momentum](#momentum) | [Surrogate Loss](#surrogate-loss) |
+| [Decision Boundary](#decision-boundary) | [Monotone Convergence](#monotone-convergence) | [Swept Volume](#swept-volume) |
+| [Decision Tree](#decision-tree) | [Monotonic Function](#monotonic-function) | [Symmetric Matrix](#symmetric-matrix) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Symmetric Relation](#symmetric-relation) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Syntactic Parsing](#syntactic-parsing) |
+| [Dependency Parsing](#dependency-parsing) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [T5](#t5) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Motion Model](#motion-model) | [Tag Lattice](#tag-lattice) |
+| [Depth-Limited Search](#depth-limited-search) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Teacher Forcing](#teacher-forcing) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tensor](#tensor) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Multi-Hop Question Answering](#multi-hop-question-answering) | [Text-Based Explanation](#text-based-explanation) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multilayer Perceptron (MLP)](#multilayer-perceptron-mlp) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Discriminative Model](#discriminative-model) | [Multinomial Distribution](#multinomial-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Multiple-Choice Question Answering](#multiple-choice-question-answering) | [Time Causality Assumption](#time-causality-assumption) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multitask Learning](#multitask-learning) | [Tool-Augmented Language Model](#tool-augmented-language-model) |
+| [Dropout](#dropout) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Mutex](#mutex) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Dynamic Programming](#dynamic-programming) | [N-Gram Language Model](#n-gram-language-model) | [Transformer Architecture](#transformer-architecture) |
+| [Early Stopping](#early-stopping) | [Naive Bayes](#naive-bayes) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transparent Model (and Black-Box Model)](#transparent-model-and-black-box-model) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Negative Log Likelihood](#negative-log-likelihood) | [Treebank](#treebank) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Negative Sampling](#negative-sampling) | [Triangle Inequality](#triangle-inequality) |
+| [EM Algorithm](#em-algorithm) | [Neural Network](#neural-network) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Neural Scaling Laws](#neural-scaling-laws) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Epoch](#epoch) | [Neural Text Degeneration](#neural-text-degeneration) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Neuron](#neuron) | [Union Bound](#union-bound) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Newton's Method](#newtons-method) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Explainability (Model Interpretability)](#explainability-model-interpretability) | [Next Sentence Prediction](#next-sentence-prediction) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Non-Parametric Method](#non-parametric-method) | [Vector Map](#vector-map) |
+| [Extractive Question Answering](#extractive-question-answering) | [Normal Equations](#normal-equations) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [F1 Score](#f1-score) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vertical Markovization](#vertical-markovization) |
+| [Faithfulness and Plausibility (of Explanations)](#faithfulness-and-plausibility-of-explanations) | [NP-Hard](#np-hard) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Objective Function / Training Objective](#objective-function-training-objective) | [Word Embedding](#word-embedding) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Feature Expansion](#feature-expansion) | [Occupancy Grid Map](#occupancy-grid-map) | [Word2Vec](#word2vec) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Odometry](#odometry) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Few-Shot Prompting](#few-shot-prompting) | [One-Hot Encoding](#one-hot-encoding) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [Fine-Grained Classification](#fine-grained-classification) | [One-vs-All](#one-vs-all) | [Zero-Sum Game](#zero-sum-game) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) |  |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Oracle Derivation](#oracle-derivation) |  |
 
 ## Concepts
 
@@ -260,6 +274,48 @@ So a virtual front wheel angled at about $14°$ makes this car trace a circle of
 
 ---
 
+<a id="adversarial-example"></a>
+### Adversarial Example
+
+**The Big Idea**: This builds on the idea of a function's output changing when its input changes, familiar from evaluating $f(x)$ at two nearby values of $x$. Most of the time, a small change to the input of a well-behaved function gives a small change in its output. An adversarial example is a deliberately chosen input where a *tiny* change to the input produces a *big* change in a model's output — specifically, a change in the predicted category. Nothing here goes beyond Algebra 2 except the vocabulary; the idea is "find the smallest edit that flips the answer."
+
+**General Usage**: Given a trained model $f$ (a function that takes an input and returns a predicted label, such as "positive" or "negative") and an ordinary input $x$ that the model labels $l$, an adversarial example is a new input $x'$ that is as close as possible to $x$ but that the model labels with a *different* label $l'$. Written as a goal: make the distance between $x$ and $x'$ as small as possible, subject to $f(x) = l$, $f(x') = l'$, and $l \neq l'$. For images, "close" can mean changing pixel brightness by amounts too small for a person to notice. For text, where the input is a sequence of words and there is no in-between value for a word, "close" usually means changing only a word or two, or adding a short phrase, in a way that a person would agree does not change the correct answer.
+
+**Example.** Take a toy sentiment classifier that gives each word a score and predicts "positive" when the total score is greater than $0$ and "negative" otherwise. Its word scores are: $\text{a} = 0$, $\text{film} = 0$, $\text{great} = +3$, $\text{grand} = -0.5$ (a quirk the model happened to learn).
+
+1. Original input $x$: "a great film." Total score $= 0 + 3 + 0 = 3$.
+2. Since $3 > 0$, the model predicts $l = $ positive. This is correct.
+3. Edit one word: replace "great" with its near-synonym "grand" to get $x'$: "a grand film."
+4. New total score $= 0 + (-0.5) + 0 = -0.5$.
+5. Since $-0.5$ is not greater than $0$, the model predicts $l' = $ negative.
+6. Check the conditions: $x$ and $x'$ differ by exactly one word (a very small distance), and $l = \text{positive} \neq l' = \text{negative}$. A person would still call "a grand film" positive, so $x'$ is an adversarial example: it exposes a weakness in what the model learned about the word "grand."
+
+**AI/ML Usage**: Adversarial examples were first made famous in image classification, where images altered imperceptibly were confidently misclassified by convolutional neural networks (Szegedy et al., 2014). In NLP they are used as a **model probing** tool (see the Model Probing entry): by finding the edits that flip a model's prediction, researchers learn which parts of the input a model is over-relying on. A well-known NLP case is adding a distracting but irrelevant sentence to a reading passage, which can cause question-answering models (see the Extractive Question Answering entry) to change their answer. They are also used in *adversarial training*, in which such examples are added back into the training data to make the model more robust.
+
+---
+
+<a id="adversarial-filtering"></a>
+### Adversarial Filtering
+
+**The Big Idea**: Picture a teacher writing a multiple-choice test who notices that students can spot the right answer just because the wrong answers are obviously silly. The teacher keeps replacing the silly wrong answers with more convincing ones until a quick-guessing student scores no better than chance. Adversarial filtering does the same thing automatically, with a computer model playing the role of the quick-guessing student. It needs nothing beyond percentages and the idea of chance level (one out of the number of choices); the models involved are described in plain terms below.
+
+**General Usage**: Adversarial filtering is a way of building a multiple-choice dataset so that simple shortcuts do not work. Start with many examples, each with one correct answer and a large pool of candidate wrong answers (called **distractors** or **negatives**). Then repeat: (1) split the examples into a temporary training part and a temporary test part; (2) **train** a simple classifier — adjust its internal numbers so it gets the training part right as often as possible; (3) on the test part, find each wrong answer the classifier easily rejects, and swap it for a candidate from the pool that the classifier is fooled by. After many rounds, the classifier's accuracy falls toward chance level, meaning the remaining wrong answers no longer carry obvious giveaway patterns that this kind of classifier can detect. The filter only removes shortcuts visible to the classifier used; a different, stronger model may still find others.
+
+**Example.** Suppose every question has 4 answer choices, so guessing at random is right $\frac{1}{4} = 0.25$, or 25%, of the time. Track a simple classifier's test accuracy over filtering rounds:
+
+| Round | Questions tested | Classifier correct | Accuracy | Action |
+|---|---|---|---|---|
+| 1 | 1000 | 600 | $\frac{600}{1000} = 0.60 = 60\%$ | Replace the easily rejected wrong answers |
+| 2 | 1000 | 450 | $\frac{450}{1000} = 0.45 = 45\%$ | Replace again |
+| 3 | 1000 | 320 | $\frac{320}{1000} = 0.32 = 32\%$ | Replace again |
+| 4 | 1000 | 260 | $\frac{260}{1000} = 0.26 = 26\%$ | Close to 25% chance: stop |
+
+How far above chance the classifier is in each round is accuracy minus 25%: $60 - 25 = 35$ points, then $45 - 25 = 20$, then $32 - 25 = 7$, then $26 - 25 = 1$. The shrinking gap shows the giveaway patterns this classifier relied on being removed.
+
+**AI/ML Usage**: Adversarial filtering was introduced to build SWAG, a multiple-choice commonsense-reasoning dataset of about 113,000 questions, where a language model (a model that predicts likely next words) generated candidate wrong endings and an ensemble of simple "stylistic" classifiers — models looking at surface features like word choice and sentence length — did the filtering. It is a direct response to **annotation artifacts** (see the Annotation Artifact entry above). Its limitation became famous: a much larger pretrained model, BERT, soon reached roughly human-level accuracy on the filtered dataset, because it could exploit patterns the filtering classifiers could not see.
+
+---
+
 <a id="agnostic-learning"></a>
 ### Agnostic Learning
 
@@ -343,6 +399,24 @@ Both networks are first trained by supervised learning (a training method where 
 **Example.** Suppose the policy network is asked about a specific mid-game board position $s$ and a specific candidate move $a$. It outputs $p(a\mid s) = 0.35$, meaning that, based on patterns learned from human games, a strong player would play this exact move about 35% of the time from this position. If the value network is separately asked to evaluate the same position, it might output $v^p(s) = 0.62$, meaning that a player to move from this position, with both sides continuing to play according to $p$, wins about 62% of the time on average. Neither number is computed by any formula a human could write down explicitly; both come from a network whose weights were tuned to fit millions of recorded and self-played games.
 
 **AI/ML Usage**: AlphaGo was the first computer program to defeat a professional human player at Go, a board game long considered far too complex for the brute-force search techniques (see the Minimax Algorithm entry above) that had earlier succeeded at chess. It combines its two neural networks directly with Monte Carlo Tree Search: the value network's output $v^p(s)$ initializes newly expanded leaf values, and the policy network's output $p(a\mid s)$ supplies the prior probability used in AlphaGo's tree policy (see the Upper Confidence Bound (UCB1 / UCT) entry in the math_symbols file for the general exploration formula this extends). A later system, AlphaGo Zero (Silver et al., "Mastering the game of Go without human knowledge," Nature 550.7676 (2017): 354-359), removed the human-game supervised-learning step entirely, learning both networks purely from reinforcement learning during self-play. This stands in contrast to Deep Blue, the earlier program that defeated world chess champion Garry Kasparov (Campbell, Hoane, and Hsu, "Deep Blue," Artificial Intelligence 134.1-2 (2002): 57-83), whose strength relied heavily on specialized chess-evaluation hardware and hand-crafted, game-specific heuristics rather than on general-purpose learned functions.
+
+---
+
+<a id="annotation-artifact"></a>
+### Annotation Artifact
+
+**The Big Idea**: If a teacher always makes the correct answer on a multiple-choice test the longest option, a student can score well by picking the longest option without knowing the material. The score is real, but it measures a habit of the test-writer, not the student's knowledge. An annotation artifact is exactly this kind of accidental giveaway, left in a dataset by the people who wrote it. Nothing beyond Algebra 2 is needed, apart from the idea of a percentage and of chance level.
+
+**General Usage**: An annotation artifact is a pattern in a dataset that predicts the correct label (the right answer attached to each example) because of how the people who **annotated** the data — wrote or labeled the examples — went about it, rather than because of anything true about the task in general. Annotators asked to produce many examples quickly fall into habits, and the habits correlate with the labels. A model **trained** on the data (its internal numbers adjusted to match the labels) can then learn the habit instead of the skill the dataset was meant to measure. Such a model scores well on data built the same way but fails on new examples where the pattern does not hold, so artifacts make models look more capable than they are.
+
+**Example.** Suppose a three-label dataset has 3000 examples, 1000 per label, so random guessing is right $\frac{1}{3} \approx 0.333$, about 33%, of the time. Suppose the word "not" appears in 800 of the 1000 examples labeled C and in only 100 examples of each of the other two labels. A shortcut rule: "if the sentence contains *not*, answer C; otherwise answer A."
+
+1. Examples containing "not": $800 + 100 + 100 = 1000$. The rule answers C and is right for the 800 labeled C.
+2. Examples without "not": $3000 - 1000 = 2000$. Of these, label A has $1000 - 100 = 900$. The rule answers A and is right for those 900.
+3. Total correct: $800 + 900 = 1700$, so accuracy is $\frac{1700}{3000} \approx 0.567$, about 57%.
+4. Compare with chance: $57 - 33 = 24$ percentage points better, from one word alone, without any understanding of meaning.
+
+**AI/ML Usage**: Annotation artifacts are best known from natural language inference (NLI) datasets such as SNLI and MultiNLI, where crowd workers wrote a hypothesis sentence for each label; negation words came to signal "contradiction," and models that see only the hypothesis reach far above chance (see the Hypothesis-Only Baseline entry above). Similar shortcuts appear in question answering (the question word "where" plus a single place name in the paragraph gives the answer away) and in multi-hop question answering (word overlap lets a model skip the reasoning chain; see the Multi-Hop Question Answering entry below). Remedies include harder task designs, **data augmentation** (see the Data Augmentation entry below), and **adversarial filtering** (see the Adversarial Filtering entry above).
 
 ---
 
@@ -960,6 +1034,59 @@ C4 is therefore on the order of hundreds of thousands of times larger than a typ
 
 ---
 
+<a id="chain-of-thought-prompting"></a>
+### Chain-of-Thought Prompting
+
+**The Big Idea**: Algebra teachers ask you to "show your work" because writing each line makes the next line easier and catches mistakes. Chain-of-thought prompting asks a large language model (a very large neural network trained to predict the next word of a text) to do the same: write out the intermediate steps of a problem in plain words before stating the answer. It builds directly on Few-Shot Prompting and Zero-Shot Prompting (see those entries); the only change is what the prompt asks the model to produce.
+
+**General Usage**: A language model generates its output one token (a word or piece of a word) at a time, and each token it writes becomes part of the input for every later token. If the model must state an answer immediately, all the reasoning has to happen inside the computation of that one answer token. If it first writes the steps, the computation is spread over many tokens, and each written step can be used by the steps after it. Chain-of-thought prompting comes in two forms. In **few-shot chain-of-thought**, each in-context example (solved demonstration) in the prompt is a question, then a written explanation of how the answer was reached, then the answer; the model copies that shape on the new question. In **zero-shot chain-of-thought**, there are no examples at all; a short phrase such as "Let's think step by step" is placed right before the answer slot to trigger written reasoning. The order matters: in **explain-then-predict** (chain-of-thought) the answer is generated after, and can depend on, the explanation; in **predict-then-explain** the answer is fixed first and the explanation cannot influence it. Chain-of-thought tends to help most on multi-step problems (arithmetic word problems, questions that need several facts combined) and on the strongest, instruction-tuned models; on weaker models it may not help at all.
+
+**Example.** A few-shot chain-of-thought prompt with one demonstration, and the model's continuation.
+
+| Part | Text |
+|---|---|
+| Demonstration question | Q: A box holds 4 rows of 6 eggs. 5 eggs break. How many are left? |
+| Demonstration reasoning and answer | A: 4 rows of 6 is $4 \times 6 = 24$ eggs. $24 - 5 = 19$. The answer is 19. |
+| Test question | Q: A shelf has 3 stacks of 8 books. 2 books are removed. How many are left? |
+| Model continuation | A: 3 stacks of 8 is $3 \times 8 = 24$ books. $24 - 2 = 22$. The answer is 22. |
+
+Checking the model's arithmetic by hand:
+
+1. Books in the stacks: $3 \times 8 = 24$.
+2. Remove 2: $24 - 2 = 22$.
+3. So 22 books are left, matching the model's final line.
+
+The model was never told "multiply, then subtract." It produced those two steps because the demonstration had that shape, and each step is a single easy operation. A plain few-shot prompt would instead have shown only "A: 19" in the demonstration, and the model would have had to produce "22" with no written steps.
+
+**AI/ML Usage**: Chain-of-thought prompting (Wei et al., 2022) is a standard way to raise the accuracy of large language models such as GPT-3 and PaLM on arithmetic benchmarks like GSM8K and MultiArith (collections of math word problems) without any retraining. The zero-shot version ("Let's think step by step," Kojima et al., 2022) raised one model's accuracy on MultiArith from 17.7% to 78.7%, while few-shot chain-of-thought with 8 demonstrations reached 93.0%. It unifies earlier ideas: generating rationales (written solution steps) for math problems, and decomposing a question into sub-questions for Multi-Hop Question Answering (see that entry).
+
+---
+
+<a id="challenge-set"></a>
+### Challenge Set
+
+**The Big Idea**: This builds on the familiar idea of a test with questions sorted by topic. A single overall score on a final exam can hide the fact that a student gets every fraction problem wrong; a short quiz made *only* of fraction problems reveals it immediately. A challenge set is that topic-specific quiz for a model. The only math involved is computing a percentage, which Algebra 2 already covers.
+
+**General Usage**: A challenge set (also called a *test suite*) is a collection of test examples hand-picked or hand-built to exercise one specific ability, such as handling negation ("not"), counting, or long-distance agreement between words. It is used in addition to an ordinary **test set** (a collection of labeled examples, drawn at random from the same source as the training data and held back from training, used to measure overall performance). Because the ordinary test set mostly contains typical, easy cases, a model's high score on it can hide systematic failures on rarer but important cases; the challenge set measures those cases directly.
+
+**Example.** A sentiment model (see the Sentiment Analysis entry) scores $90\%$ accuracy on an ordinary test set of $1000$ reviews, meaning it labels $900$ of them correctly. Now build a 4-sentence challenge set focused on negation:
+
+| Sentence | Correct label | Model's label | Correct? |
+|---|---|---|---|
+| this movie was not good | negative | negative | yes |
+| this movie was good | positive | positive | yes |
+| this movie was bad | negative | negative | yes |
+| the movie was not bad | positive | negative | no |
+
+1. Count the correct answers: $3$.
+2. Divide by the number of sentences: $3 / 4 = 0.75$.
+3. Convert to a percentage: $0.75 \times 100 = 75\%$.
+4. Look at *which* sentence failed: the only one containing a double negation ("not" applied to a negative word). The overall $90\%$ said nothing about this weakness; the challenge set pinpoints it.
+
+**AI/ML Usage**: Challenge sets are a standard **model probing** tool (see the Model Probing entry) in NLP. Examples include sets of sentences testing whether a language model makes a verb agree with a distant subject, and sets of sentence pairs testing whether a natural language inference model (a model that decides whether one sentence implies another) handles negation, quantifiers such as "all" and "some," or word order. Their main use is to reveal what a model *cannot* do, which an average score over a randomly drawn test set can conceal.
+
+---
+
 <a id="chebyshevs-inequality"></a>
 ### Chebyshev's Inequality
 
@@ -1008,6 +1135,29 @@ where $k$ is a split point (see the Split Point entry in the math_symbols file).
 5. The root score is $t[0,4,\text{S}]=-1$, so a parse exists; following the backpointers gives S over (NP over "the child") and (VP over "raises it").
 
 **AI/ML Usage**: CKY is the standard dynamic program for parsing with probabilistic context-free grammars in natural language processing (the branch of AI that handles human language), and is the direct tree-structured analogue of the Viterbi algorithm used for tagging sequences. Its refinements (handling rules with one symbol on the right, indexing the grammar, pruning low-scoring cells) are what make statistical parsers fast enough to use on real text.
+
+---
+
+<a id="classical-nlp-pipeline"></a>
+### Classical NLP Pipeline
+
+**The Big Idea**: In Algebra 2 you evaluate a composition of functions such as $f(g(x))$ by working from the inside out: compute $g(x)$ first, then feed that result into $f$. A classical language-processing pipeline is the same idea applied to text: a chain of separate tools, each one taking the previous tool's output as its input (see the Function Composition entry in the math_symbols file).
+
+**General Usage**: The *classical NLP pipeline* is the traditional way of building a natural language processing (NLP, the branch of AI that handles human language) system as a fixed sequence of separately built stages, ordered from low-level to high-level analysis. A typical order is: (1) a part-of-speech tagger labels each word's grammatical category (see the Part-of-Speech Tagging entry); (2) a parser works out the grammatical structure of each sentence (see the Syntactic Parsing entry); (3) an entity recognizer finds the names of people, places, organizations, and so on; (4) later stages determine the relations between those entities and resolve coreference, deciding which mentions refer to the same thing (see the Coreference Resolution entry). Each stage relies on the output of the stages before it, so an error made early is passed along to every later stage.
+
+**Example.** Suppose each of the four stages above is correct $95\%$ of the time on a given sentence, and suppose (for simplicity) that their errors happen independently. The whole pipeline is correct only when all four stages are correct, so the probabilities multiply:
+
+$$
+0.95 \times 0.95 = 0.9025
+$$
+
+$$
+0.9025 \times 0.9025 = 0.81450625
+$$
+
+So $0.95^4 \approx 0.815$: even though every single stage is $95\%$ accurate, the full chain is fully correct only about $81.5\%$ of the time. Check with complements: the chance at least one stage fails is $1 - 0.815 = 0.185$, which is much larger than any single stage's $5\%$ failure rate. This error build-up is one of the main weaknesses of a pipeline.
+
+**AI/ML Usage**: Toolkits such as Stanford CoreNLP are organized exactly as such pipelines. Modern pre-trained neural models such as BERT (see that entry) replace the separate stages with one network trained end to end, yet probing studies (see the Model Probing entry) such as Tenney, Das, and Pavlick's "BERT Rediscovers the Classical NLP Pipeline" (2019) found that information for the pipeline's stages tends to appear inside BERT's layers in roughly the same low-to-high order: part of speech first, then parsing, entities, semantic roles, and coreference.
 
 ---
 
@@ -1078,6 +1228,30 @@ Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, coun
 
 ---
 
+<a id="compositionality"></a>
+### Compositionality
+
+**The Big Idea**: This builds directly on function composition from Algebra 2, where $f(g(x))$ means "apply $g$ first, then apply $f$ to the result." The *order and way* functions are combined matters: $f(g(x))$ is generally not the same as $f(x) + g(x)$. Language works the same way. The meaning of "not bad" is not "the meaning of *not*" plus "the meaning of *bad*" — it is *not* applied *to* *bad*.
+
+**General Usage**: Compositionality is the principle that the meaning of a phrase or sentence is determined by the meanings of its parts **and by the rules used to combine them**. A word like "not" acts like a function that transforms the meaning of the word or phrase it applies to (roughly, it flips its sentiment), rather than contributing a fixed amount of meaning on its own. A model *captures* compositionality if its internal computation lets one part of the input change how another part is interpreted; a model that simply adds up or averages per-word contributions, ignoring which word modifies which, cannot.
+
+**Example.** Give each word a sentiment score: $\text{not} = -3$, $\text{bad} = -2$, $\text{good} = +2$. Predict "positive" if the final value is greater than $0$, and "negative" otherwise.
+
+*Non-compositional (averaging) model:*
+
+1. "not good": average $= \dfrac{(-3) + 2}{2} = \dfrac{-1}{2} = -0.5$. Since $-0.5 < 0$, predict negative. This is correct.
+2. "not bad": average $= \dfrac{(-3) + (-2)}{2} = \dfrac{-5}{2} = -2.5$. Since $-2.5 < 0$, predict negative. This is wrong; "not bad" is mildly positive. Both words look negative on their own, so their average can only be negative.
+
+*Compositional model,* where "not" is treated as the function $\text{not}(s) = -s$ applied to the score $s$ of the word that follows it:
+
+3. "not good": $\text{not}(\text{good}) = -(+2) = -2$. Since $-2 < 0$, predict negative. Correct.
+4. "not bad": $\text{not}(\text{bad}) = -(-2) = +2$. Since $+2 > 0$, predict positive. Correct.
+5. Compare: the averaging model got "not good" right only because "good" was outweighed by the negative score of "not"; that same negative score drags "not bad" the wrong way. The compositional rule, which lets "not" act *on* its neighbor, gets both cases right.
+
+**AI/ML Usage**: Compositionality is the central weakness of **bag-of-words** models (models that ignore word order, such as the Deep Averaging Network — see that entry), which can mishandle negation and contrast words like "but." Models such as Recursive Neural Networks were designed to combine word meanings following the grammatical structure of the sentence, and modern Transformer-based models (see the Transformer Architecture entry) handle many compositional effects because attention lets each word's representation depend on its neighbors. Per-word analyses that show a model rating "not" and "bad" as individually negative are a common way of diagnosing a failure of compositionality.
+
+---
+
 <a id="computation-graph"></a>
 ### Computation Graph
 
@@ -1088,6 +1262,25 @@ Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, coun
 **Example.** The formula $(x+2)\times 3$ can be drawn as a computation graph with two nodes: the first node takes $x$ and computes $x+2$, and a second node takes that result and multiplies it by $3$ — laying the single formula out as two small, clearly connected steps instead of one combined expression.
 
 **AI/ML Usage**: Computation graphs are exactly how deep learning software (like PyTorch and TensorFlow) represents a neural network internally, which is precisely what makes automatic differentiation possible — since every operation and intermediate value in the graph is explicitly tracked, the software can automatically apply the chain rule backward through the graph to compute every gradient it needs.
+
+---
+
+<a id="concatenation-of-vectors"></a>
+### Concatenation (of Vectors)
+
+**The Big Idea**: In Algebra 2 you work with ordered lists of numbers, such as the coordinates $(x, y)$ of a point or the terms of a sequence. Concatenation is the simplest thing you can do with two such lists: write one list and then keep writing the other right after it. No arithmetic is involved at all, so nothing here goes beyond Algebra 2; the only new idea is that in machine learning these lists (called vectors; see the Vector entry in the math_symbols file) are how a model stores information, so gluing two of them together is how a model combines two sources of information into one input.
+
+**General Usage**: Given a vector $\mathbf{a}$ with $m$ numbers and a vector $\mathbf{b}$ with $n$ numbers, their concatenation, often written $[\mathbf{a}; \mathbf{b}]$, is the vector with $m + n$ numbers whose first $m$ entries are the entries of $\mathbf{a}$, in order, and whose last $n$ entries are the entries of $\mathbf{b}$, in order. Order matters: $[\mathbf{a}; \mathbf{b}]$ and $[\mathbf{b}; \mathbf{a}]$ are generally different vectors. Unlike adding or averaging two vectors, concatenation keeps every original number and keeps track of which vector each number came from, because each source occupies its own fixed block of positions.
+
+**Example.** Let $\mathbf{a} = (2, -1, 5)$ and $\mathbf{b} = (0, 4)$.
+
+1. Count the lengths: $\mathbf{a}$ has $m = 3$ entries and $\mathbf{b}$ has $n = 2$ entries, so the result has $3 + 2 = 5$ entries.
+2. Copy $\mathbf{a}$ into positions 1 to 3: $(2, -1, 5, \_, \_)$.
+3. Copy $\mathbf{b}$ into positions 4 and 5: $[\mathbf{a}; \mathbf{b}] = (2, -1, 5, 0, 4)$.
+4. Reverse the order for comparison: $[\mathbf{b}; \mathbf{a}] = (0, 4, 2, -1, 5)$, a different vector.
+5. Contrast with addition: $\mathbf{a} + \mathbf{b}$ is not even defined, because the two vectors have different lengths. Concatenation works for any two lengths.
+
+**AI/ML Usage**: Concatenation is the standard way to feed a neural network (a model made of layers of simple weighted-sum computations with adjustable numbers called parameters) more than one kind of information at once. A bidirectional LSTM concatenates the forward and backward hidden states at each word; multi-head self-attention concatenates the outputs of its heads; and image-explanation models concatenate an image's feature vector with a representation of the predicted label before passing the combined vector to a text generator (see the Long Short-Term Memory (LSTM) and Multi-Head Self-Attention entries).
 
 ---
 
@@ -1269,6 +1462,33 @@ A **binary rule** has two symbols on the right ($S\rightarrow NP\ VP$); a **unar
 
 ---
 
+<a id="contextual-word-representation"></a>
+### Contextual Word Representation
+
+**The Big Idea**: A word embedding (see the Word Embedding entry) is like a function with a single input, $f(\text{word})$: the same word always gives the same output vector. A contextual word representation is like a function of two inputs, $f(\text{word}, \text{sentence})$: the output depends on the word *and* on the sentence around it, just as $f(x, y) = x + y$ gives different results for the same $x$ when $y$ changes.
+
+**General Usage**: A *contextual word representation* (also called a *contextualized embedding* or *contextual vector*) is a vector (a list of numbers) produced for one occurrence of a word by a model that reads the whole surrounding sentence. Because the surrounding words feed into the computation, the same word receives different vectors in different sentences, which lets the representation reflect which meaning or grammatical role the word has in that particular context. By contrast, a *context-independent* (or *static*) representation assigns each word one fixed vector, used everywhere.
+
+**Example.** Use a deliberately tiny model whose contextual vector for a word is the average of the word's static vector and its neighbor's static vector. Let the static vectors be
+
+$$
+\text{bank} = (1, 0), \qquad \text{river} = (0, 2), \qquad \text{loan} = (2, 0).
+$$
+
+1. In "river bank", the contextual vector for *bank* averages *bank* and *river*:
+$$
+\left(\tfrac{1+0}{2}, \tfrac{0+2}{2}\right) = (0.5,\ 1).
+$$
+2. In "bank loan", the contextual vector for *bank* averages *bank* and *loan*:
+$$
+\left(\tfrac{1+2}{2}, \tfrac{0+0}{2}\right) = (1.5,\ 0).
+$$
+3. The static vector for *bank* is $(1, 0)$ in both phrases, but the contextual vectors $(0.5, 1)$ and $(1.5, 0)$ differ, so a later classifier can tell the riverside sense from the money sense. Real models compute context with many learned layers rather than a simple average, but the effect is the same.
+
+**AI/ML Usage**: ELMo (see the ELMo (Embeddings from Language Models) entry) and BERT (see the BERT entry) are the best-known producers of contextual word representations. Probing studies (see the Model Probing entry) such as Tenney et al. (2019, "What Do You Learn From Context?") measure what these vectors contain by training a small classifier on them and comparing its scores against a lexical baseline built on static vectors (see the Lexical Baseline entry); the difference shows how much the context contributes.
+
+---
+
 <a id="continuous-bag-of-words-cbow"></a>
 ### Continuous Bag-of-Words (CBOW)
 
@@ -1346,6 +1566,47 @@ where $R(\theta)$ sends $(x, y)$ to $(x\cos\theta - y\sin\theta,\; x\sin\theta +
 
 ---
 
+<a id="coreference-resolution"></a>
+### Coreference Resolution
+
+**The Big Idea**: In algebra, two different expressions can name the same number: $2+3$ and $5$ are written differently but are equal. In language, two different phrases can name the same person or thing: "Maria" and "she" can point to the same woman. Coreference resolution is the job of deciding which phrases are "equal" in this sense.
+
+**General Usage**: A *mention* is any phrase in a text that refers to some entity (a person, object, place, or event), such as a name ("Maria"), a description ("the cup"), or a pronoun ("she"). Two mentions are *coreferent* when they refer to the same entity. *Coreference resolution* is the task of grouping all mentions in a text into clusters, one cluster per entity. A common way to set it up for a classifier is pairwise: for each pair of mentions, predict yes (coreferent) or no.
+
+**Example.** Take the sentence "Maria dropped the cup because she was startled."
+
+1. Identify the mentions: *Maria*, *the cup*, *she*. That is $n = 3$ mentions.
+2. Count the possible pairs. Each pair picks 2 of the 3 mentions, and the number of such pairs is
+$$
+\frac{n(n-1)}{2} = \frac{3 \times 2}{2} = 3:
+$$
+(Maria, the cup), (Maria, she), (the cup, she).
+3. Decide each pair. *She* must be a person who can be startled, so (Maria, she) is coreferent; the other two pairs are not.
+4. The resulting clusters are $\{\text{Maria}, \text{she}\}$ and $\{\text{the cup}\}$: two entities in total.
+
+**AI/ML Usage**: Coreference resolution is a standard benchmark task, commonly evaluated on the OntoNotes corpus, and appears as a late, high-level stage of the classical NLP pipeline (see the Classical NLP Pipeline entry). Harder variants built on Winograd-schema problems require world knowledge to choose the right antecedent. Probing studies (see the Model Probing entry) of BERT find that coreference information draws on its later layers, and question-answering systems need coreference to answer multi-hop questions (see the Multi-Hop Question Answering entry).
+
+---
+
+<a id="counterfactual"></a>
+### Counterfactual
+
+**The Big Idea**: This builds on the "what if" reasoning of plugging a different value into a function and seeing what changes: if $f(x) = 2x + 1$ and $f(3) = 7$, then "what if $x$ had been $4$?" gives $f(4) = 9$. A counterfactual is exactly this kind of question, asked about a situation that did *not* actually happen. Nothing here goes beyond Algebra 2.
+
+**General Usage**: A counterfactual is a statement of the form "if $A$ had been different, then $B$ would have been different," where $A$ did not in fact change. In explaining machine learning models, a *counterfactual explanation* names a change to the input that would have changed the model's prediction: "the model predicted positive *because of* the word *good*" is meaningful precisely when the counterfactual holds — had *good* been absent or replaced, the model would have predicted something else. Counterfactuals are what make an explanation a claim about cause and effect inside the model, rather than a story that merely sounds plausible.
+
+**Example.** A toy sentiment model adds up word scores and predicts "positive" if the total is greater than $0$. Scores: $\text{the} = 0$, $\text{food} = 0$, $\text{was} = 0$, $\text{good} = +2$, $\text{cold} = -1$.
+
+1. Actual input: "the food was good." Total $= 0 + 0 + 0 + 2 = 2 > 0$, so predict positive.
+2. Proposed explanation: "positive because of *good*."
+3. Test the counterfactual by removing *good*: "the food was." Total $= 0 + 0 + 0 = 0$, which is not greater than $0$, so predict negative.
+4. The prediction changed, so the counterfactual holds and the explanation is meaningful.
+5. Now test a different proposed explanation, "positive because of *food*": remove *food* to get "the was good." Total $= 0 + 0 + 2 = 2 > 0$, still positive. The prediction did not change, so *food* is not what drove the decision, and that explanation is not supported.
+
+**AI/ML Usage**: Counterfactual reasoning underlies **local explanations** (see the Local Explanation entry), which highlight the input features whose change would alter a prediction, and it is the standard used to judge whether an explanation is *faithful* (actually reflects the model's computation). It also appears in counterfactual data augmentation, where training examples are minimally edited to flip their label (for example, changing "great" to "awful" in a review) so a model learns the features that genuinely matter, and in fairness testing, where a protected attribute such as a name or pronoun is swapped to check whether the prediction changes.
+
+---
+
 <a id="covariance-matrix"></a>
 ### Covariance Matrix
 
@@ -1405,6 +1666,24 @@ where $R(\theta)$ sends $(x, y)$ to $(x\cos\theta - y\sin\theta,\; x\sin\theta +
 
 ---
 
+<a id="crowdsourcing-data-annotation"></a>
+### Crowdsourcing (Data Annotation)
+
+**The Big Idea**: Writing 500,000 examples yourself would take years; splitting the job among 2,000 people who each write 250 takes a fraction of the time. Crowdsourcing is that division of labor, done over the internet. The only math involved is multiplication and division of counts and costs.
+
+**General Usage**: Crowdsourcing is the practice of producing a dataset by paying many online workers, called **annotators** or crowd workers, small amounts to complete short, well-defined tasks: writing a sentence, labeling an image, or judging whether two sentences agree. The instructions given to the workers — the **annotation protocol** — determine what the data looks like. Because each worker does many similar tasks quickly, workers tend to develop habits, and those habits can leave systematic patterns in the data (see the Annotation Artifact entry above).
+
+**Example.** A team wants 300,000 labeled sentence pairs. Each worker task produces 3 pairs (one per label) and pays \$0.50.
+
+1. Number of tasks: $\frac{300{,}000}{3} = 100{,}000$ tasks.
+2. Total pay: $100{,}000 \times 0.50 = 50{,}000$ dollars.
+3. If 2,500 workers share the work equally, each does $\frac{100{,}000}{2{,}500} = 40$ tasks.
+4. Each worker therefore writes $40 \times 3 = 120$ sentences — enough repetition for personal habits (such as always using the word "not" for one label) to show up across the dataset.
+
+**AI/ML Usage**: Many of the large datasets that modern NLP models are trained and tested on were crowdsourced, including SNLI and MultiNLI for natural language inference and SQuAD for question answering, typically through platforms such as Amazon Mechanical Turk. Crowdsourced human judgments are also used to collect preference data for reinforcement learning from human feedback (see the Reinforcement Learning from Human Feedback (RLHF) entry).
+
+---
+
 <a id="d-dynamic-a-algorithm"></a>
 ### D* (Dynamic A* Algorithm)
 
@@ -1415,6 +1694,42 @@ where $R(\theta)$ sends $(x, y)$ to $(x\cos\theta - y\sin\theta,\; x\sin\theta +
 **Example.** On a grid where an agent's route runs into a newly discovered obstacle: the obstacle cell is assigned a cost of $1000$; every cell that used to route through it (found by following backpointers) is provisionally marked with a correspondingly inflated cost ($1001$, $1002$, \dots); once this outward wave reaches a cell where an alternate, unaffected route is cheaper than continuing to inflate (say, a true cost of $6$ instead of $1005$), that cell becomes the boundary, and the correct, much lower costs are propagated back inward from there — resulting in only a local re-route for some states, and no change at all for states untouched by the obstacle.
 
 **AI/ML Usage**: D* and its descendants (D* Lite, Focused D\*, which adds a heuristic) are the standard algorithms behind real-time robot navigation in partially known or changing environments — for example, a warehouse robot or planetary rover that must react to newly discovered obstacles without pausing to recompute an entire route from scratch every time. Like plain Dijkstra's Algorithm, base D* uses no heuristic; Focused D* is a variant that adds one, at the cost of the same kind of added complexity A* introduces over Dijkstra's Algorithm.
+
+---
+
+<a id="data-augmentation"></a>
+### Data Augmentation
+
+**The Big Idea**: A student who has only ever practiced word problems about trains may freeze when the same math is asked about boats. Giving the student extra practice problems — the same skills, dressed differently — fixes that. Data augmentation adds such extra, deliberately varied examples to a model's training data. It requires only counting and percentages.
+
+**General Usage**: Data augmentation is the practice of enlarging a training set (the labeled examples a model learns from) with new examples created from existing ones or written specifically to fill a gap. In images this might mean flipping or rotating pictures; in text it might mean paraphrasing sentences, swapping words, or adding examples that break a misleading pattern. When a dataset contains a shortcut (see the Annotation Artifact entry above), augmentation can add examples where the shortcut gives the wrong answer, so a model trained on the enlarged set can no longer rely on it. A closely related idea, **inoculation**, adds a small number of such shortcut-breaking examples and checks whether the model can adapt to them.
+
+**Example.** A training set has 1000 examples labeled C that contain the word "not" and 0 examples with other labels that contain it, so "not" predicts label C perfectly: $\frac{1000}{1000 + 0} = 100\%$ of "not" examples are C.
+
+1. Add 500 new examples labeled A that contain "not," and 500 labeled B that contain "not."
+2. Now "not" appears in $1000 + 500 + 500 = 2000$ examples.
+3. The share of those that are C is $\frac{1000}{2000} = 0.50 = 50\%$.
+4. The word "not" has gone from a perfect predictor (100%) to a much weaker one (50%), so a model learns less from it and must use other information.
+
+**AI/ML Usage**: Image classifiers are routinely trained with random crops, flips, and color changes. In NLP, augmentation and inoculation have been proposed to counter annotation artifacts in natural language inference data, and back-translation (translating a sentence to another language and back to get a paraphrase) is a standard augmentation for machine translation and text classification.
+
+---
+
+<a id="data-manifold"></a>
+### Data Manifold
+
+**The Big Idea**: This builds on the graph of an equation. In Algebra 2, the equation $x^2 + y^2 = 1$ picks out a circle: of all the points in the flat plane, only the ones on that curve satisfy it. The circle is a one-dimensional shape (you can move along it in only one direction) sitting inside a two-dimensional space. A data manifold is the same idea at a much larger scale: of all the possible lists of numbers that could be fed to a model, only a thin, structured region corresponds to real data such as natural sentences or photographs. The precise mathematical definition of a manifold belongs to advanced geometry, but the picture of "a lower-dimensional surface inside a higher-dimensional space" is all that is needed here.
+
+**General Usage**: A **manifold** is a shape that, when you zoom in on any small piece of it, looks like a flat space of some lower dimension — a curve looks like a line up close, a sphere's surface looks like a flat sheet up close. The **data manifold** is the region of input space where real, naturally occurring data lies. A model trained on real data has only seen inputs on or near this region, so its behavior on inputs far from it is untested and can be unpredictable. Changing an input so much that it leaves this region (for example, setting many of its numbers to zero) produces an unnatural input.
+
+**Example.** Treat the circle $x^2 + y^2 = 1$ as a tiny "data manifold": pretend that all real data points lie on it.
+
+1. Take the data point $(0.6,\ 0.8)$. Check that it lies on the circle: $0.6^2 + 0.8^2 = 0.36 + 0.64 = 1.00$. It is on the manifold.
+2. Now "zero out" the first feature, as a masking method might: the point becomes $(0,\ 0.8)$. Check: $0^2 + 0.8^2 = 0 + 0.64 = 0.64$. Since $0.64 \ne 1$, this point is **off** the manifold — it is a kind of input that never occurs in the real data.
+3. Instead, make a small move along the circle to $(0.56,\ 0.83)$ (rounded). Check: $0.56^2 + 0.83^2 = 0.3136 + 0.6889 = 1.0025 \approx 1$. This small change stays (essentially) **on** the manifold.
+4. Comparing steps 2 and 3: zeroing out a feature moved the point a distance of $0.6$ and landed it off the curve, while the small change kept it on the curve. A model trained only on points of the circle has evidence about how to behave near step 3's point, but none about step 2's.
+
+**AI/ML Usage**: The data manifold explains a weakness of explanation methods such as LIME (Local Interpretable Model-agnostic Explanations), which mask or delete parts of an input — words of a sentence or regions of an image — and watch how a model's prediction changes. Masked inputs often lie off the manifold of natural sentences or images, so the model (a trained neural network, meaning a function with millions of adjustable numbers fitted to example data) may react to them in strange ways that say little about how it treats real inputs. Gradient-based explanation methods respond to this by considering only very small changes to the input, which stay close to the manifold.
 
 ---
 
@@ -1897,6 +2212,33 @@ Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second s
 
 ---
 
+<a id="explainability-model-interpretability"></a>
+### Explainability (Model Interpretability)
+
+**The Big Idea**: This builds on the familiar request to "show your work" on a math test. A correct final answer is useful, but the work shows *how* it was reached, lets a reader catch errors, and builds confidence that the method is sound. Explainability is the effort to get the equivalent of "the work" from a machine learning model. No new mathematics is required to understand the idea; individual explanation methods (see the Local Explanation, Text-Based Explanation, and Model Probing entries) bring their own tools.
+
+**General Usage**: Explainability, or interpretability, is the study of methods for understanding why a trained model produces the outputs it does. The need arises because modern models, especially deep neural networks (see the Neural Network entry), have millions of learned numbers and behave like a **black box** — something whose inside cannot be seen, so it can only be studied by feeding it inputs and watching outputs. Commonly cited reasons for wanting explanations (Lipton, "The Mythos of Model Interpretability," 2016) include:
+
+- **Trust** — a model that behaves in human-like ways and makes understandable mistakes is easier to trust and put into use.
+- **Causality** — an explanation should reveal what in the input actually drives the prediction (see the Counterfactual entry).
+- **Informativeness** — extra information beyond a bare label can make a model more useful to the person relying on it.
+- **Fairness** — explanations let us check that decisions do not rest on characteristics, such as race or sex, that should not be used.
+
+Approaches divide into making the model itself simple enough to read (see the Transparent Model (and Black-Box Model) entry) and extracting explanations *after* training from a complex model (called *post-hoc* explanation), such as local explanations, text-based explanations, and model probing.
+
+**Example.** A key test of any explanation is *faithfulness*: it must match what the model actually does. Take a toy model that predicts "positive" when its total score is greater than $0$, with scores $\text{good} = +0.5$, $\text{the} = +1$, $\text{movie} = 0$, $\text{was} = 0$.
+
+1. Input: "the movie was good." Total $= 1 + 0 + 0 + 0.5 = 1.5 > 0$, so positive.
+2. The model's offered explanation is "positive because of *good*."
+3. Remove *good*: "the movie was." Total $= 1 + 0 + 0 = 1 > 0$, still positive.
+4. Remove *the* instead: "movie was good." Total $= 0 + 0 + 0.5 = 0.5 > 0$, still positive.
+5. Remove both: "movie was." Total $= 0$, not greater than $0$, so negative.
+6. Conclusion: *good* alone does not change the prediction; the model leans more heavily on the meaningless word *the* (score $+1$, double that of *good*). The explanation "because of *good*" sounds reasonable but is not faithful to the model.
+
+**AI/ML Usage**: Explainability methods are used to debug NLP models (for example, discovering that a question-answering model picked the wrong name in a passage), to audit models used in high-stakes settings such as medical diagnosis, lending, and hiring, and to discover when a model has learned a shortcut from quirks of its training data. Well-known techniques include LIME and Integrated Gradients for highlighting important input words, models trained to generate natural-language justifications, and probing classifiers that test what information a network's internal representations contain.
+
+---
+
 <a id="exposure-bias-in-sequential-decision-models"></a>
 ### Exposure Bias (in Sequential Decision Models)
 
@@ -1907,6 +2249,80 @@ Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second s
 **Example.** A transition-based dependency parser for a sentence of $n$ words is trained on $2n$ (state, correct action) examples, one for each step of the oracle's derivation (see the Oracle Derivation entry). Every one of those states lies on the single gold path from the start state to the gold end state. Suppose that at test time the parser takes a wrong action at step 3. It is now in a state that no training example ever showed it, so the classifier's behavior there is untrained, and typically it is impossible to reach the correct tree again.
 
 **AI/ML Usage**: Exposure bias appears in transition-based parsing and, under the same name, in sequence generation with Teacher Forcing (see that entry). Practical mitigations are sampling off-gold-path trajectories during training and training with reinforcement-learning objectives; for parsing, the correct action is known at nearly every state, so simply sampling and labeling off-path states is lighter than full reinforcement learning.
+
+---
+
+<a id="extractive-question-answering"></a>
+### Extractive Question Answering
+
+**The Big Idea**: This builds on the reading-comprehension exercise from school: "read the passage, then answer the question by underlining the answer in the text." The answer is never written in your own words — it is a stretch of words already in the passage. The math involved is picking the largest value from a list of probabilities, which needs only the idea of a probability as a number between $0$ and $1$ (see the Probability / Probability Density entry in the math_symbols file).
+
+**General Usage**: In extractive question answering, a model receives a **question** and a **passage**, and must return a **span** of the passage — a consecutive run of words from a start position to an end position (see the Span (Fencepost Indexing) entry) — as the answer. The model typically computes a **start distribution**, a probability for each word in the passage of being the first word of the answer, and an **end distribution**, a probability for each word of being the last word. Each distribution's probabilities add up to $1$. The predicted answer is the span whose start and end are most probable together, with the end not coming before the start.
+
+**Example.** Passage of five words, numbered $0$ to $4$: "Smith caught it, Jones ran" — positions $0{:}\ \text{Smith}$, $1{:}\ \text{caught}$, $2{:}\ \text{it}$, $3{:}\ \text{Jones}$, $4{:}\ \text{ran}$. Question: "Who caught it?"
+
+| Position | Word | Start prob. | End prob. |
+|---|---|---|---|
+| 0 | Smith | 0.30 | 0.40 |
+| 1 | caught | 0.05 | 0.05 |
+| 2 | it | 0.05 | 0.05 |
+| 3 | Jones | 0.55 | 0.45 |
+| 4 | ran | 0.05 | 0.05 |
+
+1. Check the start column adds to $1$: $0.30 + 0.05 + 0.05 + 0.55 + 0.05 = 1.00$. Likewise the end column: $0.40 + 0.05 + 0.05 + 0.45 + 0.05 = 1.00$.
+2. Score the one-word span "Smith" (start $0$, end $0$): $0.30 \times 0.40 = 0.12$.
+3. Score the one-word span "Jones" (start $3$, end $3$): $0.55 \times 0.45 = 0.2475$.
+4. Compare: $0.2475 > 0.12$, so the model answers "Jones."
+5. The correct answer is "Smith," so the model is wrong. The start distribution shows *what* the model believed (Jones is more likely), but not *why* — which is the kind of question explanation methods try to answer.
+
+**AI/ML Usage**: Extractive QA is the format of the widely used SQuAD dataset, and models such as BiDAF and BERT-based readers (see the BERT entry) are trained for it by learning the start and end distributions over passage tokens. Displaying the start distribution as highlighting on the passage is a common way to inspect a QA model's errors, and adding distracting sentences to passages (see the Adversarial Example entry) is a well-known way of probing how robust these models are.
+
+---
+
+<a id="f1-score"></a>
+### F1 Score
+
+**The Big Idea**: You already know the ordinary average of two numbers, $\frac{a+b}{2}$. The F1 score uses a different average, the *harmonic mean*, which stays low whenever either of the two numbers is low. It is built from fractions and one formula, all within Algebra 2.
+
+**General Usage**: For a system that predicts labels, compare its predictions with the correct answers.
+- **Precision** is the fraction of the system's predictions that were correct: $\text{precision} = \frac{\text{correct predictions}}{\text{all predictions made}}$.
+- **Recall** is the fraction of the correct answers that the system found: $\text{recall} = \frac{\text{correct predictions}}{\text{all correct answers that exist}}$.
+- The **F1 score** is the harmonic mean of the two:
+$$
+F_1 = \frac{2 \cdot \text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}.
+$$
+It ranges from 0 (worst) to 1 (best), and is often reported multiplied by 100. It is used instead of plain accuracy when a system can make several predictions per item, or when the correct answers are rare.
+
+**Example.** A system makes $10$ predictions, of which $8$ are correct. In total there were $16$ correct answers it could have found.
+
+1. Precision: $\frac{8}{10} = 0.8$.
+2. Recall: $\frac{8}{16} = 0.5$.
+3. Numerator: $2 \times 0.8 \times 0.5 = 0.8$.
+4. Denominator: $0.8 + 0.5 = 1.3$.
+5. $F_1 = \frac{0.8}{1.3} \approx 0.615$, or about $61.5$ on a 0-100 scale.
+
+Check against the ordinary average: $\frac{0.8 + 0.5}{2} = 0.65$. The F1 score ($0.615$) is lower, pulled toward the weaker of the two numbers, which is exactly its purpose: a system cannot get a high F1 by being excellent at one and poor at the other.
+
+**AI/ML Usage**: F1 is the standard metric for named-entity recognition, parsing (as the fraction of correct tree nodes), extractive question answering (see the Extractive Question Answering entry), and the probing task suites used to analyze models such as BERT, where every task score is reported as an F1 value so that different tasks can be compared on one scale (see the Model Probing entry).
+
+---
+
+<a id="faithfulness-and-plausibility-of-explanations"></a>
+### Faithfulness and Plausibility (of Explanations)
+
+**The Big Idea**: When you check an answer in Algebra 2, there is a difference between a solution that *looks* right and one that actually satisfies the equation when you substitute it back in. Faithfulness and plausibility are that same distinction applied to explanations of a machine learning model's decision: plausibility asks whether the explanation looks right to a person, and faithfulness asks whether it is actually true of the model. No mathematics beyond Algebra 2 is needed, but the idea depends on the notion of a cause inside a model, which the Counterfactual entry explains.
+
+**General Usage**: An explanation of a model's prediction is **plausible** if a human reader finds it convincing and reasonable. It is **faithful** if it accurately describes the reason the model actually produced that prediction, meaning the factors it names are the ones that really drove the model's computation. The two are independent: an explanation can be plausible but unfaithful (it sounds right but the model decided for a different reason), or faithful but implausible (it correctly reports that the model relied on something a person would find odd). Faithfulness is commonly tested with counterfactuals: if the explanation says the decision was made because of feature $X$, then changing $X$ should change the decision.
+
+**Example.** A toy classifier labels a short review "positive" when its total score exceeds $0$, using word scores $\text{great} = +0.2$, $\text{plot} = -0.5$, $\text{acting} = +1.0$, and $0$ for every other word. It reads "great plot , acting" and an explanation generator says: "positive because of the word *great*."
+
+1. Score the review: $0.2 + (-0.5) + 1.0 = 0.7$. Since $0.7 > 0$, the prediction is positive.
+2. Plausibility: a person reading "positive because of *great*" finds it convincing, so the explanation is plausible.
+3. Faithfulness test, remove the cited word: $(-0.5) + 1.0 = 0.5 > 0$. The prediction is still positive, so *great* was not needed.
+4. Remove *acting* instead: $0.2 + (-0.5) = -0.3 < 0$. The prediction flips to negative, so *acting* is what actually drove the decision.
+5. Conclusion: the explanation is plausible but unfaithful; a faithful one would cite *acting*.
+
+**AI/ML Usage**: The distinction is central to research on explainability (see the Explainability (Model Interpretability) entry). Models trained to generate natural-language explanations by imitating human-written ones, such as image-classification explainers and models trained on the e-SNLI dataset of natural language inference explanations, tend to produce plausible explanations whose faithfulness is not guaranteed, since nothing forces the generated text to reflect what drove the prediction. Designs that generate the explanation first and then make the prediction from it are one attempt to improve faithfulness (see the Text-Based Explanation entry).
 
 ---
 
@@ -2008,6 +2424,25 @@ Suppose the model's probabilities for the next token are as follows, first with 
 The sum used for normalizing is $0.90 + 1.15 = 2.05$, and the normalized values add to $0.44 + 0.56 = 1.00$. Without calibration the model would answer "positive" ($0.54 > 0.46$). But it leans toward "positive" even when given nothing to judge (0.60 on the null input). Relative to that lean, the real review *lowered* the probability of positive and *raised* the probability of negative, so the calibrated answer is "negative" ($0.56 > 0.44$) — the correct label for this review.
 
 **AI/ML Usage**: Few-shot prompting is the standard way to adapt a large language model (see the GPT (Generative Pre-trained Transformer) entry) to a task when only a few labeled examples exist. Empirically, going from zero examples to one usually gives the largest improvement, with much smaller gains after that. A notable finding is that replacing the demonstrations' correct labels with random ones often reduces accuracy only slightly, while removing the demonstrations altogether reduces it a great deal — evidence that demonstrations mostly communicate the *format* of the task, whereas the meaning of the labels comes from the model's original training. This is very different from a conventionally trained classifier, which fails if a large share of its training labels are wrong.
+
+---
+
+<a id="fine-grained-classification"></a>
+### Fine-Grained Classification
+
+**The Big Idea**: Sorting things into categories is familiar from everyday life and from Algebra 2 problems that classify numbers (integer, rational, irrational) or functions (linear, quadratic, exponential). Fine-grained classification is the same sorting task when the categories are very close cousins of one another, so the clues that separate them are small details. No new mathematics is involved; the reader should know that a classifier is a model that assigns each input one label from a fixed list (see the Logistic Regression entry for a simple classifier).
+
+**General Usage**: A classification task is fine-grained when all of its categories belong to one broad kind of object and differ only in subtle features, for example the species of a bird, the model of a car, or the variety of a flower, as opposed to coarse-grained tasks whose categories are obviously different (bird versus car versus flower). Because the categories look alike overall, a fine-grained classifier must rely on small, localized, discriminative features such as beak shape, wing markings, or eye color, and two images of different categories can look more alike than two images of the same category.
+
+**Example.** Suppose a classifier must choose among three gull-like seabird species, each defined by three features (bill color, back color, leg color): species A is (yellow, gray, pink); species B is (yellow, black, pink); species C is (yellow, gray, yellow).
+
+1. Compare A and B: they differ only in back color (gray versus black).
+2. Compare A and C: they differ only in leg color (pink versus yellow).
+3. Compare B and C: they differ in back color and leg color.
+4. Bill color is yellow for all three, so it is useless for telling them apart, even though it is a prominent feature.
+5. A new bird with a gray back and yellow legs matches C on both discriminative features, so it is classified as C; a model that looked only at overall size and bill color could not separate any of the three.
+
+**AI/ML Usage**: Fine-grained recognition is a standard computer-vision benchmark area, with datasets such as Caltech-UCSD Birds (CUB-200, 200 bird species) and Stanford Cars. Models for it, such as those using compact bilinear pooling on top of a convolutional neural network (a network designed for images), are built to capture fine local detail. It is also a natural setting for explanation research, because a useful explanation must name the specific small features that distinguish the predicted class from its near neighbors.
 
 ---
 
@@ -2563,6 +2998,49 @@ With $h=1$ the earlier $VBZ$ has been forgotten, so this symbol is shared with a
 
 ---
 
+<a id="hypothesis-only-baseline"></a>
+### Hypothesis-Only Baseline
+
+**The Big Idea**: Imagine a reading-comprehension test where you are shown only the answer choices and never the passage. You should do no better than guessing. If you score far above guessing, the answer choices themselves must be leaking the answer. A hypothesis-only baseline runs exactly this test on a model. It uses only percentages and chance level; it builds on the Textual Entailment (Natural Language Inference) entry, which is worth reading first.
+
+**General Usage**: In natural language inference (NLI), a model is given two sentences — a **premise** and a **hypothesis** — and must decide whether the premise **entails** the hypothesis (makes it true), **contradicts** it (makes it false), or is **neutral** (settles neither). A **baseline** is a deliberately simple reference model used to show how much of a task can be done without the ability we care about. A hypothesis-only baseline is a model trained and tested while seeing only the hypothesis, never the premise. Since the label depends on the relationship between the two sentences, such a model should be stuck near chance. Accuracy well above chance shows that the hypotheses contain annotation artifacts (see the Annotation Artifact entry above).
+
+**Example.** A three-label NLI test set has 9000 examples split evenly, 3000 per label.
+
+1. Majority-class baseline (always predict one label; see the Majority-Class Baseline entry below): $\frac{3000}{9000} = \frac{1}{3} \approx 33.3\%$.
+2. A hypothesis-only model gets 6000 right: $\frac{6000}{9000} = \frac{2}{3} \approx 66.7\%$.
+3. Gap above the baseline: $66.7 - 33.3 = 33.4$ percentage points.
+4. Relative improvement: $\frac{33.4}{33.3} \approx 1.00$, i.e. about 100% better than the baseline — doubling chance accuracy without ever reading the premise.
+
+**AI/ML Usage**: Hypothesis-only baselines showed that popular NLI datasets such as SNLI and MultiNLI can be solved well above chance from the hypothesis alone (roughly 69% on SNLI against about 34% for the majority class, in one study), revealing cues like negation words signaling contradiction. The same idea generalizes: "question-only" or "answer-only" baselines test whether a question-answering dataset can be solved without reading the passage.
+
+---
+
+<a id="image-captioning"></a>
+### Image Captioning
+
+**The Big Idea**: Algebra 2 functions take an input and return an output, $y = f(x)$. Image captioning is a function whose input is a picture and whose output is a sentence describing it. What goes beyond Algebra 2 is that the function is not written down by hand: it is a neural network (a model made of many layers of simple computations with adjustable numbers called parameters) whose parameters are learned from examples, and its output is a sequence of words produced one at a time (see the Encoder-Decoder Architecture entry).
+
+**General Usage**: An image captioning model takes an image and generates a natural-language description of its contents. It is trained on a large collection of images, each paired with one or more human-written captions, and learns to produce similar captions for new images. A typical design has two parts: an image encoder, usually a convolutional neural network, that turns the picture into a vector of numbers (see the Vector entry in the math_symbols file), and a text decoder, often an LSTM or Transformer, that generates the caption word by word conditioned on that vector, starting from a start-of-sentence token and stopping at an end-of-sentence token. A caption describes what is visible; it is not required to say why the image belongs to any particular category.
+
+**Example.** Generating a caption for a photo of a dog on a beach, step by step (the decoder picks the most probable next word at each step, as in greedy decoding; see the Greedy Decoding entry):
+
+| Step | Words so far | Most probable next word |
+|---|---|---|
+| 1 | (start) | a |
+| 2 | a | dog |
+| 3 | a dog | running |
+| 4 | a dog running | on |
+| 5 | a dog running on | the |
+| 6 | a dog running on the | beach |
+| 7 | a dog running on the beach | (end) |
+
+The final caption is "a dog running on the beach."
+
+**AI/ML Usage**: Image captioning models such as Show and Tell (an image encoder followed by an LSTM decoder) and later Transformer-based vision-language models are used for accessibility (describing images for blind and low-vision users), image search, and as building blocks for other systems. Explanation models for image classifiers reuse the captioning architecture but additionally condition the decoder on the predicted class label, so that the generated sentence says why the image belongs to that class rather than only what it shows.
+
+---
+
 <a id="importance-sampling"></a>
 ### Importance Sampling
 
@@ -2735,6 +3213,41 @@ Inflating the heuristic can change which vertex looks more promising, steering t
 Suppose 600 examples are taken from the sentiment dataset, 300 from translation, and 100 from arithmetic. The mixture has $600 + 300 + 100 = 1000$ training pairs, and a pair drawn at random is a sentiment example with probability $600 \div 1000 = 0.6$, a translation example with probability $0.3$, and an arithmetic example with probability $0.1$ (check: $0.6 + 0.3 + 0.1 = 1.0$). The model therefore sees the tasks interleaved, in roughly those proportions, and must rely on the instruction each time. A held-out test would then use a fourth task that contributed nothing to the 1000 pairs — for example "Does the second sentence follow from the first?" — given with its instruction and no examples.
 
 **AI/ML Usage**: The T0 model applied this recipe to a pretrained T5 model (see the T5 entry) using crowdsourced instructions, holding out entire task families such as natural language inference (see the Textual Entailment (Natural Language Inference) entry) for testing. Flan-PaLM and the smaller Flan-T5 scaled it to roughly 1,800 tasks and found that benchmark scores kept improving as more tasks were added, even for a model with hundreds of billions of parameters. Instruction-tuned models are much less sensitive than raw language models to the exact wording of a prompt and to the choice and order of in-context examples (see the Few-Shot Prompting entry). Instruction tuning is one of two main ways of adapting a pretrained language model to follow prompts; the other uses human judgments of the model's outputs as the training signal.
+
+---
+
+<a id="integrated-gradients"></a>
+### Integrated Gradients
+
+**The Big Idea**: This builds on slope from Algebra 2, and on the idea of averaging. The slope of a function tells how much its output changes when its input changes a little. Integrated gradients asks: instead of measuring the slope at just one point, what if we measured it at many points along the way from a "blank" starting input to the real input, and averaged them? Taking a slope at a single point is the **gradient** (see the Gradient entry in the math_symbols file), and averaging continuously along a path is an **integral** (see the Integral entry in the math_symbols file); both are calculus ideas beyond Algebra 2. The example below needs only slopes of straight-line pieces and an ordinary average, so it can be followed with algebra alone.
+
+**General Usage**: Integrated gradients is a method for explaining one prediction of a model $F$ by assigning each input feature an importance score. Choose a **baseline** input $x'$ that represents "nothing" (an all-black image, or a sentence made of all-zero word vectors). Walk along the straight line from $x'$ to the actual input $x$, written $x' + \alpha (x - x')$ as $\alpha$ goes from 0 to 1. At each point, compute the partial derivative of $F$ with respect to feature $i$ (how fast $F$ changes when only feature $i$ is nudged). Average these partial derivatives over the path and multiply by how much feature $i$ changed, $x_i - x'_i$:
+
+$$
+\text{IG}_i(x) = (x_i - x'_i) \times \int_{0}^{1} \frac{\partial F\big(x' + \alpha (x - x')\big)}{\partial x_i}\, d\alpha
+$$
+
+Its key advantage over the plain gradient at the input is that it still gives credit to features when the model's output has **saturated** — leveled off, so that it no longer changes near the input.
+
+**Example.** Let the model be a "soft OR" of two features, $F(a, b) = \min(1,\ a + b)$: the output is $a + b$ until it reaches 1, and then it stays at 1. The input is $x = (1, 1)$ and the baseline is $x' = (0, 0)$.
+
+First, the plain gradient at the input. At $(1,1)$, $a + b = 2$, which is above 1, so $F = 1$ and nudging $a$ or $b$ slightly does not change it: both slopes are 0. The plain gradient says neither feature matters — even though $F(1,1) = 1$ and $F(0,0) = 0$.
+
+Now integrated gradients. The path is $(\alpha, \alpha)$, so $a + b = 2\alpha$. While $2\alpha < 1$ (that is, $\alpha < 0.5$), $F = a + b$ and the slope with respect to $a$ is 1; once $\alpha > 0.5$, $F = 1$ and the slope is 0. Approximate the average using four evenly spaced points at the middles of four equal pieces of the path:
+
+| Step | $\alpha$ | Point $(a, b)$ | $a + b$ | Slope of $F$ in $a$ |
+|---|---|---|---|---|
+| 1 | 0.125 | (0.125, 0.125) | 0.25 | 1 |
+| 2 | 0.375 | (0.375, 0.375) | 0.75 | 1 |
+| 3 | 0.625 | (0.625, 0.625) | 1.25 | 0 |
+| 4 | 0.875 | (0.875, 0.875) | 1.75 | 0 |
+
+1. Average slope in $a$: $(1 + 1 + 0 + 0) / 4 = 2/4 = 0.5$.
+2. Multiply by the change in $a$: $x_a - x'_a = 1 - 0 = 1$. So $\text{IG}_a = 1 \times 0.5 = 0.5$.
+3. By symmetry, the same calculation for $b$ gives $\text{IG}_b = 0.5$.
+4. Check: the two importances add up to $0.5 + 0.5 = 1$, which equals $F(1,1) - F(0,0) = 1 - 0 = 1$. The whole change in output is shared between the two features, unlike the plain gradient, which assigned 0 to both.
+
+**AI/ML Usage**: Integrated gradients (Sundararajan, Taly, and Yan, 2017) is a standard way to produce highlights showing which words of a sentence or which pixels of an image drove a neural network's prediction (a neural network is a model built from many layers of simple weighted sums, with millions of adjustable numbers called parameters). In natural language processing the baseline is usually the all-zero word embedding (a word embedding is the list of numbers a model uses to represent a word), and the integral is approximated by computing gradients at a few dozen points along the path and averaging them, exactly as in the table above. Libraries for model interpretability, such as Captum for PyTorch, include it as a built-in method.
 
 ---
 
@@ -3097,6 +3610,24 @@ Check: the normalized vector's own mean is $0$ and its own variance is $1$, exac
 
 ---
 
+<a id="lexical-baseline"></a>
+### Lexical Baseline
+
+**The Big Idea**: In an experiment, a *control group* tells you what happens without the treatment, so you can measure how much the treatment adds. A lexical baseline is the control group for context in language models: it shows what can be done from each word on its own, so that the extra gained from reading the surrounding sentence can be measured by subtraction.
+
+**General Usage**: A *lexical baseline* is a version of a model or classifier that is given only *context-independent* word representations: one fixed vector per word (or word piece), the same in every sentence (see the Word Embedding entry). It is trained and evaluated in exactly the same way as the full model, which uses contextual representations instead (see the Contextual Word Representation entry). The gap between the two scores estimates how much the context contributes. Because the lexical baseline gives the same input for every occurrence of a word, it must give the same prediction for every occurrence too.
+
+**Example.** Suppose the word *run* appears $10$ times in a test set: $7$ times as a verb ("they run") and $3$ times as a noun ("a morning run").
+
+1. A lexical baseline sees the identical vector for *run* all $10$ times, so it must predict the same tag every time.
+2. Its best choice is the more common tag, verb, which is correct $7$ times out of $10$: accuracy $\frac{7}{10} = 70\%$ on this word.
+3. A model with contextual vectors can, in principle, tag all $10$ correctly, because "they run" and "a morning run" give *run* different vectors: up to $\frac{10}{10} = 100\%$.
+4. The gap, $100\% - 70\% = 30$ percentage points at most, is the room context leaves for improvement on this word.
+
+**AI/ML Usage**: In probing studies (see the Model Probing entry), Tenney et al. (2019) train the same probe on a lexical baseline for each encoder (for BERT, its own input word-piece embeddings; for the CoVe encoder, GloVe vectors, see the GloVe (Global Vectors for Word Representation) entry) and compare it to the probe trained on contextual vectors. A related idea is the Most-Frequent-Tag Baseline for part-of-speech tagging (see that entry).
+
+---
+
 <a id="lexicalization"></a>
 ### Lexicalization
 
@@ -3140,6 +3671,44 @@ Two beams have given two points on the surrounding walls; a real scan gives hund
 **Example.** If a model assigns individual probabilities of $0.9$, $0.8$, and $0.7$ to three separate observed data points, the overall likelihood of the entire dataset, under that specific model, is simply their product: $0.9\times0.8\times0.7=0.504$. A different model assigning higher probabilities to all three observations would produce a correspondingly higher combined likelihood.
 
 **AI/ML Usage**: Likelihood is the central quantity that Maximum Likelihood Estimation (see that entry) is built entirely around maximizing — the whole underlying idea being: search for whichever model parameters would have made the data you actually, genuinely observed as probable (as likely) as possible under that model.
+
+---
+
+<a id="lime-local-interpretable-model-agnostic-explanations"></a>
+### LIME (Local Interpretable Model-Agnostic Explanations)
+
+**The Big Idea**: This builds on fitting a line to data points, as with a line of best fit in Algebra 2, and on the Local Explanation entry in this file. A complicated model may be impossible to understand everywhere, but if we only look at inputs very similar to one particular input, a simple equation — like $y = w_0 + w_1 z_1 + w_2 z_2$ — can often imitate it well. LIME builds that simple equation by testing the complicated model on many slightly altered copies of the one input, then reading the equation's coefficients as the explanation. Solving for the coefficients uses the same substitution steps as solving a system of linear equations.
+
+**General Usage**: LIME explains one prediction of any classifier $f$ (it is **model-agnostic**: it only needs to call $f$ on inputs and read its outputs, treating it as a black box). The steps are:
+
+1. Break the input into $d'$ interpretable pieces — words or short phrases for text, regions of similar pixels ("super-pixels") for images.
+2. Draw many random **binary masks** $z' \in \{0,1\}^{d'}$, one 0-or-1 entry per piece, where 1 means keep the piece and 0 means remove it.
+3. Apply each mask to the input and record the classifier's output on the masked input.
+4. Fit a simple, interpretable model — usually a linear model with few nonzero weights — that predicts those outputs from the masks, giving more weight to masks that keep most of the input (samples close to the original count more).
+5. Report the simple model's weights: a large positive weight marks a piece that pushes the prediction toward the class being explained.
+
+It is **local** because the simple model only has to match $f$ near this one input, not everywhere.
+
+**Example.** A sentence is split into two pieces, A and B. The black-box classifier's probability of "positive" on the four possible masks is:
+
+| Mask $(z_A, z_B)$ | Pieces kept | $f$ output |
+|---|---|---|
+| (1, 1) | A and B | 0.9 |
+| (1, 0) | A only | 0.8 |
+| (0, 1) | B only | 0.2 |
+| (0, 0) | neither | 0.1 |
+
+Fit the linear model $g = w_0 + w_A z_A + w_B z_B$:
+
+1. From the mask $(0,0)$: $g = w_0 = 0.1$.
+2. From the mask $(1,0)$: $w_0 + w_A = 0.8$, so $w_A = 0.8 - 0.1 = 0.7$.
+3. From the mask $(0,1)$: $w_0 + w_B = 0.2$, so $w_B = 0.2 - 0.1 = 0.1$.
+4. Check with the mask $(1,1)$: $w_0 + w_A + w_B = 0.1 + 0.7 + 0.1 = 0.9$, which matches the classifier's output exactly.
+5. Read the explanation: $w_A = 0.7$ is much larger than $w_B = 0.1$, so piece A is what drives the positive prediction, and LIME would highlight it.
+
+(With many pieces there are too many masks to try them all — $d'$ pieces give $2^{d'}$ masks — so LIME samples a few thousand at random and fits the weights by least squares, the same method used for a line of best fit.)
+
+**AI/ML Usage**: LIME was introduced by Ribeiro, Singh, and Guestrin (2016) and is one of the most widely used explanation methods for text classifiers, image classifiers, and models over tables of data. Its output for a sentiment classifier is typically shown as highlighted words with their weights. A known weakness is that masked inputs can be unnatural — off the data manifold (see the Data Manifold entry above) — so the black box may behave oddly on them, and the choice of piece size trades off detail against readability.
 
 ---
 
@@ -3188,6 +3757,33 @@ Two beams have given two points on the surrounding walls; a real scan gives hund
 Second check: $f(x)=x^2$ on all real numbers is not Lipschitz for any single $L$, since between $0$ and $x$ the ratio $\lvert x^2-0\rvert/\lvert x-0\rvert=\lvert x\rvert$ grows without bound.
 
 **AI/ML Usage**: A robot whose dynamics function $f(x,u)$ is Lipschitz (in the state $x$) cannot behave erratically: nearby states have similar rates of change, so simulated motion is predictable. Completeness guarantees for sampling-based kinodynamic planners (see the Probabilistic Completeness entry) assume Lipschitz continuous dynamics. The constant also appears when bounding how quickly a neural network's output can change with its input.
+
+---
+
+<a id="local-explanation"></a>
+### Local Explanation
+
+**The Big Idea**: This builds on the idea of zooming in on a graph. A complicated curve can look almost like a straight line if you zoom in close enough around one point, even though it looks nothing like a line overall. A local explanation does the same for a model: it does not try to describe the model's behavior everywhere, only in a small neighborhood around one particular input. The computations involved are subtraction and comparison, both within Algebra 2.
+
+**General Usage**: A local explanation identifies which features of one specific input — for text, typically which words — led a model to its prediction on that input. It is grounded in a **counterfactual** (see the Counterfactual entry): the highlighted features are those that, had they been different, would have led the model to predict a different class. It is called *local* because it reasons only about small **perturbations** (small changes, such as deleting or replacing a word) to one data point, and so explains the model's behavior only in the *neighborhood* of that point — inputs very close to it — not across all possible inputs.
+
+**Example.** One simple local explanation method is *leave-one-out*: remove each word in turn and measure how much the model's score drops. A toy sentiment model gives the probability of "positive" for each input:
+
+| Input | P(positive) |
+|---|---|
+| "the plot was fun" (full sentence) | 0.90 |
+| "plot was fun" (remove "the") | 0.89 |
+| "the was fun" (remove "plot") | 0.88 |
+| "the plot fun" (remove "was") | 0.90 |
+| "the plot was" (remove "fun") | 0.35 |
+
+1. Importance of "the": $0.90 - 0.89 = 0.01$.
+2. Importance of "plot": $0.90 - 0.88 = 0.02$.
+3. Importance of "was": $0.90 - 0.90 = 0.00$.
+4. Importance of "fun": $0.90 - 0.35 = 0.55$.
+5. The largest drop, $0.55$, belongs to "fun," so the local explanation highlights "fun" as the word that led to the positive prediction. This statement is only about this one sentence and sentences very close to it.
+
+**AI/ML Usage**: Widely used local explanation methods include LIME (Local Interpretable Model-agnostic Explanations), which fits a simple model to the complex model's predictions on many perturbed copies of one input; gradient-based methods, which use how sensitive the output is to each input word; and Integrated Gradients, which accumulates those sensitivities along a path from a blank input to the real one. In NLP, their output is usually shown as highlighting over the words of the input sentence.
 
 ---
 
@@ -3274,6 +3870,47 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** In Variational Autoencoders, the true likelihood of the observed data is generally far too computationally difficult to calculate exactly. Instead, the model maximizes something called the ELBO (Evidence Lower BOund) — a genuine, guaranteed lower bound on that true likelihood — since maximizing the ELBO reliably pushes the true likelihood up as well, even though the true likelihood itself is never computed directly.
 
 **AI/ML Usage**: Working with a lower bound instead of an intractable true quantity is an extremely common and powerful strategy throughout probabilistic machine learning — Jensen's Inequality (see that entry above) is frequently the exact mathematical tool used to derive these useful, tractable lower bounds in the first place.
+
+---
+
+<a id="macro-average"></a>
+### Macro Average
+
+**The Big Idea**: This is the ordinary mean you already know, $\frac{x_1 + x_2 + \cdots + x_n}{n}$, applied to a list of scores, one per task or category. The only new point is *what* gets averaged: whole-task scores, each counting equally, rather than every individual example.
+
+**General Usage**: When a system is evaluated on several tasks (or several categories), the *macro average* is the plain mean of the per-task scores, with every task weighted equally regardless of how many examples it has. The alternative, the *micro average*, pools all examples from all tasks together and computes one score, so large tasks dominate it. A macro average answers "how good is the system on a typical task?", while a micro average answers "how good is it on a typical example?"
+
+**Example.** Three tasks, with the number of examples and number correct:
+
+| Task | Examples | Correct | Task score |
+|---|---|---|---|
+| A | 100 | 90 | $90/100 = 0.90$ |
+| B | 10 | 7 | $7/10 = 0.70$ |
+| C | 10 | 5 | $5/10 = 0.50$ |
+
+1. Macro average: $\frac{0.90 + 0.70 + 0.50}{3} = \frac{2.10}{3} = 0.70$.
+2. Micro average: total correct $90 + 7 + 5 = 102$, total examples $100 + 10 + 10 = 120$, so $\frac{102}{120} = 0.85$.
+3. The micro average ($0.85$) is much higher because the large, easy task A contributes 100 of the 120 examples; the macro average ($0.70$) gives the two small, harder tasks equal say.
+
+**AI/ML Usage**: Benchmark suites such as GLUE (see the GLUE Benchmark entry) and probing task suites report a macro average across tasks as a one-number summary; for instance, Tenney et al. (2019) report a "Macro Average" row over their probing tasks. Macro-averaged F1 (see the F1 Score entry) is also used in multi-class classification so that rare classes count as much as common ones.
+
+---
+
+<a id="majority-class-baseline"></a>
+### Majority-Class Baseline
+
+**The Big Idea**: If 70% of the questions on a true/false quiz are "true," a student who writes "true" for every question scores 70% without reading a single one. Any real strategy should beat that. The majority-class baseline is that lazy strategy, used as a yardstick. It is a percentage calculation and nothing more (see the Accuracy (Classification) entry).
+
+**General Usage**: The majority-class baseline is the accuracy a classifier gets by always predicting whichever label is most common in the data, ignoring the input completely. It sets the floor that any useful model must clear. When labels are balanced (equally common), it equals chance level, $\frac{1}{k}$ for $k$ labels; when labels are unbalanced it can be much higher, which is why a model's accuracy should always be compared with it rather than judged on its own.
+
+**Example.** A test set has 200 examples: 90 labeled A, 70 labeled B, 40 labeled C.
+
+1. The most common label is A, with 90 examples.
+2. Always predicting A is right 90 times: $\frac{90}{200} = 0.45 = 45\%$.
+3. A model scoring 50% is therefore only $50 - 45 = 5$ points above this baseline, not the $50 - 33.3 = 16.7$ points it would seem if compared with the three-label chance level $\frac{1}{3} \approx 33.3\%$.
+4. Check with balanced labels instead (about 67 per label): the most common label covers about $\frac{67}{200} \approx 33.5\%$, essentially the chance level $\frac{1}{3}$.
+
+**AI/ML Usage**: Majority-class baselines are reported alongside model results in classification benchmarks such as natural language inference, where they show how far above trivial performance a model (or a suspicious shortcut model, such as a hypothesis-only baseline; see the Hypothesis-Only Baseline entry above) really is. They are a close cousin of the Most-Frequent-Tag Baseline used in part-of-speech tagging (see that entry).
 
 ---
 
@@ -3533,6 +4170,30 @@ The same idea extends to more than two players: instead of tracking a single num
 
 ---
 
+<a id="model-probing"></a>
+### Model Probing
+
+**The Big Idea**: This builds on the idea of testing a hypothesis by experiment rather than by looking inside. A doctor cannot see your reflexes directly, but tapping your knee and watching what happens reveals something about your nervous system. Probing does the same for a model: it runs targeted tests that reveal what the model can and cannot do, and what information its internal computations contain. The calculations involved are usually just accuracy percentages, which Algebra 2 covers.
+
+**General Usage**: Model probing is a family of methods for learning about a model's capabilities and internal structure without explaining any single prediction. Its main tools are:
+
+- **Auxiliary tasks** — secondary prediction tasks, such as predicting each word's part of speech, attempted using only the model's internal representations (the lists of numbers it computes partway through), to test whether that information is present inside the model.
+- **Challenge sets** — hand-built test examples targeting one specific ability (see the Challenge Set entry).
+- **Adversarial examples** — minimally changed inputs that flip the model's prediction (see the Adversarial Example entry).
+
+Probing does not produce an explanation *per se*; instead, it establishes "the model can do this, and it can't do this," which gives a more refined picture of what is going on inside it.
+
+**Example.** An auxiliary-task probe checks whether a model's internal word representations contain part-of-speech information (whether each word is a noun, verb, etc.). A small, simple classifier is trained to predict the part of speech from those representations, then tested on $200$ words.
+
+1. Probe gets $184$ of $200$ words right: accuracy $= 184 / 200 = 0.92 = 92\%$.
+2. Compare with a *baseline* (a trivial reference method): always guess the most common part of speech, noun, which is right on $60$ of the $200$ words: $60/200 = 0.30 = 30\%$.
+3. Difference: $92\% - 30\% = 62$ percentage points.
+4. Because the simple probe does far better than the trivial baseline, the representations evidently contain a lot of part-of-speech information — something learned about the model's internal structure without explaining any one prediction.
+
+**AI/ML Usage**: Probing is a major way of studying large pretrained language models such as BERT (see that entry) — for instance, testing which layers of the network carry information about syntax versus meaning, or whether the model has learned facts about the world. Challenge sets and adversarial examples are routinely used to expose shortcuts, such as a model answering correctly for superficial reasons, in tasks like natural language inference and question answering.
+
+---
+
 <a id="momentum"></a>
 ### Momentum
 
@@ -3708,6 +4369,50 @@ Arm B has the higher average so far, but that average is based on a single pull,
 
 ---
 
+<a id="multi-hop-question-answering"></a>
+### Multi-Hop Question Answering
+
+**The Big Idea**: Function composition from Algebra 2 — computing $f(g(x))$ by first finding $g(x)$ and then feeding the result into $f$ — is exactly the structure of a multi-hop question. "What is the capital of the country where a person lived?" is $\text{capital}(\text{country}(\text{person}))$: answer the inner question first, then use that answer in the outer one. Each inner-to-outer step is one "hop." (See the Function Composition entry in the math_symbols file.)
+
+**General Usage**: **Question answering (QA)** is the task of producing the answer to a natural-language question, often from a given passage or collection of facts. A question is **multi-hop** when no single fact answers it and two or more facts must be chained, with the answer to one sub-question supplying a piece needed for the next. Breaking such a question into its sub-questions is called **question decomposition**. Some questions are *explicit*, stating the needed steps in their wording, while others are *implicit*, requiring the solver to work out a strategy (which facts to look up and how to combine them) that the wording does not state. Along the way a system often has to resolve references — working out that a pronoun or repeated name in one sentence refers to something introduced in another (see the Coreference Resolution entry). The fact found in one hop that is used to locate the next is called a **bridge** entity. Datasets for multi-hop QA are designed so that each question supposedly requires the chain of hops. In practice, a model can sometimes skip the chain — for instance, when the final document shares many words with the question (**lexical overlap**), letting the model jump straight to the answer, which is a kind of annotation artifact (see the Annotation Artifact entry).
+
+**Example.** Facts: "Ana works with Ben. Carl works with Dee. Ben is a nurse. Dee is a pilot." Question: "Who works with a nurse?"
+
+1. **Hop 1 — find the nurses.** Scan for "is a nurse": Ben is a nurse. (Dee is a pilot, so Dee is excluded.)
+2. **Hop 2 — find who works with that person.** Scan for "works with Ben": Ana works with Ben.
+3. **Answer:** Ana. The two facts used, "Ana works with Ben" and "Ben is a nurse," together justify it; neither fact alone does.
+
+Written as a decomposition:
+
+```
+x = "a person who is a nurse"            -> Ben
+return "who works with [x]"              -> Ana
+```
+
+Chaining also makes errors compound: if a system gets each hop right with probability $0.9$, and the hops succeed or fail independently, it gets the whole chain right with probability $0.9 \times 0.9 = 0.81$, which shows why multi-hop questions are harder than single-hop ones.
+
+**AI/ML Usage**: WikiHop and HotpotQA are well-known multi-hop QA datasets; analyses have shown that models processing each sentence independently — which by design cannot chain hops — still solve a large share of their questions, so high scores on these datasets overstate how much multi-hop reasoning models do. Multi-hop QA data sets test whether a model can combine information rather than match a single sentence; StrategyQA, for instance, contains implicit questions like "Did Aristotle use a laptop?", which decomposes into "When did Aristotle live?", "When was the laptop invented?", and "Is the second before the first?". Earlier systems handled such questions with explicit, program-like decomposition modules. Chain-of-Thought Prompting (see that entry) absorbs this idea: the language model writes the sub-questions and their answers in plain text before giving the final answer. Synthetic multi-hop tasks built from simple relation sentences are also used to measure whether a model's written explanations actually help it answer.
+
+---
+
+<a id="multilayer-perceptron-mlp"></a>
+### Multilayer Perceptron (MLP)
+
+**The Big Idea**: Each unit in an MLP computes something you know from slope-intercept form, $y = mx + b$, extended to several inputs ($w_1 x_1 + w_2 x_2 + b$), followed by a simple bend such as "replace negatives with zero." Stacking a few layers of these units gives a flexible function built entirely from that one familiar piece (see the Neural Network and Neuron entries).
+
+**General Usage**: A *multilayer perceptron* is a feed-forward neural network: numbers flow in one direction from the input, through one or more *hidden layers*, to an output layer. Each unit computes a weighted sum of the previous layer's values plus a bias, then applies an activation function (see the Activation Function and ReLU entries in the math_symbols file). The weights and biases are its *parameters*, set during training. The number of hidden layers and units controls how powerful the MLP is: one small hidden layer gives a simple model, while many large layers give a very expressive one.
+
+**Example.** An MLP with input $(x_1, x_2) = (1, 2)$, one hidden layer of two ReLU units, and one output unit.
+
+1. Hidden unit 1, weights $(1, 1)$, bias $0$: $1 \cdot 1 + 1 \cdot 2 + 0 = 3$, and $\text{ReLU}(3) = 3$.
+2. Hidden unit 2, weights $(1, -1)$, bias $0$: $1 \cdot 1 + (-1) \cdot 2 + 0 = -1$, and $\text{ReLU}(-1) = 0$.
+3. Output unit, weights $(2, 1)$, bias $-1$, applied to the hidden values $(3, 0)$: $2 \cdot 3 + 1 \cdot 0 - 1 = 5$.
+4. The network's output is $5$. Counting parameters: the hidden layer has $2 \times 2 = 4$ weights plus $2$ biases, and the output has $2$ weights plus $1$ bias, for $4 + 2 + 2 + 1 = 9$ parameters.
+
+**AI/ML Usage**: MLPs are the feed-forward sublayers inside every Transformer block (see the Position-wise Feed-Forward Network entry) and the classification heads placed on top of pre-trained encoders. In probing (see the Model Probing entry), a deliberately small MLP is trained on a frozen model's vectors; keeping it small, with few parameters, is what lets a good score be credited to the vectors rather than to the probe.
+
+---
+
 <a id="multinomial-distribution"></a>
 ### Multinomial Distribution
 
@@ -3718,6 +4423,25 @@ Arm B has the higher average so far, but that average is based on a single pull,
 **Example.** A weighted six-sided die is a multinomial distribution over $V=6$ categories. Suppose it is weighted so that $P(1)=P(2)=P(3)=P(4)=P(5)=0.1$ and $P(6)=0.5$. Check that these are valid multinomial parameters: $\sum_{k=1}^{6} p_k = 0.1+0.1+0.1+0.1+0.1+0.5 = 1.0$ ✓ — every outcome's probability is between $0$ and $1$, and they sum to exactly $1$, so this is a valid multinomial distribution (a very lopsided one, strongly favoring rolling a $6$).
 
 **AI/ML Usage**: An n-gram language model (see N-Gram Language Model) represents $P(w_i \mid \text{context})$ — the probability of the next word, given some fixed context — as one multinomial distribution over the entire vocabulary $V$ (see the Vocabulary entry in the math_symbols file) for every possible context, so a bigram model alone requires $|V|\times|V|$ parameters: one full multinomial distribution (of $|V|$ parameters each) for every one of the $|V|$ possible single-word contexts. The Softmax Function (see the math_symbols file) is the standard way a neural network produces valid multinomial parameters as its output, since it guarantees the outputs are all positive and sum to $1$.
+
+---
+
+<a id="multiple-choice-question-answering"></a>
+### Multiple-Choice Question Answering
+
+**The Big Idea**: Every multiple-choice test question is a small selection problem: compute some score for each option and pick the option with the highest score, which is the arg max idea (see the Arg Min / Arg Max entry in the math_symbols file). Multiple-choice question answering is a machine learning model doing exactly that. The step beyond Algebra 2 is that the scores come from a trained model and are usually turned into probabilities with the softmax function (see the Softmax Function entry in the math_symbols file).
+
+**General Usage**: In multiple-choice question answering, a model receives a question $q$ and a list of candidate answers $A = (a_1, \dots, a_n)$ and must choose the correct one, $a^*$. A standard approach computes one score $s_i$ for each pair $(q, a_i)$, converts the scores to probabilities with softmax, and predicts the candidate with the highest probability. The model is trained on many question-candidates-answer examples to make the probability of the correct answer as large as possible. Benchmarks of this kind often test commonsense or world knowledge, since the answer is not stated in any accompanying passage.
+
+**Example.** A question has three candidates with model scores $s_1 = 2$, $s_2 = 0$, $s_3 = -1$.
+
+1. Exponentiate each score: $e^{2} \approx 7.389$, $e^{0} = 1$, $e^{-1} \approx 0.368$.
+2. Add them: $7.389 + 1 + 0.368 = 8.757$.
+3. Divide each by the total: $7.389 / 8.757 \approx 0.844$, $1 / 8.757 \approx 0.114$, $0.368 / 8.757 \approx 0.042$.
+4. Check that the probabilities sum to 1: $0.844 + 0.114 + 0.042 = 1.000$.
+5. The highest probability is $0.844$, so the model chooses candidate 1. (Choosing the highest score directly gives the same answer, since exponentiating preserves order.)
+
+**AI/ML Usage**: Multiple-choice benchmarks such as CommonsenseQA, SWAG, and the science-question dataset QASC are standard tests of language-model reasoning. Fine-tuned models like BERT and RoBERTa score each question-candidate pair with a learned weight vector applied to a summary vector (for BERT, the vector for the CLS token; see the CLS Token entry in the math_symbols file). Some explainable designs insert an intermediate step in which a generator writes text about the question that the answer-choosing classifier must then use.
 
 ---
 
@@ -4469,6 +5193,23 @@ and the conversion back is $r = \sqrt{x^2 + y^2}$, with $\theta$ the angle whose
 
 ---
 
+<a id="post-hoc-explanation"></a>
+### Post-Hoc Explanation
+
+**The Big Idea**: "Post hoc" is Latin for "after this." A post-hoc explanation is like explaining how you solved an Algebra 2 problem after you already wrote the answer: the explanation is produced afterwards, so it might describe the method you really used, or it might be a tidy story you reconstructed. No mathematics beyond Algebra 2 is required; the idea is about the order in which a model makes a decision and produces its explanation.
+
+**General Usage**: A post-hoc explanation is an explanation produced after a model has already made its prediction, by examining or describing the trained model rather than by building the model to be understandable in the first place (contrast the Transparent Model (and Black-Box Model) entry). Local explanations that highlight important input features, probing of a model's internal representations, and natural-language explanations generated from an already-computed label are all post-hoc. Because the explanation comes after the decision and is computed separately from it, it is not automatically guaranteed to reflect the actual reasoning (see the Faithfulness and Plausibility (of Explanations) entry).
+
+**Example.** Two ways of ordering the same two steps for a model that answers "What might a good job interview make you feel?" with candidates *hope* and *rejection*:
+
+1. Post-hoc order: the model first picks *hope*; then a separate generator, given the question and the label *hope*, writes "a good interview gives confidence, so the person feels hope." The sentence is written knowing the answer, so it could be fluent yet unrelated to what made the model pick *hope*.
+2. Explain-then-predict order: a generator first writes some text from the question alone, such as "confidence satisfaction"; then a classifier reads that text and the candidates and picks *hope*. Here the text is an input to the decision, so it is more likely to have influenced it.
+3. Comparison: in order 1 the explanation depends on the decision; in order 2 the decision depends on the explanation.
+
+**AI/ML Usage**: Most widely used explanation tools are post-hoc, including LIME, which fits a simple model around one prediction, integrated gradients, which assigns importance scores to input features, and generated rationales from models trained on human explanations, such as those trained on the e-SNLI dataset. Their convenience, working on any already-trained model, comes with the standing question of whether they are faithful, which is why some systems instead generate an explanation first and make the prediction from it.
+
+---
+
 <a id="posterior-distribution"></a>
 ### Posterior Distribution
 
@@ -4680,6 +5421,37 @@ Now two dimensions, with $\sigma_x = 2$ and $\sigma_y = 1$, on the contour where
 4. Narrow the density: for $p(x)=4$ on $[0, 0.25]$, the total is $0.25 \times 4 = 1$, showing that a density value of $4$ is perfectly valid even though no probability can exceed $1$.
 
 **AI/ML Usage**: Neural networks that output continuous quantities (for example the mean and spread of a Normal distribution, see the Normal Distribution Notation entry) are trained by maximizing the density value assigned to the observed data (see the Likelihood entry), and probabilistic code typically exposes two operations on a distribution: sampling a value, and evaluating the density at a point, whose result is a non-negative real number.
+
+---
+
+<a id="program-aided-language-model"></a>
+### Program-Aided Language Model
+
+**The Big Idea**: In Algebra 2 you solve a word problem in two separate stages: first you translate the words into an expression (naming the unknowns and writing how they combine), and then you evaluate that expression, often with a calculator. A program-aided language model splits the work the same way. A **language model** (a model that reads text and predicts the text that comes next; see the GPT (Generative Pre-trained Transformer) entry above) does the translating, and an ordinary computer program does the evaluating. Nothing here goes beyond Algebra 2 except the idea of a language model itself; read the Few-Shot Prompting and In-Context Learning entries above first if those are unfamiliar.
+
+**General Usage**: A program-aided language model is a way of using a large language model on reasoning problems (especially math word problems) in which the model, instead of writing its whole line of reasoning in English and computing the final number itself, writes its reasoning as a mix of natural language and short pieces of computer code. The code is then handed to an **interpreter** — a program, such as the Python interpreter, that runs code and computes results exactly — and the interpreter's output is taken as the answer. The model is usually shown how to do this through a few solved examples placed in its prompt (few-shot prompting), each written in the same text-plus-code style. The motivation is that language models are good at reading a problem and deciding which quantities matter and how they combine, but can make simple arithmetic mistakes; an interpreter never does.
+
+**Example.** Problem: "A library had 120 books. It lent out 45 books on Monday and 30 on Tuesday, and 12 books were donated. How many books does it have now?" A program-aided model would write:
+
+```
+books_start = 120
+lent_monday = 45
+lent_tuesday = 30
+donated = 12
+answer = books_start - lent_monday - lent_tuesday + donated
+```
+
+The interpreter then evaluates the last line step by step:
+
+| Step | Operation | Result |
+|---|---|---|
+| 1 | $120 - 45$ | $75$ |
+| 2 | $75 - 30$ | $45$ |
+| 3 | $45 + 12$ | $57$ |
+
+So `print(answer)` outputs 57. The model's job was only to get the variables and the formula right; the subtraction and addition in the table were done by the interpreter. A check the reader can do by hand: total lent is $45 + 30 = 75$, so $120 - 75 + 12 = 57$, which agrees.
+
+**AI/ML Usage**: Named methods built on this idea include PAL (Program-aided Language Models), Program-of-Thought prompting, and Faithful Chain-of-Thought, all of which have the model emit code that is executed to produce the answer, and which improve accuracy on math word-problem benchmarks such as GSM8K (a dataset of grade-school math word problems) compared with reasoning purely in natural language. It is a special case of a tool-augmented language model (see the Tool-Augmented Language Model entry below), where the tool is a code interpreter.
 
 ---
 
@@ -4913,6 +5685,30 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 
 ---
 
+<a id="recall-classification"></a>
+### Recall (Classification)
+
+**The Big Idea**: This is a fraction, of the kind used in Algebra 2 for percentages and rates: "of all the things I was supposed to find, what fraction did I find?" It needs only counting and division.
+
+**General Usage**: Given a set of items that are truly relevant (the **true positives** plus the **false negatives** — relevant items that were missed), recall is the fraction that a method successfully identified:
+
+$$
+\text{Recall} = \frac{\text{true positives}}{\text{true positives} + \text{false negatives}}
+$$
+
+It ranges from 0 (found none of the relevant items) to 1, often written as a percentage. Recall ignores items the method flagged that were not relevant; that is measured by the companion quantity **precision** (true positives divided by everything the method flagged). A method can get perfect recall trivially by flagging everything, so recall is usually reported with precision or with a fixed limit on how many items may be flagged.
+
+**Example.** A model truly uses 10 features to make a decision. An explanation method is allowed to name 10 features, and 7 of the ones it names are among the model's true 10.
+
+1. True positives (true features that were named): 7.
+2. False negatives (true features that were missed): $10 - 7 = 3$.
+3. Recall $= \dfrac{7}{7 + 3} = \dfrac{7}{10} = 0.7$, or 70%.
+4. Precision, for comparison: 7 of the 10 named features were correct, so precision is also $7/10 = 0.7$ here, because the method named exactly as many features as there were true ones.
+
+**AI/ML Usage**: Recall is a standard measure for classifiers (for example, the fraction of actual spam emails that a spam filter catches) and for search and retrieval systems (the fraction of relevant documents returned). In evaluating explanation methods, recall measures how many of a transparent model's truly used features (a transparent model is one whose workings can be read directly, such as a small decision tree) the explanation recovers; the original LIME paper reports explanation quality this way.
+
+---
+
 <a id="recurrent-neural-network-rnn"></a>
 ### Recurrent Neural Network (RNN)
 
@@ -5088,6 +5884,25 @@ For comparison, one Euler step gives $1+1\cdot1=2$. RK4 ($2.7083$) is within $0.
 
 ---
 
+<a id="saliency-map-gradient-based-saliency"></a>
+### Saliency Map (Gradient-Based Saliency)
+
+**The Big Idea**: This builds on the slope of a line and on the idea of a tangent line. Near any one point, a smooth curve looks almost like a straight line, $y \approx m x + b$, whose slope $m$ says how sensitive $y$ is to $x$. A saliency map applies the same idea to a model whose input has many numbers (for an image, one per pixel): near the current input, the model's score is approximated by a straight-line (linear) formula with one slope per input number, and the size of each slope says how sensitive the score is to that input number. Computing those slopes is taking a **gradient** (see the Gradient entry in the math_symbols file), which is calculus; the approximation itself is a first-order Taylor expansion (see the Taylor Expansion / Taylor's Theorem entry in this file).
+
+**General Usage**: For a model's score $S_c$ for class $c$ and a current input $I_0$, the score near $I_0$ is approximated as $S_c(I) \approx w^T I + b$, where $w$ is the gradient of $S_c$ with respect to the input, evaluated at $I_0$ (each entry $w_k$ is the partial derivative of the score with respect to input number $k$). The **saliency** of input number $k$ is the size of that slope, $|w_k|$: a large value means a small change in that input causes a large change in the score. Displaying $|w_k|$ for every pixel as an image gives the **saliency map**. Unlike training, where the derivative of the error is taken with respect to the model's parameters, here the parameters are held fixed and the derivative is taken with respect to the input.
+
+**Example.** A toy "image" has two pixels with values $I_1$ and $I_2$, and the model's score is $S(I_1, I_2) = 3 I_1^2 + I_2$. The current input is $I_0 = (1, 4)$.
+
+1. Current score: $S(1, 4) = 3 \times 1^2 + 4 = 3 + 4 = 7$.
+2. Slope with respect to $I_1$ (treat $I_2$ as a constant): the slope of $3 I_1^2$ is $6 I_1$, which at $I_1 = 1$ is $6$. So $w_1 = 6$.
+3. Slope with respect to $I_2$ (treat $I_1$ as a constant): the slope of $I_2$ is $1$. So $w_2 = 1$.
+4. Saliency map: $(|w_1|, |w_2|) = (6, 1)$. Pixel 1 is six times as salient as pixel 2.
+5. Check the meaning by nudging each pixel by $0.1$. Nudge pixel 1: $S(1.1, 4) = 3 \times 1.21 + 4 = 7.63$, a change of $0.63$ (the linear formula predicts $6 \times 0.1 = 0.6$). Nudge pixel 2: $S(1, 4.1) = 3 + 4.1 = 7.1$, a change of $0.1$ (predicted $1 \times 0.1 = 0.1$). The pixel with the larger slope really does move the score more.
+
+**AI/ML Usage**: Gradient saliency maps for image classifiers were popularized by Simonyan, Vedaldi, and Zisserman (2013), who showed that the bright regions of the map often fall on the object being recognized. In natural language processing the same computation is done with respect to each word's embedding (the list of numbers representing the word), and the sizes are shown as highlights over the words. A known limitation is saturation: when a model's output has leveled off near the input, the slopes are near zero even for important features, which the Integrated Gradients method (see the Integrated Gradients entry above) was designed to fix. A saliency map also does not by itself prove that removing the highlighted inputs would change the prediction.
+
+---
+
 <a id="sample-complexity"></a>
 ### Sample Complexity
 
@@ -5163,6 +5978,29 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 
 ---
 
+<a id="scalar-mix-layer-weighting"></a>
+### Scalar Mix (Layer Weighting)
+
+**The Big Idea**: This is a *weighted average*, the same calculation as a course grade where homework counts $20\%$, quizzes $30\%$, and the final $50\%$. Here the "grades" are the vectors produced by each layer of a neural network, and the percentages are learned automatically.
+
+**General Usage**: A deep network produces one vector per word at every layer $\ell = 0, 1, \ldots, L$. A *scalar mix* combines them into a single vector per word as
+$$
+h = \gamma \sum_{\ell=0}^{L} s^{(\ell)} h^{(\ell)},
+$$
+where $h^{(\ell)}$ is the word's vector at layer $\ell$, each $s^{(\ell)}$ is a non-negative weight, the weights add up to 1, and $\gamma$ is an overall scaling number. The weights are produced by applying the softmax function (see the Softmax Function entry in the math_symbols file) to one learned score per layer, and are trained along with whatever model uses $h$. After training, a large weight on a layer suggests that layer holds the information most useful for the task.
+
+**Example.** Three layers ($\ell = 0, 1, 2$), learned scores $(1, 2, 1)$, $\gamma = 1$, and one-number "vectors" $h^{(0)} = 2$, $h^{(1)} = 4$, $h^{(2)} = 10$.
+
+1. Exponentiate the scores: $e^1 \approx 2.718$, $e^2 \approx 7.389$, $e^1 \approx 2.718$.
+2. Add them: $2.718 + 7.389 + 2.718 = 12.825$.
+3. Divide to get the weights: $s^{(0)} = \frac{2.718}{12.825} \approx 0.212$, $s^{(1)} = \frac{7.389}{12.825} \approx 0.576$, $s^{(2)} \approx 0.212$. Check: $0.212 + 0.576 + 0.212 = 1.000$.
+4. Weighted sum: $0.212 \times 2 + 0.576 \times 4 + 0.212 \times 10 = 0.424 + 2.304 + 2.120 = 4.848$.
+5. Multiply by $\gamma = 1$: the mixed value is $h \approx 4.848$, dominated by layer 1, which has the largest weight.
+
+**AI/ML Usage**: The scalar mix was introduced with ELMo (Peters et al., 2018; see the ELMo (Embeddings from Language Models) entry) to combine its layers for each downstream task. Probing studies of BERT (see the BERT and Model Probing entries) use it as the "mix" setting, and Tenney, Das, and Pavlick (2019) read the learned weights to find which of BERT's layers each linguistic task relies on.
+
+---
+
 <a id="schur-complement"></a>
 ### Schur Complement
 
@@ -5189,6 +6027,30 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 
 ---
 
+<a id="self-ask-prompting"></a>
+### Self-Ask Prompting
+
+**The Big Idea**: When a question depends on two facts, you look up the first, then use it to look up the second — the same way you evaluate a composition of functions $f(g(x))$ in Algebra 2 by computing the inside $g(x)$ first and then feeding its result into $f$ (see the Function Composition entry in the math_symbols file). Self-ask prompting teaches a language model (a model that predicts the next text given some text; see the GPT (Generative Pre-trained Transformer) entry above) to do exactly this, in writing, one sub-question at a time. Read the Few-Shot Prompting entry above first if prompting is unfamiliar.
+
+**General Usage**: Self-ask is a prompting method in which a large language model answers a complex question by explicitly breaking it into simpler sub-questions. The prompt contains solved examples written in a fixed format: the question; the line "Are follow up questions needed here:" answered Yes or No; then alternating "Follow up:" lines (a sub-question) and "Intermediate answer:" lines (its answer); and finally "So the final answer is:". The model imitates this format on a new question. Because each follow-up is a simple factual question, it can optionally be sent to a **search engine** instead of being answered from the model's memory, and the retrieved answer is inserted as the intermediate answer. This lets the model use information it never learned during training.
+
+**Example.** Question: "Which is older, a person born in 1985 or a person born in 1979?"
+
+| Line | Content |
+|---|---|
+| Are follow up questions needed here | Yes. |
+| Follow up | How old is a person born in 1985 in the year 2020? |
+| Intermediate answer | $2020 - 1985 = 35$ years old. |
+| Follow up | How old is a person born in 1979 in the year 2020? |
+| Intermediate answer | $2020 - 1979 = 41$ years old. |
+| So the final answer is | The person born in 1979, since $41 > 35$. |
+
+Check by hand: $41 - 35 = 6$, and $1985 - 1979 = 6$, so the age gap matches the gap in birth years, as it must.
+
+**AI/ML Usage**: Self-ask was introduced for **multi-hop question answering** (questions whose answer requires chaining two or more facts) with GPT-3, and combining it with a web search engine improved accuracy on such questions. The same decompose-then-search pattern underlies search-integrated chat assistants, which run searches based on a user's query and fold the results into the response. It is a close relative of chain-of-thought prompting, in which the model writes its reasoning out step by step before answering.
+
+---
+
 <a id="self-attention"></a>
 ### Self-Attention
 
@@ -5212,6 +6074,46 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 **Example.** The question "What states border Texas" is translated into the logical expression $\lambda x.\ \text{state}(x) \wedge \text{borders}(x, e_{89})$. Reading it piece by piece: $\lambda x.\ \ldots$ says "the function that, for a candidate $x$, returns true or false according to what follows"; $\text{state}(x)$ is true exactly when $x$ is a US state; $\text{borders}(x, e_{89})$ is true exactly when $x$ borders the database entity coded $e_{89}$ (Texas); and $\wedge$ (logical AND) requires both conditions to hold at once. Running this function against a database of US states — checking every state $x$ and keeping only the ones where both conditions are true — returns exactly the states that border Texas, which is precisely how a computer would answer the original English question.
 
 **AI/ML Usage**: Modern semantic parsers are commonly trained as Sequence-to-Sequence (Seq2Seq) Task models (see that entry below): an encoder-decoder network reads the English question as its input sequence and generates the logical-form tokens one at a time as its output sequence, exactly like machine translation, just with a formal logical language playing the role of the "target language" instead of a foreign human language.
+
+---
+
+<a id="semantic-role-labeling"></a>
+### Semantic Role Labeling
+
+**The Big Idea**: A function $f(a, b, c)$ gives each input a fixed job: the first slot means one thing, the second another. A verb works the same way: "give" has a slot for the giver, one for the thing given, and one for the receiver. Semantic role labeling fills each slot with the right phrase from the sentence, no matter what order the words come in.
+
+**General Usage**: *Semantic role labeling* (SRL) is the task of finding, for each verb or other *predicate* in a sentence, its *arguments* (the phrases that participate in the action) and labeling the role each one plays: who did it, what it was done to, to whom, when, where, why, and so on. In the widely used PropBank scheme, the core roles are numbered: ARG0 is roughly the agent (the doer), ARG1 the patient or theme (the thing acted on), and ARG2 often the recipient or instrument. *Non-core* roles (modifiers) are labeled by type, such as ARGM-TMP for time, ARGM-LOC for location, ARGM-PRP for purpose, and ARGM-NEG for negation.
+
+**Example.** "Sam gave Lee a book yesterday."
+
+1. Find the predicate: *gave*.
+2. Find the giver: *Sam* is labeled ARG0.
+3. Find the thing given: *a book* is labeled ARG1.
+4. Find the receiver: *Lee* is labeled ARG2.
+5. Find the modifiers: *yesterday* is labeled ARGM-TMP (time).
+6. Check the role assignment survives a word-order change: in "A book was given to Lee by Sam yesterday," the words are rearranged, but *Sam* is still ARG0, *a book* ARG1, and *Lee* ARG2. That stability is what distinguishes semantic roles from grammatical positions such as "subject."
+
+So the sentence has $3$ core arguments and $1$ non-core argument attached to one predicate.
+
+**AI/ML Usage**: SRL is evaluated on datasets such as OntoNotes and CoNLL-2005, scored with the F1 metric (see the F1 Score entry). It is one of the standard probing tasks (see the Model Probing entry): a small classifier receives the predicate's span and an argument's span and must output the role, which tests whether a pre-trained model's vectors encode who-did-what-to-whom.
+
+---
+
+<a id="sentiment-analysis"></a>
+### Sentiment Analysis
+
+**The Big Idea**: This builds on the everyday judgment of whether a review is a thumbs-up or a thumbs-down. In its simplest form it is just a two-category sorting problem, and the toy version can be computed with addition and an inequality — "is the total greater than $0$?" — which Algebra 2 covers.
+
+**General Usage**: Sentiment analysis is the task of classifying a piece of text according to the opinion or attitude it expresses — most commonly **positive** versus **negative**, sometimes with a **neutral** class or a finer scale such as one to five stars. It is a *classification* task: the model assigns each input to one of a fixed set of categories (classes). The correct label for each example, assigned by a person, is called the **ground truth**. Difficult cases include negation ("not bad"), contrast ("but"), sarcasm, and sentiment that depends on context.
+
+**Example.** A simple *lexicon-based* method gives each word a fixed score and predicts positive if the total is greater than $0$, negative if less than $0$. Scores: $\text{loved} = +2$, $\text{slow} = -1$, $\text{ending} = 0$, $\text{the} = 0$, $\text{but} = 0$, $\text{it} = 0$, $\text{was} = 0$, $\text{i} = 0$.
+
+1. Review: "it was slow but i loved the ending."
+2. Add the scores: $0 + 0 + (-1) + 0 + 0 + 2 + 0 + 0 = 1$.
+3. Since $1 > 0$, predict positive.
+4. Compare with ground truth: a person would label this positive (the writer loved it overall), so the prediction is correct.
+
+**AI/ML Usage**: Sentiment analysis is one of the standard benchmark tasks in NLP, with datasets such as the Stanford Sentiment Treebank (movie review sentences) and IMDb reviews. It has been tackled with Naive Bayes and logistic regression over bag-of-words features, with Deep Averaging Networks (see that entry), with recurrent and recursive neural networks, and with fine-tuned Transformer models such as BERT. Because its errors on negation are easy to see, it is a frequent testbed for explanation and probing methods (see the Explainability (Model Interpretability) entry).
 
 ---
 
@@ -5708,6 +6610,24 @@ Notice that even if the model had incorrectly predicted, say, "cat" instead of "
 
 ---
 
+<a id="text-based-explanation"></a>
+### Text-Based Explanation
+
+**The Big Idea**: This builds on the familiar "explain your answer in a sentence" question on a test. Rather than highlighting parts of the input or returning a number, the model gives its reason in ordinary language. No new mathematics is required; the key idea to grasp is the difference between an explanation that *sounds* right and one that actually reflects how the answer was reached.
+
+**General Usage**: A text-based explanation (or *natural language explanation*) is a description, in ordinary human language, of why a model produced its output. It may be generated by the same model that makes the prediction or by a second model trained to describe the first. Such explanations are easy for people to read, but they carry a known risk: a model trained to produce explanations that resemble human-written ones may generate a plausible-sounding justification that does not faithfully describe what actually drove its decision. Checking faithfulness typically uses a counterfactual test (see the Counterfactual entry): if the explanation cites a reason, changing that reason in the input should change the prediction.
+
+**Example.** A model classifies reviews and adds a one-sentence justification.
+
+1. Input: "the soup was cold and bland." Model output: *negative*, with the explanation "because the reviewer says the soup was cold."
+2. Faithfulness test: change the cited reason. New input: "the soup was hot and bland."
+3. If the model now predicts *negative* with probability $0.92$, whereas it gave the original input *negative* with probability $0.95$, the drop is $0.95 - 0.92 = 0.03$ — very small.
+4. Since changing "cold" barely affected the prediction, "cold" was not what drove it (the word "bland" likely was). The text explanation sounded reasonable but was not faithful.
+
+**AI/ML Usage**: Text-based explanations appear in datasets such as e-SNLI (natural language inference with human-written justifications) and CoS-E (commonsense question answering with explanations), in image classifiers that generate sentences explaining their visual decisions, and in large language models prompted to "show their reasoning" step by step (chain-of-thought prompting). A central research question for all of them is whether the generated text faithfully reflects the model's computation.
+
+---
+
 <a id="textual-entailment-natural-language-inference"></a>
 ### Textual Entailment (Natural Language Inference)
 
@@ -5755,6 +6675,27 @@ Both are equally good by the priority value alone, but $X$'s smaller heuristic v
 3. In an expression such as the left side of the formula above, $u_t$ can therefore be dropped from the conditioning list, leaving the previous belief.
 
 **AI/ML Usage**: Together with the Markov assumptions, it is what lets recursive Bayes filters (see the Bayes Filter entry) update a belief one time step at a time using only the latest measurement, without revisiting the past. The same idea appears in causal masking of sequence models (see the Causal (Masked) Self-Attention entry), where each position may look only at earlier positions.
+
+---
+
+<a id="tool-augmented-language-model"></a>
+### Tool-Augmented Language Model
+
+**The Big Idea**: On a test where calculators are allowed, a good student still decides what to compute, but hands the computation itself to the calculator. A tool-augmented language model does the same thing with other programs. A language model (a model that predicts the next text given some text; see the GPT (Generative Pre-trained Transformer) entry above) decides when an outside tool is needed and what to ask it, and the tool's answer is pasted back into the model's text. No math beyond Algebra 2 is involved; the new idea is only that a model's output can include requests to other programs.
+
+**General Usage**: A tool-augmented language model is a language model that can call external tools while it produces its output — for example a code interpreter, a calculator, a search engine, a calendar, or any service reachable through an **API** (application programming interface: a defined way for one program to send a request to another and get a result back). The model writes a specially formatted request in its output; a surrounding system notices the request, runs the tool, and inserts the result into the text, after which the model continues writing using that result. Tool use can be taught through examples in the prompt, or the model can be **fine-tuned** (given extra training) on text that contains tool calls so that it learns when calling a tool helps.
+
+**Example.** Suppose a model is answering "What is 17% of 2,350?" and has a calculator tool. It writes the request `Calculator(0.17 * 2350)`. The system computes it:
+
+| Step | Operation | Result |
+|---|---|---|
+| 1 | Convert 17% to a decimal: $17 \div 100$ | $0.17$ |
+| 2 | $0.17 \times 2350 = 0.1 \times 2350 + 0.07 \times 2350$ | $235 + 164.5$ |
+| 3 | Add | $399.5$ |
+
+The result 399.5 is inserted after the request, and the model finishes: "17% of 2,350 is 399.5." Check by hand: $10\%$ of 2,350 is 235 and $1\%$ is 23.5, so $17\% = 235 + 7 \times 23.5 = 235 + 164.5 = 399.5$.
+
+**AI/ML Usage**: Toolformer is a language model fine-tuned to insert API calls (calculator, search, translation, calendar, question answering) into its own text where they help; program-aided language models (see the Program-Aided Language Model entry above) use a code interpreter as the tool; self-ask prompting (see the Self-Ask Prompting entry above) uses a search engine; and chat assistants with plugins expose many third-party APIs to the model in the same way.
 
 ---
 
@@ -5830,6 +6771,28 @@ Each row is computed completely independently of the other three — the head ha
 **Example.** For "I ate some spaghetti bolognese" (5 words), the parser performs 10 transitions. At the state with stack $[\text{ROOT ate some spaghetti}]$ and buffer $[\text{bolognese}]$, all three operations are legal, so the classifier must choose. The stack tags verb, determiner, noun (VBD, DT, NN) suggest a verb with a direct object that has a determiner, and the buffer word "bolognese" signals that the left-arc should happen before it is shifted; the correct choice is Left-Arc, making "spaghetti" the head of "some".
 
 **AI/ML Usage**: Transition-based parsers are widely used because they are fast and simple (just a classifier), and designing good features for the classifier was a task where neural networks first took off in natural language processing. Their main training difficulty is Exposure Bias (see that entry), because the classifier is trained only on states from the gold path.
+
+---
+
+<a id="transparent-model-and-black-box-model"></a>
+### Transparent Model (and Black-Box Model)
+
+**The Big Idea**: This builds on the difference between a formula you can read and a calculator you cannot open. With $y = 2x + 3$ in front of you, you know exactly why $x = 1$ gives $y = 5$. With a sealed calculator you only see input and output. A transparent model is like the readable formula; a black-box model is like the sealed calculator. Nothing here goes beyond Algebra 2.
+
+**General Usage**: A **transparent** model is one simple enough that a person can look at the whole model and understand why it does what it does, so it needs no separate explanation — for example, a decision tree (see the Decision Tree entry) with fewer than about 10 nodes, or a linear model with only a handful of weights. A **black-box** model is one whose internal workings are too complex to read directly — typically a deep neural network (see the Neural Network entry) with millions of learned numbers — so it can only be understood by studying its inputs and outputs, or by extracting explanations from it after training (see the Explainability (Model Interpretability) entry). In practice there is often a trade-off: the most accurate models on hard tasks such as language understanding tend to be black boxes.
+
+**Example.** A three-node decision tree for labeling a review:
+
+- Node 1 (root): Does the review contain "excellent"? If yes, go to the leaf *positive*. If no, go to Node 2.
+- Node 2: Does the review contain "refund"? If yes, go to the leaf *negative*. If no, go to the leaf *positive*.
+
+Trace two inputs:
+
+1. "an excellent read": Node 1 asks about "excellent" — yes — so predict *positive*.
+2. "I want a refund": Node 1 — no "excellent" — so go to Node 2. Node 2 — contains "refund" — yes — so predict *negative*.
+3. Every prediction can be explained by listing the questions answered along the path, so the model explains itself: it is transparent.
+
+**AI/ML Usage**: Transparent models such as small decision trees, short rule lists, and sparse linear models are preferred in regulated settings like lending and medicine, where each decision must be justified. Because state-of-the-art NLP systems are black-box neural networks such as Transformers, most explainability research in NLP focuses instead on post-hoc methods — local explanations, text-based explanations, and model probing (see those entries) — that approximate or probe a black box's behavior.
 
 ---
 

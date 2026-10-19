@@ -7,9 +7,9 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 222 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 224 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Greater Than / Less Than | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
+| Absolute Value to Half-Open Interval | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
 |---|---|---|
 | [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
 | [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
@@ -62,29 +62,30 @@ All 222 entries, alphabetical. Read down the first column, then down the second,
 | [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Superscript Example Index](#superscript-example-index) |
 | [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Tag Set](#tag-set) |
 | [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tanh](#tanh) |
-| [Error Signal](#error-signal) | [Number Sign / Count](#number-sign-count) | [TF-IDF](#tf-idf) |
-| [Eta](#eta) | [Omega](#omega) | [Theta](#theta) |
-| [Euclidean Norm](#euclidean-norm) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Tilde Accent](#tilde-accent) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Outer Product](#outer-product) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Evaluated-At Bar](#evaluated-at-bar) | [Padding](#padding) | [Training Set](#training-set) |
-| [Existential Quantifier](#existential-quantifier) | [Parameterized Function / Model](#parameterized-function-model) | [Transition Matrix](#transition-matrix) |
-| [Expectation](#expectation) | [Parent Annotation Caret](#parent-annotation-caret) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
-| [Factorial](#factorial) | [Partial Derivative](#partial-derivative) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Order](#partial-order) | [Unit Ball Volume](#unit-ball-volume) |
-| [Floor Function](#floor-function) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Unit Hypercube](#unit-hypercube) |
-| [Free Space](#free-space) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Perceptron Loss](#perceptron-loss) | [Unknown-Word Token](#unknown-word-token) |
-| [Function Composition](#function-composition) | [Permutation](#permutation) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Phi, lowercase](#phi-lowercase) | [Variance](#variance) |
-| [Gain](#gain) | [Phi, uppercase](#phi-uppercase) | [Vector](#vector) |
-| [Gamma](#gamma) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Overbar](#vector-overbar) |
-| [Gaussian CDF](#gaussian-cdf) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vector Projection](#vector-projection) |
-| [GeLU](#gelu) | [Positional Embedding](#positional-embedding) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Feature Function](#positional-feature-function) | [Viterbi Score](#viterbi-score) |
-| [Goal Set](#goal-set) | [Potential Function](#potential-function) | [Vocabulary](#vocabulary) |
-| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) | [Weight Vector](#weight-vector) |
-| [Graph](#graph) | [Predicted Belief](#predicted-belief) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) | [Zero-One Loss](#zero-one-loss) |
+| [Error Signal](#error-signal) | [Number of Outcomes in an Event](#number-of-outcomes-in-an-event) | [TF-IDF](#tf-idf) |
+| [Eta](#eta) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
+| [Euclidean Norm](#euclidean-norm) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Outer Product](#outer-product) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Padding](#padding) | [Transition Matrix](#transition-matrix) |
+| [Expectation](#expectation) | [Parameterized Function / Model](#parameterized-function-model) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Factorial](#factorial) | [Parent Annotation Caret](#parent-annotation-caret) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Derivative](#partial-derivative) | [Unit Ball Volume](#unit-ball-volume) |
+| [Floor Function](#floor-function) | [Partial Order](#partial-order) | [Unit Hypercube](#unit-hypercube) |
+| [Free Space](#free-space) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Unknown-Word Token](#unknown-word-token) |
+| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Variance](#variance) |
+| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
+| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
+| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
+| [GeLU](#gelu) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Viterbi Score](#viterbi-score) |
+| [Goal Set](#goal-set) | [Positional Feature Function](#positional-feature-function) | [Vocabulary](#vocabulary) |
+| [Gradient](#gradient) | [Potential Function](#potential-function) | [Weight Vector](#weight-vector) |
+| [Graph](#graph) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Predicted Belief](#predicted-belief) | [Zero-One Loss](#zero-one-loss) |
+| [Half-Open Interval](#half-open-interval) | [Prime Notation](#prime-notation) |  |
 
 ## Symbols
 
@@ -1278,6 +1279,26 @@ On macOS: Shift+. (period) for >, and Shift+, (comma) for < — these are the st
 
 ---
 
+<a id="half-open-interval"></a>
+### Half-Open Interval — `[a, b)`
+Symbol: a left square bracket `[` and a right parenthesis `)` around two numbers separated by a comma; do not confuse with the closed interval `[a, b]` (both ends included) or the open interval `(a, b)` (neither end included), which also means an ordered pair in other contexts  
+On macOS: both characters are ordinary keys: `[` is the key to the right of P, and `)` is Shift+0
+
+**The Big Idea**: Algebra 2 already writes solution sets of inequalities in interval notation: $2 \le x < 5$ is written $[2, 5)$. The square bracket means "this end is included" and the parenthesis means "this end is excluded." Nothing new is needed beyond that; the only extension is using it to count whole-number positions.
+
+**General Usage**: $[a, b)$ is the set of numbers $x$ with $a \le x < b$: the left endpoint $a$ is included and the right endpoint $b$ is not. When $a$ and $b$ are whole numbers used as positions (for example, positions of words in a sentence, counted from 0), $[a, b)$ means the positions $a, a+1, \ldots, b-1$, and it contains exactly $b - a$ positions. Two half-open intervals that share an endpoint, $[a, b)$ and $[b, c)$, fit together with no overlap and no gap to make $[a, c)$.
+
+**Example.** For the five words "I eat strawberry ice cream" at positions $0, 1, 2, 3, 4$:
+
+1. $[1, 2)$ contains positions $x$ with $1 \le x < 2$, which is just position $1$, the word *eat*. Count: $2 - 1 = 1$ word.
+2. $[2, 5)$ contains positions $2, 3, 4$: *strawberry ice cream*. Count: $5 - 2 = 3$ words.
+3. $[0, 5)$ is the whole sentence: $5 - 0 = 5$ words.
+4. Check the joining rule: $[0, 2)$ is *I eat* ($2$ words) and $[2, 5)$ is *strawberry ice cream* ($3$ words). Together they make $[0, 5)$, with $2 + 3 = 5$ words and no word counted twice, because position $2$ belongs only to the second interval.
+
+**AI/ML Usage**: Half-open (end-exclusive) intervals are the standard way to mark spans of tokens in NLP datasets and code, because the length is simply $b - a$ and adjacent spans never overlap; Python's slicing `words[2:5]` follows the same convention. Edge-probing studies of pre-trained models (Tenney et al., 2019) write spans this way, for example $s_1 = [1, 2)$ and $s_2 = [2, 5)$, and the fencepost view of the same idea is described in the Span (Fencepost Indexing) entry in the math_concepts file.
+
+---
+
 <a id="halfspace"></a>
 ### Halfspace — `sign(𝐰·𝐱 - θ)`
 Symbol: none — no dedicated symbol; written out using the sign function, dot product, and weight-vector notation  
@@ -2097,6 +2118,29 @@ On macOS: press Option+=
 **Example.** $3 \ne 5$ is true, since 3 and 5 are different numbers. $3 \ne 3$ would be false, since they're the same.
 
 **AI/ML Usage**: Used to formally define exactly when a model makes a mistake. The simplest possible loss function, zero-one loss, is defined for a single example as being $1$ (an error occurred) exactly when $\hat y \ne y$ — the prediction doesn't match the true label — and $0$ otherwise, which is the most direct, literal mathematical definition possible of "the model got this one wrong."
+
+---
+
+<a id="number-of-outcomes-in-an-event"></a>
+### Number of Outcomes in an Event — `n(E)`
+Symbol: a lowercase italic n followed by parentheses around a set or event name, read "n of E" or "the number of outcomes in E"; not to be confused with $n$ alone used as a count variable (see the Dimension / Count Variables entry)  
+On macOS: type an ordinary lowercase n and parentheses; there is no dedicated character or shortcut
+
+**The Big Idea**: No new math beyond counting. When an Algebra 2 class computes a probability as "favorable outcomes over total outcomes," $n(E)$ is the name for the top number and $n(S)$ for the bottom one. It means the same thing as the set-size notation $|E|$ (see the Set Cardinality / Size of a Set entry); textbooks on elementary probability simply prefer to write $n(\cdot)$.
+
+**General Usage**: For a set $A$ of outcomes, $n(A)$ is the number of outcomes in $A$. If $S$ is the sample space (the set of all possible outcomes; see the Sample Space entry) and every outcome is equally likely, the probability of an event $E$ (a subset of $S$) is
+$$
+P(E) = \frac{n(E)}{n(S)} .
+$$
+
+**Example.** Two cards are drawn together at random from a standard 52-card deck. What is the probability that both are aces?
+
+1. The sample space $S$ is every possible pair of cards. Order does not matter, so count with "choose" (see the Binomial Coefficient entry): $n(S) = \binom{52}{2} = \dfrac{52 \times 51}{2} = \dfrac{2652}{2} = 1326$.
+2. The event $E$ is "both cards are aces." There are 4 aces, so $n(E) = \binom{4}{2} = \dfrac{4 \times 3}{2} = \dfrac{12}{2} = 6$.
+3. Divide: $P(E) = \dfrac{n(E)}{n(S)} = \dfrac{6}{1326}$.
+4. Reduce by dividing top and bottom by 6: $6 \div 6 = 1$ and $1326 \div 6 = 221$ (check: $6 \times 221 = 1326$). So $P(E) = \dfrac{1}{221}$.
+
+**AI/ML Usage**: Counting outcomes with $n(\cdot)$ appears throughout the written step-by-step solutions ("rationales") in math word-problem data sets used to train and evaluate language models, where a solution typically reads "Let $S$ be the sample space... $n(S) = \ldots$, $n(E) = \ldots$, $P(E) = n(E)/n(S)$." Models that generate such rationales token by token, rather than jumping straight to an answer, are the forerunners of Chain-of-Thought Prompting (see that entry in the math_concepts file). The same favorable-over-total idea underlies Relative Frequency Estimation (see that entry in the math_concepts file), where a probability is estimated by counting how often something occurs in data.
 
 ---
 
