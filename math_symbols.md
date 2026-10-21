@@ -7,85 +7,93 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 224 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 249 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Half-Open Interval | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
+| Absolute Value to Half-Open Interval | Halfspace to Precedence Relation | Predicted Belief to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
-| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
-| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
-| [All-Ones Vector](#all-ones-vector) | [Hypothesis](#hypothesis) | [Proportional To](#proportional-to) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Identity Matrix](#identity-matrix) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
-| [Approximately Equal](#approximately-equal) | [Implies Arrow](#implies-arrow) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Importance Weight](#importance-weight) | [Query, Key, and Value](#query-key-and-value) |
-| [Assignment Arrow](#assignment-arrow) | [Index Range Colon](#index-range-colon) | [Question-Mark Relation](#question-mark-relation) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
-| [Attention Operator](#attention-operator) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
-| [Ball of Radius r](#ball-of-radius-r) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
-| [Belief](#belief) | [Integral](#integral) | [ReLU](#relu) |
-| [Belief over the Full History](#belief-over-the-full-history) | [Inverse Hessian](#inverse-hessian) | [Rotation Matrix](#rotation-matrix) |
-| [Best Solution Cost](#best-solution-cost) | [Jacobian](#jacobian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Mean Overbar](#sample-mean-overbar) |
-| [Bias Term](#bias-term) | [Label](#label) | [Sample Space](#sample-space) |
-| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Sampling Notation](#sampling-notation) |
-| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Scoring Function](#scoring-function) |
-| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Segment Embedding](#segment-embedding) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Sentinel Token](#sentinel-token) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Braces](#set-braces) |
-| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Chart Score](#chart-score) | [Limit](#limit) | [Set Difference](#set-difference) |
-| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Intersection](#set-intersection) |
-| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Union](#set-union) |
-| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Sigma, lowercase](#sigma-lowercase) |
-| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigma, uppercase](#sigma-uppercase) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigmoid Function](#sigmoid-function) |
-| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sign Function](#sign-function) |
-| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Sine and Cosine](#sine-and-cosine) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softmax Function](#softmax-function) |
-| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Split Point](#split-point) |
-| [Dataset](#dataset) | [Mean](#mean) | [Stack Notation](#stack-notation) |
-| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Standard Deviation](#standard-deviation) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Space](#state-space) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [State Transition Function](#state-transition-function) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Step Size](#step-size) |
-| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Stride](#stride) |
-| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Subset](#subset) |
-| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Summation](#summation) |
-| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Superscript Example Index](#superscript-example-index) |
-| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Tag Set](#tag-set) |
-| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tanh](#tanh) |
-| [Error Signal](#error-signal) | [Number of Outcomes in an Event](#number-of-outcomes-in-an-event) | [TF-IDF](#tf-idf) |
-| [Eta](#eta) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
-| [Euclidean Norm](#euclidean-norm) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Evaluated-At Bar](#evaluated-at-bar) | [Outer Product](#outer-product) | [Training Set](#training-set) |
-| [Existential Quantifier](#existential-quantifier) | [Padding](#padding) | [Transition Matrix](#transition-matrix) |
-| [Expectation](#expectation) | [Parameterized Function / Model](#parameterized-function-model) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
-| [Factorial](#factorial) | [Parent Annotation Caret](#parent-annotation-caret) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Derivative](#partial-derivative) | [Unit Ball Volume](#unit-ball-volume) |
-| [Floor Function](#floor-function) | [Partial Order](#partial-order) | [Unit Hypercube](#unit-hypercube) |
-| [Free Space](#free-space) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Unknown-Word Token](#unknown-word-token) |
-| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Variance](#variance) |
-| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
-| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
-| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
-| [GeLU](#gelu) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Viterbi Score](#viterbi-score) |
-| [Goal Set](#goal-set) | [Positional Feature Function](#positional-feature-function) | [Vocabulary](#vocabulary) |
-| [Gradient](#gradient) | [Potential Function](#potential-function) | [Weight Vector](#weight-vector) |
-| [Graph](#graph) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Predicted Belief](#predicted-belief) | [Zero-One Loss](#zero-one-loss) |
-| [Half-Open Interval](#half-open-interval) | [Prime Notation](#prime-notation) |  |
+| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Predicted Belief](#predicted-belief) |
+| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Predicted Label](#predicted-label) |
+| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Prime Notation](#prime-notation) |
+| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hidden State](#hidden-state) | [Probability / Probability Density](#probability-probability-density) |
+| [All-Ones Vector](#all-ones-vector) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability Simplex](#probability-simplex) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hypothesis](#hypothesis) | [Product Notation](#product-notation) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Identity Matrix](#identity-matrix) | [Progress Radius](#progress-radius) |
+| [Approximately Equal](#approximately-equal) | [If and Only If](#if-and-only-if) | [Proportional To](#proportional-to) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Implies Arrow](#implies-arrow) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Assignment Arrow](#assignment-arrow) | [Importance Weight](#importance-weight) | [Psi, uppercase](#psi-uppercase) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Index Range Colon](#index-range-colon) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
+| [Attention Score](#attention-score) | [Initial Distribution](#initial-distribution) | [Question-Mark Relation](#question-mark-relation) |
+| [Attention Weights](#attention-weights) | [Initial State](#initial-state) | [Real Numbers](#real-numbers) |
+| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [Receptive Field](#receptive-field) |
+| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Regression Function](#regression-function) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Relative-Position Subscript](#relative-position-subscript) |
+| [Best Solution Cost](#best-solution-cost) | [Joint Feature Function](#joint-feature-function) | [ReLU](#relu) |
+| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Rotation Matrix](#rotation-matrix) |
+| [Bias Term](#bias-term) | [Key Dimension](#key-dimension) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Big-O Notation](#big-o-notation) | [Label](#label) | [Sample Mean Overbar](#sample-mean-overbar) |
+| [Binary Label Set](#binary-label-set) | [Label Space](#label-space) | [Sample Space](#sample-space) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda Abstraction](#lambda-abstraction) | [Sampling Notation](#sampling-notation) |
+| [Blocks World](#blocks-world) | [Lambda, lowercase](#lambda-lowercase) | [Scientific E-Notation](#scientific-e-notation) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Scoring Function](#scoring-function) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Layer Weight Matrices](#layer-weight-matrices) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Cartesian Product](#cartesian-product) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Segment Embedding](#segment-embedding) |
+| [Catalan Number](#catalan-number) | [Learning Rate](#learning-rate) | [Sentinel Token](#sentinel-token) |
+| [Character N-Gram Boundary Markers](#character-n-gram-boundary-markers) | [Less Than or Equal](#less-than-or-equal) | [Separator Token](#separator-token) |
+| [Chart Score](#chart-score) | [Limit](#limit) | [Set Braces](#set-braces) |
+| [Class-Indexed Weight Vector](#class-indexed-weight-vector) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [CLS Token](#cls-token) | [Log-Sum-Exp](#log-sum-exp) | [Set Difference](#set-difference) |
+| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Intersection](#set-intersection) |
+| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Set Union](#set-union) |
+| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigma, lowercase](#sigma-lowercase) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigma, uppercase](#sigma-uppercase) |
+| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sigmoid Function](#sigmoid-function) |
+| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Sign Function](#sign-function) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Sine and Cosine](#sine-and-cosine) |
+| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Softmax Function](#softmax-function) |
+| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Dataset](#dataset) | [Mean](#mean) | [Split Point](#split-point) |
+| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Square Root](#square-root) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [Stack Notation](#stack-notation) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [Standard Deviation](#standard-deviation) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Dimension](#model-dimension) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
+| [Element-of Symbol](#element-of-symbol) | [Mu](#mu) | [State Transition Function](#state-transition-function) |
+| [Element-wise Operations](#element-wise-operations) | [N-Gram](#n-gram) | [Step Size](#step-size) |
+| [Ellipsis](#ellipsis) | [Nabla](#nabla) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [ELU](#elu) | [Natural Numbers](#natural-numbers) | [Stride](#stride) |
+| [Embedding Function](#embedding-function) | [Negation Overbar](#negation-overbar) | [Subset](#subset) |
+| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Summation](#summation) |
+| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Superscript Example Index](#superscript-example-index) |
+| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tag Set](#tag-set) |
+| [Error Signal](#error-signal) | [Number of Attention Heads](#number-of-attention-heads) | [Tanh](#tanh) |
+| [Eta](#eta) | [Number of Outcomes in an Event](#number-of-outcomes-in-an-event) | [TF-IDF](#tf-idf) |
+| [Euclidean Norm](#euclidean-norm) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Existential Quantifier](#existential-quantifier) | [Outer Product](#outer-product) | [Training Set](#training-set) |
+| [Expectation](#expectation) | [Output Projection Matrix](#output-projection-matrix) | [Transition Matrix](#transition-matrix) |
+| [Factorial](#factorial) | [Output Word Vector](#output-word-vector) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Padding](#padding) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feed-Forward Inner Dimension](#feed-forward-inner-dimension) | [Parameterized Function / Model](#parameterized-function-model) | [Unit Ball Volume](#unit-ball-volume) |
+| [Floor Function](#floor-function) | [Parent Annotation Caret](#parent-annotation-caret) | [Unit Hypercube](#unit-hypercube) |
+| [Free Space](#free-space) | [Partial Derivative](#partial-derivative) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Partial Order](#partial-order) | [Unknown-Word Token](#unknown-word-token) |
+| [Function Composition](#function-composition) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Value Dimension](#value-dimension) |
+| [Gain](#gain) | [Perceptron Loss](#perceptron-loss) | [Variance](#variance) |
+| [Gamma](#gamma) | [Permutation](#permutation) | [Vector](#vector) |
+| [Gaussian CDF](#gaussian-cdf) | [Phi, lowercase](#phi-lowercase) | [Vector Overbar](#vector-overbar) |
+| [GeLU](#gelu) | [Phi, uppercase](#phi-uppercase) | [Vector Projection](#vector-projection) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Goal Set](#goal-set) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
+| [Gold Label Index and Selector Vector](#gold-label-index-and-selector-vector) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
+| [Gradient](#gradient) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
+| [Graph](#graph) | [Potential Function](#potential-function) | [Word Vector and Context Vector](#word-vector-and-context-vector) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Pre-Activation](#pre-activation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Half-Open Interval](#half-open-interval) | [Precedence Relation](#precedence-relation) | [Zero-One Loss](#zero-one-loss) |
 
 ## Symbols
 
@@ -283,6 +291,38 @@ On macOS: type normally from the keyboard
 **Example.** Picture a very small version: one query vector represents the word "it" in a sentence, and there are three key vectors representing the words "dog," "park," and "ran." The attention operation computes a match score between the query for "it" and each key, then converts those scores into weights that add up to 1 — say $0.7$ for "dog," $0.2$ for "park," and $0.1$ for "ran." The final output for "it" is then a weighted blend: $0.7\cdot(\text{dog's value}) + 0.2\cdot(\text{park's value}) + 0.1\cdot(\text{ran's value})$ — mostly "about the dog," with a smaller contribution from the other words.
 
 **AI/ML Usage**: This is the single most important building block inside the "Transformer" architecture — the type of neural network design behind essentially every well-known modern AI language model, such as the widely used chatbots, as well as many image- and speech-processing systems. Picture a model reading the sentence "The trophy didn't fit in the suitcase because it was too big" and trying to figure out what "it" refers to. Self-attention lets the model directly compare the word "it" against every other word in the sentence, compute a relevance score for each one, and blend information from the most relevant words (here, "trophy" scoring much higher than "suitcase") into its understanding of "it" — this is what lets these models correctly track relationships across long stretches of text far better than older designs could.
+
+---
+
+<a id="attention-score"></a>
+### Attention Score — `s_i, S_{ij}`
+Symbol: a lowercase s with a subscript i (one score per key), and a capital S with two subscripts i and j (a whole matrix of scores); ordinary Latin letters, with no lookalikes except that capital S names other objects in other entries  
+On macOS: type normally from the keyboard; write the subscripts with your editor's subscript formatting, or as s_i and S_ij in plain text  
+
+**The Big Idea**: An attention score is one grade for how well an item matches a query, the same idea as the score on a quiz: a bigger number means a better match. The score itself is a dot product (see the Dot Product / Inner Product entry), which needs only multiplication and addition.
+
+**General Usage**: In attention, $s_i = k_i \cdot q$ is the score of the $i$th key vector $k_i$ against the query vector $q$. When there are many queries at once, they are stacked as the rows of a matrix $Q$ and the keys as the rows of a matrix $K$, and all the scores are computed together as the matrix $S = QK^{\top}$ (see the Matrix Transpose entry). Its entry $S_{ij} = q_i \cdot k_j$ is the score of query $i$ against key $j$. Scores are raw numbers that can be any size and either sign. A softmax (see the Softmax Function entry) turns each row of scores into attention weights (see the Attention Weights entry).
+
+**Example.** Take four keys $k_1=(1,0)$, $k_2=(1,0)$, $k_3=(0,1)$, $k_4=(1,0)$ and the query $q=(0,1)$. Then $s_1 = 1\cdot 0 + 0\cdot 1 = 0$, $s_2 = 0$, $s_3 = 0\cdot 0 + 1\cdot 1 = 1$, and $s_4 = 0$, so $s=(0,0,1,0)$: only the third key matches the query. If every key is multiplied by $10$, the scores become $(0,0,10,0)$. Now stack four copies of $q$ as the rows of $Q$ and use the scaled keys as the rows of $K$. Every row of $S = QK^{\top}$ is $(0,0,10,0)$, so $S$ is a $4\times 4$ matrix with four identical rows.
+
+**AI/ML Usage**: The score matrix is computed in every attention layer of a Transformer, before the softmax. For a sequence of $n$ tokens it is $n\times n$, which is why the cost of attention grows with the square of the sequence length. The standard Transformer divides the scores by $\sqrt{d_k}$ first (see the Key Dimension entry and the Scaled Dot-Product Attention entry in `math_concepts.md`).
+
+---
+
+<a id="attention-weights"></a>
+### Attention Weights — `α_i, A`
+Symbol: α, Greek small letter alpha, with a subscript i for one weight; and a capital A for the matrix of all the weights. Do not confuse α with the Latin a  
+On macOS: for α, open the character picker (Fn/🌐) and search "greek small letter alpha"; there is no Option-key shortcut, and be sure to pick the Greek letter, not the Latin "a". Type A normally  
+
+**The Big Idea**: A weight is a share of a total, like splitting a whole budget among several items: no share is negative, and the shares add up to $1$. Attention weights are exactly such shares, produced by the softmax (see the Softmax Function entry).
+
+**General Usage**: $\alpha_i$ is the weight that attention places on the $i$th item. The weights are the softmax of the scores (see the Attention Score entry), so each is positive and together they add up to $1$. The output of attention is the weighted sum $\sum_i \alpha_i v_i$ of the value vectors $v_i$. When there are several queries, the weights form a matrix $A$ with one row per query, and every row adds up to $1$.
+
+**Example.** The scores $(0,0,1,0)$ are exponentiated to $e^0=1$, $1$, $e^1\approx 2.718$, $1$, which add up to $5.718$. Dividing each by $5.718$ gives the weights
+$$\alpha \approx (0.1749,\ 0.1749,\ 0.4754,\ 0.1749),$$
+which add up to $1$. Let the four items have vectors $(1,0)$, $(1,0)$, $(0,1)$, $(1,0)$. The weighted sum is $0.1749(1,0) + 0.1749(1,0) + 0.4754(0,1) + 0.1749(1,0) = (0.5246,\ 0.4754)$. Equal weights of $\tfrac14$ would give the plain average $(0.75,\ 0.25)$, so the weights moved the result toward the third item.
+
+**AI/ML Usage**: In a Transformer, $A$ is the $n\times n$ attention matrix of a layer, and its rows are often drawn as a heatmap to show which tokens each token looks at. Each head of a multi-head layer has its own $A$ (see the Multi-Head Self-Attention entry in `math_concepts.md`).
 
 ---
 
@@ -516,6 +556,38 @@ On macOS: open the character picker (Fn/🌐) and search "multiplication sign"; 
 
 ---
 
+<a id="catalan-number"></a>
+### Catalan Number — `C_n`
+Symbol: C followed by a subscript n (C, LATIN CAPITAL LETTER C; ₙ, LATIN SUBSCRIPT SMALL LETTER N). Not to be confused with C(n,k), the binomial coefficient, which has two inputs  
+On macOS: type C normally; for the subscript ₙ, open the character picker (Fn/globe key, or Control-Command-Space), search "subscript n", and pick LATIN SUBSCRIPT SMALL LETTER N  
+
+**The Big Idea**: This builds on factorials (see the Factorial entry) and on counting arrangements, the same kind of counting Algebra 2 uses for permutations and combinations. The Catalan numbers 1, 1, 2, 5, 14, 42, 132, ... count how many ways a sequence can be grouped or nested without any groupings crossing, and they grow very quickly.
+
+**General Usage**: The $n$th Catalan number is $C_n = \frac{(2n)!}{(n+1)!\,n!}$, equivalently $\frac{1}{n+1}\binom{2n}{n}$. Among many equivalent meanings, it counts the ways to fully parenthesize a product of $n+1$ factors, the number of different binary trees with $n$ internal nodes, and the number of non-crossing ways to attach $n$ phrases to the words before them.
+
+**Example.** Compute $C_3$:
+$$C_3 = \frac{6!}{4!\,3!} = \frac{720}{24 \times 6} = \frac{720}{144} = 5.$$
+Check by listing: the product $a \cdot b \cdot c \cdot d$ (four factors, so $n = 3$) can be parenthesized as $((ab)c)d$, $(a(bc))d$, $(ab)(cd)$, $a((bc)d)$, and $a(b(cd))$: exactly 5 ways. The first few values are $C_0, \dots, C_6 = 1, 1, 2, 5, 14, 42, 132$.
+
+**AI/ML Usage**: In natural language processing, Catalan numbers measure structural ambiguity. A noun followed by $n$ prepositional phrases ("the ban on dancing on the desk in the office ...") has $C_n$ possible attachment structures: 2 for two phrases, 5 for three, 132 for six. This exponential growth is why syntactic parsers (see the Syntactic Parsing entry in math_concepts.md) need dynamic programming and statistical scoring instead of listing every possible tree.
+
+---
+
+<a id="character-n-gram-boundary-markers"></a>
+### Character N-Gram Boundary Markers — `< >`
+Symbol: the less-than sign `<` and the greater-than sign `>`, used here as angle brackets placed around a word (for example `<where>`) and not as an inequality  
+On macOS: Shift-Comma types `<` and Shift-Period types `>` on a standard keyboard  
+
+**The Big Idea**: This is like putting a space before and after a word so you can tell the letters at its edges from the same letters in its middle. The pair "re" at the start of "return" is a different clue from "re" in the middle of "there".
+
+**General Usage**: Before a word is cut into character $n$-grams (runs of $n$ consecutive characters), `<` is attached at its start and `>` at its end, and the markers count as characters. A piece such as `<wh` can then only come from the start of a word, and `re>` only from the end. For the Word-Boundary Marker used by subword vocabularies, which is a different convention, see that entry.
+
+**Example.** The padded word `<where>` has $7$ characters, so it has $7-n+1$ pieces of length $n$: $5$ for $n=3$, $4$ for $n=4$, $3$ for $n=5$ and $2$ for $n=6$, which is $14$ pieces in all. The five pieces of length $3$ are `<wh`, `whe`, `her`, `ere`, `re>`. The piece `<wh` marks a word that begins with "wh"; the plain piece `whe` could occur anywhere in a word.
+
+**AI/ML Usage**: fastText (see the fastText entry in math_concepts.md) represents a word as the sum of the vectors of its character $n$-grams, with these markers included, so a word never seen in training can still be given a vector from pieces it shares with known words.
+
+---
+
 <a id="chart-score"></a>
 ### Chart Score — `t[i, j, X]`
 Symbol: the letter t followed by three comma-separated entries in square brackets: two position numbers $i, j$ and a label $X$; there are no lookalike variants to watch for  
@@ -532,6 +604,24 @@ On macOS: type normally from the keyboard
 3. $t[0,2,\text{NP}] = -1$: a noun phrase (NP) over "the child" is built with a rule worth $\log 0.5 = -1$ from two pieces each scoring $0$, so $-1 + 0 + 0 = -1$.
 
 **AI/ML Usage**: This is the table filled in by the CKY parsing algorithm (see the CKY Algorithm entry in the math_concepts file) for probabilistic context-free grammars, the classic statistical model of sentence structure in natural language processing (the branch of AI that handles human language). The same "best score per label per position" table idea appears as the tag-versus-position matrix of the Viterbi algorithm for tagging words with parts of speech.
+
+---
+
+<a id="class-indexed-weight-vector"></a>
+### Class-Indexed Weight Vector — `w̄_y`
+Symbol: w̄ with a subscript y, a lowercase w with a vector overbar (a macron) and the class label written small below and to the right; in typed text it is often written with a bold 𝐰 instead of the bar  
+On macOS: type w, then open the character picker (Fn/🌐), search "combining macron" and insert it so it attaches to the w; write the subscript with your editor's subscript formatting, or as w_y in plain text  
+
+**The Big Idea**: This builds on the Weight Vector entry: instead of one list of weights, there is a separate list for every possible answer, the way a teacher might keep a separate scoring rubric for each kind of essay and see which rubric gives the highest score.
+
+**General Usage**: $\bar w_y$ is the weight vector that belongs to class $y$. A classifier with one weight vector per class scores class $y$ with the dot product $\bar w_y^\top f(\bar x)$ (see the Dot Product / Inner Product entry) and predicts the class with the largest score, $\arg\max_y \bar w_y^\top f(\bar x)$. This setup is often called the different weights formulation (see the Different Weights vs Different Features entry in math_concepts.md).
+
+**Example.** A sentence has features $f(\bar x) = [1, 1, 0]$ for the three words (drug, patients, baseball). With $\bar w_{\text{health}} = [2, 5.6, -3]$ and $\bar w_{\text{sports}} = [1.2, -3.1, 5.7]$:
+$$\bar w_{\text{health}}^\top f(\bar x) = (2)(1) + (5.6)(1) + (-3)(0) = 7.6,$$
+$$\bar w_{\text{sports}}^\top f(\bar x) = (1.2)(1) + (-3.1)(1) + (5.7)(0) = -1.9.$$
+The health score is larger, so the prediction is health.
+
+**AI/ML Usage**: The output layer of a neural network classifier is a stack of class-indexed weight vectors: each row of its final weight matrix $W$ is one $\bar w_y$, and multiplying $W$ by the network's hidden features computes every class score at once before the softmax (see the Softmax Function entry) turns the scores into probabilities.
 
 ---
 
@@ -868,6 +958,23 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="embedding-function"></a>
+### Embedding Function — `e(w)`
+Symbol: a lowercase `e` followed by a word symbol in parentheses; here `e` is the name of a function, not Euler's number, and it should not be confused with the unit vector `e_i`  
+On macOS: all characters are on a standard keyboard, so no Option-key shortcut is needed  
+
+**The Big Idea**: This is function notation from Algebra 2, $f(x)$, where the input is a word and the output is a list of numbers.
+
+**General Usage**: $e(w)$ is the embedding of the word $w$: the vector of $d$ real numbers that a model stores for that word. It is computed by table lookup. A matrix $E$ has one row per vocabulary word, and $e(w)$ is the row for $w$. Multiplying the one-hot vector of $w$ (see One-Hot Encoding in math_concepts.md) by $E$ gives the same row. For the lookup table as a concept, see the Word Embedding entry in math_concepts.md.
+
+**Example.** Take a vocabulary of three words, $\text{the},\text{film},\text{a}$, numbered $0,1,2$, and
+$$E=\begin{pmatrix}0.2&0.9\\0.8&0.1\\0.5&0.5\end{pmatrix}.$$
+Then $e(\text{film})$ is row $1$, which is $(0.8,\ 0.1)$. As a check, the one-hot vector of $\text{film}$ is $(0,1,0)$, and $(0,1,0)\,E=(0\cdot0.2+1\cdot0.8+0\cdot0.5,\ 0\cdot0.9+1\cdot0.1+0\cdot0.5)=(0.8,\ 0.1)$.
+
+**AI/ML Usage**: The first layer of most text networks is an embedding layer that computes $e(w)$ for each word index. Skip-gram can be written as $P(w'\mid w)=\operatorname{softmax}(W\,e(w))$ (see the Skip-Gram Model entry), and Continuous Bag-of-Words (see that entry) adds the embeddings of the context words before the softmax.
+
+---
+
 <a id="emission-matrix"></a>
 ### Emission Matrix — `E`
 Symbol: E, an ordinary capital letter (some texts use a lowercase φ or $B$ for the same table)  
@@ -1069,6 +1176,21 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="feed-forward-inner-dimension"></a>
+### Feed-Forward Inner Dimension — `d_ff`
+Symbol: a lowercase d with the letters "ff" as a subscript (short for "feed-forward"); ordinary Latin letters; written $d_{\text{ff}}$ in math, and also called the inner or internal dimension  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as d_ff in plain text  
+
+**The Big Idea**: $d_{\text{ff}}$ is only a count: the number of entries in the middle list of a small two-step calculation. Think of multiplying by an $a\times b$ matrix and then by a $b\times a$ matrix: the list goes from length $a$ to length $b$ and back to length $a$, and the middle length $b$ is free to be much larger than $a$. See the Matrix entry and the Model Dimension entry.
+
+**General Usage**: In the position-wise feed-forward network $\max(0,\,xW_1+b_1)W_2+b_2$ (see the Position-wise Feed-Forward Network entry in `math_concepts.md`), $W_1$ has shape $d_{\text{model}}\times d_{\text{ff}}$ and $W_2$ has shape $d_{\text{ff}}\times d_{\text{model}}$. The hidden list therefore has $d_{\text{ff}}$ entries, and the output returns to $d_{\text{model}}$ entries so that the residual connection can add it to the input. In practice $d_{\text{ff}}$ is several times larger than $d_{\text{model}}$.
+
+**Example.** Take $d_{\text{model}}=512$ and $d_{\text{ff}}=2048$. Then $W_1$ has $512\times2048=1{,}048{,}576$ entries and $W_2$ has $2048\times512=1{,}048{,}576$ entries, so the two matrices hold $2{,}097{,}152$ weights, and the ratio $d_{\text{ff}}/d_{\text{model}}$ is $2048/512=4$. A smaller case, $d_{\text{model}}=2$ and $d_{\text{ff}}=3$, has $W_1$ of shape $2\times3$ ($6$ entries) and $W_2$ of shape $3\times2$ ($6$ entries).
+
+**AI/ML Usage**: The original Transformer (Vaswani et al., 2017, "Attention Is All You Need") uses $d_{\text{model}}=512$ and $d_{\text{ff}}=2048$. In that layer the feed-forward weights ($2{,}097{,}152$) are two thirds of the layer's weights, because the attention weights number $1{,}048{,}576$ (see the Output Projection Matrix and Number of Attention Heads entries), so the feed-forward network holds $2{,}097{,}152/3{,}145{,}728=2/3$ of them.
+
+---
+
 <a id="floor-function"></a>
 ### Floor Function — `⌊ · ⌋`
 Symbol: ⌊ ⌋, left floor and right floor brackets  
@@ -1234,6 +1356,23 @@ On macOS: type normally from the keyboard; the subscript is written with an unde
 
 ---
 
+<a id="gold-label-index-and-selector-vector"></a>
+### Gold Label Index and Selector Vector — `i*, e_i`
+Symbol: i* is a lowercase i with an asterisk superscript ("i star"); e_i is a lowercase e with a subscript i. Do not confuse this e with Euler's number e  
+On macOS: type i and an asterisk (Shift-8), formatted as a superscript if your editor allows; type e and format i as a subscript, or write e_i in plain text  
+
+**The Big Idea**: This builds on the Vector entry and on the idea of a checklist with exactly one box ticked: a list of zeros with a single 1 in the position you want to point at. Multiplying matching entries and adding (the dot product) then picks out exactly one number from another list.
+
+**General Usage**: $i^*$ is the index (position) of the correct, or gold, label among the classes. $e_i$ is the vector with a 1 in position $i$ and 0 everywhere else, so $\mathbf{v} \cdot e_i$ equals the $i$-th entry of $\mathbf{v}$. Together, $\mathbf{p} \cdot e_{i^*}$ selects the probability that a model gives to the correct class. The vector $e_i$ is the one-hot encoding of label $i$ (see the One-Hot Encoding entry in math_concepts.md).
+
+**Example.** With three classes and the gold label in position 2, $i^* = 2$ and $e_{i^*} = (0, 1, 0)$. If the model's class probabilities are $\mathbf{p} = (0.0363, 0.8906, 0.0731)$, then
+$$\mathbf{p} \cdot e_{2} = (0.0363)(0) + (0.8906)(1) + (0.0731)(0) = 0.8906,$$
+and the log likelihood of the correct class is $\log(0.8906) = -0.1159$ (see the Logarithm entry).
+
+**AI/ML Usage**: Neural network training code often stores each gold label as a one-hot vector $e_{i^*}$ and computes the negative log likelihood loss as $-\log(\mathbf{p}) \cdot e_{i^*}$: the dot product throws away every class except the correct one.
+
+---
+
 <a id="gradient"></a>
 ### Gradient — `∇_𝐱 f(𝐱)`
 Symbol: ∇, nabla (an upside-down triangle)  
@@ -1356,6 +1495,29 @@ On macOS: type normally from the keyboard; both capital H and lowercase h are co
 **Example.** In a sliding tile puzzle, a common heuristic counts how many tiles are currently out of place: if 6 tiles are in the wrong position, $h(s) = 6$. This is just a rough guess — it doesn't account for how many moves are actually needed to fix each tile — but it's a useful signal for guiding a search toward states that look closer to solved.
 
 **AI/ML Usage**: Central to informed search algorithms like A\*, used throughout classical AI for tasks including robotics navigation, puzzle-solving, and route planning. In more modern AI systems — most famously AlphaGo and AlphaZero, the AI systems that mastered Go and chess — a trained neural network often takes over the job of the heuristic function entirely, learning from experience to estimate "how good does this position look" instead of relying on a heuristic formula that a human expert wrote by hand.
+
+---
+
+<a id="hidden-state"></a>
+### Hidden State — `h_t`
+Symbol: a lowercase h with a subscript t (the step number); in print it is usually bold, $\mathbf{h}_t$, when it is a vector. Ordinary Latin letters  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as h_t in plain text  
+
+**The Big Idea**: A hidden state is a running total, like the balance on a receipt that updates each time a new item is scanned. It connects to the sequences of Algebra 2, $a_1, a_2, a_3, \dots$, where each term is built from the one before it.
+
+**General Usage**: $\mathbf{h}_t$ is the memory of a recurrent model after it has read input number $t$. It is computed from the new input $\mathbf{x}_t$ and the previous state $\mathbf{h}_{t-1}$, for example $\mathbf{h}_t = \tanh(W\mathbf{x}_t + V\mathbf{h}_{t-1} + \mathbf{b}_h)$, where $W$ and $V$ are weight matrices and $\mathbf{b}_h$ is a bias (see the Tanh and Layer Weight Matrices entries). The first state $\mathbf{h}_0$ is usually all zeros. It is called hidden because it is not read directly from the data.
+
+**Example.** Use single numbers instead of vectors, with $W=1$, $V=0.5$, $b=0$, $h_0=0$, and the inputs $x_1=1$, $x_2=0$, $x_3=0$.
+
+| $t$ | $x_t$ | Input to $\tanh$: $1\cdot x_t + 0.5\,h_{t-1}$ | $h_t = \tanh(\cdot)$ |
+|---|---|---|---|
+| 1 | 1 | $1\cdot 1 + 0.5\cdot 0 = 1$ | $0.7616$ |
+| 2 | 0 | $1\cdot 0 + 0.5\cdot 0.7616 = 0.3808$ | $0.3634$ |
+| 3 | 0 | $1\cdot 0 + 0.5\cdot 0.3634 = 0.1817$ | $0.1797$ |
+
+The state remembers the first input, but with these numbers the memory roughly halves at every step.
+
+**AI/ML Usage**: The hidden state is the core of every recurrent network (see the Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) entries in `math_concepts.md`): the output at each step is computed from it, and the last hidden state is often used as a summary of the whole input sequence. Its repeated update is also the source of the Vanishing Gradient Problem.
 
 ---
 
@@ -1587,6 +1749,23 @@ On macOS: type normally from the keyboard; the subscript is written with an unde
 
 ---
 
+<a id="joint-feature-function"></a>
+### Joint Feature Function — `f(x̄, y)`
+Symbol: an ordinary lowercase f applied to two inputs, the input x̄ (x with a vector overbar) and a label y  
+On macOS: type f(x, y) normally; for the bar, open the character picker (Fn/🌐), search "combining macron" and attach it to the x  
+
+**The Big Idea**: This builds on the Feature Extractor / Feature Function entry: instead of describing only the input, the features describe the input and a proposed answer together, like a form whose boxes are labeled "the word drug appears AND the topic is sports."
+
+**General Usage**: $f(\bar x, y)$ produces a feature vector for the pair (input $\bar x$, label $y$), where $y$ is a hypothesized label being tried out, not necessarily the correct one. A single weight vector $\bar w$ then scores every label with $\bar w^\top f(\bar x, y)$, and the prediction is $\arg\max_y \bar w^\top f(\bar x, y)$. The simplest construction places the ordinary features $f(\bar x)$ in a block reserved for class $y$ and fills every other block with zeros, so each feature is an indicator of "input property $i$ and label $y$" (see the Conjunction Feature entry in math_concepts.md). The Positional Feature Function entry extends the same idea with a position index.
+
+**Example.** With $f(\bar x) = [1, 1, 0]$ and the three classes (health, sports, science), the sports version is
+$$f(\bar x, \text{sports}) = [0, 0, 0,\ 1, 1, 0,\ 0, 0, 0].$$
+With $\bar w = [2, 5.6, -3,\ 1.2, -3.1, 5.7,\ 3, 1.5, -2]$, only the middle block survives: $\bar w^\top f(\bar x, \text{sports}) = (1.2)(1) + (-3.1)(1) + (5.7)(0) = -1.9$, exactly the score the Class-Indexed Weight Vector entry gives with $\bar w_{\text{sports}}$.
+
+**AI/ML Usage**: Joint features are the standard tool of structured prediction, where the label is a whole structure such as one part-of-speech tag per word (see the Sequence Labeling (Tagging) entry in math_concepts.md). There, keeping one weight vector per possible output is impossible, but features like "this word and this tag" stay manageable.
+
+---
+
 <a id="kernel-kernel-size"></a>
 ### Kernel / Kernel Size — `ω, h×w`
 Symbol: ω, Greek small letter omega; × is the multiplication sign  
@@ -1599,6 +1778,29 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter ome
 **Example.** A $3\times3$ kernel examines a 3-by-3 patch of numbers at a time — $9$ numbers total — combining them (usually by multiplying matching positions and adding, like a mini dot product) into a single output number, then sliding over to look at the next 3-by-3 patch, and so on across an entire grid.
 
 **AI/ML Usage**: The defining computation inside convolutional neural networks (CNNs), the type of neural network architecture especially suited to processing images and video. Each kernel is a small learned grid of numbers that slides across an image, detecting one specific visual pattern — an edge, a color transition, a texture — at every position it passes over. A CNN learns many different kernels stacked across multiple layers, letting earlier layers detect simple patterns like edges, and later layers combine those into detecting increasingly complex, whole objects like faces or cars.
+
+---
+
+<a id="key-dimension"></a>
+### Key Dimension — `d_k`
+Symbol: a lowercase d with a subscript k (k stands for "key"); ordinary Latin letters  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as d_k in plain text  
+
+**The Big Idea**: $d_k$ is only a count: the number of entries in a key vector, like the number of coordinates of a point ($2$ for a point in the plane, $3$ for a point in space). See the Dimension / Count Variables entry.
+
+**General Usage**: $d_k$ is the number of entries in each key vector. Because a query is dotted with a key, each query has $d_k$ entries as well. It appears in the attention scaling factor $\sqrt{d_k}$: a dot product adds up $d_k$ products, so its typical size grows with $d_k$, and dividing by $\sqrt{d_k}$ compensates.
+
+**Example.** Let the query and the key both be the all-ones vector of length $d_k$. Their dot product is $d_k$. After division by $\sqrt{d_k}$ the score is:
+
+| $d_k$ | Dot product | Divided by $\sqrt{d_k}$ |
+|---|---|---|
+| 4 | 4 | 2 |
+| 16 | 16 | 4 |
+| 64 | 64 | 8 |
+
+From $d_k=4$ to $d_k=64$ the raw score grows $16$-fold, while the scaled score grows only $4$-fold.
+
+**AI/ML Usage**: In scaled dot-product attention the scores are $QK^{\top}/\sqrt{d_k}$ (see the Scaled Dot-Product Attention entry in `math_concepts.md`). Vaswani et al. (2017) note that if the entries of a query and a key are independent with mean $0$ and variance $1$, their dot product has variance $d_k$, and that large scores push the softmax into regions with extremely small gradients. The original Transformer used $d_k = 64$.
 
 ---
 
@@ -1674,6 +1876,24 @@ On macOS: type z, then open the character picker (Fn/🌐), search "combining ma
 **Example.** A photo of a face might be reduced from millions of individual pixel values down to a much smaller latent vector like $\bar{z} = (0.8, -0.3, 0.5)$, where each number captures some abstract underlying trait (perhaps loosely related to things like "smile amount" or "head tilt") that the model discovered on its own, rather than something a person explicitly measured and labeled.
 
 **AI/ML Usage**: Central to "representation learning," a major area of ML concerned with automatically discovering a compact, useful numerical description of complicated data. Techniques like autoencoders (neural networks trained to compress and then reconstruct their own input) and word embeddings (numerical representations of words that capture meaning) both learn to compress raw, complicated data down into a much smaller latent space. Comparing or measuring distance between items is then often done in this learned latent space instead of on the raw original data, because the latent space captures meaningful structure far more efficiently.
+
+---
+
+<a id="layer-weight-matrices"></a>
+### Layer Weight Matrices — `V, W`
+Symbol: capital letters V and W, written in ordinary italic type  
+On macOS: type V and W normally  
+
+**The Big Idea**: This builds on the Matrix entry and on the idea of one dot product per row: a matrix is a stack of weight vectors, and multiplying it by a vector computes all of their dot products at once, like grading one test with several different answer keys in a single pass.
+
+**General Usage**: In a feedforward network with one hidden layer, $P(\mathbf{y}|\mathbf{x}) = \text{softmax}(W g(V f(\mathbf{x})))$, the matrix $V$ (size $d \times n$) maps the $n$ input features to $d$ hidden values, and the matrix $W$ (size $m \times d$, one row per class) maps the hidden features to $m$ class scores. Here $g$ is the activation function (see the Activation Function entry). The sizes must chain: the number of columns of each matrix equals the length of the vector it multiplies.
+
+**Example.** Take $V = \begin{bmatrix} 1 & 0 \\ 0 & 1 \\ 1 & 1 \end{bmatrix}$ ($3 \times 2$), $W = \begin{bmatrix} 1 & 1 & 1 \\ 0 & 0 & 0 \end{bmatrix}$ ($2 \times 3$), $g = \tanh$ and the input $f(\mathbf{x}) = (1, 0)$.
+$$V f(\mathbf{x}) = (1, 0, 1), \qquad \mathbf{z} = \tanh(1, 0, 1) = (0.7616, 0, 0.7616),$$
+$$W \mathbf{z} = (0.7616 + 0 + 0.7616,\ 0) = (1.5232,\ 0).$$
+Two class scores come out, one per row of $W$.
+
+**AI/ML Usage**: In PyTorch, each of these matrices lives inside a linear layer, `nn.Linear(n, d)` for $V$ and `nn.Linear(d, m)` for $W$; training adjusts every entry of both matrices using gradients computed by backpropagation (see the Backpropagation entry in math_concepts.md).
 
 ---
 
@@ -1762,6 +1982,21 @@ On macOS: type normally from the keyboard
 **Example.** $\text{At}(\text{Robot}, \text{Kitchen})$ is grounded — both "Robot" and "Kitchen" are specific, actual objects. But $\text{At}(X, \text{Kitchen})$ is ungrounded — $X$ stands for "some object, not yet decided," and could later be filled in with "Robot," "Cat," or anything else that fits.
 
 **AI/ML Usage**: The most basic building block of classical, symbolic AI planning systems (based on languages like STRIPS and PDDL) — an older but still practically important style of AI that reasons using explicit logical facts about the world, rather than learning statistical patterns from data the way modern neural networks do. This style of automated planning is still actively used today in areas like robotics, logistics, and automated scheduling, wherever a problem can be cleanly described using explicit facts, actions, and goals.
+
+---
+
+<a id="log-sum-exp"></a>
+### Log-Sum-Exp — `log Σ_j exp(s_j)`
+Symbol: the natural logarithm log applied to a sum (capital sigma, Σ) of exponentials exp(s_j) = e^(s_j)  
+On macOS: press Option+W to type ∑ (n-ary summation), which looks the same as capital sigma; type log and exp as ordinary text  
+
+**The Big Idea**: This builds on the Euler's Number / Exponential Function and Logarithm entries: exponentiate a list of numbers, add them, and take the log. The result behaves like a smooth version of the maximum: it is always a little larger than the largest number, and larger by up to $\log k$ (for $k$ numbers) when several numbers are close to the top.
+
+**General Usage**: For scores $s_1, \ldots, s_k$, $\log \sum_j \exp(s_j)$ is the logarithm of the softmax denominator (see the Softmax Function entry). It satisfies $\max_j s_j \le \log \sum_j \exp(s_j) \le \max_j s_j + \log k$. Subtracting it from a class score gives that class's log probability: $\log \text{softmax}(\mathbf{s})_i = s_i - \log \sum_j \exp(s_j)$.
+
+**Example.** For scores $(-1.1, 2.1, -0.4)$: $e^{-1.1} = 0.3329$, $e^{2.1} = 8.1662$, $e^{-0.4} = 0.6703$, with sum $9.1694$, so $\log \sum_j \exp(s_j) = \log(9.1694) = 2.2159$, a little above the largest score $2.1$. The log probability of the second class is $2.1 - 2.2159 = -0.1159$, the same as $\log(8.1662 / 9.1694) = \log(0.8906) = -0.1159$.
+
+**AI/ML Usage**: The log likelihood of a softmax classifier is written as the correct class's score minus the log-sum-exp of all scores, and libraries compute it in that form (for example PyTorch's `torch.log_softmax`) because taking the log of an already-computed softmax can underflow to $\log(0) = -\infty$ when one score is far below another.
 
 ---
 
@@ -1981,6 +2216,23 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="model-dimension"></a>
+### Model Dimension — `d_model`
+Symbol: a lowercase d with the word "model" as a subscript; ordinary Latin letters; written $d_{\text{model}}$ in math  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as d_model in plain text  
+
+**The Big Idea**: $d_{\text{model}}$ is only a count: the number of entries in the list of numbers that stands for one word as it passes through a Transformer, like the number of coordinates of a point ($2$ in the plane, $3$ in space). The reason it gets a name is that numbers can only be added entry by entry when the two lists have the same length. See the Dimension / Count Variables entry and the Vector entry.
+
+**General Usage**: $d_{\text{model}}$ is the length of every token's vector at the input and at the output of each layer of a Transformer. Each sublayer (attention, feed-forward) must hand back a vector of that same length, because a residual connection (see the Residual Connection entry in `math_concepts.md`) adds the sublayer's input and output entry by entry. Inside a sublayer the lengths can differ: queries and keys have $d_k$ entries (see the Key Dimension entry), values have $d_v$ entries (see the Value Dimension entry), and the feed-forward hidden layer has $d_{\text{ff}}$ entries (see the Feed-Forward Inner Dimension entry). Matrices such as $W^O$ (see the Output Projection Matrix entry) bring the length back to $d_{\text{model}}$.
+
+**Example.** Let $d_{\text{model}}=4$ and let a layer's input be three tokens, so the input is a $3\times4$ matrix $X$. A sublayer returns a $3\times4$ matrix $S$. The residual connection adds them entry by entry:
+$$X=\begin{pmatrix}1&2&3&4\\0&1&0&1\\2&2&2&2\end{pmatrix},\quad S=\begin{pmatrix}1&0&0&1\\1&1&1&1\\0&-1&0&1\end{pmatrix},\quad X+S=\begin{pmatrix}2&2&3&5\\1&2&1&2\\2&1&2&3\end{pmatrix}.$$
+If $S$ had $3$ columns instead of $4$, the sum would not exist.
+
+**AI/ML Usage**: In the original Transformer (Vaswani et al., 2017) $d_{\text{model}}=512$ in every layer. In the GPT-3 family of models (Brown et al., 2020) $d_{\text{model}}$ ranges from $768$ for the smallest model to $12{,}288$ for the largest, a factor of $12288/768=16$.
+
+---
+
 <a id="model-parameters"></a>
 ### Model Parameters — `θ`
 Symbol: θ, Greek small letter theta  
@@ -2121,6 +2373,21 @@ On macOS: press Option+=
 
 ---
 
+<a id="number-of-attention-heads"></a>
+### Number of Attention Heads — `h`
+Symbol: a lowercase h, here a count of heads; do not confuse it with the hidden state $h_t$ (see the Hidden State entry) or with a hypothesis $h$ (see the Hypothesis entry)  
+On macOS: type normally from the keyboard  
+
+**The Big Idea**: Instead of one big attention calculation, run $h$ smaller ones side by side and combine the results, the way $h$ readers could each look at the same page for a different kind of detail and then pool their notes. Only a count is involved; see the Dimension / Count Variables entry.
+
+**General Usage**: In multi-head attention (see the Multi-Head Self-Attention entry in `math_concepts.md`), $h$ is the number of attention heads. Each head has its own projection matrices that map each $d_{\text{model}}$-long token vector to a query and key of length $d_k$ and a value of length $d_v$ (see the Model Dimension, Key Dimension, and Value Dimension entries). A common choice is $d_k=d_v=d_{\text{model}}/h$, so that the $h$ heads joined side by side have exactly $h\,d_v=d_{\text{model}}$ entries; the output matrix $W^O$ (see the Output Projection Matrix entry) then mixes the heads together.
+
+**Example.** Take $d_{\text{model}}=8$ and $h=2$. Then $d_k=d_v=8/2=4$, and the two heads joined side by side give $2\times4=8$ entries per token. The query projections cost the same either way: one $8\times8$ matrix has $64$ entries, and two separate $8\times4$ matrices have $2\times32=64$ entries. Splitting into heads changes how the work is organized, not how many weights there are.
+
+**AI/ML Usage**: The original Transformer (Vaswani et al., 2017) uses $h=8$ heads with $d_k=d_v=512/8=64$. GPT-3 (Brown et al., 2020) lists $96$ heads of size $128$ for its largest model.
+
+---
+
 <a id="number-of-outcomes-in-an-event"></a>
 ### Number of Outcomes in an Event — `n(E)`
 Symbol: a lowercase italic n followed by parentheses around a set or event name, read "n of E" or "the number of outcomes in E"; not to be confused with $n$ alone used as a count variable (see the Dimension / Count Variables entry)  
@@ -2201,6 +2468,37 @@ On macOS: open the character picker (Fn/🌐) and search "down tack" and select 
 **Example.** Let $\mathbf{v}=(2,3)$ and $\mathbf{w}=(5,7)$. The outer product is $\mathbf{v}\mathbf{w}^\top = \begin{pmatrix} 2\times5 & 2\times7 \\ 3\times5 & 3\times7 \end{pmatrix} = \begin{pmatrix} 10 & 14 \\ 15 & 21 \end{pmatrix}$ — every possible pairwise product between an entry of $\mathbf{v}$ and an entry of $\mathbf{w}$, arranged into a grid.
 
 **AI/ML Usage**: Appears when mathematically deriving the exact formula for a gradient with respect to a weight matrix during backpropagation — the gradient of a neural network's loss with respect to a whole weight matrix connecting two layers is very often expressed precisely as an outer product between two vectors, which is one of the standard formulas that deep learning software computes automatically behind the scenes during every single training step.
+
+---
+
+<a id="output-projection-matrix"></a>
+### Output Projection Matrix — `W^O`
+Symbol: a capital W with a superscript capital O (O stands for "output"); the O is a letter, not the digit zero  
+On macOS: type normally from the keyboard; write the superscript with your editor's superscript formatting, or as W^O in plain text  
+
+**The Big Idea**: Multiplying a matrix by a list of numbers produces a new list whose length is set by the matrix: an $a\times b$ matrix times a $b\times c$ matrix gives an $a\times c$ matrix. $W^O$ uses this to shrink a long list of numbers back to a chosen shorter length. See the Matrix entry.
+
+**General Usage**: In multi-head attention each head produces its own output matrix. These are joined side by side, and the result is multiplied by one learned matrix $W^O$. If there are $h$ heads and each head gives $d_v$ numbers per token, the joined width is $h\,d_v$, and $W^O$ has $h\,d_v$ rows and as many columns as the width of the input embedding, so the layer's output has the same width as its input.
+
+**Example.** Take $h=8$ heads, each giving $3$ numbers per token, and an input embedding of width $4$. The joined width is $8\times 3 = 24$, so $W^O$ is $24\times 4$ and has $24\times 4 = 96$ entries. For a $2$-token input, the joined matrix is $2\times 24$, and $(2\times 24)(24\times 4)$ gives a $2\times 4$ output, the same shape as the $2\times 4$ input.
+
+**AI/ML Usage**: $W^O$ is a learned weight like the other projection matrices of attention, trained by backpropagation. It lets the layer combine what the different heads found (see the Multi-Head Self-Attention entry in `math_concepts.md`) and return a vector of the width the next layer expects.
+
+---
+
+<a id="output-word-vector"></a>
+### Output Word Vector — `u_w`
+Symbol: a lowercase u with a subscript w (the word it belongs to); ordinary Latin letters. Do not confuse with the context-word vector $\bar c_w$ or the input word vector $\bar v_w$ (see the Word Vector and Context Vector entry)  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as u_w in plain text  
+
+**The Big Idea**: Each word of the vocabulary gets its own short list of numbers, like a row in a lookup table, and a candidate word is scored by taking the dot product of its list with a summary of the context (see the Dot Product / Inner Product entry).
+
+**General Usage**: In a neural language model, a function $f$ turns the words so far into one context vector. The score of each candidate next word $w$ is the dot product $u_w \cdot f$, and a softmax over all words turns the scores into probabilities (see the Softmax Function entry). The vectors $u_w$ are the rows of the final weight matrix the context vector is multiplied by. They are separate parameters from the input word vectors, although some models reuse the input vectors as the $u_w$.
+
+**Example.** Let the context vector be $f=(1,1)$ and the vocabulary be house, dog, cat, with $u_{\text{house}}=(1,1)$, $u_{\text{dog}}=(1,0)$, $u_{\text{cat}}=(0,0)$. The scores are $2$, $1$, $0$. The exponentials are $7.389$, $2.718$, $1$, which add up to $11.107$, so the probabilities are
+$$P(\text{house}) = 0.665,\quad P(\text{dog}) = 0.245,\quad P(\text{cat}) = 0.090.$$
+
+**AI/ML Usage**: This is the last step of every neural language model (see the Neural Language Model entry in `math_concepts.md`): the matrix of all the $u_w$ turns the final context vector into one score per vocabulary word.
 
 ---
 
@@ -2477,6 +2775,23 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter phi
 
 ---
 
+<a id="pre-activation"></a>
+### Pre-Activation — `𝐚 = V f(𝐱)`
+Symbol: a bold lowercase a, the vector of values inside a layer before the activation function is applied  
+On macOS: type a and make it bold in your editor; in plain text write a  
+
+**The Big Idea**: This builds on the Function Composition entry: a layer does two things in a row, first a matrix multiplication and then an activation function, and $\mathbf{a}$ names the result of the first step, the way you might name the subtotal on a receipt before tax is added.
+
+**General Usage**: For a layer $\mathbf{z} = g(V f(\mathbf{x}))$, the pre-activation is $\mathbf{a} = V f(\mathbf{x})$, so that $\mathbf{z} = g(\mathbf{a})$. (The slopes below are derivatives, a calculus idea; read the Chain Rule (for Derivatives) entry in math_concepts.md first.) Naming it splits the chain rule into two simple factors: $\partial \mathbf{z} / \partial V_{ij} = (\partial g(\mathbf{a}) / \partial \mathbf{a})(\partial \mathbf{a} / \partial V_{ij})$, the slope of the activation at $\mathbf{a}$ times the slope of a linear function (see the Chain Rule (for Derivatives) entry in math_concepts.md).
+
+**Example.** With $V$ rows $(1, -1, -2)$, $(-3, -1, 2)$, $(1, 1, 0)$ and $f(\mathbf{x}) = (0, 1, 1)$:
+$$\mathbf{a} = (0 - 1 - 2,\ 0 - 1 + 2,\ 0 + 1 + 0) = (-3, 1, 1).$$
+With $g = \tanh$, $\mathbf{z} = (-0.9951, 0.7616, 0.7616)$, and the slopes $1 - \tanh(a)^2$ are $(0.0099, 0.4200, 0.4200)$: the first unit, with $|a| = 3$, is nearly saturated (see the Saturation (Activation Functions) entry in math_concepts.md).
+
+**AI/ML Usage**: Backpropagation stores each layer's pre-activations during the forward pass because the activation slopes $g'(\mathbf{a})$ are needed on the way back; techniques such as batch normalization (see the Batch Normalization entry in math_concepts.md) operate on these values.
+
+---
+
 <a id="precedence-relation"></a>
 ### Precedence Relation — `≺`
 Symbol: ≺, "precedes" (its reverse, ≻, is "succeeds")  
@@ -2506,6 +2821,21 @@ On macOS: no single key; type the letters and add the bar in LaTeX with `\overli
 3. Check: $0.12+0.88 = 1$.
 
 **AI/ML Usage**: In every Bayes filter (Kalman filter, histogram filter, particle filter), the predicted belief is what the filter holds after applying the motion model and before the sensor correction. When sensor readings arrive less often than motion commands, the filter replaces the belief by its predicted belief several times in a row.
+
+---
+
+<a id="predicted-label"></a>
+### Predicted Label — `y_pred`
+Symbol: a lowercase y with the small subscript "pred" (short for prediction)  
+On macOS: type y and format pred as a subscript, or write y_pred in plain text  
+
+**The Big Idea**: This builds on the Arg Min / Arg Max entry: after a model scores every possible answer, the predicted label is simply whichever answer got the highest score, like the winner of an election being whoever received the most votes.
+
+**General Usage**: $y_{\text{pred}} = \arg\max_y \text{score}(y)$ is the label a classifier outputs for an input. It is compared with the gold label $y^{(i)}$ (see the Superscript Example Index entry); learning algorithms such as the perceptron update their weights only when $y_{\text{pred}} \ne y^{(i)}$. When several labels tie for the top score, a fixed tie-breaking rule decides. Many texts write the prediction as $\hat y$ (see the Hat Notation entry).
+
+**Example.** Three classes get scores $1$, $0$ and $-1$. The largest is $1$, so $y_{\text{pred}} = 1$. If the gold label is $y^{(i)} = 2$, the prediction is wrong and a perceptron would update. With all scores equal to $0$ and the rule "ties go to class 3", $y_{\text{pred}} = 3$.
+
+**AI/ML Usage**: Accuracy is the fraction of examples with $y_{\text{pred}} = y^{(i)}$ (see the Accuracy (Classification) entry in math_concepts.md), and the multiclass perceptron update subtracts features from the weights of $y_{\text{pred}}$ while adding them to the weights of $y^{(i)}$ (see the Multiclass Perceptron entry in math_concepts.md).
 
 ---
 
@@ -2741,6 +3071,21 @@ On macOS: open the character picker (Fn/🌐) and search "double-struck capital 
 
 ---
 
+<a id="relative-position-subscript"></a>
+### Relative-Position Subscript — `w₋₁, w₊₁`
+Symbol: the letter w with a small subscript minus one (U+208B and U+2081) or plus one (U+208A and U+2081), read "w minus one" and "w plus one"; in plain text these are written w_{-1} and w_{+1}  
+On macOS: there is no Option-key shortcut; open the character picker (Fn/🌐), search "subscript minus", "subscript plus" and "subscript one", or write w_{-1} in plain text  
+
+**The Big Idea**: This builds on the sequence notation $a_n$ from Algebra 2, except that the number below the letter counts steps from a chosen center word instead of from the start of the list: $-1$ means one place before it and $+1$ means one place after it.
+
+**General Usage**: Pick one word in a sentence as the focus word and call it $w_0$. Then $w_{-k}$ is the word $k$ places before it and $w_{+k}$ is the word $k$ places after it. A window of size $K$ is the set $w_{-K},\dots,w_{-1},w_{+1},\dots,w_{+K}$ (the focus word itself is left out).
+
+**Example.** In the sentence "the dog bit the man", let the focus word be $w_0=\text{bit}$. Then $w_{-2}=\text{the}$, $w_{-1}=\text{dog}$, $w_{+1}=\text{the}$ and $w_{+2}=\text{man}$. A window of size $K=1$ is $\{\text{dog},\text{the}\}$ and a window of size $K=2$ is all four words. The word "the" appears twice, once at offset $-2$ and once at $+1$, so the offset, not the spelling, identifies the position.
+
+**AI/ML Usage**: Continuous Bag-of-Words (see that entry in math_concepts.md) predicts a word from its neighbors, written $P(w\mid w_{-1},w_{+1})=\operatorname{softmax}\big(W(c(w_{-1})+c(w_{+1}))\big)$, and the Skip-Gram Model forms its training pairs from the same window. N-Gram Language Models (see that entry) condition on the previous words $w_{-1},w_{-2},\dots$.
+
+---
+
 <a id="relu"></a>
 ### ReLU — `ReLU(x)`
 Symbol: none — written as ordinary text  
@@ -2854,6 +3199,23 @@ On macOS: press Shift+` (top-left key) for the keyboard tilde — or find the fo
 
 ---
 
+<a id="scientific-e-notation"></a>
+### Scientific E-Notation — `1e-4`
+Symbol: a number, the letter e (or E), then a signed whole number, as in 1e-4 or 3.2E5. The e here is not Euler's number (see the Euler's Number / Exponential Function entry); it means "times ten to the power"  
+On macOS: type normally from the keyboard  
+
+**The Big Idea**: This is scientific notation from Algebra 2, written in a form a keyboard can type. $1.5 \times 10^{3}$ becomes 1.5e3: the digits before the e are the leading number, and the number after the e is the power of ten.
+
+**General Usage**: $a$e$k$ means $a \times 10^{k}$. A negative $k$ gives a small number (move the decimal point left), and a positive $k$ gives a large one (move it right). Programming languages such as Python read this notation directly as a number.
+
+**Example.**
+$$1\text{e-}4 = 1 \times 10^{-4} = 0.0001, \qquad 2.5\text{e-}3 = 2.5 \times 10^{-3} = 0.0025, \qquad 3.2\text{e}5 = 3.2 \times 10^{5} = 320{,}000.$$
+A list of step sizes "1e0, 1e-1, 1e-2" is $1, 0.1, 0.01$: each ten times smaller than the last.
+
+**AI/ML Usage**: Step sizes (see the Learning Rate entry) are almost always written this way, because useful values span many orders of magnitude: a common search tries 1e0, 1e-1, 1e-2, and so on, and large neural networks are often trained with step sizes such as 1e-4 or 1e-5.
+
+---
+
 <a id="scoring-function"></a>
 ### Scoring Function — `Ψ`
 Symbol: Ψ, Greek capital letter psi  
@@ -2915,6 +3277,21 @@ On macOS: type normally from the keyboard — angle brackets and letters are ord
 **Example.** Given the sentence "Thank you for inviting me to your party last week," masking the span "for inviting" with the sentinel `<X>` and the span "last" with the sentinel `<Y>` produces the corrupted input "Thank you `<X>` me to your party `<Y>` week." A model trained on this input is asked to produce the target "`<X>` for inviting `<Y>` last `<Z>`" — the third sentinel, `<Z>`, carries no text of its own and is appended purely to mark that the target sequence is finished.
 
 **AI/ML Usage**: Sentinel tokens are the mechanism behind T5's span-corruption pretraining objective (see the T5 entry in `math_concepts.md`; Raffel et al., 2019): rather than predicting an entire reconstructed document, T5's decoder is trained to generate only a short sequence of sentinel-tagged spans, which keeps the target sequence much shorter than the original input whenever only a small fraction of the text was masked.
+
+---
+
+<a id="separator-token"></a>
+### Separator Token — `[SEP]`
+Symbol: `[SEP]`, square brackets around the capital letters "SEP," short for "separator"; ordinary bracket and letter characters  
+On macOS: type normally from the keyboard, because `[SEP]` is made of ordinary bracket and letter characters and needs no special shortcut  
+
+**The Big Idea**: This is a placeholder like the CLS Token entry: a designated marker that does not correspond to any real word. It works like the divider line between two paragraphs on a page: it tells the reader where one piece ends and the next begins, even though it is not part of either piece.
+
+**General Usage**: `[SEP]` is a special token placed between two pieces of text that are packed into a single input sequence, so that a model can tell where the first piece ends and the second begins. It takes one position in the sequence, just like a word. It is normally used together with `[CLS]` at the start of the sequence (see the CLS Token entry).
+
+**Example.** The sentence pair "The woman is driving a car" and "The woman is walking." is packed as the sequence `[CLS] The woman is driving a car [SEP] The woman is walking .` Counting positions: `[CLS]` plus the six words of the first sentence make $1+6=7$ tokens before the separator, `[SEP]` is token number $8$, and the second sentence (five tokens, counting the final period) comes after it, for a total of $7+1+5=13$ tokens.
+
+**AI/ML Usage**: BERT (Devlin et al., 2018) uses `[SEP]` to pack sentence pairs for tasks such as textual entailment, where the model decides whether the second sentence is implied by, contradicts, or is unrelated to the first; the answer is read from the output vector at the `[CLS]` position.
 
 ---
 
@@ -3135,6 +3512,21 @@ On macOS: type normally from the keyboard
 **Example.** For the stretch from fencepost $0$ to fencepost $2$ ("the child"), the only whole number with $0 < k < 2$ is $k = 1$, so there is exactly one split: "the" on the left and "child" on the right. For the whole sentence from $0$ to $4$, $k$ can be $1$, $2$, or $3$, giving three candidate splits: "the | child raises it", "the child | raises it", and "the child raises | it".
 
 **AI/ML Usage**: In the CKY parsing algorithm (see the CKY Algorithm entry in the math_concepts file), the score for a stretch of words is found by trying every split point $k$ and keeping the best one (a maximum, see the Max Function entry in the math_symbols file). Having to try $O(n)$ split points for each of the $O(n^2)$ stretches of an $n$-word sentence is what makes the algorithm's running time cubic in $n$.
+
+---
+
+<a id="square-root"></a>
+### Square Root — `√x`
+Symbol: √ (SQUARE ROOT). Not to be confused with the check mark ✓  
+On macOS: Option-V types √ on the U.S. keyboard layout  
+
+**The Big Idea**: This is the square root from Algebra 2: the number that, multiplied by itself, gives $x$. It undoes squaring for non-negative numbers, and it is the same as raising to the power $\tfrac{1}{2}$, so $\sqrt{x} = x^{1/2}$.
+
+**General Usage**: For $x \ge 0$, $\sqrt{x}$ is the non-negative number $r$ with $r \times r = x$. Square roots grow, but more and more slowly: $\sqrt{4} = 2$, $\sqrt{100} = 10$, $\sqrt{10{,}000} = 100$.
+
+**Example.** $\sqrt{16} = 4$ because $4 \times 4 = 16$. $\frac{1}{\sqrt{4}} = \frac{1}{2} = 0.5$. $\sqrt{2} \approx 1.4142$; check: $1.4142 \times 1.4142 = 1.99996$, very close to 2.
+
+**AI/ML Usage**: Step-size schedules (see the Learning Rate Schedule entry in math_concepts.md) often use $\alpha_t = \frac{1}{\sqrt{t}}$ in epoch $t$, which shrinks more slowly than $\frac{1}{t}$: at $t = 4$ it gives $0.5$ instead of $0.25$. Square roots also appear inside adaptive optimizers such as Adam, which divide each weight's step by the square root of a running average of its squared gradients, and in the Euclidean norm (see that entry).
 
 ---
 
@@ -3601,6 +3993,25 @@ Now compare against a second action with the same average payoff $Q(a')=0.5$ but
 
 ---
 
+<a id="value-dimension"></a>
+### Value Dimension — `d_v`
+Symbol: a lowercase d with a subscript v (v stands for "value"); ordinary Latin letters  
+On macOS: type normally from the keyboard; write the subscript with your editor's subscript formatting, or as d_v in plain text  
+
+**The Big Idea**: $d_v$ is only a count: the number of entries in a value vector, just as $d_k$ counts the entries in a key vector. See the Key Dimension entry and the Dimension / Count Variables entry. The reason it has its own name is that the value length does not have to match the key length.
+
+**General Usage**: $d_v$ is the number of entries in each value vector (see the Query, Key, and Value entry). The attention output for one token is a weighted average of value vectors, so it has $d_v$ entries. It can differ from $d_k$ because the weights come from query-key dot products, and those never involve the values. When $h$ heads are joined side by side, the result has $h\,d_v$ entries, and the output matrix $W^O$ (see the Output Projection Matrix entry) maps that back to $d_{\text{model}}$ entries.
+
+**Example.** Suppose two tokens have attention weights (each row adds to $1$) and values with $d_v=3$:
+$$A=\begin{pmatrix}0.75&0.25\\0.5&0.5\end{pmatrix},\quad V=\begin{pmatrix}1&0&2\\0&4&2\end{pmatrix}.$$
+Row $1$ of $AV$ is $0.75\,(1,0,2)+0.25\,(0,4,2)=(0.75,\,1,\,2)$ and row $2$ is $0.5\,(1,0,2)+0.5\,(0,4,2)=(0.5,\,2,\,2)$, so
+$$AV=\begin{pmatrix}0.75&1&2\\0.5&2&2\end{pmatrix}.$$
+The output has $3=d_v$ entries per token, whatever length the queries and keys had.
+
+**AI/ML Usage**: The original Transformer (Vaswani et al., 2017) uses $d_v=d_k=64$ with $h=8$ heads, so $h\,d_v=512=d_{\text{model}}$.
+
+---
+
 <a id="variance"></a>
 ### Variance — `σ², Var(x)`
 Symbol: σ, Greek small letter sigma, with a superscript two  
@@ -3746,6 +4157,21 @@ On macOS: type normally from the keyboard; bold is just text formatting, not a s
 **Example.** For a model predicting house price from (square footage, number of bedrooms) with weights $\mathbf{w} = (150, 10000)$: a house with 2000 sq ft and 3 bedrooms gives a prediction (before adding any bias) of $150\times2000 + 10000\times3 = 300{,}000 + 30{,}000 = 330{,}000$ — each weight controls how strongly its matching feature pushes the final prediction up.
 
 **AI/ML Usage**: The primary, most fundamental set of parameters that actually get learned and adjusted during training across an enormous range of different ML models — linear regression, logistic regression, Support Vector Machines, and literally every single layer of every neural network all have their own weight vectors (or entire weight matrices, which are simply many weight vectors collected together), each one being carefully adjusted throughout training specifically to minimize the model's chosen loss function.
+
+---
+
+<a id="word-vector-and-context-vector"></a>
+### Word Vector and Context Vector — `v̄_w, c̄_w`
+Symbol: v̄ and c̄, a lowercase v and a lowercase c each with a vector overbar (a macron), with the word label written small below and to the right; read "v bar sub w" and "c bar sub w"  
+On macOS: type the letter, then open the character picker (Fn/🌐), search "combining macron" and insert it so it attaches to the letter; write the subscript with your editor's subscript formatting, or as v_w in plain text  
+
+**The Big Idea**: This builds on the Vector Overbar entry: the bar says "this is a vector", and the subscript says which word it belongs to. Every word gets two such vectors, one for the role of center word and one for the role of neighbor.
+
+**General Usage**: $\bar v_w$ is the vector used when $w$ is the center word, and $\bar c_w$ is the vector used when $w$ is a neighbor (context word). The model scores a center word $x$ against a context word $y$ with the Dot Product $\bar v_x\cdot\bar c_y$. The two sets of vectors are separate parameters, so $\bar v_w$ and $\bar c_w$ for the same word are generally different. For how the scores become probabilities, see the Skip-Gram Model entry in math_concepts.md.
+
+**Example.** Let the center word be $\text{film}$ with $\bar v_{film}=(1,2)$, and let three candidate context words have $\bar c_{inspired}=(3,1)$, $\bar c_{the}=(-1,2)$ and $\bar c_{mango}=(-2,-1)$. The scores are $\bar v_{film}\cdot\bar c_{inspired}=3+2=5$, $\bar v_{film}\cdot\bar c_{the}=-1+4=3$ and $\bar v_{film}\cdot\bar c_{mango}=-2-2=-4$. The model ranks $\text{inspired}$ first, $\text{the}$ second and $\text{mango}$ last as a neighbor of $\text{film}$.
+
+**AI/ML Usage**: Word2Vec (see that entry in math_concepts.md) learns both sets of vectors from raw text; the word vectors $\bar v_w$ are usually the ones kept as the embeddings afterwards. GloVe (see that entry) uses the same pairing of a word vector and a context vector, written $w_i$ and $c_j$.
 
 ---
 
