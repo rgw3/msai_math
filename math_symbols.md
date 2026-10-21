@@ -7,29 +7,29 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 249 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 251 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Half-Open Interval | Halfspace to Precedence Relation | Predicted Belief to Zero-One Loss |
+| Absolute Value to Half-Open Interval | Halfspace to Predicted Belief | Predicted Label to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Predicted Belief](#predicted-belief) |
-| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Predicted Label](#predicted-label) |
-| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Prime Notation](#prime-notation) |
-| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hidden State](#hidden-state) | [Probability / Probability Density](#probability-probability-density) |
-| [All-Ones Vector](#all-ones-vector) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability Simplex](#probability-simplex) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hypothesis](#hypothesis) | [Product Notation](#product-notation) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Identity Matrix](#identity-matrix) | [Progress Radius](#progress-radius) |
-| [Approximately Equal](#approximately-equal) | [If and Only If](#if-and-only-if) | [Proportional To](#proportional-to) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Implies Arrow](#implies-arrow) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Assignment Arrow](#assignment-arrow) | [Importance Weight](#importance-weight) | [Psi, uppercase](#psi-uppercase) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Index Range Colon](#index-range-colon) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Query, Key, and Value](#query-key-and-value) |
-| [Attention Score](#attention-score) | [Initial Distribution](#initial-distribution) | [Question-Mark Relation](#question-mark-relation) |
-| [Attention Weights](#attention-weights) | [Initial State](#initial-state) | [Real Numbers](#real-numbers) |
-| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [Receptive Field](#receptive-field) |
-| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Regression Function](#regression-function) |
-| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Relative-Position Subscript](#relative-position-subscript) |
-| [Best Solution Cost](#best-solution-cost) | [Joint Feature Function](#joint-feature-function) | [ReLU](#relu) |
+| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Predicted Label](#predicted-label) |
+| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Prime Notation](#prime-notation) |
+| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Probability / Probability Density](#probability-probability-density) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hidden State](#hidden-state) | [Probability Simplex](#probability-simplex) |
+| [All-Ones Vector](#all-ones-vector) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Product Notation](#product-notation) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Hypothesis](#hypothesis) | [Progress Radius](#progress-radius) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Identity Matrix](#identity-matrix) | [Proportional To](#proportional-to) |
+| [Approximately Equal](#approximately-equal) | [If and Only If](#if-and-only-if) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Implies Arrow](#implies-arrow) | [Psi, uppercase](#psi-uppercase) |
+| [Assignment Arrow](#assignment-arrow) | [Importance Weight](#importance-weight) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Index Range Colon](#index-range-colon) | [Query, Key, and Value](#query-key-and-value) |
+| [Attention Operator](#attention-operator) | [Infinity](#infinity) | [Question-Mark Relation](#question-mark-relation) |
+| [Attention Score](#attention-score) | [Initial Distribution](#initial-distribution) | [Real Numbers](#real-numbers) |
+| [Attention Weights](#attention-weights) | [Initial State](#initial-state) | [Receptive Field](#receptive-field) |
+| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [Regression Function](#regression-function) |
+| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Relative-Position Subscript](#relative-position-subscript) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [ReLU](#relu) |
+| [Best Solution Cost](#best-solution-cost) | [Joint Feature Function](#joint-feature-function) | [Rewrite Rule Arrow](#rewrite-rule-arrow) |
 | [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Rotation Matrix](#rotation-matrix) |
 | [Bias Term](#bias-term) | [Key Dimension](#key-dimension) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
 | [Big-O Notation](#big-o-notation) | [Label](#label) | [Sample Mean Overbar](#sample-mean-overbar) |
@@ -37,63 +37,64 @@ All 249 entries, alphabetical. Read down the first column, then down the second,
 | [Binomial Coefficient](#binomial-coefficient) | [Lambda Abstraction](#lambda-abstraction) | [Sampling Notation](#sampling-notation) |
 | [Blocks World](#blocks-world) | [Lambda, lowercase](#lambda-lowercase) | [Scientific E-Notation](#scientific-e-notation) |
 | [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Scoring Function](#scoring-function) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Layer Weight Matrices](#layer-weight-matrices) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Cartesian Product](#cartesian-product) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Segment Embedding](#segment-embedding) |
-| [Catalan Number](#catalan-number) | [Learning Rate](#learning-rate) | [Sentinel Token](#sentinel-token) |
-| [Character N-Gram Boundary Markers](#character-n-gram-boundary-markers) | [Less Than or Equal](#less-than-or-equal) | [Separator Token](#separator-token) |
-| [Chart Score](#chart-score) | [Limit](#limit) | [Set Braces](#set-braces) |
-| [Class-Indexed Weight Vector](#class-indexed-weight-vector) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [CLS Token](#cls-token) | [Log-Sum-Exp](#log-sum-exp) | [Set Difference](#set-difference) |
-| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Intersection](#set-intersection) |
-| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Set Union](#set-union) |
-| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigma, lowercase](#sigma-lowercase) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigma, uppercase](#sigma-uppercase) |
-| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sigmoid Function](#sigmoid-function) |
-| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Sign Function](#sign-function) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Sine and Cosine](#sine-and-cosine) |
-| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Softmax Function](#softmax-function) |
-| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Dataset](#dataset) | [Mean](#mean) | [Split Point](#split-point) |
-| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Square Root](#square-root) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [Stack Notation](#stack-notation) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [Standard Deviation](#standard-deviation) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Dimension](#model-dimension) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
-| [Element-of Symbol](#element-of-symbol) | [Mu](#mu) | [State Transition Function](#state-transition-function) |
-| [Element-wise Operations](#element-wise-operations) | [N-Gram](#n-gram) | [Step Size](#step-size) |
-| [Ellipsis](#ellipsis) | [Nabla](#nabla) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [ELU](#elu) | [Natural Numbers](#natural-numbers) | [Stride](#stride) |
-| [Embedding Function](#embedding-function) | [Negation Overbar](#negation-overbar) | [Subset](#subset) |
-| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Summation](#summation) |
-| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Superscript Example Index](#superscript-example-index) |
-| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tag Set](#tag-set) |
-| [Error Signal](#error-signal) | [Number of Attention Heads](#number-of-attention-heads) | [Tanh](#tanh) |
-| [Eta](#eta) | [Number of Outcomes in an Event](#number-of-outcomes-in-an-event) | [TF-IDF](#tf-idf) |
-| [Euclidean Norm](#euclidean-norm) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
-| [Evaluated-At Bar](#evaluated-at-bar) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Existential Quantifier](#existential-quantifier) | [Outer Product](#outer-product) | [Training Set](#training-set) |
-| [Expectation](#expectation) | [Output Projection Matrix](#output-projection-matrix) | [Transition Matrix](#transition-matrix) |
-| [Factorial](#factorial) | [Output Word Vector](#output-word-vector) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Padding](#padding) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feed-Forward Inner Dimension](#feed-forward-inner-dimension) | [Parameterized Function / Model](#parameterized-function-model) | [Unit Ball Volume](#unit-ball-volume) |
-| [Floor Function](#floor-function) | [Parent Annotation Caret](#parent-annotation-caret) | [Unit Hypercube](#unit-hypercube) |
-| [Free Space](#free-space) | [Partial Derivative](#partial-derivative) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Partial Order](#partial-order) | [Unknown-Word Token](#unknown-word-token) |
-| [Function Composition](#function-composition) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Value Dimension](#value-dimension) |
-| [Gain](#gain) | [Perceptron Loss](#perceptron-loss) | [Variance](#variance) |
-| [Gamma](#gamma) | [Permutation](#permutation) | [Vector](#vector) |
-| [Gaussian CDF](#gaussian-cdf) | [Phi, lowercase](#phi-lowercase) | [Vector Overbar](#vector-overbar) |
-| [GeLU](#gelu) | [Phi, uppercase](#phi-uppercase) | [Vector Projection](#vector-projection) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Goal Set](#goal-set) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
-| [Gold Label Index and Selector Vector](#gold-label-index-and-selector-vector) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
-| [Gradient](#gradient) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
-| [Graph](#graph) | [Potential Function](#potential-function) | [Word Vector and Context Vector](#word-vector-and-context-vector) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Pre-Activation](#pre-activation) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Half-Open Interval](#half-open-interval) | [Precedence Relation](#precedence-relation) | [Zero-One Loss](#zero-one-loss) |
+| [Bracketed Tree Notation](#bracketed-tree-notation) | [Layer Weight Matrices](#layer-weight-matrices) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Segment Embedding](#segment-embedding) |
+| [Cartesian Product](#cartesian-product) | [Learning Rate](#learning-rate) | [Sentinel Token](#sentinel-token) |
+| [Catalan Number](#catalan-number) | [Less Than or Equal](#less-than-or-equal) | [Separator Token](#separator-token) |
+| [Character N-Gram Boundary Markers](#character-n-gram-boundary-markers) | [Limit](#limit) | [Set Braces](#set-braces) |
+| [Chart Score](#chart-score) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Class-Indexed Weight Vector](#class-indexed-weight-vector) | [Log-Sum-Exp](#log-sum-exp) | [Set Difference](#set-difference) |
+| [CLS Token](#cls-token) | [Logarithm](#logarithm) | [Set Intersection](#set-intersection) |
+| [Concept Class](#concept-class) | [Logical Negation](#logical-negation) | [Set Union](#set-union) |
+| [Conditional Bar](#conditional-bar) | [Logistic Function](#logistic-function) | [Sigma, lowercase](#sigma-lowercase) |
+| [Configuration Space](#configuration-space) | [Loss Function](#loss-function) | [Sigma, uppercase](#sigma-uppercase) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Margin](#margin) | [Sigmoid Function](#sigmoid-function) |
+| [Connection Radius Constant](#connection-radius-constant) | [Mask Token](#mask-token) | [Sign Function](#sign-function) |
+| [Cosine Similarity](#cosine-similarity) | [Matrix](#matrix) | [Sine and Cosine](#sine-and-cosine) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix Entry](#matrix-entry) | [Softmax Function](#softmax-function) |
+| [Covariance](#covariance) | [Matrix Transpose](#matrix-transpose) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Curvature (Path)](#curvature-path) | [Max Function](#max-function) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Data Distribution](#data-distribution) | [Mean](#mean) | [Split Point](#split-point) |
+| [Dataset](#dataset) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Square Root](#square-root) |
+| [Delta, lowercase](#delta-lowercase) | [Min Function](#min-function) | [Stack Notation](#stack-notation) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mistake Bound](#mistake-bound) | [Standard Deviation](#standard-deviation) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Model Dimension](#model-dimension) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [State Transition Function](#state-transition-function) |
+| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Step Size](#step-size) |
+| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Stride](#stride) |
+| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Subset](#subset) |
+| [Embedding Function](#embedding-function) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Summation](#summation) |
+| [Emission Matrix](#emission-matrix) | [Normal Distribution Notation](#normal-distribution-notation) | [Superscript Example Index](#superscript-example-index) |
+| [Empty Set](#empty-set) | [Not Equal](#not-equal) | [Tag Set](#tag-set) |
+| [Epsilon](#epsilon) | [Number of Attention Heads](#number-of-attention-heads) | [Tanh](#tanh) |
+| [Error Signal](#error-signal) | [Number of Outcomes in an Event](#number-of-outcomes-in-an-event) | [TF-IDF](#tf-idf) |
+| [Eta](#eta) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
+| [Euclidean Norm](#euclidean-norm) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Outer Product](#outer-product) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Output Projection Matrix](#output-projection-matrix) | [Transition Matrix](#transition-matrix) |
+| [Expectation](#expectation) | [Output Word Vector](#output-word-vector) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Factorial](#factorial) | [Padding](#padding) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Parameterized Function / Model](#parameterized-function-model) | [Unit Ball Volume](#unit-ball-volume) |
+| [Feed-Forward Inner Dimension](#feed-forward-inner-dimension) | [Parent Annotation Caret](#parent-annotation-caret) | [Unit Hypercube](#unit-hypercube) |
+| [Floor Function](#floor-function) | [Partial Derivative](#partial-derivative) | [Universal Quantifier](#universal-quantifier) |
+| [Free Space](#free-space) | [Partial Order](#partial-order) | [Unknown-Word Token](#unknown-word-token) |
+| [Frobenius Norm](#frobenius-norm) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Function Composition](#function-composition) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Value Dimension](#value-dimension) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Perceptron Loss](#perceptron-loss) | [Variance](#variance) |
+| [Gain](#gain) | [Permutation](#permutation) | [Vector](#vector) |
+| [Gamma](#gamma) | [Phi, lowercase](#phi-lowercase) | [Vector Overbar](#vector-overbar) |
+| [Gaussian CDF](#gaussian-cdf) | [Phi, uppercase](#phi-uppercase) | [Vector Projection](#vector-projection) |
+| [GeLU](#gelu) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
+| [Goal Set](#goal-set) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
+| [Gold Label Index and Selector Vector](#gold-label-index-and-selector-vector) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
+| [Gradient](#gradient) | [Potential Function](#potential-function) | [Word Vector and Context Vector](#word-vector-and-context-vector) |
+| [Graph](#graph) | [Pre-Activation](#pre-activation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Precedence Relation](#precedence-relation) | [Zero-One Loss](#zero-one-loss) |
+| [Half-Open Interval](#half-open-interval) | [Predicted Belief](#predicted-belief) |  |
 
 ## Symbols
 
@@ -518,6 +519,25 @@ On macOS: braces are Shift+[ and Shift+]; the superscript is written with a care
 **Example.** For $n=2$, $\{0,1\}^2$ lists every possible pair of bits: $\{00, 01, 10, 11\}$ — exactly $2^2 = 4$ sequences. For $n=3$, there would be $2^3=8$ sequences: $000, 001, 010, 011, 100, 101, 110, 111$. In general, $\{0,1\}^n$ always contains exactly $2^n$ sequences, since each of the $n$ positions independently has 2 choices.
 
 **AI/ML Usage**: Shows up when studying algorithms that learn functions over yes/no features, formally described mathematically as functions defined on $\{0,1\}^n$. Computational learning theory (the branch of ML theory studying exactly how much data an algorithm needs to learn reliably) uses this notation constantly when analyzing algorithms that learn things like decision lists or logical formulas built from true/false inputs — a foundational area of study that underlies more modern, practical machine learning techniques even though this particular framing is rarely discussed outside of theory-focused coursework and papers.
+
+---
+
+<a id="bracketed-tree-notation"></a>
+### Bracketed Tree Notation — `(S (NP …) (VP …))`
+Symbol: ( ) parentheses (left and right parenthesis, U+0028 and U+0029), nested, with a label written right after each opening one. Do not confuse them with the grouping parentheses of an algebra expression or with square brackets `[ ]`, which the Horizontal Markovization entry in math_concepts.md uses for a different purpose.  
+On macOS: type Shift-9 for ( and Shift-0 for ); these are ordinary keyboard characters.
+
+**The Big Idea**: In Algebra 2 you read $2(3+4x)$ by finding the group inside the parentheses first, and groups can sit inside bigger groups. This notation uses the same nesting to write a sentence's tree on one line: each pair of parentheses is a group of words, and the label just after the opening parenthesis says what kind of group it is.
+
+**General Usage**: A node is written $(\text{label}\ \text{child}_1\ \text{child}_2\ \dots)$, where each child is either another node or, at the bottom, a word. A part-of-speech tag sits directly above its word, as in `(NN dog)`. The whole sentence is one outermost pair. Counting rules: the number of opening parentheses equals the number of closing ones and equals the number of labeled nodes in the tree; the deepest level of nesting equals the depth of the tree; and each node covers the words written inside its parentheses, which is a span between two fenceposts (see the Span (Fencepost Indexing) entry in math_concepts.md).
+
+**Example.** Read `(S (NP (DT the) (NN dog)) (VP (VBD ran)))`.
+1. Count parentheses: 6 opening and 6 closing, so the tree has 6 labeled nodes: S, NP, DT, NN, VP, VBD.
+2. Read the words left to right: the, dog, ran. That is 3 words, with fenceposts $0,1,2,3$.
+3. Read the span of each node: DT covers $(0,1)$, NN covers $(1,2)$, NP covers $(0,2)$, VBD covers $(2,3)$, VP covers $(2,3)$, S covers $(0,3)$.
+4. The deepest nesting is 3 (S, then NP, then DT), so the tree has 3 levels of labels above the words.
+
+**AI/ML Usage**: Penn Treebank trees are distributed in this format, and parser software reads and writes it (for example, NLTK's `Tree.fromstring`). Evaluating a parser (see the Constituent F1 (Parse Evaluation) entry in math_concepts.md) starts by reading the labeled spans, such as $(NP,0,2)$, out of strings like this one.
 
 ---
 
@@ -3098,6 +3118,33 @@ On macOS: type normally from the keyboard
 **Example.** $\text{ReLU}(5) = \max(0,5) = 5$. $\text{ReLU}(-3) = \max(0,-3) = 0$. $\text{ReLU}(0) = \max(0,0) = 0$ — the boundary case gives exactly zero either way.
 
 **AI/ML Usage**: The default, single most widely used activation function inside the hidden layers of modern deep neural networks — the specific reshaping step every neuron applies to its computed weighted sum, letting the whole network learn genuinely complex, curved patterns rather than just straight-line relationships. Its popularity comes from being extremely cheap and fast to compute, and from avoiding a specific technical problem called "the vanishing gradient," which made older networks using sigmoid or tanh activations notoriously difficult to train successfully once they had many stacked layers.
+
+---
+
+<a id="rewrite-rule-arrow"></a>
+### Rewrite Rule Arrow — `A → B C`
+Symbol: →, rightwards arrow (U+2192), the same character as in the Function Mapping Arrow entry; here it separates the left side of a grammar rule from its right side. In plain text it is often typed as `->`.  
+On macOS: open the character picker (Fn/🌐) and search "rightwards arrow"; no Option-key shortcut exists.
+
+**The Big Idea**: Algebra 2 has substitution rules such as "replace $x$ by $2y+1$." A rewrite rule is the same idea for grammar symbols: $A\rightarrow B\ C$ says "wherever you see $A$, you may replace it by $B$ followed by $C$." The arrow reads left to right as "can be rewritten as" or "is made of," unlike the function arrow, which reads as "maps input to output." Read the Context-Free Grammar entry in math_concepts.md for the full setting.
+
+**General Usage**: In a rule $A\rightarrow B\ C$, the single symbol $A$ on the left is the **parent** and the sequence on the right gives its **children**, in order. In a derivation the rule replaces $A$ by its children; in a parse tree it says a node labeled $A$ has children $B$ and $C$. A rule can have one child (unary), two (binary), or more. In a probabilistic grammar each rule carries a probability $P(A\rightarrow B\ C)=P(B\ C\mid A)$, and the probabilities of all rules with the same left side sum to $1$ (see the Probabilistic Context-Free Grammar entry in math_concepts.md and the Tree Probability under a PCFG entry). The same arrow is overloaded in nearby settings: in dependency parsing $a\rightarrow b$ means an arc from head $a$ to dependent $b$ (word to word, not a rewrite); in stack notation an arrow separates the stack before and after an operation (see the Stack Notation entry); and in $f:X\rightarrow Y$ it separates domain from range. Always check which of these is meant.
+
+**Example.** Use the rules $S\rightarrow NP\ VP$, $NP\rightarrow DT\ NN$, $VP\rightarrow VBD$, $DT\rightarrow\text{the}$, $NN\rightarrow\text{cake}$, $VBD\rightarrow\text{ran}$, and rewrite the leftmost symbol that has a rule at each step.
+
+| Step | Rule applied | Result |
+|---|---|---|
+| 0 | start | $S$ |
+| 1 | $S\rightarrow NP\ VP$ | $NP\ VP$ |
+| 2 | $NP\rightarrow DT\ NN$ | $DT\ NN\ VP$ |
+| 3 | $DT\rightarrow\text{the}$ | $\text{the}\ NN\ VP$ |
+| 4 | $NN\rightarrow\text{cake}$ | $\text{the cake}\ VP$ |
+| 5 | $VP\rightarrow VBD$ | $\text{the cake}\ VBD$ |
+| 6 | $VBD\rightarrow\text{ran}$ | $\text{the cake ran}$ |
+
+Check: 6 rule applications, and the tree for "the cake ran" has 6 labeled nodes (S, NP, VP, DT, NN, VBD), one built by each rule.
+
+**AI/ML Usage**: Parsers read their grammars as lists of rules in exactly this form (NLTK's `CFG.fromstring`, for instance, accepts lines such as `S -> NP VP`), and a grammar learned from a treebank is a table of rules with probabilities estimated by counting. The CKY Algorithm (see the math_concepts.md entry) works by trying every binary rule $A\rightarrow B\ C$ on every span.
 
 ---
 

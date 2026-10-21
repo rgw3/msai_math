@@ -7,113 +7,118 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 421 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 436 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Generative Likelihood | Generative Model to Overfitting | PAC Learning to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to Gaussian Graphical Model | Gaussian Mixture Model to Out-of-Vocabulary (OOV) Word | Overfitting to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Generative Model](#generative-model) | [PAC Learning](#pac-learning) |
-| [Absolute Discounting](#absolute-discounting) | [Geometric Mean](#geometric-mean) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Accuracy (Classification)](#accuracy-classification) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Particle Filter](#particle-filter) |
-| [Ackermann Steering](#ackermann-steering) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PDDL](#pddl) |
-| [Action Schema](#action-schema) | [GLUE Benchmark](#glue-benchmark) | [Penn Treebank](#penn-treebank) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Performer (Linear-Complexity Attention)](#performer-linear-complexity-attention) |
-| [Add-One Smoothing](#add-one-smoothing) | [Gradient Clipping](#gradient-clipping) | [Perplexity](#perplexity) |
-| [Adversarial Example](#adversarial-example) | [Gradient Descent](#gradient-descent) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Adversarial Filtering](#adversarial-filtering) | [Graphical Lasso](#graphical-lasso) | [Planner Completeness](#planner-completeness) |
-| [Agnostic Learning](#agnostic-learning) | [GraphPlan](#graphplan) | [Planning Graph](#planning-graph) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Point Cloud](#point-cloud) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Greedy Decoding](#greedy-decoding) | [Polar Coordinates](#polar-coordinates) |
-| [AlphaGo](#alphago) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Ambiguity in Natural Language](#ambiguity-in-natural-language) | [Grounding / Instantiation](#grounding-instantiation) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Annotation Artifact](#annotation-artifact) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Positional Encoding](#positional-encoding) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Arity](#arity) | [Hedge Algorithm](#hedge-algorithm) | [Post-Hoc Explanation](#post-hoc-explanation) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Posterior Distribution](#posterior-distribution) |
-| [Authorship Attribution](#authorship-attribution) | [Hidden Layer / Hidden Units](#hidden-layer-hidden-units) | [Precision Matrix](#precision-matrix) |
-| [Automatic Differentiation](#automatic-differentiation) | [Hidden Markov Model](#hidden-markov-model) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hierarchical Softmax](#hierarchical-softmax) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Backpointer](#backpointer) | [Hinge Loss](#hinge-loss) | [Pretraining](#pretraining) |
-| [Backpropagation](#backpropagation) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Principal Component Analysis](#principal-component-analysis) |
-| [Bag of Words](#bag-of-words) | [Horizontal Markovization](#horizontal-markovization) | [Prior Distribution](#prior-distribution) |
-| [Banana Distribution](#banana-distribution) | [Huffman Coding](#huffman-coding) | [Priority Queue](#priority-queue) |
-| [BART](#bart) | [Hyperparameter](#hyperparameter) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Basis Function](#basis-function) | [Hypothesis-Only Baseline](#hypothesis-only-baseline) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [Batch](#batch) | [Image Captioning](#image-captioning) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Batch Normalization](#batch-normalization) | [Importance Sampling](#importance-sampling) | [Probability Density Contour](#probability-density-contour) |
-| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [In-Context Learning](#in-context-learning) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
-| [Bayes' Rule](#bayes-rule) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Program-Aided Language Model](#program-aided-language-model) |
-| [Bayesian State Estimation](#bayesian-state-estimation) | [Indicator Function](#indicator-function) | [Projective Tree](#projective-tree) |
-| [Beam Search](#beam-search) | [Induction Head](#induction-head) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Proxy Feature](#proxy-feature) |
-| [BERT](#bert) | [Informed RRT*](#informed-rrt) | [Quadratic Form](#quadratic-form) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Instruction Tuning](#instruction-tuning) | [Quiescence Search](#quiescence-search) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Integrated Gradients](#integrated-gradients) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Binarization](#binarization) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Iterative Deepening](#iterative-deepening) | [Random Forest](#random-forest) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Jensen's Inequality](#jensens-inequality) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [Bradley-Terry Model](#bradley-terry-model) | [Joint Probability Distribution](#joint-probability-distribution) | [Random Projection](#random-projection) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Variable](#random-variable) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [K-Means Algorithm](#k-means-algorithm) | [Rank](#rank) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Casing (Lowercasing and Truecasing)](#casing-lowercasing-and-truecasing) | [Kernel Function](#kernel-function) | [Ray Casting](#ray-casting) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Recall (Classification)](#recall-classification) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kinodynamic Planning](#kinodynamic-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Centroid](#centroid) | [KL Divergence](#kl-divergence) | [Recursive Neural Network (Tree-Structured)](#recursive-neural-network-tree-structured) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Regularization](#regularization) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Latent Variable](#latent-variable) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
-| [Chain-of-Thought Prompting](#chain-of-thought-prompting) | [Lattice-Based Planning](#lattice-based-planning) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Challenge Set](#challenge-set) | [Law of Large Numbers](#law-of-large-numbers) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Layer Normalization](#layer-normalization) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
-| [Chernoff Bound](#chernoff-bound) | [Learning Rate Schedule](#learning-rate-schedule) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [CKY Algorithm](#cky-algorithm) | [Learning Rate Warmup (Triangular Schedule)](#learning-rate-warmup-triangular-schedule) | [RoBERTa](#roberta) |
-| [Classical NLP Pipeline](#classical-nlp-pipeline) | [Lexical Baseline](#lexical-baseline) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Lexicalization](#lexicalization) | [Saliency Map (Gradient-Based Saliency)](#saliency-map-gradient-based-saliency) |
-| [Closed-World Assumption](#closed-world-assumption) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Sample Complexity](#sample-complexity) |
-| [Clustering](#clustering) | [Likelihood](#likelihood) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [LIME (Local Interpretable Model-Agnostic Explanations)](#lime-local-interpretable-model-agnostic-explanations) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
-| [Compositionality](#compositionality) | [Linear Programming](#linear-programming) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
-| [Computation Graph](#computation-graph) | [Linearly Separable](#linearly-separable) | [Saturation (Activation Functions)](#saturation-activation-functions) |
-| [Concatenation (of Vectors)](#concatenation-of-vectors) | [Lipschitz Continuity](#lipschitz-continuity) | [Scalar Mix (Layer Weighting)](#scalar-mix-layer-weighting) |
-| [Conditional Independence](#conditional-independence) | [Local Explanation](#local-explanation) | [Scaled Dot-Product Attention (and Other Attention Scores)](#scaled-dot-product-attention-and-other-attention-scores) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Log Likelihood](#log-likelihood) | [Schur Complement](#schur-complement) |
-| [Confusion Matrix](#confusion-matrix) | [Logistic Regression](#logistic-regression) | [Search Statistics](#search-statistics) |
-| [Conjunction Feature](#conjunction-feature) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Segment Embedding](#segment-embedding) |
-| [Consistent Heuristic](#consistent-heuristic) | [Loss Surface](#loss-surface) | [Selectional Preferences](#selectional-preferences) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lower Bound](#lower-bound) | [Self-Ask Prompting](#self-ask-prompting) |
-| [Constituency Tests](#constituency-tests) | [Machine Translation](#machine-translation) | [Self-Attention](#self-attention) |
-| [Constituent](#constituent) | [Macro Average](#macro-average) | [Semantic Parsing](#semantic-parsing) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Majority-Class Baseline](#majority-class-baseline) | [Semantic Role Labeling](#semantic-role-labeling) |
-| [Context-Free Grammar](#context-free-grammar) | [Marginalization](#marginalization) | [Sentiment Analysis](#sentiment-analysis) |
-| [Contextual Word Representation](#contextual-word-representation) | [Markov Blanket](#markov-blanket) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Markov Model](#markov-model) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Convex Function](#convex-function) | [Markov's Inequality](#markovs-inequality) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Masked Language Modeling](#masked-language-modeling) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
-| [Coordinate Descent](#coordinate-descent) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Skip-Gram Model](#skip-gram-model) |
-| [Coreference Resolution](#coreference-resolution) | [Maximum Entropy Model](#maximum-entropy-model) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Counterfactual](#counterfactual) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Covariance Matrix](#covariance-matrix) | [Mean Squared Error](#mean-squared-error) | [Sparse Attention](#sparse-attention) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Minimax Algorithm](#minimax-algorithm) | [Spectral Theorem](#spectral-theorem) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Minimum Description Length](#minimum-description-length) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Cross-Validation](#cross-validation) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
-| [Crowdsourcing (Data Annotation)](#crowdsourcing-data-annotation) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Model Probing](#model-probing) | [Stopword](#stopword) |
-| [Data Augmentation](#data-augmentation) | [Momentum](#momentum) | [STRIPS](#strips) |
-| [Data Manifold](#data-manifold) | [Monotone Convergence](#monotone-convergence) | [Structured Classification](#structured-classification) |
-| [Dead End](#dead-end) | [Monotonic Function](#monotonic-function) | [Subword Tokenization](#subword-tokenization) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Support Vector Machine](#support-vector-machine) |
-| [Decision Boundary](#decision-boundary) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Surrogate Loss](#surrogate-loss) |
-| [Decision Tree](#decision-tree) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Swept Volume](#swept-volume) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Motion Model](#motion-model) | [Symmetric Matrix](#symmetric-matrix) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
-| [Dependency Parsing](#dependency-parsing) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Symmetry Breaking (Weight Initialization)](#symmetry-breaking-weight-initialization) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Syntactic Parsing](#syntactic-parsing) |
-| [Depth-Limited Search](#depth-limited-search) | [Multi-Hop Question Answering](#multi-hop-question-answering) | [T5](#t5) |
-| [Diagonal Matrix](#diagonal-matrix) | [Multiclass Classification](#multiclass-classification) | [Tag Lattice](#tag-lattice) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multiclass Logistic Regression](#multiclass-logistic-regression) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Differential-Drive Robot](#differential-drive-robot) | [Multiclass Perceptron](#multiclass-perceptron) | [Teacher Forcing](#teacher-forcing) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multilayer Perceptron (MLP)](#multilayer-perceptron-mlp) | [Tensor](#tensor) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Gaussian Mixture Model](#gaussian-mixture-model) | [Overfitting](#overfitting) |
+| [Absolute Discounting](#absolute-discounting) | [Generative Likelihood](#generative-likelihood) | [PAC Learning](#pac-learning) |
+| [Accuracy (Classification)](#accuracy-classification) | [Generative Model](#generative-model) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Ackermann Steering](#ackermann-steering) | [Geometric Mean](#geometric-mean) | [Particle Filter](#particle-filter) |
+| [Action Schema](#action-schema) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [PDDL](#pddl) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Penn Treebank](#penn-treebank) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GLUE Benchmark](#glue-benchmark) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Add-One Smoothing](#add-one-smoothing) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Performer (Linear-Complexity Attention)](#performer-linear-complexity-attention) |
+| [Adversarial Example](#adversarial-example) | [Gold Standard (Gold Labels)](#gold-standard-gold-labels) | [Perplexity](#perplexity) |
+| [Adversarial Filtering](#adversarial-filtering) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Agnostic Learning](#agnostic-learning) | [Gradient Clipping](#gradient-clipping) | [Planner Completeness](#planner-completeness) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Gradient Descent](#gradient-descent) | [Planning Graph](#planning-graph) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Graphical Lasso](#graphical-lasso) | [Point Cloud](#point-cloud) |
+| [AlphaGo](#alphago) | [GraphPlan](#graphplan) | [Polar Coordinates](#polar-coordinates) |
+| [Ambiguity in Natural Language](#ambiguity-in-natural-language) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Annotation Artifact](#annotation-artifact) | [Greedy Decoding](#greedy-decoding) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Positional Encoding](#positional-encoding) |
+| [Arity](#arity) | [Grounding / Instantiation](#grounding-instantiation) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Post-Hoc Explanation](#post-hoc-explanation) |
+| [Authorship Attribution](#authorship-attribution) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Posterior Distribution](#posterior-distribution) |
+| [Automatic Differentiation](#automatic-differentiation) | [Hedge Algorithm](#hedge-algorithm) | [Precision Matrix](#precision-matrix) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Backpointer](#backpointer) | [Hidden Layer / Hidden Units](#hidden-layer-hidden-units) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Backpropagation](#backpropagation) | [Hidden Markov Model](#hidden-markov-model) | [Pretraining](#pretraining) |
+| [Bag of Words](#bag-of-words) | [Hierarchical Softmax](#hierarchical-softmax) | [Principal Component Analysis](#principal-component-analysis) |
+| [Banana Distribution](#banana-distribution) | [Hinge Loss](#hinge-loss) | [Prior Distribution](#prior-distribution) |
+| [BART](#bart) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Priority Queue](#priority-queue) |
+| [Basis Function](#basis-function) | [Horizontal Markovization](#horizontal-markovization) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Batch](#batch) | [Huffman Coding](#huffman-coding) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Batch Normalization](#batch-normalization) | [Hyperparameter](#hyperparameter) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Hypothesis-Only Baseline](#hypothesis-only-baseline) | [Probability Density Contour](#probability-density-contour) |
+| [Bayes' Rule](#bayes-rule) | [Image Captioning](#image-captioning) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Importance Sampling](#importance-sampling) | [Program-Aided Language Model](#program-aided-language-model) |
+| [Beam Search](#beam-search) | [In-Context Learning](#in-context-learning) | [Projective Tree](#projective-tree) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [In-Context Learning Score (ICL Score)](#in-context-learning-score-icl-score) | [Prompt Perturbation Analysis (Computation Trace vs. Natural Language)](#prompt-perturbation-analysis-computation-trace-vs-natural-language) |
+| [BERT](#bert) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Indicator Function](#indicator-function) | [Proximal Policy Optimization (PPO)](#proximal-policy-optimization-ppo) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Induction Head](#induction-head) | [Proxy Feature](#proxy-feature) |
+| [Binarization](#binarization) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Quadratic Form](#quadratic-form) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Informed RRT*](#informed-rrt) | [Quiescence Search](#quiescence-search) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Instruction Tuning](#instruction-tuning) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Integrated Gradients](#integrated-gradients) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Random Forest](#random-forest) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Iterative Deepening](#iterative-deepening) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Jensen's Inequality](#jensens-inequality) | [Random Projection](#random-projection) |
+| [Casing (Lowercasing and Truecasing)](#casing-lowercasing-and-truecasing) | [Joint Probability Distribution](#joint-probability-distribution) | [Random Variable](#random-variable) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Rank](#rank) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [K-Means Algorithm](#k-means-algorithm) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Centroid](#centroid) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rationale (Written Reasoning for an Answer)](#rationale-written-reasoning-for-an-answer) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Kernel Function](#kernel-function) | [Ray Casting](#ray-casting) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Recall (Classification)](#recall-classification) |
+| [Chain-of-Thought Prompting](#chain-of-thought-prompting) | [Kinodynamic Planning](#kinodynamic-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Challenge Set](#challenge-set) | [KL Divergence](#kl-divergence) | [Recursive Neural Network (Tree-Structured)](#recursive-neural-network-tree-structured) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Regularization](#regularization) |
+| [Chernoff Bound](#chernoff-bound) | [Latent Textual Explanation](#latent-textual-explanation) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [Chomsky Normal Form](#chomsky-normal-form) | [Latent Variable](#latent-variable) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [CKY Algorithm](#cky-algorithm) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Classical NLP Pipeline](#classical-nlp-pipeline) | [Law of Large Numbers](#law-of-large-numbers) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Layer Normalization](#layer-normalization) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Closed-World Assumption](#closed-world-assumption) | [Learning Rate Schedule](#learning-rate-schedule) | [RoBERTa](#roberta) |
+| [Clustering](#clustering) | [Learning Rate Warmup (Triangular Schedule)](#learning-rate-warmup-triangular-schedule) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Lexical Baseline](#lexical-baseline) | [Saliency Map (Gradient-Based Saliency)](#saliency-map-gradient-based-saliency) |
+| [Collapsed Dependencies](#collapsed-dependencies) | [Lexicalization](#lexicalization) | [Sample Complexity](#sample-complexity) |
+| [Compositionality](#compositionality) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Computation Graph](#computation-graph) | [Likelihood](#likelihood) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Concatenation (of Vectors)](#concatenation-of-vectors) | [LIME (Local Interpretable Model-Agnostic Explanations)](#lime-local-interpretable-model-agnostic-explanations) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Conditional Independence](#conditional-independence) | [Linear Programming](#linear-programming) | [Saturation (Activation Functions)](#saturation-activation-functions) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Linearly Separable](#linearly-separable) | [Scalar Mix (Layer Weighting)](#scalar-mix-layer-weighting) |
+| [Confusion Matrix](#confusion-matrix) | [Lipschitz Continuity](#lipschitz-continuity) | [Scaled Dot-Product Attention (and Other Attention Scores)](#scaled-dot-product-attention-and-other-attention-scores) |
+| [Conjunction Feature](#conjunction-feature) | [Local Explanation](#local-explanation) | [Schur Complement](#schur-complement) |
+| [Consistent Heuristic](#consistent-heuristic) | [Log Likelihood](#log-likelihood) | [Search Statistics](#search-statistics) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Logistic Regression](#logistic-regression) | [Segment Embedding](#segment-embedding) |
+| [Constituency Tests](#constituency-tests) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Selectional Preferences](#selectional-preferences) |
+| [Constituent](#constituent) | [Loss Surface](#loss-surface) | [Self-Ask Prompting](#self-ask-prompting) |
+| [Constituent F1 (Parse Evaluation)](#constituent-f1-parse-evaluation) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Machine Translation](#machine-translation) | [Semantic Parsing](#semantic-parsing) |
+| [Context-Free Grammar](#context-free-grammar) | [Macro Average](#macro-average) | [Semantic Role Labeling](#semantic-role-labeling) |
+| [Contextual Word Representation](#contextual-word-representation) | [Majority-Class Baseline](#majority-class-baseline) | [Sentiment Analysis](#sentiment-analysis) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Marginalization](#marginalization) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Markov Model](#markov-model) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Coordinate Descent](#coordinate-descent) | [Markov's Inequality](#markovs-inequality) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Masked Language Modeling](#masked-language-modeling) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Coreference Resolution](#coreference-resolution) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Skip-Gram Model](#skip-gram-model) |
+| [Counterfactual](#counterfactual) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Covariance Matrix](#covariance-matrix) | [Maximum Entropy Model](#maximum-entropy-model) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Sparse Attention](#sparse-attention) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Mean Squared Error](#mean-squared-error) | [Spectral Theorem](#spectral-theorem) |
+| [Cross-Validation](#cross-validation) | [Minimax Algorithm](#minimax-algorithm) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Crowdsourcing (Data Annotation)](#crowdsourcing-data-annotation) | [Minimum Description Length](#minimum-description-length) | [Statistical Independence](#statistical-independence) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mobile Robot Localization](#mobile-robot-localization) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Data Augmentation](#data-augmentation) | [Model Complexity](#model-complexity) | [Stopword](#stopword) |
+| [Data Manifold](#data-manifold) | [Model Probing](#model-probing) | [STRIPS](#strips) |
+| [Dead End](#dead-end) | [Momentum](#momentum) | [Structured Classification](#structured-classification) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Monotone Convergence](#monotone-convergence) | [Subword Tokenization](#subword-tokenization) |
+| [Decision Boundary](#decision-boundary) | [Monotonic Function](#monotonic-function) | [Support Vector Machine](#support-vector-machine) |
+| [Decision Tree](#decision-tree) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Surrogate Loss](#surrogate-loss) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Swept Volume](#swept-volume) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Matrix](#symmetric-matrix) |
+| [Dependency Parsing](#dependency-parsing) | [Motion Model](#motion-model) | [Symmetric Relation](#symmetric-relation) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetry Breaking (Weight Initialization)](#symmetry-breaking-weight-initialization) |
+| [Depth-Limited Search](#depth-limited-search) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Syntactic Parsing](#syntactic-parsing) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multi-Head Self-Attention](#multi-head-self-attention) | [T5](#t5) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Hop Question Answering](#multi-hop-question-answering) | [Tag Lattice](#tag-lattice) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Multiclass Classification](#multiclass-classification) | [Task Generalization](#task-generalization) |
+| [Differential Score (Layer-Wise Probing)](#differential-score-layer-wise-probing) | [Multiclass Logistic Regression](#multiclass-logistic-regression) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multiclass Perceptron](#multiclass-perceptron) | [Teacher Forcing](#teacher-forcing) |
+| [Directed Acyclic Graph (DAG)](#directed-acyclic-graph-dag) | [Multilayer Perceptron (MLP)](#multilayer-perceptron-mlp) | [Tensor](#tensor) |
 | [Discriminative Model](#discriminative-model) | [Multinomial Distribution](#multinomial-distribution) | [Text Classification (Topic Classification)](#text-classification-topic-classification) |
 | [Distributional Hypothesis](#distributional-hypothesis) | [Multiple-Choice Question Answering](#multiple-choice-question-answering) | [Text Summarization](#text-summarization) |
 | [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multitask Learning](#multitask-learning) | [Text-Based Explanation](#text-based-explanation) |
@@ -132,26 +137,26 @@ All 421 entries, alphabetical. Read down the first column, then down the second,
 | [Epoch](#epoch) | [Neural Text Degeneration](#neural-text-degeneration) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
 | [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Neuron](#neuron) | [True Error / Generalization Error](#true-error-generalization-error) |
 | [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Newton's Method](#newtons-method) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Explainability (Model Interpretability)](#explainability-model-interpretability) | [Next Sentence Prediction](#next-sentence-prediction) | [Unigram Language Model Tokenization](#unigram-language-model-tokenization) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Non-Convex Optimization](#non-convex-optimization) | [Union Bound](#union-bound) |
-| [Extractive Question Answering](#extractive-question-answering) | [Non-Parametric Method](#non-parametric-method) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [F1 Score](#f1-score) | [Normal Equations](#normal-equations) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fairness Criteria (Test Bias and Constant Ratio)](#fairness-criteria-test-bias-and-constant-ratio) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vector Map](#vector-map) |
-| [Faithfulness and Plausibility (of Explanations)](#faithfulness-and-plausibility-of-explanations) | [NP-Hard](#np-hard) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Vertical Markovization](#vertical-markovization) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Objective Function / Training Objective](#objective-function-training-objective) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Weighted Least Squares](#weighted-least-squares) |
-| [Feature Expansion](#feature-expansion) | [Occupancy Grid Map](#occupancy-grid-map) | [Whole-Word Masking](#whole-word-masking) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Odometry](#odometry) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Few-Shot Prompting](#few-shot-prompting) | [One-Hot Encoding](#one-hot-encoding) | [Word Embedding](#word-embedding) |
-| [Fine-Grained Classification](#fine-grained-classification) | [One-vs-All](#one-vs-all) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word2Vec](#word2vec) |
-| [Floating-Point Operations (FLOPs)](#floating-point-operations-flops) | [Oracle Derivation](#oracle-derivation) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Orthogonal Matrix](#orthogonal-matrix) | [XOR Problem](#xor-problem) |
-| [Frontier / Open List](#frontier-open-list) | [Orthogonal Vectors](#orthogonal-vectors) | [Zero-Shot Prompting](#zero-shot-prompting) |
-| [Gaussian Graphical Model](#gaussian-graphical-model) | [Orthonormal Basis](#orthonormal-basis) | [Zero-Sum Game](#zero-sum-game) |
-| [Gaussian Mixture Model](#gaussian-mixture-model) | [Out-of-Vocabulary (OOV) Word](#out-of-vocabulary-oov-word) |  |
-| [Generative Likelihood](#generative-likelihood) | [Overfitting](#overfitting) |  |
+| [Explain-Predict vs. Predict-Explain (Order of Answer and Explanation)](#explain-predict-vs-predict-explain-order-of-answer-and-explanation) | [Next Sentence Prediction](#next-sentence-prediction) | [Unigram Language Model Tokenization](#unigram-language-model-tokenization) |
+| [Explainability (Model Interpretability)](#explainability-model-interpretability) | [Non-Convex Optimization](#non-convex-optimization) | [Union Bound](#union-bound) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Non-Parametric Method](#non-parametric-method) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Extractive Question Answering](#extractive-question-answering) | [Normal Equations](#normal-equations) | [Universal Dependencies](#universal-dependencies) |
+| [F1 Score](#f1-score) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [FActScore (Atomic Factual Precision Score)](#factscore-atomic-factual-precision-score) | [NP-Hard](#np-hard) | [Vector Map](#vector-map) |
+| [Fairness Criteria (Test Bias and Constant Ratio)](#fairness-criteria-test-bias-and-constant-ratio) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [Faithfulness and Plausibility (of Explanations)](#faithfulness-and-plausibility-of-explanations) | [Objective Function / Training Objective](#objective-function-training-objective) | [Vertical Markovization](#vertical-markovization) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Occupancy Grid Map](#occupancy-grid-map) | [Weighted Least Squares](#weighted-least-squares) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Odometry](#odometry) | [Whole-Word Masking](#whole-word-masking) |
+| [Feature Expansion](#feature-expansion) | [One-Hot Encoding](#one-hot-encoding) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [One-vs-All](#one-vs-all) | [Word Embedding](#word-embedding) |
+| [Few-Shot Prompting](#few-shot-prompting) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Fine-Grained Classification](#fine-grained-classification) | [Oracle Derivation](#oracle-derivation) | [Word2Vec](#word2vec) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Orthogonal Matrix](#orthogonal-matrix) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Floating-Point Operations (FLOPs)](#floating-point-operations-flops) | [Orthogonal Vectors](#orthogonal-vectors) | [XOR Problem](#xor-problem) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Orthonormal Basis](#orthonormal-basis) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [Frontier / Open List](#frontier-open-list) | [Out-of-Vocabulary (OOV) Word](#out-of-vocabulary-oov-word) | [Zero-Sum Game](#zero-sum-game) |
+| [Gaussian Graphical Model](#gaussian-graphical-model) |  |  |
 
 ## Concepts
 
@@ -1165,6 +1170,30 @@ The model was never told "multiply, then subtract." It produced those two steps 
 
 ---
 
+<a id="chomsky-normal-form"></a>
+### Chomsky Normal Form
+
+**The Big Idea**: Algebra 2 puts equations into a standard form, such as $ax^2+bx+c=0$, so that a single method (the quadratic formula) works on every case. Chomsky normal form is a standard form for grammar rules, chosen so that a single parsing method works on every grammar. Read the Context-Free Grammar and Binarization entries first.
+
+**General Usage**: A context-free grammar is in **Chomsky normal form** (CNF) when every rule has one of exactly two shapes: a **binary rule**, with exactly two non-terminals on the right ($A\rightarrow B\ C$), or a **lexicon rule**, with exactly one word on the right ($A\rightarrow w$). That forbids unary rules between non-terminals ($A\rightarrow B$), rules with three or more symbols on the right, and rules that mix words with non-terminals. Any context-free grammar can be converted to CNF without changing the set of sentences it generates, in two moves: **bypass each unary chain** (if $A\rightarrow B$ and $B\rightarrow w$, add $A\rightarrow w$ and delete $A\rightarrow B$), and **binarize each long rule** by introducing intermediate symbols (see the Binarization entry). Conversion changes the shape of the trees, so a parse found with the CNF grammar must be mapped back to the original shape. Binarizing the trees of a treebank, as is done before learning a parsing grammar, is close to this but not identical, because unary rules above the word layer are often kept.
+
+**Example.** Convert this grammar (nine rules; lowercase items are words).
+$$
+S\rightarrow NP\ VP,\quad NP\rightarrow DT\ NN,\quad NP\rightarrow NN,\quad VP\rightarrow VBD\ NP\ PP,\quad PP\rightarrow IN\ NP,
+$$
+$$
+DT\rightarrow\text{the},\quad NN\rightarrow\text{cake},\quad VBD\rightarrow\text{ate},\quad IN\rightarrow\text{with}.
+$$
+1. Find the rules that break the two allowed shapes: $NP\rightarrow NN$ (one non-terminal on the right) and $VP\rightarrow VBD\ NP\ PP$ (three symbols on the right). The other seven are already fine.
+2. Bypass the unary rule: since $NP\rightarrow NN$ and $NN\rightarrow\text{cake}$, add $NP\rightarrow\text{cake}$ and delete $NP\rightarrow NN$. (Keep $NN\rightarrow\text{cake}$, because $NP\rightarrow DT\ NN$ still uses $NN$.)
+3. Binarize: replace $VP\rightarrow VBD\ NP\ PP$ by $VP\rightarrow VBD\ X_1$ and $X_1\rightarrow NP\ PP$, where $X_1$ is a new intermediate symbol.
+4. Count: $9-2+3=10$ rules, each binary or a lexicon rule.
+5. Check that the language did not change: both grammars generate exactly $2\times4=8$ sentences (two choices of subject noun phrase, "the cake" or "cake", times $2\times2=4$ choices for the object and the noun phrase inside the prepositional phrase), for instance "the cake ate cake with the cake" (7 words) in both.
+
+**AI/ML Usage**: The textbook CKY Algorithm (see that entry) assumes a grammar in CNF or something close to it: every cell of its chart is filled by trying the ways to split a span into exactly two pieces, which gives its cubic running time in the sentence length. Parser toolkits therefore convert treebank grammars to CNF (for example, the NLTK library provides a `chomsky_normal_form` operation on trees) and convert the resulting parses back afterwards.
+
+---
+
 <a id="cky-algorithm"></a>
 ### CKY Algorithm
 
@@ -1277,6 +1306,24 @@ So $0.95^4 \approx 0.815$: even though every single stage is $95\%$ accurate, th
 Collecting these tallies into a $3\times 3$ grid gives count(the,dog) $=2$, count(dog,bit) $=1$, count(bit,the) $=1$, and every other cell $=0$ — a complete co-occurrence matrix built from nothing but counting adjacent word pairs.
 
 **AI/ML Usage**: A co-occurrence matrix is the shared raw material behind several different word-embedding techniques: the Pointwise Mutual Information matrix that Skip-Gram-with-negative-sampling implicitly factors (see the Matrix Factorization (Word Embeddings) entry below) is built from exactly this kind of table, and GloVe (see that entry) regresses directly on the logarithm of these same counts. Older, pre-neural techniques such as Latent Semantic Analysis likewise start from a co-occurrence-style matrix before compressing it with Singular Value Decomposition (see that entry).
+
+---
+
+<a id="collapsed-dependencies"></a>
+### Collapsed Dependencies
+
+**The Big Idea**: In Algebra 2 you can combine two steps into one: if $y=2x$ and $z=y+1$, then $z=2x+1$ in one step. Collapsed dependencies do the same to a sentence's arrows: a chain "word, then preposition, then word" becomes a single arrow between the two content words, with the preposition written on the arrow as part of its label. Read the Dependency Parsing and Directed Acyclic Graph entries first.
+
+**General Usage**: A **collapsed** dependency representation (the Stanford collapsed dependencies) rewrites an ordinary dependency parse so that small function words, mainly prepositions and conjunctions, are no longer nodes. Instead the word is folded into the label of an arc joining the two content words it connected: head $\to$ preposition $\to$ object becomes head $\to$ object with a label such as `prep_in`. In a coordination the second item is also attached directly to the shared head. The benefit is directness: facts about who did what to whom are read off one arc instead of a chain. The cost is that a word can end up with two parents, so the result is a directed acyclic graph rather than a strict tree, and algorithms that assume one parent per word no longer apply.
+
+**Example.** Take "Maria lives in Paris and Rome" (6 words). The standard parse has 5 arcs (head $\to$ dependent, label): lives $\to$ Maria (`nsubj`), lives $\to$ in (`prep`), in $\to$ Paris (`pobj`), Paris $\to$ and (`cc`), Paris $\to$ Rome (`conj`).
+1. Fold "in" into a label: lives $\to$ in $\to$ Paris becomes lives $\to$ Paris (`prep_in`).
+2. Remove "and" as a node and attach the second place to the verb as well: lives $\to$ Rome (`prep_in`), keeping Paris $\to$ Rome (`conj_and`).
+3. The collapsed parse is lives $\to$ Maria (`nsubj`), lives $\to$ Paris (`prep_in`), lives $\to$ Rome (`prep_in`), Paris $\to$ Rome (`conj_and`): 4 words and 4 arcs.
+4. Count parents of the three non-root words: Maria has 1, Paris has 1, Rome has 2.
+5. A tree on 4 words has $4-1=3$ arcs; 4 arcs means one word is reached twice, so the collapsed form is a DAG, not a tree.
+
+**AI/ML Usage**: Collapsed dependencies were produced by the Stanford parser for relation extraction (pulling facts such as who lives where out of text), because the path between two named entities is shorter and carries the preposition in the label. The Universal Dependencies project (see that entry) later offered a comparable optional "enhanced" layer on top of its ordinary trees.
 
 ---
 
@@ -1474,6 +1521,30 @@ $$
 5. Each word sits under a part-of-speech tag (PRP, VBD, IN, DT, NN), the bottom layer of the tree.
 
 **AI/ML Usage**: Constituents are the basic output unit of constituency parsers in natural language processing. Downstream tasks such as information extraction (pulling out who did what to whom from text) and machine translation (converting between languages with different word order) read the verb, subject, and object off these units rather than off the raw word string.
+
+---
+
+<a id="constituent-f1-parse-evaluation"></a>
+### Constituent F1 (Parse Evaluation)
+
+**The Big Idea**: The F1 Score entry averages precision and recall for predictions. Here the things being predicted are labeled spans of a sentence, so scoring a parse is counting how many members two sets share, as in a Venn diagram of the gold tree's phrases and the parser's phrases. Read the F1 Score, Span (Fencepost Indexing), and Constituent entries first.
+
+**General Usage**: Describe each phrase of a tree by a triple (label, $i$, $j$), meaning "a phrase with this label covering the words between fenceposts $i$ and $j$." The correct (gold) tree gives a set $G$ of triples and the parser's tree gives a set $P$. The number of **matches** is $|G\cap P|$. Then
+$$
+\text{precision}=\frac{|G\cap P|}{|P|},\qquad \text{recall}=\frac{|G\cap P|}{|G|},\qquad F_1=\frac{2\cdot\text{precision}\cdot\text{recall}}{\text{precision}+\text{recall}}=\frac{2\,|G\cap P|}{|G|+|P|}.
+$$
+Standard scoring programs compare only phrase labels and spans: they skip the part-of-speech tags above the words and some punctuation. An **unlabeled** variant ignores the labels and compares spans only.
+
+**Example.** The sentence "The dog saw the cat in the park" has 8 words, so fenceposts $0,\dots,8$. The gold tree attaches "in the park" to the verb phrase. Its phrases are $(S,0,8)$, $(NP,0,2)$, $(VP,2,8)$, $(NP,3,5)$, $(PP,5,8)$, $(NP,6,8)$, so $|G|=6$. A parser instead attaches it to "the cat", which adds one phrase, $(NP,3,8)$, so $|P|=7$.
+1. Matches: all six gold phrases appear in the parser's tree, so $|G\cap P|=6$.
+2. Precision: $\frac{6}{7}\approx0.857$.
+3. Recall: $\frac{6}{6}=1$.
+4. $F_1=\frac{2\times\frac67\times1}{\frac67+1}=\frac{12/7}{13/7}=\frac{12}{13}\approx0.923$.
+5. Shortcut check: $\frac{2\times6}{6+7}=\frac{12}{13}$, the same value.
+
+One attachment mistake costs only about 8 points of F1 here, which is why parsing scores are usually reported to the decimal.
+
+**AI/ML Usage**: Constituency parsers for English are standardly scored with this measure on Section 23 of the Penn Treebank (see the Penn Treebank entry), using the `evalb` program. The F1 values quoted for the refinements in the Vertical Markovization and Horizontal Markovization entries are scores of this kind.
 
 ---
 
@@ -2016,6 +2087,32 @@ In case C the robot's center does not move at all, yet after $1$ second it has t
 
 ---
 
+<a id="differential-score-layer-wise-probing"></a>
+### Differential Score (Layer-Wise Probing)
+
+**The Big Idea**: In Algebra 2 you find how much a quantity changes from one step to the next by subtracting: the new value minus the old value, which is the "rise" over a "run" of 1. A differential score does exactly this for probing, one network layer at a time: it records how much better a probe gets when one more layer is made available to it. It builds on the Model Probing entry and the Scalar Mix (Layer Weighting) entry.
+
+**General Usage**: Let $\text{score}(\ell)$ be the accuracy (or F1 score) of a probe that is allowed to read layers $0$ through $\ell$ of a network. The differential score of layer $\ell$ is
+$$
+\Delta(\ell) = \text{score}(\ell) - \text{score}(\ell - 1),
+$$
+where $\text{score}(-1)$ is a starting baseline (for example, chance). Because the probe at layer $\ell$ can still read every earlier layer, its score does not drop merely because information "fades" in later layers (a small negative $\Delta(\ell)$ can still occur, when a layer adds noise the probe does not handle well). A large $\Delta(\ell)$ means layer $\ell$ added a lot of usable information, and a value near $0$ means it added little. The values can be rescaled, for example by dividing by their total, so that tasks with different score ranges can be compared.
+
+**Example.** A made-up probe on four layers, with a chance baseline of $50$ and cumulative scores $60, 80, 85, 86$.
+
+| Layer $\ell$ | $\text{score}(\ell)$ | $\Delta(\ell)$ | Share of total |
+|---|---|---|---|
+| 0 | 60 | $60 - 50 = 10$ | $10/36 \approx 0.278$ |
+| 1 | 80 | $80 - 60 = 20$ | $20/36 \approx 0.556$ |
+| 2 | 85 | $85 - 80 = 5$ | $5/36 \approx 0.139$ |
+| 3 | 86 | $86 - 85 = 1$ | $1/36 \approx 0.028$ |
+
+Check: $10 + 20 + 5 + 1 = 36 = 86 - 50$, the total gain from baseline to the last layer. Most of the usable information arrives by layer 1.
+
+**AI/ML Usage**: Tenney, Das, and Pavlick (2019) used differential scores to study BERT: they probed each layer cumulatively for tasks such as part-of-speech tagging, parsing, entity labeling, semantic role labeling, and coreference, and compared where in the network each task's gain appears. They reported these beside the learned scalar-mix weights, which measure something different (how much weight a probe places on each layer).
+
+---
+
 <a id="dijkstras-algorithm"></a>
 ### Dijkstra's Algorithm
 
@@ -2034,6 +2131,24 @@ In case C the robot's center does not move at all, yet after $1$ second it has t
 The reconstructed path, following parent pointers back from $G$, is $S \to A \to G$ with total cost $2$ — the genuinely cheapest path, correctly found despite the misleadingly short 1-edge direct route $S\!-\!G$ that cost BFS the right answer in that entry's example.
 
 **AI/ML Usage**: Dijkstra's Algorithm underlies essentially every "find the cheapest route" system that has no advance estimate of remaining distance — used in network routing protocols and in any pathfinding problem with genuinely variable edge costs. Adding such an estimate of the remaining cost (the cost-to-go $G(x)$ from the Cost-to-Come and Cost-to-Go entry in `math_symbols.md`) to steer the search toward the goal faster, while still guaranteeing the optimal path, is exactly the idea behind the A* algorithm.
+
+---
+
+<a id="directed-acyclic-graph-dag"></a>
+### Directed Acyclic Graph (DAG)
+
+**The Big Idea**: A function diagram or flowchart from Algebra 2 draws an arrow from $x$ to $y$ to mean "$y$ is computed from $x$." A directed acyclic graph is such a diagram with one rule: if you follow arrows, you can never return to where you started. The picture needs no new algebra, but the vocabulary comes from graph theory, which goes beyond Algebra 2; read the Graph entry in the math_symbols file first.
+
+**General Usage**: A **directed graph** is a set of nodes joined by arrows. A **cycle** is a route along arrows that returns to its starting node. A **directed acyclic graph** (DAG) is a directed graph with no cycle. Its nodes can always be written in a **topological order**, a list in which every arrow points from an earlier node to a later one. A tree whose arrows point away from the root is a DAG, but a DAG may also give a node more than one incoming arrow (more than one parent). A quick test: a connected structure on $n$ nodes that is a tree has exactly $n-1$ arrows, and any extra arrow means some node has two parents.
+
+**Example.** Take nodes $a,b,c,d$ and arrows $a\to b$, $a\to c$, $b\to d$, $c\to d$.
+1. Count incoming arrows: $a$ has 0, $b$ has 1, $c$ has 1, $d$ has 2.
+2. Build a topological order by repeatedly listing a node with no remaining incoming arrows and removing it: $a$ first; then $b$ and $c$ have none left; then $d$. The order $a,b,c,d$ lists all 4 nodes, so there is no cycle.
+3. There are 4 arrows, but a tree on 4 nodes has only 3, and $d$ has two parents, so this is a DAG that is not a tree.
+4. Count routes from $a$ to $d$: one through $b$, one through $c$, so 2.
+5. Now add the arrow $d\to a$. Every node has an incoming arrow, so step 2 cannot even start (0 of 4 nodes listed). Indeed $a\to b\to d\to a$ is a cycle.
+
+**AI/ML Usage**: The computation graph of a neural network is a DAG, and backpropagation visits its nodes in reverse topological order (see the Computation Graph and Backpropagation entries). Bayesian networks are DAGs by definition (see the Dynamic Bayesian Network entry), and the collapsed dependency graphs used for relation extraction are DAGs rather than trees (see the Collapsed Dependencies entry).
 
 ---
 
@@ -2320,6 +2435,26 @@ Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second s
 
 ---
 
+<a id="explain-predict-vs-predict-explain-order-of-answer-and-explanation"></a>
+### Explain-Predict vs. Predict-Explain (Order of Answer and Explanation)
+
+**The Big Idea**: When a teacher says "show your work," the order matters. If you write the answer first and the work afterward, the work cannot have helped you reach the answer. If you work first and then state the answer, it can. A language model that writes an explanation has the same two options. This builds on the Chain-of-Thought Prompting entry and the Faithfulness and Plausibility (of Explanations) entry.
+
+**General Usage**: A language model writes one word at a time, and each word it has written is available when it writes the next. In **predict-explain**, the model writes the answer first and then an explanation, so the answer is *not* conditioned on the explanation. In **explain-predict**, the model writes the explanation first and then the answer, so the answer *is* conditioned on the explanation. Explain-predict is chain of thought. Only explain-predict can use the written reasoning as extra computation, and an explanation written after the answer can be a justification that has no effect on the answer.
+
+**Example.** Both styles produce the same answer and the same explanation for one question, but in a different order. The explanation is "because Mary hangs out with Danielle and Danielle is a student."
+
+| Style | Output | Explanation words written before the answer |
+|---|---|---|
+| Predict-explain | Mary, because Mary hangs out with Danielle and Danielle is a student. | $0$ |
+| Explain-predict | Because Mary hangs out with Danielle and Danielle is a student, the answer is Mary. | $11$ |
+
+Counting the words of "because Mary hangs out with Danielle and Danielle is a student" gives $11$. In explain-predict, those $11$ words are available when the answer is written, which is where the extra step-by-step computation can come from.
+
+**AI/ML Usage**: Ye and Durrett (2022) compared these two orders, along with prompts that include no explanation, on a synthetic multi-step question-answering test with several language models, and found that the benefit of explain-predict was clear only for the strongest models they tested. Earlier explanation models for natural language inference, such as the original e-SNLI model, generate the explanation after the label (see the Text-Based Explanation entry).
+
+---
+
 <a id="explainability-model-interpretability"></a>
 ### Explainability (Model Interpretability)
 
@@ -2412,6 +2547,34 @@ It ranges from 0 (worst) to 1 (best), and is often reported multiplied by 100. I
 Check against the ordinary average: $\frac{0.8 + 0.5}{2} = 0.65$. The F1 score ($0.615$) is lower, pulled toward the weaker of the two numbers, which is exactly its purpose: a system cannot get a high F1 by being excellent at one and poor at the other.
 
 **AI/ML Usage**: F1 is the standard metric for named-entity recognition, parsing (as the fraction of correct tree nodes), extractive question answering (see the Extractive Question Answering entry), and the probing task suites used to analyze models such as BERT, where every task score is reported as an F1 value so that different tasks can be compared on one scale (see the Model Probing entry).
+
+---
+
+<a id="factscore-atomic-factual-precision-score"></a>
+### FActScore (Atomic Factual Precision Score)
+
+**The Big Idea**: This is a percentage, the same kind of fraction Algebra 2 uses for a test grade: the number of correct answers divided by the number of questions. Here the "questions" are the individual facts inside a piece of generated text, and "correct" means that a trusted source supports the fact.
+
+**General Usage**: To compute a FActScore for one generated passage, first break the passage into short, self-contained claims called atomic facts (see the Hallucination and Grounding entry for how text is decomposed into pieces). Then check each fact against a knowledge source, such as an encyclopedia. The score is
+
+$$
+\text{FActScore} = \frac{\text{number of facts supported by the source}}{\text{total number of facts}}
+$$
+
+A score of 1 means that every fact was supported, and 0 means that none was. Reported scores are usually averaged over many generated passages. A fact that the source does not mention counts as unsupported, even if it happens to be true, so the score measures support, not truth.
+
+**Example.** A generated biography is split into 9 facts. A checker finds 6 supported and 3 unsupported.
+
+| Step | Computation | Result |
+|---|---|---|
+| 1. Count supported facts | given | $6$ |
+| 2. Count all facts | given | $9$ |
+| 3. Divide | $6 \div 9$ | $0.6667$ |
+| 4. Write as a percentage | $0.6667 \times 100$ | $66.7\%$ |
+
+*Check.* The unsupported share is $3 \div 9 = 0.3333$, and $1 - 0.3333 = 0.6667$, which agrees.
+
+**AI/ML Usage**: FActScore is a published way to evaluate the factuality of long text from a large language model, such as a biography written by a chatbot. Large language models are used both to decompose the text into atomic facts and to check each fact against Wikipedia, so the score is itself computed by a model and inherits that model's mistakes in both directions (an unsupported fact marked as supported, or a supported fact marked as unsupported).
 
 ---
 
@@ -2777,6 +2940,32 @@ The single reported benchmark score is the average, $\approx 73.3$ — exactly t
 Choosing $p$ is itself a tradeoff: in a mostly open environment, a larger goal bias is safe, since a direct shot at the goal is usually collision-free and gets there faster. In a maze-like environment with many obstacles, a large goal bias instead wastes iterations — a straight steer toward a distant goal is far more likely to be blocked by an obstacle along a maze-like path, so a smaller goal bias (fewer wasted direct attempts, more exploratory sampling) grows the tree faster overall.
 
 **AI/ML Usage**: Sampling-bias refinements of exactly this kind are standard in real motion-planning software used across robotics research and industry (for example, the widely used Open Motion Planning Library, OMPL) — goal bias and bidirectional growth are two of the simplest and most common such refinements layered on top of a base RRT (or PRM-family) planner, and biasing sampling toward other "useful" regions of a space in more sophisticated ways remains an active area of motion-planning research.
+
+---
+
+<a id="gold-standard-gold-labels"></a>
+### Gold Standard (Gold Labels)
+
+**The Big Idea**: The back of an Algebra 2 textbook has an answer key, and you grade your work by comparing against it. In machine learning, the **gold standard** is the answer key for a dataset: the labels that people assigned, treated as the reference that predictions are graded against. Like a printed answer key, it can occasionally be wrong.
+
+**General Usage**: **Gold labels** (also gold tags, gold trees, gold answers) are the reference annotations for a dataset, written or checked by human annotators. They play two roles: as training targets in supervised learning, and, on held-out data, as the answer key that accuracy, precision, recall, and F1 are computed against. "Gold" is a convention, not a guarantee of truth: annotators disagree and make mistakes, and when the correct label is unclear the score depends on an arbitrary choice. Rows of a confusion matrix are indexed by the gold label (see the Confusion Matrix entry), and a procedure that reads the gold annotation to produce training examples is an oracle (see the Oracle Derivation entry).
+
+**Example.** Score a tagger on "Fed raises interest rates 0.5 percent".
+
+| Word | Gold tag | Predicted tag | Match |
+|---|---|---|---|
+| Fed | NNP | NNP | yes |
+| raises | VBZ | NNS | no |
+| interest | NN | NN | yes |
+| rates | NNS | NNS | yes |
+| 0.5 | CD | CD | yes |
+| percent | NN | NN | yes |
+
+1. Count the matches: 5 of the 6 words.
+2. Accuracy: $\frac56\approx0.833$.
+3. The score depends on the key: if the annotators had written NNS for "raises", the same predictions would score $\frac66=1.0$.
+
+**AI/ML Usage**: Part-of-speech taggers trained on the Penn Treebank are scored by accuracy against its human-assigned gold tags. Error analyses such as Manning (2011) found that more than half of the errors that remain at the top accuracies come from unclear text or inconsistent gold annotation, so the gold standard itself sets a ceiling on what a score can mean.
 
 ---
 
@@ -3278,6 +3467,34 @@ The five lines are joined into one string and given to the model. Suppose the mo
 
 ---
 
+<a id="in-context-learning-score-icl-score"></a>
+### In-Context Learning Score (ICL Score)
+
+**The Big Idea**: This is a subtraction of two numbers on a loss curve, like comparing a function's value at two inputs: $f(500) - f(50)$. If the function is "how wrong the model is at token position $n$ of a text" then the difference tells you how much extra accuracy the model gains between early and late in a text.
+
+**General Usage**: The in-context learning score of a language model is
+
+$$
+\text{ICL score} = \text{loss}(\text{500th token}) - \text{loss}(\text{50th token}),
+$$
+
+where each loss is the model's average negative log probability for the token at that position (see the Negative Log Likelihood entry), averaged over many texts. A loss is better when it is smaller. If the model only gets better in general, both losses fall together and the difference barely changes. If the model gets better at using the earlier text as context, the 500th-token loss falls much more than the 50th-token loss, so the score becomes more negative.
+
+**Example.** Two snapshots of one model during training, with made-up losses.
+
+| Snapshot | loss(50th token) | loss(500th token) | ICL score |
+|---|---|---|---|
+| Early | $3.40$ | $3.35$ | $3.35 - 3.40 = -0.05$ |
+| Later | $3.30$ | $2.50$ | $2.50 - 3.30 = -0.80$ |
+
+The 50th-token loss fell by only $3.40 - 3.30 = 0.10$, and the 500th-token loss fell by $3.35 - 2.50 = 0.85$.
+
+*Check.* A model whose two losses both fell by $0.10$ (to $3.30$ and $3.25$) would have score $3.25 - 3.30 = -0.05$, the same as the early snapshot, as it should for improvement that does not depend on context.
+
+**AI/ML Usage**: The ICL score is used in research on the Induction Head (see that entry). In published training curves for small transformer models, a sudden drop in the score during training coincides with the appearance of induction heads, which is evidence that these attention patterns are one mechanism behind In-Context Learning (see that entry).
+
+---
+
 <a id="independent-and-identically-distributed"></a>
 ### Independent and Identically Distributed
 
@@ -3686,6 +3903,29 @@ New state $(1,\ 0.5,\ 1,\ 1)$: it still moves right at speed $1$, and has picked
 **Example.** Compare two words that are equally frequent overall: "Francisco," which (outside of proper nouns like "San Francisco") almost always follows just the single word "San," versus a word like "go," which follows a huge variety of different preceding words ("want to go," "need to go," "going to go," and so on). Even if both words have identical raw counts in a corpus, ordinary absolute discounting would back off to them equally, while Kneser-Ney smoothing correctly rates "go" as the far more fertile, more broadly useful word to fall back on for a context it has never specifically seen before.
 
 **AI/ML Usage**: Kneser-Ney smoothing is, in practice, the specific smoothing scheme most commonly used whenever n-gram language models (see that entry above) are actually built and deployed, precisely because this fertility-based reweighting produces noticeably better estimates for unseen word sequences than plain absolute discounting alone.
+
+---
+
+<a id="latent-textual-explanation"></a>
+### Latent Textual Explanation
+
+**The Big Idea**: Imagine a student who must write notes before answering an exam question, and then answers using only those notes plus the question. The notes are *part of how the answer is produced*, not a report written afterward. A latent textual explanation is such a set of notes written by a model. It builds on the Text-Based Explanation entry and the Faithfulness and Plausibility (of Explanations) entry.
+
+**General Usage**: In a latent textual explanation system, a *generator* first writes a piece of text (a hypothesis) from the question, and a *classifier* then chooses the answer using the question, the candidate answers, and that text. "Latent" means hidden: no human wrote the target text, so the system learns by itself what to generate. Because the classifier reads the text, the text can influence the answer, which makes it more likely to reflect what the model used. The classifier can still learn to ignore the text, and the text is not guaranteed to be fluent natural language, so it may look like a short list of keywords.
+
+**Example.** A made-up classifier chooses among five answers using scores called logits (the softmax function, see the Softmax Function entry in `math_symbols.md`, turns scores into probabilities). Question: "A good interview after applying for a job may cause you to feel what?"
+
+| Answer | Logit without the text | Probability | Logit with the text | Probability |
+|---|---|---|---|---|
+| hope | 2.0 | 0.429 | 4.0 | 0.847 |
+| hostile | 0.5 | 0.096 | 0.5 | 0.026 |
+| rejection | 1.0 | 0.158 | 1.0 | 0.042 |
+| income | 0.0 | 0.058 | 0.0 | 0.016 |
+| offer | 1.5 | 0.260 | 1.5 | 0.070 |
+
+In each probability column the five values add to $1$. Here the generated text raises the score of "hope" by $2.0$, and the probability of "hope" rises by about $0.42$ (from $0.429$ to $0.847$). If the classifier ignored the text, the two probability columns would be identical.
+
+**AI/ML Usage**: Latcinnik and Berant (2020) built a system of this kind for multiple-choice commonsense question answering, with a language-model generator that writes a hypothesis and a classifier that answers from it, and added training terms that push the hypothesis toward meaningful, non-repetitive text.
 
 ---
 
@@ -5859,6 +6099,28 @@ So `print(answer)` outputs 57. The model's job was only to get the variables and
 
 ---
 
+<a id="prompt-perturbation-analysis-computation-trace-vs-natural-language"></a>
+### Prompt Perturbation Analysis (Computation Trace vs. Natural Language)
+
+**The Big Idea**: To find out whether a recipe step matters, change it and see whether the dish gets worse. Prompt perturbation analysis does this to the examples in a prompt: it damages one part of the written reasoning at a time and measures how much a model's accuracy falls. It builds on the Chain-of-Thought Prompting entry and the Few-Shot Prompting entry.
+
+**General Usage**: A written explanation in a prompt has two separable parts. The *computation trace* is the sequence of actual operations or facts (for example, the extracted letters or the intermediate numbers). The *natural language* is the surrounding wording. To test each part, build prompts that keep one part correct and damage the other, for example a wrong trace with the original wording, or the right trace with the wording removed. Then compare accuracy with the unperturbed (gold) explanation and with a prompt that has no explanation. One way to report the results is *relative accuracy*, each accuracy divided by the gold-explanation accuracy. A large drop shows the model relies on that part of the explanation. If the perturbed prompts still beat the no-explanation prompt, the model is using the damaged explanations only partly.
+
+**Example.** Made-up accuracies on one task:
+
+| Prompt | Accuracy (\%) | Relative accuracy |
+|---|---|---|
+| Gold explanation | 80 | $80/80 = 1.00$ |
+| Wrong trace, gold wording | 56 | $56/80 = 0.70$ |
+| Gold trace, no wording | 48 | $48/80 = 0.60$ |
+| Standard (no explanation) | 20 | $20/80 = 0.25$ |
+
+Damaging the trace costs $80 - 56 = 24$ points, and removing the wording costs $80 - 48 = 32$ points, so both parts matter. Both perturbed prompts ($0.70$ and $0.60$) are still above the standard prompt ($0.25$).
+
+**AI/ML Usage**: Ye and colleagues (2023) applied this kind of test to chain-of-thought prompts on last-letter concatenation, coin-flip tracking, and grade-school math problems, and reported, on a chart of relative accuracy, that damaging either the trace or the wording lowered accuracy relative to the gold explanation. It contrasts with studies of ordinary in-context learning (see the In-Context Learning entry), where wrong labels in the examples sometimes change results very little.
+
+---
+
 <a id="proof-by-contradiction"></a>
 ### Proof by Contradiction
 
@@ -5876,6 +6138,40 @@ So `print(answer)` outputs 57. The model's job was only to get the variables and
 | 4. Conclude | The assumption in Step 1 must be false; therefore, no smallest positive real number exists |
 
 **AI/ML Usage**: This is exactly the proof strategy used to establish Dijkstra's Algorithm's optimality (see the Dijkstra's Algorithm entry in this file): rather than directly demonstrating that every vertex's recorded cost is optimal, the proof assumes a vertex's cost *could* be non-optimal, exhaustively lists the only two ways that could happen (a cheaper route through the Closed Set (Explored Vertices), or a cheaper route through a still-unexplored vertex), and shows both are impossible given what non-negative edge weights and the Priority Queue's extraction order already guarantee.
+
+---
+
+<a id="proximal-policy-optimization-ppo"></a>
+### Proximal Policy Optimization (PPO)
+
+**The Big Idea**: Policy-improvement methods repeatedly change a model a little so that actions with good outcomes become more probable. The risk is changing it too much in one step. PPO limits the size of each step with a clamp, in the same spirit as the function $\min$ and $\max$ combine to keep a number inside an interval (see the Max Function entry in the math_symbols file). It is a leap beyond Algebra 2 because it builds on probability and Reinforcement Learning ideas (see the Reinforcement Learning from Human Feedback entry first).
+
+**General Usage**: Let $\pi_{\text{old}}$ be the model before an update and $\pi_{\text{new}}$ the model being updated. For an action $a$ taken in situation $s$, the probability ratio is
+
+$$
+\rho = \frac{\pi_{\text{new}}(a \mid s)}{\pi_{\text{old}}(a \mid s)}
+$$
+
+and $A$ is the advantage, a number that is positive if the action turned out better than expected and negative if worse. The PPO clipped objective, which training tries to increase, is
+
+$$
+\min\big(\rho A,\ \text{clip}(\rho,\, 1-\epsilon,\, 1+\epsilon)\, A\big),
+$$
+
+where $\text{clip}(\rho, 1-\epsilon, 1+\epsilon)$ forces $\rho$ into the interval from $1-\epsilon$ to $1+\epsilon$ and $\epsilon$ is a small constant such as $0.2$. The clamp removes the incentive to push the ratio far from 1 in a single update.
+
+**Example.** Take $\epsilon = 0.2$, so the allowed interval for $\rho$ is $[0.8,\ 1.2]$.
+
+| Case | $\rho$ | $A$ | $\rho A$ | $\text{clip}(\rho)\,A$ | Objective (the smaller) |
+|---|---|---|---|---|---|
+| Good action made much more likely | $1.5$ | $2$ | $3.0$ | $1.2 \times 2 = 2.4$ | $2.4$ |
+| Good action made less likely | $0.5$ | $2$ | $1.0$ | $0.8 \times 2 = 1.6$ | $1.0$ |
+| Bad action made much more likely | $1.5$ | $-2$ | $-3.0$ | $1.2 \times (-2) = -2.4$ | $-3.0$ |
+| Small change | $1.1$ | $2$ | $2.2$ | $1.1 \times 2 = 2.2$ | $2.2$ |
+
+In the first row the gain is capped at $2.4$ instead of $3.0$, so there is no reward for pushing the ratio past $1.2$. In the third row the smaller value $-3.0$ is kept, so the full penalty applies to a bad action that became more likely.
+
+**AI/ML Usage**: PPO is the reinforcement learning algorithm used in the RL step of Reinforcement Learning from Human Feedback (see that entry), where the "action" is a piece of text written by the language model and the reward comes from a learned reward model. It is usually combined with a penalty on the KL Divergence (see that entry) between the updated model and the original model, which keeps the language model close to where it started.
 
 ---
 
@@ -6067,6 +6363,25 @@ Running more playouts from $s'$ and folding each new outcome into the running av
 **Check.** Plain RRT would have given $x_{new}$ cost $7$ and left $R$ at $8.606$; RRT* lowers them to $5.828$ and $8.064$. A smaller rewiring case: vertex $B$ has cost $10$ via parent $A$; a new vertex $N$ has cost $6$ and the edge $N\to B$ has length $3$; since $6+3=9<10$, $B$'s parent changes from $A$ to $N$ and its cost becomes $9$.
 
 **AI/ML Usage**: RRT* is a standard optimal motion planner for robot arms, mobile robots and vehicles, available in planning libraries such as OMPL; variants such as Informed RRT* build on it (see that entry). Compared with plain RRT, its trees fan out from the start and its path cost, and trial-to-trial variance of that cost, both fall as samples are added, while plain RRT's cost plateaus above the optimum.
+
+---
+
+<a id="rationale-written-reasoning-for-an-answer"></a>
+### Rationale (Written Reasoning for an Answer)
+
+**The Big Idea**: A rationale is the "show your work" part of a worked problem: the lines that lead from the question to the answer. Algebra 2 problems that ask you to justify each step have a rationale for each step. This builds on the Chain-of-Thought Prompting entry.
+
+**General Usage**: A rationale is a written explanation of how an answer is reached, usually in natural language, sometimes mixed with formulas or code. A dataset can include rationales written by people next to each question and answer, and a model can be trained or prompted to produce a rationale before it states its answer. Rationales are most useful where intermediate steps are needed, such as arithmetic and multi-step questions, because each step is small and checkable.
+
+**Example.** The question: from a pack of 52 cards, two cards are drawn together at random. What is the probability that both are kings? A rationale for it:
+
+1. The number of ways to draw 2 of the 52 cards is $\binom{52}{2} = \frac{52 \times 51}{2} = 1326$ (see the Binomial Coefficient entry in `math_symbols.md`).
+2. The number of ways to draw 2 of the 4 kings is $\binom{4}{2} = \frac{4 \times 3}{2} = 6$.
+3. The probability is $\frac{6}{1326} = \frac{1}{221}$, because dividing the top and bottom by $6$ gives $\frac{1}{221}$.
+
+Each line can be checked on its own, which a bare answer of $\frac{1}{221}$ would not allow.
+
+**AI/ML Usage**: Ling and colleagues (2017) collected math word problems with human-written rationales and trained a model to generate the rationale as well as the answer. The same idea underlies chain-of-thought prompting, where the examples in a prompt include rationales (see the Chain-of-Thought Prompting entry).
 
 ---
 
@@ -7070,6 +7385,30 @@ Only the masked spans (tagged by their sentinels) appear in the target — the u
 
 ---
 
+<a id="task-generalization"></a>
+### Task Generalization
+
+**The Big Idea**: In Algebra 2 a function fitted to some data points is judged by how it behaves at inputs it has never seen. Task generalization is the same test at a larger scale: the unseen "input" is an entire kind of task.
+
+**General Usage**: A model shows task generalization when, after being trained on a collection of tasks, it performs well on a task of a type that was not in that collection, given only an instruction for the new task and no training examples of it. The test is only fair if the held-out tasks are really different from the training tasks, so evaluations often hold out whole families of tasks (for example, every data set of one task type) instead of single data sets. Success is measured by accuracy on the held-out tasks, compared with a baseline model that was not trained this way.
+
+**Example.** A model is trained on many tasks, then tested on 4 held-out tasks and compared with a baseline model that was not trained this way. Made-up accuracies:
+
+| Held-out task | Accuracy, baseline | Accuracy, trained model | Gain |
+|---|---|---|---|
+| 1 | $0.40$ | $0.52$ | $0.12$ |
+| 2 | $0.55$ | $0.60$ | $0.05$ |
+| 3 | $0.30$ | $0.41$ | $0.11$ |
+| 4 | $0.50$ | $0.57$ | $0.07$ |
+
+Average for the baseline: $(0.40 + 0.55 + 0.30 + 0.50) \div 4 = 1.75 \div 4 = 0.4375$. Average for the trained model: $(0.52 + 0.60 + 0.41 + 0.57) \div 4 = 2.10 \div 4 = 0.525$. The gain is $0.525 - 0.4375 = 0.0875$.
+
+*Check.* The four gains add to $0.12 + 0.05 + 0.11 + 0.07 = 0.35$, and $0.35 \div 4 = 0.0875$.
+
+**AI/ML Usage**: Task generalization is the goal of Instruction Tuning (see that entry). Models in this line of work are fine-tuned on many data sets, each written as a natural-language instruction with its answer, and are then evaluated on held-out task families such as natural language inference (see the Textual Entailment entry), coreference, and sentence completion, using only a new instruction for each. Larger numbers of training tasks have been reported to keep raising held-out performance.
+
+---
+
 <a id="taylor-expansion-taylors-theorem"></a>
 ### Taylor Expansion / Taylor's Theorem
 
@@ -7461,6 +7800,28 @@ The split `low` + `er` has the highest score, so it is chosen, even though the w
 **Example.** In principle, this theorem guarantees that even a comparatively simple, single-hidden-layer network $f(\mathbf{x};\mathbf{w},V)$ could theoretically learn to approximate an extremely complicated function — like the exact rule mapping raw pixel values directly to correct image labels — remarkably well, given a sufficiently, possibly enormously large number of hidden neurons to work with.
 
 **AI/ML Usage**: This theorem is why neural networks are described as extraordinarily powerful, flexible model families in principle — but in practice, real neural networks tend to use many separate layers (deep networks) rather than one single, extremely wide layer, since deep, layered architectures have consistently proven both easier to actually train successfully and more efficient in practice than trying to rely on one single, impractically enormous hidden layer instead.
+
+---
+
+<a id="universal-dependencies"></a>
+### Universal Dependencies
+
+**The Big Idea**: Using one unit system everywhere (meters, not a different length unit per country) lets measurements from different places be compared directly. Universal Dependencies does this for grammar: one fixed vocabulary of word categories and arrow labels is used to describe sentences in many languages. Read the Dependency Parsing entry first.
+
+**General Usage**: **Universal Dependencies** (UD) is a project that publishes dependency treebanks (see the Treebank entry) for many languages, dozens at the start and well over a hundred in recent releases, all annotated with the same inventory: one set of part-of-speech tags (DET, NOUN, AUX, VERB, ADP, PUNCT, and so on) and one set of arc labels (`nsubj` for a subject, `obl` for an oblique noun phrase, `det`, `case`, `aux`, `punct`, and so on). A language-specific variant is written after a colon, as in `nsubj:pass` (the subject of a passive verb). A design choice of UD is that content words are heads and function words hang from them: a preposition is a dependent of its noun, attached with the label `case`. Other schemes, including the one in the Dependency Parsing example, make the preposition the head. That difference is a convention between annotation schemes, not a fact about a language.
+
+**Example.** Annotate "The dog was chased by the cat ." (8 tokens, including the period) with the root "chased".
+1. `det`: dog $\to$ The.
+2. `nsubj:pass`: chased $\to$ dog.
+3. `aux:pass`: chased $\to$ was.
+4. `obl`: chased $\to$ cat.
+5. `case`: cat $\to$ by (the noun is the head of the preposition).
+6. `det`: cat $\to$ the.
+7. `punct`: chased $\to$ the period.
+
+Check: the 7 non-root tokens each have exactly one parent, and there are 7 arcs for 8 tokens. The labels used are 6 distinct ones (`aux:pass`, `case`, `det`, `nsubj:pass`, `obl`, `punct`). The same sentence in Czech uses the labels `nsubj:pass`, `aux:pass`, `obl`, and `punct`, and all 4 of them are in the English list, which is the point of a shared inventory.
+
+**AI/ML Usage**: Multilingual dependency parsers are trained and compared on UD treebanks. The CoNLL 2017 and 2018 shared tasks asked systems to parse raw text in dozens of UD languages, and toolkits such as UDPipe and Stanza ship parsers for many UD languages. Because the labels agree across languages, a parser trained on one language can be applied to a related language with little or no labeled data of its own (cross-lingual transfer).
 
 ---
 
