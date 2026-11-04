@@ -7,62 +7,63 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 224 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 227 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Greater Than / Less Than | Halfspace to Probabilistic Completeness Bound | Probability / Probability Density to Zero-One Loss |
+| Absolute Value to Greater Than / Less Than | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probability / Probability Density](#probability-probability-density) |
-| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability Simplex](#probability-simplex) |
-| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Product Notation](#product-notation) |
-| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Progress Radius](#progress-radius) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Proportional To](#proportional-to) |
-| [Alignment Model Distribution](#alignment-model-distribution) | [Hypothesis](#hypothesis) | [Pseudo-Inverse](#pseudo-inverse) |
-| [All-Ones Vector](#all-ones-vector) | [Identity Matrix](#identity-matrix) | [Psi, uppercase](#psi-uppercase) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [If and Only If](#if-and-only-if) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Implies Arrow](#implies-arrow) | [Query, Key, and Value](#query-key-and-value) |
-| [Approximately Equal](#approximately-equal) | [Importance Weight](#importance-weight) | [Question-Mark Relation](#question-mark-relation) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Index Range Colon](#index-range-colon) | [Real Numbers](#real-numbers) |
-| [Assignment Arrow](#assignment-arrow) | [Infinity](#infinity) | [Receptive Field](#receptive-field) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Initial Distribution](#initial-distribution) | [Regression Function](#regression-function) |
-| [Attention Operator](#attention-operator) | [Initial State](#initial-state) | [ReLU](#relu) |
-| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [Rotation Matrix](#rotation-matrix) |
-| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Sample Mean Overbar](#sample-mean-overbar) |
-| [Best Solution Cost](#best-solution-cost) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
-| [Beta](#beta) | [Label](#label) | [Sampling Notation](#sampling-notation) |
-| [Bias Term](#bias-term) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
-| [Big-O Notation](#big-o-notation) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Binary Label Set](#binary-label-set) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
-| [Binomial Coefficient](#binomial-coefficient) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
-| [Blocks World](#blocks-world) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
-| [Cartesian Product](#cartesian-product) | [Limit](#limit) | [Set Intersection](#set-intersection) |
-| [Chart Score](#chart-score) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
-| [CLS Token](#cls-token) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
-| [Concept Class](#concept-class) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
-| [Conditional Bar](#conditional-bar) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
-| [Configuration Space](#configuration-space) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Margin](#margin) | [Sine and Cosine](#sine-and-cosine) |
-| [Connection Radius Constant](#connection-radius-constant) | [Mask Token](#mask-token) | [Softmax Function](#softmax-function) |
-| [Cosine Similarity](#cosine-similarity) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix Entry](#matrix-entry) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Covariance](#covariance) | [Matrix Transpose](#matrix-transpose) | [Split Point](#split-point) |
-| [Curvature (Path)](#curvature-path) | [Max Function](#max-function) | [Stack Notation](#stack-notation) |
-| [Data Distribution](#data-distribution) | [Mean](#mean) | [Standard Deviation](#standard-deviation) |
-| [Dataset](#dataset) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Delta, lowercase](#delta-lowercase) | [Min Function](#min-function) | [State Space](#state-space) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mistake Bound](#mistake-bound) | [State Transition Function](#state-transition-function) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Model Parameters](#model-parameters) | [Step Size](#step-size) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Mu](#mu) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [N-Gram](#n-gram) | [Stride](#stride) |
-| [Element-of Symbol](#element-of-symbol) | [Nabla](#nabla) | [Subset](#subset) |
-| [Element-wise Operations](#element-wise-operations) | [Natural Numbers](#natural-numbers) | [Summation](#summation) |
-| [Ellipsis](#ellipsis) | [Negation Overbar](#negation-overbar) | [Superscript Example Index](#superscript-example-index) |
-| [ELU](#elu) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Tag Set](#tag-set) |
-| [Emission Matrix](#emission-matrix) | [Normal Distribution Notation](#normal-distribution-notation) | [Tanh](#tanh) |
-| [Empty Set](#empty-set) | [Not Equal](#not-equal) | [TF-IDF](#tf-idf) |
-| [Epsilon](#epsilon) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
+| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
+| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
+| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
+| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
+| [Alignment Model Distribution](#alignment-model-distribution) | [Hypothesis](#hypothesis) | [Proportional To](#proportional-to) |
+| [All-Ones Vector](#all-ones-vector) | [Identity Matrix](#identity-matrix) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Implies Arrow](#implies-arrow) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Approximately Equal](#approximately-equal) | [Importance Weight](#importance-weight) | [Query, Key, and Value](#query-key-and-value) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Index Range Colon](#index-range-colon) | [Question-Mark Relation](#question-mark-relation) |
+| [Assignment Arrow](#assignment-arrow) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
+| [Attention Operator](#attention-operator) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
+| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [ReLU](#relu) |
+| [Belief](#belief) | [Intermediate-Goal Heading](#intermediate-goal-heading) | [Rotation Matrix](#rotation-matrix) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Inverse Hessian](#inverse-hessian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Best Solution Cost](#best-solution-cost) | [Jacobian](#jacobian) | [Sample Mean Overbar](#sample-mean-overbar) |
+| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
+| [Bias Term](#bias-term) | [Label](#label) | [Sampling Notation](#sampling-notation) |
+| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
+| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
+| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
+| [Chart Score](#chart-score) | [Limit](#limit) | [Set Intersection](#set-intersection) |
+| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
+| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
+| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
+| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
+| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sine and Cosine](#sine-and-cosine) |
+| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Softmax Function](#softmax-function) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Split Point](#split-point) |
+| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Stack Notation](#stack-notation) |
+| [Dataset](#dataset) | [Mean](#mean) | [Standard Deviation](#standard-deviation) |
+| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [State Space](#state-space) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Transition Function](#state-transition-function) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [Step Size](#step-size) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stride](#stride) |
+| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Subset](#subset) |
+| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Summation](#summation) |
+| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Superscript Example Index](#superscript-example-index) |
+| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Tag Set](#tag-set) |
+| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Tanh](#tanh) |
+| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [TF-IDF](#tf-idf) |
+| [Error Function](#error-function) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
 | [Error Signal](#error-signal) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
 | [Eta](#eta) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
 | [Euclidean Norm](#euclidean-norm) | [Outer Product](#outer-product) | [Training Set](#training-set) |
@@ -78,14 +79,14 @@ All 224 entries, alphabetical. Read down the first column, then down the second,
 | [Function Composition](#function-composition) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
 | [Function Mapping Arrow](#function-mapping-arrow) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
 | [Gain](#gain) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
-| [Gamma](#gamma) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gaussian CDF](#gaussian-cdf) | [Positional Embedding](#positional-embedding) | [Viterbi Score](#viterbi-score) |
-| [GeLU](#gelu) | [Positional Feature Function](#positional-feature-function) | [Vocabulary](#vocabulary) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Potential Function](#potential-function) | [Weight Vector](#weight-vector) |
-| [Goal Set](#goal-set) | [Precedence Relation](#precedence-relation) | [Word Alignment Variable](#word-alignment-variable) |
-| [Gradient](#gradient) | [Predicted Belief](#predicted-belief) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Graph](#graph) | [Prime Notation](#prime-notation) | [Zero-One Loss](#zero-one-loss) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |  |
+| [Gamma](#gamma) | [Plan Notation](#plan-notation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gaussian CDF](#gaussian-cdf) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
+| [GeLU](#gelu) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
+| [Goal Set](#goal-set) | [Potential Function](#potential-function) | [Word Alignment Variable](#word-alignment-variable) |
+| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Graph](#graph) | [Predicted Belief](#predicted-belief) | [Zero-One Loss](#zero-one-loss) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) |  |
 
 ## Symbols
 
@@ -937,6 +938,35 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter eps
 
 ---
 
+<a id="error-function"></a>
+### Error Function — `erf`
+Symbol: erf, written as three plain lowercase letters (short for "error function"); there is no special character  
+On macOS: type normally from the keyboard; in LaTeX write `\operatorname{erf}` so it prints upright rather than as three italic variables
+
+**The Big Idea**: This is function notation, $f(x)$, from Algebra 2: a name, a number going in, a number coming out. What is new is that the number coming out is an area under a bell curve, which is calculus, so the formula inside is beyond Algebra 2. Read the Gaussian CDF entry first for the same idea expressed for the standard bell curve, and the Integral entry for what an area under a curve means.
+
+**General Usage**: $\operatorname{erf}(z)$ is defined as
+
+$$
+\operatorname{erf}(z) = \frac{2}{\sqrt{\pi}} \int_0^z e^{-t^2}\, dt .
+$$
+
+It measures the area under the curve $e^{-t^2}$ (a bell shape, see the Euler's Number / Exponential Function entry) from $0$ out to $z$, scaled so that the area from $0$ out to infinity comes to exactly $1$. It is an odd function: $\operatorname{erf}(-z) = -\operatorname{erf}(z)$, and its values run from $-1$ to $1$. It is related to the Gaussian CDF by $\Phi(x) = \tfrac{1}{2}\left[1 + \operatorname{erf}\!\left(x/\sqrt{2}\right)\right]$. It has no simple closed-form formula, so its values are taken from a table or a library routine.
+
+**Example.** Find the area under $e^{-t^2}$ from $-1$ to $1$.
+
+1. The unscaled area from $0$ to $z$ equals $\tfrac{\sqrt{\pi}}{2}\operatorname{erf}(z)$, which follows by multiplying the definition by $\tfrac{\sqrt{\pi}}{2}$.
+2. The curve is symmetric about $0$, so the area from $-1$ to $1$ is twice the area from $0$ to $1$.
+3. That gives $2 \cdot \tfrac{\sqrt{\pi}}{2}\operatorname{erf}(1) = \sqrt{\pi}\,\operatorname{erf}(1)$.
+4. From a table, $\operatorname{erf}(1) \approx 0.8427$ and $\sqrt{\pi} \approx 1.7725$.
+5. The area is about $1.7725 \times 0.8427 \approx 1.4937$.
+
+Check against the Gaussian CDF: $\Phi(1) = \tfrac{1}{2}\left[1 + \operatorname{erf}(0.7071)\right] \approx \tfrac{1}{2}\left[1 + 0.6827\right] = 0.8413$, matching the familiar value of about $84\%$.
+
+**AI/ML Usage**: In a particle filter that uses a handcrafted sensor model made of a Gaussian band plus flat plateaus, the model's values must be scaled so the whole curve has area $1$ (see the Normalization of a Probability Distribution entry in the math_concepts file). The flat parts are rectangles, whose areas are height times width, and the Gaussian part is computed with $\operatorname{erf}$. The same function appears in the GeLU activation (see that entry), which is written with $\Phi$ and so with $\operatorname{erf}$.
+
+---
+
 <a id="error-signal"></a>
 ### Error Signal — `err(𝐳)`
 Symbol: none — written as ordinary text "err" applied to a bold vector z  
@@ -1549,6 +1579,27 @@ On macOS: press Option+B
 **Example.** For the constant function $f(x)=2$ between $x=0$ and $x=3$, the "area under the curve" is just a rectangle of width 3 and height 2, so $\int_0^3 2\,dx = 3 \times 2 = 6$. This simple rectangular case is one of the few integrals you can compute using nothing but the ordinary area formula from geometry, without needing calculus techniques.
 
 **AI/ML Usage**: Underlies the mathematics of continuous probability distributions used throughout machine learning, particularly wherever a model deals with continuous, real-numbered outcomes rather than a fixed list of discrete categories. Computing the exact probability that some continuous quantity falls within a certain range technically requires an integral of its probability density function; in practice, ML systems rarely compute integrals directly by hand — this is calculus, generally beyond an Algebra 2 background — but the concept underlies formulas that ML researchers derive when reasoning mathematically about continuous probability distributions.
+
+---
+
+<a id="intermediate-goal-heading"></a>
+### Intermediate-Goal Heading — `θ_int`
+Symbol: θ with the subscript "int" (short for "intermediate"); θ is the lowercase Greek letter theta. A lookalike to avoid is the script theta ϑ  
+On macOS: open the character picker (Fn/🌐), search "greek small letter theta" and pick the plain θ (not the script form); type the subscript as ordinary letters, or write `\theta_{\text{int}}` in LaTeX
+
+**The Big Idea**: Algebra 2 already uses a letter with a small subscript to name a specific value, such as $x_1$ and $x_2$ for two different points. $\theta_{\text{int}}$ is the same naming habit applied to an angle: it is the angle (measured in radians or degrees from a fixed reference direction) that points from a vehicle toward a nearby target. See the Pure Pursuit entry in the math_concepts file for where it is used.
+
+**General Usage**: A vehicle has a heading $\theta$, the direction its front is pointing. $\theta_{\text{int}}$ is the heading the vehicle would need in order to point directly at its current intermediate goal (a nearby target point, not the final destination). The difference $\theta_{\text{int}} - \theta$ is the heading error. When the two angles are equal, the vehicle is already pointing at the target and the heading error is $0$.
+
+**Example.** A car points along heading $\theta = 0.2$ radians. Its intermediate goal lies in the direction $\theta_{\text{int}} = 0.5$ radians.
+
+$$
+\theta_{\text{int}} - \theta = 0.5 - 0.2 = 0.3 \text{ radians}
+$$
+
+The car must turn left (toward larger angles) by $0.3$ radians to face the target. If instead $\theta_{\text{int}} = 0.2$, then $0.2 - 0.2 = 0$ and no turn is needed.
+
+**AI/ML Usage**: In mobile-robot and self-driving-car path following, $\theta_{\text{int}}$ is an input to the pure pursuit steering rule $c = f(\theta, \theta_{\text{int}})$, which converts the two headings into a path curvature (see the Pure Pursuit entry in the math_concepts file and the Curvature (Path) entry in this file).
 
 ---
 
@@ -2380,6 +2431,35 @@ On macOS: press Option+P for π directly; the subscript digit is typed right aft
 **Example.** If comparing two treatment groups in a study, you might call one $\pi_1$ = "received the new medicine" and the other $\pi_2$ = "received a placebo" — simply names for the two groups, unrelated to the number $3.14159\ldots$
 
 **AI/ML Usage**: Occasionally used to label distinct subgroups when analyzing a dataset — for example, checking whether a model performs equally well for different demographic groups, an important part of testing an ML system for fairness. Note this is a completely different, unrelated use of the letter $\pi$ from its far more common ML meaning in reinforcement learning, where $\pi$ instead denotes a "policy" — an agent's overall strategy for choosing which action to take in every possible state — a usage this particular glossary entry doesn't cover.
+
+---
+
+<a id="plan-notation"></a>
+### Plan Notation — `π, π[i], π^g, π^l`
+Symbol: π (Greek small letter pi) for a plan, written as a list; square brackets with an index, such as π[i], pick out one entry; a small raised g or l (as in π^g and π^l) labels a global or a local plan. Do not confuse π here with the number 3.14159.  
+On macOS: Option + p types π; the brackets and the letters g and l are ordinary keyboard characters.
+
+**The Big Idea**: Algebra 2 already works with sequences: a list of numbers such as 3, 7, 11 where each position has a number. A plan is a sequence in which each entry is an action instead of a number. The notation π[i] is the same idea as the term $a_i$ of a sequence, written with square brackets so that the index sits on the same line as the letter.
+
+**General Usage**: A **plan** is an ordered list of $N$ steps. It is written $\pi = [a^1, a^2, \dots, a^N]$, where each $a^k$ is an action (or, for a route, a place to be). The expression $\pi[i]$ means "the entry in position $i$ of the list $\pi$". In the convention used by planning texts that count from 1, $\pi[1]$ is the first entry and $\pi[N]$ is the last. A raised letter on $\pi$ says what kind of plan it is: $\pi^g$ is a **global plan** (a list of intermediate places to pass through, chosen using only a map) and $\pi^l$ is a **local plan** (a list of short-term actions, chosen using the latest sensor information as well). See the Global Planner and Local Planner entry in the math_concepts file.
+
+**Example.** Suppose a car's plan is made of three steering commands:
+
+$$
+\pi = [\text{left},\ \text{straight},\ \text{straight}]
+$$
+
+Then $N = 3$ and
+
+| Expression | Value |
+|---|---|
+| $\pi[1]$ | left |
+| $\pi[2]$ | straight |
+| $\pi[3]$ | straight |
+
+If the car carries out only the first entry, the action it executes is $a_t = \pi[1] = \text{left}$. If each action has a score and the scores are $3, 4, 4$, then the total score of the plan is the sum $\sum_{i=1}^{3} f(\pi[i]) = 3 + 4 + 4 = 11$ (see the Summation entry in this file).
+
+**AI/ML Usage**: Plans written as lists appear in receding-horizon control, also called model predictive control, where a robot or vehicle computes a whole list of future actions, executes only $\pi[1]$, and recomputes at the next step (see the Optimal (Receding-Horizon) Local Planning entry in the math_concepts file). The same list notation appears in robot navigation systems that keep a global route $\pi^g$ and a local plan $\pi^l$ at the same time.
 
 ---
 

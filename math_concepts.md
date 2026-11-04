@@ -7,147 +7,156 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 410 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 436 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Generative Model | Generic Response Problem (Lack of Diversity) to Overfitting | PAC Learning to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to Glorot / Xavier Initialization | GloVe (Global Vectors for Word Representation) to Overfitting | PAC Learning to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [PAC Learning](#pac-learning) |
-| [Absolute Discounting](#absolute-discounting) | [Geometric Mean](#geometric-mean) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |
-| [Accuracy (Classification)](#accuracy-classification) | [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
-| [Ackermann Steering](#ackermann-steering) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Action Schema](#action-schema) | [GLUE Benchmark](#glue-benchmark) | [Particle Filter](#particle-filter) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [PDDL](#pddl) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
-| [Add-One Smoothing](#add-one-smoothing) | [Gradient Clipping](#gradient-clipping) | [Penn Treebank](#penn-treebank) |
-| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Gradient Descent](#gradient-descent) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Agglutinating Language](#agglutinating-language) | [Grammatical Case](#grammatical-case) | [Perplexity](#perplexity) |
-| [Agnostic Learning](#agnostic-learning) | [Graphical Lasso](#graphical-lasso) | [PersonaChat](#personachat) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [GraphPlan](#graphplan) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [AlphaGo](#alphago) | [Greedy Decoding](#greedy-decoding) | [Planner Completeness](#planner-completeness) |
-| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Planning Graph](#planning-graph) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Grounding / Instantiation](#grounding-instantiation) | [Point Cloud](#point-cloud) |
-| [Arity](#arity) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Polar Coordinates](#polar-coordinates) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Authorship Attribution](#authorship-attribution) | [Hedge Algorithm](#hedge-algorithm) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Automatic Differentiation](#automatic-differentiation) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Positional Encoding](#positional-encoding) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hidden Markov Model](#hidden-markov-model) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Backpointer](#backpointer) | [Hierarchical Softmax](#hierarchical-softmax) | [Posterior Distribution](#posterior-distribution) |
-| [Backpropagation](#backpropagation) | [Hinge Loss](#hinge-loss) | [Precision Matrix](#precision-matrix) |
-| [Bag of Words](#bag-of-words) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [Banana Distribution](#banana-distribution) | [HMM Alignment Model](#hmm-alignment-model) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [BART](#bart) | [Horizontal Markovization](#horizontal-markovization) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
-| [Basis Function](#basis-function) | [Hyperparameter](#hyperparameter) | [Principal Component Analysis](#principal-component-analysis) |
-| [Batch](#batch) | [IBM Model 1](#ibm-model-1) | [Prior Distribution](#prior-distribution) |
-| [Batch Normalization](#batch-normalization) | [Importance Sampling](#importance-sampling) | [Priority Queue](#priority-queue) |
-| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [In-Context Learning](#in-context-learning) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Bayes' Rule](#bayes-rule) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [Bayesian State Estimation](#bayesian-state-estimation) | [Indicator Function](#indicator-function) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Beam Search](#beam-search) | [Induction Head](#induction-head) | [Probability Density Contour](#probability-density-contour) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
-| [BERT](#bert) | [Information Retrieval](#information-retrieval) | [Projective Tree](#projective-tree) |
-| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Informed RRT*](#informed-rrt) | [Proof by Contradiction](#proof-by-contradiction) |
-| [Bias Amplification](#bias-amplification) | [Instruction Tuning](#instruction-tuning) | [Quadratic Form](#quadratic-form) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Quiescence Search](#quiescence-search) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Binarization](#binarization) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [BIO Tagging](#bio-tagging) | [Iterative Deepening](#iterative-deepening) | [Random Forest](#random-forest) |
-| [BLEU Score](#bleu-score) | [Jensen's Inequality](#jensens-inequality) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Joint Probability Distribution](#joint-probability-distribution) | [Random Projection](#random-projection) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Variable](#random-variable) |
-| [Bradley-Terry Model](#bradley-terry-model) | [K-Means Algorithm](#k-means-algorithm) | [Rank](#rank) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Kernel Function](#kernel-function) | [Ray Casting](#ray-casting) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
-| [Calibration (Model Confidence)](#calibration-model-confidence) | [Kinodynamic Planning](#kinodynamic-planning) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [KL Divergence](#kl-divergence) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Regularization](#regularization) |
-| [Centroid](#centroid) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
-| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Latent Variable](#latent-variable) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Lattice-Based Planning](#lattice-based-planning) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Law of Large Numbers](#law-of-large-numbers) | [Reporting Bias](#reporting-bias) |
-| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [Layer Normalization](#layer-normalization) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Lexicalization](#lexicalization) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [Chernoff Bound](#chernoff-bound) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [RoBERTa](#roberta) |
-| [CKY Algorithm](#cky-algorithm) | [Likelihood](#likelihood) | [ROUGE](#rouge) |
-| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [Linear Programming](#linear-programming) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Linearly Separable](#linearly-separable) | [Sample Complexity](#sample-complexity) |
-| [Closed-World Assumption](#closed-world-assumption) | [Lipschitz Continuity](#lipschitz-continuity) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Clustering](#clustering) | [Log Likelihood](#log-likelihood) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Logistic Regression](#logistic-regression) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
-| [Code-Switching](#code-switching) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Schur Complement](#schur-complement) |
-| [Computation Graph](#computation-graph) | [Loss Surface](#loss-surface) | [Search Statistics](#search-statistics) |
-| [Conditional Independence](#conditional-independence) | [Low-Resource Language](#low-resource-language) | [Self-Attention](#self-attention) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Lower Bound](#lower-bound) | [Semantic Parsing](#semantic-parsing) |
-| [Confounder](#confounder) | [Machine Translation](#machine-translation) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Confusion Matrix](#confusion-matrix) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Conjunction Feature](#conjunction-feature) | [Marginalization](#marginalization) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Consistent Heuristic](#consistent-heuristic) | [Markov Blanket](#markov-blanket) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Markov Model](#markov-model) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Constituency Tests](#constituency-tests) | [Markov's Inequality](#markovs-inequality) | [Skip-Gram Model](#skip-gram-model) |
-| [Constituent](#constituent) | [Masked Language Modeling](#masked-language-modeling) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Context-Free Grammar](#context-free-grammar) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Maximum Entropy Model](#maximum-entropy-model) | [Sparse Attention](#sparse-attention) |
-| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Specificity Conditioning](#specificity-conditioning) |
-| [Convex Function](#convex-function) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Spectral Theorem](#spectral-theorem) |
-| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [mBART (Multilingual BART)](#mbart) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
-| [Coordinate Descent](#coordinate-descent) | [Mean Squared Error](#mean-squared-error) | [Start-End Span Prediction](#start-end-span-prediction) |
-| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Minimax Algorithm](#minimax-algorithm) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Coreference Resolution](#coreference-resolution) | [Minimum Description Length](#minimum-description-length) | [Statistical Independence](#statistical-independence) |
-| [Covariance Matrix](#covariance-matrix) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Mobile Robot Localization](#mobile-robot-localization) | [Stopword](#stopword) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Model Complexity](#model-complexity) | [STRIPS](#strips) |
-| [Cross-Validation](#cross-validation) | [Momentum](#momentum) | [Structured Classification](#structured-classification) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Monotone Convergence](#monotone-convergence) | [Subword Tokenization](#subword-tokenization) |
-| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Monotonic Function](#monotonic-function) | [Support Vector Machine](#support-vector-machine) |
-| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Surrogate Loss](#surrogate-loss) |
-| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Swept Volume](#swept-volume) |
-| [Dead End](#dead-end) | [Morphology](#morphology) | [Symmetric Matrix](#symmetric-matrix) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Relation](#symmetric-relation) |
-| [Decision Boundary](#decision-boundary) | [Motion Model](#motion-model) | [Syntactic Parsing](#syntactic-parsing) |
-| [Decision Tree](#decision-tree) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [T5](#t5) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Tag Lattice](#tag-lattice) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
-| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Dependency Parsing](#dependency-parsing) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Teacher Forcing](#teacher-forcing) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Tensor](#tensor) |
-| [Depth-Limited Search](#depth-limited-search) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Text Summarization](#text-summarization) |
-| [Diagonal Matrix](#diagonal-matrix) | [Multinomial Distribution](#multinomial-distribution) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multitask Learning](#multitask-learning) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Differential-Drive Robot](#differential-drive-robot) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Time Causality Assumption](#time-causality-assumption) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Mutex](#mutex) | [Toxic Degeneration](#toxic-degeneration) |
-| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Trace and Co-indexation](#trace-and-co-indexation) |
-| [Discriminative Model](#discriminative-model) | [N-Gram Language Model](#n-gram-language-model) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Naive Bayes](#naive-bayes) | [Transformer Architecture](#transformer-architecture) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
-| [Dropout](#dropout) | [Natural Questions](#natural-questions) | [Treebank](#treebank) |
-| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Negative Log Likelihood](#negative-log-likelihood) | [Triangle Inequality](#triangle-inequality) |
-| [Dynamic Programming](#dynamic-programming) | [Negative Sampling](#negative-sampling) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
-| [Early Stopping](#early-stopping) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Neural Scaling Laws](#neural-scaling-laws) | [Turing Test](#turing-test) |
-| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Neural Text Degeneration](#neural-text-degeneration) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neuron](#neuron) | [Union Bound](#union-bound) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Newton's Method](#newtons-method) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
-| [EM Algorithm](#em-algorithm) | [Next Sentence Prediction](#next-sentence-prediction) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Noisy Channel Model](#noisy-channel-model) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
-| [Epoch](#epoch) | [Non-Parametric Method](#non-parametric-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Normal Equations](#normal-equations) | [Vauquois Triangle](#vauquois-triangle) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vector Map](#vector-map) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [NP-Hard](#np-hard) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Vertical Markovization](#vertical-markovization) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Objective Function / Training Objective](#objective-function-training-objective) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
-| [Feature Expansion](#feature-expansion) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Alignment](#word-alignment) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Odometry](#odometry) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Few-Shot Prompting](#few-shot-prompting) | [One-Hot Encoding](#one-hot-encoding) | [Word Embedding](#word-embedding) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [One-vs-All](#one-vs-all) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word2Vec](#word2vec) |
-| [Frontier / Open List](#frontier-open-list) | [Open-Domain Question Answering](#open-domain-question-answering) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Gaussian Graphical Model](#gaussian-graphical-model) | [Oracle Derivation](#oracle-derivation) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
-| [Gaussian Mixture Model](#gaussian-mixture-model) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Shot Prompting](#zero-shot-prompting) |
-| [Generative Likelihood](#generative-likelihood) | [Orthonormal Basis](#orthonormal-basis) | [Zero-Sum Game](#zero-sum-game) |
-| [Generative Model](#generative-model) | [Overfitting](#overfitting) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PAC Learning](#pac-learning) |
+| [Absolute Discounting](#absolute-discounting) | [GLUE Benchmark](#glue-benchmark) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |
+| [Accuracy (Classification)](#accuracy-classification) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
+| [Ackermann Steering](#ackermann-steering) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Action Schema](#action-schema) | [Gradient Clipping](#gradient-clipping) | [Particle Filter](#particle-filter) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gradient Descent](#gradient-descent) | [Path-Tracking Error Metrics](#path-tracking-error-metrics) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Grammatical Case](#grammatical-case) | [PDDL](#pddl) |
+| [Add-One Smoothing](#add-one-smoothing) | [Graphical Lasso](#graphical-lasso) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
+| [Additive Gaussian Sensor Noise Model](#additive-gaussian-sensor-noise-model) | [GraphPlan](#graphplan) | [Penn Treebank](#penn-treebank) |
+| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Agglutinating Language](#agglutinating-language) | [Greedy Decoding](#greedy-decoding) | [Perplexity](#perplexity) |
+| [Agnostic Learning](#agnostic-learning) | [Greedy Local Planning](#greedy-local-planning) | [PersonaChat](#personachat) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [AlphaGo](#alphago) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [PID Controller](#pid-controller) |
+| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Planner Completeness](#planner-completeness) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
+| [Arity](#arity) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Point Cloud](#point-cloud) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Hidden Markov Model](#hidden-markov-model) | [Polar Coordinates](#polar-coordinates) |
+| [Authorship Attribution](#authorship-attribution) | [Hierarchical Planning (Global and Local Planner)](#hierarchical-planning-global-and-local-planner) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Automatic Differentiation](#automatic-differentiation) | [Hierarchical Softmax](#hierarchical-softmax) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Auxiliary Particle Filter](#auxiliary-particle-filter) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Backpointer](#backpointer) | [HMM Alignment Model](#hmm-alignment-model) | [Posterior Distribution](#posterior-distribution) |
+| [Backpropagation](#backpropagation) | [Horizontal Markovization](#horizontal-markovization) | [Precision Matrix](#precision-matrix) |
+| [Bag of Words](#bag-of-words) | [Hyperparameter](#hyperparameter) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Banana Distribution](#banana-distribution) | [IBM Model 1](#ibm-model-1) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [BART](#bart) | [Importance Sampling](#importance-sampling) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
+| [Basis Function](#basis-function) | [In-Context Learning](#in-context-learning) | [Principal Component Analysis](#principal-component-analysis) |
+| [Batch](#batch) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Prior Distribution](#prior-distribution) |
+| [Batch Normalization](#batch-normalization) | [Indicator Function](#indicator-function) | [Priority Queue](#priority-queue) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Induction Head](#induction-head) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Bayes' Rule](#bayes-rule) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Information Retrieval](#information-retrieval) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Beam Search](#beam-search) | [Informed RRT*](#informed-rrt) | [Probability Density Contour](#probability-density-contour) |
+| [Belief-Space Planning](#belief-space-planning) | [Instruction Tuning](#instruction-tuning) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Projective Tree](#projective-tree) |
+| [BERT](#bert) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [Proof by Contradiction](#proof-by-contradiction) |
+| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Pure Pursuit](#pure-pursuit) |
+| [Bias Amplification](#bias-amplification) | [Iterative Deepening](#iterative-deepening) | [Quadratic Form](#quadratic-form) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Jensen's Inequality](#jensens-inequality) | [Quiescence Search](#quiescence-search) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Joint Probability Distribution](#joint-probability-distribution) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Binarization](#binarization) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [BIO Tagging](#bio-tagging) | [K-Means Algorithm](#k-means-algorithm) | [Random Forest](#random-forest) |
+| [BLEU Score](#bleu-score) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Kernel Function](#kernel-function) | [Random Projection](#random-projection) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Kidnapped Robot Problem](#kidnapped-robot-problem) | [Random Variable](#random-variable) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Rank](#rank) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Kinodynamic Planning](#kinodynamic-planning) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [KL Divergence](#kl-divergence) | [Ray Casting](#ray-casting) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [KLD-Sampling (Adaptive Particle Count)](#kld-sampling-adaptive-particle-count) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
+| [Calibration (Model Confidence)](#calibration-model-confidence) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Latent Variable](#latent-variable) | [Regularization](#regularization) |
+| [Centroid](#centroid) | [Lattice-Based Planning](#lattice-based-planning) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Law of Large Numbers](#law-of-large-numbers) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Layer Normalization](#layer-normalization) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Lexicalization](#lexicalization) | [Reporting Bias](#reporting-bias) |
+| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Likelihood](#likelihood) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Chernoff Bound](#chernoff-bound) | [Likelihood Collapse in Products of Many Factors](#likelihood-collapse-in-products-of-many-factors) | [RoBERTa](#roberta) |
+| [CKY Algorithm](#cky-algorithm) | [Linear Programming](#linear-programming) | [Robust Observation Likelihood](#robust-observation-likelihood) |
+| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [Linearly Separable](#linearly-separable) | [Robustification of the Observation Likelihood](#robustification-of-the-observation-likelihood) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Lipschitz Continuity](#lipschitz-continuity) | [ROUGE](#rouge) |
+| [Closed-World Assumption](#closed-world-assumption) | [Log Likelihood](#log-likelihood) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Clustering](#clustering) | [Logistic Regression](#logistic-regression) | [Sample Complexity](#sample-complexity) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Code-Switching](#code-switching) | [Loss of Particle Diversity](#loss-of-particle-diversity) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Computation Graph](#computation-graph) | [Loss Surface](#loss-surface) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Conditional Independence](#conditional-independence) | [Low-Resource Language](#low-resource-language) | [Schur Complement](#schur-complement) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Low-Variance Resampling](#low-variance-resampling) | [Search Statistics](#search-statistics) |
+| [Confounder](#confounder) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
+| [Confusion Matrix](#confusion-matrix) | [Machine Translation](#machine-translation) | [Semantic Parsing](#semantic-parsing) |
+| [Conjunction Feature](#conjunction-feature) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sensor Resetting Localization](#sensor-resetting-localization) |
+| [Consistent Heuristic](#consistent-heuristic) | [Marginalization](#marginalization) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Markov Blanket](#markov-blanket) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Constituency Tests](#constituency-tests) | [Markov Model](#markov-model) | [Simple Carrot Navigation Controller](#simple-carrot-navigation-controller) |
+| [Constituent](#constituent) | [Markov's Inequality](#markovs-inequality) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Masked Language Modeling](#masked-language-modeling) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Context-Free Grammar](#context-free-grammar) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Skip-Gram Model](#skip-gram-model) |
+| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Max-Normalization of Weights](#max-normalization-of-weights) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
+| [Convex Function](#convex-function) | [Maximum Entropy Model](#maximum-entropy-model) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Coordinate Descent](#coordinate-descent) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Sparse Attention](#sparse-attention) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [mBART (Multilingual BART)](#mbart) | [Specificity Conditioning](#specificity-conditioning) |
+| [Coreference Resolution](#coreference-resolution) | [Mean Squared Error](#mean-squared-error) | [Spectral Theorem](#spectral-theorem) |
+| [Corrective Gradient Refinement](#corrective-gradient-refinement) | [Minimax Algorithm](#minimax-algorithm) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
+| [Covariance Matrix](#covariance-matrix) | [Minimum Description Length](#minimum-description-length) | [Start-End Span Prediction](#start-end-span-prediction) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
+| [Cross-Validation](#cross-validation) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Momentum](#momentum) | [Stopword](#stopword) |
+| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Monotone Convergence](#monotone-convergence) | [STRIPS](#strips) |
+| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Monotonic Function](#monotonic-function) | [Structured Classification](#structured-classification) |
+| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Subword Tokenization](#subword-tokenization) |
+| [Dead End](#dead-end) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Support Vector Machine](#support-vector-machine) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Morphology](#morphology) | [Surrogate Loss](#surrogate-loss) |
+| [Decision Boundary](#decision-boundary) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Swept Volume](#swept-volume) |
+| [Decision Tree](#decision-tree) | [Motion Model](#motion-model) | [Symmetric Matrix](#symmetric-matrix) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Syntactic Parsing](#syntactic-parsing) |
+| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Multi-Head Self-Attention](#multi-head-self-attention) | [T5](#t5) |
+| [Dependency Parsing](#dependency-parsing) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Tag Lattice](#tag-lattice) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Multi-Observation Sensor Resetting Localization](#multi-observation-sensor-resetting-localization) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
+| [Depth-Limited Search](#depth-limited-search) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Determinization](#determinization) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Teacher Forcing](#teacher-forcing) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Tensor](#tensor) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multimodal Distribution (Modes)](#multimodal-distribution-modes) | [Text Summarization](#text-summarization) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Multinomial Distribution](#multinomial-distribution) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Time Causality Assumption](#time-causality-assumption) |
+| [Discriminative Model](#discriminative-model) | [Mutex](#mutex) | [Toxic Degeneration](#toxic-degeneration) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Transformer Architecture](#transformer-architecture) |
+| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Dynamic Programming](#dynamic-programming) | [Natural Questions](#natural-questions) | [Treebank](#treebank) |
+| [Early Stopping](#early-stopping) | [Negative Log Likelihood](#negative-log-likelihood) | [Triangle Inequality](#triangle-inequality) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Sampling](#negative-sampling) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Scaling Laws](#neural-scaling-laws) | [Turing Test](#turing-test) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Text Degeneration](#neural-text-degeneration) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [EM Algorithm](#em-algorithm) | [Neuron](#neuron) | [Unexpected Objects and Map Errors in Sensor Readings](#unexpected-objects-and-map-errors-in-sensor-readings) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Newton's Method](#newtons-method) | [Union Bound](#union-bound) |
+| [Epoch](#epoch) | [Next Sentence Prediction](#next-sentence-prediction) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Noisy Channel Model](#noisy-channel-model) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Non-Parametric Method](#non-parametric-method) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normal Equations](#normal-equations) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vauquois Triangle](#vauquois-triangle) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [NP-Hard](#np-hard) | [Vector Map](#vector-map) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [Feature Expansion](#feature-expansion) | [Numerical Underflow](#numerical-underflow) | [Vertical Markovization](#vertical-markovization) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Objective Function / Training Objective](#objective-function-training-objective) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Few-Shot Prompting](#few-shot-prompting) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Alignment](#word-alignment) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Odometry](#odometry) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Frontier / Open List](#frontier-open-list) | [One-Hot Encoding](#one-hot-encoding) | [Word Embedding](#word-embedding) |
+| [Gaussian Graphical Model](#gaussian-graphical-model) | [One-vs-All](#one-vs-all) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Gaussian Mixture Model](#gaussian-mixture-model) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word2Vec](#word2vec) |
+| [Generative Likelihood](#generative-likelihood) | [Open-Domain Question Answering](#open-domain-question-answering) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Generative Model](#generative-model) | [Optimal (Receding-Horizon) Local Planning](#optimal-receding-horizon-local-planning) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
+| [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [Oracle Derivation](#oracle-derivation) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [Geometric Mean](#geometric-mean) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Sum Game](#zero-sum-game) |
+| [Global Planner and Local Planner](#global-planner-and-local-planner) | [Orthonormal Basis](#orthonormal-basis) |  |
+| [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Overfitting](#overfitting) |  |
 
 ## Concepts
 
@@ -280,6 +289,32 @@ So a virtual front wheel angled at about $14°$ makes this car trace a circle of
 **Example.** Raw transition counts out of the tags $N$ and $V$ toward the next tag ($N$, $V$, or $STOP$) are $(0,2,0)$ and $(0,0,2)$. Add $1$ to every cell: $(1,3,1)$ and $(1,1,3)$. Each row now totals $5$, so dividing each cell by $5$ gives $(\tfrac15,\tfrac35,\tfrac15)$ and $(\tfrac15,\tfrac15,\tfrac35)$. The transition $V\to V$ went from probability $0$ to $\tfrac15$.
 
 **AI/ML Usage**: Used when estimating the probabilities of a hidden Markov model (a model that scores sequences of words and tags) and of n-gram language models, so a single unseen combination does not force an entire sentence's probability to $0$.
+
+---
+
+<a id="additive-gaussian-sensor-noise-model"></a>
+### Additive Gaussian Sensor Noise Model
+
+**The Big Idea**: This builds on the Observation Likelihood Model (Sensor Model) entry and on the Normal Distribution Notation entry in the math_symbols file. From Algebra 2, think of a function with a small error added on the end, like $y = mx + b$ plus a little wobble. Here the "line" is the reading a perfect sensor would give, and the wobble is random. Describing that wobble with a bell curve goes beyond Algebra 2 and uses probability, so read the Normal Distribution Notation and Standard Deviation entries in the math_symbols file first.
+
+**General Usage**: In this model a sensor reading $s$ equals the expected reading $\hat{s}$ (what the map and the robot's believed position say the sensor should report) plus a random error $\epsilon_s$ (the Greek letter epsilon, a small random error; see the Epsilon entry in the math_symbols file):
+
+$$
+s = \hat{s} + \epsilon_s, \qquad \epsilon_s \sim \mathcal{N}(0, \sigma_s).
+$$
+
+The symbol $\sim$ means "is drawn at random from" (see the Sampling Notation entry in the math_symbols file). $\mathcal{N}(0,\sigma_s)$ is the bell-curve distribution centered at $0$ with spread $\sigma_s$, the sensor's standard deviation. Two consequences follow. Errors above and below the expected reading are equally likely, and the model treats every error as pure noise: if the robot's position is correct, a reading far from the expectation is blamed on bad luck in the noise, never on something being in the way.
+
+**Example.** A distance sensor faces a wall expected at $\hat{s} = 10$ m, and its noise has $\sigma_s = 0.5$ m. The relative likelihood of a reading is $\exp\left[-\tfrac{1}{2}\left(\tfrac{s-\hat{s}}{\sigma_s}\right)^2\right]$ (the bell-curve height with the constant factor left out, so a perfect reading scores $1$).
+
+1. Reading $s = 10.0$: the error is $0$, so the score is $e^{0} = 1$.
+2. Reading $s = 10.5$: the error is $0.5$, which is $0.5/0.5 = 1$ standard deviation. The score is $e^{-\frac{1}{2}(1)^2} = e^{-0.5} \approx 0.607$.
+3. Reading $s = 11.0$: the error is $1.0$, which is $2$ standard deviations. The score is $e^{-\frac{1}{2}(2)^2} = e^{-2} \approx 0.135$.
+4. Reading $s = 12.0$: the error is $2.0$, which is $4$ standard deviations. The score is $e^{-\frac{1}{2}(4)^2} = e^{-8} \approx 0.000335$.
+
+Doubling the error from step 3 to step 4 shrank the score by a factor of about $400$, so the model treats large errors as nearly impossible.
+
+**AI/ML Usage**: This is the standard simple sensor model in robot localization with a particle filter (see the Particle Filter entry): each laser ray's expected range is computed from the map, and a Gaussian of this form scores the actual range. Its weakness is the assumption that every error is noise, which is why real systems add extra terms for unexpected objects and for readings the sensor cannot physically produce (see the Unexpected Objects and Map Errors in Sensor Readings entry).
 
 ---
 
@@ -505,6 +540,31 @@ Check: 5 shifts plus 5 arcs gives $10 = 2n$ transitions, and the final stack is 
 **Example.** If a calculation is "square the input, then add 1, then take the square root," a computer using autodiff doesn't need someone to work out the derivative of the whole combined formula in one shot — it tracks the derivative through each of the three small steps individually (squaring, then adding, then square-rooting) and multiplies those small derivatives together automatically to get the final answer.
 
 **AI/ML Usage**: Autodiff is exactly the technology that makes training modern neural networks practical at all — libraries like PyTorch and TensorFlow use it to automatically compute the gradient of a loss function with respect to every single one of a network's potentially billions of weights, which would be utterly impossible for a person to work out by hand, every single training step.
+
+---
+
+<a id="auxiliary-particle-filter"></a>
+### Auxiliary Particle Filter
+
+**The Big Idea**: This builds directly on the Particle Filter entry and the Importance Sampling entry. A plain particle filter moves every particle blindly with the motion model and only afterward checks which ones agree with the sensor. An auxiliary particle filter peeks at the sensor reading first, in the spirit of Algebra 2 "estimate before you commit": it uses a quick forecast of where each particle is heading to decide which particles deserve to be moved at all. It goes beyond Algebra 2 in using probability to make that choice.
+
+**General Usage**: In a particle filter, the proposal distribution (see the Importance Sampling entry) is the distribution the new particles are actually drawn from. A plain particle filter uses the motion model alone as its proposal. An auxiliary particle filter (Pitt and Shephard, 1999) improves the proposal by using the next sensor reading $s_t$. Its steps are:
+
+1. Predict or simulate the next observation for each particle, for example by pushing each particle forward to a representative next location (such as the average of the motion model) and asking how likely $s_t$ would be from there.
+2. Use those first-stage scores to choose which previous particles to carry forward, so that particles likely to explain $s_t$ are chosen more often.
+3. Draw the new particle locations from the motion model starting from the chosen particles.
+4. Use Sampling Importance Resampling (see the Sampling Importance Resampling (SIR) entry) with a new weight formulation, in which each particle's weight is its true observation likelihood divided by the first-stage score used to choose it, so the bias introduced by the first stage is removed.
+
+**Example.** Three particles sit at $x = 0, 5, 10$. The motion command says move $+1$, so the forecast locations are $1, 6, 11$. The sensor reports a reading that matches location $6$ well. Suppose the first-stage scores (observation likelihood evaluated at the forecast locations) are $0.1,\ 0.8,\ 0.1$. These add to $1.0$, so they act directly as selection probabilities.
+
+1. Choose three particles with probabilities $0.1, 0.8, 0.1$. A likely outcome is particle 2, particle 2, particle 3.
+2. Move each chosen particle with the motion model. Particle 2 (from $5$) lands near $6$ twice, say at $5.9$ and $6.2$. Particle 3 (from $10$) lands near $11$, say at $11.3$.
+3. Compute each final weight as true likelihood divided by first-stage score. If the true likelihoods at $5.9$, $6.2$, $11.3$ are $0.9,\ 0.7,\ 0.02$ and the first-stage scores used were $0.8,\ 0.8,\ 0.1$, the weights are $0.9/0.8 = 1.125$, $0.7/0.8 = 0.875$, and $0.02/0.1 = 0.2$.
+4. Normalize by dividing by the total $1.125 + 0.875 + 0.2 = 2.2$, giving about $0.511,\ 0.398,\ 0.091$.
+
+Two of the three particles were spent near the location the sensor favors. (The likelihood values here are chosen for illustration.)
+
+**AI/ML Usage**: Auxiliary particle filters are used in robot localization and object tracking when the sensor is precise, because a precise sensor makes most blindly drawn particles useless (see the Particle Filter entry). The same idea of drawing samples from a distribution that already looks at the evidence appears more widely under the name of an improved proposal distribution in sequential Monte Carlo methods.
 
 ---
 
@@ -757,6 +817,28 @@ Because a low-probability partial sequence is discarded before it is ever extend
 Multiplying probabilities along a path explains why the numbers shrink so fast: "The dog" $=0.0004$ is $P(\text{"The"})=0.01$ times a (here, invented) conditional probability of about $0.04$ that "dog" follows "The," since $0.01\times0.04=0.0004$; every additional token multiplies in another number smaller than $1$, so joint probabilities shrink quickly the longer a hypothesis gets — exactly the shrinking pattern behind why $|V|^n$ becomes so enormous for exhaustive search.
 
 **AI/ML Usage**: Beam search is used heavily in sequence-to-sequence conditional generation tasks such as machine translation, where producing a genuinely high-probability output matters a great deal: greedy decoding can commit early to a word that later forces a poor continuation, while beam search's wider (but still bounded) search reliably finds something of higher probability. Counting how many times the underlying neural network itself must be run (a "transformer call," one full forward pass producing one distribution over the next token) gives beam search's practical runtime: $1$ call at the first step, then $K$ calls at each of the remaining $n-1$ steps (one per surviving hypothesis, since each must be fed through the model separately), for a total often approximated as $O(Kn)$ calls — versus $O(|V|^n)$ complete sequences for exhaustive search. Over the whole run, beam search scores roughly $K\times|V|\times n$ candidate hypotheses in total (summing the $K\times|V|$ candidates generated at each of the $n$ steps), polynomial in $n$ rather than exponential. In practice, real implementations almost always work with sums of log-probabilities rather than products of raw probabilities (see the Log Likelihood entry above), since multiplying many probabilities smaller than $1$ quickly underflows a computer's floating-point numbers; taking a logarithm turns that product into a sum without changing which sequence scores highest, because the logarithm is a monotonic function (see that entry above). Larger, better-trained language models reduce the practical need for beam search, since they tend to assign high probability to a partial sequence only when a good continuation genuinely exists, an implicit form of "planning ahead" that a small model lacks — combined with beam search's extra computational cost, this is why beam search is used more sparingly with today's largest models than with earlier, smaller ones.
+
+---
+
+<a id="belief-space-planning"></a>
+### Belief-Space Planning
+
+**The Big Idea**: In ordinary planning (see the A* Search entry), you choose actions to get from a known starting point to a goal, the way you would trace a route on a map from a spot you are sure you are standing on. Belief-space planning removes the "sure": the thing you plan from is not a single spot but a whole description of how likely you are to be at each spot (see the Determinization entry for why the single-spot version is normally used). It goes beyond Algebra 2 by treating a probability distribution as if it were itself a position that actions move around; the Bayes Filter (Recursive Bayesian Estimation) entry is the right thing to read first.
+
+**General Usage**: A **belief** is the probability distribution describing where an agent might be, given everything it has sensed and done so far. Belief-space planning chooses actions while keeping this whole distribution, rather than reducing it to one estimated state first. Each action changes the belief in two ways: it moves the probable locations, and the sensor readings it leads to sharpen or blur the distribution. Because uncertainty itself is part of what is planned over, a belief-space planner can prefer an action that is a little longer but keeps the agent confident of where it is. It is more demanding to compute than planning from one estimated state, so it is used mainly where ignoring the uncertainty is not acceptable, such as safety-critical settings.
+
+**Example.** A robot must pass a narrow gap. Suppose its position is known only to within $\pm 0.5$ m and the gap is $0.4$ m wide.
+
+1. Reduce the belief to one state (the average position) and plan from it: the plan says "drive straight through the gap".
+2. Check how likely that plan is to succeed. With the position anywhere in a $1.0$ m wide range and the gap only $0.4$ m wide, a straight drive succeeds for only the part of the range that lines up with the gap, so the chance of success is about
+
+$$
+\frac{0.4}{1.0} = 0.4 .
+$$
+
+3. A belief-space planner sees this $40\%$ figure because it carries the whole range, and can instead choose an action that first reduces the uncertainty (for example, moving to where a sensor can observe a wall and narrow the range) before attempting the gap.
+
+**AI/ML Usage**: Belief-space planning is the practical setting of a **partially observable Markov decision process (POMDP)**, a model in which an agent cannot see its true state and must decide using its belief; it is used for robot navigation and manipulation where a wrong move is costly, such as an autonomous vehicle or a surgical robot.
 
 ---
 
@@ -1625,6 +1707,31 @@ where $R(\theta)$ sends $(x, y)$ to $(x\cos\theta - y\sin\theta,\; x\sin\theta +
 
 ---
 
+<a id="corrective-gradient-refinement"></a>
+### Corrective Gradient Refinement
+
+**The Big Idea**: This builds on the Gradient Descent entry and the Particle Filter entry. In Algebra 2 you can find where a parabola is lowest by repeatedly moving downhill. Corrective gradient refinement (CGR) applies that downhill walk to each particle of a particle filter: first draw particles with the motion model (an easy but rough guess), then slide each one a few steps toward locations where the sensor reading is more probable. The leap beyond Algebra 2 is that the "hill" is a likelihood surface and the walk uses derivatives (see the Gradient and Partial Derivative entries in the math_symbols file).
+
+**General Usage**: With a very precise sensor, the region where the observation likelihood is large is narrow, so few motion-model samples land in it. CGR (Biswas, Coltin and Veloso, 2011) rests on the idea that refining a sample location is easier than finding a good one. Its steps are:
+
+1. Start with samples drawn from the motion model.
+2. Refine each sample using the gradient of the observation likelihood with respect to the robot pose (position and heading): take a few small steps in the direction that lowers a cost built from the likelihood (the negative gradient direction).
+3. Treat the refined samples as drawn from a new proposal distribution (see the Importance Sampling entry) and update their weights using Sampling Importance Resampling (see the Sampling Importance Resampling (SIR) entry).
+
+**Example.** Reduce the problem to one dimension. Let the cost be $c(x) = (x - 5)^2$, which is smallest where the sensor says the robot most probably is, at $x = 5$. Its gradient (slope) is $c'(x) = 2(x - 5)$. A particle starts at $x = 2$ and takes steps of size $0.1$ against the gradient, $x \leftarrow x - 0.1\,c'(x)$.
+
+| Step | $x$ | $c'(x) = 2(x-5)$ | New $x = x - 0.1\,c'(x)$ |
+|---|---|---|---|
+| 1 | $2.0$ | $-6.0$ | $2.0 + 0.6 = 2.6$ |
+| 2 | $2.6$ | $-4.8$ | $2.6 + 0.48 = 3.08$ |
+| 3 | $3.08$ | $-3.84$ | $3.08 + 0.384 = 3.464$ |
+
+After three small steps the particle has moved from $2$ to about $3.46$, closer to $5$. Check: the cost fell from $(2-5)^2 = 9$ to $(3.464-5)^2 \approx 2.36$.
+
+**AI/ML Usage**: CGR was proposed for localizing mobile robots with a vector map (see the Vector Map entry), where the observation likelihood is written in terms of the perpendicular distance from each laser reading to the nearest map line, so the gradient with respect to the robot pose can be computed with geometry. It is reported to give lower error and less trial-to-trial variation than plain sampling importance resampling as the number of particles grows. It is an instance of the general idea of following a gradient inside a sampling method (see the Gradient Descent entry).
+
+---
+
 <a id="covariance-matrix"></a>
 ### Covariance Matrix
 
@@ -1909,6 +2016,36 @@ The final visiting order is $R, A, C, D, B$: DFS fully descends into $A$'s entir
 **Example.** Consider searching a tree that is actually $6$ levels deep, using a depth limit of $3$. An ordinary, unbounded depth-first search would continue all the way to depth $6$ along every path. A depth-limited search instead stops expanding as soon as it reaches depth $3$, treating every node at depth $3$ as if it were a leaf — even ones that, unseen, have further children at depths $4$, $5$, and $6$ that are never examined. If the actual best path through the tree only reveals its advantage at depth $5$, a depth limit of $3$ misses it entirely; this is exactly why depth-limited search cannot, in general, guarantee an optimal answer.
 
 **AI/ML Usage**: Depth-limited minimax is the standard way real game-playing programs (chess and Go engines, for example) make the Minimax Algorithm (see that entry above) computationally feasible: since real games are far too deep to search all the way to a terminal state in a reasonable amount of time (see the Branching Factor and Search Depth entry in `math_symbols.md`), the search is cut off at a fixed depth, and a Heuristic Evaluation Function estimates how good each cut-off position looks in place of the exact, but practically unreachable, game outcome.
+
+---
+
+<a id="determinization"></a>
+### Determinization
+
+**The Big Idea**: Algebra 2 lets you replace a whole list of numbers with one summary number, such as the average or the largest value. Determinization does the same thing to a probability distribution: it throws away the spread of possibilities and keeps one value, so that methods that need a definite answer (such as route planners, see the A* Search entry) can use it. It goes beyond Algebra 2 in that the thing being summarized is a probability distribution (see the Probability / Probability Density entry in the math_symbols file); the Bayes Filter (Recursive Bayesian Estimation) entry is the right thing to read first.
+
+**General Usage**: **Determinization** is a family of approximations that converts a setting with uncertainty (a distribution $p(x)$ over possible values of $x$) into a setting without it (a single value $x$). It is an approximation because it discards how uncertain the estimate was. Two standard ways to pick the single value $x^*$:
+
+- **Maximum likelihood estimate:** $x^* = \arg\max_x p(x)$, the value where the distribution is highest (see the Arg Min / Arg Max entry in the math_symbols file). For a grid of cells this is the cell holding the largest value; for a particle filter (see the Particle Filter entry) it is the particle with the largest weight.
+- **Expected value (mean):** the average of $x$ over the distribution (see the Expectation entry in the math_symbols file). For a grid of cells with state values $x_c$ and weights $w_c$,
+
+$$
+x^* = \frac{\sum_c w_c \, x_c}{\sum_c w_c} .
+$$
+
+The peak can jump from one place to another as new data arrives, while the mean changes more smoothly. After determinization, a question such as "is $x = x_0$?" has a definite yes-or-no answer, whereas for a continuous distribution the probability of any one exact value is $0$.
+
+**Example.** A robot's position belief is stored on three grid cells at positions $1$, $2$, $3$ with cell values $1$, $6$, $3$.
+
+1. Maximum likelihood estimate: the largest cell value is $6$, in the cell at position $2$, so $x^* = 2$.
+2. Expected value: multiply each position by its cell value: $1 \cdot 1 = 1$, $2 \cdot 6 = 12$, $3 \cdot 3 = 9$.
+3. Add the products: $1 + 12 + 9 = 22$.
+4. Add the cell values: $1 + 6 + 3 = 10$.
+5. Divide: $x^* = 22 / 10 = 2.2$.
+
+Check: the mean $2.2$ sits slightly above the peak at $2$ because the third cell (value $3$) carries more weight than the first cell (value $1$), which pulls the average toward larger positions.
+
+**AI/ML Usage**: Autonomous vehicles and mobile robots run a probabilistic state estimator (such as a particle filter) to track where they are, then determinize its output before handing a single pose to a route planner; the maximum likelihood choice is the common one in simultaneous localization and mapping (SLAM, see the Simultaneous Localization and Mapping entry). When the distribution has several peaks, determinizing to one value is risky (see the Multimodal Distribution (Modes) entry).
 
 ---
 
@@ -2502,6 +2639,26 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 
 ---
 
+<a id="global-planner-and-local-planner"></a>
+### Global Planner and Local Planner
+
+**The Big Idea**: Planning a trip uses two different kinds of decisions: first choose a route on a map (which roads, in what order), then steer and brake moment by moment to follow it. This goes beyond Algebra 2 only in that each of these is itself an optimization problem. Read the Arg Min / Arg Max entry in the math_symbols file first, and the Plan Notation entry for the notation used below.
+
+**General Usage**: A **global planner** produces a **global plan** $\pi^g$, a list of intermediate poses (a pose is a position together with a heading) from the start to the goal. It uses only the map. A **local planner** produces a **local plan** $\pi^l$, a list of actions such as steering and speed commands. It uses the latest sensor observation, the global plan, and the map, and it is the part that turns the global plan into actual motion, one time step at a time. Information also flows back up: while following the plan, the local planner experiences the true cost of each stretch and can report it so the global planner updates the costs it assumed. A blocked passage can be reported as impossible to traverse, after which the global planner computes a new global plan. Algorithms such as D* (Dynamic A* Algorithm, see that entry) are built for this kind of repair as news arrives. Each level can use a search-based or sampling-based planner, and the cost can be more than distance. Not every combination is practical to compute: more detailed motion modelling is affordable at the local level but can be too expensive at the global level.
+
+**Example.** A building route has two options from A to D. The global planner scores each by total edge cost.
+
+| Route | Edge costs | Total |
+|---|---|---|
+| A to B to D | $4 + 3$ | $7$ |
+| A to C to D | $5 + 4$ | $9$ |
+
+The global plan is $\pi^g = [A, B, D]$ because $7 < 9$. While the local planner drives from B toward D, it finds the passage blocked. This is fed back, the cost of the edge from B to D is set to infinity, and the route through B now totals infinity. The global planner replans and returns $\pi^g = [A, C, D]$ with total $9$.
+
+**AI/ML Usage**: Almost every autonomous vehicle and mobile robot navigation stack is organized this way: a global route planner on a map and a faster local planner that keeps the vehicle on that route while avoiding obstacles. The local planner's cost map, which records what the sensors have recently seen, is the standard channel through which observations influence the next global plan.
+
+---
+
 <a id="glorot-xavier-initialization"></a>
 ### Glorot / Xavier Initialization
 
@@ -2713,6 +2870,33 @@ Greedy Best-First Search reports a path of cost $6$, and never even expands $B$ 
 
 ---
 
+<a id="greedy-local-planning"></a>
+### Greedy Local Planning
+
+**The Big Idea**: In Algebra 2, finding the vertex of a parabola means looking for the input that gives the best output. Greedy local planning does exactly that for one decision at a time: try each possible action, score it, and keep the best. It goes beyond Algebra 2 only in that the score depends on the current situation of a robot. Read the Arg Min / Arg Max entry in the math_symbols file first.
+
+**General Usage**: A **greedy** local planner chooses the action for the current time step $t$ by scoring each candidate action using only the **current** state $s_t$:
+
+$$
+a_t = a^*, \qquad a^* = \arg\max_{a} f(a, s_t)
+$$
+
+Here $f$ is an **objective function**, a score where larger means better (a cost to be minimized can be turned into such a score by negating it), $a$ is a candidate action, and $a^*$ is the candidate with the largest score. The planner does not consider how its chosen action changes the states that come after it, which is why it is called greedy. A common implementation scores a **library of trajectory rollouts**: a fixed family of short curves starting at the vehicle, each one a candidate action. The planner evaluates the objective on every curve, executes the start of the best one, and repeats the whole selection at the next time step, which can produce smooth motion because the chosen curve may change from step to step. It is rarely exactly optimal, since the best path is unlikely to be one of the curves in the library. Greedy planners are used in deployed systems because they are fast and can account for many real-time factors.
+
+**Example.** A car can choose among three steering actions, with scores computed from the current state:
+
+| Action $a$ | $f(a, s_t)$ |
+|---|---|
+| left | $2$ |
+| straight | $5$ |
+| right | $3$ |
+
+The largest score is $5$, so $a^* = \arg\max_a f(a, s_t) = \text{straight}$, and the car executes $a_t = \text{straight}$. At the next time step the state is different, new scores are computed, and the choice may change.
+
+**AI/ML Usage**: Greedy trajectory-rollout selection, sometimes called a dynamic window or trajectory library approach, is a widely deployed method for local obstacle avoidance in mobile robots and self-driving systems. It is chosen over optimal planning where speed and the ability to react to unexpected objects matter more than a guarantee of optimality. See also the Optimal (Receding-Horizon) Local Planning entry for the alternative that scores a whole sequence of actions.
+
+---
+
 <a id="grid-connectivity-4-connected-vs-8-connected"></a>
 ### Grid Connectivity (4-Connected vs. 8-Connected)
 
@@ -2854,6 +3038,24 @@ It rests on two independence assumptions: each state depends only on the previou
 4. So $P(\bar y,\bar x)=0.105$.
 
 **AI/ML Usage**: HMMs are a classic model for part-of-speech tagging and other sequence-labeling tasks, such as named entity recognition and speech recognition. Using one takes two steps: parameter estimation (fitting the three tables from data) and inference (finding the best hidden sequence for a new sentence).
+
+---
+
+<a id="hierarchical-planning-global-and-local-planner"></a>
+### Hierarchical Planning (Global and Local Planner)
+
+**The Big Idea**: Algebra 2 problem solving often goes in two passes: first sketch the overall shape of a solution, then fill in exact numbers. Hierarchical planning does the same with movement: a rough plan for the whole trip first, then precise planning for the next short stretch. It goes beyond Algebra 2 in that the two passes use different amounts of real-world detail.
+
+**General Usage**: **Planning** means choosing a sequence of actions that gets an agent from a start to a goal. In **hierarchical planning** the work is split between two planners:
+
+- The **global planner** produces a coarse plan for the whole start-to-goal trip. It uses abstract, approximate information, usually only **priors** (knowledge available before the agent starts operating, such as a map of the walls). It assumes that **local detailed modifications** close to the plan exist and can be made when needed.
+- The **local planner** produces a detailed plan only for reaching a nearby intermediate way-point. It uses **live observations** (what the sensors see right now, such as people or other robots) and accounts for **dynamics** (how the vehicle's speed and acceleration can change).
+
+The reason for the split is that planning at the highest level of detail over a whole trip is often **computationally intractable**, meaning it needs too much computation to be practical, and it is also unnecessary, since detail needed far in the future can be deferred.
+
+**Example.** A robot must travel along a route that the global planner has summarized as 3 way-points, planned once. The robot travels $20$ m at $2$ m/s, which takes $20 / 2 = 10$ s. If the local planner re-plans every $0.1$ s, it runs $10 / 0.1 = 100$ times. Each run only has to plan a short stretch to the next target, never the entire $20$ m with every detail.
+
+**AI/ML Usage**: Autonomous vehicles and indoor mobile robots commonly pair a global route planner (over a road or building map) with a local planner that steers around moving obstacles in real time. The pure pursuit and carrot controller entries in this file are two concrete local-planning methods that follow a global plan.
 
 ---
 
@@ -3401,6 +3603,19 @@ Classify the new point $P=(4,3)$. Compute the squared distance from $P$ to every
 
 ---
 
+<a id="kidnapped-robot-problem"></a>
+### Kidnapped Robot Problem
+
+**The Big Idea**: This builds on the Particle Filter and Mobile Robot Localization entries. Algebra 2 gives you the habit of checking an answer by plugging it back in; the kidnapped robot problem is what happens when a robot's answer to "where am I?" is badly wrong and every check it knows how to run is made from inside that wrong answer.
+
+**General Usage**: The kidnapped robot problem is the situation in which a robot that was correctly tracking its own location is suddenly moved to a different, faraway place without being told. A particle filter (see the Particle Filter entry) keeps a cloud of guesses about the robot's location, and by the time of the move the cloud has gathered tightly around the old location. After the move, none of the guesses is anywhere near the true location. Because new guesses are produced only by moving existing ones forward, the filter has no particle near the truth to recover from, so it can stay confidently wrong. The name comes from the picture of someone literally picking the robot up and carrying it away.
+
+**Example.** A robot travels along a corridor and all 100 of its particles sit within 2 m of position $3$ m. Just before the move, each particle's weight (a score of how well that particle's location explains the current sensor reading) averages $0.6$, so the weights add up to $100 \times 0.6 = 60$. The robot is then carried to position $40$ m. At the new place each particle, still sitting near $3$ m, predicts a very different sensor reading from the real one, so each weight falls to about $0.001$ and the weights now add up to $100 \times 0.001 = 0.1$. The sum dropped from $60$ to $0.1$, a factor of $600$, yet every particle is still near $3$ m, so ordinary resampling (which only copies the existing particles) cannot move any of them to $40$ m.
+
+**AI/ML Usage**: Home robot vacuum cleaners that are lifted and carried to another room, and soccer robots that a referee picks up and places elsewhere on the field after a foul, are standard examples. The problem motivates extensions to Monte Carlo localization such as sensor resetting (see the Sensor Resetting Localization entry), which watch for the drop in particle weights shown above and respond by placing new particles.
+
+---
+
 <a id="kinematic-constraints-and-control-parameters"></a>
 ### Kinematic Constraints and Control Parameters
 
@@ -3458,6 +3673,30 @@ New state $(1,\ 0.5,\ 1,\ 1)$: it still moves right at speed $1$, and has picked
 **Example.** If $q$ and $p$ are two coin-flip distributions, with $p$ representing a perfectly fair coin (50/50) and $q$ representing a heavily biased coin (90% heads), $\text{KL}(q\parallel p)$ would come out as a fairly large, clearly positive number — quantifying just how noticeably different the biased coin's actual behavior is from the fair-coin reference it's being directly compared against.
 
 **AI/ML Usage**: KL divergence appears throughout modern machine learning: it's the core mathematical tool used to train Variational Autoencoders (measuring how far a learned distribution has drifted from a simple, well-behaved reference distribution), and it's closely, directly related to cross-entropy loss (see that entry), which is really KL divergence combined with one small additional constant term.
+
+---
+
+<a id="kld-sampling-adaptive-particle-count"></a>
+### KLD-Sampling (Adaptive Particle Count)
+
+**The Big Idea**: This builds on the KL Divergence entry. Algebra 2 has the idea of choosing a sample size big enough for the accuracy you want. KLD-sampling does this on the fly for a particle filter: when the robot is confident, the particles bunch together and few are needed; when the robot is uncertain, they spread out and many are needed. The count is chosen so that the particle set stays close, in the KL divergence sense, to the true distribution.
+
+**General Usage**: KLD-sampling (Fox, 2003) adjusts the number of particles $N$ at every step. The space of possible states is divided into small bins, and $k$ is the number of bins that contain at least one particle. To keep, with probability $1 - \delta$, the KL divergence between the particle set and the true distribution below a chosen error $\varepsilon$, the number of particles required is approximately
+
+$$
+N \approx \frac{k-1}{2\varepsilon}\left(1 - \frac{2}{9(k-1)} + \sqrt{\frac{2}{9(k-1)}}\; z_{1-\delta}\right)^{3},
+$$
+
+where $z_{1-\delta}$ is the upper $1-\delta$ point of the standard normal distribution (see the Normal Distribution Notation entry in the math_symbols file). More occupied bins means a larger required $N$. Because a mismatch between the observation and the particles makes the particles spread over more bins, the required number of particles rises when the filter is unsure and falls again once the particles agree with the observation.
+
+**Example.** Take $\varepsilon = 0.05$ and $z_{1-\delta} = 1.645$ (for $\delta = 0.05$).
+
+1. Particles occupy $k = 3$ bins. Then $\frac{2}{9\cdot 2} = 0.1111$, its square root is $0.3333$, and $0.3333 \times 1.645 = 0.5483$. The bracket is $1 - 0.1111 + 0.5483 = 1.4372$, and $1.4372^3 \approx 2.969$. So $N \approx \frac{2}{0.1}\times 2.969 = 20 \times 2.969 \approx 59.4$, about $60$ particles.
+2. Particles spread over $k = 11$ bins. Then $\frac{2}{9\cdot 10} = 0.0222$, its square root is $0.1491$, and $0.1491\times 1.645 = 0.2452$. The bracket is $1 - 0.0222 + 0.2452 = 1.2230$, and $1.2230^3 \approx 1.829$. So $N \approx \frac{10}{0.1}\times 1.829 = 100\times 1.829 \approx 183$ particles.
+
+The uncertain (spread out) case needs about three times as many particles as the confident (bunched up) case.
+
+**AI/ML Usage**: KLD-sampling is used in Monte Carlo localization for mobile robots to save computation: a robot that has already located itself runs with few particles, and a robot that is lost or re-localizing automatically gets more (see the Particle Filter entry and the Mobile Robot Localization entry).
 
 ---
 
@@ -3626,6 +3865,26 @@ Two beams have given two points on the surrounding walls; a real scan gives hund
 
 ---
 
+<a id="likelihood-collapse-in-products-of-many-factors"></a>
+### Likelihood Collapse in Products of Many Factors
+
+**The Big Idea**: This builds on the Product Notation entry in the math_symbols file and on the Statistical Independence entry. From Algebra 2, you know that multiplying numbers smaller than $1$ makes the result smaller each time: $0.5 \times 0.5 = 0.25$. A likelihood built from many independent pieces is exactly such a product, so the total shrinks quickly. The new idea is that a product of many bell-curve factors becomes a very narrow spike, so only an almost perfect match scores well.
+
+**General Usage**: When several readings are treated as independent, their joint likelihood is the product of the individual likelihoods, $\prod_{i=1}^{n} p_i$. If each factor has the form $e^{-z_i^2/2}$, where $z_i$ is how many standard deviations reading $i$ is from its expectation, the product is $e^{-\frac{1}{2}\sum_i z_i^2}$ because exponents add when like bases are multiplied. The sum in the exponent grows with the number of readings $n$, so for a fixed amount of error per reading the total likelihood falls toward $0$ faster and faster as $n$ grows. For example, $n$ identical factors $e^{-x^2}$ multiply to $e^{-nx^2}$, a curve that is far narrower than $e^{-x^2}$ itself. This is called likelihood collapse here. A single badly mismatched reading also lowers the whole product, because multiplying by a value near $0$ drives the result near $0$.
+
+**Example.** Every reading is exactly $1$ standard deviation from its expected value, so $z_i = 1$ and each factor is $e^{-\frac{1}{2}(1)^2} = e^{-0.5} \approx 0.607$.
+
+1. One reading: the likelihood is $e^{-0.5} \approx 0.607$.
+2. Ten readings: multiply ten identical factors, so add the exponents, giving $e^{-0.5 \times 10} = e^{-5} \approx 0.00674$.
+3. One hundred readings: $e^{-0.5 \times 100} = e^{-50} \approx 1.9 \times 10^{-22}$.
+4. One thousand readings, a typical size for a laser scanner: $e^{-0.5 \times 1000} = e^{-500}$, which is about $10^{-217}$.
+
+Each individual reading was only moderately off, yet the joint likelihood is effectively zero.
+
+**AI/ML Usage**: In a particle filter for robot localization (see the Particle Filter entry), a particle's weight is the joint likelihood of a whole laser scan with hundreds of rays, so this collapse makes the weights extremely small and extremely different from particle to particle. Practical systems soften it, for example by using wider noise values than the sensor really has, by using only some of the rays, or by adding terms that tolerate bad readings (see the Unexpected Objects and Map Errors in Sensor Readings entry). The related numerical trick of working with logarithms (see the Log Likelihood entry) turns the product into a sum so that the tiny values can still be stored.
+
+---
+
 <a id="linear-programming"></a>
 ### Linear Programming
 
@@ -3734,6 +3993,29 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 
 ---
 
+<a id="loss-of-particle-diversity"></a>
+### Loss of Particle Diversity
+
+**The Big Idea**: Algebra 2 covers probability only lightly, but one fact from coin flipping is enough: even a fair coin does not give exactly half heads in every run of flips. A cloud of guesses (see the Particle Filter entry) that is resampled by independent random picks behaves the same way, and the small random imbalances do not average out, they build on each other. The probability ideas involved are in the Probability / Probability Density entry in the math_symbols file, and the picking procedure is in the Resampling (Weighted to Unweighted Samples) entry.
+
+**General Usage**: Loss of particle diversity (also called loss of variance) is the tendency of a resampled particle set to collapse onto fewer and fewer distinct hypotheses, even when the evidence gives no reason to prefer any of them. Suppose two groups of particles are equally plausible, so each group carries half the total weight. With the simple resampling method, every new particle is chosen by its own independent random draw, so the number of new particles that land in a group is random and need not be exactly half. If one group happens to end up slightly larger, it now holds more than half the total weight on the next resampling, so each draw is more likely to land in it, and its lead grows. Once a group has no particles left, it can never return, because a group with zero particles has zero chance of being picked. The set is then locked onto one hypothesis. The cure is a resampling method whose total count per group does not fluctuate (see the Low-Variance Resampling entry).
+
+**Example.** A cloud of $N = 10$ equally weighted particles splits into group A (5 particles) and group B (5 particles), and the evidence cannot tell A from B. Each resampling makes 10 independent draws, and each draw lands in group A with probability equal to A's share of the particles. One possible run (the draws are random, so another run would differ):
+
+| Resampling | Probability a draw lands in A | Particles in A | Particles in B |
+|---|---|---|---|
+| start | | $5$ | $5$ |
+| 1 | $5/10 = 0.5$ | $6$ | $4$ |
+| 2 | $6/10 = 0.6$ | $8$ | $2$ |
+| 3 | $8/10 = 0.8$ | $10$ | $0$ |
+| 4 | $10/10 = 1.0$ | $10$ | $0$ |
+
+After resampling 3, group B has no particles, and every later draw has probability $0/10 = 0$ of choosing B, so B is gone for good. Nothing about the evidence favored A. The imbalance of 6 versus 4 at the first step came only from the randomness of the draws.
+
+**AI/ML Usage**: In a particle filter used for robot localization (estimating a robot's position on a map), a hallway with two visually identical features produces exactly this situation: two equally plausible clusters of particles, and a robot that stands still and keeps sensing and resampling. Plain resampling can eliminate the correct cluster by chance alone, so practical particle filters use a low-variance resampling step instead (see the Low-Variance Resampling entry).
+
+---
+
 <a id="loss-surface"></a>
 ### Loss Surface
 
@@ -3757,6 +4039,34 @@ Applying Gradient Descent's update rule with learning rate $\alpha=0.1$: $w\left
 **Example.** Spanish in the lecture has a small amount of tagged data, translations paired with English, and raw text. Malagasy has only translations paired with English and raw text, with no tagged data.
 
 **AI/ML Usage**: Annotation Projection (Cross-Lingual) and Direct Transfer (Delexicalized Parsing) (see those entries) are two ways to build taggers and parsers for such languages.
+
+---
+
+<a id="low-variance-resampling"></a>
+### Low-Variance Resampling
+
+**The Big Idea**: Algebra 2 gives you arithmetic sequences: starting from one number and adding the same step again and again. Low-variance resampling is that idea laid along the number line used for resampling (see the Resampling (Weighted to Unweighted Samples) entry): one random starting point, then equal steps, instead of many unrelated random points. The only new ingredient is "wrapping around", which is the same as the clock arithmetic of subtracting a full turn once you pass the end.
+
+**General Usage**: Low-variance resampling (also called systematic resampling) builds the new particle set with a single random number. Lay the particles' bins end to end on the interval $[0, 1]$, with bin $i$ having length equal to the normalized weight $w^i$ (weights scaled to add to 1). To make $N$ new particles:
+
+1. Draw one random number $u$ uniformly from $[0, 1/N)$ (every value in that range equally likely).
+2. Form $N$ sample positions $u,\; u + \tfrac{1}{N},\; u + \tfrac{2}{N},\; \ldots,\; u + \tfrac{N-1}{N}$. These are equally spaced by $1/N$. If $u$ is instead drawn from all of $[0,1)$, any position past $1$ wraps around by subtracting $1$.
+3. Each new particle is the particle whose bin contains the corresponding position.
+
+A particle with weight $w^i$ owns a bin of length $w^i$, and positions are $1/N$ apart, so it receives either $\lfloor N w^i \rfloor$ or $\lceil N w^i \rceil$ copies (the whole number just below or just above $N w^i$). In particular, equally weighted particles each get exactly one copy, so equal groups stay equal.
+
+**Example.** Take $N = 4$ particles $A, B, C, D$ with weights $0.1, 0.5, 0.1, 0.3$ (they add to $1$). The bins are $A = [0, 0.1)$, $B = [0.1, 0.6)$, $C = [0.6, 0.7)$, $D = [0.7, 1.0]$. The spacing is $1/N = 0.25$. Suppose the single random number is $u = 0.15$.
+
+| Step | Position | Bin containing it | Particle chosen |
+|---|---|---|---|
+| 1 | $0.15$ | $[0.1, 0.6)$ | $B$ |
+| 2 | $0.15 + 0.25 = 0.40$ | $[0.1, 0.6)$ | $B$ |
+| 3 | $0.40 + 0.25 = 0.65$ | $[0.6, 0.7)$ | $C$ |
+| 4 | $0.65 + 0.25 = 0.90$ | $[0.7, 1.0]$ | $D$ |
+
+The new set is $B, B, C, D$. Check against $N w^i$: $B$ expects $4 \times 0.5 = 2$ copies and got $2$; $D$ expects $4 \times 0.3 = 1.2$ and got $1$; $A$ expects $0.4$ and got $0$; $C$ expects $0.4$ and got $1$. Every count is the whole number just below or just above $N w^i$. Second check, equal weights: with $N = 4$ and every weight $0.25$, the bins are $[0, 0.25)$, $[0.25, 0.5)$, $[0.5, 0.75)$, $[0.75, 1]$. For $u = 0.10$ the positions are $0.10, 0.35, 0.60, 0.85$, and each lands in a different bin, so every particle is chosen exactly once, whatever $u$ is.
+
+**AI/ML Usage**: Low-variance resampling is the resampling step recommended in standard treatments of particle filters for robot localization (for example Thrun, Burgard, and Fox, *Probabilistic Robotics*, the low-variance sampler in the particle filter chapter). It costs one random number instead of $N$, runs in time proportional to $N$, and prevents the collapse described in the Loss of Particle Diversity entry.
 
 ---
 
@@ -3931,6 +4241,35 @@ where the model specifies $P(\bar t, \bar a \mid \bar s)$ but not $P(\bar t \mid
 (Any consistent logarithm base works throughout, since changing the base only rescales every entry by the same constant factor.) This negative target value means that, once negative sampling's built-in shift is accounted for, skip-gram-with-negative-sampling trains the word vector for "dog" and the context vector for "bit" so that their dot product moves toward $-0.693$, not toward the raw PMI value of $0.916$.
 
 **AI/ML Usage**: This equivalence explains why Skip-Gram-with-negative-sampling and GloVe (see that entry above), despite looking like very different algorithms — one predicts words one training pair at a time, the other regresses on a whole counts matrix at once — tend to produce similar-quality word vectors: both are, underneath, different practical routes to approximately factoring the same kind of word-by-word association matrix. It also connects modern neural word embeddings back to much older, pre-neural techniques such as Latent Semantic Analysis, which explicitly used Singular Value Decomposition (see that entry above) to factor a word-document matrix decades before Word2Vec existed.
+
+---
+
+<a id="max-normalization-of-weights"></a>
+### Max-Normalization of Weights
+
+**The Big Idea**: Algebra 2 teaches that a ratio does not change when you multiply the top and the bottom by the same number, and that dividing every number in a list by the same number leaves their relative sizes unchanged. Max-normalization uses exactly that: divide every weight by the largest weight, so the biggest becomes $1$ and all others become fractions of it. The logarithm rules it uses (the log of a quotient is a difference of logs) are in the Logarithm entry in the math_symbols file, and the reason it is needed is in the Numerical Underflow entry.
+
+**General Usage**: Given positive weights $w_1, \ldots, w_N$ used to resample (see the Resampling (Weighted to Unweighted Samples) entry), a pick is made with probability equal to a weight divided by the total of all the weights, so multiplying every weight by the same positive constant $c$ changes nothing. Max-normalization chooses $c = 1/w_{\max}$, where $w_{\max}$ is the largest weight:
+$$
+w'_i = \frac{w_i}{w_{\max}}, \qquad \max_i w'_i = 1 .
+$$
+When the weights are so small that they cannot be stored, the same thing is done on their logarithms:
+$$
+\log w'_i = \log w_i - \log w_{\max}, \qquad w'_i = \exp\big(\log w'_i\big),
+$$
+where $\log w_{\max}$ is simply the largest of the log weights (the logarithm increases with its input, so the largest weight has the largest log). Every $\log w'_i$ is $0$ or negative, with $0$ for the best particle, so $w'_i$ lies between $0$ and $1$. Particles far below the best come out as numbers so small they are stored as $0$ and dropped, which is acceptable because they would almost never be picked. Dividing by the smallest weight $w_{\min}$ instead would be a mistake: $w_{\max}/w_{\min}$ can be enormous, which brings back the representation problem for the most important particles.
+
+**Example.** Three particles have log weights $-1000$, $-1002$, and $-1010$. Exponentiating directly gives $e^{-1000}$, about $10^{-435}$, which an ordinary double-precision number (smallest positive value about $5 \times 10^{-324}$) stores as $0$, so all three weights would be $0$. Max-normalize instead:
+
+| Particle | $\log w_i$ | $\log w_i - \log w_{\max}$ (with $\log w_{\max} = -1000$) | $w'_i = \exp(\cdot)$ |
+|---|---|---|---|
+| 1 | $-1000$ | $0$ | $1$ |
+| 2 | $-1002$ | $-2$ | $e^{-2} \approx 0.1353$ |
+| 3 | $-1010$ | $-10$ | $e^{-10} \approx 0.0000454$ |
+
+The total is $1 + 0.1353 + 0.0000454 \approx 1.1354$, so the resampling probabilities are about $1/1.1354 \approx 0.881$, $0.1353/1.1354 \approx 0.119$, and $0.0000454/1.1354 \approx 0.00004$. These are exactly the probabilities the true weights would give, because every weight was multiplied by the same constant $e^{1000}$.
+
+**AI/ML Usage**: In a particle filter, each particle's weight is an observation likelihood, a product of one small factor per sensor reading (for example per ray of a laser scan), so working with log weights and subtracting the largest log weight before exponentiating is standard practice. The same operation, subtracting the maximum before exponentiating, appears in the numerically stable computation of the softmax function (see the Softmax entry in the math_symbols file) in neural networks.
 
 ---
 
@@ -4322,6 +4661,19 @@ Arm B has the higher average so far, but that average is based on a single pull,
 
 ---
 
+<a id="multi-observation-sensor-resetting-localization"></a>
+### Multi-Observation Sensor Resetting Localization
+
+**The Big Idea**: This builds directly on the Sensor Resetting Localization entry and on the Set Intersection entry in the math_symbols file. In Algebra 2, a system of two equations has a solution where the two graphs cross; one equation alone describes a whole curve of possible solutions. Using two observations to reset particles is the same idea: each observation alone allows a whole curve of locations, and the robot must be where the curves cross.
+
+**General Usage**: Multi-observation sensor resetting localization (MOSR) improves sensor resetting by combining several observations when placing new particles. A single observation, such as seeing one goalpost, is consistent with a whole set of possible robot poses (positions together with the direction the robot faces). A second observation, such as seeing the other goalpost, gives a different set. The robot's true pose must be in both sets, so new particles are placed in the **intersection** of the sets, a much smaller and more certain region. Ordinary sensor resetting reasons about one observation at a time and can be fooled into resetting particles to locations that are wrong; MOSR resets only to locations where all of the observations make sense.
+
+**Example.** Two landmarks sit at $A=(-3,0)$ and $B=(3,0)$ on a flat field. The robot measures its distance to $A$ as $5$ and its distance to $B$ as $5$. Each measurement alone allows every point on a circle of radius $5$ around that landmark, which is infinitely many locations. A point $(x,y)$ must satisfy both $(x+3)^2+y^2=25$ and $(x-3)^2+y^2=25$. Subtracting the second equation from the first gives $12x=0$, so $x=0$. Substituting back, $9+y^2=25$, so $y^2=16$ and $y=\pm 4$. Two observations reduced infinitely many candidate locations to just two, $(0,4)$ and $(0,-4)$, and anything else known about the field (for example that the field only extends to $y\ge 0$) can remove one of them.
+
+**AI/ML Usage**: MOSR is used for robot soccer localization, where the robot sees goalposts and field lines that are ambiguous individually (a single view may not reveal whether a post is the left or the right one). Requiring every observation to be consistent with a reset location reduces the repeated large errors that single-observation resetting can produce when a misleading observation arrives.
+
+---
+
 <a id="multilingual-bert-mbert"></a>
 ### Multilingual BERT (mBERT)
 
@@ -4370,6 +4722,24 @@ $$73.9 - 71.9 = 2.0 \text{ percentage points.}$$
 Because "I" and "J'" both became 47, they receive exactly the same vector, and "have" and "ai" both became 24, so they too share one vector.
 
 **AI/ML Usage**: multiCluster (Ammar et al., 2016, "Massively Multilingual Word Embeddings") was introduced to build embeddings for dozens of languages using only monolingual text and pairwise dictionaries. It is a baseline for later multilingual approaches that train sentence encoders (see the Multilingual Sentence Embeddings entry) or large pre-trained models (see the Multilingual BERT entry).
+
+---
+
+<a id="multimodal-distribution-modes"></a>
+### Multimodal Distribution (Modes)
+
+**The Big Idea**: Algebra 2 teaches that a parabola has one vertex, a single highest (or lowest) point. A probability distribution can instead have several separate peaks, like a graph with two hills. Each hill top is called a **mode**. It goes beyond Algebra 2 only in that the height of the graph is a probability density (see the Probability Mass Function vs. Probability Density Function entry); the Normal Distribution Notation entry in the math_symbols file describes the single-peak case to compare against.
+
+**General Usage**: A distribution with exactly one peak is **unimodal**; one with two or more separated peaks is **multimodal**. Each peak is a **mode**. The tallest is the global maximum (the value of $\arg\max_x p(x)$); the others are **local maxima**, points higher than everything immediately around them but not the highest overall. A multimodal distribution means the evidence supports several distinct possibilities at once, so no single summary value describes it well: the average of two separated peaks can land in the low region between them, where the distribution is small. A common response is to keep **one hypothesis per mode** and handle each separately.
+
+**Example.** A distribution over five positions $1, 2, 3, 4, 5$ has probabilities $0.4,\ 0.1,\ 0,\ 0.1,\ 0.4$.
+
+1. Check they add to $1$: $0.4 + 0.1 + 0 + 0.1 + 0.4 = 1.0$.
+2. Find the peaks: positions $1$ and $5$ are each higher than their neighbours, so there are two modes (here tied).
+3. Compute the mean: $1(0.4) + 2(0.1) + 3(0) + 4(0.1) + 5(0.4) = 0.4 + 0.2 + 0 + 0.4 + 2.0 = 3.0$.
+4. Compare: the mean is position $3$, where the probability is $0$. The mean describes a place the robot almost surely is not, which is why one hypothesis per mode (positions $1$ and $5$) is the better summary.
+
+**AI/ML Usage**: In robot localization, a robot in a corridor with two identical doorways can hold a belief with one mode near each doorway until further sensing tells them apart, and the planner may plan separately for each hypothesis (see the Particle Filter and Determinization entries). Mixtures of several bell curves (see the Gaussian Mixture Model entry) are a standard way to represent multimodal distributions in machine learning.
 
 ---
 
@@ -4760,6 +5130,23 @@ These renormalized values sum to (approximately) $1$, as required of any valid p
 
 ---
 
+<a id="numerical-underflow"></a>
+### Numerical Underflow
+
+**The Big Idea**: Algebra 2 treats numbers as having unlimited room, and an exponential like $0.1^{n}$ gets smaller without end as $n$ grows. A computer stores each real number in a fixed amount of memory, so there is a smallest positive number it can hold, and anything closer to zero than that is stored as exactly $0$. The multiplication of fractions and the logarithm rules involved are in the Likelihood and Log Likelihood entries.
+
+**General Usage**: Numerical underflow is the loss of a number to $0$ because its true size is smaller than the smallest positive value the computer's number format can store. It is typically caused by multiplying many numbers that are each between $0$ and $1$, such as probabilities. Each multiplication shrinks the running product, and after enough factors the product falls below the representable range. Once stored as $0$, the information is gone: a later comparison cannot tell a product that is slightly too small from one that is astronomically too small. The standard remedy is to work with logarithms, because the log of a product is the sum of the logs, and a sum of moderate negative numbers stays comfortably inside the representable range. If the original (non-log) values are needed later, they are recovered only after rescaling (see the Max-Normalization of Weights entry).
+
+**Example.** Take $100$ independent probabilities, each equal to $10^{-4}$. Their product is $(10^{-4})^{100} = 10^{-400}$. An ordinary double-precision number cannot store anything smaller than about $5 \times 10^{-324}$, so the computed product is $0$. In the log domain, each factor contributes $\ln(10^{-4}) = -4 \times 2.3026 = -9.2103$, and the sum of $100$ of them is
+$$
+100 \times (-9.2103) = -921.03,
+$$
+a perfectly ordinary number. The log-domain result still distinguishes this product from, say, $10^{-500}$ (whose log is $-1151.3$), while the direct product would be $0$ in both cases.
+
+**AI/ML Usage**: Underflow is the reason probabilistic models are almost always computed with log probabilities: the likelihood of a long sequence in a language model or hidden Markov model is a product with one small factor per position, and a robot's observation likelihood in a particle filter is a product with one small factor per sensor ray. Libraries provide log-sum-exp and log-softmax routines specifically to avoid underflow when the log values must be combined or converted back.
+
+---
+
 <a id="objective-function-training-objective"></a>
 ### Objective Function / Training Objective
 
@@ -4882,6 +5269,32 @@ So $32{,}000$ probabilities are stored. Halving the cell size to $0.025$ m doubl
 **Example.** For "What was Marie Curie the recipient of?", retrieved text may include "Marie Curie was awarded the Nobel Prize in Chemistry and the Nobel Prize in Physics...", but also "Mother Teresa received the Nobel Peace Prize in...", "Curie received his doctorate in March 1895..." (about Pierre Curie), and "Sklodowska received accolades for her early work..." (Marie Curie's maiden name). The DrQA system retrieved context containing the answer roughly 70 to 80% of the time, but its end-to-end accuracy was roughly 20 to 40%.
 
 **AI/ML Usage**: DrQA (Chen et al., 2017) used a TF-IDF-style retriever (see the TF-IDF entry in the math_symbols file) over Wikipedia, and later work replaced it with BERT-based retrieval (see the Dense Retrieval entry). Real-question data sets such as Natural Questions (see that entry) are used to test these systems.
+
+---
+
+<a id="optimal-receding-horizon-local-planning"></a>
+### Optimal (Receding-Horizon) Local Planning
+
+**The Big Idea**: Algebra 2 has you add up a list of numbers with a sum. Optimal local planning scores a whole sequence of actions by adding up the score of each action, then picks the sequence with the largest total. The new ingredient beyond Algebra 2 is that only the first action is carried out, and the whole search is repeated at every time step. Read the Greedy Local Planning, Summation, and Plan Notation entries first.
+
+**General Usage**: An **optimal** local planner chooses a plan $\pi = [a_t^1, \dots, a_t^N]$, a sequence of $N$ actions, to maximize the total score:
+
+$$
+\pi = \arg\max_{\Pi} \sum_i f(\pi[i], s_t), \qquad a_t = \pi[1]
+$$
+
+where $\Pi$ is the collection of all plans being considered. The action actually executed is only the **first** entry $\pi[1]$. At the next time step the planner **recomputes** a fresh plan from the new situation and again executes only its first action. This repeating pattern is called **receding-horizon** planning, because the stretch of future covered by the plan keeps moving forward as time passes. The later actions in the plan are only a **nominal** guess at how to reach the goal and are not a commitment. If the objective and the world do not change, what is executed will be close to that earlier nominal plan, but if anything changes the planner is free to change its mind.
+
+**Example.** Two plans with $N = 3$ actions are compared. The score of each action is shown, and the total is the sum:
+
+| Plan | Actions | Scores | Total |
+|---|---|---|---|
+| A | straight, straight, left | $5, 1, 1$ | $5 + 1 + 1 = 7$ |
+| B | left, straight, straight | $3, 4, 4$ | $3 + 4 + 4 = 11$ |
+
+The planner picks plan B because $11 > 7$, and executes only its first action, $a_t = \pi[1] = \text{left}$. A greedy planner (see the Greedy Local Planning entry) would have looked only at the first action of each plan, found that straight scores $5$ and left scores $3$, and chosen straight. The two methods disagree because plan B has a better future. At the next time step, the planner computes a new plan from the new state instead of continuing with the rest of plan B.
+
+**AI/ML Usage**: Receding-horizon optimization is the core idea of model predictive control (MPC), which is used for vehicle control, drones, and legged robots. At every control step it solves for a whole sequence of future actions, applies the first, and repeats, which lets the system react quickly to disturbances while still planning ahead.
 
 ---
 
@@ -5024,6 +5437,30 @@ The weights add to $2 + 4 + 3 + 1 = 10$, and dividing by 10 gives the last colum
 
 ---
 
+<a id="path-tracking-error-metrics"></a>
+### Path-Tracking Error Metrics
+
+**The Big Idea**: Algebra 2 compares a function's values with a target using differences and absolute values. Path-tracking metrics apply the same idea to a path that a vehicle actually drove, compared with the path it was meant to drive. They go beyond Algebra 2 only in the last metric, jerk, which needs the idea of a rate of change repeated three times.
+
+**General Usage**: When a vehicle follows a plan with a controller, the executed path differs from the plan. Five metrics compare controllers:
+
+1. **Tracking error**: the difference between the executed path and the plan.
+2. **Energy consumption**: sharp trajectories need very large control corrections, which use more energy.
+3. **Overshoot**: when the plan changes direction, how far the executed path swings past the plan.
+4. **Settling time**: how long the vehicle takes to converge onto the plan after a disturbance, for instance when the plan is a straight line afterwards.
+5. **Jerk**: the third derivative of position with respect to time. A **derivative** is a rate of change: the rate of change of position is velocity, the rate of change of velocity is acceleration, and the rate of change of acceleration is jerk. High jerk means passengers feel abruptly thrown around, so jerk measures ride comfort.
+
+**Example.** The plan is the line $y = 0$ and the vehicle's path is sampled at four moments with sideways distances from the plan of $0.0, 0.1, 0.3, 0.2$ m.
+
+1. Largest tracking error: $\max(0.0, 0.1, 0.3, 0.2) = 0.3$ m.
+2. Average tracking error: $(0.0 + 0.1 + 0.3 + 0.2) / 4 = 0.6 / 4 = 0.15$ m.
+
+For jerk, suppose position is $x(t) = t^3$. Then velocity is $3t^2$, acceleration is $6t$, and jerk is $6$, constant.
+
+**AI/ML Usage**: These metrics are used to tune and compare path-following controllers in robotics and autonomous driving, for example comparing proportional, derivative and PID variants of pure pursuit (see the Pure Pursuit and PID Controller entries). Jerk limits are specifically used in motion planning to keep passenger comfort acceptable.
+
+---
+
 <a id="pddl"></a>
 ### PDDL
 
@@ -5140,6 +5577,32 @@ Average negative log likelihood: $(1.386+1.099+1.386+1.099)/4 = 4.970/4 \approx 
 **Example.** The sentence "The cat sleeps" breaks down, grammatically, into an NP ("The cat") and a VP ("sleeps") — and the NP itself further breaks down into an article and an NN ("cat"), while the VP further breaks down into a VBZ ("sleeps"), forming a nested, tree-shaped grammatical structure built entirely out of these category labels.
 
 **AI/ML Usage**: These labels are the standard, widely used output of syntactic parsers in natural language processing — software that automatically analyzes a sentence's grammatical structure — and they're used as a foundational building block for many further downstream NLP tasks, including grammar checking, machine translation, and information extraction from raw, unstructured text.
+
+---
+
+<a id="pid-controller"></a>
+### PID Controller
+
+**The Big Idea**: Algebra 2 gives you three ways to look at a changing quantity: its current value, its rate of change (slope), and its accumulated total (the running sum of values). A PID controller uses all three views of the error, the gap between where a system is and where it should be, to decide how hard to correct. The slope and the accumulation are calculus ideas, described below in plain terms.
+
+**General Usage**: A **controller** is a rule that turns a measured error into a command. A **PID controller** (proportional-integral-derivative) adds three terms, each multiplied by a chosen constant (a **gain**):
+
+- **Proportional**: a correction proportional to the current error $e$, giving $K_p\,e$.
+- **Integral**: a correction proportional to the accumulated error over time, giving $K_i \sum e\,\Delta t$.
+- **Derivative**: a correction proportional to how fast the error is changing, giving $K_d\,\dfrac{\Delta e}{\Delta t}$.
+
+The command is $u = K_p\,e + K_i \sum e\,\Delta t + K_d\,\dfrac{\Delta e}{\Delta t}$. A **feedforward** term, which computes part of the command directly from the goal without looking at the error, can be added to it.
+
+**Example.** Take gains $K_p = 2$, $K_i = 0.5$, $K_d = 1$, a time step $\Delta t = 1$, and heading errors (in radians) of $e_0 = 0.4$, $e_1 = 0.3$, $e_2 = 0.1$.
+
+| Time | Proportional $2e$ | Accumulated error | Integral $0.5 \times$ sum | Derivative $1 \times \Delta e / \Delta t$ | Command $u$ |
+|---|---|---|---|---|---|
+| 1 | $2 \times 0.3 = 0.6$ | $0.4 + 0.3 = 0.7$ | $0.35$ | $(0.3 - 0.4)/1 = -0.1$ | $0.6 + 0.35 - 0.1 = 0.85$ |
+| 2 | $2 \times 0.1 = 0.2$ | $0.7 + 0.1 = 0.8$ | $0.40$ | $(0.1 - 0.3)/1 = -0.2$ | $0.2 + 0.4 - 0.2 = 0.4$ |
+
+As the error shrinks, the proportional and derivative terms shrink or turn negative, so the command eases off.
+
+**AI/ML Usage**: PID control is the standard low-level feedback method in robotics. In pure pursuit path following, the function $f(\theta, \theta_{\text{int}})$ can be a feedforward term, plus a proportional term on the heading difference, plus derivative and integral terms, giving the PID-plus-feedforward variant (see the Pure Pursuit entry).
 
 ---
 
@@ -5520,6 +5983,31 @@ Now two dimensions, with $\sigma_x = 2$ and $\sigma_y = 1$, on the contour where
 | 4. Conclude | The assumption in Step 1 must be false; therefore, no smallest positive real number exists |
 
 **AI/ML Usage**: This is exactly the proof strategy used to establish Dijkstra's Algorithm's optimality (see the Dijkstra's Algorithm entry in this file): rather than directly demonstrating that every vertex's recorded cost is optimal, the proof assumes a vertex's cost *could* be non-optimal, exhaustively lists the only two ways that could happen (a cheaper route through the Closed Set (Explored Vertices), or a cheaper route through a still-unexplored vertex), and shows both are impossible given what non-negative edge weights and the Priority Queue's extraction order already guarantee.
+
+---
+
+<a id="pure-pursuit"></a>
+### Pure Pursuit
+
+**The Big Idea**: Algebra 2 teaches that a straight line is described by a slope. Pure pursuit steers a vehicle by choosing how sharply it should bend, the curvature (see the Curvature (Path) entry in the math_symbols file), so that it heads toward a nearby target point on a plan. Choosing the bend as a function of two angles is the new step beyond Algebra 2; function notation itself is already familiar.
+
+**General Usage**: Pure pursuit is a simple local planning method for a vehicle following a global plan. Two rules define it:
+
+$$
+v = \text{const}, \qquad c = f(\theta, \theta_{\text{int}})
+$$
+
+The speed $v$ is a fixed constant. The curvature $c$, which sets the arc the car takes, is a function $f$ of the car's heading $\theta$ and of the heading $\theta_{\text{int}}$ toward an intermediate goal (see the Intermediate-Goal Heading entry in the math_symbols file). The intermediate goal is found with a **horizon circle**: a circle centred on the car, whose intersection with the plan is the target. As the car moves, the circle moves with it and the target slides forward along the plan, so the executed path is a smooth approximation of the plan. If $\theta = \theta_{\text{int}}$, the car drives straight. Different choices of $f$ give different variants: feedforward only, plus a proportional heading-error term, plus a derivative term, or full PID plus feedforward (see the PID Controller entry).
+
+**Example.** Choose the proportional rule $f(\theta, \theta_{\text{int}}) = k(\theta_{\text{int}} - \theta)$ with $k = 1.5$ per radian per metre. With $\theta = 0.2$ and $\theta_{\text{int}} = 0.5$:
+
+$$
+c = 1.5 \times (0.5 - 0.2) = 1.5 \times 0.3 = 0.45 \text{ per metre}
+$$
+
+The turning radius is $R = 1/c = 1/0.45 \approx 2.22$ m. If $\theta_{\text{int}} = 0.2$ instead, $c = 1.5 \times 0 = 0$, and the car drives straight.
+
+**AI/ML Usage**: Pure pursuit and its variants are widely used for path following in mobile robots and autonomous vehicles, where the global plan has sharp corners that a real car cannot drive. It is the local-tracking layer of the Hierarchical Planning (Global and Local Planner) approach, and its variants are compared with the Path-Tracking Error Metrics.
 
 ---
 
@@ -5915,6 +6403,59 @@ Under RoBERTa's dynamic masking, a fresh pair of positions is chosen independent
 
 ---
 
+<a id="robust-observation-likelihood"></a>
+### Robust Observation Likelihood
+
+**The Big Idea**: This builds on the Observation Likelihood Model (Sensor Model) entry and on piecewise functions from Algebra 2, where a function follows one rule on one interval and a different rule on another (see the Absolute Value entry in the math_symbols file). A robust observation likelihood is a sensor model written as exactly that kind of piecewise function: a bell curve near the expected reading, flat shelves on either side, and zero where the sensor cannot report at all. The reasoning about areas beyond a plain rectangle goes beyond Algebra 2; see the Error Function entry in the math_symbols file.
+
+**General Usage**: A plain Gaussian sensor model, $p(s \mid x) \propto \exp[-(s-\hat{s})^2/\sigma^2]$ (the reading $s$, the reading $\hat{s}$ expected from pose $x$, and sensor spread $\sigma$), gives almost no probability to any large error, so a single unexpected reading (a moving person, a reflective surface) can wipe out the correct particle. A robust version keeps the Gaussian only in a band from $\hat{s} - d_{\text{short}}$ to $\hat{s} + d_{\text{long}}$, holds the likelihood flat at the Gaussian's edge values outside the band, and sets it to $0$ below the sensor's minimum range $s_{\min}$ and above its maximum range $s_{\max}$:
+
+$$
+p(s \mid x) \propto
+\begin{cases}
+0 & \text{if } s < s_{\min} \text{ or } s > s_{\max} \\
+\exp[-d_{\text{short}}^2/\sigma^2] & \text{if } s < \hat{s} - d_{\text{short}} \\
+\exp[-d_{\text{long}}^2/\sigma^2] & \text{if } s > \hat{s} + d_{\text{long}} \\
+\exp[-(s-\hat{s})^2/\sigma^2] & \text{else.}
+\end{cases}
+$$
+
+The cost is that the area under the curve now changes with the expected reading $\hat{s}$, so the normalization constant differs from particle to particle and can no longer be ignored; it is recomputed by adding the two rectangle areas and the Gaussian area (via the error function).
+
+**Example.** Take $\sigma = 1$, expected reading $\hat{s} = 5$, thresholds $d_{\text{short}} = 1$ and $d_{\text{long}} = 2$, and range limits $s_{\min} = 0.5$ and $s_{\max} = 10$. Evaluate the unnormalized likelihood at several readings:
+
+| Reading $s$ | Which case applies | Computation | Value |
+|---|---|---|---|
+| $0.2$ | below $s_{\min}$ | outside the sensor's range | $0$ |
+| $12$ | above $s_{\max}$ | outside the sensor's range | $0$ |
+| $3$ | $s < 5 - 1 = 4$ | $\exp[-1^2/1^2] = e^{-1}$ | $0.3679$ |
+| $8$ | $s > 5 + 2 = 7$ | $\exp[-2^2/1^2] = e^{-4}$ | $0.0183$ |
+| $5.5$ | else (inside the band) | $\exp[-(0.5)^2/1] = e^{-0.25}$ | $0.7788$ |
+| $4$ | else (exactly at the edge) | $\exp[-(1)^2/1] = e^{-1}$ | $0.3679$ |
+
+The last row is a check: at $s = 4$ the Gaussian gives $0.3679$, the same as the plateau to its left, so the curve has no jump there.
+
+**AI/ML Usage**: Robust sensor models of this kind are used in the observation step of particle filters for robot localization (see the Particle Filter entry), where each particle's weight is the likelihood of the actual LIDAR range reading (see the LIDAR entry) from that particle's pose. The specific thresholds and plateau choices are designed from knowledge of the sensor and the environment, because moving obstacles, surface reflectivity and range limits all produce errors that a single Gaussian cannot represent.
+
+---
+
+<a id="robustification-of-the-observation-likelihood"></a>
+### Robustification of the Observation Likelihood
+
+**The Big Idea**: This builds on the Observation Likelihood Model (Sensor Model) entry and the Standard Deviation entry in the math_symbols file. In Algebra 2 a wider bell curve is flatter and falls off more slowly. Robustification deliberately widens the bell curve of the sensor model, so the filter pretends its sensor is less precise than it really is. A surprising reading is then penalized less harshly.
+
+**General Usage**: A sensor model usually says: the expected reading is $\mu$ and readings are spread around it with standard deviation $\sigma$ (a bell curve). A reading far from $\mu$ receives a very small likelihood, hence a very small particle weight, and if every particle gets almost zero weight the filter breaks down. **Robustification** means inflating the spread $\sigma$ (or applying a similar softening to the likelihood) so unexpected readings still produce non-zero weights. The trade-off is that a wider curve also treats good and bad matches more alike, so the filter becomes less accurate while becoming more robust.
+
+**Example.** A sensor is expected to read $\mu = 10$, and it reads $14$. Compare the likelihood relative to its peak value, $\exp\!\left(-\tfrac{(14-10)^2}{2\sigma^2}\right)$.
+
+1. With $\sigma = 1$: $\exp\!\left(-\tfrac{16}{2}\right) = \exp(-8) \approx 0.00034$.
+2. With $\sigma = 3$: $\exp\!\left(-\tfrac{16}{18}\right) = \exp(-0.889) \approx 0.41$.
+3. The same bad reading gets a weight about $1200$ times larger with the wider curve ($0.41 / 0.00034 \approx 1200$), so the particle is not wiped out. The price: with $\sigma = 3$, a reading of $11$ (a small miss) gets $\exp(-1/18)\approx 0.95$ versus $\exp(-1/2)\approx 0.61$ for $\sigma = 1$, so close and slightly-off readings are hardly distinguished any more.
+
+**AI/ML Usage**: In particle filter localization, increasing the observation standard deviation is a common tuning knob for coping with unexpected observations such as obstacles that are not on the map. It lowers accuracy and raises robustness, and it trades off against two other knobs, the number of particles and the number of sensor rays used (see the Particle Filter entry and the Ray Casting entry). Related ideas in machine learning include label smoothing and heavy-tailed noise models, which likewise avoid giving zero probability to surprising data.
+
+---
+
 <a id="rouge"></a>
 ### ROUGE
 
@@ -6082,6 +6623,19 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 
 ---
 
+<a id="sensor-resetting-localization"></a>
+### Sensor Resetting Localization
+
+**The Big Idea**: This builds on the Particle Filter, Importance Weight, and Kidnapped Robot Problem entries. In Algebra 2 you substitute a proposed answer into an equation and, if the two sides disagree badly, you throw the answer out and try another. Sensor resetting does exactly this for a robot's belief: it substitutes what the robot actually senses into what the particles predict, and if they disagree badly, it throws particles out and places new ones.
+
+**General Usage**: Sensor resetting localization is an addition to particle-filter localization that lets the filter recover when its particles are in the wrong region. Its key idea is that a **mismatch** between the expected and the real observations indicates that the estimates are in the wrong region of state space (the set of all possible robot locations). The mismatch is measured with the importance weights: each weight is large when a particle's expected observation matches the real one, so the **sum of all the importance weights** is high when the particles can be trusted and low when there is a great mismatch. When the sum is low, new particles are drawn from locations where the real observation makes sense, rather than being generated only by moving the old particles.
+
+**Example.** Five particles have weights $0.02,\ 0.01,\ 0.03,\ 0.01,\ 0.02$. Their sum is $0.02+0.01+0.03+0.01+0.02=0.09$. Suppose the filter uses a trust level of $0.5$ (an illustrative choice for this example). Since $0.09 < 0.5$, the mismatch is large and the filter resets. The robot's wall sensor reads $1$ m, but every particle expects the wall at $2$ m. Locations where the expected wall distance is $1$ m lie $1$ m closer to the wall, so each new particle is placed $2-1=1$ m closer to the wall than the old ones, where its expected observation of $1$ m agrees with the real one.
+
+**AI/ML Usage**: Sensor resetting localization was developed for soccer-playing humanoid robots that can be picked up by a referee, and it is the standard remedy for the kidnapped robot problem (see that entry). Reported evaluations show it is more accurate than ordinary Monte Carlo localization for the same number of particles. It can be extended by combining several observations at once (see the Multi-Observation Sensor Resetting Localization entry).
+
+---
+
 <a id="sequence-labeling-tagging"></a>
 ### Sequence Labeling (Tagging)
 
@@ -6113,6 +6667,28 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 The table's second and third columns can each be any length — nothing forces the output to match the input in size, unlike a transducer, which always produces exactly one label per input token.
 
 **AI/ML Usage**: Encoder-decoder Transformers (see Encoder-Decoder Architecture and Transformer Architecture above) are the standard architecture for building seq2seq models for machine translation, text summarization, and dialogue systems. The key contrast with a Transducer (Sequence Labeling) is length: a transducer's output length is fixed to exactly match its input length, one label per position, while a seq2seq model's output length is independent of its input length and is discovered only by generating tokens until a Stop Token / End-of-Sequence Token (see that entry in `math_symbols.md`) is produced.
+
+---
+
+<a id="simple-carrot-navigation-controller"></a>
+### Simple Carrot Navigation Controller
+
+**The Big Idea**: A carrot dangled in front of a donkey keeps it walking forward but is never reached. In the same way, this controller always places a target point (the "carrot") a fixed distance ahead on the plan and keeps driving toward it. The geometry is a circle meeting a path, so it needs only Algebra 2 ideas about distance and intersection; the new part is repeating the construction every time step.
+
+**General Usage**: The **simple carrot follower** builds the carrot in four steps: (1) construct the horizon circle around the car as in pure pursuit; (2) solve for the first intersection of the circle with the plan; (3) project that point into the local frame of the car (a coordinate system attached to the car, so the point is described relative to the car); (4) run a local planner to the carrot.
+
+The **simple carrot navigation controller** wraps this in a loop. At every time step it:
+
+1. checks whether the goal has been reached;
+2. checks whether a previous plan exists and is still valid: for all edges from the goal to the start, it checks whether the car's location is close to an edge, and if the start has been reached and the car is still not close to an edge, the plan is invalid and it replans;
+3. gets the intermediate way-point (the carrot);
+4. runs the local planner to the carrot.
+
+A limitation: if the local planner gets stuck, nothing in this loop can free it, which requires feedback from the local planner to the global planner. A variant sets the carrot farther ahead for smoother trajectories, for example the farthest way-point reachable by a straight line from the current location without intersecting the map (the locally smoothed path follower).
+
+**Example.** The plan is the straight line along the $x$-axis and the horizon radius is $5$ m. The car is at $(0, 0)$, so the circle meets the plan ahead at $(5, 0)$, and the carrot is $(5, 0)$. After the car advances $1$ m to $(1, 0)$, the circle moves with it and meets the plan at $(1 + 5, 0) = (6, 0)$, so the carrot moves to $(6, 0)$. For the validity check, suppose "close to an edge" means within $0.5$ m: a car $0.3$ m from the nearest plan edge is close, so the plan stays valid, while a car $0.8$ m away is not close, so the plan is invalid and the controller replans.
+
+**AI/ML Usage**: This style of controller is used for mobile-robot navigation where a global planner (often over a map) hands a path to a fast local planner that handles live obstacles (see the Hierarchical Planning (Global and Local Planner) and Pure Pursuit entries).
 
 ---
 
@@ -6873,6 +7449,32 @@ Each row is computed completely independently of the other three — the head ha
 **Example.** Estimating a coin's true bias using the observed proportion of heads is both unbiased (its average, across many repeated experiments, exactly matches the coin's true probability) and consistent (with more and more flips, the observed proportion reliably converges closer and closer to the coin's actual true bias, getting more accurate with more data collected).
 
 **AI/ML Usage**: Both properties matter a great deal in statistics and machine learning theory: an unbiased estimator makes no systematic error on average, while a consistent estimator is specifically guaranteed to keep improving and becoming more accurate as more training data becomes available — together, these two separate properties give strong, complementary theoretical justification for trusting a given estimation method in the first place.
+
+---
+
+<a id="unexpected-objects-and-map-errors-in-sensor-readings"></a>
+### Unexpected Objects and Map Errors in Sensor Readings
+
+**The Big Idea**: This builds on the Observation Likelihood Model (Sensor Model) entry and the Additive Gaussian Sensor Noise Model entry. From Algebra 2, think of an inequality instead of an equation: a reading can be less than expected, equal to it, or greater than it, and each direction has a different likely cause. Sorting causes by direction and by plausibility is a modeling habit, not new mathematics.
+
+**General Usage**: A range sensor (such as a laser scanner) compares what it reads with the range expected from a map and the robot's believed position. Besides ordinary noise, a reading can differ from the expectation for structural reasons.
+
+- **Reading closer than expected.** Either the believed position is wrong (the robot is actually nearer to the wall), or there is an **unexpected object** that is not on the map, such as furniture, standing in front of the wall.
+- **Reading farther than expected.** Either the believed position is wrong (the robot is actually farther away), or the map is inaccurate and the wall is not where it is drawn, for example because of an unmapped gap or opening. Seeing through a solid wall is not a real explanation unless the wall is transparent.
+- **Impossible readings.** A real sensor has a minimum range and a maximum range, so readings closer than the minimum or farther than the maximum cannot occur.
+
+Of these, unexpected objects occur all the time, map errors occur less often, and a map that explains none of a scan is unlikely. A model that blames every difference on noise treats all of these cases as nearly impossible.
+
+**Example.** A scan has $100$ rays with $\sigma_s = 0.5$ m. A chair, absent from the map, blocks $5$ rays, and each of those $5$ readings is $2$ m closer than expected. The other $95$ rays match the map exactly.
+
+1. For each blocked ray, the error in standard deviations is $z = 2/0.5 = 4$.
+2. Its factor is $e^{-\frac{1}{2}(4)^2} = e^{-8} \approx 0.000335$.
+3. For each matching ray, $z = 0$ and the factor is $e^{0} = 1$.
+4. The joint likelihood multiplies all factors: $1^{95} \times \left(e^{-8}\right)^{5} = e^{-40} \approx 4.2 \times 10^{-18}$.
+
+Although $95\%$ of the scan matches the map perfectly, the five blocked rays alone push the weight to about $10^{-18}$, so a correct position is scored as nearly impossible.
+
+**AI/ML Usage**: Robot localization systems built on a particle filter (see the Particle Filter entry) address this by giving the observation likelihood several parts instead of a single bell curve, with separate terms for ordinary noise, for unexpected closer readings, and for readings at or beyond the sensor's limits. The range of each part is chosen according to where the observed range falls relative to the predicted range. This keeps particles at the correct position from being thrown away because of furniture or map errors.
 
 ---
 
