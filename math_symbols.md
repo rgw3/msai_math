@@ -7,86 +7,92 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 227 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 244 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Greater Than / Less Than | Halfspace to Prime Notation | Probabilistic Completeness Bound to Zero-One Loss |
+| Absolute Value to Hat Notation | Hessian Matrix to Predicted Mean and Covariance | Prime Notation to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Halfspace](#halfspace) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Action Space](#action-space) | [Hat Notation](#hat-notation) | [Probability / Probability Density](#probability-probability-density) |
-| [Activation Function](#activation-function) | [Hessian Matrix](#hessian-matrix) | [Probability Simplex](#probability-simplex) |
-| [Adjacency Matrix](#adjacency-matrix) | [Heuristic Function](#heuristic-function) | [Product Notation](#product-notation) |
-| [Admissible Heuristic](#admissible-heuristic) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Progress Radius](#progress-radius) |
-| [Alignment Model Distribution](#alignment-model-distribution) | [Hypothesis](#hypothesis) | [Proportional To](#proportional-to) |
-| [All-Ones Vector](#all-ones-vector) | [Identity Matrix](#identity-matrix) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [If and Only If](#if-and-only-if) | [Psi, uppercase](#psi-uppercase) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Implies Arrow](#implies-arrow) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Approximately Equal](#approximately-equal) | [Importance Weight](#importance-weight) | [Query, Key, and Value](#query-key-and-value) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Index Range Colon](#index-range-colon) | [Question-Mark Relation](#question-mark-relation) |
-| [Assignment Arrow](#assignment-arrow) | [Infinity](#infinity) | [Real Numbers](#real-numbers) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Initial Distribution](#initial-distribution) | [Receptive Field](#receptive-field) |
-| [Attention Operator](#attention-operator) | [Initial State](#initial-state) | [Regression Function](#regression-function) |
-| [Ball of Radius r](#ball-of-radius-r) | [Integral](#integral) | [ReLU](#relu) |
-| [Belief](#belief) | [Intermediate-Goal Heading](#intermediate-goal-heading) | [Rotation Matrix](#rotation-matrix) |
-| [Belief over the Full History](#belief-over-the-full-history) | [Inverse Hessian](#inverse-hessian) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Best Solution Cost](#best-solution-cost) | [Jacobian](#jacobian) | [Sample Mean Overbar](#sample-mean-overbar) |
-| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [Sample Space](#sample-space) |
-| [Bias Term](#bias-term) | [Label](#label) | [Sampling Notation](#sampling-notation) |
-| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [Scoring Function](#scoring-function) |
-| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Segment Embedding](#segment-embedding) |
-| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Sentinel Token](#sentinel-token) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Set Braces](#set-braces) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Set Difference](#set-difference) |
-| [Chart Score](#chart-score) | [Limit](#limit) | [Set Intersection](#set-intersection) |
-| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Union](#set-union) |
-| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Sigma, lowercase](#sigma-lowercase) |
-| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Sigma, uppercase](#sigma-uppercase) |
-| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Sigmoid Function](#sigmoid-function) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sign Function](#sign-function) |
-| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sine and Cosine](#sine-and-cosine) |
-| [Cosine Similarity](#cosine-similarity) | [Mask Token](#mask-token) | [Softmax Function](#softmax-function) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix](#matrix) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Covariance](#covariance) | [Matrix Entry](#matrix-entry) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Curvature (Path)](#curvature-path) | [Matrix Transpose](#matrix-transpose) | [Split Point](#split-point) |
-| [Data Distribution](#data-distribution) | [Max Function](#max-function) | [Stack Notation](#stack-notation) |
-| [Dataset](#dataset) | [Mean](#mean) | [Standard Deviation](#standard-deviation) |
-| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [State Space](#state-space) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [State Transition Function](#state-transition-function) |
-| [Disjunction / Logical OR](#disjunction-logical-or) | [Model Parameters](#model-parameters) | [Step Size](#step-size) |
-| [Dot Product / Inner Product](#dot-product-inner-product) | [Mu](#mu) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
-| [Element-of Symbol](#element-of-symbol) | [N-Gram](#n-gram) | [Stride](#stride) |
-| [Element-wise Operations](#element-wise-operations) | [Nabla](#nabla) | [Subset](#subset) |
-| [Ellipsis](#ellipsis) | [Natural Numbers](#natural-numbers) | [Summation](#summation) |
-| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Superscript Example Index](#superscript-example-index) |
-| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Tag Set](#tag-set) |
-| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Tanh](#tanh) |
-| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [TF-IDF](#tf-idf) |
-| [Error Function](#error-function) | [Number Sign / Count](#number-sign-count) | [Theta](#theta) |
-| [Error Signal](#error-signal) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
-| [Eta](#eta) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Euclidean Norm](#euclidean-norm) | [Outer Product](#outer-product) | [Training Set](#training-set) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Padding](#padding) | [Transition Matrix](#transition-matrix) |
-| [Evaluated-At Bar](#evaluated-at-bar) | [Parameterized Function / Model](#parameterized-function-model) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
-| [Existential Quantifier](#existential-quantifier) | [Parent Annotation Caret](#parent-annotation-caret) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Expectation](#expectation) | [Partial Derivative](#partial-derivative) | [Unit Ball Volume](#unit-ball-volume) |
-| [Factorial](#factorial) | [Partial Order](#partial-order) | [Unit Hypercube](#unit-hypercube) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Universal Quantifier](#universal-quantifier) |
-| [Floor Function](#floor-function) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Unknown-Word Token](#unknown-word-token) |
-| [Free Space](#free-space) | [Perceptron Loss](#perceptron-loss) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
-| [Frobenius Norm](#frobenius-norm) | [Permutation](#permutation) | [Variance](#variance) |
-| [Function Composition](#function-composition) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
-| [Gain](#gain) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
-| [Gamma](#gamma) | [Plan Notation](#plan-notation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Gaussian CDF](#gaussian-cdf) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
-| [GeLU](#gelu) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
-| [Goal Set](#goal-set) | [Potential Function](#potential-function) | [Word Alignment Variable](#word-alignment-variable) |
-| [Gradient](#gradient) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Graph](#graph) | [Predicted Belief](#predicted-belief) | [Zero-One Loss](#zero-one-loss) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Prime Notation](#prime-notation) |  |
+| [Absolute Value](#absolute-value) | [Hessian Matrix](#hessian-matrix) | [Prime Notation](#prime-notation) |
+| [Action Space](#action-space) | [Heuristic Function](#heuristic-function) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Activation Function](#activation-function) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
+| [Adjacency Matrix](#adjacency-matrix) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
+| [Admissible Heuristic](#admissible-heuristic) | [Identity Matrix](#identity-matrix) | [Process and Observation Noise Covariances](#process-and-observation-noise-covariances) |
+| [Alignment Model Distribution](#alignment-model-distribution) | [If and Only If](#if-and-only-if) | [Process Noise](#process-noise) |
+| [All-Ones Vector](#all-ones-vector) | [Implies Arrow](#implies-arrow) | [Product Notation](#product-notation) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Importance Weight](#importance-weight) | [Progress Radius](#progress-radius) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Index Range Colon](#index-range-colon) | [Proportional To](#proportional-to) |
+| [Approximately Equal](#approximately-equal) | [Infinity](#infinity) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Initial Distribution](#initial-distribution) | [Psi, uppercase](#psi-uppercase) |
+| [Assignment Arrow](#assignment-arrow) | [Initial State](#initial-state) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Innovation](#innovation) | [Query, Key, and Value](#query-key-and-value) |
+| [Attention Operator](#attention-operator) | [Integral](#integral) | [Question-Mark Relation](#question-mark-relation) |
+| [Ball of Radius r](#ball-of-radius-r) | [Intermediate-Goal Heading](#intermediate-goal-heading) | [Real Coordinate Space](#real-coordinate-space) |
+| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Real Numbers](#real-numbers) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Receptive Field](#receptive-field) |
+| [Best Solution Cost](#best-solution-cost) | [Kalman Gain](#kalman-gain) | [Regression Function](#regression-function) |
+| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
+| [Bias Term](#bias-term) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
+| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Sample Mean Overbar](#sample-mean-overbar) |
+| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Sample Space](#sample-space) |
+| [Block Matrix Notation](#block-matrix-notation) | [Lambda, uppercase](#lambda-uppercase) | [Sampling Notation](#sampling-notation) |
+| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Scoring Function](#scoring-function) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Segment Embedding](#segment-embedding) |
+| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Sentinel Token](#sentinel-token) |
+| [Chart Score](#chart-score) | [Limit](#limit) | [Set Braces](#set-braces) |
+| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Difference](#set-difference) |
+| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Set Intersection](#set-intersection) |
+| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Set Union](#set-union) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigma, lowercase](#sigma-lowercase) |
+| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sigma, uppercase](#sigma-uppercase) |
+| [Control Matrix](#control-matrix) | [Mask Token](#mask-token) | [Sigmoid Function](#sigmoid-function) |
+| [Cosine Similarity](#cosine-similarity) | [Matrix](#matrix) | [Sign Function](#sign-function) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix Entry](#matrix-entry) | [Sine and Cosine](#sine-and-cosine) |
+| [Covariance](#covariance) | [Matrix Inverse](#matrix-inverse) | [Softmax Function](#softmax-function) |
+| [Cross-Covariance](#cross-covariance) | [Matrix Transpose](#matrix-transpose) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Curvature (Path)](#curvature-path) | [Max Function](#max-function) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Data Distribution](#data-distribution) | [Mean](#mean) | [Split Point](#split-point) |
+| [Dataset](#dataset) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Stack Notation](#stack-notation) |
+| [Delta, lowercase](#delta-lowercase) | [Min Function](#min-function) | [Standard Deviation](#standard-deviation) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mistake Bound](#mistake-bound) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
+| [Disjunction / Logical OR](#disjunction-logical-or) | [Mu](#mu) | [State Transition Function](#state-transition-function) |
+| [Dot Product / Inner Product](#dot-product-inner-product) | [N-Gram](#n-gram) | [State Transition Matrix](#state-transition-matrix) |
+| [Element-of Symbol](#element-of-symbol) | [Nabla](#nabla) | [Step Size](#step-size) |
+| [Element-wise Operations](#element-wise-operations) | [Natural Numbers](#natural-numbers) | [Stop Token / End-of-Sequence Token](#stop-token-end-of-sequence-token) |
+| [Ellipsis](#ellipsis) | [Natural Parameters of a Gaussian](#natural-parameters-of-a-gaussian) | [Stride](#stride) |
+| [ELU](#elu) | [Negation Overbar](#negation-overbar) | [Subset](#subset) |
+| [Emission Matrix](#emission-matrix) | [Non-Negative Real Numbers](#non-negative-real-numbers) | [Summation](#summation) |
+| [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Superscript Example Index](#superscript-example-index) |
+| [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tag Set](#tag-set) |
+| [Error Function](#error-function) | [Number Sign / Count](#number-sign-count) | [Tanh](#tanh) |
+| [Error Signal](#error-signal) | [Observation Matrix](#observation-matrix) | [TF-IDF](#tf-idf) |
+| [Eta](#eta) | [Observation Noise](#observation-noise) | [Theta](#theta) |
+| [Euclidean Norm](#euclidean-norm) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Outer Product](#outer-product) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Padding](#padding) | [Transition Matrix](#transition-matrix) |
+| [Expectation](#expectation) | [Parameterized Function / Model](#parameterized-function-model) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Factorial](#factorial) | [Parent Annotation Caret](#parent-annotation-caret) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Derivative](#partial-derivative) | [Unit Ball Volume](#unit-ball-volume) |
+| [Floor Function](#floor-function) | [Partial Order](#partial-order) | [Unit Hypercube](#unit-hypercube) |
+| [Free Space](#free-space) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Universal Quantifier](#universal-quantifier) |
+| [Frobenius Norm](#frobenius-norm) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Unknown-Word Token](#unknown-word-token) |
+| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Variance](#variance) |
+| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
+| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
+| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
+| [GeLU](#gelu) | [Plan Notation](#plan-notation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Generalized Subtraction](#generalized-subtraction) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
+| [Goal Set](#goal-set) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
+| [Gradient](#gradient) | [Potential Function](#potential-function) | [Word Alignment Variable](#word-alignment-variable) |
+| [Graph](#graph) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Predicted and Corrected Superscripts](#predicted-and-corrected-superscripts) | [Zero-One Loss](#zero-one-loss) |
+| [Halfspace](#halfspace) | [Predicted Belief](#predicted-belief) |  |
+| [Hat Notation](#hat-notation) | [Predicted Mean and Covariance](#predicted-mean-and-covariance) |  |
 
 ## Symbols
 
@@ -467,6 +473,29 @@ On macOS: build it from ordinary parentheses and two numbers; there is no dedica
 
 ---
 
+<a id="block-matrix-notation"></a>
+### Block Matrix Notation — `[[A, B], [C, D]]`
+Symbol: a matrix whose entries are themselves smaller matrices (blocks), written with the blocks arranged in a grid inside one pair of large square brackets, for example $\begin{bmatrix} A & B \\ C & D \end{bmatrix}$  
+On macOS: no special character is needed; in a typeset document use a matrix environment, and in plain text draw the grid with ordinary brackets
+
+**The Big Idea**: In Algebra 2 you worked with matrices and systems of equations, where a grid of numbers describes several equations at once. A block matrix is the same grid, except each cell holds a smaller grid. It is a bookkeeping device: it lets you talk about a big matrix by talking about four or so smaller ones.
+
+**General Usage**: A matrix $M$ can be partitioned (cut by horizontal and vertical lines) into blocks. If the first block-row has $p$ rows and the second has $q$ rows, and the first block-column has $r$ columns and the second has $s$ columns, then $A$ is $p \times r$, $B$ is $p \times s$, $C$ is $q \times r$, and $D$ is $q \times s$. A subscript pair such as $\Sigma_{12}$ names the block in block-row 1 and block-column 2. Multiplying block matrices follows the usual row-times-column rule with each product of blocks being a matrix product, provided the block sizes match.
+
+**Example.** Take the $3 \times 3$ matrix
+$$M = \begin{bmatrix} 1 & 2 & 5 \\ 3 & 4 & 6 \\ 7 & 8 & 9 \end{bmatrix}$$
+and cut it after row 2 and after column 2.
+
+1. The top-left block is $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}$, a $2 \times 2$ block.
+2. The top-right block is $B = \begin{bmatrix} 5 \\ 6 \end{bmatrix}$, a $2 \times 1$ block.
+3. The bottom-left block is $C = \begin{bmatrix} 7 & 8 \end{bmatrix}$, a $1 \times 2$ block.
+4. The bottom-right block is $D = \begin{bmatrix} 9 \end{bmatrix}$, a $1 \times 1$ block.
+5. Check by reassembling: placing $A, B$ side by side over $C, D$ gives back the original nine entries, so $M = \begin{bmatrix} A & B \\ C & D \end{bmatrix}$.
+
+**AI/ML Usage**: Block notation is used to write a joint Gaussian distribution over two groups of variables $x_1, x_2$ as one mean vector $[\mu_1; \mu_2]$ and one covariance matrix with blocks $\Sigma_{11}, \Sigma_{12}, \Sigma_{21}, \Sigma_{22}$ (see the Partitioned Gaussian Distribution entry in the math_concepts file). In a Kalman filter (an algorithm that tracks a moving system's state from noisy measurements), the state at two consecutive times is stacked this way so that rules for marginals and conditionals of Gaussians can be applied block by block.
+
+---
+
 <a id="blocks-world"></a>
 ### Blocks World — `On, Clear, InHand, HandEmpty`
 Symbol: none — these are capitalized predicate names, written as ordinary text  
@@ -651,6 +680,35 @@ Any $\gamma$ above these numbers satisfies the respective condition.
 
 ---
 
+<a id="control-matrix"></a>
+### Control Matrix — `B`
+Symbol: B, an ordinary capital letter B, used for a matrix with one row for every entry of the state and one column for every entry of the control  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: In Algebra 2, a linear function $y = mx$ says "the output changes by $m$ for every one unit of input." The control matrix $B$ is the same idea with many inputs and many outputs at once: each column says how much one particular command pushes each part of the state. It builds on the Matrix entry and the Matrix Transpose entry in this file, and it is read together with the State Transition Matrix entry.
+
+**General Usage**: In a linear motion model $x_{t+1} = A x_t + B u_t + \epsilon$, the vector $u_t$ is the **control** (the commands given to the system, or the measured movement of the system). The matrix $B$ converts the control into its effect on the state. If the state has $n$ entries and the control has $m$ entries, then $B$ has $n$ rows and $m$ columns. A row of zeros means the controls do not affect that state entry directly.
+
+**Example.** A point moving in a plane has state $(x,\ y,\ v_x,\ v_y)$, where $x$ and $y$ are position and $v_x$ and $v_y$ are velocity. The control is acceleration $u = (a_x,\ a_y)$, and the time between steps is $\Delta t = 0.5$ seconds. Acceleration changes velocity by $\Delta t$ times the acceleration and does not change position directly, so
+
+$$
+B = \begin{bmatrix} 0 & 0 \\ 0 & 0 \\ \Delta t & 0 \\ 0 & \Delta t \end{bmatrix}
+= \begin{bmatrix} 0 & 0 \\ 0 & 0 \\ 0.5 & 0 \\ 0 & 0.5 \end{bmatrix}
+$$
+
+Take the control $u = (2,\ 1)$.
+
+1. Row 1: $0\cdot 2 + 0\cdot 1 = 0$.
+2. Row 2: $0\cdot 2 + 0\cdot 1 = 0$.
+3. Row 3: $0.5\cdot 2 + 0\cdot 1 = 1$.
+4. Row 4: $0\cdot 2 + 0.5\cdot 1 = 0.5$.
+
+So $Bu = (0,\ 0,\ 1,\ 0.5)$: the acceleration raises the horizontal velocity by $1$ and the vertical velocity by $0.5$ and leaves the positions unchanged on this step.
+
+**AI/ML Usage**: $B$ appears in the Kalman filter (see the Kalman Filter entry in the math_concepts file), which tracks the state of a moving system such as a robot or a phone. The filter first predicts the next state with $A x_t + B u_t$, where $u_t$ comes from motor commands or an accelerometer, and only then corrects the prediction with a sensor reading.
+
+---
+
 <a id="cosine-similarity"></a>
 ### Cosine Similarity — `cosθ`
 Symbol: none — "cos" is ordinary text; θ is Greek small letter theta  
@@ -693,6 +751,36 @@ On macOS: type normally from the keyboard
 **Example.** Suppose $X$ is hours studied and $Y$ is test score, and across several students, more studying always came with a higher score. That consistent upward relationship gives a positive covariance, say $\text{Cov}(X,Y) = 12$. If instead more studying tended to come with lower scores (perhaps rushed, sleep-deprived students), the covariance would come out negative instead, say $\text{Cov}(X,Y) = -8$.
 
 **AI/ML Usage**: Used to understand how features in a dataset relate to each other before building a model. Two features with high covariance carry overlapping, redundant information, which can cause a problem called multicollinearity in linear regression (making it hard to tell which feature is actually responsible for a prediction). Covariance matrices — grids capturing the covariance between every pair of features at once — are the mathematical foundation of Principal Component Analysis (PCA), a widely used technique for shrinking a dataset down to fewer, more informative features before training a model on it.
+
+---
+
+<a id="cross-covariance"></a>
+### Cross-Covariance — `Σ_XY`
+Symbol: Σ, Greek capital letter sigma, with two letters written below it as a subscript, as in $\Sigma_{XY}$; the first letter names one quantity and the second names the other. Its transpose is written $\Sigma_{YX}$  
+On macOS: open the character picker (Fn/🌐) and search "greek capital letter sigma", then type the subscript letters in LaTeX as `\Sigma_{XY}`
+
+**The Big Idea**: In Algebra 2 you saw that two sets of data points can rise together, fall together, or have no pattern, and that the slope of a best-fit line tells you which. The cross-covariance is a number (or a table of numbers) that measures exactly this "move together" tendency between two quantities. It is a step beyond Algebra 2 because it averages over a probability distribution, so read the Covariance entry in this file first.
+
+**General Usage**: For two quantities $X$ and $Y$ with means $\mu_X$ and $\mu_Y$, the cross-covariance is the average of the product of how far $X$ is from its mean and how far $Y$ is from its mean:
+
+$$
+\Sigma_{XY} = \mathbb{E}\big[(X-\mu_X)(Y-\mu_Y)^{T}\big]
+$$
+
+The raised $T$ is the transpose (flip rows and columns; see the Matrix Transpose entry). When $X$ and $Y$ are single numbers this is the ordinary covariance. When they are lists of numbers (vectors), the result is a table (matrix) whose entry in row $i$, column $j$ says how the $i$-th number in $X$ moves with the $j$-th number in $Y$. A positive entry means they tend to rise together, a negative entry means one rises while the other falls, and zero means no linear tendency. The reversed order is the transpose of it: $\Sigma_{YX} = \Sigma_{XY}^{T}$. Given $N$ equally weighted samples $(x^i, y^i)$, it is estimated by $\frac{1}{N}\sum_{i=1}^{N}(x^i-\mu_X)(y^i-\mu_Y)^{T}$.
+
+**Example.** Take three paired samples of two single numbers: $(x,y) = (1,2),\ (2,4),\ (3,3)$.
+
+1. Mean of $x$: $\mu_X = (1+2+3)/3 = 2$.
+2. Mean of $y$: $\mu_Y = (2+4+3)/3 = 3$.
+3. Deviations of $x$ from its mean: $-1,\ 0,\ 1$.
+4. Deviations of $y$ from its mean: $-1,\ 1,\ 0$.
+5. Products of paired deviations: $(-1)(-1)=1,\ (0)(1)=0,\ (1)(0)=0$.
+6. Add and divide by $N=3$: $\Sigma_{XY} = (1+0+0)/3 = 1/3$.
+
+A second check against something you can do with algebra: if $y$ is exactly $2x$, the samples are $(1,2),(2,4),(3,6)$ with $\mu_X=2$, $\mu_Y=4$. The products of deviations are $(-1)(-2)=2,\ 0,\ (1)(2)=2$, so $\Sigma_{XY}=4/3$. The variance of $x$ is $\Sigma_{XX}=(1+0+1)/3=2/3$, and $\Sigma_{XX}\cdot 2 = 4/3$, matching: for $y=Cx$, the cross-covariance is $\Sigma_{XX}C^{T}$.
+
+**AI/ML Usage**: In the Kalman filter, the state $X$ (for example a robot position) is never observed directly; a sensor reading $Y$ is. The cross-covariance $\Sigma_{XY}$ is what lets the filter turn a surprise in the sensor reading into a correction of the state: the update adds $\Sigma_{XY}\Sigma_{YY}^{-1}(y-\mu_Y)$ to the predicted state (see the Kalman Gain entry in this file and the Gaussian Conditioning (Moment Form) entry in the math_concepts file). Sample-based filters estimate it by the averaging formula above.
 
 ---
 
@@ -1249,6 +1337,26 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="generalized-subtraction"></a>
+### Generalized Subtraction — `⊖`
+Symbol: ⊖, circled minus (a minus sign inside a circle)  
+On macOS: open the character picker (Fn/🌐) and search "circled minus"
+
+**The Big Idea**: This builds on ordinary subtraction of numbers or vectors, where $a - b$ is "what is left of $a$ after taking away $b$." The circled minus plays the same role for objects that cannot be subtracted entry by entry, such as poses, which combine a position with a rotation.
+
+**General Usage**: $a \ominus b$ is the difference between two poses $a$ and $b$, measured in the way that suits poses, as the relative transform that carries $b$ to $a$. One common convention is $a \ominus b = b^{-1}a$, the pose of $a$ as seen from $b$ (conventions differ between textbooks, so the definition in use should be checked). When all poses are pure translations, the generalized subtraction reduces to ordinary vector subtraction.
+
+**Example.** In 2D, write a pose as $(x, y, \theta)$. Let $a = (3, 2, 90°)$ and $b = (1, 2, 90°)$, and use $a \ominus b = b^{-1}a$.
+
+1. The position difference in the map is $(3-1,\ 2-2) = (2, 0)$.
+2. Express it in the frame of $b$ by rotating by $-90°$: $\begin{bmatrix} 0 & 1 \\ -1 & 0 \end{bmatrix}\begin{bmatrix} 2 \\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\ -2 \end{bmatrix}$.
+3. The heading difference is $90° - 90° = 0°$.
+4. So $a \ominus b = (0, -2, 0°)$, while plain entry-by-entry subtraction would have given $(2, 0, 0°)$. The two differ because the rotation of $b$ matters.
+
+**AI/ML Usage**: Used in robotics to write the error between a measured pose and a predicted pose, for example in the odometry and observation factors of graph SLAM (see the Graph SLAM entry in the math_concepts file), where the squared size of this difference is what the optimizer tries to make small.
+
+---
+
 <a id="gini-index-gini-function"></a>
 ### Gini Index / Gini Function — `2a(1-a)`
 Symbol: none — "Gini" is ordinary text (a surname), and the function is written with ordinary digits and letters  
@@ -1567,6 +1675,28 @@ On macOS: type normally from the keyboard; the subscript is written with an unde
 
 ---
 
+<a id="innovation"></a>
+### Innovation — `s_t − C μ̄_t`
+Symbol: no single character; a difference between the actual sensor reading $s_t$ and the reading $C\bar{\mu}_t$ expected from the prediction, where $\bar{\mu}_t$ is the predicted mean and $C$ is the matrix that converts a state into the reading it would produce  
+On macOS: type normally from the keyboard; for the bar over μ (written $\bar{\mu}$), type μ from the character picker (Fn/🌐, search "greek small letter mu") and add a combining macron by searching "combining macron"
+
+**The Big Idea**: This builds on the idea of a prediction error. In Algebra 2 terms, it is the vertical gap between a data point and the value a model predicted at that spot. The innovation is that same gap, measured between what a sensor actually reported and what the filter expected it to report.
+
+**General Usage**: In a filter that predicts the state and then receives a measurement, the innovation is the measurement minus the measurement that the predicted state would produce: $s_t - C\bar{\mu}_t$. If it is zero, the prediction agreed perfectly with the sensor and there is nothing to correct. If it is not zero, the prediction was off in some way, and the estimate is corrected by the innovation multiplied by a weight called the gain (see the Kalman Gain entry). In the conditional-Gaussian form it appears as $Y - \mu_Y$.
+
+**Example.** A predicted mean of $\bar{\mu}_t = 12$, a conversion factor of $C = 2$ (the sensor reads twice the state), and an actual reading of $s_t = 26$.
+
+1. Compute the reading the prediction expects: $C\bar{\mu}_t = 2 \times 12 = 24$.
+2. Subtract it from the actual reading: $s_t - C\bar{\mu}_t = 26 - 24 = 2$.
+3. The innovation is $2$, so the sensor reported slightly more than predicted.
+4. With a gain of $K = 4/9$ (see the Kalman Gain entry), the corrected mean is $12 + \tfrac{4}{9} \times 2 = \tfrac{116}{9} \approx 12.89$.
+
+Second check: if the actual reading had been $24$, step 2 would give an innovation of $0$ and the corrected mean would stay at $12$, so the mean moves only when the sensor disagrees with the prediction.
+
+**AI/ML Usage**: The innovation is the signal that drives every Kalman filter update in robot localization and tracking. Large or persistently one-sided innovations are also used as a warning that the filter's model of the world is wrong, for example when a sensor fails or the robot is moved without the filter knowing.
+
+---
+
 <a id="integral"></a>
 ### Integral — `∫`
 Symbol: ∫, the integral sign  
@@ -1630,6 +1760,29 @@ On macOS: type normally from the keyboard; the subscript is written with an unde
 **Example.** Let $f(x,y) = (x+y,\ xy)$ — two outputs from two inputs. The first output's partial derivatives are $1$ (with respect to $x$) and $1$ (with respect to $y$); the second output's are $y$ and $x$. Stacking these into a matrix gives the Jacobian $J_f = \begin{pmatrix} 1 & 1 \\ y & x \end{pmatrix}$ — row 1 describes how the first output changes, row 2 describes how the second output changes, each with respect to both inputs.
 
 **AI/ML Usage**: Central to how backpropagation — the algorithm that trains neural networks — mathematically works through layers that transform one whole vector into another whole vector, which describes essentially every standard neural network layer. The chain rule that backpropagation relies on to combine gradients across many stacked layers is, underneath the hood, fundamentally built out of a sequence of Jacobian-based calculations, even though most practitioners never need to compute a Jacobian by hand themselves, since deep learning software libraries handle it automatically.
+
+---
+
+<a id="kalman-gain"></a>
+### Kalman Gain — `K`
+Symbol: K, an ordinary capital letter K  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: This builds on the idea of a weighted average from Algebra 2: if you trust one number more than another, you give it a bigger weight. The Kalman gain is the weight, chosen automatically from how uncertain each source is, that decides how much a new measurement is allowed to pull an estimate away from its current value. It also builds on the Matrix Inverse entry, since the formula for it contains an inverse.
+
+**General Usage**: In a Kalman filter (see the Kalman Filter entry in the math_concepts file) the gain is the matrix
+$$K = \bar{\Sigma}\,C^{\top}\left[C\,\bar{\Sigma}\,C^{\top} + R\right]^{-1},$$
+where $\bar{\Sigma}$ is the predicted covariance (the uncertainty of the estimate before the measurement), $C$ is the observation matrix (how the state turns into what the sensor reads), and $R$ is the measurement noise covariance (how noisy the sensor is). It is used in the correction $\mu = \bar{\mu} + K\left[s - C\bar{\mu}\right]$, where $s - C\bar{\mu}$ is the gap between the actual and the predicted measurement. The gain contains only $\bar{\Sigma}$, $C$ and $R$, so it never depends on the value of the measurement $s$ itself.
+
+**Example.** Take one number instead of matrices, with $C = 1$, predicted variance $\bar{\Sigma} = 4$, and a predicted mean $\bar{\mu} = 10$ with measurement $s = 14$. With $C = 1$ the formula becomes $K = \bar{\Sigma}/(\bar{\Sigma} + R)$.
+
+1. Sensor with noise variance $R = 4$: $K = 4/(4+4) = 0.5$. The corrected mean is $10 + 0.5\,(14 - 10) = 12$, halfway between prediction and measurement.
+2. Very precise sensor, $R = 0$: $K = 4/(4+0) = 1$. The corrected mean is $10 + 1\,(14 - 10) = 14$, exactly the measurement.
+3. Very noisy sensor, $R = 996$: $K = 4/(4+996) = 0.004$. The corrected mean is $10 + 0.004\,(14-10) = 10.016$, almost unchanged.
+
+The gain slides from $1$ (trust the sensor fully) down toward $0$ (ignore the sensor) as $R$ grows.
+
+**AI/ML Usage**: The Kalman gain is computed at every time step of a Kalman filter, the algorithm that fuses noisy sensors such as GPS, wheel counters and inertial units to track a robot, drone or vehicle. When the sensor noise $R$ is large compared with the filter's own uncertainty, the gain is small and the filter relies on its motion prediction; when the sensor is precise, the gain is large and the filter follows the measurements. See the Kalman Gain Limiting Cases entry in the math_concepts file for the two extremes worked in matrix form.
 
 ---
 
@@ -1705,6 +1858,28 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter lam
 **Example.** In a penalty term like $\lambda \lVert w \rVert^2$, if $\lambda=0$, the penalty vanishes entirely: $0 \cdot \lVert w \rVert^2 = 0$, no matter how big $w$ is. If $\lambda = 10$, that same penalty becomes ten times as harsh for any given size of $w$ — increasing $\lambda$ always makes large values of $w$ more heavily discouraged.
 
 **AI/ML Usage**: Extremely common as the regularization strength inside a training objective — a formula like $\text{Loss}(w) + \lambda\lVert w\rVert^2$ combines how well a model fits the data with a penalty for having overly large internal weights. Turning $\lambda$ up pushes the model toward simpler, smaller-weighted solutions, which helps prevent overfitting (a model that fits its training data extremely well but performs poorly on new, unseen data) at the potential cost of slightly worse fit to the training data itself — tuning $\lambda$ correctly is a genuinely important, commonly-faced practical decision in real ML projects.
+
+---
+
+<a id="lambda-uppercase"></a>
+### Lambda, uppercase — `Λ`
+Symbol: Λ, Greek capital letter lambda  
+On macOS: open the character picker (Fn/🌐) and search "greek capital letter lambda"
+
+**The Big Idea**: Purely a naming choice, like $\alpha$ and $\beta$: a Greek capital letter used as a label for a matrix when the ordinary letter is already taken. For its lowercase relative see the Lambda, lowercase entry; the two are different symbols that happen to share a letter.
+
+**General Usage**: $\Lambda$ has no single fixed meaning. In probability notation it is often used to name the blocks of an inverse covariance matrix (also called a precision matrix, see the Precision Matrix entry in the math_concepts file): if $\Sigma$ is split into blocks $\Sigma_{11}, \Sigma_{12}, \Sigma_{21}, \Sigma_{22}$, then its inverse is written $\Sigma^{-1} = \begin{bmatrix} \Lambda_{11} & \Lambda_{12} \\ \Lambda_{21} & \Lambda_{22} \end{bmatrix}$. The blocks $\Lambda_{ij}$ are not the inverses of the blocks $\Sigma_{ij}$ (see the Block Matrix Notation entry).
+
+**Example.** For a $2 \times 2$ matrix whose four blocks are single numbers, let $\Sigma = \begin{bmatrix} 2 & 1 \\ 1 & 1 \end{bmatrix}$.
+
+1. Its determinant is $2 \cdot 1 - 1 \cdot 1 = 1$.
+2. The inverse of a $2 \times 2$ matrix $\begin{bmatrix} a & b \\ c & d \end{bmatrix}$ is $\frac{1}{ad - bc}\begin{bmatrix} d & -b \\ -c & a \end{bmatrix}$, so $\Sigma^{-1} = \begin{bmatrix} 1 & -1 \\ -1 & 2 \end{bmatrix}$.
+3. So $\Lambda_{11} = 1$, $\Lambda_{12} = \Lambda_{21} = -1$, $\Lambda_{22} = 2$.
+4. Compare with inverting entry by entry: $1/\Sigma_{11} = 1/2$, which is not $\Lambda_{11} = 1$. The blocks of an inverse are not the inverses of the blocks.
+
+**AI/ML Usage**: In the derivation of the marginal and conditional distributions of a multivariate Gaussian, the exponent of the density contains $\Sigma^{-1}$, and writing its blocks as $\Lambda_{ij}$ allows the exponent to be rearranged into complete squares. This is the step that proves that the marginal of $x_2$ has covariance $\Sigma_{22}$.
+
+---
 
 ---
 
@@ -1931,6 +2106,32 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="matrix-inverse"></a>
+### Matrix Inverse — `M⁻¹`
+Symbol: a matrix letter with a superscript minus one, written $M^{-1}$ and read "M inverse"  
+On macOS: type the letter, then a caret and a minus one in a math editor; in plain text, open the character picker (Fn/🌐) and search "superscript minus" and "superscript one" to get the characters ⁻ and ¹
+
+**The Big Idea**: This builds on the Algebra 2 idea of a reciprocal. The reciprocal of $5$ is $\tfrac{1}{5}$ because $5 \times \tfrac{1}{5} = 1$. The inverse of a matrix $M$ is the matrix that plays the same role: multiplying $M$ by its inverse gives the identity matrix $I$ (see the Identity Matrix entry), the matrix version of the number $1$. It is a step beyond Algebra 2 because, unlike numbers, matrices have to be multiplied in a fixed order and not every matrix has an inverse.
+
+**General Usage**: For a square matrix $M$ (same number of rows and columns), the inverse $M^{-1}$ is the matrix satisfying $M M^{-1} = M^{-1} M = I$. A matrix that has an inverse is called **invertible**. Three facts are used constantly:
+
+- The inverse of a product reverses the order: $(ABC)^{-1} = C^{-1}B^{-1}A^{-1}$, provided every factor is invertible.
+- A matrix and its transpose (see the Matrix Transpose entry) are invertible together, and $(M^{\top})^{-1}$ is the inverse of the transpose.
+- Because matrix multiplication is not commutative (order matters), only neighbouring factors cancel: in $M\,N\,N^{-1}\,M^{-1}$ the middle pair $N N^{-1}$ becomes $I$ first, and then $M M^{-1}$ becomes $I$.
+
+**Example.** Let $M = \begin{pmatrix} 2 & 0 \\ 0 & 4 \end{pmatrix}$. Its inverse is $M^{-1} = \begin{pmatrix} \tfrac{1}{2} & 0 \\ 0 & \tfrac{1}{4} \end{pmatrix}$, found by taking the reciprocal of each diagonal entry. Check by multiplying:
+
+1. Top-left entry of $M M^{-1}$: $2 \cdot \tfrac{1}{2} + 0 \cdot 0 = 1$.
+2. Top-right entry: $2 \cdot 0 + 0 \cdot \tfrac{1}{4} = 0$.
+3. Bottom-left entry: $0 \cdot \tfrac{1}{2} + 4 \cdot 0 = 0$.
+4. Bottom-right entry: $0 \cdot 0 + 4 \cdot \tfrac{1}{4} = 1$.
+
+So $M M^{-1} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I$, as required. A second check of the reversal rule with the same $M$ and $N = \begin{pmatrix} 1 & 0 \\ 0 & 2 \end{pmatrix}$: $MN = \begin{pmatrix} 2 & 0 \\ 0 & 8 \end{pmatrix}$, whose inverse is $\begin{pmatrix} \tfrac12 & 0 \\ 0 & \tfrac18 \end{pmatrix}$, and $N^{-1}M^{-1} = \begin{pmatrix} 1 & 0 \\ 0 & \tfrac12 \end{pmatrix}\begin{pmatrix} \tfrac12 & 0 \\ 0 & \tfrac14 \end{pmatrix} = \begin{pmatrix} \tfrac12 & 0 \\ 0 & \tfrac18 \end{pmatrix}$, the same matrix.
+
+**AI/ML Usage**: Matrix inverses appear in the closed-form solution of linear regression (the normal equations, which contain $(X^{\top}X)^{-1}$), in the Gaussian distribution (which uses the inverse of the covariance matrix), and in the Kalman filter, whose gain formula contains the inverse of the matrix $C\bar{\Sigma}C^{\top} + R$ (see the Kalman Gain entry). When a matrix is not invertible, the pseudo-inverse (see the Pseudo-Inverse entry) is used instead.
+
+---
+
 <a id="matrix-transpose"></a>
 ### Matrix Transpose — `𝐌ᵀ`
 Symbol: ⊤, down tack, used as the transpose mark  
@@ -2102,6 +2303,25 @@ On macOS: open the character picker (Fn/🌐) and search "double-struck capital 
 
 ---
 
+<a id="natural-parameters-of-a-gaussian"></a>
+### Natural Parameters of a Gaussian — `J, P`
+Symbol: capital J (a vector) and capital P (a matrix), the two parameters of a Gaussian written in its natural form  
+On macOS: type the letters J and P
+
+**The Big Idea**: In Algebra 2 a parabola can be written with its vertex, $a(x-h)^2+k$, or expanded as $ax^2+bx+c$. The two are the same curve. The natural parameters are the expanded form of a Gaussian's exponent: $P$ plays the role of the $x^2$ coefficient and $J$ the role of the $x$ coefficient. See the Natural Form of a Gaussian (Information Form) entry in the math_concepts file.
+
+**General Usage**: A Gaussian can be written as $\mathcal{N}(J,P) = \dfrac{1}{z'}\exp\!\left(-\tfrac12\,x^{T}P\,x + J^{T}x\right)$. The matrix $P$ is the inverse of the covariance (called the precision or information matrix) and the vector $J$ is that matrix times the mean: $P = \Sigma^{-1}$, $J = \Sigma^{-1}\mu$. To go back, $\Sigma = P^{-1}$ and $\mu = P^{-1}J$.
+
+**Example.** A two-dimensional Gaussian has mean $\mu = (6,\,8)$ and covariance $\Sigma = \begin{pmatrix}2&0\\0&4\end{pmatrix}$.
+
+1. Invert the diagonal covariance by inverting each diagonal entry: $P = \Sigma^{-1} = \begin{pmatrix}1/2&0\\0&1/4\end{pmatrix}$.
+2. Multiply by the mean: $J = P\mu = (\tfrac12\cdot 6,\ \tfrac14\cdot 8) = (3,\,2)$.
+3. Check by converting back: $\Sigma = P^{-1} = \begin{pmatrix}2&0\\0&4\end{pmatrix}$ and $\mu = P^{-1}J = (2\cdot 3,\ 4\cdot 2) = (6,\,8)$.
+
+**AI/ML Usage**: Information filters and Gaussian graphical models store $P$ and $J$ instead of $\mu$ and $\Sigma$, because multiplying two Gaussians (as happens when a sensor reading is folded into a belief) simply adds their $P$ matrices and their $J$ vectors.
+
+---
+
 <a id="negation-overbar"></a>
 ### Negation Overbar — `x̄`
 Symbol: x̄, a letter with a macron (overbar), read "x bar"  
@@ -2179,6 +2399,56 @@ On macOS: press Shift+3
 **Example.** $\#\{\text{students who passed}\}$ means "the count of students who passed" — if 27 students passed out of a class, this expression equals $27$.
 
 **AI/ML Usage**: Used informally in algorithm descriptions and research papers to denote a count of something relevant to a computation — for example, $\#\{\text{correct predictions}\}$ when explaining how accuracy is calculated, or $\#\{\text{parameters}\}$ when comparing how large different neural network models are relative to each other.
+
+---
+
+<a id="observation-matrix"></a>
+### Observation Matrix — `C`
+Symbol: C, an ordinary capital letter C, used for a matrix that turns the full state into what a sensor reports  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: A sensor often sees only part of the state. A GPS receiver reports where you are but not how fast you are moving. The observation matrix is the bookkeeping that says which parts of the state the sensor sees and how they are combined. It is built from the same row-times-column multiplication as the Matrix entry in this file, and Algebra 2's habit of reading a system of equations row by row carries over directly.
+
+**General Usage**: In a linear sensor model $y_t = C x_t + \delta$, the vector $x_t$ is the state, $y_t$ is the observation (the sensor reading), and $\delta$ is the observation noise (see the Observation Noise entry). If the state has $n$ entries and the observation has $k$ entries, $C$ has $k$ rows and $n$ columns. A row with a single $1$ and zeros elsewhere simply selects one entry of the state.
+
+**Example.** The state is $(x,\ y,\ v_x,\ v_y)$ and the GPS reports only position, so
+
+$$
+C = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{bmatrix}
+$$
+
+Take the state $x_t = (4,\ 2,\ 4,\ -2)$.
+
+1. Row 1: $1\cdot 4 + 0\cdot 2 + 0\cdot 4 + 0\cdot(-2) = 4$.
+2. Row 2: $0\cdot 4 + 1\cdot 2 + 0\cdot 4 + 0\cdot(-2) = 2$.
+
+So $C x_t = (4,\ 2)$: the first two entries of the state, with the velocities dropped. The reading is this vector plus noise.
+
+**AI/ML Usage**: $C$ is the sensor half of the Kalman filter (see the Kalman Filter entry in the math_concepts file). In a robot or a phone, it tells the filter how to compare the predicted state against a GPS, camera or lidar reading, even though that sensor sees only a part of the state.
+
+---
+
+<a id="observation-noise"></a>
+### Observation Noise — `δ ∼ 𝒩(0, R)`
+Symbol: δ, Greek small letter delta, together with the normal distribution notation $\mathcal{N}(0, R)$ and a capital $R$ for the covariance matrix  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter delta"; pick the lowercase form, not the capital Δ
+
+**The Big Idea**: Every real sensor is slightly wrong, and the error is random. Algebra 2's idea of a "margin of error" around a measurement becomes a bell-shaped random quantity with an average of zero and a spread. See the Normal Distribution Notation entry in this file for the notation $\mathcal{N}(\mu, \sigma)$ and the Covariance entry for what the spread means with several numbers at once.
+
+**General Usage**: In the sensor model $y_t = C x_t + \delta$, the term $\delta$ is the **observation noise**, the random error in the sensor reading. The statement $\delta \sim \mathcal{N}(0, R)$ says the error is drawn from a normal distribution with **zero mean** (it does not push the reading consistently high or low) and **covariance matrix** $R$ (it records how large the error on each reading is, and how errors on different readings move together). If the sensor reports $k$ numbers, $R$ is a $k \times k$ matrix. A large $R$ means a poor sensor. Do not confuse this with the generic small tolerance $\delta$ described in the lowercase Delta entry.
+
+**Example.** A GPS reports 2 numbers (horizontal and vertical position), so $R$ is $2\times 2$. Suppose the errors on the two numbers are independent, each with a standard deviation of $5$ meters, so each variance is $5^2 = 25$:
+
+$$
+R = \begin{bmatrix} 25 & 0 \\ 0 & 25 \end{bmatrix}
+$$
+
+1. The true position is $(4,\ 2)$, so $C x_t = (4,\ 2)$.
+2. One random draw of the noise is $\delta = (3,\ -4)$. Each entry is within one standard deviation, $5$.
+3. The reading is $y_t = (4,\ 2) + (3,\ -4) = (7,\ -2)$.
+4. A different draw would give a different reading, which is why a single GPS point is better pictured as a circle of plausible locations than as an exact point.
+
+**AI/ML Usage**: In the Kalman filter (see the Kalman Filter entry in the math_concepts file), $R$ controls how much the filter trusts the sensor. A large $R$ makes the filter lean on its motion prediction, and a small $R$ makes it follow the sensor closely. Its partner is the process noise (see the Process Noise entry), which measures the same kind of uncertainty in the motion model instead of the sensor.
 
 ---
 
@@ -2542,6 +2812,27 @@ On macOS: open the character picker (Fn/🌐) and search "precedes" — no Optio
 
 ---
 
+<a id="predicted-and-corrected-superscripts"></a>
+### Predicted and Corrected Superscripts — `μ⁻, μ⁺`
+Symbol: a small minus sign or plus sign written as a superscript on a letter, as in $\mu^{-}_{t+1}$ and $\Sigma^{+}_{t}$; the superscript minus is the Unicode character "superscript minus" and the superscript plus is "superscript plus sign"  
+On macOS: no Option-key shortcut; in LaTeX type `\mu^{-}` and `\mu^{+}`, or open the character picker (Fn/🌐) and search "superscript minus" or "superscript plus"
+
+**The Big Idea**: In Algebra 2 a small mark next to a letter, such as the prime in $x'$, tags a modified version of the same quantity. A minus or plus superscript works the same way: it tags which version of an estimate is meant, the one from before a new measurement has been used or the one from after. It is a second way of writing the bar used in the Predicted Belief entry.
+
+**General Usage**: In a filter that tracks an estimate over time (a mean $\mu$ and a covariance $\Sigma$, see the Covariance Matrix entry in the math_concepts file), a minus superscript marks the value after the motion has been applied but before the latest sensor reading has been used, and a plus superscript marks the value after that reading has been used to correct it. So $\mu^{-}_{t+1}$ is the predicted mean at the next time step, and $\mu^{+}_{t}$ is the corrected mean at the current one.
+
+**Example.** The prediction step of an extended Kalman filter (see the Extended Kalman Filter entry in the math_concepts file) is written
+$$
+\mu^{-}_{t+1} = f(\mu^{+}_{t}), \qquad \Sigma^{-}_{t+1} = J_f\,\Sigma^{+}_{t}\,J_f^{T} + Q
+$$
+1. The right-hand sides use only plus quantities: the corrected mean $\mu^{+}_t$ and corrected covariance $\Sigma^{+}_t$ left over from the previous time step.
+2. The left-hand sides are minus quantities: the new predictions, which exist before any new sensor data has arrived.
+3. After the sensor reading is used, the same two quantities are corrected and renamed $\mu^{+}_{t+1}$ and $\Sigma^{+}_{t+1}$, and the cycle repeats.
+
+**AI/ML Usage**: Every Bayes filter (Kalman filter, extended Kalman filter, particle filter) alternates a predict step and an update step, and this notation keeps the two versions of the estimate apart. Some textbooks use the minus and plus superscripts, others use a bar over the letter for the predicted version; both mean the same thing.
+
+---
+
 <a id="predicted-belief"></a>
 ### Predicted Belief — `\overline{Bel}(x_{t+1})`
 Symbol: the word Bel with a horizontal bar drawn over it, written $\overline{\text{Bel}}(x_{t+1})$; the bar is an overline accent, a lookalike of the bars used for averages and negation (see the Negation Overbar entry)  
@@ -2558,6 +2849,25 @@ On macOS: no single key; type the letters and add the bar in LaTeX with `\overli
 3. Check: $0.12+0.88 = 1$.
 
 **AI/ML Usage**: In every Bayes filter (Kalman filter, histogram filter, particle filter), the predicted belief is what the filter holds after applying the motion model and before the sensor correction. When sensor readings arrive less often than motion commands, the filter replaces the belief by its predicted belief several times in a row.
+
+---
+
+<a id="predicted-mean-and-covariance"></a>
+### Predicted Mean and Covariance — `\bar{\mu}_t, \bar{\Sigma}_t`
+Symbol: the Greek letters mu and capital sigma with a horizontal bar (overline) above them; the bar is an accent mark, a lookalike of the bar used for averages (see the Sample Mean Overbar entry)  
+On macOS: no single key; type the letters and add the bar in LaTeX with `\bar{\mu}` and `\bar{\Sigma}`
+
+**The Big Idea**: This is the mean and covariance version of the Predicted Belief entry. In Algebra 2 a mark on a letter often means "the modified version of the same thing". Here the bar marks the mean and covariance after the system has moved but before the new sensor reading has been used.
+
+**General Usage**: In the Kalman filter, the predict step computes $\bar{\mu}_t = A\mu_{t-1} + Bu_t$ and $\bar{\Sigma}_t = A\Sigma_{t-1}A^{T} + Q$. The update step then starts from these barred values and produces the final $\mu_t$ and $\Sigma_t$. The covariance grows during prediction because the added process noise $Q$ makes the estimate less certain.
+
+**Example.** One-number case with $A = 2$, $B = 1$, previous mean $\mu_{t-1} = 3$, control $u_t = 4$, previous variance $\Sigma_{t-1} = 1.5$, and process noise variance $Q = 1$.
+
+1. Predicted mean: $\bar{\mu}_t = 2\cdot 3 + 1\cdot 4 = 10$.
+2. Predicted variance: $\bar{\Sigma}_t = 2\cdot 1.5\cdot 2 + 1 = 7$.
+3. The variance rose from $1.5$ to $7$, so the estimate is less certain until a sensor reading arrives.
+
+**AI/ML Usage**: Every Kalman filter alternates between computing these barred quantities (predict) and correcting them with a measurement (update). When measurements are missing for several steps, the filter simply repeats the predict step, and the covariance keeps growing.
 
 ---
 
@@ -2618,6 +2928,49 @@ On macOS: type normally; the superscript is Shift+6 (caret) followed by the lett
 **Example.** For $C=3$ categories, $(0.5, 0.3, 0.2)$ is a valid point in the probability simplex, since $0.5+0.3+0.2=1$ and every number is non-negative. But $(0.5, 0.6, 0.2)$ is NOT valid, since those numbers add up to $1.3$, not $1$.
 
 **AI/ML Usage**: This is exactly the mathematical space that a softmax layer's output always lives inside. After a classifier's raw internal scores pass through the softmax function (the standard final step in a multi-class classifier, used to convert raw scores into genuine probabilities), the result is guaranteed to land on the probability simplex — a set of non-negative numbers that add up to exactly 1 — since that's precisely the mathematical requirement for a set of numbers to be validly interpreted as "the probability of each possible category."
+
+---
+
+<a id="process-and-observation-noise-covariances"></a>
+### Process and Observation Noise Covariances — `Q, R`
+Symbol: capital Q and capital R, both covariance matrices  
+On macOS: type the letters Q and R
+
+**The Big Idea**: This builds on the idea of a margin of error. Every motion command and every sensor reading is slightly off. $Q$ and $R$ state how big those errors typically are, in the same way a covariance matrix states the spread of any random quantity (see the Covariance Matrix entry in the math_concepts file).
+
+**General Usage**: In a linear system, $X_{t+1} = AX_t + BU_{t+1} + \epsilon$ with $\epsilon \sim \mathcal{N}(0,Q)$ and $Y_{t+1} = CX_{t+1} + \delta$ with $\delta \sim \mathcal{N}(0,R)$. $Q$ is the covariance of the process noise $\epsilon$ (error in the motion model) and $R$ is the covariance of the observation noise $\delta$ (error in the sensor model). Both noises have mean zero and are independent of the state and of each other.
+
+**Example.** One-number case with $A=1$, predicted-step variance before noise $\Sigma_{t-1}=3$, $Q=2$, and $R=20$, $C=1$.
+
+1. Prediction: $\bar{\Sigma}_t = 1\cdot 3\cdot 1 + Q = 3 + 2 = 5$.
+2. Gain: $K = \dfrac{5}{5 + R} = \dfrac{5}{25} = 0.2$.
+3. A larger $R$ (a noisier sensor) gives a smaller gain, so the filter leans on its prediction. A larger $Q$ would enlarge $\bar{\Sigma}_t$ and push the gain up.
+
+**AI/ML Usage**: In practice $Q$ and $R$ are tuning knobs of a Kalman filter. Setting $R$ from the sensor's datasheet and $Q$ from how unpredictable the motion is controls how quickly the filter follows new measurements.
+
+---
+
+<a id="process-noise"></a>
+### Process Noise — `ε ∼ 𝒩(0, Q)`
+Symbol: ε, Greek small letter epsilon, together with the normal distribution notation $\mathcal{N}(0, Q)$ and a capital $Q$ for the covariance matrix  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter epsilon"; take care not to confuse it with the element-of symbol ∈
+
+**The Big Idea**: A model of motion such as "new position equals old position plus velocity times time" is never exactly right: wind, slipping wheels, a bumpy sidewalk and a sensor that is slightly off all nudge the real motion. Instead of pretending the model is exact, we add a small random nudge. See the Normal Distribution Notation entry in this file for the notation and the Covariance entry for what $Q$ describes. Do not confuse this with the generic small tolerance described in the Epsilon entry.
+
+**General Usage**: In the motion model $x_{t+1} = A x_t + B u_t + \epsilon$, the term $\epsilon$ is the **process noise**, the random error in the motion model. The statement $\epsilon \sim \mathcal{N}(0, Q)$ says it is drawn from a normal distribution with **zero mean** and **covariance matrix** $Q$. If the state has $n$ entries, $\epsilon$ has $n$ entries and $Q$ is an $n \times n$ matrix. Its diagonal entries give how large the noise on each state entry is, and its off-diagonal entries give how the noise on two entries moves together. If all off-diagonal entries are zero, the noise entries are uncorrelated; in practice they usually are not, so $Q$ is only assumed to be some covariance matrix that is given or estimated.
+
+**Example.** The state is $(x,\ y,\ v_x,\ v_y)$, so $Q$ is $4 \times 4$. Suppose the noise on each entry is independent, with variances $0.01,\ 0.01,\ 0.04,\ 0.04$ (standard deviations $0.1,\ 0.1,\ 0.2,\ 0.2$):
+
+$$
+Q = \begin{bmatrix} 0.01 & 0 & 0 & 0 \\ 0 & 0.01 & 0 & 0 \\ 0 & 0 & 0.04 & 0 \\ 0 & 0 & 0 & 0.04 \end{bmatrix}
+$$
+
+1. The model with no noise predicts $A x_t + B u_t = (4,\ 2,\ 5,\ -1.5)$.
+2. One random draw of the noise is $\epsilon = (0.1,\ -0.1,\ 0.2,\ -0.2)$, each entry within one standard deviation.
+3. The next state is $x_{t+1} = (4,\ 2,\ 5,\ -1.5) + (0.1,\ -0.1,\ 0.2,\ -0.2) = (4.1,\ 1.9,\ 5.2,\ -1.7)$.
+4. A different draw would give a slightly different next state, so the prediction is a cloud of possibilities centered on the noiseless answer.
+
+**AI/ML Usage**: In the Kalman filter (see the Kalman Filter entry in the math_concepts file), $Q$ is added to the uncertainty at every prediction step, so the filter becomes less certain about the state when it moves without a fresh sensor reading. Its partner is the observation noise (see the Observation Noise entry).
 
 ---
 
@@ -2745,6 +3098,21 @@ On macOS: type the question mark (Shift+/) and the relation sign as ordinary tex
 **Example.** While working through a proof, you might write $7 \stackrel{?}{\ge} 5+1$ to flag "let me check whether this holds" — evaluating the right side gives $5+1=6$, and since $7 \ge 6$ is indeed true, you've confirmed the checked claim and can now write it plainly as $7 \ge 6$, without the question mark.
 
 **AI/ML Usage**: Used informally, mostly on paper or a whiteboard, when working through algorithm derivations and mathematical proofs — flagging that a particular inequality or equality is currently being checked, rather than something already known and established, such as when checking a candidate step while deriving a training update rule, or verifying a claimed numerical bound while working through a learning-theory proof by hand.
+
+---
+
+<a id="real-coordinate-space"></a>
+### Real Coordinate Space — `ℝ^n, ℝ^{n×n}`
+Symbol: ℝ, double-struck capital R, followed by a superscript giving the dimensions; "n×n" uses the multiplication sign ×  
+On macOS: open the character picker (Fn/🌐) and search "double-struck capital R" and select ℝ (in LaTeX, `\mathbb{R}^n`)
+
+**The Big Idea**: This builds on the Real Numbers entry. The number line is $\mathbb{R}$; the coordinate plane you graphed in Algebra 2 is "pairs of real numbers", written $\mathbb{R}^2$. Real coordinate space just keeps going: $\mathbb{R}^n$ is the set of all lists of $n$ real numbers, which is what a vector is (see the Vector entry).
+
+**General Usage**: $\mathbb{R}^n$ is the set of all vectors with $n$ real-number entries. Writing $x \in \mathbb{R}^n$ says "$x$ is a vector of $n$ real numbers". The symbol $\mathbb{R}^{n \times n}$ is the set of all square matrices with $n$ rows and $n$ columns of real entries, and more generally $\mathbb{R}^{m \times n}$ is the set of matrices with $m$ rows and $n$ columns.
+
+**Example.** The statement $x = \begin{pmatrix} 3 \\ -1 \\ 2.5 \end{pmatrix} \in \mathbb{R}^3$ is true because $x$ has exactly 3 entries and each is a real number. The matrix $M = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}$ belongs to $\mathbb{R}^{2\times 2}$ because it has 2 rows and 2 columns. The same $M$ is not in $\mathbb{R}^{3 \times 3}$, since the shape must match exactly.
+
+**AI/ML Usage**: Shape statements like this are how model components are specified. In a neural network (a model built from layers of simple adjustable computations), a layer's weights might be declared as $W \in \mathbb{R}^{m \times n}$, meaning the layer takes an $n$-entry input vector and produces an $m$-entry output vector. In tracking and state estimation, the state of a system (for example the position and velocity of a robot) is written $x \in \mathbb{R}^n$ and its uncertainty is stored in a matrix in $\mathbb{R}^{n \times n}$.
 
 ---
 
@@ -3268,6 +3636,35 @@ On macOS: type normally from the keyboard; the prime mark is the apostrophe (') 
 **Example.** For a simple counter starting at $x=5$, with the action "add 3" ($u=3$) and transition rule $f(x,u) = x+u$: the new state is $x' = f(5,3) = 5+3 = 8$ — exactly what you'd expect from "starting at 5, add 3."
 
 **AI/ML Usage**: Defines, essentially, "the rules of the environment" in reinforcement learning and control problems. An RL agent doesn't just take actions blindly at random — it either learns from experience, or is directly given ahead of time, some model of how the transition function $f(x,u)$ actually behaves, since accurately predicting the consequences of a given action is absolutely essential for planning several steps ahead — this is precisely the core idea behind an entire subfield called "model-based" reinforcement learning.
+
+---
+
+<a id="state-transition-matrix"></a>
+### State Transition Matrix — `A`
+Symbol: A, an ordinary capital letter A, used for a square matrix that carries the state from one time step to the next  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: In Algebra 2, the rule "next = current + rate times time" (for example, position after one step equals position plus velocity times the step length) is a linear equation. The state transition matrix packs several such rules into one object, one rule per row. It builds on the Matrix entry in this file, and it is read together with the Control Matrix entry. Do not confuse it with the Adjacency Matrix entry, which also uses the letter A for something different.
+
+**General Usage**: In a linear motion model $x_{t+1} = A x_t + B u_t + \epsilon$, the matrix $A$ describes how the state would evolve on its own, with no control and no noise. If the state has $n$ entries, then $A$ is $n \times n$. Each row is the rule for one entry of the next state: the numbers in that row say how much of each current state entry to add up.
+
+**Example.** The state is $(x,\ y,\ v_x,\ v_y)$ (horizontal and vertical position and velocity), and the time between steps is $\Delta t = 0.5$ seconds. Position moves by velocity times $\Delta t$ and velocity stays the same:
+
+$$
+A = \begin{bmatrix} 1 & 0 & \Delta t & 0 \\ 0 & 1 & 0 & \Delta t \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+= \begin{bmatrix} 1 & 0 & 0.5 & 0 \\ 0 & 1 & 0 & 0.5 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix}
+$$
+
+Take the state $x_t = (2,\ 3,\ 4,\ -2)$.
+
+1. Row 1: $1\cdot 2 + 0\cdot 3 + 0.5\cdot 4 + 0\cdot(-2) = 2 + 2 = 4$.
+2. Row 2: $0\cdot 2 + 1\cdot 3 + 0\cdot 4 + 0.5\cdot(-2) = 3 - 1 = 2$.
+3. Row 3: $0\cdot 2 + 0\cdot 3 + 1\cdot 4 + 0\cdot(-2) = 4$.
+4. Row 4: $0\cdot 2 + 0\cdot 3 + 0\cdot 4 + 1\cdot(-2) = -2$.
+
+So $A x_t = (4,\ 2,\ 4,\ -2)$. The point moved $0.5 \cdot 4 = 2$ to the right and $0.5\cdot(-2) = -1$ in the vertical direction, and its velocity did not change.
+
+**AI/ML Usage**: $A$ is the motion half of the Kalman filter (see the Kalman Filter entry in the math_concepts file), used for tracking people, vehicles and robots. The same pattern, a matrix that advances a hidden state one step, defines linear state-space models used for time series.
 
 ---
 

@@ -7,156 +7,165 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 436 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 465 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to Glorot / Xavier Initialization | GloVe (Global Vectors for Word Representation) to Overfitting | PAC Learning to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to GLUE Benchmark | Goal-Biased and Bidirectional RRT Variants to Optimal (Receding-Horizon) Local Planning | Oracle Derivation to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PAC Learning](#pac-learning) |
-| [Absolute Discounting](#absolute-discounting) | [GLUE Benchmark](#glue-benchmark) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |
-| [Accuracy (Classification)](#accuracy-classification) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
-| [Ackermann Steering](#ackermann-steering) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Action Schema](#action-schema) | [Gradient Clipping](#gradient-clipping) | [Particle Filter](#particle-filter) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Gradient Descent](#gradient-descent) | [Path-Tracking Error Metrics](#path-tracking-error-metrics) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [Grammatical Case](#grammatical-case) | [PDDL](#pddl) |
-| [Add-One Smoothing](#add-one-smoothing) | [Graphical Lasso](#graphical-lasso) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
-| [Additive Gaussian Sensor Noise Model](#additive-gaussian-sensor-noise-model) | [GraphPlan](#graphplan) | [Penn Treebank](#penn-treebank) |
-| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [Agglutinating Language](#agglutinating-language) | [Greedy Decoding](#greedy-decoding) | [Perplexity](#perplexity) |
-| [Agnostic Learning](#agnostic-learning) | [Greedy Local Planning](#greedy-local-planning) | [PersonaChat](#personachat) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [AlphaGo](#alphago) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [PID Controller](#pid-controller) |
-| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Planner Completeness](#planner-completeness) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Hedge Algorithm](#hedge-algorithm) | [Planning Graph](#planning-graph) |
-| [Arity](#arity) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Point Cloud](#point-cloud) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Hidden Markov Model](#hidden-markov-model) | [Polar Coordinates](#polar-coordinates) |
-| [Authorship Attribution](#authorship-attribution) | [Hierarchical Planning (Global and Local Planner)](#hierarchical-planning-global-and-local-planner) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Automatic Differentiation](#automatic-differentiation) | [Hierarchical Softmax](#hierarchical-softmax) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Auxiliary Particle Filter](#auxiliary-particle-filter) | [Hinge Loss](#hinge-loss) | [Positional Encoding](#positional-encoding) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Backpointer](#backpointer) | [HMM Alignment Model](#hmm-alignment-model) | [Posterior Distribution](#posterior-distribution) |
-| [Backpropagation](#backpropagation) | [Horizontal Markovization](#horizontal-markovization) | [Precision Matrix](#precision-matrix) |
-| [Bag of Words](#bag-of-words) | [Hyperparameter](#hyperparameter) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [Banana Distribution](#banana-distribution) | [IBM Model 1](#ibm-model-1) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [BART](#bart) | [Importance Sampling](#importance-sampling) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
-| [Basis Function](#basis-function) | [In-Context Learning](#in-context-learning) | [Principal Component Analysis](#principal-component-analysis) |
-| [Batch](#batch) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Prior Distribution](#prior-distribution) |
-| [Batch Normalization](#batch-normalization) | [Indicator Function](#indicator-function) | [Priority Queue](#priority-queue) |
-| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Induction Head](#induction-head) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [Bayes' Rule](#bayes-rule) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [Bayesian State Estimation](#bayesian-state-estimation) | [Information Retrieval](#information-retrieval) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Beam Search](#beam-search) | [Informed RRT*](#informed-rrt) | [Probability Density Contour](#probability-density-contour) |
-| [Belief-Space Planning](#belief-space-planning) | [Instruction Tuning](#instruction-tuning) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Projective Tree](#projective-tree) |
-| [BERT](#bert) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [Proof by Contradiction](#proof-by-contradiction) |
-| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Pure Pursuit](#pure-pursuit) |
-| [Bias Amplification](#bias-amplification) | [Iterative Deepening](#iterative-deepening) | [Quadratic Form](#quadratic-form) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Jensen's Inequality](#jensens-inequality) | [Quiescence Search](#quiescence-search) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Joint Probability Distribution](#joint-probability-distribution) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Binarization](#binarization) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [BIO Tagging](#bio-tagging) | [K-Means Algorithm](#k-means-algorithm) | [Random Forest](#random-forest) |
-| [BLEU Score](#bleu-score) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [Kernel Function](#kernel-function) | [Random Projection](#random-projection) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Kidnapped Robot Problem](#kidnapped-robot-problem) | [Random Variable](#random-variable) |
-| [Bradley-Terry Model](#bradley-terry-model) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Rank](#rank) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Kinodynamic Planning](#kinodynamic-planning) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [KL Divergence](#kl-divergence) | [Ray Casting](#ray-casting) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [KLD-Sampling (Adaptive Particle Count)](#kld-sampling-adaptive-particle-count) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
-| [Calibration (Model Confidence)](#calibration-model-confidence) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Latent Variable](#latent-variable) | [Regularization](#regularization) |
-| [Centroid](#centroid) | [Lattice-Based Planning](#lattice-based-planning) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
-| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Law of Large Numbers](#law-of-large-numbers) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Layer Normalization](#layer-normalization) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Lexicalization](#lexicalization) | [Reporting Bias](#reporting-bias) |
-| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Likelihood](#likelihood) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [Chernoff Bound](#chernoff-bound) | [Likelihood Collapse in Products of Many Factors](#likelihood-collapse-in-products-of-many-factors) | [RoBERTa](#roberta) |
-| [CKY Algorithm](#cky-algorithm) | [Linear Programming](#linear-programming) | [Robust Observation Likelihood](#robust-observation-likelihood) |
-| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [Linearly Separable](#linearly-separable) | [Robustification of the Observation Likelihood](#robustification-of-the-observation-likelihood) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Lipschitz Continuity](#lipschitz-continuity) | [ROUGE](#rouge) |
-| [Closed-World Assumption](#closed-world-assumption) | [Log Likelihood](#log-likelihood) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Clustering](#clustering) | [Logistic Regression](#logistic-regression) | [Sample Complexity](#sample-complexity) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Code-Switching](#code-switching) | [Loss of Particle Diversity](#loss-of-particle-diversity) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
-| [Computation Graph](#computation-graph) | [Loss Surface](#loss-surface) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
-| [Conditional Independence](#conditional-independence) | [Low-Resource Language](#low-resource-language) | [Schur Complement](#schur-complement) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Low-Variance Resampling](#low-variance-resampling) | [Search Statistics](#search-statistics) |
-| [Confounder](#confounder) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
-| [Confusion Matrix](#confusion-matrix) | [Machine Translation](#machine-translation) | [Semantic Parsing](#semantic-parsing) |
-| [Conjunction Feature](#conjunction-feature) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sensor Resetting Localization](#sensor-resetting-localization) |
-| [Consistent Heuristic](#consistent-heuristic) | [Marginalization](#marginalization) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Markov Blanket](#markov-blanket) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Constituency Tests](#constituency-tests) | [Markov Model](#markov-model) | [Simple Carrot Navigation Controller](#simple-carrot-navigation-controller) |
-| [Constituent](#constituent) | [Markov's Inequality](#markovs-inequality) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Masked Language Modeling](#masked-language-modeling) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
-| [Context-Free Grammar](#context-free-grammar) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Skip-Gram Model](#skip-gram-model) |
-| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Max-Normalization of Weights](#max-normalization-of-weights) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
-| [Convex Function](#convex-function) | [Maximum Entropy Model](#maximum-entropy-model) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Coordinate Descent](#coordinate-descent) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Sparse Attention](#sparse-attention) |
-| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [mBART (Multilingual BART)](#mbart) | [Specificity Conditioning](#specificity-conditioning) |
-| [Coreference Resolution](#coreference-resolution) | [Mean Squared Error](#mean-squared-error) | [Spectral Theorem](#spectral-theorem) |
-| [Corrective Gradient Refinement](#corrective-gradient-refinement) | [Minimax Algorithm](#minimax-algorithm) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
-| [Covariance Matrix](#covariance-matrix) | [Minimum Description Length](#minimum-description-length) | [Start-End Span Prediction](#start-end-span-prediction) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
-| [Cross-Validation](#cross-validation) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Momentum](#momentum) | [Stopword](#stopword) |
-| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Monotone Convergence](#monotone-convergence) | [STRIPS](#strips) |
-| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Monotonic Function](#monotonic-function) | [Structured Classification](#structured-classification) |
-| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Subword Tokenization](#subword-tokenization) |
-| [Dead End](#dead-end) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Support Vector Machine](#support-vector-machine) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Morphology](#morphology) | [Surrogate Loss](#surrogate-loss) |
-| [Decision Boundary](#decision-boundary) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Swept Volume](#swept-volume) |
-| [Decision Tree](#decision-tree) | [Motion Model](#motion-model) | [Symmetric Matrix](#symmetric-matrix) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [Symmetric Relation](#symmetric-relation) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Syntactic Parsing](#syntactic-parsing) |
-| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Multi-Head Self-Attention](#multi-head-self-attention) | [T5](#t5) |
-| [Dependency Parsing](#dependency-parsing) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Tag Lattice](#tag-lattice) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Multi-Observation Sensor Resetting Localization](#multi-observation-sensor-resetting-localization) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
-| [Depth-Limited Search](#depth-limited-search) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Determinization](#determinization) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Teacher Forcing](#teacher-forcing) |
-| [Diagonal Matrix](#diagonal-matrix) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Tensor](#tensor) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multimodal Distribution (Modes)](#multimodal-distribution-modes) | [Text Summarization](#text-summarization) |
-| [Differential-Drive Robot](#differential-drive-robot) | [Multinomial Distribution](#multinomial-distribution) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multitask Learning](#multitask-learning) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Time Causality Assumption](#time-causality-assumption) |
-| [Discriminative Model](#discriminative-model) | [Mutex](#mutex) | [Toxic Degeneration](#toxic-degeneration) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Trace and Co-indexation](#trace-and-co-indexation) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [N-Gram Language Model](#n-gram-language-model) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Dropout](#dropout) | [Naive Bayes](#naive-bayes) | [Transformer Architecture](#transformer-architecture) |
-| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
-| [Dynamic Programming](#dynamic-programming) | [Natural Questions](#natural-questions) | [Treebank](#treebank) |
-| [Early Stopping](#early-stopping) | [Negative Log Likelihood](#negative-log-likelihood) | [Triangle Inequality](#triangle-inequality) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Negative Sampling](#negative-sampling) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
-| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Neural Network](#neural-network) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Neural Scaling Laws](#neural-scaling-laws) | [Turing Test](#turing-test) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Neural Text Degeneration](#neural-text-degeneration) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [EM Algorithm](#em-algorithm) | [Neuron](#neuron) | [Unexpected Objects and Map Errors in Sensor Readings](#unexpected-objects-and-map-errors-in-sensor-readings) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Newton's Method](#newtons-method) | [Union Bound](#union-bound) |
-| [Epoch](#epoch) | [Next Sentence Prediction](#next-sentence-prediction) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
-| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Noisy Channel Model](#noisy-channel-model) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Non-Parametric Method](#non-parametric-method) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Normal Equations](#normal-equations) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Vauquois Triangle](#vauquois-triangle) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [NP-Hard](#np-hard) | [Vector Map](#vector-map) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
-| [Feature Expansion](#feature-expansion) | [Numerical Underflow](#numerical-underflow) | [Vertical Markovization](#vertical-markovization) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Objective Function / Training Objective](#objective-function-training-objective) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [Few-Shot Prompting](#few-shot-prompting) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Alignment](#word-alignment) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Odometry](#odometry) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Frontier / Open List](#frontier-open-list) | [One-Hot Encoding](#one-hot-encoding) | [Word Embedding](#word-embedding) |
-| [Gaussian Graphical Model](#gaussian-graphical-model) | [One-vs-All](#one-vs-all) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Gaussian Mixture Model](#gaussian-mixture-model) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word2Vec](#word2vec) |
-| [Generative Likelihood](#generative-likelihood) | [Open-Domain Question Answering](#open-domain-question-answering) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Generative Model](#generative-model) | [Optimal (Receding-Horizon) Local Planning](#optimal-receding-horizon-local-planning) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
-| [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [Oracle Derivation](#oracle-derivation) | [Zero-Shot Prompting](#zero-shot-prompting) |
-| [Geometric Mean](#geometric-mean) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Sum Game](#zero-sum-game) |
-| [Global Planner and Local Planner](#global-planner-and-local-planner) | [Orthonormal Basis](#orthonormal-basis) |  |
-| [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Overfitting](#overfitting) |  |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Oracle Derivation](#oracle-derivation) |
+| [Absolute Discounting](#absolute-discounting) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Orthogonal Matrix](#orthogonal-matrix) |
+| [Accuracy (Classification)](#accuracy-classification) | [Gradient Clipping](#gradient-clipping) | [Orthonormal Basis](#orthonormal-basis) |
+| [Ackermann Steering](#ackermann-steering) | [Gradient Descent](#gradient-descent) | [Overfitting](#overfitting) |
+| [Action Model (Intent Model)](#action-model-intent-model) | [Grammatical Case](#grammatical-case) | [PAC Learning](#pac-learning) |
+| [Action Schema](#action-schema) | [Graph SLAM](#graph-slam) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Graphical Lasso](#graphical-lasso) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GraphPlan](#graphplan) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Add-One Smoothing](#add-one-smoothing) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Particle Filter](#particle-filter) |
+| [Additive Gaussian Sensor Noise Model](#additive-gaussian-sensor-noise-model) | [Greedy Decoding](#greedy-decoding) | [Partitioned Gaussian Distribution](#partitioned-gaussian-distribution) |
+| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Greedy Local Planning](#greedy-local-planning) | [Path-Tracking Error Metrics](#path-tracking-error-metrics) |
+| [Agglutinating Language](#agglutinating-language) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [PDDL](#pddl) |
+| [Agnostic Learning](#agnostic-learning) | [Grounding / Instantiation](#grounding-instantiation) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Penn Treebank](#penn-treebank) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [AlphaGo](#alphago) | [Hedge Algorithm](#hedge-algorithm) | [Perplexity](#perplexity) |
+| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [PersonaChat](#personachat) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Hidden Markov Model](#hidden-markov-model) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
+| [Arity](#arity) | [Hierarchical Planning (Global and Local Planner)](#hierarchical-planning-global-and-local-planner) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Hierarchical Softmax](#hierarchical-softmax) | [PID Controller](#pid-controller) |
+| [Authorship Attribution](#authorship-attribution) | [Hinge Loss](#hinge-loss) | [Planner Completeness](#planner-completeness) |
+| [Automatic Differentiation](#automatic-differentiation) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Planning Graph](#planning-graph) |
+| [Auxiliary Particle Filter](#auxiliary-particle-filter) | [HMM Alignment Model](#hmm-alignment-model) | [Point Cloud](#point-cloud) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Horizontal Markovization](#horizontal-markovization) | [Polar Coordinates](#polar-coordinates) |
+| [Backpointer](#backpointer) | [Hyperparameter](#hyperparameter) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Backpropagation](#backpropagation) | [IBM Model 1](#ibm-model-1) | [Pose](#pose) |
+| [Bag of Words](#bag-of-words) | [Ill-Conditioned Problem](#ill-conditioned-problem) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Banana Distribution](#banana-distribution) | [Importance Sampling](#importance-sampling) | [Positional Encoding](#positional-encoding) |
+| [BART](#bart) | [In-Context Learning](#in-context-learning) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [Basis Function](#basis-function) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
+| [Batch](#batch) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
+| [Batch Normalization](#batch-normalization) | [Induction Head](#induction-head) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Inertial Measurement Unit (IMU)](#inertial-measurement-unit-imu) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Bayes' Rule](#bayes-rule) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Information Retrieval](#information-retrieval) | [Principal Component Analysis](#principal-component-analysis) |
+| [Beam Search](#beam-search) | [Informed RRT*](#informed-rrt) | [Prior Distribution](#prior-distribution) |
+| [Belief-Space Planning](#belief-space-planning) | [Instruction Tuning](#instruction-tuning) | [Priority Queue](#priority-queue) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [BERT](#bert) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [Bias Amplification](#bias-amplification) | [Iterative Deepening](#iterative-deepening) | [Probability Density Contour](#probability-density-contour) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Jacobian](#jacobian) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Jensen's Inequality](#jensens-inequality) | [Projective Tree](#projective-tree) |
+| [Binarization](#binarization) | [Joint Probability Distribution](#joint-probability-distribution) | [Proof by Contradiction](#proof-by-contradiction) |
+| [BIO Tagging](#bio-tagging) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Propagating Mean and Covariance Through a Linear Map](#propagating-mean-and-covariance-through-a-linear-map) |
+| [BLEU Score](#bleu-score) | [K-Means Algorithm](#k-means-algorithm) | [Pure Pursuit](#pure-pursuit) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Quadratic Form](#quadratic-form) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Kalman Filter](#kalman-filter) | [Quiescence Search](#quiescence-search) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Kalman Gain Limiting Cases](#kalman-gain-limiting-cases) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Kernel Function](#kernel-function) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Kidnapped Robot Problem](#kidnapped-robot-problem) | [Random Forest](#random-forest) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [Calibration (Model Confidence)](#calibration-model-confidence) | [Kinodynamic Planning](#kinodynamic-planning) | [Random Projection](#random-projection) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [KL Divergence](#kl-divergence) | [Random Variable](#random-variable) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [KLD-Sampling (Adaptive Particle Count)](#kld-sampling-adaptive-particle-count) | [Rank](#rank) |
+| [Centroid](#centroid) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Ray Casting](#ray-casting) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Landmark (Map Feature)](#landmark-map-feature) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Latent Variable](#latent-variable) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
+| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Law of Large Numbers](#law-of-large-numbers) | [Regularization](#regularization) |
+| [Chernoff Bound](#chernoff-bound) | [Layer Normalization](#layer-normalization) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [CKY Algorithm](#cky-algorithm) | [Lexicalization](#lexicalization) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Likelihood](#likelihood) | [Reporting Bias](#reporting-bias) |
+| [Closed-World Assumption](#closed-world-assumption) | [Likelihood Collapse in Products of Many Factors](#likelihood-collapse-in-products-of-many-factors) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Linear State Estimation (Linear-Gaussian Model)](#linear-state-estimation-linear-gaussian-model) | [Reverse-Order Rule for Transposes and Inverses](#reverse-order-rule-for-transposes-and-inverses) |
+| [Code-Switching](#code-switching) | [Linearity of Expectation](#linearity-of-expectation) | [RoBERTa](#roberta) |
+| [Computation Graph](#computation-graph) | [Linearization (First-Order Approximation)](#linearization-first-order-approximation) | [Robust Observation Likelihood](#robust-observation-likelihood) |
+| [Conditional Independence](#conditional-independence) | [Linearly Separable](#linearly-separable) | [Robustification of the Observation Likelihood](#robustification-of-the-observation-likelihood) |
+| [Conditioning a Joint Gaussian](#conditioning-a-joint-gaussian) | [Lipschitz Continuity](#lipschitz-continuity) | [ROUGE](#rouge) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Local Minimum](#local-minimum) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Confounder](#confounder) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
+| [Confusion Matrix](#confusion-matrix) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Conjunction Feature](#conjunction-feature) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Consistent Heuristic](#consistent-heuristic) | [Loss of Particle Diversity](#loss-of-particle-diversity) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Loss Surface](#loss-surface) | [Schur Complement](#schur-complement) |
+| [Constituency Tests](#constituency-tests) | [Low-Resource Language](#low-resource-language) | [Search Statistics](#search-statistics) |
+| [Constituent](#constituent) | [Low-Variance Resampling](#low-variance-resampling) | [Self-Attention](#self-attention) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Lower Bound](#lower-bound) | [Semantic Parsing](#semantic-parsing) |
+| [Context-Free Grammar](#context-free-grammar) | [Machine Translation](#machine-translation) | [Sensor Resetting Localization](#sensor-resetting-localization) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Marginalization](#marginalization) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Sigma Point Filter (Unscented Kalman Filter)](#sigma-point-filter-unscented-kalman-filter) |
+| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Markov Model](#markov-model) | [Simple Carrot Navigation Controller](#simple-carrot-navigation-controller) |
+| [Coordinate Descent](#coordinate-descent) | [Markov's Inequality](#markovs-inequality) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Masked Language Modeling](#masked-language-modeling) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Coreference Resolution](#coreference-resolution) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Corrective Gradient Refinement](#corrective-gradient-refinement) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Skip-Gram Model](#skip-gram-model) |
+| [Covariance Matrix](#covariance-matrix) | [Max-Normalization of Weights](#max-normalization-of-weights) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Entropy Model](#maximum-entropy-model) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Cross-Validation](#cross-validation) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Sparse Attention](#sparse-attention) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [mBART (Multilingual BART)](#mbart) | [Specificity Conditioning](#specificity-conditioning) |
+| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Mean Squared Error](#mean-squared-error) | [Spectral Theorem](#spectral-theorem) |
+| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Minimax Algorithm](#minimax-algorithm) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
+| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Minimum Description Length](#minimum-description-length) | [Start-End Span Prediction](#start-end-span-prediction) |
+| [Dead End](#dead-end) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
+| [Decision Boundary](#decision-boundary) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Decision Tree](#decision-tree) | [Moment Parameterization of a Gaussian](#moment-parameterization-of-a-gaussian) | [Stopword](#stopword) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Momentum](#momentum) | [STRIPS](#strips) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monotone Convergence](#monotone-convergence) | [Structured Classification](#structured-classification) |
+| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Monotonic Function](#monotonic-function) | [Subword Tokenization](#subword-tokenization) |
+| [Dependency Parsing](#dependency-parsing) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Support Vector Machine](#support-vector-machine) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Surrogate Loss](#surrogate-loss) |
+| [Depth-Limited Search](#depth-limited-search) | [Monte-Carlo Kalman Filter](#monte-carlo-kalman-filter) | [Swept Volume](#swept-volume) |
+| [Determinization](#determinization) | [Morphology](#morphology) | [Symmetric Matrix](#symmetric-matrix) |
+| [Diagonal Matrix](#diagonal-matrix) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Relation](#symmetric-relation) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Motion Model](#motion-model) | [Syntactic Parsing](#syntactic-parsing) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [T5](#t5) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Tag Lattice](#tag-lattice) |
+| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
+| [Discretization (Discretized State Space)](#discretization-discretized-state-space) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Discriminative Model](#discriminative-model) | [Multi-Observation Sensor Resetting Localization](#multi-observation-sensor-resetting-localization) | [Teacher Forcing](#teacher-forcing) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Tensor](#tensor) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Text Summarization](#text-summarization) |
+| [Dropout](#dropout) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Multimodal Distribution (Modes)](#multimodal-distribution-modes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Dynamic Programming](#dynamic-programming) | [Multinomial Distribution](#multinomial-distribution) | [Time Causality Assumption](#time-causality-assumption) |
+| [Early Stopping](#early-stopping) | [Multitask Learning](#multitask-learning) | [Toxic Degeneration](#toxic-degeneration) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Mutex](#mutex) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Transformer Architecture](#transformer-architecture) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [N-Gram Language Model](#n-gram-language-model) | [Transition Model (Action-Marginalized)](#transition-model-action-marginalized) |
+| [EM Algorithm](#em-algorithm) | [Naive Bayes](#naive-bayes) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Named-Entity Type Labels](#named-entity-type-labels) | [Treebank](#treebank) |
+| [Epoch](#epoch) | [Natural Form of a Gaussian (Information Form)](#natural-form-of-a-gaussian-information-form) | [Triangle Inequality](#triangle-inequality) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Natural Questions](#natural-questions) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Log Likelihood](#negative-log-likelihood) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Negative Sampling](#negative-sampling) | [Turing Test](#turing-test) |
+| [Extended Kalman Filter](#extended-kalman-filter) | [Neural Network](#neural-network) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Factor Graph](#factor-graph) | [Neural Scaling Laws](#neural-scaling-laws) | [Uncorrelated Random Variables](#uncorrelated-random-variables) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Neural Text Degeneration](#neural-text-degeneration) | [Unexpected Objects and Map Errors in Sensor Readings](#unexpected-objects-and-map-errors-in-sensor-readings) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neuron](#neuron) | [Union Bound](#union-bound) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Newton's Method](#newtons-method) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
+| [Feature Expansion](#feature-expansion) | [Next Sentence Prediction](#next-sentence-prediction) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Noisy Channel Model](#noisy-channel-model) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
+| [Few-Shot Prompting](#few-shot-prompting) | [Non-Parametric Method](#non-parametric-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Nonlinear Least Squares](#nonlinear-least-squares) | [Vauquois Triangle](#vauquois-triangle) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) | [Vector Map](#vector-map) |
+| [Frontier / Open List](#frontier-open-list) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [Gaussian Conditioning (Moment Form)](#gaussian-conditioning-moment-form) | [NP-Hard](#np-hard) | [Vertical Markovization](#vertical-markovization) |
+| [Gaussian Graphical Model](#gaussian-graphical-model) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Gaussian Mixture Model](#gaussian-mixture-model) | [Numerical Underflow](#numerical-underflow) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
+| [Gaussians Stay Gaussian Under Linear Transformation](#gaussians-stay-gaussian-under-linear-transformation) | [Objective Function / Training Objective](#objective-function-training-objective) | [Word Alignment](#word-alignment) |
+| [Generative Likelihood](#generative-likelihood) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Generative Model](#generative-model) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Embedding](#word-embedding) |
+| [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [Odometry](#odometry) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Geometric Mean](#geometric-mean) | [One-Hot Encoding](#one-hot-encoding) | [Word2Vec](#word2vec) |
+| [Global Planner and Local Planner](#global-planner-and-local-planner) | [One-vs-All](#one-vs-all) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
+| [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Open-Domain Question Answering](#open-domain-question-answering) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [GLUE Benchmark](#glue-benchmark) | [Optimal (Receding-Horizon) Local Planning](#optimal-receding-horizon-local-planning) | [Zero-Sum Game](#zero-sum-game) |
 
 ## Concepts
 
@@ -237,6 +246,30 @@ The reserved mass $\lambda$ going to the lower-order backoff model is $\lambda =
 So a virtual front wheel angled at about $14°$ makes this car trace a circle of radius $10$ meters.
 
 **AI/ML Usage**: Ackermann steering is the standard example of a real-world **kinematic constraint** (see the Kinematic Constraints and Control Parameters entry) in mobile-robotics and self-driving-car research — the fact that the car cannot move sideways or spin in place shapes essentially every motion planner built for it, since a geometrically direct path (like a straight line into a tight parking spot) may simply be undrivable. Planning approaches built specifically around this limitation include Reeds-Shepp curves and lattice-based planning (see that entry), both of which only ever propose paths the car's Ackermann steering can actually realize.
+
+---
+
+<a id="action-model-intent-model"></a>
+### Action Model (Intent Model)
+
+**The Big Idea**: In Algebra 2 you met a function as a rule that turns an input into one output. An action model is a rule that turns a situation into a list of probabilities, one for each choice an agent might make. It builds on the Conditional Bar and Probability entries in the math_symbols file: the situation is the "given" part of the conditional probability, and the choices are the outcomes. It is an everyday idea (a person who has been walking straight is more likely to keep walking straight), written in the language of probability.
+
+**General Usage**: An action model, written $p(u_{t+1} \mid x_t)$, gives the probability that an agent whose current state is $x_t$ takes each possible action $u_{t+1}$. It is used when the action is **not observed**, as when a robot tracks a pedestrian whose intentions are hidden, and so the best that can be done is to model how likely each action is. For each fixed $x_t$, the probabilities over all possible actions are non-negative and add to $1$ (for a continuous set of actions they integrate to $1$). An action model is not the same as the Motion Model entry: the action model says which action is chosen, and the motion model says where the agent ends up once an action has been chosen.
+
+**Example.** A tracked pedestrian is either "walking straight" or "turning left," and has two possible actions, "continue" or "turn." Suppose the action model assigns:
+
+| Current state | $p(\text{continue} \mid x_t)$ | $p(\text{turn} \mid x_t)$ | Sum |
+|---|---|---|---|
+| walking straight | $0.9$ | $0.1$ | $0.9 + 0.1 = 1$ |
+| turning left | $0.6$ | $0.4$ | $0.6 + 0.4 = 1$ |
+
+1. Read the row for the current state, "walking straight."
+2. The probability of the action "turn" is $0.1$, a small value, because an abrupt turn is unlikely for someone walking straight.
+3. Check that the row is a valid distribution: $0.9 + 0.1 = 1$.
+4. Read the row for "turning left": the action "turn" now has probability $0.4$, higher than before, because a person already curving is more likely to keep curving.
+5. Check this row too: $0.6 + 0.4 = 1$. Each row sums to $1$ separately, because the "given" state is held fixed in each row.
+
+**AI/ML Usage**: An action model is the second ingredient of a tracker for objects with hidden intentions, such as pedestrians and other vehicles around a self-driving car. It is combined with the motion model by marginalizing out the unknown action (see the Transition Model (Action-Marginalized) entry) to give the probability of each next state. When the agent is the one making the choices, as in reinforcement learning, the analogous object is a policy (see the Epsilon-Greedy Policy entry for one example), which is also a probability distribution over actions given a state.
 
 ---
 
@@ -1409,6 +1442,32 @@ The tag sequence is English, English, English, English, Spanish, Spanish, Spanis
 
 ---
 
+<a id="conditioning-a-joint-gaussian"></a>
+### Conditioning a Joint Gaussian
+
+**The Big Idea**: This builds on the Conditional Bar entry in the math symbols file: $p(a\mid b)$ means "the probability of $a$ once $b$ is known." For a Gaussian, "once $b$ is known" has a clean closed-form answer, and the result is again a Gaussian. The formulas are a leap beyond Algebra 2 because they use matrices, but the idea is simply "slide the center toward the evidence and shrink the spread."
+
+**General Usage**: Suppose two groups of variables $X$ and $Y$ are described together by one multivariate Gaussian (see the Multivariate Normal Distribution entry) with mean blocks $\mu_X,\mu_Y$ and covariance blocks $\Sigma_{XX},\Sigma_{XY},\Sigma_{YX},\Sigma_{YY}$. Once $Y$ is observed to equal a specific value $y$, the distribution of $X$ is a Gaussian with
+
+$$
+\mu_{X\mid Y}=\mu_X+\Sigma_{XY}\Sigma_{YY}^{-1}(y-\mu_Y), \qquad \Sigma_{X\mid Y}=\Sigma_{XX}-\Sigma_{XY}\Sigma_{YY}^{-1}\Sigma_{YX}.
+$$
+
+The covariance formula is a Schur complement (see the Schur Complement entry). The same result is simpler in natural form (see the Natural Form of a Gaussian entry): the conditional precision is $P_{1\mid2}=P_{11}$ and the conditional information vector is $J_{1\mid2}=J_1-P_{12}x_2$, where $P_{ij}$ and $J_i$ are the blocks of the joint precision matrix and information vector.
+
+**Example.** Let $X$ and $Y$ be single numbers with $\mu_X=1$, $\mu_Y=2$, $\Sigma_{XX}=4$, $\Sigma_{XY}=\Sigma_{YX}=2$, $\Sigma_{YY}=2$. Observe $y=3$.
+
+1. Compute the gain-like ratio: $\Sigma_{XY}\Sigma_{YY}^{-1}=2\cdot\tfrac12=1$.
+2. Compute the surprise: $y-\mu_Y=3-2=1$.
+3. Conditional mean: $\mu_{X\mid Y}=1+1\cdot1=2$.
+4. Conditional variance: $\Sigma_{X\mid Y}=4-2\cdot\tfrac12\cdot2=4-2=2$.
+
+Check in natural form. The covariance matrix $\begin{bmatrix}4&2\\2&2\end{bmatrix}$ has determinant $4\cdot2-2\cdot2=4$, so its inverse is $P=\tfrac14\begin{bmatrix}2&-2\\-2&4\end{bmatrix}=\begin{bmatrix}0.5&-0.5\\-0.5&1\end{bmatrix}$. The information vector is $J=P\mu=\begin{bmatrix}0.5\cdot1-0.5\cdot2\\-0.5\cdot1+1\cdot2\end{bmatrix}=\begin{bmatrix}-0.5\\1.5\end{bmatrix}$. Then $P_{1\mid2}=P_{11}=0.5$, so the variance is $1/0.5=2$, matching step 4. Also $J_{1\mid2}=J_1-P_{12}y=-0.5-(-0.5)(3)=1$, so the mean is $J_{1\mid2}/P_{1\mid2}=1/0.5=2$, matching step 3.
+
+**AI/ML Usage**: This operation is the update step of the Kalman filter (see the Kalman Filter entry), where $X$ is the state of a system and $Y$ is a sensor reading. It is also the core computation in Gaussian process regression, where $X$ is the unknown function values at new inputs and $Y$ is the observed training outputs, and in Gaussian graphical models (see that entry).
+
+---
+
 <a id="configuration-space-c-space-obstacle"></a>
 ### Configuration-Space (C-Space) Obstacle
 
@@ -2136,6 +2195,26 @@ The reconstructed path, following parent pointers back from $G$, is $S \to A \to
 
 ---
 
+<a id="discretization-discretized-state-space"></a>
+### Discretization (Discretized State Space)
+
+**The Big Idea**: In Algebra 2 you graphed continuous functions, where the input $x$ can be any real number, and you also met sequences, where the input is a whole number $1, 2, 3, \dots$. Discretization is the bridge between the two: it replaces a continuous quantity (such as a position along a hallway) with a short list of labeled bins, so that questions about "where exactly" become questions about "which bin." It is not a new kind of math, just rounding done on purpose and carried out systematically.
+
+**General Usage**: To **discretize** a continuous quantity is to divide its range into a finite number of non-overlapping pieces called **cells** (or bins) and to describe the quantity only by which cell it falls in. The resulting list of cells is the **discretized state space**. A probability distribution over a discretized state space is just a table with one probability per cell, those probabilities are never negative, and they add to $1$ (see the Probability / Probability Density entry in the math_symbols file). Any sum over the cells is an ordinary finite sum (see the Summation entry in the math_symbols file), which replaces the integral (see the Integral entry in the math_symbols file) that would be needed for a continuous quantity. The price of discretizing is resolution: everything inside one cell is treated as identical, and finer cells need more entries in the table.
+
+**Example.** A straight hallway is $12$ meters long. Chop it into cells that are $3$ meters long.
+
+1. Count the cells: $12 \div 3 = 4$, so there are 4 cells.
+2. Write each cell as an interval of distances measured from the left end: $[0, 3)$, $[3, 6)$, $[6, 9)$, $[9, 12)$. Call them $x_1, x_2, x_3, x_4$ in that order. (The square bracket means the end point is included and the round bracket means it is not.)
+3. Assign a position: a robot at $7.4$ meters lies in $[6, 9)$, so it is described as being in $x_3$. A robot at $8.9$ meters is also described as being in $x_3$, even though it is $1.5$ meters away from the first robot's position. This is the loss of resolution.
+4. Write a belief about the robot's position as 4 numbers, for example $(0.25, 0.25, 0.25, 0.25)$, and check it is valid: $0.25 + 0.25 + 0.25 + 0.25 = 1$.
+5. See the cost of finer resolution. With cells of $0.5$ meters, the same hallway has $12 \div 0.5 = 24$ cells, so the belief is a table of 24 numbers.
+6. See how the cost grows with dimensions. A floor that is $12$ meters by $6$ meters with $0.5$-meter square cells has $24 \times 12 = 288$ cells, and adding a heading angle in $10$-degree steps multiplies that by $36$, giving $288 \times 36 = 10{,}368$ cells.
+
+**AI/ML Usage**: Discretization is what makes the histogram filter (see the Histogram Filter entry) possible: a robot's belief over its location is stored as one probability per grid cell, and every update is a finite sum over cells. Occupancy grid maps (see the Occupancy Grid Map entry) discretize the world into cells that are free or occupied. The same idea appears in machine learning when a continuous feature, such as age, is turned into bins ("0 to 18," "19 to 40," and so on) so that a model can treat each bin as a separate category, and when a continuous set of actions is rounded to a small menu of actions so that a reinforcement-learning agent can pick among them. In every case the trade-off is the one above: more cells give a more accurate description at a higher memory and computation cost, and the cost grows quickly as dimensions are added.
+
+---
+
 <a id="discriminative-model"></a>
 ### Discriminative Model
 
@@ -2404,6 +2483,53 @@ Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second s
 
 ---
 
+<a id="extended-kalman-filter"></a>
+### Extended Kalman Filter
+
+**The Big Idea**: This builds on the Kalman filter and on the tangent line idea from Algebra 2 and Calculus: a curve looks like a straight line if you zoom in far enough. The extended Kalman filter (EKF) handles a curved (nonlinear) model by replacing it, at every step, with its tangent line near the current estimate, and then running an ordinary Kalman filter on that line.
+
+**General Usage**: The **extended Kalman filter** keeps a Gaussian estimate with mean $\mu$ and covariance $\Sigma$, like the Kalman filter, but the motion model $f$ and the observation model $g$ may be nonlinear functions. Each step uses the functions for the mean and their Jacobians $J_f$ and $J_g$ (see the Jacobian entry) for the covariance:
+
+$$
+\mu^{-} = f(\mu), \qquad \Sigma^{-} = J_f\,\Sigma\,J_f^{T} + Q
+$$
+$$
+K = \Sigma^{-}J_g^{T}\big(J_g\,\Sigma^{-}J_g^{T} + R\big)^{-1}, \qquad \mu_{\text{new}} = \mu^{-} + K\big(y - g(\mu^{-})\big), \qquad \Sigma_{\text{new}} = \Sigma^{-} - K\,J_g\,\Sigma^{-}
+$$
+
+The filter needs the functions $f$ and $g$, their Jacobians, and the noise covariances $Q$ and $R$. The approximation is only good while the model is close to linear over the spread of the estimate, and it assumes the noise is additive and Gaussian.
+
+**Example.** Let the state be a single number $x$ with motion model $f(x) = x^2$ and observation model $g(x) = x$. The estimate is $\mu = 3$ with $\Sigma = 0.5$, the process noise is $Q = 0.1$, the measurement noise is $R = 1$, and the measurement is $y = 10$.
+
+1. Predict the mean: $\mu^{-} = f(3) = 9$.
+2. Linearize: $J_f = 2x = 6$ at $x = 3$.
+3. Predict the variance: $\Sigma^{-} = 6 \times 0.5 \times 6 + 0.1 = 18.1$.
+4. The observation model is linear, so $J_g = 1$ and the gain is $K = 18.1 / (18.1 + 1) \approx 0.948$.
+5. Correct the mean: $\mu_{\text{new}} = 9 + 0.948\,(10 - 9) \approx 9.95$.
+6. Correct the variance: $\Sigma_{\text{new}} = 18.1 - 0.948 \times 18.1 \approx 0.95$.
+
+**AI/ML Usage**: The EKF was one of the first algorithms to solve SLAM (simultaneous localization and mapping, building a map while tracking position): the state holds the robot pose and the landmark positions, the motion model rotates odometry into the map frame, and the observation model predicts what the robot should see of each landmark. It is also standard for fusing inertial, GPS, and camera data. Its weaknesses are that the linearization can be a poor fit for strongly nonlinear models, and that the noise may not really be Gaussian or additive.
+
+---
+
+<a id="factor-graph"></a>
+### Factor Graph
+
+**The Big Idea**: This builds on the idea of a graph from discrete math, a set of dots joined by lines, and on the idea that a big total cost can be written as a sum of many small pieces. A factor graph is a drawing that shows which unknown quantities appear together in each small piece.
+
+**General Usage**: A **factor graph** has two kinds of nodes. **Variable nodes** stand for the unknown quantities to be estimated. **Factor nodes** stand for functions that depend on a small subset of the variables, and each factor is connected by an edge to exactly the variables it uses. The joint probability of everything is proportional to the product of all the factors, so taking logarithms (see the Log Likelihood entry) turns it into a sum of small terms, one per factor. A factor graph is *sparse* when each factor touches only a few variables. The pattern of connections is the structure of the problem, and solvers exploit it to work quickly.
+
+**Example.** A robot moves along a line through poses $x_1, x_2, x_3$ and sees one landmark $l$ from $x_1$ and from $x_3$. That gives $4$ variable nodes and $4$ factor nodes: odometry factors on $(x_1, x_2)$ and $(x_2, x_3)$, and observation factors on $(x_1, l)$ and $(x_3, l)$. Suppose the odometry says each step is $1$ unit, the observation from $x_1$ says $l$ is $5$ ahead, and the observation from $x_3$ says $l$ is $2.5$ ahead. Test the values $x_1 = 0,\ x_2 = 1,\ x_3 = 2,\ l = 5$ with unit variances.
+
+1. Odometry residuals: $(x_2 - x_1) - 1 = 0$ and $(x_3 - x_2) - 1 = 0$.
+2. Observation residuals: $(l - x_1) - 5 = 0$ and $(l - x_3) - 2.5 = 0.5$.
+3. The cost is the sum of the squared residuals: $0 + 0 + 0 + 0.25 = 0.25$.
+4. The only nonzero term comes from the observation factor on $(x_3, l)$, which disagrees with the others, so a solver would adjust the variables to spread that disagreement.
+
+**AI/ML Usage**: Factor graphs are the standard way of writing graph SLAM (see the Graph SLAM entry) and sensor-fusion problems in robotics, and libraries built on them are widely used for mapping and visual-inertial navigation. The same idea appears in probabilistic graphical models used in machine learning, where belief propagation passes messages along a factor graph.
+
+---
+
 <a id="fan-in-fan-out"></a>
 ### Fan-in / Fan-out
 
@@ -2561,6 +2687,36 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 
 ---
 
+<a id="gaussian-conditioning-moment-form"></a>
+### Gaussian Conditioning (Moment Form)
+
+**The Big Idea**: This builds on the Multivariate Normal Distribution entry and the Covariance Matrix entry. Given a bell-shaped description of two related quantities, learning the exact value of one of them should sharpen what is known about the other. For bell-shaped (Gaussian) distributions, the sharpened description is again bell-shaped and has clean formulas for its new center and new spread. This is a leap beyond Algebra 2 because it uses matrices and the idea of a conditional distribution (see the Conditional Bar entry).
+
+**General Usage**: Suppose $X$ and $Y$ are jointly Gaussian with means $\mu_X, \mu_Y$ and covariances $\Sigma_{XX}, \Sigma_{YY}$ and cross-covariance $\Sigma_{XY}$ (see the Cross-Covariance entry). After $Y$ is observed, the distribution of $X$ given $Y$ is Gaussian with
+
+$$
+\mu_{X|Y} = \mu_X + \Sigma_{XY}\,\Sigma_{YY}^{-1}\,(Y - \mu_Y), \qquad
+\Sigma_{X|Y} = \Sigma_{XX} - \Sigma_{XY}\,\Sigma_{YY}^{-1}\,\Sigma_{YX}
+$$
+
+The center moves by the gain $\Sigma_{XY}\Sigma_{YY}^{-1}$ (see the Kalman Gain entry) times how far $Y$ landed from its expected value, and the spread shrinks by a term that does not depend on the observed value of $Y$. "Moment form" means the answer is given using means and covariances (the first and second moments), as opposed to the "natural form", which uses the inverse covariance.
+
+**Example.** Take single numbers with $\mu_X = 10$, $\Sigma_{XX} = 4$, $\mu_Y = 20$, $\Sigma_{XY} = 8$, $\Sigma_{YY} = 20$, and an observed value $Y = 26$.
+
+1. Compute the weight: $\Sigma_{XY}\,\Sigma_{YY}^{-1} = 8/20 = 0.4$.
+2. Compute how far $Y$ landed from its expected value: $Y - \mu_Y = 26 - 20 = 6$.
+3. Compute the new center: $\mu_{X|Y} = 10 + 0.4 \times 6 = 12.4$.
+4. Compute the amount of spread removed: $\Sigma_{XY}\,\Sigma_{YY}^{-1}\,\Sigma_{YX} = 8 \times \tfrac{1}{20} \times 8 = 3.2$.
+5. Compute the new spread: $\Sigma_{X|Y} = 4 - 3.2 = 0.8$.
+
+Second check: with $K = 0.4$ and $\Sigma_{YX} = C\,\Sigma_{XX}$ for $C = 2$ (so that $\Sigma_{YX} = 8$), the factored form $(1 - KC)\,\Sigma_{XX} = (1 - 0.8) \times 4 = 0.8$ gives the same answer.
+
+**AI/ML Usage**: This is the identity from which the Kalman filter update step is derived: the predicted belief about the state plays the role of $X$, the sensor reading plays the role of $Y$, and the formulas above become the update equations. It is also the prediction rule in Gaussian process regression, where the training outputs play the role of $Y$ and the unseen test output plays the role of $X$.
+
+---
+
+---
+
 <a id="gaussian-graphical-model"></a>
 ### Gaussian Graphical Model
 
@@ -2584,6 +2740,23 @@ Step 2 is exactly why parallel parking needs a *sequence* of forward-and-back mo
 **Example.** Modeling adult heights with a GMM of two components might discover one bell-curve centered around 5'4" (roughly representing women) and a second centered around 5'9" (roughly representing men), each with its own separate spread, combined together — and for a specific height like 5'6", the model gives a genuine probability of belonging to each of the two overlapping groups, rather than forcing one single, definite category choice.
 
 **AI/ML Usage**: GMMs are fit using the EM algorithm (see that entry) and are widely used for soft clustering (where a data point can partially belong to more than one group at once), as well as for anomaly detection and for building a flexible, general-purpose model of complicated, multi-peaked data distributions.
+
+---
+
+<a id="gaussians-stay-gaussian-under-linear-transformation"></a>
+### Gaussians Stay Gaussian Under Linear Transformation
+
+**The Big Idea**: This builds on the fact that stretching and shifting a bell shape in Algebra 2 graphing (multiplying $x$ by a number and adding another) gives another bell shape, only wider or narrower and moved. The result here makes that precise for random variables. See the Normal Distribution Notation entry in the math_symbols file.
+
+**General Usage**: If $X$ is normal with mean $\mu_x$ and standard deviation $\sigma_x$, and $Y = aX + b$, then $Y$ is also normal, with mean $\mu_y = a\mu_x + b$ and standard deviation $\sigma_y = |a|\,\sigma_x$. The density of $Y$ comes from the change-of-variables rule $f_Y(y) = \frac{1}{|a|} f_X\!\left(\frac{y-b}{a}\right)$. For vectors with a matrix $A$, the mean transforms as $A\mu_x + b$ and the covariance as $A\,\Sigma_x\,A^{T}$.
+
+**Example.** $X$ is normal with $\mu_x = 10$ and $\sigma_x = 2$, and $Y = 3X + 4$.
+
+1. Mean: $\mu_y = 3\cdot 10 + 4 = 34$.
+2. Standard deviation: $\sigma_y = 3\cdot 2 = 6$.
+3. Check with variances: $\sigma_y^2 = 36$, and $a^2\sigma_x^2 = 9\cdot 4 = 36$, which matches.
+
+**AI/ML Usage**: This is the reason a Kalman filter can track a belief with just a mean and a covariance: linear motion and sensing keep a Gaussian belief Gaussian. It is also the basis of the reparameterization trick, which draws a standard normal sample $\epsilon$ and forms $\mu + \sigma\epsilon$.
 
 ---
 
@@ -2807,6 +2980,26 @@ Notice the slope is negative at every one of these steps (since all these guesse
 **Example.** In German, "I taught the children" is *Ich unterrichte die Kinder*, with the children as direct object, while "I give the children a book" is *Ich gebe den Kindern ein Buch*, where the children are the recipient and the noun itself changes from *Kinder* to *Kindern*.
 
 **AI/ML Usage**: Case multiplies the number of distinct word forms in a language, so a system that learns one embedding (a learned list of numbers) per word form, such as GloVe (see the GloVe entry), needs many more embeddings, and a text-generating system must also choose the correct case for every noun.
+
+---
+
+<a id="graph-slam"></a>
+### Graph SLAM
+
+**The Big Idea**: This builds on the idea of fitting a line through noisy data points by making all the errors as small as possible. Graph SLAM treats the whole robot trajectory and the whole map as one big set of unknowns, and finds the values that make all the measurement errors, added together, as small as possible.
+
+**General Usage**: **Graph SLAM** is a way of solving SLAM (simultaneous localization and mapping, building a map while tracking position) offline or over a window of time. The unknowns are all the robot poses $x_{1:t}$ and all the landmark positions $l_{1:M}$. The measurements give two kinds of factors: **odometry factors** relating successive poses, and **observation factors** relating a pose to a landmark it saw. Each factor is modeled as a Gaussian error between a predicted and a measured value. The best estimate is the maximum likelihood estimate (see the Maximum Likelihood Estimation entry), which turns into a nonlinear least squares problem (see the Nonlinear Least Squares entry) over the factor graph (see the Factor Graph entry). A typical run has four steps: build the structure of the graph, build the factors, compute initial estimates (usually from odometry), and ask a solver to optimize.
+
+**Example.** A robot in 2D visits $100$ poses and sees $100$ landmarks, each landmark from $5$ different poses.
+
+1. Unknowns for poses: each 2D pose has $x$, $y$, and heading, so $100 \times 3 = 300$.
+2. Unknowns for landmarks: each has $x$ and $y$, so $100 \times 2 = 200$.
+3. Total unknowns: $300 + 200 = 500$.
+4. Odometry factors: one between each pair of successive poses, so $100 - 1 = 99$.
+5. Observation factors: one per sighting, so $100 \times 5 = 500$.
+6. Total factors: $99 + 500 = 599$. Each factor touches only $2$ variables, so the problem is large but sparse.
+
+**AI/ML Usage**: Graph SLAM is the basis of modern mapping systems for robots, drones, and self-driving cars, including systems that detect that the robot has returned to a place it has seen before (a loop closure) and then correct the whole trajectory at once. Compared with the extended Kalman filter, it can revise old poses as new information arrives, at the cost of solving a larger optimization problem.
 
 ---
 
@@ -3190,6 +3383,24 @@ where $P(a_i)=\frac{1}{m+1}$ is uniform and independent across positions. Its pa
 
 ---
 
+<a id="ill-conditioned-problem"></a>
+### Ill-Conditioned Problem
+
+**The Big Idea**: In Algebra 2, a system of two nearly parallel lines is touchy: nudge one line a hair and the point where they cross jumps far away. An ill-conditioned problem is the same touchiness in a general form. It goes beyond Algebra 2 only in that the "lines" are the rows of a matrix, and the entries are numbers a computer stores with a small rounding error.
+
+**General Usage**: A problem is **ill-conditioned** when a tiny change in its input (including the tiny rounding errors a computer makes) can cause a large change in its answer. A problem where small input changes cause only small output changes is **well-conditioned**. For a matrix, the standard measure is the **condition number**, the ratio of its largest singular value to its smallest (see the Singular Value Decomposition entry); a very large ratio signals an ill-conditioned matrix. Ill-conditioning belongs to the problem itself, not to a particular algorithm, but it makes every algorithm's answer less trustworthy and can make repeated runs disagree in the last digits, for example when a calculation is split across threads that add numbers in different orders.
+
+**Example.** Consider the pair of equations $x + y = 2$ and $x + 1.0001\,y = 2.0001$.
+
+1. Subtract the first equation from the second: $0.0001\,y = 0.0001$, so $y = 1$.
+2. Substitute into the first: $x = 2 - 1 = 1$.
+3. Now change the right side of the second equation by one ten-thousandth, to $2.0002$. The subtraction gives $0.0001\,y = 0.0002$, so $y = 2$ and $x = 0$.
+4. A change of $0.0001$ in one input moved the answer from $(1, 1)$ to $(0, 2)$. The two lines are almost parallel, so the crossing point is extremely sensitive.
+
+**AI/ML Usage**: Ill-conditioned matrices appear when features are nearly duplicates of each other (for example in linear regression with correlated features) and in covariance matrices that are almost singular. In Kalman filters that find their sampling points with a singular value decomposition of the covariance, an ill-conditioned covariance can make the computed points differ from run to run, especially when the decomposition is computed with multiple threads.
+
+---
+
 <a id="importance-sampling"></a>
 ### Importance Sampling
 
@@ -3308,6 +3519,23 @@ The five lines are joined into one string and given to the model. Suppose the mo
 Check against the pattern: $A$ = K and $B$ = 7; the text contained $\ldots$[K][7]$\ldots$[K], and the completion is [7]. Notice that position 2, which holds the token K itself, was *not* the one attended to — the head looks for what came *after* an earlier K, not for the earlier K.
 
 **AI/ML Usage**: Induction heads were identified in the study of Transformer circuits, a branch of **mechanistic interpretability** — research that tries to explain a neural network's behavior by identifying the specific internal components responsible for it. They are proposed as a mechanism behind In-Context Learning (see that entry): a prompt made of input-label pairs followed by a new input has the form $[A^*][B^*]\ldots[A]$, and completing it with a label is the induction pattern. Supporting evidence is that, during training of small attention-only Transformers with two or more layers, the ability to use context improves abruptly at the same point at which induction heads form, that the abrupt change comes earlier when the architecture is modified to make induction heads easier to form, and that removing the heads changes the model's behavior sharply.
+
+---
+
+<a id="inertial-measurement-unit-imu"></a>
+### Inertial Measurement Unit (IMU)
+
+**The Big Idea**: Close your eyes in a moving car and you can still feel when it speeds up, slows down or turns, even though you cannot see where you are. An inertial measurement unit is the electronic version of that feeling. It builds on the idea of speed from Algebra 2 (distance over time) one step further: acceleration is the change in speed over time.
+
+**General Usage**: An **inertial measurement unit (IMU)** is a sensor package that measures the device's own motion, without looking at the outside world. It typically contains an **accelerometer** (measures acceleration, the rate at which velocity changes), a **gyroscope** (measures how fast the device is rotating) and often a **compass** (magnetometer, measures direction relative to the Earth's magnetic field). Its readings are noisy, and a mistake in one reading carries into everything computed from it afterward, so position estimated from an IMU alone drifts away from the truth over time. The readings are treated as the control or odometry input of a motion model (see the Odometry entry).
+
+**Example.** A device sits still, then an accelerometer reads an acceleration of $2\ \text{m/s}^2$ to the right for the next $0.5$ seconds.
+
+1. Velocity gained: acceleration times time, $2 \times 0.5 = 1\ \text{m/s}$.
+2. If the device started at $0\ \text{m/s}$, its velocity is now $1\ \text{m/s}$ to the right.
+3. If the accelerometer reading is off by $0.2\ \text{m/s}^2$, the velocity is off by $0.2 \times 0.5 = 0.1\ \text{m/s}$, and every later step builds on that error.
+
+**AI/ML Usage**: Phones, drones, self-driving cars and robots combine an IMU with GPS or cameras in a Kalman filter (see the Kalman Filter entry). The IMU supplies the smooth, frequent motion estimate and the GPS or camera supplies an occasional, noisy position check, so each corrects the other's weakness.
 
 ---
 
@@ -3452,6 +3680,25 @@ The algorithm can be interrupted after any of these steps and still hand back a 
 
 ---
 
+<a id="jacobian"></a>
+### Jacobian
+
+**The Big Idea**: This builds on the idea of the slope of a line from Algebra 1: the slope tells how much the output changes per unit change in the input. A function with several inputs and several outputs has many such slopes, one for each pairing of an output with an input, and the Jacobian is the table that holds all of them.
+
+**General Usage**: For a function $f$ that takes an input vector with $n$ entries and returns an output vector with $m$ entries, the **Jacobian** $J_f$ is the $m \times n$ matrix whose entry in row $i$ and column $j$ is the partial derivative $\partial f_i / \partial x_j$ (how much output $i$ changes when input $j$ is nudged and the other inputs are held fixed). Near a chosen point $x_0$, the function is approximated by $f(x) \approx f(x_0) + J_f(x_0)\,(x - x_0)$, which replaces a curved function with a linear one. The matrix has to be recomputed whenever the point changes, unless the function is already linear. See the Jacobian entry in the math_symbols file for the notation.
+
+**Example.** Let $f(x, y) = (x^2 + y,\ xy)$ and linearize at the point $(2, 3)$.
+
+1. The first output $x^2 + y$ has partial derivatives $2x = 4$ with respect to $x$ and $1$ with respect to $y$.
+2. The second output $xy$ has partial derivatives $y = 3$ with respect to $x$ and $x = 2$ with respect to $y$.
+3. So $J_f(2,3) = \begin{bmatrix} 4 & 1 \\ 3 & 2 \end{bmatrix}$, and $f(2,3) = (7, 6)$.
+4. Nudge the input to $(2.1, 3)$, a change of $(0.1, 0)$. The linear approximation gives $(7, 6) + \begin{bmatrix} 4 & 1 \\ 3 & 2 \end{bmatrix}\begin{bmatrix} 0.1 \\ 0 \end{bmatrix} = (7.4, 6.3)$.
+5. The exact value is $f(2.1, 3) = (4.41 + 3,\ 6.3) = (7.41, 6.3)$, so the approximation is off by only $0.01$ in the first output.
+
+**AI/ML Usage**: The Jacobian of the motion model and of the observation model is what the extended Kalman filter (see the Extended Kalman Filter entry) uses to linearize them, and it is recomputed at every step. In SLAM (simultaneous localization and mapping, building a map while tracking position) solvers based on nonlinear least squares, the Jacobian of every residual is needed by methods such as Gauss-Newton, and it can be supplied by hand or produced by automatic differentiation. In neural networks, backpropagation is a chain of Jacobian multiplications through the layers.
+
+---
+
 <a id="jensens-inequality"></a>
 ### Jensen's Inequality
 
@@ -3590,6 +3837,51 @@ Classify the new point $P=(4,3)$. Compute the squared distance from $P$ to every
 
 ---
 
+<a id="kalman-filter"></a>
+### Kalman Filter
+
+**The Big Idea**: This builds on the idea of averaging two measurements of the same thing. If one scale reads $10.0$ kg and another reads $10.4$ kg, you trust the more precise scale more. A Kalman filter does this over and over in time: it blends a prediction of where something should be with a new measurement, weighting each by how uncertain it is.
+
+**General Usage**: A **Kalman filter** tracks the state of a system (for example the position of a robot) as a Gaussian distribution, described by a mean $\mu$ and a covariance $\Sigma$ (see the Covariance Matrix entry). It alternates two steps. The **prediction step** pushes the estimate through a model of how the state changes and adds the process noise covariance $Q$, so the uncertainty grows. The **update step** compares a new measurement $y$ with the predicted measurement, and corrects the mean by a weighted amount of the difference. The weight is the **Kalman gain** $K = \Sigma^{-}\,(\Sigma^{-} + R)^{-1}$ in the simplest case where the measurement is the state itself, with $R$ the measurement noise covariance. The update shrinks the uncertainty. The filter is exact when the motion and measurement models are linear and the noise is Gaussian. It is a special case of the Bayes filter (see the Bayes Filter entry).
+
+**Example.** A one-dimensional robot has estimate $\mu = 10$ with variance $\Sigma = 4$. It is commanded to move $2$ units, with process noise variance $Q = 1$. It then measures its position as $y = 13$, with measurement noise variance $R = 5$.
+
+1. Predict the mean: $\mu^{-} = 10 + 2 = 12$.
+2. Predict the variance: $\Sigma^{-} = 4 + 1 = 5$.
+3. Compute the gain: $K = 5 / (5 + 5) = 0.5$.
+4. Correct the mean: $\mu = 12 + 0.5\,(13 - 12) = 12.5$.
+5. Correct the variance: $\Sigma = (1 - 0.5) \times 5 = 2.5$. The variance dropped from $5$ to $2.5$, so the measurement made the estimate more certain.
+
+**AI/ML Usage**: Kalman filters fuse GPS, inertial, and wheel measurements in phones, drones, and self-driving cars, and are the base of many robot localization systems. Because real motion and sensing are rarely linear, the extended Kalman filter (see the Extended Kalman Filter entry) is the version used most often in robotics.
+
+---
+
+<a id="kalman-gain-limiting-cases"></a>
+### Kalman Gain Limiting Cases
+
+**The Big Idea**: This builds on the Kalman Gain entry in the math_symbols file and on the Algebra 2 habit of testing a formula at its extremes, for example asking what $\frac{x}{x+r}$ does when $r = 0$ and when $r$ is huge. Checking a formula at its limits tells you whether it behaves sensibly before you trust it in the middle.
+
+**General Usage**: The Kalman gain $K = \bar{\Sigma}C^{\top}\left[C\bar{\Sigma}C^{\top} + R\right]^{-1}$ (see the Kalman Gain entry in the math_symbols file) blends a prediction with a measurement. Two extremes of the measurement noise covariance $R$ show how it blends them, assuming for the first case that the observation matrix $C$ is square and invertible (see the Matrix Inverse entry in the math_symbols file).
+
+- **Noiseless measurements, $R = 0$.** The gain reduces to $K = \bar{\Sigma}C^{\top}\left[C\bar{\Sigma}C^{\top}\right]^{-1}$. Because the inverse of a product reverses the order, this equals $\bar{\Sigma}\,C^{\top}\left(C^{\top}\right)^{-1}\bar{\Sigma}^{-1}C^{-1}$, in which $C^{\top}(C^{\top})^{-1} = I$ and $\bar{\Sigma}\bar{\Sigma}^{-1} = I$ cancel, leaving $K = C^{-1}$. The corrected mean becomes $\mu = \bar{\mu} + C^{-1}\left[s - C\bar{\mu}\right] = C^{-1}s$: the prediction is erased and the estimate is whatever the measurement implies.
+- **Very large measurement noise.** When $R$ dominates $C\bar{\Sigma}C^{\top} + R$, the bracket is approximately $R$, so $K \approx \bar{\Sigma}C^{\top}R^{-1}$, which tends to zero as $R$ grows. The correction vanishes and $\mu \approx \bar{\mu}$: the measurement is ignored.
+
+Between the extremes, the gain is the optimal blend of the two sources.
+
+**Example.** Use one number, with $C = 1$ and predicted variance $\bar{\Sigma} = 9$, so $K = 9/(9+R)$. Take a predicted mean $\bar{\mu} = 20$ and a measurement $s = 26$.
+
+| $R$ | Gain $K = 9/(9+R)$ | Corrected mean $20 + K(26-20)$ |
+|---|---|---|
+| $0$ | $9/9 = 1$ | $20 + 6 = 26$ (the measurement) |
+| $9$ | $9/18 = 0.5$ | $20 + 3 = 23$ |
+| $891$ | $9/900 = 0.01$ | $20 + 0.06 = 20.06$ (almost the prediction) |
+
+At $R=0$ the result equals $C^{-1}s = 1^{-1}\cdot 26 = 26$, matching the matrix formula above.
+
+**AI/ML Usage**: This behaviour is why a Kalman filter that tracks a robot follows a very precise sensor closely and nearly ignores a very noisy one, without any manual switching. Engineers tune $R$ (and the motion noise $Q$) to set how much the filter trusts each source, and the two extremes above are the sanity check that a tuned filter should satisfy.
+
+---
+
 <a id="kernel-function"></a>
 ### Kernel Function
 
@@ -3723,6 +4015,23 @@ The uncertain (spread out) case needs about three times as many particles as the
 **Example.** The question "When was Brie Larson born?" is mapped to the expression $\lambda d.\ \text{birthday}(\text{BL}, d)$, where $\text{BL}$ abbreviates Brie Larson. Reading it: $\text{birthday}(\text{BL}, d)$ is true when $d$ is her birthday, and $\lambda d.$ marks $d$ as the unknown being asked for. Run against a knowledge base, the query looks for the birthday associated with Brie Larson and returns it. A question such as "What temperature should I cook chicken to?" shows the limit: white meat and dark meat are cooked to different temperatures, the answer could be wanted in Fahrenheit or Celsius, and such extra detail is unlikely to be in a knowledge base unless someone has built a specialized cooking system.
 
 **AI/ML Usage**: The geographic question "What states border Texas?" from the GeoQuery data set is the classic benchmark for this style of system, with a semantic parser (often a sequence-to-sequence neural network) doing stage (2). Reading Comprehension (Span Extraction) is the contrasting approach, which treats free text on the web as the knowledge source instead of a structured database.
+
+---
+
+<a id="landmark-map-feature"></a>
+### Landmark (Map Feature)
+
+**The Big Idea**: This builds on the idea of a landmark you use when giving directions, such as "turn left at the big oak tree." A landmark is a distinct, recognizable thing in the world whose position can be written down and found again later.
+
+**General Usage**: A **landmark** is a feature of the environment, such as a tree trunk, a corner of a wall, or a sign, that a sensor can detect repeatedly and whose position is a fixed point in the world. A map is often just the collection of all landmark positions, so a map with $K$ landmarks can be written as $M = \{m_1, m_2, \ldots, m_K\}$, where $m_k$ is the position of landmark $k$. Each landmark may carry an **identity**, a label that tells the robot which landmark in the map a given detection corresponds to.
+
+**Example.** A map holds two landmarks at $m_1 = (2, 0)$ and $m_2 = (2, 4)$, in meters. A robot at position $(0, 0)$ detects a landmark and measures its offset from itself as $(2, 4)$.
+
+1. The offset is how far the detection lies from the robot in each direction, so the detection sits at $(0, 0) + (2, 4) = (2, 4)$ in the world.
+2. Compare that world position with the map: it matches $m_2 = (2, 4)$ and does not match $m_1 = (2, 0)$.
+3. So the detection is of landmark $2$.
+
+**AI/ML Usage**: In landmark-based mapping and SLAM (simultaneous localization and mapping, building a map while tracking position), the robot's map is a set of landmarks, for instance tree trunks seen by a laser range finder in an outdoor park. Deciding which landmark a detection belongs to is a separate problem in its own right, and many introductory treatments assume landmark identities are known.
 
 ---
 
@@ -3898,6 +4207,81 @@ Each individual reading was only moderately off, yet the joint likelihood is eff
 
 ---
 
+<a id="linear-state-estimation-linear-gaussian-model"></a>
+### Linear State Estimation (Linear-Gaussian Model)
+
+**The Big Idea**: In Algebra 2 you solve systems of linear equations, where every unknown appears only multiplied by a number and added up. Linear state estimation is the special case of tracking something over time in which every rule is of that form and every uncertainty is a bell curve. The reward for restricting to this special case is that the belief can be updated exactly and compactly, instead of by an expensive approximation such as a histogram or a particle filter (see the Histogram Filter and Particle Filter entries). It uses the notation in the State Transition Matrix, Control Matrix, Observation Matrix, Process Noise and Observation Noise entries in the math_symbols file.
+
+**General Usage**: A **linear state estimation** problem (also called a **linear-Gaussian model**) has a state $x_t$ (what is tracked), a control $u_t$ (commands or odometry), and an observation $y$ (a sensor reading), related by two equations:
+
+$$
+x_{t+1} = A x_t + B u_t + \epsilon, \qquad \epsilon \sim \mathcal{N}(0, Q)
+$$
+
+$$
+y_{t+1} = C x_{t+1} + \delta, \qquad \delta \sim \mathcal{N}(0, R)
+$$
+
+The first is the **motion model** (how the state changes) and the second is the **sensor model** (how the state produces a reading). Everything is linear: the next state and the observation are plain weighted sums of the state and control, with Gaussian noise added. Anything involving rotation by an angle is not linear, although some such problems can be approximated by a linear one (a step called linearization, see the Extended Kalman Filter entry).
+
+**Example.** A point moves in a plane with state $(x,\ y,\ v_x,\ v_y)$ and acceleration control $(a_x,\ a_y)$. With time step $\Delta t = 0.5$, the matrices are
+
+$$
+A = \begin{bmatrix} 1 & 0 & 0.5 & 0 \\ 0 & 1 & 0 & 0.5 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{bmatrix},\quad
+B = \begin{bmatrix} 0 & 0 \\ 0 & 0 \\ 0.5 & 0 \\ 0 & 0.5 \end{bmatrix},\quad
+C = \begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \end{bmatrix}
+$$
+
+Take $x_t = (2,\ 3,\ 4,\ -2)$ and $u_t = (2,\ 1)$, and ignore the noise for one step.
+
+1. Apply $A$: $A x_t = (2 + 0.5\cdot 4,\ 3 + 0.5\cdot(-2),\ 4,\ -2) = (4,\ 2,\ 4,\ -2)$.
+2. Apply $B$: $B u_t = (0,\ 0,\ 0.5\cdot 2,\ 0.5\cdot 1) = (0,\ 0,\ 1,\ 0.5)$.
+3. Add: $x_{t+1} = (4,\ 2,\ 5,\ -1.5)$.
+4. Observe: $C x_{t+1} = (4,\ 2)$, the position only, because the GPS-style sensor does not see velocity.
+5. Check against the plain equations: new $v_x = 4 + 0.5\cdot 2 = 5$ and new $v_y = -2 + 0.5\cdot 1 = -1.5$, matching step 3.
+
+**AI/ML Usage**: This is the model behind the Kalman filter (see the Kalman Filter entry), used to track people with phones, vehicles with radar, and robots with wheel and GPS sensors. Whenever the real motion or sensing is not linear, the extended Kalman filter (see the Extended Kalman Filter entry) applies the same machinery to a locally linear approximation.
+
+---
+
+<a id="linearity-of-expectation"></a>
+### Linearity of Expectation
+
+**The Big Idea**: This builds on the Expectation entry in the math_symbols file, where the expected value is the probability-weighted average. Linearity is the same "distribute and pull out constants" habit from Algebra 2 (for example $3(a+b) = 3a + 3b$), applied to averages: the average of a sum is the sum of the averages, and a constant multiplier can be pulled outside the average.
+
+**General Usage**: For random variables $x$ and $y$ and a fixed (non-random) constant $c$,
+$$E(x + y) = E(x) + E(y), \qquad E(c\,x) = c\,E(x).$$
+Both rules hold without any assumption about how $x$ and $y$ relate to each other; in particular they do not require independence. They also hold for random vectors, entry by entry: $E(X + Y) = E(X) + E(Y)$ for vectors $X$ and $Y$.
+
+**Example.** Let $x$ be the result of one fair six-sided die roll, so $E(x) = \tfrac{1+2+3+4+5+6}{6} = 3.5$. Let $y = x$ (the very same roll, so the two are completely dependent).
+
+1. Compute $x + y = 2x$ directly: the values are $2,4,6,8,10,12$, each with probability $\tfrac16$, so $E(x+y) = \tfrac{2+4+6+8+10+12}{6} = \tfrac{42}{6} = 7$.
+2. Use the sum rule: $E(x) + E(y) = 3.5 + 3.5 = 7$. The two answers agree, even though $x$ and $y$ are not independent.
+3. Use the constant rule with $c = 2$: $E(2x) = 2\cdot E(x) = 2 \cdot 3.5 = 7$, matching step 1.
+
+**AI/ML Usage**: Linearity of expectation is what lets complicated averages be broken into simple pieces. In the Kalman filter (an algorithm that tracks a changing quantity from noisy measurements), the average of the next predicted state is computed by pushing the average of the current state through a linear model, which works only because expectation is linear. In machine learning generally, the expected loss over a dataset is a sum of per-example expected losses, which is why training can work on small random batches of examples and still estimate the full average.
+
+---
+
+<a id="linearization-first-order-approximation"></a>
+### Linearization (First-Order Approximation)
+
+**The Big Idea**: This builds on the Taylor Expansion entry and on the tangent line idea from graphing: if you zoom in far enough on a smooth curve, it looks like a straight line. Linearization means replacing the curve near one chosen point with that tangent line. For a function with several inputs and outputs the tangent line becomes a matrix of slopes, the Jacobian (see the Jacobian entry in the math_symbols file).
+
+**General Usage**: To linearize a function $f$ around a point $a$ (the point of linearization), keep the value there and add the slope there times the displacement from the point: $f(x) \approx f(a) + f'(a)\,(x - a)$. For a function of a vector, $f(x) \approx f(a) + J_f(a)\,(x - a)$, where $J_f(a)$ is the Jacobian evaluated at $a$. The approximation is exact at $a$ and is good only while $x$ stays close to $a$.
+
+**Example.** Let $f(x) = x^2$ and linearize around $a = 3$.
+
+1. The value at the point is $f(3) = 9$.
+2. The slope is $f'(x) = 2x$, so $f'(3) = 6$.
+3. The linearization is $f(x) \approx 9 + 6\,(x - 3)$.
+4. At $x = 3.1$ the approximation gives $9 + 6(0.1) = 9.6$, and the true value is $3.1^2 = 9.61$, so the error is $0.01$.
+5. At $x = 5$ the approximation gives $9 + 6(2) = 21$, while the true value is $25$, so the error is $4$: far from the point of linearization the approximation is poor.
+
+**AI/ML Usage**: The extended Kalman filter linearizes the non-linear motion and observation models around the current mean, so that the ordinary Kalman filter equations can be reused. Gradient descent can be read the same way: each step trusts the straight-line approximation of the loss near the current weights and moves a small distance along it.
+
+---
+
 <a id="linearly-separable"></a>
 ### Linearly Separable
 
@@ -3930,6 +4314,24 @@ Each individual reading was only moderately off, yet the joint likelihood is eff
 Second check: $f(x)=x^2$ on all real numbers is not Lipschitz for any single $L$, since between $0$ and $x$ the ratio $\lvert x^2-0\rvert/\lvert x-0\rvert=\lvert x\rvert$ grows without bound.
 
 **AI/ML Usage**: A robot whose dynamics function $f(x,u)$ is Lipschitz (in the state $x$) cannot behave erratically: nearby states have similar rates of change, so simulated motion is predictable. Completeness guarantees for sampling-based kinodynamic planners (see the Probabilistic Completeness entry) assume Lipschitz continuous dynamics. The constant also appears when bounding how quickly a neural network's output can change with its input.
+
+---
+
+<a id="local-minimum"></a>
+### Local Minimum
+
+**The Big Idea**: This builds on finding the lowest point of a curve in Algebra 2 or Calculus. A curve can have several valleys, and a **local minimum** is the bottom of one valley, which may not be the lowest valley overall.
+
+**General Usage**: A point $x^{*}$ is a **local minimum** of a function $f$ if $f(x^{*}) \le f(x)$ for all points $x$ close enough to $x^{*}$. It is the **global minimum** if the inequality holds for every $x$. At a smooth local minimum the slope is zero and the curve bends upward. An iterative method that moves downhill from a starting guess ends in whichever valley the start lies in, so the result depends on the starting point.
+
+**Example.** Let $f(x) = x^4 - 4x^2 + x$. Setting the slope $4x^3 - 8x + 1$ to zero gives roots near $x \approx -1.47$, $x \approx 0.13$, and $x \approx 1.35$.
+
+1. At $x \approx -1.47$: $f \approx 4.67 - 8.64 - 1.47 \approx -5.44$. This is the global minimum.
+2. At $x \approx 1.35$: $f \approx 3.32 - 7.29 + 1.35 \approx -2.62$. This is a local minimum, because $f$ is higher on both sides nearby, but it is not the lowest value.
+3. The root near $x \approx 0.13$ is a local maximum, the hilltop between the two valleys.
+4. Moving downhill from the start $x = 2$ ends near $1.35$ and gets stuck at $-2.62$. Moving downhill from the start $x = -2$ ends near $-1.47$ and reaches $-5.44$.
+
+**AI/ML Usage**: Neural network losses and SLAM cost functions are full of local minima. Practitioners handle this with good initial values (SLAM solvers start from odometry), with random restarts, and with optimizers such as stochastic gradient descent that add noise to the search.
 
 ---
 
@@ -4460,6 +4862,23 @@ The same idea extends to more than two players: instead of tracking a single num
 
 ---
 
+<a id="moment-parameterization-of-a-gaussian"></a>
+### Moment Parameterization of a Gaussian
+
+**The Big Idea**: This is the form of the bell curve most people meet first: you give its center and its spread. In Algebra 2 a parabola is often given by its vertex; here the Gaussian is given by its mean (center) and covariance (spread).
+
+**General Usage**: $\mathcal{N}(\mu,\Sigma) = \dfrac{1}{z}\exp\!\left(-\tfrac12\,(x-\mu)^{T}\Sigma^{-1}(x-\mu)\right)$, where $\mu$ is the mean, $\Sigma$ is the covariance matrix, and $z$ is the normalization constant that makes the total probability 1. The word "moment" refers to the mean and covariance, which are the first two moments of the distribution. See the Natural Form of a Gaussian (Information Form) entry for the other form.
+
+**Example.** One-number case with $\mu = 3$ and $\Sigma = 4$. The exponent is $-\tfrac12\,\dfrac{(x-3)^2}{4}$.
+
+1. At the center, $x = 3$: the exponent is $0$, so the density is at its peak value.
+2. At $x = 5$: the exponent is $-\tfrac12\cdot\dfrac{4}{4} = -0.5$.
+3. The density at $x=5$ is $e^{-0.5}\approx 0.607$ times the peak value.
+
+**AI/ML Usage**: The moment form is the one used in the predict step of a Kalman filter, since pushing a Gaussian through a linear motion model only requires transforming $\mu$ and $\Sigma$.
+
+---
+
 <a id="momentum"></a>
 ### Momentum
 
@@ -4546,6 +4965,37 @@ Because the value of every node is an average of samples, the Law of Large Numbe
 After only these two cycles, the running estimates already distinguish $a_1$ ($Q=+1$) from $a_2$ ($Q=-1$), even though neither estimate is based on more than a single random playout — further cycles would revisit both children more often (guided by the tree policy) and average in more samples, sharpening both estimates exactly as the Law of Large Numbers entry describes.
 
 **AI/ML Usage**: MCTS is the algorithm family behind DeepMind's AlphaGo and AlphaZero (see the AlphaGo entry above), which combine the plain sampling-and-averaging approach described here with neural networks that supply a fast prior estimate of both leaf values and promising actions, sharply reducing how many random playouts are needed before the tree's estimates become useful. Outside of games, the same core idea — grow a search tree unevenly, spending computation where sampled estimates suggest it is most valuable — underlies planning algorithms used in robotics and general sequential decision-making under uncertainty.
+
+---
+
+<a id="monte-carlo-kalman-filter"></a>
+### Monte-Carlo Kalman Filter
+
+**The Big Idea**: This builds on the Monte Carlo Estimation and Law of Large Numbers entries: instead of pushing a formula for the mean and covariance through a curved function, push many random samples through it and average. It goes beyond Algebra 2 only in the use of averages over random draws; the computation itself is arithmetic.
+
+**General Usage**: The extended Kalman filter approximates a nonlinear model by a straight line, which needs slopes (Jacobians) and a function that can be differentiated. The **Monte-Carlo Kalman filter** (a name used for teaching, not a standard algorithm) instead draws $N$ samples $x^{i}$ from the current Gaussian belief, passes each through the true motion function $f$, and computes the mean and covariance of the results by averaging:
+
+$$
+\mu^{-} = \frac{1}{N}\sum_{i=1}^{N} f(x^{i}), \qquad
+\Sigma^{-} = \frac{1}{N}\sum_{i=1}^{N}\big(f(x^{i})-\mu^{-}\big)\big(f(x^{i})-\mu^{-}\big)^{T} + Q
+$$
+
+where $Q$ is the motion-noise covariance, added because the noise is additive. The update step uses the same sample averages for the sensor model $g$, giving $\mu_y$, $\Sigma_{YY}$ (plus the sensor noise $R$), and the cross-covariance $\Sigma_{XY}$, and then applies the formulas in the Gaussian Conditioning (Moment Form) entry. The law of large numbers makes the averages exact only as $N$ tends to infinity; no differentiability of $f$ or $g$ is needed.
+
+**Example.** Let the motion function be $f(x)=x^2$, the motion noise be $Q=1$, and use only four samples $x^{i}=1,2,3,4$ to keep the arithmetic short (a real filter would use a very large $N$).
+
+| Step | What is computed | Result |
+|---|---|---|
+| 1 | Push each sample through $f$ | $1,\ 4,\ 9,\ 16$ |
+| 2 | Mean of the results, $\mu^{-}$ | $(1+4+9+16)/4 = 7.5$ |
+| 3 | Deviations from the mean | $-6.5,\ -3.5,\ 1.5,\ 8.5$ |
+| 4 | Squares of the deviations | $42.25,\ 12.25,\ 2.25,\ 72.25$ |
+| 5 | Average of the squares | $129/4 = 32.25$ |
+| 6 | Add the motion noise $Q=1$ | $\Sigma^{-} = 33.25$ |
+
+Check: the average of the squared results is $(1+16+81+256)/4=88.5$, and $88.5-7.5^{2}=88.5-56.25=32.25$, matching step 5.
+
+**AI/ML Usage**: The same idea of pushing samples through a nonlinear function and re-estimating a mean and covariance underlies sigma-point and ensemble filters such as the unscented Kalman filter and the ensemble Kalman filter, used for tracking and for weather-model data assimilation. It is also the reason particle filters (see that entry) handle black-box, non-differentiable models.
 
 ---
 
@@ -4875,6 +5325,31 @@ Spam's score, $0.224$, is much larger than Not Spam's, $0.012$, so Naive Bayes p
 
 ---
 
+<a id="natural-form-of-a-gaussian-information-form"></a>
+### Natural Form of a Gaussian (Information Form)
+
+**The Big Idea**: This builds on completing the square, which Algebra 2 uses to rewrite a parabola in vertex form. A Gaussian's exponent is a parabola (in one variable) or its multi-variable cousin. The usual way to write it highlights the center $\mu$ and the spread $\Sigma$. The natural form instead leaves the parabola expanded, highlighting its $x^2$ coefficient and its $x$ coefficient. This is a genuine step beyond Algebra 2 once there is more than one variable, because the coefficients become a matrix and a vector.
+
+**General Usage**: A Gaussian density can be written in two equivalent forms (see the Multivariate Normal Distribution entry for the standard one). In **moment form** the density is proportional to $\exp\!\big(-\tfrac12(x-\mu)^{T}\Sigma^{-1}(x-\mu)\big)$. In **natural form** (also called information form) it is proportional to
+
+$$
+\exp\!\Big(-\tfrac12\,x^{T}P\,x+J^{T}x\Big),
+$$
+
+where $P=\Sigma^{-1}$ is the precision matrix (see the Precision Matrix entry) and $J=P\mu$ is the information vector (see the Natural Parameters of a Gaussian entry in the math symbols file). The two are converted by $P=\Sigma^{-1}$, $J=P\mu$, $\Sigma=P^{-1}$, $\mu=P^{-1}J$. The advantage of natural form is that the exponent is a plain sum of terms, so holding some variables fixed (conditioning) just removes or reshapes the terms involving them, without any matrix inversion (see the Conditioning a Joint Gaussian entry).
+
+**Example.** A single variable has mean $\mu=3$ and variance $\sigma^2=0.5$.
+
+1. Precision: $P=1/0.5=2$.
+2. Information value: $J=P\mu=2\cdot3=6$.
+3. Natural-form exponent: $-\tfrac12\cdot2\,x^2+6x=-x^2+6x$.
+4. Check against moment form. Complete the square: $-x^2+6x=-(x-3)^2+9$. The exponent peaks at $x=3$, and $-(x-3)^2=-\tfrac12\cdot\tfrac{(x-3)^2}{0.5}$, which is exactly the moment-form exponent with $\mu=3$ and $\sigma^2=0.5$. The leftover $+9$ does not depend on $x$ and is absorbed into the normalization constant (see the Normalization of a Probability Distribution entry).
+5. Convert back: $\Sigma=1/P=0.5$ and $\mu=J/P=3$.
+
+**AI/ML Usage**: Natural form is used in information-form Kalman filters and in graph-based state estimation and mapping, where combining independent evidence is just adding $P$ matrices and $J$ vectors. It is also the form in which the Gaussian is a member of the exponential family of distributions, which underlies many variational inference methods (approximating a hard-to-compute distribution by a simpler one).
+
+---
+
 <a id="natural-questions"></a>
 ### Natural Questions
 
@@ -5053,6 +5528,24 @@ $$
 **Example.** K-Nearest Neighbors (see that entry above) is a classic non-parametric method: it makes a prediction for a new point simply by looking directly at the nearby labeled training examples themselves — there's no separate, fixed set of trained parameters at all. As more and more training data is added, the model's effective complexity and behavior can shift and grow accordingly, since it's essentially just referencing the entire, growing dataset directly at prediction time.
 
 **AI/ML Usage**: Non-parametric methods (K-Nearest Neighbors, decision trees whose depth isn't strictly capped in advance, kernel methods) tend to be more flexible than fixed-parameter models, but they also generally require noticeably more training data to reliably avoid overfitting, since their potential complexity isn't constrained ahead of time the way a parametric model's fixed parameter count naturally is.
+
+---
+
+<a id="nonlinear-least-squares"></a>
+### Nonlinear Least Squares
+
+**The Big Idea**: This builds on fitting a line to data by choosing the line that makes the sum of squared vertical gaps as small as possible. Nonlinear least squares does the same when the model is a curve that bends in the parameters, so the best parameters cannot be found by one formula and are found by repeated improvement instead.
+
+**General Usage**: A **nonlinear least squares** problem asks for the parameters $\theta$ that minimize a sum of squared **residuals** (differences between model predictions and measurements): $\min_\theta \sum_i r_i(\theta)^2$, or, with weights, $\min_\theta \sum_i r_i(\theta)^{T}\,\Sigma_i^{-1}\,r_i(\theta)$ (see the Quadratic Form entry). If every residual is linear in $\theta$ the problem is *linear* least squares and has a closed-form answer (see the Normal Equations entry). If some residual is nonlinear, the cost can have several local minima (see the Local Minimum entry), so a solver needs a starting guess, and it improves the guess step by step, linearizing the residuals with their Jacobians at each step. Gauss-Newton and Levenberg-Marquardt are common solvers. Minimizing the weighted version is the same as the maximum likelihood estimate when each residual has independent zero-mean Gaussian noise (see the Negative Log Likelihood entry).
+
+**Example.** Fit the model $y = e^{a t}$ to the data points $(t, y) = (1, 2)$ and $(2, 5)$. The cost is $C(a) = (e^{a} - 2)^2 + (e^{2a} - 5)^2$.
+
+1. At $a = 0.7$: $e^{0.7} \approx 2.014$ and $e^{1.4} \approx 4.055$, so $C \approx (0.014)^2 + (-0.945)^2 \approx 0.89$.
+2. At $a = 0.8$: $e^{0.8} \approx 2.226$ and $e^{1.6} \approx 4.953$, so $C \approx (0.226)^2 + (-0.047)^2 \approx 0.053$.
+3. At $a = 0.9$: $e^{0.9} \approx 2.460$ and $e^{1.8} \approx 6.050$, so $C \approx (0.460)^2 + (1.050)^2 \approx 1.31$.
+4. The cost is lowest near $a = 0.8$, and it is not a simple parabola in $a$, which is why an iterative method is needed.
+
+**AI/ML Usage**: Training a neural network is a large nonlinear least squares problem when the loss is a squared error. In robotics and computer vision it is the engine of SLAM, structure from motion, and bundle adjustment (jointly refining camera poses and 3D points), where the residuals compare predicted and observed positions.
 
 ---
 
@@ -5437,6 +5930,29 @@ The weights add to $2 + 4 + 3 + 1 = 10$, and dividing by 10 gives the last colum
 
 ---
 
+<a id="partitioned-gaussian-distribution"></a>
+### Partitioned Gaussian Distribution
+
+**The Big Idea**: This builds on the Multivariate Normal Distribution and Covariance Matrix entries. A bell-curve over several variables is described by a mean vector and a covariance matrix. If you split the variables into two groups, the mean and covariance split into labeled pieces too (see the Block Matrix Notation entry in the math_symbols file). Going beyond Algebra 2, the useful facts about these pieces come from calculus and linear algebra, but the results are easy to state and use.
+
+**General Usage**: Let $x = \begin{bmatrix} x_1 \\ x_2 \end{bmatrix} \sim \mathcal{N}\left(\begin{bmatrix} \mu_1 \\ \mu_2 \end{bmatrix}, \begin{bmatrix} \Sigma_{11} & \Sigma_{12} \\ \Sigma_{21} & \Sigma_{22} \end{bmatrix}\right)$. Here $\Sigma_{11} = \mathrm{Cov}(x_1, x_1)$, $\Sigma_{22} = \mathrm{Cov}(x_2, x_2)$, and the cross-covariance satisfies $\Sigma_{12} = \Sigma_{21}^{T}$. Two facts follow:
+
+- **Marginal** (ignore $x_1$): $x_2 \sim \mathcal{N}(\mu_2, \Sigma_{22})$. Just read off the matching blocks.
+- **Conditional** ($x_2$ known): $x_1 \mid x_2 \sim \mathcal{N}(\mu_{1|2}, \Sigma_{1|2})$ with $$\mu_{1|2} = \mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(x_2 - \mu_2), \qquad \Sigma_{1|2} = \Sigma_{11} - \Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}.$$
+
+The marginal result is proved by integrating the joint density over $x_1$ after rewriting its exponent as a sum of complete squares. The blocks of the inverse covariance $\Sigma^{-1}$ (written $\Lambda_{ij}$, see the Lambda, uppercase entry) are not the inverses of the blocks of $\Sigma$, which is why the full proof is long.
+
+**Example.** Let $x_1$ and $x_2$ be single numbers with $\mu_1 = 1$, $\mu_2 = 3$, $\Sigma_{11} = 4$, $\Sigma_{12} = \Sigma_{21} = 2$, $\Sigma_{22} = 1$, and suppose we learn $x_2 = 4$.
+
+1. Marginal of $x_2$: $\mathcal{N}(3, 1)$, read directly from $\mu_2$ and $\Sigma_{22}$.
+2. Conditional mean: $\mu_{1|2} = 1 + 2 \cdot \tfrac{1}{1} \cdot (4 - 3) = 1 + 2 = 3$.
+3. Conditional variance: $\Sigma_{1|2} = 4 - 2 \cdot \tfrac{1}{1} \cdot 2 = 4 - 4 = 0$.
+4. Interpretation: here $x_1$ and $x_2$ are perfectly correlated (the determinant $4 \cdot 1 - 2 \cdot 2$ is $0$), so knowing $x_2$ pins down $x_1$ exactly at $3$, and the uncertainty drops from $4$ to $0$.
+
+**AI/ML Usage**: The predict step of a Kalman filter treats the states at times $t+1$ and $t$ as one partitioned Gaussian and marginalizes out the old state. Gaussian processes (a method that predicts a smooth function from a few observed points) use the conditional formulas to turn observed values into predictions at new points, and many probabilistic models use the same two formulas to fill in missing variables.
+
+---
+
 <a id="path-tracking-error-metrics"></a>
 ### Path-Tracking Error Metrics
 
@@ -5684,6 +6200,24 @@ and the conversion back is $r = \sqrt{x^2 + y^2}$, with $\theta$ the angle whose
 **Example.** An algorithm taking $n^2$ steps for $n=10$ inputs takes $100$ steps; for $n=100$ inputs, it takes $10{,}000$ steps — very manageable, entirely reasonable growth. An algorithm instead taking $2^n$ steps takes just $1{,}024$ steps for $n=10$, but for $n=100$ it would require an absolutely astronomical, physically infeasible number of steps — a dramatically, qualitatively different kind of growth entirely.
 
 **AI/ML Usage**: Whether a learning algorithm is efficient (polynomial-time) or not is a central, foundational concern in computational learning theory — PAC learning specifically requires an efficient learner in this precise technical sense, and much of algorithmic research in machine learning is directly devoted to finding provably efficient algorithms for problems that would otherwise, in the worst case, require impractically, infeasibly long running times.
+
+---
+
+<a id="pose"></a>
+### Pose
+
+**The Big Idea**: This builds on the idea of a point with a direction from geometry: an arrow on a plane has a location (where its tail is) and a heading (where it points). A pose is that pair of facts for a robot.
+
+**General Usage**: The **pose** of a robot is its position together with its orientation (the direction it faces) at a given moment. For a robot on a flat floor, the pose is three numbers, an $x$ coordinate, a $y$ coordinate, and a heading angle $\theta$, written $x_t = (x, y, \theta)$ at time step $t$. A **trajectory** is the sequence of poses $x_{1:t}$ over time (see the Index Range Colon entry in the math_symbols file for the subscript notation).
+
+**Example.** A robot starts at pose $(0, 0, 0^\circ)$, facing along the positive $x$ direction, and drives forward $3$ m.
+
+1. Driving forward along the heading changes the $x$ coordinate by the distance driven, so $x$ goes from $0$ to $0 + 3 = 3$.
+2. The $y$ coordinate does not change because the heading has no $y$ component, so $y$ stays $0$.
+3. The heading is unchanged, so $\theta$ stays $0^\circ$.
+4. The new pose is $(3, 0, 0^\circ)$.
+
+**AI/ML Usage**: Pose is the state that robot localization and SLAM estimate, and the poses over time form the trajectory a SLAM algorithm reconstructs. In three dimensions a pose has six numbers, three for position and three for orientation. The motion model (see the Motion Model entry) predicts the next pose from the current pose and the odometry.
 
 ---
 
@@ -5983,6 +6517,28 @@ Now two dimensions, with $\sigma_x = 2$ and $\sigma_y = 1$, on the contour where
 | 4. Conclude | The assumption in Step 1 must be false; therefore, no smallest positive real number exists |
 
 **AI/ML Usage**: This is exactly the proof strategy used to establish Dijkstra's Algorithm's optimality (see the Dijkstra's Algorithm entry in this file): rather than directly demonstrating that every vertex's recorded cost is optimal, the proof assumes a vertex's cost *could* be non-optimal, exhaustively lists the only two ways that could happen (a cheaper route through the Closed Set (Explored Vertices), or a cheaper route through a still-unexplored vertex), and shows both are impossible given what non-negative edge weights and the Priority Queue's extraction order already guarantee.
+
+---
+
+<a id="propagating-mean-and-covariance-through-a-linear-map"></a>
+### Propagating Mean and Covariance Through a Linear Map
+
+**The Big Idea**: This builds on the Linearity of Expectation entry and the Covariance Matrix entry. In Algebra 2, scaling every value in a list by $a$ scales the average by $a$ and the spread (standard deviation) by $a$, so the variance by $a^2$. This entry is the matrix version: multiplying a random vector by a matrix $A$ transforms its mean by $A$ and its covariance by $A$ on both sides.
+
+**General Usage**: If $x$ has mean $\mu$ and covariance $\Sigma$, and $A$ is a constant matrix, then $A x$ has mean $A\mu$ and covariance $A \Sigma A^{T}$. If independent zero-mean noise $\epsilon$ with covariance $Q$ is added, so that $x' = A x + \epsilon$, then $$\mathbb{E}[x'] = A\mu, \qquad \mathrm{Var}(x') = A \Sigma A^{T} + Q.$$ The derivation writes $\mathrm{Var}(Ax) = \mathbb{E}\big[(Ax - A\mu)(Ax - A\mu)^{T}\big] = \mathbb{E}\big[A(x-\mu)(x-\mu)^{T}A^{T}\big] = A\,\mathbb{E}\big[(x-\mu)(x-\mu)^{T}\big]A^{T} = A\Sigma A^{T}$, using that the transpose of a product reverses the order, $(Av)^{T} = v^{T}A^{T}$. The noise adds $Q$ because the variance of a sum of independent quantities is the sum of their variances. If the result is Gaussian when $x$ and $\epsilon$ are, the pair $(A\mu, A\Sigma A^{T} + Q)$ describes it completely.
+
+**Example.** Let $A = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}$, $\mu = \begin{bmatrix} 2 \\ 1 \end{bmatrix}$, $\Sigma = \begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix}$, and $Q = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}$.
+
+1. New mean: $A\mu = \begin{bmatrix} 1\cdot 2 + 1\cdot 1 \\ 0\cdot 2 + 1\cdot 1 \end{bmatrix} = \begin{bmatrix} 3 \\ 1 \end{bmatrix}$.
+2. Compute $A\Sigma = \begin{bmatrix} 1 & 1 \\ 0 & 1 \end{bmatrix}\begin{bmatrix} 1 & 0 \\ 0 & 2 \end{bmatrix} = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}$.
+3. Transpose: $A^{T} = \begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix}$.
+4. Then $A\Sigma A^{T} = \begin{bmatrix} 1 & 2 \\ 0 & 2 \end{bmatrix}\begin{bmatrix} 1 & 0 \\ 1 & 1 \end{bmatrix} = \begin{bmatrix} 3 & 2 \\ 2 & 2 \end{bmatrix}$.
+5. Add the noise: $A\Sigma A^{T} + Q = \begin{bmatrix} 4 & 2 \\ 2 & 3 \end{bmatrix}$.
+6. Check on one entry: the first coordinate of the result is $x_a + x_b$, where $x_a, x_b$ are the two coordinates with variances $1$ and $2$ and no covariance, plus noise of variance $1$. Its variance is $1 + 2 + 1 = 4$, matching the top-left entry.
+
+**AI/ML Usage**: This is the predict step of the Kalman filter (an algorithm that tracks the state of a moving system from noisy data): the state estimate is pushed through the motion model $A$, and its uncertainty is transformed by $A\Sigma A^{T}$ and enlarged by the process noise $Q$. The same rule is used whenever a Gaussian passes through a linear layer or a linear sensor model, for instance in propagating uncertainty through a linear layer of a neural network.
+
+---
 
 ---
 
@@ -6382,6 +6938,29 @@ If instead this particular sublayer had learned to be nearly useless for this in
 
 ---
 
+<a id="reverse-order-rule-for-transposes-and-inverses"></a>
+### Reverse-Order Rule for Transposes and Inverses
+
+**The Big Idea**: This builds on the Matrix Transpose entry and the Matrix Inverse entry in the math_symbols file. Think of putting on socks and then shoes: to undo the process you remove the shoes first and the socks second. Transposing or inverting a product of two matrices likewise reverses the order of the factors. In Algebra 2 multiplication of numbers commutes, so order never mattered; for matrices it does, and this rule is the first place that fact has to be respected.
+
+**General Usage**: For matrices $A$ and $B$ whose product $AB$ is defined,
+$$(AB)^\top = B^\top A^\top.$$
+If $A$ and $B$ are both square and invertible,
+$$(AB)^{-1} = B^{-1}A^{-1}.$$
+The inverse rule is verified by multiplying the claimed inverse against $AB$: $B^{-1}A^{-1}AB = B^{-1} I B = B^{-1}B = I$, so $B^{-1}A^{-1}$ behaves exactly as the inverse of $AB$ must.
+
+**Example.** Let $A = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 0 \\ 3 & 1 \end{pmatrix}$.
+
+1. Compute the product $AB$. Row 1 of $A$ times the columns of $B$: $1\cdot1+2\cdot3 = 7$ and $1\cdot0+2\cdot1 = 2$. Row 2 of $A$: $0\cdot1+1\cdot3 = 3$ and $0\cdot0+1\cdot1 = 1$. So $AB = \begin{pmatrix} 7 & 2 \\ 3 & 1 \end{pmatrix}$.
+2. Transpose it: $(AB)^\top = \begin{pmatrix} 7 & 3 \\ 2 & 1 \end{pmatrix}$.
+3. Compute $B^\top A^\top$ with $B^\top = \begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix}$ and $A^\top = \begin{pmatrix} 1 & 0 \\ 2 & 1 \end{pmatrix}$. Row 1 of $B^\top$: $1\cdot1+3\cdot2 = 7$ and $1\cdot0+3\cdot1 = 3$. Row 2: $0\cdot1+1\cdot2 = 2$ and $0\cdot0+1\cdot1 = 1$. So $B^\top A^\top = \begin{pmatrix} 7 & 3 \\ 2 & 1 \end{pmatrix}$, matching step 2.
+4. For the inverse, $A^{-1} = \begin{pmatrix} 1 & -2 \\ 0 & 1 \end{pmatrix}$ and $B^{-1} = \begin{pmatrix} 1 & 0 \\ -3 & 1 \end{pmatrix}$. Then $B^{-1}A^{-1}$: row 1 of $B^{-1}$ gives $1\cdot1+0\cdot0 = 1$ and $1\cdot(-2)+0\cdot1 = -2$; row 2 gives $-3\cdot1+1\cdot0 = -3$ and $-3\cdot(-2)+1\cdot1 = 7$. So $B^{-1}A^{-1} = \begin{pmatrix} 1 & -2 \\ -3 & 7 \end{pmatrix}$.
+5. Check that this is the inverse of $AB$ by multiplying: $\begin{pmatrix} 1 & -2 \\ -3 & 7 \end{pmatrix}\begin{pmatrix} 7 & 2 \\ 3 & 1 \end{pmatrix}$ gives $1\cdot7-2\cdot3 = 1$, $1\cdot2-2\cdot1 = 0$, $-3\cdot7+7\cdot3 = 0$, $-3\cdot2+7\cdot1 = 1$, which is $I$.
+
+**AI/ML Usage**: The rule is used constantly when simplifying formulas that involve products of matrices. In deriving the Kalman filter (an algorithm that tracks a changing quantity from noisy measurements), covariance matrices of transformed variables take the form $A\,\Sigma\,A^\top$, and the transpose rule is what justifies keeping such a product symmetric. In deriving the gradient of a neural network layer's output with respect to its weights, the same transpose rule is what puts the matrices in the correct order so their shapes line up.
+
+---
+
 <a id="roberta"></a>
 ### RoBERTa
 
@@ -6667,6 +7246,30 @@ Check: the two $a$ samples together carry weight $0.30 + 0.30 = 0.60$, the two $
 The table's second and third columns can each be any length — nothing forces the output to match the input in size, unlike a transducer, which always produces exactly one label per input token.
 
 **AI/ML Usage**: Encoder-decoder Transformers (see Encoder-Decoder Architecture and Transformer Architecture above) are the standard architecture for building seq2seq models for machine translation, text summarization, and dialogue systems. The key contrast with a Transducer (Sequence Labeling) is length: a transducer's output length is fixed to exactly match its input length, one label per position, while a seq2seq model's output length is independent of its input length and is discovered only by generating tokens until a Stop Token / End-of-Sequence Token (see that entry in `math_symbols.md`) is produced.
+
+---
+
+<a id="sigma-point-filter-unscented-kalman-filter"></a>
+### Sigma Point Filter (Unscented Kalman Filter)
+
+**The Big Idea**: This builds on the Kalman Filter and Extended Kalman Filter entries. The extended Kalman filter handles a curved function by replacing it with a tangent line; a sigma point filter instead keeps the curved function and tests it at a few carefully chosen inputs, a bit like checking a curve at a handful of well-spread points rather than drawing one tangent line. It is a genuine step beyond Algebra 2 because choosing the points uses eigenvectors and eigenvalues (see the Eigenvalue and Eigenvector entry).
+
+**General Usage**: A **sigma point filter** is a Kalman-style filter that estimates the mean and covariance of a Gaussian belief after a nonlinear function $f$ by passing a small, fixed set of special points, the **sigma points**, through $f$. With state dimension $d$, the points are the current mean $\mu$ together with $\mu \pm \lambda_i V_i$ along each principal axis, where $V_i$ are the eigenvectors of the covariance $\Sigma$ and $\lambda_i$ are proportional to its eigenvalues. This gives $2d+1$ points. The transformed points are combined with weights $w_i$:
+
+$$
+\bar{\mu} = \sum_{i} w_i\, f(x^i), \qquad \bar{\Sigma} = \sum_{i} w_i\,\big(f(x^i) - \bar{\mu}\big)\big(f(x^i) - \bar{\mu}\big)^{T} + Q
+$$
+
+where $Q$ is the motion-noise covariance. The proportionality constant and the weights define the specific algorithm; the **unscented Kalman filter** and the **central difference Kalman filter** are two members of the family. Because the filter only evaluates $f$ and the observation function, it needs no Jacobians (see the Jacobian entry), and the same code works for any $f$. The points are placed by a fixed rule, so the sampling is deterministic, and finding the principal axes needs a numerically stable factorization such as the Singular Value Decomposition.
+
+**Example.** Take a state with $d = 2$ dimensions. The filter uses $2 \cdot 2 + 1 = 5$ points.
+
+1. Point 1 is the mean $\mu$ itself.
+2. Points 2 and 3 are $\mu + \lambda_1 V_1$ and $\mu - \lambda_1 V_1$, on the first principal axis.
+3. Points 4 and 5 are $\mu + \lambda_2 V_2$ and $\mu - \lambda_2 V_2$, on the second principal axis.
+4. Each of the five points is passed through $f$, and the weighted formulas above produce the new mean and covariance.
+
+**AI/ML Usage**: The unscented Kalman filter is used in robot localization and tracking, where the motion or sensor model is strongly curved and a first-order linearization would misjudge the uncertainty. Its covariance estimate is closer to the true covariance than the extended Kalman filter's when the function is highly nonlinear, at the price of a matrix decomposition at every step and a belief that is still a single Gaussian (see the Multimodal Distribution (Modes) entry for what a single Gaussian cannot express).
 
 ---
 
@@ -7354,6 +7957,29 @@ Each row is computed completely independently of the other three — the head ha
 
 ---
 
+<a id="transition-model-action-marginalized"></a>
+### Transition Model (Action-Marginalized)
+
+**The Big Idea**: Marginalization (see the Marginalization entry) is the idea of removing a variable you do not care about by adding up its contribution over every value it could take. The Algebra 2 version is a weighted average: if you earn $\$10$ on days you work and $\$0$ on days you do not, and you work on $70\%$ of days, your expected earning is $0.7 \times 10 + 0.3 \times 0$. The transition model is that weighted average applied to probabilities: the unknown action is averaged out, and what remains is a rule that says how the state changes from one time step to the next.
+
+**General Usage**: When the action $u_{t+1}$ is unknown, the probability of moving from state $x_t$ to state $x_{t+1}$ is found by marginalizing the action out of the joint probability of the next state and the action, and then splitting that joint probability with the product rule (see the Chain Rule (for Probability) entry):
+$$
+p(x_{t+1} \mid x_t) = \int p(x_{t+1} \mid x_t, u_{t+1})\; p(u_{t+1} \mid x_t)\; du_{t+1}
+$$
+The first factor is the Motion Model entry (the outcome if the action were known) and the second is the Action Model (Intent Model) entry (how likely each action is). For a finite list of actions the integral (see the Integral entry in the math_symbols file) becomes a sum (see the Summation entry in the math_symbols file). The result no longer mentions the action at all, which is why it is called the transition model. This version relies on the Markov assumption: once $x_t$ and $u_{t+1}$ are given, older history adds nothing.
+
+**Example.** A pedestrian stands in cell $x_1$ of a row of cells. There are two actions, "step right" and "stay." The action model is $p(\text{step} \mid x_1) = 0.7$ and $p(\text{stay} \mid x_1) = 0.3$. The motion model is: if the action is "step," the pedestrian lands in the next cell $x_2$ with probability $0.9$ and remains in $x_1$ with probability $0.1$; if the action is "stay," the pedestrian remains in $x_1$ with probability $1$.
+
+1. The target is $p(x_2 \mid x_1)$. Write the sum over the two actions: $p(x_2 \mid x_1) = p(x_2 \mid x_1, \text{step})\,p(\text{step} \mid x_1) + p(x_2 \mid x_1, \text{stay})\,p(\text{stay} \mid x_1)$.
+2. Substitute the numbers: $p(x_2 \mid x_1) = 0.9 \times 0.7 + 0 \times 0.3$.
+3. Multiply: $0.9 \times 0.7 = 0.63$ and $0 \times 0.3 = 0$, so $p(x_2 \mid x_1) = 0.63$.
+4. Find the other outcome the same way: $p(x_1 \mid x_1) = 0.1 \times 0.7 + 1 \times 0.3 = 0.07 + 0.3 = 0.37$.
+5. Check: $0.63 + 0.37 = 1$, so the transition probabilities out of $x_1$ form a valid distribution.
+
+**AI/ML Usage**: The transition model is the prediction step of a recursive Bayes filter (see the Bayes Filter entry) when the actions of the tracked object are hidden, as for a pedestrian tracker on an autonomous vehicle. The previous belief is pushed through this transition model by one more marginalization, over the previous state, to give the belief about the next state before the new sensor reading is used. In reinforcement learning and Markov decision processes, an agent's own policy plays the role of the action model, and averaging the dynamics over it gives the same kind of action-free transition probabilities.
+
+---
+
 <a id="transition-based-dependency-parsing"></a>
 ### Transition-Based Dependency Parsing
 
@@ -7449,6 +8075,23 @@ Each row is computed completely independently of the other three — the head ha
 **Example.** Estimating a coin's true bias using the observed proportion of heads is both unbiased (its average, across many repeated experiments, exactly matches the coin's true probability) and consistent (with more and more flips, the observed proportion reliably converges closer and closer to the coin's actual true bias, getting more accurate with more data collected).
 
 **AI/ML Usage**: Both properties matter a great deal in statistics and machine learning theory: an unbiased estimator makes no systematic error on average, while a consistent estimator is specifically guaranteed to keep improving and becoming more accurate as more training data becomes available — together, these two separate properties give strong, complementary theoretical justification for trusting a given estimation method in the first place.
+
+---
+
+<a id="uncorrelated-random-variables"></a>
+### Uncorrelated Random Variables
+
+**The Big Idea**: This builds on the Covariance entry in the math_symbols file. Covariance measures whether two quantities rise and fall together. Two quantities are uncorrelated when that measurement comes out to exactly zero, meaning there is no linear pattern linking them.
+
+**General Usage**: Random quantities $X$ and $Y$ are uncorrelated when $\operatorname{Cov}(X, Y) = 0$. The practical consequence is that spreads add: $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y)$, and for vectors the covariance matrix of a sum is the sum of the covariance matrices. If the covariance is not zero, there is an extra term, $\operatorname{Var}(X + Y) = \operatorname{Var}(X) + \operatorname{Var}(Y) + 2\operatorname{Cov}(X,Y)$. Independent quantities are always uncorrelated, but uncorrelated quantities need not be independent.
+
+**Example.** Let $X$ have variance $4$ and $Y$ have variance $9$.
+
+1. If they are uncorrelated, $\operatorname{Var}(X + Y) = 4 + 9 = 13$.
+2. If instead $\operatorname{Cov}(X, Y) = 1.5$, then $\operatorname{Var}(X + Y) = 4 + 9 + 2(1.5) = 16$.
+3. The difference of $3$ is exactly the extra term, which is why the zero-covariance assumption is what lets the two pieces be handled separately.
+
+**AI/ML Usage**: The Kalman filter assumes the process noise and observation noise are uncorrelated with the state, which is what allows the predicted covariance to be written as the transformed old covariance plus the noise covariance, $A\,\Sigma\,A^{T} + Q$, with no cross term. When a real system has noise that depends on the state, that cross term appears and the simple form no longer applies.
 
 ---
 
