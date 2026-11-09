@@ -7,165 +7,174 @@ This document is written for MSAI students whose formal math coursework so far t
 
 ## Contents
 
-All 465 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 490 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| A* Search (A-Star Algorithm) to GLUE Benchmark | Goal-Biased and Bidirectional RRT Variants to Optimal (Receding-Horizon) Local Planning | Oracle Derivation to Zero-Sum Game |
+| A* Search (A-Star Algorithm) to GLUE Benchmark | Goal-Biased and Bidirectional RRT Variants to Parallel Corpus (Bitext) | Parsing-Based Baseline (Reading Comprehension) to Zero-Sum Game |
 |---|---|---|
-| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Oracle Derivation](#oracle-derivation) |
-| [Absolute Discounting](#absolute-discounting) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Orthogonal Matrix](#orthogonal-matrix) |
-| [Accuracy (Classification)](#accuracy-classification) | [Gradient Clipping](#gradient-clipping) | [Orthonormal Basis](#orthonormal-basis) |
-| [Ackermann Steering](#ackermann-steering) | [Gradient Descent](#gradient-descent) | [Overfitting](#overfitting) |
-| [Action Model (Intent Model)](#action-model-intent-model) | [Grammatical Case](#grammatical-case) | [PAC Learning](#pac-learning) |
-| [Action Schema](#action-schema) | [Graph SLAM](#graph-slam) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |
-| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Graphical Lasso](#graphical-lasso) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
-| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GraphPlan](#graphplan) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
-| [Add-One Smoothing](#add-one-smoothing) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Particle Filter](#particle-filter) |
-| [Additive Gaussian Sensor Noise Model](#additive-gaussian-sensor-noise-model) | [Greedy Decoding](#greedy-decoding) | [Partitioned Gaussian Distribution](#partitioned-gaussian-distribution) |
-| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Greedy Local Planning](#greedy-local-planning) | [Path-Tracking Error Metrics](#path-tracking-error-metrics) |
-| [Agglutinating Language](#agglutinating-language) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [PDDL](#pddl) |
-| [Agnostic Learning](#agnostic-learning) | [Grounding / Instantiation](#grounding-instantiation) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
-| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Penn Treebank](#penn-treebank) |
-| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [Perceptron Algorithm](#perceptron-algorithm) |
-| [AlphaGo](#alphago) | [Hedge Algorithm](#hedge-algorithm) | [Perplexity](#perplexity) |
-| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [PersonaChat](#personachat) |
-| [Arc-Standard Transition System](#arc-standard-transition-system) | [Hidden Markov Model](#hidden-markov-model) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
-| [Arity](#arity) | [Hierarchical Planning (Global and Local Planner)](#hierarchical-planning-global-and-local-planner) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
-| [Asymptotic Optimality](#asymptotic-optimality) | [Hierarchical Softmax](#hierarchical-softmax) | [PID Controller](#pid-controller) |
-| [Authorship Attribution](#authorship-attribution) | [Hinge Loss](#hinge-loss) | [Planner Completeness](#planner-completeness) |
-| [Automatic Differentiation](#automatic-differentiation) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Planning Graph](#planning-graph) |
-| [Auxiliary Particle Filter](#auxiliary-particle-filter) | [HMM Alignment Model](#hmm-alignment-model) | [Point Cloud](#point-cloud) |
-| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Horizontal Markovization](#horizontal-markovization) | [Polar Coordinates](#polar-coordinates) |
-| [Backpointer](#backpointer) | [Hyperparameter](#hyperparameter) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
-| [Backpropagation](#backpropagation) | [IBM Model 1](#ibm-model-1) | [Pose](#pose) |
-| [Bag of Words](#bag-of-words) | [Ill-Conditioned Problem](#ill-conditioned-problem) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
-| [Banana Distribution](#banana-distribution) | [Importance Sampling](#importance-sampling) | [Positional Encoding](#positional-encoding) |
-| [BART](#bart) | [In-Context Learning](#in-context-learning) | [Positive Definite Kernel](#positive-definite-kernel) |
-| [Basis Function](#basis-function) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
-| [Batch](#batch) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
-| [Batch Normalization](#batch-normalization) | [Induction Head](#induction-head) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
-| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Inertial Measurement Unit (IMU)](#inertial-measurement-unit-imu) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
-| [Bayes' Rule](#bayes-rule) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
-| [Bayesian State Estimation](#bayesian-state-estimation) | [Information Retrieval](#information-retrieval) | [Principal Component Analysis](#principal-component-analysis) |
-| [Beam Search](#beam-search) | [Informed RRT*](#informed-rrt) | [Prior Distribution](#prior-distribution) |
-| [Belief-Space Planning](#belief-space-planning) | [Instruction Tuning](#instruction-tuning) | [Priority Queue](#priority-queue) |
-| [Bernoulli Distribution](#bernoulli-distribution) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Probabilistic Completeness](#probabilistic-completeness) |
-| [BERT](#bert) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
-| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
-| [Bias Amplification](#bias-amplification) | [Iterative Deepening](#iterative-deepening) | [Probability Density Contour](#probability-density-contour) |
-| [Bias of an Estimator](#bias-of-an-estimator) | [Jacobian](#jacobian) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
-| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Jensen's Inequality](#jensens-inequality) | [Projective Tree](#projective-tree) |
-| [Binarization](#binarization) | [Joint Probability Distribution](#joint-probability-distribution) | [Proof by Contradiction](#proof-by-contradiction) |
-| [BIO Tagging](#bio-tagging) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Propagating Mean and Covariance Through a Linear Map](#propagating-mean-and-covariance-through-a-linear-map) |
-| [BLEU Score](#bleu-score) | [K-Means Algorithm](#k-means-algorithm) | [Pure Pursuit](#pure-pursuit) |
-| [Boosting / Weak Learner](#boosting-weak-learner) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Quadratic Form](#quadratic-form) |
-| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Kalman Filter](#kalman-filter) | [Quiescence Search](#quiescence-search) |
-| [Bradley-Terry Model](#bradley-terry-model) | [Kalman Gain Limiting Cases](#kalman-gain-limiting-cases) | [RAISE and LOWER States](#raise-and-lower-states) |
-| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Kernel Function](#kernel-function) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
-| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Kidnapped Robot Problem](#kidnapped-robot-problem) | [Random Forest](#random-forest) |
-| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Playout (Rollout)](#random-playout-rollout) |
-| [Calibration (Model Confidence)](#calibration-model-confidence) | [Kinodynamic Planning](#kinodynamic-planning) | [Random Projection](#random-projection) |
-| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [KL Divergence](#kl-divergence) | [Random Variable](#random-variable) |
-| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [KLD-Sampling (Adaptive Particle Count)](#kld-sampling-adaptive-particle-count) | [Rank](#rank) |
-| [Centroid](#centroid) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
-| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Ray Casting](#ray-casting) |
-| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Landmark (Map Feature)](#landmark-map-feature) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
-| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Latent Variable](#latent-variable) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
-| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
-| [Chebyshev's Inequality](#chebyshevs-inequality) | [Law of Large Numbers](#law-of-large-numbers) | [Regularization](#regularization) |
-| [Chernoff Bound](#chernoff-bound) | [Layer Normalization](#layer-normalization) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
-| [CKY Algorithm](#cky-algorithm) | [Lexicalization](#lexicalization) | [Relative Frequency Estimation](#relative-frequency-estimation) |
-| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Relaxation (Graph Search)](#relaxation-graph-search) |
-| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Likelihood](#likelihood) | [Reporting Bias](#reporting-bias) |
-| [Closed-World Assumption](#closed-world-assumption) | [Likelihood Collapse in Products of Many Factors](#likelihood-collapse-in-products-of-many-factors) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
-| [Clustering](#clustering) | [Linear Programming](#linear-programming) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
-| [Co-occurrence Matrix](#co-occurrence-matrix) | [Linear State Estimation (Linear-Gaussian Model)](#linear-state-estimation-linear-gaussian-model) | [Reverse-Order Rule for Transposes and Inverses](#reverse-order-rule-for-transposes-and-inverses) |
-| [Code-Switching](#code-switching) | [Linearity of Expectation](#linearity-of-expectation) | [RoBERTa](#roberta) |
-| [Computation Graph](#computation-graph) | [Linearization (First-Order Approximation)](#linearization-first-order-approximation) | [Robust Observation Likelihood](#robust-observation-likelihood) |
-| [Conditional Independence](#conditional-independence) | [Linearly Separable](#linearly-separable) | [Robustification of the Observation Likelihood](#robustification-of-the-observation-likelihood) |
-| [Conditioning a Joint Gaussian](#conditioning-a-joint-gaussian) | [Lipschitz Continuity](#lipschitz-continuity) | [ROUGE](#rouge) |
-| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Local Minimum](#local-minimum) | [Runge-Kutta Method](#runge-kutta-method) |
-| [Confounder](#confounder) | [Log Likelihood](#log-likelihood) | [Sample Complexity](#sample-complexity) |
-| [Confusion Matrix](#confusion-matrix) | [Logistic Regression](#logistic-regression) | [Sample Covariance Matrix](#sample-covariance-matrix) |
-| [Conjunction Feature](#conjunction-feature) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
-| [Consistent Heuristic](#consistent-heuristic) | [Loss of Particle Diversity](#loss-of-particle-diversity) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
-| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Loss Surface](#loss-surface) | [Schur Complement](#schur-complement) |
-| [Constituency Tests](#constituency-tests) | [Low-Resource Language](#low-resource-language) | [Search Statistics](#search-statistics) |
-| [Constituent](#constituent) | [Low-Variance Resampling](#low-variance-resampling) | [Self-Attention](#self-attention) |
-| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Lower Bound](#lower-bound) | [Semantic Parsing](#semantic-parsing) |
-| [Context-Free Grammar](#context-free-grammar) | [Machine Translation](#machine-translation) | [Sensor Resetting Localization](#sensor-resetting-localization) |
-| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
-| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Marginalization](#marginalization) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
-| [Convex Function](#convex-function) | [Markov Blanket](#markov-blanket) | [Sigma Point Filter (Unscented Kalman Filter)](#sigma-point-filter-unscented-kalman-filter) |
-| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Markov Model](#markov-model) | [Simple Carrot Navigation Controller](#simple-carrot-navigation-controller) |
-| [Coordinate Descent](#coordinate-descent) | [Markov's Inequality](#markovs-inequality) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
-| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Masked Language Modeling](#masked-language-modeling) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
-| [Coreference Resolution](#coreference-resolution) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Singular Value Decomposition](#singular-value-decomposition) |
-| [Corrective Gradient Refinement](#corrective-gradient-refinement) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Skip-Gram Model](#skip-gram-model) |
-| [Covariance Matrix](#covariance-matrix) | [Max-Normalization of Weights](#max-normalization-of-weights) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
-| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Entropy Model](#maximum-entropy-model) | [Smoothing (Language Models)](#smoothing-language-models) |
-| [Cross-Entropy Loss](#cross-entropy-loss) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
-| [Cross-Validation](#cross-validation) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Sparse Attention](#sparse-attention) |
-| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [mBART (Multilingual BART)](#mbart) | [Specificity Conditioning](#specificity-conditioning) |
-| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Mean Squared Error](#mean-squared-error) | [Spectral Theorem](#spectral-theorem) |
-| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Minimax Algorithm](#minimax-algorithm) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
-| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Minimum Description Length](#minimum-description-length) | [Start-End Span Prediction](#start-end-span-prediction) |
-| [Dead End](#dead-end) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
-| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
-| [Decision Boundary](#decision-boundary) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
-| [Decision Tree](#decision-tree) | [Moment Parameterization of a Gaussian](#moment-parameterization-of-a-gaussian) | [Stopword](#stopword) |
-| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Momentum](#momentum) | [STRIPS](#strips) |
-| [Denoising Autoencoder](#denoising-autoencoder) | [Monotone Convergence](#monotone-convergence) | [Structured Classification](#structured-classification) |
-| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Monotonic Function](#monotonic-function) | [Subword Tokenization](#subword-tokenization) |
-| [Dependency Parsing](#dependency-parsing) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Support Vector Machine](#support-vector-machine) |
-| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Surrogate Loss](#surrogate-loss) |
-| [Depth-Limited Search](#depth-limited-search) | [Monte-Carlo Kalman Filter](#monte-carlo-kalman-filter) | [Swept Volume](#swept-volume) |
-| [Determinization](#determinization) | [Morphology](#morphology) | [Symmetric Matrix](#symmetric-matrix) |
-| [Diagonal Matrix](#diagonal-matrix) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Relation](#symmetric-relation) |
-| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Motion Model](#motion-model) | [Syntactic Parsing](#syntactic-parsing) |
-| [Differential-Drive Robot](#differential-drive-robot) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [T5](#t5) |
-| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [Tag Lattice](#tag-lattice) |
-| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
-| [Discretization (Discretized State Space)](#discretization-discretized-state-space) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
-| [Discriminative Model](#discriminative-model) | [Multi-Observation Sensor Resetting Localization](#multi-observation-sensor-resetting-localization) | [Teacher Forcing](#teacher-forcing) |
-| [Distributional Hypothesis](#distributional-hypothesis) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Tensor](#tensor) |
-| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Text Summarization](#text-summarization) |
-| [Dropout](#dropout) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
-| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Multimodal Distribution (Modes)](#multimodal-distribution-modes) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
-| [Dynamic Programming](#dynamic-programming) | [Multinomial Distribution](#multinomial-distribution) | [Time Causality Assumption](#time-causality-assumption) |
-| [Early Stopping](#early-stopping) | [Multitask Learning](#multitask-learning) | [Toxic Degeneration](#toxic-degeneration) |
-| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Trace and Co-indexation](#trace-and-co-indexation) |
-| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Mutex](#mutex) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
-| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Transformer Architecture](#transformer-architecture) |
-| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [N-Gram Language Model](#n-gram-language-model) | [Transition Model (Action-Marginalized)](#transition-model-action-marginalized) |
-| [EM Algorithm](#em-algorithm) | [Naive Bayes](#naive-bayes) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
-| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Named-Entity Type Labels](#named-entity-type-labels) | [Treebank](#treebank) |
-| [Epoch](#epoch) | [Natural Form of a Gaussian (Information Form)](#natural-form-of-a-gaussian-information-form) | [Triangle Inequality](#triangle-inequality) |
-| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Natural Questions](#natural-questions) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
-| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Negative Log Likelihood](#negative-log-likelihood) | [True Error / Generalization Error](#true-error-generalization-error) |
-| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Negative Sampling](#negative-sampling) | [Turing Test](#turing-test) |
-| [Extended Kalman Filter](#extended-kalman-filter) | [Neural Network](#neural-network) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
-| [Factor Graph](#factor-graph) | [Neural Scaling Laws](#neural-scaling-laws) | [Uncorrelated Random Variables](#uncorrelated-random-variables) |
-| [Fan-in / Fan-out](#fan-in-fan-out) | [Neural Text Degeneration](#neural-text-degeneration) | [Unexpected Objects and Map Errors in Sensor Readings](#unexpected-objects-and-map-errors-in-sensor-readings) |
-| [Fast Downward and LAMA](#fast-downward-and-lama) | [Neuron](#neuron) | [Union Bound](#union-bound) |
-| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Newton's Method](#newtons-method) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
-| [Feature Expansion](#feature-expansion) | [Next Sentence Prediction](#next-sentence-prediction) | [Universal Approximation Theorem](#universal-approximation-theorem) |
-| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Noisy Channel Model](#noisy-channel-model) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
-| [Few-Shot Prompting](#few-shot-prompting) | [Non-Parametric Method](#non-parametric-method) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
-| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Nonlinear Least Squares](#nonlinear-least-squares) | [Vauquois Triangle](#vauquois-triangle) |
-| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Normal Equations](#normal-equations) | [Vector Map](#vector-map) |
-| [Frontier / Open List](#frontier-open-list) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
-| [Gaussian Conditioning (Moment Form)](#gaussian-conditioning-moment-form) | [NP-Hard](#np-hard) | [Vertical Markovization](#vertical-markovization) |
-| [Gaussian Graphical Model](#gaussian-graphical-model) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Viterbi Algorithm](#viterbi-algorithm) |
-| [Gaussian Mixture Model](#gaussian-mixture-model) | [Numerical Underflow](#numerical-underflow) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
-| [Gaussians Stay Gaussian Under Linear Transformation](#gaussians-stay-gaussian-under-linear-transformation) | [Objective Function / Training Objective](#objective-function-training-objective) | [Word Alignment](#word-alignment) |
-| [Generative Likelihood](#generative-likelihood) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
-| [Generative Model](#generative-model) | [Occupancy Grid Map](#occupancy-grid-map) | [Word Embedding](#word-embedding) |
-| [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [Odometry](#odometry) | [Word Type vs. Word Token](#word-type-vs-word-token) |
-| [Geometric Mean](#geometric-mean) | [One-Hot Encoding](#one-hot-encoding) | [Word2Vec](#word2vec) |
-| [Global Planner and Local Planner](#global-planner-and-local-planner) | [One-vs-All](#one-vs-all) | [WordPiece Tokenization](#wordpiece-tokenization) |
-| [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
-| [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [Open-Domain Question Answering](#open-domain-question-answering) | [Zero-Shot Prompting](#zero-shot-prompting) |
-| [GLUE Benchmark](#glue-benchmark) | [Optimal (Receding-Horizon) Local Planning](#optimal-receding-horizon-local-planning) | [Zero-Sum Game](#zero-sum-game) |
+| [A* Search (A-Star Algorithm)](#a-search-a-star-algorithm) | [Goal-Biased and Bidirectional RRT Variants](#goal-biased-and-bidirectional-rrt-variants) | [Parsing-Based Baseline (Reading Comprehension)](#parsing-based-baseline-reading-comprehension) |
+| [Absolute Discounting](#absolute-discounting) | [GPT (Generative Pre-trained Transformer)](#gpt-generative-pre-trained-transformer) | [Partially Observable Markov Decision Process (POMDP)](#partially-observable-markov-decision-process-pomdp) |
+| [Accuracy (Classification)](#accuracy-classification) | [Gradient Clipping](#gradient-clipping) | [Part-of-Speech Tagging](#part-of-speech-tagging) |
+| [Ackermann Steering](#ackermann-steering) | [Gradient Descent](#gradient-descent) | [Particle Filter](#particle-filter) |
+| [Action Model (Intent Model)](#action-model-intent-model) | [Grammatical Case](#grammatical-case) | [Partitioned Gaussian Distribution](#partitioned-gaussian-distribution) |
+| [Action Schema](#action-schema) | [Graph SLAM](#graph-slam) | [Path-Tracking Error Metrics](#path-tracking-error-metrics) |
+| [Adaptive Optimization Methods](#adaptive-optimization-methods) | [Graphical Lasso](#graphical-lasso) | [PDDL](#pddl) |
+| [Adaptive Workspace Biasing](#adaptive-workspace-biasing) | [GraphPlan](#graphplan) | [PEGASUS (Gap Sentence Pre-Training)](#pegasus-gap-sentence-pre-training) |
+| [Add-One Smoothing](#add-one-smoothing) | [Greedy Best-First Search (Heuristic-Only Search)](#greedy-best-first-search-heuristic-only-search) | [Penn Treebank](#penn-treebank) |
+| [Additive Gaussian Sensor Noise Model](#additive-gaussian-sensor-noise-model) | [Greedy Decoding](#greedy-decoding) | [Perceptron Algorithm](#perceptron-algorithm) |
+| [Adversarial Distractor Sentence (AddSent)](#adversarial-distractor-sentence-addsent) | [Greedy Local Planning](#greedy-local-planning) | [Perplexity](#perplexity) |
+| [Agglutinating Language](#agglutinating-language) | [Grid Connectivity (4-Connected vs. 8-Connected)](#grid-connectivity-4-connected-vs-8-connected) | [PersonaChat](#personachat) |
+| [Agnostic Learning](#agnostic-learning) | [Grounding / Instantiation](#grounding-instantiation) | [Phrase-Based Machine Translation](#phrase-based-machine-translation) |
+| [All-Pairs Shortest Paths (Floyd-Warshall Algorithm)](#all-pairs-shortest-paths-floyd-warshall-algorithm) | [Hallucination and Grounding (Factuality of Language Models)](#hallucination-and-grounding-factuality-of-language-models) | [Phrase-Structure Category Labels](#phrase-structure-category-labels) |
+| [Alpha-Beta Pruning](#alpha-beta-pruning) | [Head Word and Lexicalization](#head-word-and-lexicalization) | [PID Controller](#pid-controller) |
+| [AlphaGo](#alphago) | [Hedge Algorithm](#hedge-algorithm) | [Piecewise Linear Function](#piecewise-linear-function) |
+| [Annotation Projection (Cross-Lingual)](#annotation-projection-cross-lingual) | [Heuristic Evaluation Function](#heuristic-evaluation-function) | [Plan vs. Policy](#plan-vs-policy) |
+| [Arc-Standard Transition System](#arc-standard-transition-system) | [Hidden Markov Model](#hidden-markov-model) | [Planner Completeness](#planner-completeness) |
+| [Arity](#arity) | [Hierarchical Planning (Global and Local Planner)](#hierarchical-planning-global-and-local-planner) | [Planning Graph](#planning-graph) |
+| [Asymptotic Convergence](#asymptotic-convergence) | [Hierarchical Softmax](#hierarchical-softmax) | [Planning Horizon](#planning-horizon) |
+| [Asymptotic Optimality](#asymptotic-optimality) | [Hinge Loss](#hinge-loss) | [Point Cloud](#point-cloud) |
+| [Authorship Attribution](#authorship-attribution) | [Histogram Filter (Discrete Bayes Filter)](#histogram-filter-discrete-bayes-filter) | [Polar Coordinates](#polar-coordinates) |
+| [Automatic Differentiation](#automatic-differentiation) | [HMM Alignment Model](#hmm-alignment-model) | [Policy Evaluation](#policy-evaluation) |
+| [Auxiliary Particle Filter](#auxiliary-particle-filter) | [Horizontal Markovization](#horizontal-markovization) | [Policy Iteration](#policy-iteration) |
+| [Backoff (N-Gram Models)](#backoff-n-gram-models) | [Hyperparameter](#hyperparameter) | [Polynomial Time / Efficient Learner](#polynomial-time-efficient-learner) |
+| [Backpointer](#backpointer) | [IBM Model 1](#ibm-model-1) | [Pose](#pose) |
+| [Backpropagation](#backpropagation) | [Ill-Conditioned Problem](#ill-conditioned-problem) | [Position-wise Feed-Forward Network](#position-wise-feed-forward-network) |
+| [Bag of Words](#bag-of-words) | [Importance Sampling](#importance-sampling) | [Positional Encoding](#positional-encoding) |
+| [Banana Distribution](#banana-distribution) | [In-Context Learning](#in-context-learning) | [Positive Definite Kernel](#positive-definite-kernel) |
+| [BART](#bart) | [Independent and Identically Distributed](#independent-and-identically-distributed) | [Posterior Distribution](#posterior-distribution) |
+| [Basis Function](#basis-function) | [Indicator Function](#indicator-function) | [Precision Matrix](#precision-matrix) |
+| [Batch](#batch) | [Induction Head](#induction-head) | [Prepositional Phrase Attachment Ambiguity](#prepositional-phrase-attachment-ambiguity) |
+| [Batch Normalization](#batch-normalization) | [Inertial Measurement Unit (IMU)](#inertial-measurement-unit-imu) | [Presence vs Frequency Weighting](#presence-vs-frequency-weighting) |
+| [Bayes Filter (Recursive Bayesian Estimation)](#bayes-filter-recursive-bayesian-estimation) | [Inflated Heuristic (Weighted A\*)](#inflated-heuristic-weighted-a) | [Pretrained Chatbots (Meena and Blender)](#pretrained-chatbots-meena-and-blender) |
+| [Bayes' Rule](#bayes-rule) | [Information Retrieval](#information-retrieval) | [Principal Component Analysis](#principal-component-analysis) |
+| [Bayesian State Estimation](#bayesian-state-estimation) | [Informed RRT*](#informed-rrt) | [Prior Distribution](#prior-distribution) |
+| [Beam Search](#beam-search) | [Instruction Tuning](#instruction-tuning) | [Priority Queue](#priority-queue) |
+| [Belief-Space Planning](#belief-space-planning) | [Integer Linear Programming (ILP) Summarization](#integer-linear-programming-ilp-summarization) | [Probabilistic Completeness](#probabilistic-completeness) |
+| [Bellman Equation](#bellman-equation) | [Intent Classification and Slot Filling](#intent-classification-and-slot-filling) | [Probabilistic Context-Free Grammar](#probabilistic-context-free-grammar) |
+| [Bernoulli Distribution](#bernoulli-distribution) | [Intrinsic vs. Extrinsic (Downstream) Evaluation](#intrinsic-vs-extrinsic-downstream-evaluation) | [Probabilistic Roadmap (PRM)](#probabilistic-roadmap-prm) |
+| [BERT](#bert) | [Iterative Deepening](#iterative-deepening) | [Probability Density Contour](#probability-density-contour) |
+| [BERT for Span Extraction (Question Answering)](#bert-for-span-extraction-question-answering) | [Jacobian](#jacobian) | [Probability Mass Function vs. Probability Density Function](#probability-mass-function-vs-probability-density-function) |
+| [Bias Amplification](#bias-amplification) | [Jensen's Inequality](#jensens-inequality) | [Projective Tree](#projective-tree) |
+| [Bias of an Estimator](#bias-of-an-estimator) | [Joint Probability Distribution](#joint-probability-distribution) | [Proof by Contradiction](#proof-by-contradiction) |
+| [Bias-Variance Trade-off](#bias-variance-trade-off) | [Jump Point Search (JPS)](#jump-point-search-jps) | [Propagating Mean and Covariance Through a Linear Map](#propagating-mean-and-covariance-through-a-linear-map) |
+| [Binarization](#binarization) | [K-Means Algorithm](#k-means-algorithm) | [Pure Pursuit](#pure-pursuit) |
+| [BIO Tagging](#bio-tagging) | [K-Nearest Neighbors](#k-nearest-neighbors) | [Quadratic Form](#quadratic-form) |
+| [BLEU Score](#bleu-score) | [Kalman Filter](#kalman-filter) | [Quiescence Search](#quiescence-search) |
+| [Boosting / Weak Learner](#boosting-weak-learner) | [Kalman Gain Limiting Cases](#kalman-gain-limiting-cases) | [RAISE and LOWER States](#raise-and-lower-states) |
+| [Boundary Value Problem (BVP)](#boundary-value-problem-bvp) | [Kernel Function](#kernel-function) | [Random Control and Best Control Steering](#random-control-and-best-control-steering) |
+| [Bradley-Terry Model](#bradley-terry-model) | [Kidnapped Robot Problem](#kidnapped-robot-problem) | [Random Forest](#random-forest) |
+| [Breadth-First Search (BFS)](#breadth-first-search-bfs) | [Kinematic Constraints and Control Parameters](#kinematic-constraints-and-control-parameters) | [Random Playout (Rollout)](#random-playout-rollout) |
+| [Byte Pair Encoding (BPE)](#byte-pair-encoding-bpe) | [Kinodynamic Planning](#kinodynamic-planning) | [Random Projection](#random-projection) |
+| [C4 (Colossal Clean Crawled Corpus)](#c4-colossal-clean-crawled-corpus) | [KL Divergence](#kl-divergence) | [Random Variable](#random-variable) |
+| [Calibration (Model Confidence)](#calibration-model-confidence) | [KLD-Sampling (Adaptive Particle Count)](#kld-sampling-adaptive-particle-count) | [Rank](#rank) |
+| [Cauchy-Schwarz Inequality](#cauchy-schwarz-inequality) | [Kneser-Ney Smoothing](#kneser-ney-smoothing) | [Rapidly-Exploring Random Graph (RRG) and RRT*](#rapidly-exploring-random-graph-rrg-and-rrt) |
+| [Causal (Masked) Self-Attention](#causal-masked-self-attention) | [Knowledge-Based Question Answering](#knowledge-based-question-answering) | [Ray Casting](#ray-casting) |
+| [Centroid](#centroid) | [Landmark (Map Feature)](#landmark-map-feature) | [Reading Comprehension (Span Extraction)](#reading-comprehension-span-extraction) |
+| [Centroid Method (Extractive Summarization)](#centroid-method-extractive-summarization) | [Latent Variable](#latent-variable) | [Reasoning Shortcut (Dataset Artifact)](#reasoning-shortcut-dataset-artifact) |
+| [Chain Rule (for Derivatives)](#chain-rule-for-derivatives) | [Lattice-Based Planning](#lattice-based-planning) | [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn) |
+| [Chain Rule (for Probability)](#chain-rule-for-probability) | [Law of Large Numbers](#law-of-large-numbers) | [Regularization](#regularization) |
+| [Chatbot as Machine Translation](#chatbot-as-machine-translation) | [Layer Normalization](#layer-normalization) | [Reinforcement Learning from Human Feedback (RLHF)](#reinforcement-learning-from-human-feedback-rlhf) |
+| [Chebyshev's Inequality](#chebyshevs-inequality) | [Lexicalization](#lexicalization) | [Relative Frequency Estimation](#relative-frequency-estimation) |
+| [Chernoff Bound](#chernoff-bound) | [LIDAR (Laser Range Finder)](#lidar-laser-range-finder) | [Relaxation (Graph Search)](#relaxation-graph-search) |
+| [CKY Algorithm](#cky-algorithm) | [Likelihood](#likelihood) | [Replanning at Every Step](#replanning-at-every-step) |
+| [Cleverbot (Nearest-Neighbor Chatbot)](#cleverbot-nearest-neighbor-chatbot) | [Likelihood Collapse in Products of Many Factors](#likelihood-collapse-in-products-of-many-factors) | [Reporting Bias](#reporting-bias) |
+| [Closed Set (Explored Vertices)](#closed-set-explored-vertices) | [Linear Programming](#linear-programming) | [Resampling (Weighted to Unweighted Samples)](#resampling-weighted-to-unweighted-samples) |
+| [Closed-World Assumption](#closed-world-assumption) | [Linear State Estimation (Linear-Gaussian Model)](#linear-state-estimation-linear-gaussian-model) | [Residual Connection (Skip Connection)](#residual-connection-skip-connection) |
+| [Clustering](#clustering) | [Linearity of Expectation](#linearity-of-expectation) | [Reverse-Order Rule for Transposes and Inverses](#reverse-order-rule-for-transposes-and-inverses) |
+| [Contraction Mapping](#contraction-mapping) | [Linearization (First-Order Approximation)](#linearization-first-order-approximation) | [RoBERTa](#roberta) |
+| [Co-occurrence Matrix](#co-occurrence-matrix) | [Linearly Separable](#linearly-separable) | [Robust Observation Likelihood](#robust-observation-likelihood) |
+| [Code-Switching](#code-switching) | [Lipschitz Continuity](#lipschitz-continuity) | [Robustification of the Observation Likelihood](#robustification-of-the-observation-likelihood) |
+| [Computation Graph](#computation-graph) | [Local Minimum](#local-minimum) | [ROUGE](#rouge) |
+| [Conditional Independence](#conditional-independence) | [Log Likelihood](#log-likelihood) | [Runge-Kutta Method](#runge-kutta-method) |
+| [Conditioning a Joint Gaussian](#conditioning-a-joint-gaussian) | [Logistic Regression](#logistic-regression) | [Sample Complexity](#sample-complexity) |
+| [Configuration-Space (C-Space) Obstacle](#configuration-space-c-space-obstacle) | [Long Short-Term Memory (LSTM)](#long-short-term-memory-lstm) | [Sample Covariance Matrix](#sample-covariance-matrix) |
+| [Confounder](#confounder) | [Loss of Particle Diversity](#loss-of-particle-diversity) | [Sampled Representation of a Probability Distribution](#sampled-representation-of-a-probability-distribution) |
+| [Confusion Matrix](#confusion-matrix) | [Loss Surface](#loss-surface) | [Sampling Importance Resampling (SIR)](#sampling-importance-resampling-sir) |
+| [Conjunction Feature](#conjunction-feature) | [Low-Resource Language](#low-resource-language) | [Schur Complement](#schur-complement) |
+| [Consistent Heuristic](#consistent-heuristic) | [Low-Variance Resampling](#low-variance-resampling) | [Search Statistics](#search-statistics) |
+| [Consistent Hypothesis / Consistency](#consistent-hypothesis-consistency) | [Lower Bound](#lower-bound) | [Self-Attention](#self-attention) |
+| [Constituency Tests](#constituency-tests) | [Machine Translation](#machine-translation) | [Semantic Parsing](#semantic-parsing) |
+| [Constituent](#constituent) | [Marginal Log Likelihood](#marginal-log-likelihood) | [Sensor Resetting Localization](#sensor-resetting-localization) |
+| [Constraint Satisfaction Problem](#constraint-satisfaction-problem) | [Marginalization](#marginalization) | [Sequence Labeling (Tagging)](#sequence-labeling-tagging) |
+| [Context-Free Grammar](#context-free-grammar) | [Markov Assumption for Observations](#markov-assumption-for-observations) | [Sequence-to-Sequence (Seq2Seq) Task](#sequence-to-sequence-seq2seq-task) |
+| [Continuous Bag-of-Words (CBOW)](#continuous-bag-of-words-cbow) | [Markov Blanket](#markov-blanket) | [Sigma Point Filter (Unscented Kalman Filter)](#sigma-point-filter-unscented-kalman-filter) |
+| [Contrastive Language-Image Pre-training (CLIP)](#contrastive-language-image-pre-training-clip) | [Markov Decision Process (MDP)](#markov-decision-process-mdp) | [Simple Carrot Navigation Controller](#simple-carrot-navigation-controller) |
+| [Convex Function](#convex-function) | [Markov Model](#markov-model) | [Simple PRM (sPRM) and PRM*](#simple-prm-sprm-and-prm) |
+| [Convolutional Neural Network (CNN)](#convolutional-neural-network-cnn) | [Markov's Inequality](#markovs-inequality) | [Simultaneous Localization and Mapping (SLAM)](#simultaneous-localization-and-mapping-slam) |
+| [Coordinate Descent](#coordinate-descent) | [Masked Language Modeling](#masked-language-modeling) | [Singular Value Decomposition](#singular-value-decomposition) |
+| [Coordinate Frame (Reference Frame)](#coordinate-frame-reference-frame) | [Mathematical Induction / Inductive Hypothesis](#mathematical-induction-inductive-hypothesis) | [Skip-Gram Model](#skip-gram-model) |
+| [Coreference Resolution](#coreference-resolution) | [Matrix Factorization (Word Embeddings)](#matrix-factorization-word-embeddings) | [Sliding Window Baseline (Reading Comprehension)](#sliding-window-baseline-reading-comprehension) |
+| [Corrective Gradient Refinement](#corrective-gradient-refinement) | [Max-Normalization of Weights](#max-normalization-of-weights) | [Smoothing (Language Models)](#smoothing-language-models) |
+| [Covariance Matrix](#covariance-matrix) | [Maximum Entropy Model](#maximum-entropy-model) | [Span (Fencepost Indexing)](#span-fencepost-indexing) |
+| [Cross-Attention (Encoder-Decoder Attention)](#cross-attention-encoder-decoder-attention) | [Maximum Likelihood Estimation](#maximum-likelihood-estimation) | [Sparse Attention](#sparse-attention) |
+| [Cross-Entropy Loss](#cross-entropy-loss) | [Maximum Marginal Relevance (MMR)](#maximum-marginal-relevance-mmr) | [Specificity Conditioning](#specificity-conditioning) |
+| [Cross-Validation](#cross-validation) | [mBART (Multilingual BART)](#mbart) | [Spectral Theorem](#spectral-theorem) |
+| [D* (Dynamic A* Algorithm)](#d-dynamic-a-algorithm) | [Mean Squared Error](#mean-squared-error) | [SQuAD (Stanford Question Answering Dataset)](#squad-stanford-question-answering-dataset) |
+| [Dataflow Graph (Dialogue)](#dataflow-graph-dialogue) | [Minimax Algorithm](#minimax-algorithm) | [Start-End Span Prediction](#start-end-span-prediction) |
+| [Datasheets and Model Cards](#datasheets-and-model-cards) | [Minimum Description Length](#minimum-description-length) | [State-Space Model (Sequence Modeling)](#state-space-model-sequence-modeling) |
+| [De-Identification (Anonymization of Text)](#de-identification-anonymization-of-text) | [Minimum Error Rate Training (MERT)](#minimum-error-rate-training-mert) | [Stationary Policy](#stationary-policy) |
+| [Dead End](#dead-end) | [Mobile Robot Localization](#mobile-robot-localization) | [Statistical Independence](#statistical-independence) |
+| [Debiasing (Word Embeddings)](#debiasing-word-embeddings) | [Model Complexity](#model-complexity) | [Stochastic Gradient Descent](#stochastic-gradient-descent) |
+| [Decision Boundary](#decision-boundary) | [Moment Parameterization of a Gaussian](#moment-parameterization-of-a-gaussian) | [Stopword](#stopword) |
+| [Decision Tree](#decision-tree) | [Momentum](#momentum) | [STRIPS](#strips) |
+| [Deep Averaging Network (DAN)](#deep-averaging-network-dan) | [Monotone Convergence](#monotone-convergence) | [Structured Classification](#structured-classification) |
+| [Denoising Autoencoder](#denoising-autoencoder) | [Monotonic Function](#monotonic-function) | [Subword Tokenization](#subword-tokenization) |
+| [Dense Retrieval (Dual-Encoder BERT Retrieval)](#dense-retrieval-dual-encoder-bert-retrieval) | [Monte Carlo Estimation](#monte-carlo-estimation) | [Support Vector Machine](#support-vector-machine) |
+| [Dependency Parsing](#dependency-parsing) | [Monte Carlo Tree Search (MCTS)](#monte-carlo-tree-search-mcts) | [Surrogate Loss](#surrogate-loss) |
+| [Depth-First Search (DFS)](#depth-first-search-dfs) | [Monte-Carlo Kalman Filter](#monte-carlo-kalman-filter) | [Swept Volume](#swept-volume) |
+| [Depth-Limited Search](#depth-limited-search) | [Morphology](#morphology) | [Symmetric Matrix](#symmetric-matrix) |
+| [Deterministic vs. Non-Deterministic Actions](#deterministic-vs-non-deterministic-actions) | [Most-Frequent-Tag Baseline](#most-frequent-tag-baseline) | [Symmetric Relation](#symmetric-relation) |
+| [Deterministic vs. Probabilistic Policy](#deterministic-vs-probabilistic-policy) | [Motion Model](#motion-model) | [Syntactic Parsing](#syntactic-parsing) |
+| [Determinization](#determinization) | [Moving Object Planning (MOP) and Rapidly-Exploring Random Trees (RRT)](#moving-object-planning-mop-and-rapidly-exploring-random-trees-rrt) | [System of Linear Equations](#system-of-linear-equations) |
+| [Diagonal Matrix](#diagonal-matrix) | [Multi-Armed Bandit Problem](#multi-armed-bandit-problem) | [T5](#t5) |
+| [Different Weights vs Different Features](#different-weights-vs-different-features) | [Multi-Head Self-Attention](#multi-head-self-attention) | [Tag Lattice](#tag-lattice) |
+| [Differential-Drive Robot](#differential-drive-robot) | [Multi-Hop Reasoning (Question Answering)](#multi-hop-reasoning-question-answering) | [Task-Oriented Dialogue](#task-oriented-dialogue) |
+| [Dijkstra's Algorithm](#dijkstras-algorithm) | [Multi-Observation Sensor Resetting Localization](#multi-observation-sensor-resetting-localization) | [Taylor Expansion / Taylor's Theorem](#taylor-expansion-taylors-theorem) |
+| [Direct Transfer (Delexicalized Parsing)](#direct-transfer-delexicalized-parsing) | [Multilingual BERT (mBERT)](#multilingual-bert-mbert) | [Teacher Forcing](#teacher-forcing) |
+| [Discretization (Discretized State Space)](#discretization-discretized-state-space) | [Multilingual Sentence Embeddings](#multilingual-sentence-embeddings) | [Tensor](#tensor) |
+| [Discriminative Model](#discriminative-model) | [Multilingual Word Embeddings (multiCluster)](#multilingual-word-embeddings-multicluster) | [Terminal Action](#terminal-action) |
+| [Distributional Hypothesis](#distributional-hypothesis) | [Multimodal Distribution (Modes)](#multimodal-distribution-modes) | [Terminal State](#terminal-state) |
+| [Double Integrator and Bang-Bang Control](#double-integrator-and-bang-bang-control) | [Multinomial Distribution](#multinomial-distribution) | [Text Summarization](#text-summarization) |
+| [Dropout](#dropout) | [Multitask Learning](#multitask-learning) | [Textual Entailment (Natural Language Inference)](#textual-entailment-natural-language-inference) |
+| [Dynamic Bayesian Network](#dynamic-bayesian-network) | [Multivariate Normal Distribution](#multivariate-normal-distribution) | [Tie-Breaking (A* Search)](#tie-breaking-a-search) |
+| [Dynamic Programming](#dynamic-programming) | [Mutex](#mutex) | [Time Causality Assumption](#time-causality-assumption) |
+| [Early Stopping](#early-stopping) | [Mutual Information Criterion (Diverse Responses)](#mutual-information-criterion-diverse-responses) | [Toxic Degeneration](#toxic-degeneration) |
+| [Eigenvalue and Eigenvector](#eigenvalue-and-eigenvector) | [N-Gram Language Model](#n-gram-language-model) | [Trace and Co-indexation](#trace-and-co-indexation) |
+| [ELIZA (Rule-Based Chatbot)](#eliza-rule-based-chatbot) | [Naive Bayes](#naive-bayes) | [Transducer (Sequence Labeling)](#transducer-sequence-labeling) |
+| [Ellipse (Locus Definition)](#ellipse-locus-definition) | [Named-Entity Type Labels](#named-entity-type-labels) | [Transformer Architecture](#transformer-architecture) |
+| [ELMo (Embeddings from Language Models)](#elmo-embeddings-from-language-models) | [Natural Form of a Gaussian (Information Form)](#natural-form-of-a-gaussian-information-form) | [Transition Model (Action-Marginalized)](#transition-model-action-marginalized) |
+| [EM Algorithm](#em-algorithm) | [Natural Questions](#natural-questions) | [Transition-Based Dependency Parsing](#transition-based-dependency-parsing) |
+| [Encoder-Decoder Architecture](#encoder-decoder-architecture) | [Negative Log Likelihood](#negative-log-likelihood) | [Treebank](#treebank) |
+| [Epoch](#epoch) | [Negative Sampling](#negative-sampling) | [Triangle Inequality](#triangle-inequality) |
+| [Epsilon-Greedy Policy](#epsilon-greedy-policy) | [Neural Network](#neural-network) | [Trigram HMM (Tag-Pair States)](#trigram-hmm-tag-pair-states) |
+| [Error Rate / Training Error / Empirical Error Rate](#error-rate-training-error-empirical-error-rate) | [Neural Scaling Laws](#neural-scaling-laws) | [True Error / Generalization Error](#true-error-generalization-error) |
+| [Expected Discounted Return](#expected-discounted-return) | [Neural Text Degeneration](#neural-text-degeneration) | [Turing Test](#turing-test) |
+| [Exposure Bias (in Sequential Decision Models)](#exposure-bias-in-sequential-decision-models) | [Neuron](#neuron) | [Unbiased and Consistent Estimators](#unbiased-and-consistent-estimators) |
+| [Extended Kalman Filter](#extended-kalman-filter) | [Newton's Method](#newtons-method) | [Uncorrelated Random Variables](#uncorrelated-random-variables) |
+| [Factor Graph](#factor-graph) | [Next Sentence Prediction](#next-sentence-prediction) | [Unexpected Objects and Map Errors in Sensor Readings](#unexpected-objects-and-map-errors-in-sensor-readings) |
+| [Fan-in / Fan-out](#fan-in-fan-out) | [Noisy Channel Model](#noisy-channel-model) | [Union Bound](#union-bound) |
+| [Fast Downward and LAMA](#fast-downward-and-lama) | [Non-Parametric Method](#non-parametric-method) | [Universal Adversarial Trigger](#universal-adversarial-trigger) |
+| [fastText (Subword Embeddings)](#fasttext-subword-embeddings) | [Nonlinear Least Squares](#nonlinear-least-squares) | [Universal Approximation Theorem](#universal-approximation-theorem) |
+| [Feature Expansion](#feature-expansion) | [Normal Equations](#normal-equations) | [Unlabeled Attachment Score (Dependency Accuracy)](#unlabeled-attachment-score) |
+| [Feed-Forward Window Tagger](#feed-forward-window-tagger) | [Normalization of a Probability Distribution](#normalization-of-a-probability-distribution) | [Value Iteration](#value-iteration) |
+| [Few-Shot Prompting](#few-shot-prompting) | [NP-Hard](#np-hard) | [Value Iteration Convergence Bound](#value-iteration-convergence-bound) |
+| [Fine-Tuning (Transfer Learning)](#fine-tuning-transfer-learning) | [Nucleus Sampling (Top-p Sampling)](#nucleus-sampling-top-p-sampling) | [Vanishing Gradient Problem](#vanishing-gradient-problem) |
+| [Finite-Horizon Optimization](#finite-horizon-optimization) | [Numerical Underflow](#numerical-underflow) | [Vauquois Triangle](#vauquois-triangle) |
+| [Fixed Point (Stationary Point)](#fixed-point-stationary-point) | [Objective Function / Training Objective](#objective-function-training-objective) | [Vector Map](#vector-map) |
+| [Forward Kinematics and Inverse Kinematics](#forward-kinematics-and-inverse-kinematics) | [Observation Likelihood Model (Sensor Model)](#observation-likelihood-model-sensor-model) | [Verbalizer (Prompt Template)](#verbalizer-prompt-template) |
+| [Frontier / Open List](#frontier-open-list) | [Occupancy Grid Map](#occupancy-grid-map) | [Vertical Markovization](#vertical-markovization) |
+| [Gaussian Conditioning (Moment Form)](#gaussian-conditioning-moment-form) | [Odometry](#odometry) | [Viterbi Algorithm](#viterbi-algorithm) |
+| [Gaussian Graphical Model](#gaussian-graphical-model) | [One-Hot Encoding](#one-hot-encoding) | [Wizard of Oz Data Collection](#wizard-of-oz-data-collection) |
+| [Gaussian Mixture Model](#gaussian-mixture-model) | [One-vs-All](#one-vs-all) | [Word Alignment](#word-alignment) |
+| [Gaussians Stay Gaussian Under Linear Transformation](#gaussians-stay-gaussian-under-linear-transformation) | [Open Class and Closed Class Words](#open-class-and-closed-class-words) | [Word Analogy (Vector Offset Method)](#word-analogy-vector-offset-method) |
+| [Generative Likelihood](#generative-likelihood) | [Open-Domain Question Answering](#open-domain-question-answering) | [Word Embedding](#word-embedding) |
+| [Generative Model](#generative-model) | [Optimal (Receding-Horizon) Local Planning](#optimal-receding-horizon-local-planning) | [Word Type vs. Word Token](#word-type-vs-word-token) |
+| [Generic Response Problem (Lack of Diversity)](#generic-response-problem-lack-of-diversity) | [Optimal Substructure](#optimal-substructure) | [Word2Vec](#word2vec) |
+| [Geometric Mean](#geometric-mean) | [Oracle Derivation](#oracle-derivation) | [WordPiece Tokenization](#wordpiece-tokenization) |
+| [Geometric Series](#geometric-series) | [Orthogonal Matrix](#orthogonal-matrix) | [Zero-Shot Cross-Lingual Transfer](#zero-shot-cross-lingual-transfer) |
+| [Global Planner and Local Planner](#global-planner-and-local-planner) | [Orthonormal Basis](#orthonormal-basis) | [Zero-Shot Prompting](#zero-shot-prompting) |
+| [Glorot / Xavier Initialization](#glorot-xavier-initialization) | [Overfitting](#overfitting) | [Zero-Sum Game](#zero-sum-game) |
+| [GloVe (Global Vectors for Word Representation)](#glove-global-vectors-for-word-representation) | [PAC Learning](#pac-learning) |  |
+| [GLUE Benchmark](#glue-benchmark) | [Parallel Corpus (Bitext)](#parallel-corpus-bitext) |  |
 
 ## Concepts
 
@@ -523,6 +532,30 @@ Check: 5 shifts plus 5 arcs gives $10 = 2n$ transitions, and the final stack is 
 
 ---
 
+<a id="asymptotic-convergence"></a>
+### Asymptotic Convergence
+
+**The Big Idea**: In Algebra 2 you saw that the sequence $1, \tfrac12, \tfrac14, \tfrac18, \dots$ never actually reaches $0$ but gets as close to it as you like if you go far enough. Asymptotic convergence is that behavior for the answers an algorithm produces round after round (see the Monotone Convergence entry in the math_concepts file for a related idea).
+
+**General Usage**: A repeated procedure converges asymptotically if the answers it produces get closer and closer to a final answer as the number of rounds grows without bound, even though no finite number of rounds may reach the final answer exactly. The practical consequence is early stopping: for any tolerance you choose (say, "within $0.01$"), there is a finite round after which every answer is within that tolerance of the final one, so you can stop there.
+
+**Example.** A procedure produces the answers $a_1 = 1,\ a_2 = 1.5,\ a_3 = 1.75,\ a_4 = 1.875,\ \dots$, where each answer adds half of the remaining distance to $2$.
+
+| Round $n$ | Answer $a_n$ | Distance to $2$ |
+|---|---|---|
+| 1 | 1 | 1 |
+| 2 | 1.5 | 0.5 |
+| 3 | 1.75 | 0.25 |
+| 4 | 1.875 | 0.125 |
+
+1. The distance to $2$ halves every round: $1,\ 0.5,\ 0.25,\ 0.125,\dots$
+2. The distance never becomes exactly $0$.
+3. To be within $0.01$ of $2$ we need a distance below $0.01$. The distance after round $n$ is $1/2^{\,n-1}$, and $1/2^{7} = 0.0078 < 0.01$, so round $n = 8$ is close enough, and the procedure can be stopped there.
+
+**AI/ML Usage**: Value iteration (see the Value Iteration entry in the math_concepts file) computes the exact answer only after infinitely many rounds when the number of future steps is unlimited. Because it converges asymptotically, practitioners stop it once the table of values changes by less than a small tolerance between rounds, and obtain a value function as accurate as they like.
+
+---
+
 <a id="asymptotic-optimality"></a>
 ### Asymptotic Optimality
 
@@ -872,6 +905,27 @@ $$
 3. A belief-space planner sees this $40\%$ figure because it carries the whole range, and can instead choose an action that first reduces the uncertainty (for example, moving to where a sensor can observe a wall and narrow the range) before attempting the gap.
 
 **AI/ML Usage**: Belief-space planning is the practical setting of a **partially observable Markov decision process (POMDP)**, a model in which an agent cannot see its true state and must decide using its belief; it is used for robot navigation and manipulation where a wrong move is costly, such as an autonomous vehicle or a surgical robot.
+
+---
+
+<a id="bellman-equation"></a>
+### Bellman Equation
+
+**The Big Idea**: In Algebra 2 you evaluate a sequence defined by a rule such as $a_n = 2a_{n-1} + 1$ by computing each term from the one before it. The Bellman equation is such a rule for "how good is a situation": the goodness of a situation is built from the goodness of the situations that can follow it. It also uses the idea of an average weighted by probabilities (an expected value) and the $\max$ function (see the Max Function entry in the math_symbols file).
+
+**General Usage**: In a Markov decision process (a model in which an agent repeatedly picks an action, each action has random outcomes with known probabilities, and each outcome earns a reward), let $T(s,a,s')$ be the probability that action $a$ taken in state $s$ leads to state $s'$, $R(s,a,s')$ the reward for that transition, and $\gamma$ a discount factor between $0$ and $1$ (see the Gamma entry in the math_symbols file). The optimal value $V^*_{i+1}(s)$ of state $s$ with $i+1$ steps left satisfies
+$$V^*_{i+1}(s) = \max_{a} \sum_{s'} T(s,a,s')\,\big[R(s,a,s') + \gamma V^*_i(s')\big],$$
+and the best action is the one that achieves the maximum:
+$$\pi^*_{i+1}(s) = \arg_a\max \sum_{s'} T(s,a,s')\,\big[R(s,a,s') + \gamma V^*_i(s')\big].$$
+Read from the inside out: the bracket is the reward plus the discounted value of where you land; the sum weights each landing place by its probability; the $\max$ picks the best action. With unlimited steps left, the value no longer depends on the number of steps, and the same function $V^*$ appears on both sides.
+
+**Example.** A state has two actions. Action A lands in a cell worth $1$ with probability $0.8$ and in a cell worth $0$ with probability $0.2$; every reward is $0$; $\gamma = 0.9$. Action B lands in a cell worth $0.5$ with probability $1$; every reward is $0$.
+
+1. Action A: $0.8\times[0 + 0.9\times 1] + 0.2\times[0 + 0.9\times 0] = 0.72 + 0 = 0.72$.
+2. Action B: $1\times[0 + 0.9\times 0.5] = 0.45$.
+3. The maximum is $\max(0.72, 0.45) = 0.72$, so the value of the state is $0.72$ and the best action is A.
+
+**AI/ML Usage**: The Bellman equation is the foundation of reinforcement learning (training a program by reward). Value iteration applies it repeatedly as an update rule (see the Value Iteration entry in the math_concepts file), and methods such as Q-learning use a sampled version of the same relationship to learn from experience.
 
 ---
 
@@ -1365,6 +1419,32 @@ where $k$ is a split point (see the Split Point entry in the math_symbols file).
 **Example.** Given a scatter plot of customer ages and spending amounts with no labels attached, a clustering algorithm might discover, entirely on its own, that the data naturally separates into three groups: young low-spenders, middle-aged high-spenders, and older moderate-spenders — categories nobody explicitly told the algorithm to look for.
 
 **AI/ML Usage**: Clustering (most commonly via the K-Means algorithm) is widely used for customer segmentation in marketing, for grouping similar documents or images together, and as an exploratory first step for understanding the natural structure hidden inside a new, unlabeled dataset before deciding what supervised model to build next.
+
+---
+
+<a id="contraction-mapping"></a>
+### Contraction Mapping
+
+**The Big Idea**: In Algebra 2 you have seen that a fraction like $\tfrac12$ makes numbers smaller each time you multiply by it: $8\to4\to2\to1\to\dots$. A contraction mapping is the same shrinking behavior applied not to one number but to the *distance between two objects*: whatever the two objects are, applying the rule always pulls them closer together by a fixed fraction.
+
+**General Usage**: An operator $\text{Op}$ (a rule that turns one object into another object of the same kind) is a contraction with factor $c$ if for every pair of objects $f$ and $g$,
+$$
+\lVert \text{Op}\,f-\text{Op}\,g\rVert\le c\,\lVert f-g\rVert,\qquad 0\le c<1,
+$$
+where $\lVert f-g\rVert$ measures the distance between $f$ and $g$ (see the Max Norm of a Value Function entry in the math_symbols file). Applying the operator $k$ times shrinks the distance by at least $c^k$, which goes to $0$. A contraction leaves at most one object unchanged by the operator (see the Fixed Point entry), and repeated application converges to it from any starting point.
+
+**Example.** Let $\text{Op}\,x\triangleq\frac{x}{2}$ on real numbers, with distance $|x-y|$ (see the Defined As entry in the math_symbols file). Take $x=10$ and $y=4$, whose distance is $6$.
+
+| Step | Computation | Distance |
+|---|---|---|
+| 0 | $\lvert 10-4\rvert$ | $6$ |
+| 1 | $\text{Op}\,10=5,\ \text{Op}\,4=2$, so $\lvert5-2\rvert$ | $3$ |
+| 2 | apply again: $2.5$ and $1$, so $\lvert2.5-1\rvert$ | $1.5$ |
+| 3 | apply again: $1.25$ and $0.5$, so $\lvert1.25-0.5\rvert$ | $0.75$ |
+
+Each step multiplies the distance by exactly $\tfrac12$, so $c=\tfrac12$ works. Check against the definition: $\lvert\tfrac x2-\tfrac y2\rvert=\tfrac12\lvert x-y\rvert\le\tfrac12\lvert x-y\rvert$. Both numbers also approach $0$, the one value the operator leaves unchanged ($\tfrac02=0$).
+
+**AI/ML Usage**: The Bellman operator (see the Bellman Operator entry in the math_symbols file) is a contraction by the discount factor $\gamma$ in the max norm. This is the reason value iteration, the standard method for solving a Markov decision process (a model of repeated decisions with random outcomes), is guaranteed to converge to a single optimal answer, and it gives the error after $N$ steps as $\gamma^N$ times the starting error.
 
 ---
 
@@ -2078,6 +2158,32 @@ The final visiting order is $R, A, C, D, B$: DFS fully descends into $A$'s entir
 
 ---
 
+<a id="deterministic-vs-non-deterministic-actions"></a>
+### Deterministic vs. Non-Deterministic Actions
+
+**The Big Idea**: In Algebra 2 a function gives exactly one output for each input, such as $f(3) = 7$ every single time. A deterministic action behaves like that function: the same action from the same state always gives the same next state. A non-deterministic action is a step beyond Algebra 2: the same action from the same state can give different next states, so the outcome is described by a probability distribution (see the Probability / Probability Density entry in the math_symbols file) instead of a single value.
+
+**General Usage**: An action is **deterministic** if taking it in a given state always leads to one well-defined next state. It is **non-deterministic** (also called stochastic) if the next state is drawn from a probability distribution $p(s_{t+1} \mid a_t, s_t)$ over possible next states. A deterministic action is the special case in which that distribution puts probability $1$ on a single state (see the Dirac Delta Function entry in the math_symbols file).
+
+**Example.** A robot on a grid takes the action "up" from its start cell. If the action is deterministic, the robot is always in the cell above afterward. If the action is non-deterministic, suppose there is some chance that the move fails and the robot stays where it was. Then after "up" the robot may be in the cell above or still in the start cell, and the next state is described by the probability of each of those two outcomes. Before acting, which one happens is unknown; after acting, the robot observes which one happened.
+
+**AI/ML Usage**: Real robots, vehicles, and games with chance elements have non-deterministic actions (wheels slip, dice roll), which is why reinforcement learning and planning under uncertainty are built on the Markov Decision Process (see that entry) rather than on plain graph search.
+
+---
+
+<a id="deterministic-vs-probabilistic-policy"></a>
+### Deterministic vs. Probabilistic Policy
+
+**The Big Idea**: A deterministic policy is a function in the Algebra 2 sense: one output per input. A probabilistic policy is a step beyond Algebra 2: each input gives a set of probabilities over outputs (see the Probability entry in the math_symbols file).
+
+**General Usage**: A deterministic policy returns a single action for each state. A probabilistic (stochastic) policy returns a probability distribution over actions, and the action taken is drawn from it, which is why it is written $a_t \sim \pi(s_t)$ rather than $a_t = \pi(s_t)$. A deterministic policy is the special case where one action has probability $1$.
+
+**Example.** If the policy for one cell gives "up" with probability $0.7$ and "right" with probability $0.3$, each visit to that cell draws one of the two actions at random with those probabilities. A deterministic policy for the same cell would always say "up".
+
+**AI/ML Usage**: Epsilon-greedy exploration and the policies learned by policy-gradient methods are probabilistic policies (see the Epsilon-Greedy Policy entry).
+
+---
+
 <a id="determinization"></a>
 ### Determinization
 
@@ -2470,6 +2576,19 @@ Had the first coin instead landed in the $1-\epsilon = 0.1$ region, the second s
 
 ---
 
+<a id="expected-discounted-return"></a>
+### Expected Discounted Return
+
+**The Big Idea**: Combine two Algebra 2 ideas: a geometric series, where each term is multiplied by the same ratio $\gamma$ (see the Gamma entry in the math_symbols file), and an average, where each possible outcome is weighted by its probability (see the Expectation entry in the math_symbols file).
+
+**General Usage**: In a Markov decision process, the total reward of one run is $\sum_{t=0}^{\infty} \gamma^{t} R(a_t, s_t, s_{t+1})$, where $t$ counts time steps and $\gamma$ (usually between 0 and 1) shrinks later rewards. Because action outcomes are random, this total differs from run to run, so the quantity optimized is its expected value $E\left[\sum_{t=0}^{\infty} \gamma^{t} R(a_t, s_t, s_{t+1})\right]$. With $\gamma<1$ the infinite sum stays finite when rewards are bounded.
+
+**Example.** For a reward of $1$ at every step and $\gamma = 0.5$, the sum is $1 + 0.5 + 0.25 + \dots = \frac{1}{1-0.5} = 2$, finite although there are infinitely many steps. Checking: the first four terms already give $1 + 0.5 + 0.25 + 0.125 = 1.875$, approaching $2$.
+
+**AI/ML Usage**: This is the objective that reinforcement learning algorithms such as Q-learning and policy gradient methods maximize. In practice the expectation is estimated by averaging over many simulated runs.
+
+---
+
 <a id="exposure-bias-in-sequential-decision-models"></a>
 ### Exposure Bias (in Sequential Decision Models)
 
@@ -2654,6 +2773,41 @@ Fine-tuning nudges $w$ itself from $2.0$ to $2.12$ toward better fitting the new
 
 ---
 
+<a id="finite-horizon-optimization"></a>
+### Finite-Horizon Optimization
+
+**The Big Idea**: Planning with a deadline. A sequence stopping at term $H$ instead of continuing forever.
+
+**General Usage**: Maximize the sum of rewards only up to step $H$. The best action then depends on the time step as well as the state, so the policy is $\pi : S \times [0,H] \rightarrow A$.
+
+**Example.** The same state can need different actions with $H$ steps left and with $H-1$ steps left, so the policy is indexed as $\pi^*_H$ and $\pi^*_{H-1}$.
+
+**AI/ML Usage**: It is the stepping stone to the infinite-horizon case: value iteration builds horizon $i+1$ values from horizon $i$ values.
+
+---
+
+<a id="fixed-point-stationary-point"></a>
+### Fixed Point (Stationary Point)
+
+**The Big Idea**: In Algebra 2 you solved equations like $x=\frac{x}{2}+3$ by finding the value of $x$ that comes out unchanged after applying the right-hand side. A fixed point is exactly that: an input that a rule maps to itself. It is also called a stationary point, because the object "stays put".
+
+**General Usage**: For an operator $\text{Op}$, an object $x^*$ is a fixed point if $\text{Op}\,x^*=x^*$. Solving "$\text{Op}\,x=x$" is the same as finding the fixed points. A contraction (see the Contraction Mapping entry above) has at most one fixed point, and applying it repeatedly from any start approaches that point.
+
+**Example.** Let $\text{Op}\,x=\frac{x}{2}+3$.
+
+| Step | Work |
+|---|---|
+| 1 | Set $\text{Op}\,x=x$: $\ \frac{x}{2}+3=x$ |
+| 2 | Subtract $\frac{x}{2}$ from both sides: $3=\frac{x}{2}$ |
+| 3 | Multiply both sides by $2$: $x=6$ |
+| 4 | Check: $\text{Op}\,6=\frac62+3=6$ |
+
+So $6$ is the fixed point. Check by iterating from $0$: $0\to3\to4.5\to5.25\to5.625\to\dots$, approaching $6$.
+
+**AI/ML Usage**: The optimal value function $V^*$ of a Markov decision process is the fixed point of the Bellman operator, $BV^*=V^*$ (see the Bellman Operator entry in the math_symbols file). Value iteration works by applying the operator repeatedly until the values stop changing, that is, until the fixed point is reached.
+
+---
+
 <a id="forward-kinematics-and-inverse-kinematics"></a>
 ### Forward Kinematics and Inverse Kinematics
 
@@ -2712,8 +2866,6 @@ The center moves by the gain $\Sigma_{XY}\Sigma_{YY}^{-1}$ (see the Kalman Gain 
 Second check: with $K = 0.4$ and $\Sigma_{YX} = C\,\Sigma_{XX}$ for $C = 2$ (so that $\Sigma_{YX} = 8$), the factored form $(1 - KC)\,\Sigma_{XX} = (1 - 0.8) \times 4 = 0.8$ gives the same answer.
 
 **AI/ML Usage**: This is the identity from which the Kalman filter update step is derived: the predicted belief about the state plays the role of $X$, the sensor reading plays the role of $Y$, and the formulas above become the update equations. It is also the prediction rule in Gaussian process regression, where the training outputs play the role of $Y$ and the unseen test output plays the role of $X$.
-
----
 
 ---
 
@@ -2809,6 +2961,26 @@ Second check: with $K = 0.4$ and $\Sigma_{YX} = C\,\Sigma_{XX}$ for $C = 2$ (so 
 **Example.** Find the geometric mean of $4$ and $9$: multiply them, $4 \times 9 = 36$; then take the square root (the $2$nd root, since there are $2$ numbers), $\sqrt{36} = 6$. Compare this to the ordinary arithmetic mean of the same two numbers, $(4+9)/2 = 6.5$ — the geometric mean ($6$) comes out smaller, illustrating the general rule that the geometric mean never exceeds the arithmetic mean.
 
 **AI/ML Usage**: Because taking a logarithm converts multiplication into addition (see Logarithm in the math_symbols file), averaging a set of numbers *in log space* and then converting back is mathematically equivalent to taking their geometric mean directly — this is exactly the relationship behind Perplexity (see that entry below), whose defining formula averages log-probabilities and then exponentiates, which is precisely why perplexity works out to the geometric mean of the model's branching factor rather than the plain arithmetic mean.
+
+---
+
+<a id="geometric-series"></a>
+### Geometric Series
+
+**The Big Idea**: In Algebra 2 a geometric sequence multiplies by the same ratio each step ($3, 6, 12, 24, \dots$ has ratio $2$), and a geometric series is the sum of such a sequence. Algebra 2 gives the closed formula for finite sums; the new step is adding infinitely many terms, which works only when the ratio is smaller than $1$ in size.
+
+**General Usage**: For a first term $a$ and ratio $r$, the infinite sum $S = a + ar + ar^2 + \cdots$ equals $\dfrac{a}{1-r}$ whenever $\lvert r\rvert < 1$. It grows without limit when $r = 1$ and $a \neq 0$. Derivation: multiply $S$ by $r$ to get $rS = ar + ar^2 + \cdots$. The right side is $S$ with its first term $a$ removed, so $rS = S - a$. Rearranging, $a = S - rS = S(1-r)$, so $S = a/(1-r)$. This algebra assumes $S$ is a finite number, which is true exactly when $\lvert r\rvert < 1$.
+
+**Example.** Sum $1 + 0.5 + 0.25 + 0.125 + \cdots$, so $a = 1$ and $r = 0.5$.
+
+1. Let $S = 1 + 0.5 + 0.25 + \cdots$.
+2. Multiply by $0.5$: $0.5S = 0.5 + 0.25 + 0.125 + \cdots$.
+3. The right side of step 2 is $S$ without its first term: $0.5S = S - 1$.
+4. Move terms: $1 = S - 0.5S = 0.5S$.
+5. Divide by $0.5$: $S = 2$.
+6. Check with the formula: $a/(1-r) = 1/(1-0.5) = 2$. The partial sums $1, 1.5, 1.75, 1.875, \dots$ approach $2$.
+
+**AI/ML Usage**: In reinforcement learning, rewards received later are multiplied by a discount factor $\gamma$ between $0$ and $1$ (see the Gamma entry in the math_symbols file), so a stream of rewards of size at most $R_{\max}$ (see the Maximum Reward Magnitude entry in the math_symbols file) adds up to at most $R_{\max} + \gamma R_{\max} + \gamma^2 R_{\max} + \cdots = R_{\max}/(1-\gamma)$. This guarantees that value functions stay finite, and it underlies convergence proofs for value iteration.
 
 ---
 
@@ -4550,6 +4722,27 @@ where the model specifies $P(\bar t, \bar a \mid \bar s)$ but not $P(\bar t \mid
 
 ---
 
+<a id="markov-assumption-for-observations"></a>
+### Markov Assumption for Observations
+
+**The Big Idea**: This builds on the Conditional Bar entry in the math_symbols file and the Markov Model entry. In Algebra 2, a function like $f(x, y)$ depends on exactly the inputs listed and nothing else. The Markov assumption for observations says the likelihood of a sensor reading is that kind of function: it takes only the current state and the latest action, and ignores the whole earlier history.
+
+**General Usage**: The general likelihood of an observation $o_t$ could depend on every past action and every past state, $p(o_t \mid a_{1:t}, s_{1:t})$ (see the Index Range Colon entry in the math_symbols file). The Markov assumption for observations states that, once the latest state and latest action are given, the earlier history adds no information:
+$$
+p(o_t \mid a_{1:t}, s_{1:t}) = p(o_t \mid s_t, a_t).
+$$
+Some presentations index the action as $a_{t-1}$, the action that led into state $s_t$; the idea is the same.
+
+**Example.** Take a sensor whose reading depends only on the true distance to a wall.
+
+1. Suppose the car is 10 m from the wall now.
+2. Whether the car arrived there by one long drive or by ten short ones, the sensor's behavior at 10 m is the same, so the likelihood of the reading $10.1$ is one fixed number.
+3. Under the assumption, that number can be stored once per (state, action) pair, instead of once for every possible history of arriving there.
+
+**AI/ML Usage**: The assumption is what lets the observation function $Z$ of a POMDP (see the Partially Observable Markov Decision Process entry) be a small lookup table or a simple formula. It is also what lets the Bayes filter (see that entry) update a belief using only the newest reading.
+
+---
+
 <a id="markov-blanket"></a>
 ### Markov Blanket
 
@@ -4560,6 +4753,19 @@ where the model specifies $P(\bar t, \bar a \mid \bar s)$ but not $P(\bar t \mid
 **Example.** In a graphical model, a variable's Markov blanket typically consists of its direct "parents," its direct "children," and any other variables that share a child with it (its "co-parents"). Once you already know all of these specific, directly connected variables, learning about anything else, further away, in the graph tells you absolutely nothing new about that original variable.
 
 **AI/ML Usage**: The Markov blanket concept is central to understanding and efficiently working with Bayesian networks and other graphical models — it's also directly relevant to feature selection in machine learning, since a variable's Markov blanket is, in a precise theoretical sense, exactly the minimal, complete set of features that are actually needed to predict it as accurately as possible.
+
+---
+
+<a id="markov-decision-process-mdp"></a>
+### Markov Decision Process (MDP)
+
+**The Big Idea**: Think of a board game described by a rulebook: a list of positions, a list of moves, what each move does, and a score. An MDP is that rulebook written as a mathematical object, with one extension: what a move does may be partly random. It builds on the Markov Model entry (the next step depends only on the present) and adds choices (actions) and a score (rewards).
+
+**General Usage**: An MDP is a tuple (see the Tuple Notation entry in the math_symbols file) $M = \langle S, A, T, R, s_0, s_g \rangle$ made of: a state space $S$ (a set of all situations the system can be in; it may be infinite), an action space $A$ (a set of all actions it can take, not necessarily all available in every state), a transition function $T$ (see the Transition Function (MDP) entry in the math_symbols file), a reward function $R$ (see the Reward Function entry in the math_symbols file), an initial state $s_0$, and a goal state $s_g$. A further ingredient, a discount factor (see the Gamma entry in the math_symbols file), is added when rewards are summed over time. The Markov assumption is built in: the next state and the reward depend only on the latest state and action. After an action is taken the resulting single state is observed, so the outcome is random beforehand and known afterward. The solution of an MDP is a policy (see the Plan vs. Policy entry).
+
+**Example.** Planning on an unweighted graph as an MDP: $S$ is the set of vertices, $A$ is the set of edges, $T$ moves deterministically from one vertex to the next, and $R$ is $-1$ for every state other than the goal and $+1$ for the goal. The optimal behavior is to reach the goal in as few steps as possible, since each step away from the goal costs $-1$ and staying at the goal earns $+1$. On a weighted graph, replace the reward by $-c_i$ for traversing edge $e_i$, $0$ for other states, and a very large positive number for the goal; the optimal behavior is then the lowest-cost path.
+
+**AI/ML Usage**: MDPs are the standard mathematical model of reinforcement learning (a branch of AI in which a program learns by trial and error from rewards) and of planning under uncertainty in robotics and self-driving vehicles. Algorithms such as Q-learning (see the Q-Function entry in the math_symbols file) are defined on MDPs.
 
 ---
 
@@ -5791,6 +5997,19 @@ The planner picks plan B because $11 > 7$, and executes only its first action, $
 
 ---
 
+<a id="optimal-substructure"></a>
+### Optimal Substructure
+
+**The Big Idea**: If a trip is the cheapest overall, then every leg after the first stop must be the cheapest way to finish from that stop. Otherwise swap in the cheaper ending.
+
+**General Usage**: A problem has optimal substructure when an optimal solution contains optimal solutions to its smaller sub-problems. The proof is by contradiction: a better sub-solution would improve the whole.
+
+**Example.** A plan has total reward $R_0 + \text{tail}$. If a different tail from the same state had a larger sum, replacing it would raise the total above the supposed optimum, a contradiction. So the tail is optimal.
+
+**AI/ML Usage**: It is why dynamic programming and the Bellman equation work.
+
+---
+
 <a id="oracle-derivation"></a>
 ### Oracle Derivation
 
@@ -5883,6 +6102,28 @@ The planner picks plan B because $11 > 7$, and executes only its first action, $
 **Example.** The question "What event led to WW1?" is parsed so that "led" has two dependents: the unknown $X$ and "to WW1". The passage sentence "The assassination of Franz Ferdinand led to WW1" is parsed so that "led" has a dependent "to WW1" and a dependent subtree headed by "assassination" (with "The" and "of ..." hanging from it). Comparing the two, $X$ is bound to the "assassination" subtree, giving the answer. If the passage instead says "caused", the word match with "led" fails and the method no longer works.
 
 **AI/ML Usage**: This is one of two simple baselines used to motivate neural reading comprehension models, the other being the Sliding Window Baseline (Reading Comprehension) entry. Both depend on word match, so both fail when the passage paraphrases the question, which neural models are meant to handle.
+
+---
+
+<a id="partially-observable-markov-decision-process-pomdp"></a>
+### Partially Observable Markov Decision Process (POMDP)
+
+**The Big Idea**: A Markov decision process (see the Markov Decision Process (MDP) entry) is a model of an agent that always knows exactly what state the world is in. A POMDP removes that comfort: the agent only receives noisy, possibly incomplete readings. It goes beyond Algebra 2 because the agent must reason with probabilities about a quantity it cannot see; the Belief-Space Planning and Observation Likelihood Model entries are the right things to read next.
+
+**General Usage**: A POMDP is the tuple $M = \langle S, A, O, T, Z, R\rangle$ (see the Tuple Notation entry in the math_symbols file):
+
+1. $S$, the state space: every state the world can be in.
+2. $A$, the action space: every action the agent can take.
+3. $O$, the observation space (see the Observation Space entry in the math_symbols file).
+4. $T$, the transition function $p(s_{t+1} \mid s_t, a_t)$: how likely each next state is.
+5. $Z$, the observation function $p(o_t \mid s_t, a_{t-1})$ (see the Observation Function entry in the math_symbols file).
+6. $R$, the reward function $R(s_t, a_t, s_{t+1})$: a number scoring each outcome.
+
+Compared with an MDP, the additions are $O$ and $Z$. Action outcomes are probabilistic, and the state outcome is not known; only a noisy observation of it is made. Observations may be noisy (corrupted by error) and partial (revealing only some aspects of the state).
+
+**Example.** Count the components. An MDP is $\langle S, A, T, R\rangle$, which has $4$ components. A POMDP adds $O$ and $Z$, giving $4 + 2 = 6$ components, matching $\langle S, A, O, T, Z, R\rangle$. A vehicle whose state has four degrees of freedom and whose sensor reveals only three of them has an observation that is both partial (one quantity missing) and, if the three readings carry error, noisy.
+
+**AI/ML Usage**: POMDPs are the standard model for decision making when sensing is imperfect: a self-driving car estimating where it is from laser readings, a robot choosing actions while unsure of its position, or a dialogue system unsure what a user wants. Solving a POMDP means choosing actions from what has been observed, usually by tracking a belief about the state (see the Belief-Space Planning entry).
 
 ---
 
@@ -6122,6 +6363,32 @@ As the error shrinks, the proportional and derivative terms shrink or turn negat
 
 ---
 
+<a id="piecewise-linear-function"></a>
+### Piecewise Linear Function
+
+**The Big Idea**: Algebra 2 piecewise functions and absolute value graphs, which are straight segments joined at corners.
+
+**General Usage**: A function made of straight-line segments, each valid on its own interval.
+
+**Example.** The maximum of $100 - 200p$ and $-50 + 150p$ equals $100 - 200p$ for $p \le 3/7$ and $-50 + 150p$ for $p \ge 3/7$.
+
+**AI/ML Usage**: The optimal value function of a POMDP over beliefs is piecewise linear.
+
+---
+
+<a id="plan-vs-policy"></a>
+### Plan vs. Policy
+
+**The Big Idea**: A plan is like a recipe: a fixed ordered list of steps. A policy is like a flowchart or a lookup table: "if you are here, do this." In Algebra 2 terms, a plan is a list $(a_1, a_2, \dots)$ and a policy is a function whose input is a state and whose output is an action (see the Function Mapping Arrow entry in the math_symbols file).
+
+**General Usage**: A **plan** is a sequence of actions. A **policy** is a function that maps each state to an action. When actions are deterministic, a plan is enough, since each step lands where expected. In an MDP the outcomes are random, so the same plan may not be executable or may not be optimal after a surprising outcome; the solution is therefore a policy. The procedure is: compute a policy, at each step act according to it, observe the outcome, and repeat.
+
+**Example.** On a four-by-four grid with a $+1$ in the top-right cell, the deterministic plan from the start cell is up, right, right, right. If the "up" action can fail and leave the robot where it started, the next action in the plan, "right", moves the robot into the obstacle beside the start cell. A policy avoids this because it is consulted again after every outcome: if the robot is still in the start cell, the policy again says "up".
+
+**AI/ML Usage**: In reinforcement learning the object being learned is a policy, usually written $\pi$. Robot navigation systems that replan or re-consult a policy after every observation rely on the same idea.
+
+---
+
 <a id="planner-completeness"></a>
 ### Planner Completeness
 
@@ -6150,6 +6417,19 @@ As the error shrinks, the proportional and derivative terms shrink or turn negat
 **Example.** Starting from $S_0=\{\text{At(Home)}\}$, level $A_0$ might include the action "Drive" (since its precondition, being at home, is already satisfied); level $S_1$ would then include both the original fact "At(Home)" (in case Drive isn't actually taken) and the new fact "At(Work)" (in case it is) — the graph keeps expanding this way, level after level, tracking every combination of facts and actions that remains reachable.
 
 **AI/ML Usage**: The planning graph structure is the core data structure that GraphPlan (see that entry) is built directly around — its layered structure, especially combined with the mutex relationships computed at each level, lets a planner efficiently rule out enormous numbers of clearly impossible action sequences well before ever needing to search through them individually one at a time.
+
+---
+
+<a id="planning-horizon"></a>
+### Planning Horizon
+
+**The Big Idea**: Like a count of turns left in a game, an integer you can add and compare.
+
+**General Usage**: The horizon $H$ is the number of actions the agent will take before the process ends. With $H=1$ the agent takes one action and is done, so observations cannot help.
+
+**Example.** With $H = 1$ the best action at belief $3/7$-ish is whichever reward line is highest there. With $H > 1$ the agent may first take a sensing action and act later.
+
+**AI/ML Usage**: Longer horizons give higher value in POMDPs because more observations can be gathered before committing.
 
 ---
 
@@ -6187,6 +6467,56 @@ and the conversion back is $r = \sqrt{x^2 + y^2}$, with $\theta$ the angle whose
 4. Check by converting back: $r = \sqrt{8.66^2 + 5^2} = \sqrt{75.0 + 25} = \sqrt{100.0} = 10$, as it should be.
 
 **AI/ML Usage**: Range sensors report in polar form: a laser scanner gives a distance for each beam angle (see the LIDAR (Laser Range Finder) entry), and a robot's software converts each reading with $x = r\cos\theta$, $y = r\sin\theta$ to get the positions of detected obstacles. Radar and sonar data are handled the same way before being passed to mapping, localization, or object-detection algorithms.
+
+---
+
+<a id="policy-evaluation"></a>
+### Policy Evaluation
+
+**The Big Idea**: In Algebra 2, evaluating a function means plugging in an input and computing the output. Policy evaluation is the same: the "function" is a fixed policy (a rule giving the action to take in each state), and the "output" is how much total reward that policy earns from each state.
+
+**General Usage**: Policy evaluation computes the value function $V^\pi$ of a given policy $\pi$ (see the Value of a Fixed Policy entry in the math_symbols file). It can be done iteratively, starting from $V^\pi_0(s)=0$ and repeating
+$$
+V^\pi_{i+1}(s)=\sum_{s'}T(s,\pi(s),s')\big[R(s,\pi(s),s')+\gamma V^\pi_i(s')\big]
+$$
+until the values stop changing, or it can be done directly by solving the linear system obtained when the iteration index is dropped (see the System of Linear Equations entry). Unlike the Bellman update there is no maximum over actions, because the policy has already chosen the action.
+
+**Example.** One state $s$, one action ("stay") with reward $1$ and probability $1$ of returning to $s$, and $\gamma=0.5$. Iterating from $V_0=0$:
+
+| Iteration $i$ | $V_{i+1}=1\cdot[1+0.5\,V_i]$ | Value |
+|---|---|---|
+| 0 | $1+0.5(0)$ | $1$ |
+| 1 | $1+0.5(1)$ | $1.5$ |
+| 2 | $1+0.5(1.5)$ | $1.75$ |
+| 3 | $1+0.5(1.75)$ | $1.875$ |
+
+The values approach $2$. Direct check by solving $V=1+0.5V$: subtracting $0.5V$ gives $0.5V=1$, so $V=2$.
+
+**AI/ML Usage**: Policy evaluation is the first half of every round of the Policy Iteration algorithm (see that entry). Solving it as a linear system instead of iterating is what makes policy iteration fast in practice.
+
+---
+
+<a id="policy-iteration"></a>
+### Policy Iteration
+
+**The Big Idea**: Think of improving a recipe by tasting. First you cook with the current recipe and record how it tastes everywhere (evaluate), then you change any ingredient that a quick comparison shows could be better (improve), and you repeat until no change helps. Policy iteration does this with a decision rule (a policy) instead of a recipe.
+
+**General Usage**: Policy iteration finds the optimal policy for a Markov decision process (see the Markov Decision Process entry) by repeating two steps until the policy stops changing:
+
+1. **Policy evaluation:** compute the value function $V$ of the current policy (see the Policy Evaluation entry).
+2. **Policy improvement:** in every state $s$, replace the policy's action by $\arg\max_a\sum_{s'}T(s,a,s')\big[R(s,a,s')+\gamma V(s')\big]$ whenever that differs from the current action (see the Arg Min / Arg Max entry in the math_symbols file).
+
+It starts from a random policy. When a full pass changes no action, the policy and its value function are both optimal. With finitely many states and actions there are finitely many policies, so it stops in a finite number of rounds.
+
+**Example.** The loop on a two-state skeleton, using only the control flow (no numbers needed for the logic):
+
+| Round | Evaluation produces | Improvement pass | Changed? |
+|---|---|---|---|
+| 1 | $V$ for the random policy | some states switch to a better action | yes, continue |
+| 2 | $V$ for the new policy | fewer states switch | yes, continue |
+| 3 | $V$ for the newest policy | no state switches | no, stop: policy is optimal |
+
+**AI/ML Usage**: Policy iteration is a classic exact solver for Markov decision processes with known transition and reward tables, and is typically faster than value iteration because it often settles on the best actions before the values have fully converged. Modern reinforcement learning methods such as actor-critic (a learner that alternates between estimating values and improving the policy) follow the same evaluate-then-improve pattern.
 
 ---
 
@@ -6540,8 +6870,6 @@ Now two dimensions, with $\sigma_x = 2$ and $\sigma_y = 1$, on the contour where
 
 ---
 
----
-
 <a id="pure-pursuit"></a>
 ### Pure Pursuit
 
@@ -6875,6 +7203,19 @@ Shifting probability from the low-reward response C to the high-reward response 
 Had the comparison gone the other way (proposed cost not lower than the recorded one), $G$'s cost and parent would have been left unchanged — relaxation only ever *improves* a recorded cost, never worsens it.
 
 **AI/ML Usage**: Relaxation is the core repeated operation inside Dijkstra's Algorithm (see that entry) and inside A* search. Since every edge in the graph is relaxed at most a small, bounded number of times, the total number of relaxations performed is $O(|E|)$ — one of the two quantities (together with the number of Priority Queue extractions) whose sum determines these algorithms' overall running time.
+
+---
+
+<a id="replanning-at-every-step"></a>
+### Replanning at Every Step
+
+**The Big Idea**: Like re-solving a maze from wherever you stand each time you take a step, instead of memorizing a route at the start.
+
+**General Usage**: Replanning means running the planning computation again at every time step, from the state actually reached, and executing only the first action. It copes with unexpected outcomes but repeats the computation every step. A policy computed once avoids that repeated work, because it already says what to do in every state.
+
+**Example.** An agent plans "up, right, right, right," takes "up," and finds it did not move. Replanning produces a new plan from the cell where it is. A policy simply looks up that cell.
+
+**AI/ML Usage**: Robot navigation systems that recompute a path from every new sensor reading use this idea (see the Optimal Receding-Horizon Local Planning entry).
 
 ---
 
@@ -7514,6 +7855,19 @@ At $n=8$ the saving is modest, but at $n=1{,}000$ full attention already require
 
 ---
 
+<a id="stationary-policy"></a>
+### Stationary Policy
+
+**The Big Idea**: In Algebra 2 a function gives one output for each input, regardless of anything else. A stationary policy is a function of that kind for decision making: the action it picks depends only on the current situation, never on the clock.
+
+**General Usage**: A policy is a rule that says which action to take in each state. A policy is stationary if it depends only on the state, written $\pi(s)$, and not on how many steps remain or how many have passed. Problems with a fixed finite number of steps usually need a time-dependent policy, since the best action can change as the end approaches. When the number of remaining steps is unlimited, one step taken leaves unlimited steps remaining, so the situation facing the agent depends only on where it is, and an optimal stationary policy exists.
+
+**Example.** Take a policy that says "in cell A move right; in cell B move up". It gives the same instruction whether it is the first step or the hundredth, so it is stationary. A policy that says "in cell A move right if more than $3$ steps remain, otherwise move up" depends on the number of steps remaining, so it is not stationary.
+
+**AI/ML Usage**: Most reinforcement learning algorithms for long-running tasks (Q-learning, policy gradient methods) search for a stationary policy $\pi(s)$, because with an unlimited horizon the best behavior does not need to depend on time. The result of value iteration with an unlimited horizon is such a policy.
+
+---
+
 <a id="statistical-independence"></a>
 ### Statistical Independence
 
@@ -7717,6 +8071,30 @@ So the trained classifier is $f(x)=\tfrac23x-\tfrac13$, giving a decision bounda
 
 ---
 
+<a id="system-of-linear-equations"></a>
+### System of Linear Equations
+
+**The Big Idea**: In Algebra 2 you solved two equations in two unknowns, such as $x+y=5$ and $x-y=1$. A system of linear equations is that same idea with any number of unknowns: each unknown appears only to the first power and is never multiplied by another unknown.
+
+**General Usage**: A set of $n$ equations in $n$ unknowns $x_1,\dots,x_n$ of the form
+$$
+a_{i1}x_1+a_{i2}x_2+\cdots+a_{in}x_n=b_i,\qquad i=1,\dots,n,
+$$
+where the $a_{ij}$ and $b_i$ are known numbers. If the equations are independent, there is exactly one solution, found by substitution or elimination, or by a numerical linear solver for large systems.
+
+**Example.** Solve $x+y=5$ and $x-y=1$.
+
+| Step | Work |
+|---|---|
+| 1 | Add the two equations: $2x=6$ |
+| 2 | Divide by $2$: $x=3$ |
+| 3 | Substitute into $x+y=5$: $3+y=5$, so $y=2$ |
+| 4 | Check the second equation: $3-2=1$ |
+
+**AI/ML Usage**: Evaluating a fixed policy in a Markov decision process gives one linear equation per state, because $V^\pi(s)=\sum_{s'}T(s,\pi(s),s')[R+\gamma V^\pi(s')]$ has no maximum in it. The unknowns are the values $V^\pi(s)$, so a linear solver (such as the Eigen library on a CPU or a CUDA solver on a graphics processor) can compute the policy's value function exactly instead of iterating.
+
+---
+
 <a id="t5"></a>
 ### T5
 
@@ -7816,6 +8194,32 @@ Notice that even if the model had incorrectly predicted, say, "cat" instead of "
 **Example.** A single color image is naturally represented as a 3-dimensional tensor: height, width, and color channel (red, green, blue) — and a whole batch of, say, 32 such images together forms a 4-dimensional tensor, adding one further dimension specifically for "which image in the batch."
 
 **AI/ML Usage**: Virtually all modern deep learning software is fundamentally built directly around tensors — every input, every intermediate computed value, and every one of a neural network's parameters is represented as a tensor, and the specialized hardware (GPUs and TPUs) that trains these networks is specifically, purpose-built for doing extremely fast, large-scale tensor computations.
+
+---
+
+<a id="terminal-action"></a>
+### Terminal Action
+
+**The Big Idea**: Like a final answer on an exam: once submitted, the process ends.
+
+**General Usage**: An action after which the agent exits and no further actions are allowed.
+
+**Example.** Actions $u_1$ and $u_2$ in a two-state example are terminal, with payoffs such as $-100$ or $+100$. Action $u_3$ is not terminal and costs $-1$.
+
+**AI/ML Usage**: In POMDP planning, the choice between a terminal action now and an information-gathering action first is the core tradeoff.
+
+---
+
+<a id="terminal-state"></a>
+### Terminal State
+
+**The Big Idea**: The finish line of a game: once you cross it, play stops.
+
+**General Usage**: A state after which no more actions are possible. One way to model it: every action from a terminal state leads to an undefined state that has no value.
+
+**Example.** In the grid world the cells with rewards $+1$ and $-1$ are terminal; the run ends on entering either.
+
+**AI/ML Usage**: Episodic reinforcement learning tasks (games, navigation) end in terminal states.
 
 ---
 
@@ -8170,6 +8574,62 @@ Although $95\%$ of the scan matches the map perfectly, the five blocked rays alo
 **Example.** If a parser assigns the correct head to 61 of 100 words, the score is $\frac{61}{100} = 61\%$.
 
 **AI/ML Usage**: It is the standard measure for comparing dependency parsers, including those transferred across languages, where accuracies near 61 percent are reported for direct transfer with correct tags.
+
+---
+
+<a id="value-iteration"></a>
+### Value Iteration
+
+**The Big Idea**: In Algebra 2 you build a sequence by starting with $a_1$ and repeatedly applying a rule, getting $a_2$ from $a_1$, $a_3$ from $a_2$, and so on. Value iteration does exactly this with a whole table of numbers, using the Bellman equation as the rule (see the Bellman Equation entry in the math_concepts file) and a table of zeros as the starting point. It is a form of dynamic programming (see the Dynamic Programming entry in the math_concepts file).
+
+**General Usage**: Value iteration computes the optimal value of every state of a Markov decision process, where the value of a state is the best expected total reward achievable from it.
+
+1. Set $V_0^*(s) = 0$ for every state $s$. With no steps left, no reward can be collected.
+2. For each round $i = 1, 2, \dots$ and for every state $s$, compute $V^*_{i+1}(s) = \max_a \sum_{s'} T(s,a,s')[R(s,a,s') + \gamma V^*_i(s')]$.
+3. The old table $V_i^*$ is only read and the new table $V^*_{i+1}$ is only written, so every state's update sees the same old numbers.
+
+After $H$ rounds the table is the exact optimal value function for a horizon (number of steps) of $H$. The action that achieves the maximum in each state is the optimal policy.
+
+**Example.** One state $s$ has one action. With probability $0.8$ it moves to a terminal cell and earns reward $+1$ on that move; the terminal cell itself has value $0$ because nothing more is earned there. With probability $0.2$ it stays in $s$ with reward $0$. Take $\gamma = 0.9$.
+
+| Round | Computation | $V_i^*(s)$ |
+|---|---|---|
+| $0$ | start | $0$ |
+| $1$ | $0.8\times[1 + 0.9\times 0] + 0.2\times[0 + 0.9\times 0]$ | $0.8$ |
+| $2$ | $0.8\times[1 + 0.9\times 0] + 0.2\times[0 + 0.9\times 0.8]$ | $0.944$ |
+
+In round 2 the stay outcome is valued with the previous round's table, $V_1^*(s) = 0.8$, so $0.2\times 0.9\times 0.8 = 0.144$ and $0.8 + 0.144 = 0.944$. The values keep rising toward a limit; the update rule is the whole algorithm.
+
+**AI/ML Usage**: Value iteration is a basic planning algorithm in reinforcement learning (learning to act by trial, error, and reward) and in robotics, used when a model of the transition probabilities and rewards is known. Because it converges asymptotically (see the Asymptotic Convergence entry in the math_concepts file), it is run until the table stops changing by more than a small tolerance. Sampling-based methods such as Q-learning are its model-free relatives.
+
+---
+
+<a id="value-iteration-convergence-bound"></a>
+### Value Iteration Convergence Bound
+
+**The Big Idea**: In Algebra 2 you solved exponential inequalities such as $0.5^N\le0.01$ by taking logarithms to bring the exponent $N$ down. This entry is that technique applied to the error of value iteration: the error shrinks by a factor $\gamma$ each step, so the number of steps needed to reach a target error comes from solving for the exponent.
+
+**General Usage**: With discount factor $0\le\gamma<1$ and largest one-step reward magnitude $R_{\max}$ (see the Maximum Reward Magnitude entry in the math_symbols file), the error of value iteration after $N$ updates satisfies
+$$
+\lVert V^*-V_N\rVert\le\gamma^N\,\frac{2R_{\max}}{1-\gamma}.
+$$
+To guarantee an error of at most $\epsilon$, require $\gamma^N\frac{2R_{\max}}{1-\gamma}\le\epsilon$. Taking logs and dividing by $\log\gamma$ (which is negative, so the inequality reverses) gives
+$$
+N\ge\frac{\log\!\Big(\dfrac{\epsilon(1-\gamma)}{2R_{\max}}\Big)}{\log\gamma}.
+$$
+
+**Example.** Verify the formula on easy numbers: take $\gamma=0.5$, $R_{\max}=1$, and $\epsilon=0.25$.
+
+| Step | Work |
+|---|---|
+| 1 | Starting error bound: $\frac{2R_{\max}}{1-\gamma}=\frac{2}{0.5}=4$ |
+| 2 | Need $0.5^N\cdot4\le0.25$, i.e. $0.5^N\le0.0625$ |
+| 3 | Since $0.5^4=0.0625$, the smallest whole $N$ is $4$ |
+| 4 | Formula: $\frac{\epsilon(1-\gamma)}{2R_{\max}}=\frac{0.25\cdot0.5}{2}=0.0625$, and $\frac{\log0.0625}{\log0.5}=\frac{-4\log2}{-\log2}=4$ |
+
+Both routes give $N=4$.
+
+**AI/ML Usage**: This formula tells an engineer how many sweeps of value iteration to run before the computed values are guaranteed to be within a chosen tolerance of the best possible values. It shows that the number of sweeps grows only logarithmically as the tolerance $\epsilon$ shrinks, but grows quickly as $\gamma$ approaches $1$ (far-sighted planning).
 
 ---
 

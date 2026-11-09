@@ -7,56 +7,60 @@ This document is written for MSAI students who are strong, capable learners movi
 
 ## Contents
 
-All 244 entries, alphabetical. Read down the first column, then down the second, then down the third.
+All 264 entries, alphabetical. Read down the first column, then down the second, then down the third.
 
-| Absolute Value to Hat Notation | Hessian Matrix to Predicted Mean and Covariance | Prime Notation to Zero-One Loss |
+| Absolute Value to Hessian Matrix | Heuristic Function to Predicted and Corrected Superscripts | Predicted Belief to Zero-One Loss |
 |---|---|---|
-| [Absolute Value](#absolute-value) | [Hessian Matrix](#hessian-matrix) | [Prime Notation](#prime-notation) |
-| [Action Space](#action-space) | [Heuristic Function](#heuristic-function) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
-| [Activation Function](#activation-function) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Probability / Probability Density](#probability-probability-density) |
-| [Adjacency Matrix](#adjacency-matrix) | [Hypothesis](#hypothesis) | [Probability Simplex](#probability-simplex) |
-| [Admissible Heuristic](#admissible-heuristic) | [Identity Matrix](#identity-matrix) | [Process and Observation Noise Covariances](#process-and-observation-noise-covariances) |
-| [Alignment Model Distribution](#alignment-model-distribution) | [If and Only If](#if-and-only-if) | [Process Noise](#process-noise) |
-| [All-Ones Vector](#all-ones-vector) | [Implies Arrow](#implies-arrow) | [Product Notation](#product-notation) |
-| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Importance Weight](#importance-weight) | [Progress Radius](#progress-radius) |
-| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Index Range Colon](#index-range-colon) | [Proportional To](#proportional-to) |
-| [Approximately Equal](#approximately-equal) | [Infinity](#infinity) | [Pseudo-Inverse](#pseudo-inverse) |
-| [Arg Min / Arg Max](#arg-min-arg-max) | [Initial Distribution](#initial-distribution) | [Psi, uppercase](#psi-uppercase) |
-| [Assignment Arrow](#assignment-arrow) | [Initial State](#initial-state) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
-| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Innovation](#innovation) | [Query, Key, and Value](#query-key-and-value) |
-| [Attention Operator](#attention-operator) | [Integral](#integral) | [Question-Mark Relation](#question-mark-relation) |
-| [Ball of Radius r](#ball-of-radius-r) | [Intermediate-Goal Heading](#intermediate-goal-heading) | [Real Coordinate Space](#real-coordinate-space) |
-| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Real Numbers](#real-numbers) |
-| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Receptive Field](#receptive-field) |
-| [Best Solution Cost](#best-solution-cost) | [Kalman Gain](#kalman-gain) | [Regression Function](#regression-function) |
-| [Beta](#beta) | [Kernel / Kernel Size](#kernel-kernel-size) | [ReLU](#relu) |
-| [Bias Term](#bias-term) | [Label](#label) | [Rotation Matrix](#rotation-matrix) |
-| [Big-O Notation](#big-o-notation) | [Label Space](#label-space) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
-| [Binary Label Set](#binary-label-set) | [Lambda Abstraction](#lambda-abstraction) | [Sample Mean Overbar](#sample-mean-overbar) |
-| [Binomial Coefficient](#binomial-coefficient) | [Lambda, lowercase](#lambda-lowercase) | [Sample Space](#sample-space) |
-| [Block Matrix Notation](#block-matrix-notation) | [Lambda, uppercase](#lambda-uppercase) | [Sampling Notation](#sampling-notation) |
-| [Blocks World](#blocks-world) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [Scoring Function](#scoring-function) |
-| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
-| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Learning Rate](#learning-rate) | [Segment Embedding](#segment-embedding) |
-| [Cartesian Product](#cartesian-product) | [Less Than or Equal](#less-than-or-equal) | [Sentinel Token](#sentinel-token) |
-| [Chart Score](#chart-score) | [Limit](#limit) | [Set Braces](#set-braces) |
-| [CLS Token](#cls-token) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
-| [Concept Class](#concept-class) | [Logarithm](#logarithm) | [Set Difference](#set-difference) |
-| [Conditional Bar](#conditional-bar) | [Logical Negation](#logical-negation) | [Set Intersection](#set-intersection) |
-| [Configuration Space](#configuration-space) | [Logistic Function](#logistic-function) | [Set Union](#set-union) |
-| [Conjunction / Logical AND](#conjunction-logical-and) | [Loss Function](#loss-function) | [Sigma, lowercase](#sigma-lowercase) |
-| [Connection Radius Constant](#connection-radius-constant) | [Margin](#margin) | [Sigma, uppercase](#sigma-uppercase) |
-| [Control Matrix](#control-matrix) | [Mask Token](#mask-token) | [Sigmoid Function](#sigmoid-function) |
-| [Cosine Similarity](#cosine-similarity) | [Matrix](#matrix) | [Sign Function](#sign-function) |
-| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix Entry](#matrix-entry) | [Sine and Cosine](#sine-and-cosine) |
-| [Covariance](#covariance) | [Matrix Inverse](#matrix-inverse) | [Softmax Function](#softmax-function) |
-| [Cross-Covariance](#cross-covariance) | [Matrix Transpose](#matrix-transpose) | [Softplus / Soft ReLU](#softplus-soft-relu) |
-| [Curvature (Path)](#curvature-path) | [Max Function](#max-function) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
-| [Data Distribution](#data-distribution) | [Mean](#mean) | [Split Point](#split-point) |
-| [Dataset](#dataset) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Stack Notation](#stack-notation) |
-| [Delta, lowercase](#delta-lowercase) | [Min Function](#min-function) | [Standard Deviation](#standard-deviation) |
-| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Mistake Bound](#mistake-bound) | [Start-of-Sentence Token](#start-of-sentence-token) |
-| [Dimension / Count Variables](#dimension-count-variables) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
+| [Absolute Value](#absolute-value) | [Heuristic Function](#heuristic-function) | [Predicted Belief](#predicted-belief) |
+| [Action Space](#action-space) | [Hold-Out Set / Validation Set](#hold-out-set-validation-set) | [Predicted Mean and Covariance](#predicted-mean-and-covariance) |
+| [Activation Function](#activation-function) | [Horizon-T Value Function](#horizon-t-value-function) | [Prime Notation](#prime-notation) |
+| [Adjacency Matrix](#adjacency-matrix) | [Hypothesis](#hypothesis) | [Probabilistic Completeness Bound](#probabilistic-completeness-bound) |
+| [Admissible Heuristic](#admissible-heuristic) | [Identity Matrix](#identity-matrix) | [Probability / Probability Density](#probability-probability-density) |
+| [Alignment Model Distribution](#alignment-model-distribution) | [If and Only If](#if-and-only-if) | [Probability Simplex](#probability-simplex) |
+| [All-Ones Vector](#all-ones-vector) | [Implies Arrow](#implies-arrow) | [Process and Observation Noise Covariances](#process-and-observation-noise-covariances) |
+| [Alpha / Slope Hyperparameter](#alpha-slope-hyperparameter) | [Importance Weight](#importance-weight) | [Process Noise](#process-noise) |
+| [Alpha-Beta Pruning Bounds](#alpha-beta-pruning-bounds) | [Index Range Colon](#index-range-colon) | [Product Notation](#product-notation) |
+| [Approximately Equal](#approximately-equal) | [Infinity](#infinity) | [Progress Radius](#progress-radius) |
+| [Arg Min / Arg Max](#arg-min-arg-max) | [Initial Distribution](#initial-distribution) | [Proportional To](#proportional-to) |
+| [Assignment Arrow](#assignment-arrow) | [Initial State](#initial-state) | [Pseudo-Inverse](#pseudo-inverse) |
+| [Asterisk for Optimal Value](#asterisk-for-optimal-value) | [Innovation](#innovation) | [Psi, uppercase](#psi-uppercase) |
+| [Attention Operator](#attention-operator) | [Integral](#integral) | [Q-Function (Action-Value Function)](#q-function-action-value-function) |
+| [Ball of Radius r](#ball-of-radius-r) | [Intermediate-Goal Heading](#intermediate-goal-heading) | [Query, Key, and Value](#query-key-and-value) |
+| [Belief](#belief) | [Inverse Hessian](#inverse-hessian) | [Question-Mark Relation](#question-mark-relation) |
+| [Belief over the Full History](#belief-over-the-full-history) | [Jacobian](#jacobian) | [Real Coordinate Space](#real-coordinate-space) |
+| [Belief Reward](#belief-reward) | [Kalman Gain](#kalman-gain) | [Real Numbers](#real-numbers) |
+| [Bellman Operator](#bellman-operator) | [Kernel / Kernel Size](#kernel-kernel-size) | [Receptive Field](#receptive-field) |
+| [Best Solution Cost](#best-solution-cost) | [Label](#label) | [Regression Function](#regression-function) |
+| [Beta](#beta) | [Label Space](#label-space) | [ReLU](#relu) |
+| [Bias Term](#bias-term) | [Lambda Abstraction](#lambda-abstraction) | [Reward Function](#reward-function) |
+| [Big-O Notation](#big-o-notation) | [Lambda, lowercase](#lambda-lowercase) | [Reward Function (POMDP)](#reward-function-pomdp) |
+| [Binary Label Set](#binary-label-set) | [Lambda, uppercase](#lambda-uppercase) | [Rotation Matrix](#rotation-matrix) |
+| [Binomial Coefficient](#binomial-coefficient) | [Latent Feature Vector / Latent Feature Space](#latent-feature-vector-latent-feature-space) | [RRT* Neighborhood Radius](#rrt-neighborhood-radius) |
+| [Block Matrix Notation](#block-matrix-notation) | [Leaky ReLU / PReLU](#leaky-relu-prelu) | [Sample Mean Overbar](#sample-mean-overbar) |
+| [Blocks World](#blocks-world) | [Learning Rate](#learning-rate) | [Sample Space](#sample-space) |
+| [Boolean Cube / Bit-Vector Domain](#boolean-cube-bit-vector-domain) | [Less Than or Equal](#less-than-or-equal) | [Sampling Notation](#sampling-notation) |
+| [Branching Factor and Search Depth](#branching-factor-and-search-depth) | [Limit](#limit) | [Scoring Function](#scoring-function) |
+| [Cartesian Product](#cartesian-product) | [Literal, Grounded and Ungrounded](#literal-grounded-and-ungrounded) | [Script L / Calligraphic L](#script-l-calligraphic-l) |
+| [Chart Score](#chart-score) | [Logarithm](#logarithm) | [Segment Embedding](#segment-embedding) |
+| [CLS Token](#cls-token) | [Logical Negation](#logical-negation) | [Sentinel Token](#sentinel-token) |
+| [Concept Class](#concept-class) | [Logistic Function](#logistic-function) | [Set Braces](#set-braces) |
+| [Conditional Bar](#conditional-bar) | [Loss Function](#loss-function) | [Set Cardinality / Size of a Set](#set-cardinality-size-of-a-set) |
+| [Configuration Space](#configuration-space) | [Margin](#margin) | [Set Difference](#set-difference) |
+| [Conjunction / Logical AND](#conjunction-logical-and) | [Markov Assumption (Markov Property)](#markov-assumption-markov-property) | [Set Intersection](#set-intersection) |
+| [Connection Radius Constant](#connection-radius-constant) | [Markov Decision Process Tuple](#markov-decision-process-tuple) | [Set Union](#set-union) |
+| [Control Matrix](#control-matrix) | [Mask Token](#mask-token) | [Sigma, lowercase](#sigma-lowercase) |
+| [Cosine Similarity](#cosine-similarity) | [Matrix](#matrix) | [Sigma, uppercase](#sigma-uppercase) |
+| [Cost-to-Come and Cost-to-Go](#cost-to-come-and-cost-to-go) | [Matrix Entry](#matrix-entry) | [Sigmoid Function](#sigmoid-function) |
+| [Covariance](#covariance) | [Matrix Inverse](#matrix-inverse) | [Sign Function](#sign-function) |
+| [Cross-Covariance](#cross-covariance) | [Matrix Transpose](#matrix-transpose) | [Sine and Cosine](#sine-and-cosine) |
+| [Curvature (Path)](#curvature-path) | [Max Function](#max-function) | [Softmax Function](#softmax-function) |
+| [Data Distribution](#data-distribution) | [Max Norm of a Value Function](#max-norm-of-a-value-function) | [Softplus / Soft ReLU](#softplus-soft-relu) |
+| [Dataset](#dataset) | [Maximum Reward Magnitude](#maximum-reward-magnitude) | [Special Euclidean Group in 2D](#special-euclidean-group-in-2d) |
+| [Defined As](#defined-as) | [Mean](#mean) | [Split Point](#split-point) |
+| [Delta, lowercase](#delta-lowercase) | [Measure (Volume) of a Set](#measure-volume-of-a-set) | [Stack Notation](#stack-notation) |
+| [Delta, Uppercase / Time Step](#delta-uppercase-time-step) | [Min Function](#min-function) | [Standard Deviation](#standard-deviation) |
+| [Dimension / Count Variables](#dimension-count-variables) | [Mistake Bound](#mistake-bound) | [Start-of-Sentence Token](#start-of-sentence-token) |
+| [Dirac Delta Function](#dirac-delta-function) | [Model Parameters](#model-parameters) | [State Space](#state-space) |
 | [Disjunction / Logical OR](#disjunction-logical-or) | [Mu](#mu) | [State Transition Function](#state-transition-function) |
 | [Dot Product / Inner Product](#dot-product-inner-product) | [N-Gram](#n-gram) | [State Transition Matrix](#state-transition-matrix) |
 | [Element-of Symbol](#element-of-symbol) | [Nabla](#nabla) | [Step Size](#step-size) |
@@ -67,32 +71,34 @@ All 244 entries, alphabetical. Read down the first column, then down the second,
 | [Empty Set](#empty-set) | [Normal Distribution Notation](#normal-distribution-notation) | [Superscript Example Index](#superscript-example-index) |
 | [Epsilon](#epsilon) | [Not Equal](#not-equal) | [Tag Set](#tag-set) |
 | [Error Function](#error-function) | [Number Sign / Count](#number-sign-count) | [Tanh](#tanh) |
-| [Error Signal](#error-signal) | [Observation Matrix](#observation-matrix) | [TF-IDF](#tf-idf) |
-| [Eta](#eta) | [Observation Noise](#observation-noise) | [Theta](#theta) |
-| [Euclidean Norm](#euclidean-norm) | [Omega](#omega) | [Tilde Accent](#tilde-accent) |
-| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
-| [Evaluated-At Bar](#evaluated-at-bar) | [Outer Product](#outer-product) | [Training Set](#training-set) |
-| [Existential Quantifier](#existential-quantifier) | [Padding](#padding) | [Transition Matrix](#transition-matrix) |
-| [Expectation](#expectation) | [Parameterized Function / Model](#parameterized-function-model) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
-| [Factorial](#factorial) | [Parent Annotation Caret](#parent-annotation-caret) | [Uniform Distribution Notation](#uniform-distribution-notation) |
-| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Partial Derivative](#partial-derivative) | [Unit Ball Volume](#unit-ball-volume) |
-| [Floor Function](#floor-function) | [Partial Order](#partial-order) | [Unit Hypercube](#unit-hypercube) |
-| [Free Space](#free-space) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Universal Quantifier](#universal-quantifier) |
-| [Frobenius Norm](#frobenius-norm) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Unknown-Word Token](#unknown-word-token) |
-| [Function Composition](#function-composition) | [Perceptron Loss](#perceptron-loss) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
-| [Function Mapping Arrow](#function-mapping-arrow) | [Permutation](#permutation) | [Variance](#variance) |
-| [Gain](#gain) | [Phi, lowercase](#phi-lowercase) | [Vector](#vector) |
-| [Gamma](#gamma) | [Phi, uppercase](#phi-uppercase) | [Vector Overbar](#vector-overbar) |
-| [Gaussian CDF](#gaussian-cdf) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Projection](#vector-projection) |
-| [GeLU](#gelu) | [Plan Notation](#plan-notation) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
-| [Generalized Subtraction](#generalized-subtraction) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Viterbi Score](#viterbi-score) |
-| [Gini Index / Gini Function](#gini-index-gini-function) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
-| [Goal Set](#goal-set) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
-| [Gradient](#gradient) | [Potential Function](#potential-function) | [Word Alignment Variable](#word-alignment-variable) |
-| [Graph](#graph) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
-| [Greater Than / Less Than](#greater-than-less-than) | [Predicted and Corrected Superscripts](#predicted-and-corrected-superscripts) | [Zero-One Loss](#zero-one-loss) |
-| [Halfspace](#halfspace) | [Predicted Belief](#predicted-belief) |  |
-| [Hat Notation](#hat-notation) | [Predicted Mean and Covariance](#predicted-mean-and-covariance) |  |
+| [Error Signal](#error-signal) | [Observation Function](#observation-function) | [TF-IDF](#tf-idf) |
+| [Eta](#eta) | [Observation Matrix](#observation-matrix) | [Theta](#theta) |
+| [Euclidean Norm](#euclidean-norm) | [Observation Noise](#observation-noise) | [Tilde Accent](#tilde-accent) |
+| [Euler's Number / Exponential Function](#eulers-number-exponential-function) | [Observation Space](#observation-space) | [Time Derivative (Dot Notation)](#time-derivative-dot-notation) |
+| [Evaluated-At Bar](#evaluated-at-bar) | [Omega](#omega) | [Training Set](#training-set) |
+| [Existential Quantifier](#existential-quantifier) | [Optimal Cost / True Cost](#optimal-cost-true-cost) | [Transition Function (Probabilistic Outcomes of Actions)](#transition-function-probabilistic-outcomes-of-actions) |
+| [Expectation](#expectation) | [Optimal Policy](#optimal-policy) | [Transition Matrix](#transition-matrix) |
+| [Factorial](#factorial) | [Outer Product](#outer-product) | [Tree Probability under a PCFG](#tree-probability-pcfg) |
+| [Feature Extractor / Feature Function](#feature-extractor-feature-function) | [Padding](#padding) | [Tuple Notation](#tuple-notation) |
+| [Finite-Horizon Optimal Value and Policy](#finite-horizon-optimal-value-and-policy) | [Parameterized Function / Model](#parameterized-function-model) | [Uniform Distribution Notation](#uniform-distribution-notation) |
+| [Floor Function](#floor-function) | [Parent Annotation Caret](#parent-annotation-caret) | [Unit Ball Volume](#unit-ball-volume) |
+| [Free Space](#free-space) | [Partial Derivative](#partial-derivative) | [Unit Hypercube](#unit-hypercube) |
+| [Frobenius Norm](#frobenius-norm) | [Partial Order](#partial-order) | [Universal Quantifier](#universal-quantifier) |
+| [Function Composition](#function-composition) | [PDDL Variable Prefix](#pddl-variable-prefix) | [Unknown-Word Token](#unknown-word-token) |
+| [Function Mapping Arrow](#function-mapping-arrow) | [Penn Treebank Part-of-Speech Tags](#penn-treebank-part-of-speech-tags) | [Upper Confidence Bound (UCB1 / UCT)](#upper-confidence-bound-ucb1-uct) |
+| [Gain](#gain) | [Perceptron Loss](#perceptron-loss) | [Value of a Fixed Policy](#value-of-a-fixed-policy) |
+| [Gamma](#gamma) | [Permutation](#permutation) | [Value of a Policy](#value-of-a-policy) |
+| [Gaussian CDF](#gaussian-cdf) | [Phi, lowercase](#phi-lowercase) | [Variance](#variance) |
+| [GeLU](#gelu) | [Phi, uppercase](#phi-uppercase) | [Vector](#vector) |
+| [Generalized Subtraction](#generalized-subtraction) | [Pi, lowercase, as Population/Subgroup Label](#pi-lowercase-as-populationsubgroup-label) | [Vector Overbar](#vector-overbar) |
+| [Gini Index / Gini Function](#gini-index-gini-function) | [Plan Notation](#plan-notation) | [Vector Projection](#vector-projection) |
+| [Goal Set](#goal-set) | [Pointwise Mutual Information (PMI)](#pointwise-mutual-information-pmi) | [Vertex Set After n Samples](#vertex-set-after-n-samples) |
+| [Gradient](#gradient) | [Policy](#policy) | [Viterbi Score](#viterbi-score) |
+| [Graph](#graph) | [Positional Embedding](#positional-embedding) | [Vocabulary](#vocabulary) |
+| [Greater Than / Less Than](#greater-than-less-than) | [Positional Feature Function](#positional-feature-function) | [Weight Vector](#weight-vector) |
+| [Halfspace](#halfspace) | [Potential Function](#potential-function) | [Word Alignment Variable](#word-alignment-variable) |
+| [Hat Notation](#hat-notation) | [Precedence Relation](#precedence-relation) | [Word-Boundary Marker](#word-boundary-marker) |
+| [Hessian Matrix](#hessian-matrix) | [Predicted and Corrected Superscripts](#predicted-and-corrected-superscripts) | [Zero-One Loss](#zero-one-loss) |
 
 ## Symbols
 
@@ -380,6 +386,49 @@ On macOS: no special character; type the letters B, e, l normally and Shift+; fo
 5. Notice that no step added rows together: each history kept its own row. To recover the ordinary single-step belief, add the rows that end in the same cell: $\text{Bel}(x_2{=}\text{B}) \approx 0.642 + 0.071 = 0.713$. That adding-up is exactly the sum (or integral) that the single-step update needs and the full-history update does not.
 
 **AI/ML Usage**: The full-history belief is the quantity a particle filter is derived from. A particle filter is a method that represents a probability distribution by a collection of random samples called particles, each one a concrete guess at the state; keeping one set of particles per time step represents $\text{Bel}(x_{1:t})$, and the recursive rule above says each new set can be built from the previous set using only the motion model and the observation likelihood. The same trajectory distribution is the target in robot mapping methods such as FastSLAM and in smoothing, where the goal is to estimate the whole path taken and not only the present position.
+
+---
+
+<a id="belief-reward"></a>
+### Belief Reward — `r(b, u)`
+Symbol: lowercase r with two arguments, the belief $b$ and the action $u$.  
+On macOS: type the letters r, b and u.
+
+**The Big Idea**: An average weighted by probabilities, like a weighted average of two test scores in Algebra 2. Here the "scores" are the rewards of each state and the weights are how likely each state is.
+
+**General Usage**: For two states, $r(b,u) = p(x_1)\,r(x_1,u) + \bigl(1-p(x_1)\bigr)\,r(x_2,u)$. It is a linear function of $p(x_1)$, so its graph is a straight line.
+
+**Example.** With $r(x_1,u_1) = -100$ and $r(x_2,u_1) = 100$: $r(b,u_1) = p(x_1)(-100) + (1-p(x_1))(100) = 100 - 200\,p(x_1)$. At $p(x_1)=0$ this is $100$, and at $p(x_1)=1$ it is $-100$.
+
+**AI/ML Usage**: In POMDP planning, the maximum of these lines over the actions gives the one-step optimal value function (see the Horizon-T Value Function entry).
+
+---
+
+<a id="bellman-operator"></a>
+### Bellman Operator — `B`
+Symbol: B, the capital Latin letter B, written next to a value function as $BV$ ("B applied to V")  
+On macOS: type normally from the keyboard (in LaTeX, `B V_i`)
+
+**The Big Idea**: In Algebra 2 you met function notation, $f(x)$: a rule that takes an input and returns an output. The Bellman operator is the same idea, except that the input is itself a whole table of numbers (one value per state) and the output is another such table. Because the inputs and outputs are functions rather than single numbers, it is called an operator instead of a function.
+
+**General Usage**: Given a value function $V$ (a rule that assigns a number to every state $s$), the Bellman operator returns a new value function
+$$
+(BV)(s)=\max_a\sum_{s'}T(s,a,s')\big[R(s,a,s')+\gamma V(s')\big].
+$$
+Here $T(s,a,s')$ is the probability of ending in state $s'$ after taking action $a$ in state $s$, $R(s,a,s')$ is the reward received, and $\gamma$ is the discount factor between 0 and 1 (see the Gamma entry). One step of value iteration is written $V_{i+1}=BV_i$. The operator is a contraction by a factor of $\gamma$ (see the Contraction Mapping entry in the math_concepts file).
+
+**Example.** Take one state $s$ with two actions. Action 1 gives reward $1$ and returns to $s$ with probability $1$; action 2 gives reward $0$ and returns to $s$ with probability $1$. Let $\gamma=0.5$ and start from $V_0(s)=0$.
+
+| Step | Computation | Result |
+|---|---|---|
+| Action 1 term | $1\cdot[1+0.5\cdot V_0(s)]=1+0=1$ | $1$ |
+| Action 2 term | $1\cdot[0+0.5\cdot V_0(s)]=0$ | $0$ |
+| Maximum over actions | $\max(1,0)$ | $V_1(s)=1$ |
+| Apply $B$ again | action 1: $1+0.5\cdot1=1.5$; action 2: $0.5$; maximum | $V_2(s)=1.5$ |
+
+The sequence $0,1,1.5,\dots$ approaches $2$, which satisfies $2=1+0.5\cdot2$, so applying $B$ to it returns the same value.
+
+**AI/ML Usage**: Value iteration, the standard algorithm for solving a Markov decision process (a model of repeated decisions where each action has random outcomes), is nothing more than applying $B$ over and over until the values stop changing. Reinforcement learning methods such as Q-learning (learning from trial and error without knowing $T$ in advance) are built around sampled versions of the same update.
 
 ---
 
@@ -829,6 +878,21 @@ On macOS: open the character picker (Fn/🌐) and search "script capital d" and 
 
 ---
 
+<a id="defined-as"></a>
+### Defined As — `≜`
+Symbol: ≜, delta equal to (an equals sign with a small triangle above it). Lookalikes to watch out for: the plain equals sign `=`, the identical-to sign `≡`, and the colon-equals `:=`, which all mean nearly the same thing in different authors' writing.  
+On macOS: open the character picker (Fn/🌐) and search "delta equal to"
+
+**The Big Idea**: In Algebra 2 you write $f(x) = 2x + 3$ to introduce a function. The equals sign there is not a claim that something is already true; it is a decision about what the name $f(x)$ will mean. The symbol $\triangleq$ is the same idea written so that nobody can mistake it for an equation to be solved.
+
+**General Usage**: $A \triangleq B$ reads "$A$ is defined to be $B$". It introduces a new name or shorthand $A$ for the expression $B$. Nothing is being proved or solved; from this point on, $A$ and $B$ may be swapped freely.
+
+**Example.** Define $m(x) \triangleq \max(x, 0)$, the larger of $x$ and $0$. Then $m(5) = \max(5, 0) = 5$ and $m(-3) = \max(-3, 0) = 0$. The first line is a definition (it needed no proof); the next two lines are evaluations that follow from it.
+
+**AI/ML Usage**: Papers on reinforcement learning (training a program by trial, error, and reward) often write a quantity's definition with $\triangleq$. For example, the size of a value function $V$ (a table that stores how good each situation is) is defined as $\lVert V\rVert \triangleq \max_s \lvert V(s)\rvert$, the largest magnitude over all states $s$. The symbol warns the reader that the line introduces notation to be used later rather than stating a result.
+
+---
+
 <a id="delta-lowercase"></a>
 ### Delta, lowercase — `δ`
 Symbol: δ, Greek small letter delta  
@@ -879,6 +943,21 @@ On macOS: type normally from the keyboard
 **Example.** A sentence like "given $n$ data points, each with $d$ features, sorted into $k$ groups" is using three separate count variables at once: if there are $n=50$ students, each described by $d=4$ features (height, weight, age, grade), sorted into $k=3$ groups, then plugging in these specific numbers turns the abstract description into a concrete situation you can picture and compute with.
 
 **AI/ML Usage**: These letters appear in virtually every formula describing an ML model's size or a dataset's shape. A neural network layer is commonly described as mapping "$d$-dimensional input to $k$-dimensional output," and a paper proving a theoretical result about how much data an algorithm needs will typically express that answer as a formula in terms of $n$ (number of examples), $d$ (number of features), and similar count variables — understanding these letters is often necessary just to correctly parse the notation in an ML paper or textbook, even before understanding the actual math being described.
+
+---
+
+<a id="dirac-delta-function"></a>
+### Dirac Delta Function — `δ(x)`
+Symbol: δ, lowercase Greek letter delta, used as a function; the version for discrete outcomes is sometimes called a delta function or point mass  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter delta"
+
+**The Big Idea**: Algebra 2 has no direct counterpart, but the idea is simple: a probability distribution that puts all of its probability on one value, so there is no randomness left. It is the "certainty" end of the Probability / Probability Density entry.
+
+**General Usage**: For discrete outcomes, a delta distribution gives probability $1$ to one particular outcome $c$ and $0$ to all others. For continuous outcomes, the Dirac delta $\delta(x - c)$ is the continuous analogue: a density that is zero everywhere except at $x = c$ and that still integrates to $1$.
+
+**Example.** A cell has two possible next states, A and B. A deterministic action sends the system to A every time, so $p(A) = 1$ and $p(B) = 0$. That is a delta distribution at A. A random action with $p(A) = 0.7$ and $p(B) = 0.3$ is not.
+
+**AI/ML Usage**: In a Markov decision process (see that entry in the math_concepts file) the transition distribution $p(s_{t+1} \mid s_t, a_t)$ is a delta distribution exactly when the action is deterministic.
 
 ---
 
@@ -1202,6 +1281,21 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="finite-horizon-optimal-value-and-policy"></a>
+### Finite-Horizon Optimal Value and Policy — `V*_H(s), π*_H(s)`
+Symbol: V or π with a raised asterisk and a subscript H (or i) giving the number of steps counted.  
+On macOS: type normally; the asterisk is Shift+8
+
+**The Big Idea**: Same star-means-best idea as the Optimal Cost entry, with a subscript saying how many steps are left, like the index $n$ in a sequence term $a_n$.
+
+**General Usage**: $V^*_H(s)$ is the best expected total reward obtainable from state $s$ when only the horizon of $H$ steps counts. $\pi^*_H(s)$ is the action that achieves it. With a finite horizon the policy takes the time step as well: $\pi : S \times [0,H] \rightarrow A$. The relation $V^*_{i+1}(s) = \max_a \sum_{s'} T(s,a,s')[R(s,a,s') + \gamma V^*_i(s')]$ links horizon $i+1$ to horizon $i$.
+
+**Example.** Using the grid-world rewards, let $V^*_i(s') = 0$ for every state (an illustrative starting value). From column 3, row 3, action right: the intended move enters the $+1$ cell with probability $0.8$, and the two side slips (up into the edge, down to column 3, row 2) each have probability $0.1$ and reward $-0.04$. So the bracket sum is $0.8(1) + 0.1(-0.04) + 0.1(-0.04) = 0.8 - 0.004 - 0.004 = 0.792$. Action up gives $0.8(-0.04) + 0.1(-0.04) + 0.1(1) = -0.032 - 0.004 + 0.1 = 0.064$. The max over actions is at least $0.792$, achieved by right.
+
+**AI/ML Usage**: Value iteration repeats this update, starting from a simple initial value and increasing the horizon one step at a time.
+
+---
+
 <a id="floor-function"></a>
 ### Floor Function — `⌊ · ⌋`
 Symbol: ⌊ ⌋, left floor and right floor brackets  
@@ -1504,6 +1598,21 @@ On macOS: type normally from the keyboard
 **Example.** If you have $1{,}000$ labeled examples total, you might use $800$ of them to train a model and keep the remaining $200$ as a hold-out set $H$. After training finishes, you check how well the model does specifically on those $200$ never-before-seen examples — this gives a much more honest picture of real-world performance than checking its performance on the same $800$ examples it already learned from.
 
 **AI/ML Usage**: An absolutely essential part of every real machine learning workflow. Because a model can effectively "memorize" quirks of the exact data it trained on (a problem called overfitting), practitioners never trust a model's performance on its own training data as the final answer — instead, they always check performance on hold-out data the model has genuinely never seen during training, which gives a much more honest, trustworthy estimate of how well it will actually perform once deployed in the real world.
+
+---
+
+<a id="horizon-t-value-function"></a>
+### Horizon-T Value Function — `V_T(b)`
+Symbol: capital V with the horizon $T$ as a subscript, applied to a belief $b$.  
+On macOS: type the letter V and use the subscript in LaTeX.
+
+**The Big Idea**: Take the maximum of several straight lines (see the Max Function entry) at each input value. The result is the best score any action can reach from that input, like picking the highest of several linear functions in Algebra 2.
+
+**General Usage**: $V_1(b) = \max_u r(b,u)$ is the best reward achievable with a single remaining action from belief $b$. For longer horizons, $V_T(b)$ is the best total reward achievable with $T$ actions.
+
+**Example.** Two lines $100 - 200p$ and $-50 + 150p$ cross where $100 - 200p = -50 + 150p$, so $150 = 350p$ and $p = 3/7$. Left of that point the first line is higher, right of it the second.
+
+**AI/ML Usage**: In POMDPs the value function over beliefs is piecewise linear and gains more pieces as the horizon grows.
 
 ---
 
@@ -1881,8 +1990,6 @@ On macOS: open the character picker (Fn/🌐) and search "greek capital letter l
 
 ---
 
----
-
 <a id="latent-feature-vector-latent-feature-space"></a>
 ### Latent Feature Vector / Latent Feature Space — `z̄`
 Symbol: z̄, an ordinary lowercase z with a vector overbar, read "z bar"  
@@ -2061,6 +2168,36 @@ On macOS: open the character picker (Fn/🌐) and search "greek small letter gam
 
 ---
 
+<a id="markov-assumption-markov-property"></a>
+### Markov Assumption (Markov Property) — `p(s_{t+1} | a_{1:t}, s_{1:t}) = p(s_{t+1} | a_t, s_t)`
+Symbol: an equation between two conditional probabilities; the vertical bar reads "given" and the colon subscript reads "from 1 through $t$"  
+On macOS: type normally from the keyboard; in LaTeX write `p(s_{t+1} \mid a_{1:t}, s_{1:t}) = p(s_{t+1} \mid a_t, s_t)`
+
+**The Big Idea**: Imagine predicting the next step of a walker using only where they stand now and which way they step, ignoring the route that brought them there. This is the same simplification as the Markov Model entry in the math_concepts file, written for systems where actions are chosen. It uses the Conditional Bar and Index Range Colon entries.
+
+**General Usage**: The left side is the probability of each possible next state $s_{t+1}$ given the entire history of actions $a_{1:t}$ and states $s_{1:t}$. The assumption says this equals the probability given only the latest action $a_t$ and state $s_t$. The older history carries no extra information about what happens next.
+
+**Example.** Let $t = 3$. Without the assumption, the next-state probability depends on $(a_1, a_2, a_3)$ and $(s_1, s_2, s_3)$. With it, two systems that took different routes but are now in the same state $s_3$ and take the same action $a_3$ have exactly the same distribution over $s_4$. Only $s_3$ and $a_3$ matter.
+
+**AI/ML Usage**: This is the defining property of a Markov Decision Process (see that entry in the math_concepts file), and it is what makes planning and reinforcement learning tractable: a policy only needs to look at the current state.
+
+---
+
+<a id="markov-decision-process-tuple"></a>
+### Markov Decision Process Tuple — `M = <S, A, T, R>`
+Symbol: angle brackets around four comma-separated letters; the letters are ordinary capitals. The brackets can be typed as the ordinary less-than and greater-than keys, or as the mathematical angle brackets ⟨ ⟩.  
+On macOS: type Shift+comma and Shift+period for < and >; for ⟨ ⟩ open the character picker (Fn/🌐) and search "mathematical left angle bracket"
+
+**The Big Idea**: An ordered list of ingredients bundled under one name, like writing a line as the pair (slope, intercept). The new part is that the four ingredients are a set of situations, a set of choices, a rule for chance outcomes, and a scoring rule.
+
+**General Usage**: $M = \langle S, A, T, R \rangle$ names a Markov decision process by listing its state space $S$ (every situation), action space $A$ (every choice), transition function $T$ (the probability of each next situation, given the current situation and the choice), and reward function $R$ (a number scoring each step). A discount factor $\gamma$ is carried along separately. See the Markov Decision Process entry in the math_concepts file.
+
+**Example.** The grid world with 4 columns and 3 rows has 12 cells, one of which is an obstacle that cannot be entered, so $S$ has $11$ states. $A = \{\text{up}, \text{down}, \text{left}, \text{right}\}$ has $4$ actions. $T$ gives $0.8$ to the intended direction and $0.1$ to each side. $R$ gives $+1$ and $-1$ for entering the two terminal cells and $-0.04$ for every other transition.
+
+**AI/ML Usage**: Reinforcement learning (a branch of AI where a program learns by trial and error from rewards) starts by writing the problem as such a tuple; planning algorithms such as value iteration take the tuple as input.
+
+---
+
 <a id="mask-token"></a>
 ### Mask Token — `[MASK]`
 Symbol: `[MASK]`, square brackets around the capital letters "MASK"; used as a special placeholder token  
@@ -2159,6 +2296,42 @@ On macOS: type normally from the keyboard
 **Example.** $\max(3,7) = 7$, since $7$ is bigger. $\max(-5, -2) = -2$, since $-2$ is the larger of two negative numbers (closer to zero, so bigger on the number line).
 
 **AI/ML Usage**: Directly defines the extremely widely used ReLU activation function, $\text{ReLU}(x)=\max(0,x)$ — one of the single most common building blocks inside modern deep learning. It also appears inside hinge loss (used specifically to train Support Vector Machines), and inside "max pooling," a step used in convolutional neural networks (the image-processing type of neural network) that shrinks an image down by keeping only the single largest, most prominent value found in each small local region.
+
+---
+
+<a id="max-norm-of-a-value-function"></a>
+### Max Norm of a Value Function — `‖V‖`
+Symbol: ‖V‖, double vertical bars around a function name. Lookalikes to watch out for: the single bars of absolute value $\lvert x \rvert$, and the Euclidean norm $\lVert \mathbf{v}\rVert$ (see the Euclidean Norm entry in the math_symbols file), which is a different way of measuring size.  
+On macOS: open the character picker (Fn/🌐) and search "double vertical line", or just type the ordinary vertical bar (Shift+\) twice
+
+**The Big Idea**: In Algebra 2 the absolute value $\lvert x \rvert$ measures how far a single number is from zero, ignoring its sign (see the Absolute Value entry in the math_symbols file). A table of values, one per situation, needs one number that says how large the table gets anywhere. Take the absolute value of every entry and keep the biggest; that is the max norm.
+
+**General Usage**: For a function $V$ that assigns a number $V(s)$ to every state $s$ (a "state" is one possible situation of the system), the max norm is
+$$\lVert V\rVert \triangleq \max_s \lvert V(s)\rvert .$$
+It is the largest magnitude, positive or negative, that $V$ takes on any state. See the Max Function entry in the math_symbols file for $\max$, and the Defined As entry for $\triangleq$.
+
+**Example.** Let a function on three states be $V(s_1) = 2$, $V(s_2) = -5$, $V(s_3) = 4$.
+
+1. Take the absolute value of each entry: $\lvert 2 \rvert = 2$, $\lvert -5 \rvert = 5$, $\lvert 4 \rvert = 4$.
+2. Keep the largest: $\max(2, 5, 4) = 5$.
+3. So $\lVert V\rVert = 5$, even though the largest signed value is $4$. The negative entry $-5$ is the one that is farthest from zero.
+
+**AI/ML Usage**: In reinforcement learning (learning to act by trial, error, and reward), a value function stores, for each state, the total reward an agent can expect from there. The max norm measures the size of the whole table with one number and measures the distance between two tables as $\lVert V - V'\rVert$, the largest disagreement at any state. It is the standard yardstick in convergence proofs for value iteration, where one shows that successive tables get closer together in this norm.
+
+---
+
+<a id="maximum-reward-magnitude"></a>
+### Maximum Reward Magnitude — `R_max`
+Symbol: $R_{\max}$, a capital R with the word "max" as a subscript. On a whiteboard it is often shortened to $R_m$.  
+On macOS: no special key is needed; type R, then use a LaTeX subscript, or in plain text write R_max
+
+**The Big Idea**: In Algebra 2 a bound is a number that a quantity can never exceed, like the maximum of a function on an interval. $R_{\max}$ is that kind of bound for rewards: a single number such that no reward in the problem is ever larger in size than it.
+
+**General Usage**: If a reward function $R$ gives a number $R(s,a,s')$ for taking action $a$ in state $s$ and landing in state $s'$, then $R_{\max}$ is the largest magnitude of any such reward, so that $\lvert R(s,a,s')\rvert \le R_{\max}$ for every choice of $s$, $a$, $s'$. Magnitude means absolute value, so a reward of $-4$ counts as $4$.
+
+**Example.** Suppose the only non-zero rewards in a problem are $+1$ and $-1$ and every other reward is $0$. The magnitudes that occur are $1$, $1$ and $0$, so $R_{\max} = 1$. Every reward satisfies $\lvert R \rvert \le 1$.
+
+**AI/ML Usage**: In reinforcement learning, $R_{\max}$ lets one bound how large the value of any situation can be. With a discount factor $\gamma$ between $0$ and $1$ (see the Gamma entry in the math_symbols file), the sum of discounted best-case rewards is at most $R_{\max}/(1-\gamma)$ (see the Geometric Series entry in the math_concepts file), which is used to show that value iteration stays bounded and converges.
 
 ---
 
@@ -2402,6 +2575,34 @@ On macOS: press Shift+3
 
 ---
 
+<a id="observation-function"></a>
+### Observation Function — `Z`
+Symbol: Z, an ordinary capital letter Z, used for the function that gives the likelihood of each possible sensor reading  
+On macOS: type Shift+Z, an ordinary keyboard letter; do not confuse it with the integers symbol $\mathbb{Z}$ (the "blackboard bold" Z)
+
+**The Big Idea**: In Algebra 2 you evaluate a function by plugging in inputs and reading off an output, such as $f(3)$. The observation function is the same idea with a probability as the output: plug in the true situation (the state and the action just taken) and a possible sensor reading, and it tells you how likely that reading is. The step beyond Algebra 2 is that the output is a likelihood rather than a single exact answer; see the Conditional Bar entry and the Probability / Probability Density entry in this file.
+
+**General Usage**: In a partially observable Markov decision process (see the Partially Observable Markov Decision Process entry in the math_concepts file), the observation function is
+$$
+Z : S \times O \times A \to \mathbb{R}^{+} \mid [0,1], \qquad Z = p(o_t \mid s_t, a_{t-1}).
+$$
+It takes a state $s_t$, an observation $o_t$, and an action $a_{t-1}$, and returns how likely it is that the agent receives observation $o_t$ when the world is in state $s_t$ and the most recent action was $a_{t-1}$. The output is a probability (a number from $0$ to $1$) when observations form a countable list, and a probability density value (a positive real number) when observations vary continuously. For a fixed state and action, the probabilities over all possible observations add up to $1$.
+
+**Example.** A distance sensor, with the car's true distance from a wall being 10 m and the observation reported to the nearest meter. Suppose
+$$
+Z(s{=}10\text{ m},\ o{=}9,\ a) = 0.2,\quad Z(s{=}10\text{ m},\ o{=}10,\ a) = 0.6,\quad Z(s{=}10\text{ m},\ o{=}11,\ a) = 0.2,
+$$
+and every other reading has probability $0$.
+
+1. Add the probabilities over every possible reading: $0.2 + 0.6 + 0.2 = 1.0$, confirming this is a valid distribution for the state "10 m".
+2. The probability that the sensor reports exactly the true distance is $Z(10, 10, a) = 0.6$.
+3. The probability that it is off by one meter in either direction is $0.2 + 0.2 = 0.4$.
+4. So even though the true state is the same each time, the agent sees $9$, $10$, or $11$, and must reason from the reading to the state.
+
+**AI/ML Usage**: $Z$ is the sensor half of a POMDP, the model used when a robot or program cannot see its true state. A robot localizing itself from laser-scanner readings uses a function of this kind to compare each reading against what it would expect to see from each possible position (see the Observation Likelihood Model entry in the math_concepts file).
+
+---
+
 <a id="observation-matrix"></a>
 ### Observation Matrix — `C`
 Symbol: C, an ordinary capital letter C, used for a matrix that turns the full state into what a sensor reports  
@@ -2452,6 +2653,25 @@ $$
 
 ---
 
+<a id="observation-space"></a>
+### Observation Space — `O`
+Symbol: O, an ordinary capital letter O (not the digit zero, and not the big-O of the Big-O Notation entry)  
+On macOS: type Shift+O, an ordinary keyboard letter
+
+**The Big Idea**: The State Space entry in this file is the list of every situation the world can be in, a set like the domain of a function in Algebra 2. The observation space is the matching set for what an agent can perceive: the list of every possible sensor report. The two sets are different because a sensor rarely reports everything.
+
+**General Usage**: The observation space $O$ is the set of every observation the agent can receive. Its cardinality (the number of elements; see the Set Cardinality entry) is often different from the cardinality of the state space, and there need not be a one-to-one mapping between observations and states: one observation can be compatible with several states, and noise means a single state can produce several different observations.
+
+**Example.** A vehicle's state is described by four numbers, its position $(x, y)$ and its velocity $(v_x, v_y)$, and its sensor reports only position.
+
+1. The state space has four coordinates per element, so each state looks like $(x, y, v_x, v_y)$.
+2. The observation space has two coordinates per element, so each observation looks like $(x, y)$.
+3. Two different states, $(4, 2, 1, 0)$ and $(4, 2, 0, 3)$, both produce the same position reading $(4, 2)$, so the reading cannot tell them apart. That is why the mapping is not one-to-one.
+
+**AI/ML Usage**: In a POMDP, $O$ is the third component of the tuple $\langle S, A, O, T, Z, R\rangle$. In robotics, $O$ might be the set of all possible laser scans or camera images; in a game-playing program, it might be what one player can see of the board while the other player's cards stay hidden.
+
+---
+
 <a id="omega"></a>
 ### Omega — `ω`
 Symbol: ω, Greek small letter omega  
@@ -2479,6 +2699,21 @@ On macOS: press Shift+8, formatted as a superscript
 **Example.** If the shortest possible route from your current location to a destination is genuinely $10$ miles (no shorter route exists, however clever), then $V^*(s) = 10$ — this is the ideal, gold-standard answer that a heuristic $H(s)$ is only ever trying to approximate.
 
 **AI/ML Usage**: The theoretical benchmark that reinforcement learning algorithms are always ultimately trying to approximate as closely as possible. An RL agent's own current, evolving estimate of a state's value, $V(s)$, is trained specifically to get as close as possible to the true optimal value $V^*(s)$, and the size of the remaining gap between an agent's current estimate and this true value is a standard, commonly-used way of measuring exactly how well a given reinforcement learning algorithm has actually learned so far.
+
+---
+
+<a id="optimal-policy"></a>
+### Optimal Policy — `π*`
+Symbol: π with a superscript asterisk (read "pi star")  
+On macOS: type π from the character picker (search "greek small letter pi"), then type * and format it as a superscript
+
+**The Big Idea**: Like the vertex of a downward-opening parabola, which is the highest point of the function, an optimal policy is the choice that makes the value as high as possible. It builds on the Policy entry and the Asterisk for Optimal Value entry.
+
+**General Usage**: $\pi^{*}$ is a policy whose value $V_{\pi^{*}}(s)$ (the expected sum of discounted rewards, see the Expected Discounted Return entry in the math_concepts file) is at least as large as the value of every other policy, for every state. Because the value is built from the reward function, changing the rewards can change which policy is optimal.
+
+**Example.** On a weighted graph where each edge costs its weight (a negative reward), non-goal states earn $0$, and the goal pays a very large reward, the optimal policy follows the lowest-cost path to the goal.
+
+**AI/ML Usage**: Algorithms such as value iteration and policy iteration compute $\pi^{*}$ for a Markov decision process; deep reinforcement learning methods try to approximate it with a neural network.
 
 ---
 
@@ -2745,6 +2980,21 @@ On macOS: type normally from the keyboard
 **Example.** Across a body of text with $D=1000$ total word pairs, suppose "peanut" and "butter" appear together $\text{count}(\text{peanut},\text{butter})=20$ times, "peanut" appears in $\text{count}(\text{peanut})=25$ pairs total, and "butter" appears in $\text{count}(\text{butter})=30$ pairs total. Then $P(\text{peanut},\text{butter}) = 20/1000 = 0.02$, $P(\text{peanut}) = 25/1000=0.025$, and $P(\text{butter})=30/1000=0.03$, so $$\text{PMI} = \log\!\left(\frac{0.02}{0.025\times 0.03}\right) = \log\!\left(\frac{0.02}{0.00075}\right) = \log(26.67) \approx 3.28$$ a strongly positive number, correctly reflecting that "peanut" and "butter" occur together far more often than their individual frequencies alone would predict.
 
 **AI/ML Usage**: PMI is the core ingredient of the matrix that Levy and Goldberg (2014) proved Word2Vec's Skip-Gram-with-negative-sampling algorithm is implicitly factoring (see the Matrix Factorization (Word Embeddings) entry in the math_concepts file) — building a word-by-context PMI matrix, shifted by $\log k$ (the number of negative samples), and factoring it with plain linear algebra produces embeddings with the same theoretical properties as training skip-gram directly. PMI is also used more broadly in NLP as a simple, unsupervised measure of how strongly two words are associated, such as for automatically detecting fixed phrases ("collocations") like "peanut butter" that behave more like a single unit than two independently chosen words.
+
+---
+
+<a id="policy"></a>
+### Policy — `π : S → A`
+Symbol: π, Greek small letter pi (here a function name, not the number 3.14159)  
+On macOS: open the character picker (Fn/🌐) and search "greek small letter pi"
+
+**The Big Idea**: This is ordinary function notation from Algebra 2, $f(x)$ with one output for each input, except the inputs are situations (states) and the outputs are moves (actions). See the Function Mapping Arrow entry for the arrow.
+
+**General Usage**: A policy $\pi$ is a rule that gives, for every state $s$ in the set of states $S$, an action $\pi(s)$ from the set of actions $A$. It is written $\pi : S \rightarrow A$ and read "pi maps states to actions." A deterministic policy returns one action; a probabilistic policy returns a distribution over actions, written $a \sim \pi(s)$ (see the Sampling Notation entry).
+
+**Example.** On a grid world with a goal in the top-right cell, a policy is a table with one arrow per cell. For a cell directly below the goal, $\pi(\text{that cell}) = \text{up}$. For a cell where going up and going right both reach the goal in the same number of moves, either arrow gives a valid policy entry.
+
+**AI/ML Usage**: In reinforcement learning (a branch of AI where a program learns by trial and error from rewards) the thing being learned is a policy. A robot navigation system consults its policy after every move, so a failed or slipped move needs no special handling.
 
 ---
 
@@ -3173,6 +3423,36 @@ On macOS: type normally from the keyboard
 **Example.** $\text{ReLU}(5) = \max(0,5) = 5$. $\text{ReLU}(-3) = \max(0,-3) = 0$. $\text{ReLU}(0) = \max(0,0) = 0$ — the boundary case gives exactly zero either way.
 
 **AI/ML Usage**: The default, single most widely used activation function inside the hidden layers of modern deep neural networks — the specific reshaping step every neuron applies to its computed weighted sum, letting the whole network learn genuinely complex, curved patterns rather than just straight-line relationships. Its popularity comes from being extremely cheap and fast to compute, and from avoiding a specific technical problem called "the vanishing gradient," which made older networks using sigmoid or tanh activations notoriously difficult to train successfully once they had many stacked layers.
+
+---
+
+<a id="reward-function"></a>
+### Reward Function — `R`
+Symbol: R, an ordinary capital letter R  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: A reward function is a score sheet: for each situation, a number saying how good or bad it is. In Algebra 2 terms it is a function (see the Function Mapping Arrow entry) whose output is a number, and the goal of planning becomes making the total score as large as possible, much like maximizing a function.
+
+**General Usage**: $R$ assigns a number to a state, or to a state and action, and sometimes to the next state as well. A reward function is **Markovian** when it depends only on the latest state and action (possibly also the previous or next state), not on the whole history. An objective that depends on history, for example whether a vehicle ever crossed a puddle earlier, cannot be expressed by a Markovian reward.
+
+**Example.** Unweighted graph: $R = -1$ for every state other than the goal and $R = +1$ for the goal, so fewer steps before the goal means a higher total. Weighted graph: $R = -c_i$ for moving along edge $e_i$, $0$ for other states, and a very large positive number for the goal, so a cheaper path means a higher total.
+
+**AI/ML Usage**: In reinforcement learning the reward function encodes the task. Designing it so that maximizing it produces the intended behavior is a central practical difficulty.
+
+---
+
+<a id="reward-function-pomdp"></a>
+### Reward Function (POMDP) — `R, r(s,a)`
+Symbol: the capital letter R for the function over states and actions, or the lowercase r for one reward value.  
+On macOS: type the letter R or r.
+
+**The Big Idea**: A reward function is an ordinary function (Algebra 2 function notation) whose output is a score: positive numbers are good, negative numbers are bad. The agent's goal is to collect as much reward as possible.
+
+**General Usage**: $R : S \times A \to \mathbb{R}$ assigns a number $r(s,a)$ to each state $s$ and action $a$ (see the Cartesian Product and Function Mapping Arrow entries).
+
+**Example.** In a two-state problem, action $u_1$ pays $-100$ in state $x_1$ and $+100$ in state $x_2$. So $r(x_1, u_1) = -100$ and $r(x_2, u_1) = 100$.
+
+**AI/ML Usage**: In reinforcement learning and in planning with MDPs and POMDPs, the reward function defines the task. When the state is uncertain, the reward of an action is averaged over the belief (see the Belief Reward entry).
 
 ---
 
@@ -3882,6 +4162,21 @@ On macOS: type normally from the keyboard
 
 ---
 
+<a id="transition-function-probabilistic-outcomes-of-actions"></a>
+### Transition Function (Probabilistic Outcomes of Actions) — `T(s, a, s')`
+Symbol: T applied to a previous state s, an action a, and a next state s' (s prime, an apostrophe after s). It equals the conditional probability $p(s_{t+1} \mid s_t, a_t)$.  
+On macOS: type normally from the keyboard
+
+**The Big Idea**: It is function notation with three inputs, plus the conditional bar from the Conditional Bar entry. The leap beyond Algebra 2 is that the output is a probability, a number from 0 to 1, instead of a deterministic next state.
+
+**General Usage**: $T(s,a,s')$ is the probability of landing in state $s'$ after taking action $a$ in state $s$. For a fixed $s$ and $a$, the values over all possible $s'$ add to $1$. With continuous states the output is a probability density, which can be any non-negative real number. See the Cartesian Product entry for $S \times A \times S$.
+
+**Example.** In the grid world, the agent is in column 3, row 3 and chooses up. Above is the grid edge, so the intended move leaves it in place. The left neighbor is column 2, row 3 and the right neighbor is the terminal cell in column 4, row 3. Then $T(s,\text{up},s) = 0.8$, $T(s,\text{up},\text{left cell}) = 0.1$, $T(s,\text{up},\text{right cell}) = 0.1$, and all other values are $0$. Check: $0.8 + 0.1 + 0.1 = 1$.
+
+**AI/ML Usage**: Every dynamic-programming method for MDPs, such as value iteration, uses $T$ inside the Bellman equation as the weights of a probability-weighted average (see the Bellman Equation entry in the math_concepts file).
+
+---
+
 <a id="transition-matrix"></a>
 ### Transition Matrix — `T`
 Symbol: T, an ordinary capital letter (written as a plain T, distinct from the script tag-set symbol 𝒯)  
@@ -3925,6 +4220,21 @@ A rule that is used twice in the tree is multiplied in twice.
 4. Multiply by $1$: $P(T)=\tfrac38$.
 
 **AI/ML Usage**: This is how a probabilistic context-free grammar scores a candidate parse of a sentence in natural language processing (the field of getting computers to work with human language). A parser compares the scores of many candidate trees and returns the highest-scoring one: $\arg\max_T P(T\mid\bar{x})$ for a sentence $\bar{x}$ (see the Arg Min / Arg Max entry).
+
+---
+
+<a id="tuple-notation"></a>
+### Tuple Notation — `⟨ ⟩`
+Symbol: ⟨ ⟩, angle brackets (the mathematical left and right angle brackets), sometimes written with ordinary $<$ and $>$  
+On macOS: open the character picker (Fn/🌐) and search "mathematical left angle bracket"; ordinary < and > also work
+
+**The Big Idea**: A tuple is an ordered list of items bundled together, like writing a point as $(x, y)$ in Algebra 2 where order matters. Angle brackets are an alternative way to bundle a fixed list of named parts into one object.
+
+**General Usage**: $\langle a, b, c \rangle$ is the ordered list whose first item is $a$, second is $b$, third is $c$. Unlike a set (see the Set Braces entry), order matters and items need not be of the same kind.
+
+**Example.** $M = \langle S, A, T, R, s_0, s_g \rangle$ bundles a set of states, a set of actions, a transition function, a reward function, a start state, and a goal state into one object $M$.
+
+**AI/ML Usage**: Used to define formal objects such as a Markov Decision Process (see that entry in the math_concepts file) as a list of its required ingredients.
 
 ---
 
@@ -4047,6 +4357,48 @@ where $N$ is the total number of times the current situation (state) has been vi
 Now compare against a second action with the same average payoff $Q(a')=0.5$ but chosen far more often, $N_{a'} = 90$: $\log(100)/90 \approx 0.0512$, $\sqrt{0.0512}\approx 0.226$, giving $u(a') \approx 0.5 + 0.226 = 0.726$ — a much smaller exploration bonus, since this action's estimate is already based on many more samples and needs less encouragement to be tried again.
 
 **AI/ML Usage**: This formula is the standard tree policy used to select which branch of a search tree to expand next in Monte Carlo Tree Search (see that entry in the math_concepts file): at every node, the algorithm picks whichever child action currently has the highest $u(a)$, so the tree naturally grows deeper along promising, well-explored lines while still periodically revisiting under-explored ones. Real implementations almost always replace the theoretical constant (for example $c=\sqrt{2}$, the value that is provably optimal for payouts restricted to the range $[-1,1]$) with a value tuned by hand for the specific game, since real games' reward structures rarely match the bandit theory's exact assumptions. DeepMind's AlphaGo (see that entry in the math_concepts file) uses a closely related but distinct exploration bonus, $u(s,a)\propto P(s,a)/(1+N(s,a))$, which replaces the $\log N/N_a$ term with a decaying bonus weighted by a learned prior probability $P(s,a)$ from a trained policy network, rather than by uniform statistical confidence alone.
+
+---
+
+<a id="value-of-a-fixed-policy"></a>
+### Value of a Fixed Policy — `V^π(s)`
+Symbol: $V^\pi(s)$, capital V with the Greek letter pi (π, "greek small letter pi") as a superscript  
+On macOS: for π open the character picker (Fn/🌐) and search "greek small letter pi"; in LaTeX write `V^{\pi}(s)`
+
+**The Big Idea**: In Algebra 2, $f_a(x)$ with a small letter beside the function name means "the version of $f$ that uses the setting $a$". Here the superscript $\pi$ means "the value function for one particular policy $\pi$", where a policy is a rule that gives the action to take in each state.
+
+**General Usage**: $V^\pi(s)$ is the expected total discounted reward obtained by starting in state $s$ and always following the policy $\pi$. It satisfies
+$$
+V^\pi(s)=\sum_{s'}T\big(s,\pi(s),s'\big)\Big[R\big(s,\pi(s),s'\big)+\gamma V^\pi(s')\Big].
+$$
+There is no maximum over actions, because the policy has already chosen the action $\pi(s)$. A star instead, $V^*(s)$, denotes the best value over all policies (see the Optimal Cost / True Cost entry).
+
+**Example.** One state $s$, policy $\pi(s)=$ "stay", reward $1$, transition probability $1$ back to $s$, and $\gamma=0.5$. The equation becomes $V^\pi(s)=1\cdot[1+0.5\,V^\pi(s)]$.
+
+| Step | Work |
+|---|---|
+| 1 | $V=1+0.5V$ |
+| 2 | Subtract $0.5V$ from both sides: $0.5V=1$ |
+| 3 | Divide by $0.5$: $V=2$ |
+
+So $V^\pi(s)=2$.
+
+**AI/ML Usage**: Policy evaluation computes $V^\pi$ for the current policy. Because the equation above has no maximum, it is a linear system that can be solved directly (see the Policy Evaluation entry in the math_concepts file). Policy iteration and policy-gradient methods in reinforcement learning (learning from trial and error) rely on estimates of $V^\pi$.
+
+---
+
+<a id="value-of-a-policy"></a>
+### Value of a Policy — `V_π(s_0)`
+Symbol: capital V with a subscript π (Greek small letter pi) and the starting state in parentheses.  
+On macOS: Option + p types π
+
+**The Big Idea**: It is an average payout, like the Expectation entry, but the payout is the total of rewards over many steps, each shrunk by the discount factor (see the Gamma entry).
+
+**General Usage**: $V_\pi(s_0) = \mathbb{E}\left[\sum_{t=0}^{\infty} \gamma^t R(s_t, a_t, s_{t+1})\right]$ with $a_t \sim \pi(s_t)$ and $s_{t+1} \sim P(s_{t+1} \mid s_t, a_t)$. It is the expected sum of discounted rewards when the agent starts at $s_0$ and follows the policy $\pi$.
+
+**Example.** Take a very short run with $\gamma = 0.9$ and rewards $-0.04$, $-0.04$, $+1$ at steps $0$, $1$, $2$ (the grid-world rewards), and nothing after. The total is $(0.9)^0(-0.04) + (0.9)^1(-0.04) + (0.9)^2(1)$. Step by step: $-0.04 - 0.036 + 0.81 = 0.734$. The value is the average of such totals over all the random ways the run can unfold.
+
+**AI/ML Usage**: Policy evaluation estimates this quantity; reinforcement learning algorithms improve a policy by raising it.
 
 ---
 
